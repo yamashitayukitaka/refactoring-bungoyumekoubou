@@ -1,0 +1,45 @@
+.p-newYear{
+  position: absolute;
+  background: #fff;
+  z-index: 99;
+  top:calc(100% - 10rem);
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(var(--windowHeight) - var(--mvHeight) - var(--headerHeight) + 10rem) !important;
+  @include mq(xl){
+    height: calc(var(--windowHeight) - var(--mvHeight) - var(--navListHeight) - var(--headerHeight) + 10rem) !important;
+  }
+  @include mq(sm){
+    top:calc(100% - 18rem);
+    height: calc(var(--windowHeight) - var(--mvHeight) - var(--navListHeight) - var(--headerHeight) + 18rem) !important;
+  }
+  &__TemporaryChange{
+    bottom: 11rem !important;
+    @include mq(sm){
+      bottom: 17rem !important;
+    }
+    &__mb{
+      margin-bottom: calc(var(--windowHeight) - var(--mvHeight) - var(--headerHeight) ) !important;
+       @include mq(xl){
+        margin-bottom: calc(var(--windowHeight) - var(--mvHeight) - var(--navListHeight) - var(--headerHeight)) !important;
+      }
+    }
+  }
+  &__txt{
+    font-size:16px;
+    text-align: center;
+    @include mq(xl){
+      font-size: 14px;
+    }
+    @include mq(){
+      font-size: 12px;
+    }
+  }
+  &__forIPSE{
+    height: 55rem !important;
+    display: flex;
+    align-items: center;
+  }
+}

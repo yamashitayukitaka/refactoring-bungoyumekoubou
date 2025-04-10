@@ -1,0 +1,29 @@
+.p-flex{
+  &__two{
+    display: flex;
+    justify-content: space-between;
+    &__content{
+      width: calc(434/900*100%);
+    }
+    &__imgWrap{
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 434/271;
+      & img{
+        height: 100%;
+      }
+    }
+  }
+  &__outer{
+    padding: 5rem 0;
+  }
+  &__one{
+    &__imgWrap{
+      width: 100%;
+      aspect-ratio: 900/562;
+      & img{
+        height: 100%;
+      }
+    }
+  }
+}

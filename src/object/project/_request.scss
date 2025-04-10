@@ -1,0 +1,41 @@
+.p-request {
+  text-align: center;
+  &__img {
+    &__wrap {
+      position: relative;
+      width: 100%;
+      height: 37rem;
+      background-size: cover !important;
+      background-attachment: fixed !important;
+      background-repeat: no-repeat !important;
+      background-position: center center !important;
+      background: url(../dist/img/common/request.png);
+    }
+  }
+  &__copy {
+    color: $white;
+    font-size: 6.8rem;
+    line-height: calc(90 / 68);
+    font-family: $yuGothic;
+    font-weight: bold;
+    text-align: center;
+    @include mq() {
+      font-size: 3.6rem;
+    }
+    &--sm {
+      @extend .p-request__copy;
+      font-size: 4rem;
+      line-height: calc(53 / 40);
+      @include mq() {
+        font-size: 2.2rem;
+      }
+    }
+    &__wrap {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

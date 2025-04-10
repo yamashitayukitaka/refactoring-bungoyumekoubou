@@ -1,0 +1,83 @@
+.c-pageMv{
+  width: 100%;
+  height: calc(var(--windowHeight) - var(--headerHeight));
+  position: relative;
+  z-index: 1;
+  overflow: initial !important;
+  @include mq(){
+    height: 500px;
+  }
+  &__img{
+    height: 100%;
+    &__wrap{
+      width: calc(1012px/1200px*100%);
+      margin-left: auto;
+      background-size: cover;
+      height: 100%;
+      background-position: top center;
+      &--top{
+        width:100%;
+        margin-left: auto;
+        background-size: cover;
+        height: 100%;
+        background-position: top center;
+      }
+    }
+  }
+  &__ttl{
+    font-size:3.6rem;
+    line-height: 1;
+    letter-spacing: 0.04rem;
+    font-family:$yuGothic;
+    color: $pureBlack;
+    font-weight: bold;
+    position: relative;
+    z-index: 999;
+    &__wrap{
+      position: absolute;
+      z-index: 99;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //padding:6.6rem 7.7rem;
+      padding:5% 5% 5% 10%;
+      min-width:45%;
+      z-index: 9;
+      &::before{
+        content:"";
+        width: 100%;
+        height: 100%;
+        background: $white;
+        opacity: .5;
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: block;
+        z-index: 99;
+        border-top: solid 2px $orange;
+      }
+    }
+    &--small{
+      font-size: 1.6rem;
+      line-height:calc(26/13);
+      letter-spacing:0.18rem;
+      color:$pureBlack;
+      position: relative;
+      z-index: 9999;
+      font-weight: bold;
+    }
+  }
+  &__subTtl{
+    color:$pureBlack;
+    font-size: 2rem;
+    line-height: calc(52/20);
+    letter-spacing:0.18rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 999;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+}

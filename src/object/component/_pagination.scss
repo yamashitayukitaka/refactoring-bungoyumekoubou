@@ -1,0 +1,18 @@
+.nav-links{
+  display: flex;
+  justify-content: center;
+  gap:2%;
+}
+
+.page-numbers{
+  width: 5.5rem;
+  height: 5.5rem;
+  border:solid 1px $gray7;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current{
+  background:$gray3;
+}

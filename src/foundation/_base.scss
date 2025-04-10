@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%;
+  @include mq() {
+    font-size: calc(62.5% * 0.75);
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* ヘッダーがfixedで浮いているため */
+  padding-top: var(--headerHeight);
+  font-family: $yuGothic; /*fontの統一はbodyに付与すると柔軟性に対応できる*/
+  color:$black;
+}
+footer {
+  margin-top: auto;
+}
+*,
+*::before,
+*::after {
+  color: $black;
+  box-sizing: border-box;
+  font-family: $yuGothic;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  vertical-align: middle;
+}
+button {
+  cursor: pointer;
+}
+a {
+  font-size: inherit;
+  line-height: inherit;
+}
+a:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+
+
+

@@ -1,0 +1,360 @@
+.p-top{
+  &__mv{
+    &__appealList{
+      display: flex;
+      position: absolute;
+      right:calc(40/1200*100%);
+      bottom: -4.5rem;
+      z-index: 9999;
+    } 
+    &__appealItem{
+      width: 14.5rem;
+      height: 14.5rem;
+      background-size: cover;
+      margin-left:1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @include mq(xl){
+        width: 13rem;
+        height: 13rem;
+      }
+    }
+    &__appealTtl{
+      font-size: 2.0rem;
+      font-weight: bold;
+      line-height:calc(37/20);
+      letter-spacing:0.04rem;
+      color:$yellow;
+      text-align: center;
+      @include mq(){
+        font-size: 1.6rem;
+      }
+    }
+    &__appealTxt{
+      font-weight: bold;
+      line-height:calc(15/13);
+      font-size: 1.3rem;
+      letter-spacing:0.04rem;
+      color:$yellow;
+      text-align: center;
+    }
+  }
+  &__desc{
+    background:$beige4;
+    margin-bottom:10rem;
+    &__content{
+      position: relative;
+      padding-top: 10rem;
+      padding-bottom: 11.8rem;
+    }
+    &__copy{
+      font-size: 3.6rem;
+      font-weight: bold;
+      line-height: calc(52/36);
+      letter-spacing:0.18px;
+      text-align: center;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 9999;
+    }
+    &__txt{
+      font-size: 1.6rem;
+      letter-spacing:calc(36/16);
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      z-index: 9999;
+    }
+    &__imgWrap{
+      display: block;
+      width: calc(372/1200 *100%);
+      height: 290px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-size: cover;
+      background-position: top center;
+      @include mq(){
+        display: none;
+      }
+      &--right{
+        display: block;
+        width: calc(333/1200 *100%);
+        height:290px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: top center;
+        z-index: 9999;
+        @include mq(){
+          display: none;
+        }
+        &:after{
+          position: absolute;
+          content:"";
+          display: block;
+          background: url(../dist/img/top/house.png);
+          width: 10rem;
+          height: 10rem;
+          background-size:contain;
+          width:calc(173/333*100%);
+          aspect-ratio: 173/132;
+          background-repeat: no-repeat;
+          top: 0;
+          right:-25%;
+          z-index:1;
+        }
+      }
+    }
+  }
+  &__introduction{
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    padding:5rem 0;
+    background-attachment: fixed;
+    position: relative;
+    &__ttlWrap{
+      display: inline-block;
+      background: $white;
+      opacity: .8;
+      width: calc(592/1200*100%);
+      aspect-ratio: 592/133;
+      padding-top: calc(15/1200*100%);
+      @include mq(){
+        width: initial;
+        padding: 1.25%;
+      }
+    }
+    &__txt{
+      font-size: 1.6rem;
+      line-height: calc(27/16);
+      letter-spacing:0.68rem;
+    }
+    &__imgWrap{
+      width: calc(265/1200*100%);
+      aspect-ratio:265/166;
+      position: absolute;
+      right: calc(105/1200*100%);
+      top:50%;
+      transform: translateY(-50%);
+      @include mq(){
+        display: none;
+      }
+      &--house{
+        width: calc(185/1200*100%);
+        aspect-ratio: 1/1;
+        position: absolute;
+        right: calc(132/1200*100%);
+        top:50%;
+        transform: translateY(-50%);
+        @include mq(){
+          display: none;
+        }
+      }
+    }
+  }
+  &__lineUp{
+    background:#FAF7F2;
+    padding: 8rem 0;
+    margin-bottom: 8rem;
+    &__list{
+      width: 100%;
+    }
+    &__ttl{
+      font-size:2.4rem;
+      line-height: calc(32/24);
+      letter-spacing:0.09em;
+      margin-bottom: 1rem;
+    }
+    &__txt{
+      font-size:1.6rem;
+      line-height: calc(32/16);
+      letter-spacing:0.09em;
+    }
+    &__txtWrap{
+      padding-left: calc((41/(417 + 750))*100%);
+      padding-right: calc((41/(417 + 750))*100%);
+      padding-top: calc(114/(417 + 750)*100%);
+      width:calc((417/(750 + 417))*100%);
+      background: $beige4;
+    }
+    &__item{
+      width: 100%;
+      display: flex;
+      margin-bottom: 3.2rem;
+      aspect-ratio: calc(750 + 417)/432;
+      &:nth-of-type(1){
+        & .p-top__lineUp__txtWrap{
+          position: relative;
+          &::before{
+            content:"";
+            background: url('../dist/img/top/heig.png');
+            width:calc(133/417*100%);
+            display: block;
+            background-size: cover;
+            aspect-ratio: 133/62;
+            left:calc(41/417*100%);
+            top:calc(38/432*100%);
+            position: absolute;
+          }
+        }
+      }
+      &:nth-of-type(2){
+        flex-direction: row-reverse;
+        & .p-top__lineUp__txtWrap{
+          position: relative;
+          &::before{
+            content:"";
+            background: url('../dist/img/top/rireve.png');
+            width:calc(186/417*100%);
+            display: block;
+            background-size: cover;
+            aspect-ratio:186/50;
+            right:calc(41/417*100%);
+            top:calc(38/432*100%);
+            position: absolute;
+          }
+        }
+      }
+      &:nth-of-type(3){
+        margin-bottom: 8rem;
+        & .p-top__lineUp__txtWrap{
+          position: relative;
+          &::before{
+            content:"";
+            background: url('../dist/img/top/iroha.png');
+            width:calc(130/417*100%);
+            display: block;
+            background-size: cover;
+            aspect-ratio:186/82;
+            left:calc(41/417*100%);
+            top:calc(38/432*100%);
+            position: absolute;
+          }
+        }
+      }
+    }
+    &__img{
+      width:calc((750/(750 + 417))*100%);
+      aspect-ratio: 750/432;
+      background-size: cover;
+      background-position: top center;
+    }
+  }
+  &__lineUpRow{
+    &__list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__item{
+      width: calc(334/1100*100%);
+      text-align: center;
+      @include mq(){
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+    }
+    &__imgWrap{
+      overflow: hidden;
+      width: 100%;
+      aspect-ratio: 334/186;
+      margin-bottom:0.5rem;
+    }
+    &__tag{
+      background:#BFA987;
+      display: inline-block;
+      color:$white;
+      font-size: 1.2rem;
+      line-height:1.22rem;
+      padding:.5rem 2rem;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    &__txt{
+      font-size: 1.8rem;
+      line-height: calc(26/18);
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__staff{
+    &__list{
+      &:nth-of-type(1){
+        margin-bottom: 4.5rem;
+      }
+      & .slick-slide{
+        margin-left:7px;
+      }
+    }
+    &__item{
+      width: calc(259/1200*100%);
+      aspect-ratio: 259/173;
+    }
+    &__ttl{
+      font-size: 6.4rem;
+      font-weight: bold;
+      letter-spacing:0.68rem;
+      @include mq(){
+        font-size: 3.6rem;
+      }
+    }
+    &__subTtl{
+      font-size: 1.7rem;
+      font-weight: normal;
+      margin-bottom:1.4rem;
+      text-align: center;
+    }
+    &__copy{
+      font-size: 3.6rem;
+      font-weight: bold;
+      line-height: calc(52/36);
+      letter-spacing: 0.18rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      &::after{
+        display: block;
+        content:"";
+        background: url(../dist/img/top/staff02.png);
+        background-size: 100% 100%;
+        position: absolute;
+        right:calc( -1 * (394/414) * 100%);
+        bottom: 0;
+        width:39.4rem;
+        aspect-ratio: 394/181;
+        @include mq{
+          display: none;
+        }
+      }
+      &::before{
+        display: block;
+        content:"";
+        background: url(../dist/img/top/staff01.png);
+        background-size: 100% 100%;
+        position: absolute;
+        left:calc(-1 * ((97 + 155) /414) * 100%);
+        bottom: 0;
+        width:15.5rem;
+        aspect-ratio: 155/184;
+        @include mq{
+          display: none;
+        }
+      }
+      &--orange{
+        font-size: 3.6rem;
+        font-weight: bold;
+        line-height: calc(52/36);
+        letter-spacing: 0.18rem;
+        color:$orange;
+      }
+    }
+  }
+}
+
+   

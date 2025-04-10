@@ -1,0 +1,149 @@
+.l-header {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:9999999;
+  width: 100%;
+  background:$white;
+  display: flex;
+  align-items: center;
+  height:auto;
+  &__content{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+    position: relative;
+    gap:2%;
+    &__innerTop{
+      display: flex;
+      justify-content: right;
+    }
+    &__innerWrap{
+      display: inline-block;
+      @include mq(xxl){
+        margin-left: auto;
+      }
+    }
+  }
+  &__logo{
+    display: block;
+    width:200px;
+    @include mq(xxxl){
+      width: 120px;
+    }
+  }
+  
+  &__tel{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: calc(32.2/28);
+    letter-spacing: 0.1rem;
+    color:$pureBlack;
+    &__num{
+      font-weight: bold;
+      font-size: 2.8rem;
+      line-height: calc(32.2/28);
+      letter-spacing: 0.1rem;
+      color:$pureBlack;
+    }
+    &__img{
+      width: 3.5rem;
+      margin-right: 0.7rem;
+    }
+  }
+  &__time{
+    display: flex;
+  }
+  &__dt{
+    font-size:1.3rem;
+    letter-spacing: 0.03rem;
+    line-height: calc(15/13);
+  }
+  &__dd{
+    font-size: 1.3rem;
+    letter-spacing: 0.03rem;
+    line-height: calc(15/13);
+  }
+  &__dl{
+    display: flex;
+    &:nth-of-type(2){
+      margin-left: 0.5rem;
+    }
+  }
+  &__info{
+    margin-right:2%;
+    @include mq(xxl){
+      padding-top: .5rem;
+    }
+    @include mq(xl){
+      padding-top:12px;
+    }
+  }
+  &__sns{
+    &__line{
+      width: 15rem;
+      height: 4.5rem;
+    }
+    &__insta,
+    &__YouTube{
+      width: 4.5rem;
+      height: 4.5em;
+    }
+    &__list{
+      display: flex;
+      gap:2%;
+      &--ham{
+        display: flex;
+        gap:2%;
+        justify-content: center;
+      }
+      @include mq(xl){
+        margin-left: auto;
+        padding-top: 0.5rem;
+      }
+      @include mq(){
+        margin-left: auto;
+        padding-top:1rem;
+      }
+      &--hamTop{
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+      }
+    }
+  }
+}
+
+
+#wpadminbar{
+  position: fixed !important;
+  top:initial !important;
+  bottom: 0 !important;
+}
+
+#wpadminbar .show-template-name, #wpadminbar .hover .show-template-name{
+  color: #fff;
+}
+
+@keyframes spin {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loaded {
+  opacity: 0;
+  //visibility: hidden;
+  display: none !important;
+}
+

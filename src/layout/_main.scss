@@ -1,0 +1,43 @@
+.l-content{
+  width: 1000px;
+  margin: auto;
+  @include mq(xl){
+    width: 92%;
+  }
+  &--large{
+    width: 1100px;
+    margin: auto;
+    @include mq(xl){
+      width: 92%;
+    }
+  }
+  &--middle{
+    width: 900px;
+    margin: auto;
+    @include mq(lg){
+      width: 92%;
+    }
+  }
+  &--xl{
+    width: 1200px;
+    margin: auto;
+    @include mq(xxl){
+      width: 92%;
+    }
+  }
+  &--sm{
+    width: 850px;
+    margin: auto;
+    @include mq(lg){
+      width: 92%;
+    }
+  }
+  &--percent{
+    width: 98%;
+    margin: auto;
+  }
+  &--ratio{
+    width: 92%;
+    margin: auto;
+  }
+}

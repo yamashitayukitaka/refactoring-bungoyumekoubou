@@ -1,0 +1,21 @@
+.c-term{
+  &__list{
+    display: flex;
+    justify-content: center;
+    transform: translateX(-0.4rem);
+    margin-bottom: 3.9rem;
+    flex-wrap: wrap;
+    &__item{
+      height: 3.9rem;
+      font-size:1.4rem;
+      letter-spacing:0.04rem;
+      color:$lightBlack;
+      padding:0 1.4rem;
+      background: $gray;
+      display: flex;
+      align-items: center;
+      margin-left: 0.4rem;
+      margin-bottom: .5rem;
+    }
+  }
+}

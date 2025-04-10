@@ -1,0 +1,216 @@
+.p-property{
+  &__dl{
+    display:flex;
+    &__flex{
+      display: flex;
+      justify-content: center;
+    }
+    &__wrap{
+      display: inline-block;
+    }
+  }
+  &__copy{
+    @extend .p-property__dl__txt;
+  }
+  &__price{
+    height: 7.5rem;
+    border-top: 1px solid $pureBlack;
+    border-bottom:1px solid $pureBlack;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__num{
+      color: $pureBlack;
+      font-family:$roboto;
+      font-weight: bold;
+      font-size: 4.8rem;
+      line-height: 0.04rem;
+      margin-right:1rem;
+    }
+    &__unit{
+      color: $pureBlack;
+      font-family:$roboto;
+      font-size:3.8rem;
+      line-height: 0.04rem;
+      font-weight: normal;
+      margin-right:0.5rem;
+    }
+    &__tax{
+      color: $pureBlack;
+      font-family:$roboto;
+      font-size:2rem;
+      line-height: 0.04rem;
+      font-weight: normal;
+    }
+  }
+  &__dl{
+    &__txt{
+      font-family: $inter;
+      font-weight: normal;
+      font-size: 2.4rem;
+      line-height: calc(33/24);
+    }
+   
+    &__info{
+      display: flex;
+      width: 100%;
+      &--half{
+        display: flex;
+        width: 50%;
+      }
+    }
+    &__infoWrap{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      border-top:1px solid $gray7;
+      border-left: 1px solid $gray7;
+    }
+  }
+  &__dt{
+    &__item{
+        vertical-align: middle;
+        border:solid 1px $gray7;
+        border-top: none;
+        border-left:none;
+        display: flex;
+        align-items: center;
+        background: $gray6;
+        color:$pureBlack;
+        font-size: 1.6rem;
+        font-family: $roboto !important;
+        font-weight: normal !important;
+        line-height: calc(46/16);
+        letter-spacing:0.04rem;
+        border-right: none;
+      &--short{
+        @extend .p-property__dt__item;
+        width:calc(148/900*100%);
+        padding-left: calc(14/900*100%);
+      }
+      &--md{
+        @extend .p-property__dt__item;
+        width:calc(148/450*100%);
+        padding-left: calc(14/450*100%);
+      }
+      &--lg{
+        @extend .p-property__dt__item;
+        width: calc(227/900*100%);
+        padding-left: calc(14/900*100%);
+      }
+      &--sm{
+        @extend .p-property__dt__item;
+        width: calc(227/450*100%);
+        padding-left: calc(14/450*100%);
+      }
+    }
+    &__value{
+      color:$black;
+      font-size: 1.6rem;
+      font-family: $roboto !important;
+      //line-height: calc(46/16);
+      letter-spacing:0.04rem;
+      vertical-align: middle;
+      border:solid 1px $gray7;
+      border-top: none;
+      display: flex;
+      align-items: center;
+      &--long{
+        @extend .p-property__dt__value;
+        width: calc(752/900*100%);
+        padding-left: calc(14/900*100%);
+        padding-right: calc(14/900*100%);
+      }
+      &--md{
+        @extend .p-property__dt__value;
+        width: calc(302/450*100%);
+        padding-left: calc(14/450*100%);
+        padding-right: calc(14/450*100%);
+      }
+      &--lg{
+        @extend .p-property__dt__value;
+        width: calc(682/900*100%);
+        padding-left: calc(14/900*100%);
+        padding-right: calc(14/900*100%);
+      }
+      &--sm{
+        @extend .p-property__dt__value;
+        width: calc(227/450*100%);
+        padding-left: calc(14/450*100%);
+        padding-right: calc(14/450*100%);
+      }
+    }
+  }
+  &__infomation{
+    background: $beige2;
+    padding-top: 50px;
+    padding-bottom:10rem;
+    &__list{
+      display: flex;
+      flex-wrap: wrap;
+      width:100%;
+    }
+    &__item{
+      width:calc(236/1000*100%);
+      margin-left: calc(18/1000*100%);
+      margin-bottom: 3rem;
+      &:nth-of-type(4n - 3){
+        margin-left: 0;
+      }
+    }
+    &__img{
+      height:100%;
+    }
+    &__imgWrap{
+      width: 100%;
+      aspect-ratio:236/173;
+      margin-bottom: 0.5rem;
+    }
+    &__txt{
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.6rem;
+      line-height:calc(24/16);
+      font-family: $inter !important;
+      letter-spacing:0.04rem;
+    }
+    &__distance{
+      text-align: center;
+      font-size: 1.4rem;
+      font-family: $inter !important;
+      letter-spacing:0.04rem;
+    }
+    &__value{
+      font-size: 2.0rem;
+      font-family: $inter !important;
+      font-weight: bold;
+      color:$red;
+      letter-spacing:0.04rem;
+    }
+    &__dl{
+      border-bottom: solid 1px $gray7;
+      width: 100%;
+      display: flex;
+    }
+    &__dt{
+      width: 50%;
+      text-align:right;
+      padding-right:20%;
+      font-size: 1.4rem;
+      color: $pureBlack;
+      line-height: calc(21/14);
+      font-weight: normal;
+    }
+    &__dd{
+      width: 50%;
+      text-align: left;
+      padding-left: 20%;
+      font-size: 1.4rem;
+      color: $pureBlack;
+      line-height: calc(21/14);
+    }
+  }
+}

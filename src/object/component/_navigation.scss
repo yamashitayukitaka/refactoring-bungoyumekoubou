@@ -1,0 +1,134 @@
+.c-navigation{
+  display: flex;
+  justify-content: flex-end;
+  &--top{
+    @include mq(xl){
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      // background: #fff;
+      // padding-top: 2rem;
+      justify-content: center;
+    }
+  }
+  &__list{
+    display: flex;
+    // padding-right: 7rem;
+    &--bottom{
+      display: flex;
+      flex-wrap: wrap;
+    //   justify-content: center;
+    //   gap: 5%;
+     }
+    &--footer{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &--top{
+      display: flex;
+      @include mq(xl){
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    &__link{
+      font-size: 1.5rem;
+      letter-spacing: calc(17.3/15);
+      color: $pureBlack;
+      &--top{
+        font-size: 1.5rem;
+        letter-spacing: calc(17.3/15);
+        color: $white;
+        @include mq(){
+          font-size: 14px;
+        }
+      }
+      &--footer{
+        color:$white;
+      }
+    }
+    &__item{
+      margin-left: 20px;
+      &:first-of-type{
+        margin-left: 0;
+      }
+      &--top{
+        width: 15rem;
+        height: 4.5rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        margin-bottom: 1.2rem;
+        background: $orange;
+        @include mq(xl){
+          width: calc(100/3*1%);
+          margin-left: 0;
+          height: 50px;
+          margin-bottom: 0;
+          &:nth-of-type(1){
+            background: #000;
+          }
+          &:nth-of-type(2){
+            background:#69BD83;
+          }
+        }
+      }
+    }
+  }
+  &__child{
+    &__list{
+      z-index: 99999;
+      position: absolute;
+      display: flex;
+      right: 0;
+      top:100%;
+      background:beige;
+      padding:0 1rem;
+    }
+    &__item{
+      width: 20rem;
+      padding:1rem 0 2rem;
+    }
+    &__link{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__imgWrap{
+      width: 90%;
+      height:15rem;
+    }
+    &__img{
+      height: 100%;
+    }
+  }
+  &__inner{
+    &__listWrap{
+      width: 25%;
+      @include mq(){
+        width: 50%;
+        padding-left: 7%;
+      }
+    }
+    &__list{
+      margin-bottom:2.8rem;
+    }
+    &__ttl{
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: calc(31/15);
+      letter-spacing:0.04rem;
+      color:$white;
+    }
+    &__link{
+      font-size: 1.2rem;
+      line-height: calc(26/12);
+      letter-spacing:0.04rem;
+      color:$white;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

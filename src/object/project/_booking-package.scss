@@ -1,0 +1,148 @@
+#booking-package_calendarPage{
+  display: block !important;
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit{
+  display: flex;
+  justify-content: center;
+}
+
+#booking-package button {
+  color: #fff;
+  text-align: center;
+  padding: .5rem;
+  width: 15rem;
+  background: orange;
+  font-size: 16px;
+}
+
+#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel{
+  width: 15rem;
+}
+
+#booking-package_inputFormPanel .cartPanel{
+  width: 15rem;
+}
+
+#booking-package_inputFormPanel .cartPanel{
+  margin: auto;
+}
+
+#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel{
+  margin: auto;
+}
+
+#booking-package_calendarPage .day_slot{
+  position:relative;
+}
+
+
+
+#booking-package_calendarPage .day_slot{
+  border:none !important;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#booking-package_calendarPage .pastDay{
+  background-color: #fff !important;
+}
+
+#booking-package_calendarPage .dateField {
+  position:relative;
+  z-index: 99999;
+}
+
+#booking-package_calendarPage .week_slot{
+  border:none !important;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  margin-bottom: initial !important;
+  font-size: 2rem;
+  line-height: 2.5;
+}
+
+#booking-package_calendarPage .available_day .dateField{
+  color: #fff !important;
+}
+
+#booking-package_calendarPage .dateField{
+  font-size: 2.4rem;
+  @include mq(){
+    font-size: 20px;
+  }
+}
+
+.selectable_day_slot{
+  display: none;
+}
+
+
+#booking-package_schedulePage .daysListPanel{
+  display: none;
+}
+
+#booking-package_schedulePage .topPanel{
+  border: none !important;
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit {
+  border:none;
+}
+
+#booking-package_schedulePage .positionOfPanelNotHavingCourseForScheduleListPanel{
+  box-shadow: none !important;
+}
+
+#booking-package_schedulePage .courseListPanel {
+  left: 50% !important;
+  transform: translateX(-50%);
+  position: relative !important;
+  width: 100% !important;
+}
+
+#blockPanel{
+  height: 10rem !important;
+}
+
+
+#booking-package .selectable_time_slot {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  @include mq(ssm){
+    justify-content: space-between;
+  }
+}
+
+#booking-package_calendarPage{
+  margin-bottom: 10rem !important;
+}
+
+#booking-package_schedulePage .courseListPanel{
+  height: auto !important;
+}
+
+#booking-package_calendarPage .available_day .dateField{
+  width: 5rem !important;
+  height: 5rem;
+  background:rgb(234, 104, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#booking-package_calendarPage .symbolPanel, #booking-package_calendarPage .numberInsteadOfSymbols{
+ opacity: 0;
+}
+
+.timeSlot{
+  font-size: 2.2rem;
+}

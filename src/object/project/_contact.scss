@@ -1,0 +1,142 @@
+.p-contact {
+  margin-bottom: 12rem;
+  .c-title {
+    margin-bottom: 11rem;
+    &__background {
+      transform: translate(-50%, -70%);
+      width: 448px;
+      @include mq() {
+        width: 220px;
+      }
+    }
+  }
+  &__form {
+    max-width: 92%;
+    width: 700px;
+    margin: auto;
+    &__row {
+      position: relative;
+      display: block;
+      padding: 3rem 0 3rem 24rem;
+      border-top: 1px solid #ededed;
+      @include mq() {
+        padding: 60px 0 3rem 20px;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid #ededed;
+        margin-bottom: 6rem;
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          width: 20rem;
+          height: 1px;
+          background: #ffe7e7;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        width: 20rem;
+        height: 1px;
+        background: #ffe7e7;
+      }
+    }
+    &__head {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      line-height: 1;
+      width: 19.6rem;
+      transform: translateY(-50%);
+      @include mq() {
+        justify-content: flex-start;
+        top: 3rem;
+        transform: translateY(0);
+      }
+    }
+    &__badge {
+      background: #e60012;
+      color: $white;
+      font-size: 1.4rem;
+      padding: 0.6rem 1.6rem;
+      line-height: 1;
+      @include mq() {
+        margin-left: 10px;
+      }
+    }
+    &__input,
+    &__textarea {
+      background: #f3f3f3;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    &__input {
+      width: calc(100% - 20px);
+      padding: 8px;
+      line-height: 1;
+      font-size: 16px;
+      @include mq() {
+        width: calc(100% - 20px);
+      }
+      &--tel {
+        width: 110px;
+        @include mq() {
+          width: calc((100% - 20px) / 3 - 8px);
+        }
+      }
+    }
+    &__textarea {
+      padding: 4px 8px;
+      height: 150px;
+      width: calc(100% - 108px);
+      resize: none;
+      @include mq() {
+        width: calc(100% - 20px);
+      }
+    }
+    &__buttonWrap {
+      display: flex;
+      justify-content: center;
+    }
+    &__button {
+      background: $lightBlack;
+      color: $white;
+      padding: 2.4rem 10.5rem;
+      line-height: 1;
+      border-radius: 50px;
+      transition: 0.2s;
+      font-weight: bold;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+  &--reserve {
+    .c-title {
+      &__background {
+        width: 388px;
+        @include mq() {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+.ui-datepicker-title {
+  display: flex;
+  align-items: center;
+}
+.ui-datepicker-year {
+  max-width: 43px;
+}
+.ui-datepicker-month {
+  margin-left: 10px !important;
+}

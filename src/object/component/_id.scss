@@ -1,0 +1,37 @@
+.c-id{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  height: 1.9rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0 1rem;
+  color: #ffffff;
+  background: #22668D;
+  &:nth-of-type(1){
+    margin-left: 0;
+  }
+  &--end{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    height: 1.9rem;
+    text-align: center;
+    padding: 0 1rem;
+    color: #ffffff;
+    background: gray;
+    display: none;
+  }
+  &__wrap{
+    display: flex;
+    column-gap:5%;
+    flex-wrap: wrap;
+    width: 100%;
+    &--top{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap:5px;
+    }
+  }
+}

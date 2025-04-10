@@ -1,0 +1,114 @@
+.p-feature{
+  &__list{
+    width: 100%;
+    &__item{
+      width: 100%;
+      margin-bottom: 10rem;
+      &:nth-of-type(2n){
+        & .p-feature__list__article{
+          flex-direction: row-reverse;
+          justify-content: right;
+          & .p-feature__list__mainImgWrap{
+            margin-right: initial;
+            margin-left:calc(30/790*100%);
+            & .p-feature__list__mainImgNum{
+              left: 0;
+              right: initial;
+            }
+          }
+        }
+      }
+    }
+    &__num{
+      font-size:4rem;
+      line-height: calc(59/40);
+      font-family: $yuMincho;
+      color:#906D21;
+    }
+    &__mainImgWrap{
+      width: calc(700/1200*100%);
+      aspect-ratio:700/375;
+      overflow: hidden;
+      margin-right:calc(30/790*100%);
+      position: relative;
+    }
+    &__mainImgNum{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 3.2rem;
+      height:calc(277/457*100%);
+      background: $white;
+      padding-top:1.5rem;
+      &::after{
+        display: block;
+        content:"";
+        width: 1px;
+        height:calc(34/277*100%);
+        background: #000;
+        position: absolute;
+        left: 50%;
+        top: 10rem;
+      }
+    }
+    &__mainImgNumPng{
+      display: block;
+      width: calc(15/32*100%);
+      margin: auto;
+    }
+    &__mainImg{
+      height: 100%;
+    }  
+    &__imgOuter{
+      width:790px;
+      display: flex;
+      justify-content:space-between;
+      margin: auto;
+      @include mq(lg){
+        width: 100%;
+      }
+    }
+    &__img{
+      width: 100%;
+      aspect-ratio: 371/191;
+      overflow: hidden;
+      margin-bottom: .5rem;
+      & img{
+        height: 100%;
+      }
+    }
+    &__article{
+      display: flex;
+      margin-bottom:10rem;
+      &--sm{
+        width: calc(371/790*100%);
+      }
+      &--smUp{
+        width: calc(371/790*100%);
+        transform: translateY(-4.2rem);
+      }
+    }
+    &__ttl{
+      font-family:$yuMincho;
+      font-size:3rem;
+      line-height: calc(4/3);
+      margin-bottom: 2.5rem;
+    }
+    &__txt{
+      font-size: 1.4rem;
+      line-height: calc(21/14);
+      font-family: $yuGothic;
+      &--sm{
+        font-family: $yuGothic;
+        font-size: 1.2rem;
+        line-height: calc(18/12);
+      }
+    }
+    &__txtWrap{
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+  }
+}

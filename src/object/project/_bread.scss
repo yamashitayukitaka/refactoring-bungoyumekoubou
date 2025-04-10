@@ -1,0 +1,17 @@
+.p-bread {
+  margin: 20px auto 120px;
+  @include mq(xl) {
+    margin-bottom: 80px;
+  }
+  &__link,
+  &__current {
+    line-height: 1;
+  }
+  &__link {
+    position: relative;
+    text-decoration: underline;
+  }
+  &__list{
+    display:flex;
+  }
+}

@@ -1,0 +1,80 @@
+.p-works{
+  &__mv{
+    width: 100%;
+    //height: calc(var(--windowHeight) - var(--headerHeight));
+    overflow: hidden;
+    @include mq(){
+      height: 60vh;
+    }
+    & .slick-slider{
+      height: 100%;
+    }
+    & .slick-track{
+      height: 100%;
+    }
+    & .slick-list{
+      height: 100%;
+      & div{
+        height: 100%;
+        & li{
+         // height: 100%;
+          & img{
+            height: 100%;
+          }
+        }
+      }
+    }
+    &__list{
+      width: 100%;
+      aspect-ratio: 900/562;
+      overflow: hidden;
+      @include mq(){
+        height: 100%;
+        aspect-ratio: initial;
+      }
+    }
+  }
+  &__design{
+    padding: 10rem 0;
+  }
+  &__voice{
+    padding: 5rem 0;
+    &__wrap{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__imgWrap{
+      width: calc(509/1000*100%);
+      aspect-ratio: 509/335;
+      @include mq(){
+        aspect-ratio: initial;
+        height: 23rem;
+      }
+      & img{
+        height: 100%;
+      }
+    }
+    &__txt{
+      width: calc(353/1000*100%);
+      aspect-ratio:353/333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__nameWrap{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap:5%;
+    }
+  
+    &__bold{
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 3.79rem;
+      letter-spacing:0.04rem;
+      color:#000;
+      display: inline-block;
+    }
+  }
+}

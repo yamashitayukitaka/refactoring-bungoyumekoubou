@@ -1,0 +1,196 @@
+.l-footer {
+  &__bottom{
+    background:$footerColor;
+    padding: 6.2rem 0;
+  }
+  &__logo{
+    width: 200px;
+    @include mq(){
+      margin-bottom: 3rem;
+    }
+  }
+  &__map{
+    &__list{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__item{
+      width: calc(345/1100*100%);
+      margin-bottom: 2rem;
+      @include mq(){
+        width: 100%;
+      }
+    }
+    &__itemTtl{
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $white;
+      line-height: calc(24/12);
+      letter-spacing:0.04rem;
+      padding: 1rem 0;
+      text-align: center;
+      background:$black;
+    }
+    &__wrap{
+      width:100%;
+      aspect-ratio:345/173;
+    }
+    &__copyWrap{
+      width:57rem;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6.6rem;
+      @include mq(){
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+    }
+    &__copy{
+      font-size: 3.1rem;
+      font-weight: bold;
+      line-height: calc(52/31);
+      letter-spacing:0.18rem;
+      @include mq(){
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  &__contact{
+    @include mq(){
+      margin-bottom:3rem;
+    }
+    &__content{
+      background-size: cover;
+      background-position: top center;
+      padding: 5rem 0;
+    }
+    &__list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__card{
+      width: calc(289/1200*100%);
+      padding: 3rem 0;
+      border-radius: 1rem;
+      border:solid 1px $white;
+      @include mq(){
+        width: 45%;
+        padding: 3rem;
+        margin-bottom: 3rem;
+      }
+      &:nth-of-type(1){
+        background: $black;
+      }
+      &:nth-of-type(2){
+        background: $deepBeige;
+      }
+      &:nth-of-type(3){
+        background: $beige3;
+        & .l-footer__contact__listTtl{
+          color:$black;
+        }
+        & .l-footer__contact__desc{
+          color:$black;
+        }
+      }
+      &:nth-of-type(4){
+        background: $orange;
+      }
+    }
+    &__link{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    &__listTtl{
+      font-size: 2rem;
+      font-weight: bold;
+      color:$white;
+      line-height: calc(32/20);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    &__desc{
+      font-size: 1.4rem;
+      color:$white;
+      line-height: calc(22/14);
+      letter-spacing:-0.15rem;
+      text-align: center;
+    }
+  }
+  &__sns{
+    display: flex;
+    align-items: center;
+    height:11.2rem;
+    @include mq(){
+      flex-direction: column;
+      height: initial;
+    }
+    &__list{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      flex-wrap: wrap;
+      margin-bottom: 5rem;
+    }
+    &__imgWrap{
+      width: 2.8rem;
+      height: 2.8rem;
+      margin-left: 1.5rem;
+      margin-right:1rem;
+    }
+    &__txt{
+      font-size: 1.7rem;
+      letter-spacing:0.04rem;
+      line-height: calc(25.5/17);
+      @include mq(){
+        margin-bottom: 2rem;
+      }
+    }
+    &__item{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      @include mq(){
+        width: 50%;
+      }
+    }
+  }
+  &__desc{
+    width: 100%;
+    background:$beige4;
+    height: 9.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.5rem;
+    @include mq(){
+      padding: 5%;
+      height: initial;
+    }
+    &__txt{
+      text-align: center;
+      font-size: 1.28rem;
+      line-height: calc(23/12.8);
+      letter-spacing:0.04rem;
+      @include mq(){
+        width: 92%;
+      }
+    }
+  }
+  &__goTop{
+    &__link{
+      display:inline-block;
+      padding:.5rem 1rem;
+      color:$white;
+      background: $orange;
+      position: fixed;
+      right: 0;
+      bottom:0;
+    }
+  }
+}

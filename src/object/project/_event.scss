@@ -1,0 +1,23 @@
+.p-event{
+  &__ttl{
+    font-size: 3.84rem;
+    line-height: calc(49/38);
+    letter-spacing: .04rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__txt{
+    font-size: 1.6rem;
+    letter-spacing:.4rem;
+    line-height: calc(38/16);
+    font-weight: bold;
+    text-align: center;
+  }
+  &__time{
+    font-weight: bold;
+  }
+  &__googleMapWrap{
+    width: 100%;
+    aspect-ratio:877/493;
+  }
+}
