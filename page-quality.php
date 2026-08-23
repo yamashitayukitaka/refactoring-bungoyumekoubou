@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-quality-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
@@ -110,7 +112,9 @@ get_header();
 
   <section class="commitment__security1 noto-sans-jp " id="quality1">
     <?php
-    $quality = get_field('quality')[0];
+    $qualities = get_field('quality');
+    $quality = ($qualities && !empty($qualities[0])) ? $qualities[0] : null;
+    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
     ?>
     <div class="commitment__security1__content l_content_middle_80 support__content_t">
       <div class="support__content_text content_txt">
@@ -122,18 +126,25 @@ get_header();
             <span class="marker">ZEH(ゼッチ)</span>
           </p>
         </div>
-        <p class="common_meta_content">
-          <?php echo $quality['title']; ?>
-        </p>
-        <div class="commitment__security1_content_maintext">
-          <?php echo wp_kses_post($quality['txt']); ?>
+        <?php if (!empty($quality['title'])) : ?>
+          <p class="common_meta_content">
+            <?php echo $quality['title']; ?>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($quality['txt'])) : ?>
+          <div class="commitment__security1_content_maintext">
+            <?php echo wp_kses_post($quality['txt']); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <?php if (!empty($quality['img'])) : ?>
+        <div class="commitment__security1_content_img content_img">
+          <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
         </div>
-      </div>
-      <div class="commitment__security1_content_img content_img">
-        <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-      </div>
+      <?php endif; ?>
 
     </div>
+    <?php endif; ?>
     <div class="commitment__zehhousing u-mb50 l_content_middle_80">
       <div class="commitment__zehhousing_ttl u-mb30">
         <p class="c_title_orangeLine_t">豊後夢工房は<span class="big"> <br class="sp">ZEH住宅<br class="sp"></span>が標準です。</p>
@@ -228,7 +239,9 @@ get_header();
 
   <section class="commitment__security2 noto-sans-jp l_content_middle_80" id="quality2">
     <?php
-    $quality = get_field('quality')[1];
+    $qualities = get_field('quality');
+    $quality = ($qualities && !empty($qualities[1])) ? $qualities[1] : null;
+    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
     ?>
     <div class="  u-mb80 support__content_t">
       <div class="support__content_text content_txt">
@@ -238,18 +251,25 @@ get_header();
         <div class="common_subttl_deco_commitment">
           <p class="c_title_orangeLine_t"><span class="marker">高耐震</span></p>
         </div>
-        <p class="common_meta_content">
-          <?php echo $quality['title']; ?>
-        </p>
-        <div class="support__content_maintext">
-          <?php echo $quality['txt']; ?>
+        <?php if (!empty($quality['title'])) : ?>
+          <p class="common_meta_content">
+            <?php echo $quality['title']; ?>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($quality['txt'])) : ?>
+          <div class="support__content_maintext">
+            <?php echo $quality['txt']; ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <?php if (!empty($quality['img'])) : ?>
+        <div class="commitment__security2_content_img content_img">
+          <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
         </div>
-      </div>
-      <div class="commitment__security2_content_img content_img">
-        <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-      </div>
+      <?php endif; ?>
 
     </div>
+    <?php endif; ?>
     <div class="commitment__security2_grade mt-6 u-mb100">
       <div class="commitment__security2_img">
         <img src="<?php echo esc_url(IMG_URL . '/performance/performance_8.webp'); ?>" class="img_shadow">
@@ -283,33 +303,47 @@ get_header();
     </div>
     <?php
     $stable_structure = get_field('stable_structure');
+    if ($stable_structure && (!empty($stable_structure['img']) || !empty($stable_structure['txt']))) :
     ?>
     <div class="commitment__woodframe">
-      <div class="commitment__woodframe_img">
-        <img src="<?php echo esc_url($stable_structure['img']); ?>" class="img_shadow">
-      </div>
-      <div class="commitment__woodframe_txt">
-        <?php echo $stable_structure['txt']; ?>
-      </div>
+      <?php if (!empty($stable_structure['img'])) : ?>
+        <div class="commitment__woodframe_img">
+          <img src="<?php echo esc_url($stable_structure['img']); ?>" class="img_shadow">
+        </div>
+      <?php endif; ?>
+      <?php if (!empty($stable_structure['txt'])) : ?>
+        <div class="commitment__woodframe_txt">
+          <?php echo $stable_structure['txt']; ?>
+        </div>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
     <div class="common_commitment_subttl">
       <span class="font_orange">制震装置</span>で大地震のエネルギーを大幅に吸収
     </div>
     <div class="commitment__mersystem l_content_middle_70">
       <?php
       $energy = get_field('energy');
+      if ($energy && (!empty($energy['img']) || !empty($energy['txt']))) :
       ?>
       <div class="commitment__mersystem_top">
-        <div class="commitment__mersystem_img sp_tab">
-          <img src="<?php echo esc_url($energy['img']); ?>" class="img_shadow">
-        </div>
-        <div class=" commitment__mersystem_txt">
-          <?php echo $energy['txt']; ?>
-        </div>
-        <div class="commitment__mersystem_img pc">
-          <img src="<?php echo esc_url($energy['img']); ?>" class="img_shadow">
-        </div>
+        <?php if (!empty($energy['img'])) : ?>
+          <div class="commitment__mersystem_img sp_tab">
+            <img src="<?php echo esc_url($energy['img']); ?>" class="img_shadow">
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($energy['txt'])) : ?>
+          <div class=" commitment__mersystem_txt">
+            <?php echo $energy['txt']; ?>
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($energy['img'])) : ?>
+          <div class="commitment__mersystem_img pc">
+            <img src="<?php echo esc_url($energy['img']); ?>" class="img_shadow">
+          </div>
+        <?php endif; ?>
       </div>
+      <?php endif; ?>
       <div class="commitment__link u-mb40">
         くわしくは<a href="https://www.seishin-system.com/products/" target="_blank">こちら</a>
       </div>
@@ -392,7 +426,9 @@ get_header();
 
   <section class="commitment__security2 noto-sans-jp " id="quality3">
     <?php
-    $quality = get_field('quality')[2];
+    $qualities = get_field('quality');
+    $quality = ($qualities && !empty($qualities[2])) ? $qualities[2] : null;
+    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
     ?>
     <div class="  u-mb80 l_content_middle_80 support__content_t">
       <div class="support__content_text content_txt ">
@@ -402,17 +438,24 @@ get_header();
         <div class="common_subttl_deco_commitment">
           <p class="c_title_orangeLine_t"><span class="marker">高断熱</span></p>
         </div>
-        <p class="common_meta_content">
-          <?php echo $quality['title']; ?>
-        </p>
-        <div class="support__content_maintext">
-          <?php echo $quality['txt']; ?>
+        <?php if (!empty($quality['title'])) : ?>
+          <p class="common_meta_content">
+            <?php echo $quality['title']; ?>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($quality['txt'])) : ?>
+          <div class="support__content_maintext">
+            <?php echo $quality['txt']; ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <?php if (!empty($quality['img'])) : ?>
+        <div class="commitment__security2_content_img content_img">
+          <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
         </div>
-      </div>
-      <div class="commitment__security2_content_img content_img">
-        <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-      </div>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
     <div class="common_commitment_subttl mt-6">
       <span class="font_orange">豊後夢工房</span>の<span class="font_orange">高断熱仕様</span>
     </div>
@@ -479,7 +522,9 @@ get_header();
 
   <section class="commitment__security1 noto-sans-jp l_content_middle_80" id="quality4">
     <?php
-    $quality = get_field('quality')[3];
+    $qualities = get_field('quality');
+    $quality = ($qualities && !empty($qualities[3])) ? $qualities[3] : null;
+    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
     ?>
     <div class="commitment__security1__content u-mb80 support__content_t">
       <div class="support__content_text content_txt">
@@ -491,17 +536,24 @@ get_header();
               高気密</span>
           </p>
         </div>
-        <p class="common_meta_content">
-          <?php echo $quality['title']; ?>
-        </p>
-        <div class="commitment__security1_content_maintext">
-          <?php echo wp_kses_post($quality['txt']); ?>
+        <?php if (!empty($quality['title'])) : ?>
+          <p class="common_meta_content">
+            <?php echo $quality['title']; ?>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($quality['txt'])) : ?>
+          <div class="commitment__security1_content_maintext">
+            <?php echo wp_kses_post($quality['txt']); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <?php if (!empty($quality['img'])) : ?>
+        <div class="commitment__security1_content_img content_img">
+          <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
         </div>
-      </div>
-      <div class="commitment__security1_content_img content_img">
-        <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-      </div>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
 
   </section>
 
@@ -537,7 +589,9 @@ get_header();
 
   <section class="commitment__security2 noto-sans-jp l_content_middle_80 u-mb100" id="quality5">
     <?php
-    $quality = get_field('quality')[4];
+    $qualities = get_field('quality');
+    $quality = ($qualities && !empty($qualities[4])) ? $qualities[4] : null;
+    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
     ?>
     <div class=" support__content_t  support__content_t">
       <div class="support__content_text content_txt">
@@ -547,17 +601,24 @@ get_header();
         <div class="common_subttl_deco_commitment">
           <p class="c_title_orangeLine_t"><span class="marker">24時間換気システム</span></p>
         </div>
-        <p class="common_meta_content">
-          <?php echo $quality['title']; ?>
-        </p>
-        <div class="support__content_maintext ">
-          <?php echo $quality['txt']; ?>
+        <?php if (!empty($quality['title'])) : ?>
+          <p class="common_meta_content">
+            <?php echo $quality['title']; ?>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($quality['txt'])) : ?>
+          <div class="support__content_maintext ">
+            <?php echo $quality['txt']; ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <?php if (!empty($quality['img'])) : ?>
+        <div class="commitment__security2_content_img content_img">
+          <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
         </div>
-      </div>
-      <div class="commitment__security2_content_img content_img">
-        <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-      </div>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
   </section>
   <div class="l_content_middle_70 insulation_perform_wrap_t">
     <div class="insulation_perform mt-10 u-mb80 ">

@@ -21,7 +21,9 @@ get_header();
       </p> -->
     </div>
     <?php $mv = get_field('mv-concept-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <section class="concept__top-description">
@@ -70,17 +72,17 @@ get_header();
       </div>
     </div>
     <?php
-    $policy_one_img = get_field('concept-policy_one')['policy_one_img'];
-    $policy_one_txt = get_field('concept-policy_one')['policy_one_txt'];
-    $policy_two_img = get_field('concept-policy_two')['policy_two_img'];
-    $policy_two_txt = get_field('concept-policy_two')['policy_two_txt'];
-    $policy_three_img = get_field('concept-policy_three')['policy_three_img'];
-    $policy_three_txt = get_field('concept-policy_three')['policy_three_txt'];
+    $policy_one = get_field('concept-policy_one');
+    $policy_two = get_field('concept-policy_two');
+    $policy_three = get_field('concept-policy_three');
     ?>
+    <?php if ($policy_one && (!empty($policy_one['policy_one_img']) || !empty($policy_one['policy_one_txt']))) : ?>
     <div class="concept__policy1">
-      <div class="concept__policy1-image">
-        <img src="<?php echo esc_url($policy_one_img); ?>" alt="">
-      </div>
+      <?php if (!empty($policy_one['policy_one_img'])) : ?>
+        <div class="concept__policy1-image">
+          <img src="<?php echo esc_url($policy_one['policy_one_img']); ?>" alt="">
+        </div>
+      <?php endif; ?>
       <div class="concept__policy1-content">
         <h3 class="c-title--sectionLine concept__policy1-subttl">
           POLICY 01
@@ -91,18 +93,24 @@ get_header();
               という楽しさ</span>
           </p>
         </div>
-        <div class="concept__policy1-text u-mb25">
-          <?php echo $policy_one_txt; ?>
-        </div>
+        <?php if (!empty($policy_one['policy_one_txt'])) : ?>
+          <div class="concept__policy1-text u-mb25">
+            <?php echo $policy_one['policy_one_txt']; ?>
+          </div>
+        <?php endif; ?>
         <div class="content_center">
           <a class="link__btn" href="<?php echo esc_url(home_url('/design/')); ?>">デザインのこだわりを見る</a>
         </div>
       </div>
     </div>
+    <?php endif; ?>
+    <?php if ($policy_two && (!empty($policy_two['policy_two_img']) || !empty($policy_two['policy_two_txt']))) : ?>
     <div class="concept__policy1">
-      <div class="concept__policy2-image">
-        <img src="<?php echo esc_url($policy_two_img); ?>" alt="">
-      </div>
+      <?php if (!empty($policy_two['policy_two_img'])) : ?>
+        <div class="concept__policy2-image">
+          <img src="<?php echo esc_url($policy_two['policy_two_img']); ?>" alt="">
+        </div>
+      <?php endif; ?>
       <div class="concept__policy2-content">
         <h3 class="c-title--sectionLine concept__policy1-subttl">
           POLICY 02
@@ -114,19 +122,25 @@ get_header();
               <span class="u-orange">スマート</span>な家づくり</span>
           </p>
         </div>
-        <div class="concept__policy2-text u-mb25">
-          <?php echo $policy_two_txt; ?>
-        </div>
+        <?php if (!empty($policy_two['policy_two_txt'])) : ?>
+          <div class="concept__policy2-text u-mb25">
+            <?php echo $policy_two['policy_two_txt']; ?>
+          </div>
+        <?php endif; ?>
         <div class="content_center">
           <a class="link__btn" href="<?php echo esc_url(home_url('/cost/')); ?>">コストへのこだわりを見る</a>
         </div>
       </div>
     </div>
+    <?php endif; ?>
 
+    <?php if ($policy_three && (!empty($policy_three['policy_three_img']) || !empty($policy_three['policy_three_txt']))) : ?>
     <div class="concept__policy1 sp_tab_t_10">
-      <div class="concept__policy1-image ">
-        <img src="<?php echo esc_url($policy_three_img); ?>" alt="">
-      </div>
+      <?php if (!empty($policy_three['policy_three_img'])) : ?>
+        <div class="concept__policy1-image ">
+          <img src="<?php echo esc_url($policy_three['policy_three_img']); ?>" alt="">
+        </div>
+      <?php endif; ?>
       <div class="concept__policy1-content">
         <h3 class="c-title--sectionLine concept__policy1-subttl">
           POLICY 03
@@ -137,14 +151,17 @@ get_header();
               ということ</span>
           </p>
         </div>
-        <div class="concept__policy1-text u-mb25">
-          <?php echo $policy_three_txt; ?>
-        </div>
+        <?php if (!empty($policy_three['policy_three_txt'])) : ?>
+          <div class="concept__policy1-text u-mb25">
+            <?php echo $policy_three['policy_three_txt']; ?>
+          </div>
+        <?php endif; ?>
         <div class="content_center">
           <a class="link__btn" href="<?php echo esc_url(home_url('/quality/')); ?>">性能のこだわりを見る</a>
         </div>
       </div>
     </div>
+    <?php endif; ?>
 
   </section>
 
@@ -217,9 +234,12 @@ get_header();
             <span class="u-orange">Team 夢工房</span>の<span class="u-orange">デザイン力</span></span>
         </p>
       </div>
-      <p class="concept__system_team_content u-mb20">
-        <?php echo get_field('concept-team_txt'); ?>
-      </p>
+      <?php $team_txt = get_field('concept-team_txt'); ?>
+      <?php if ($team_txt) : ?>
+        <p class="concept__system_team_content u-mb20">
+          <?php echo $team_txt; ?>
+        </p>
+      <?php endif; ?>
       <div class="go_list_wrapper">
         <a class="form__btn" href="<?php echo esc_url(home_url('/staff/')); ?>">ゆめづくりスタッフ一覧へ</a>
       </div>

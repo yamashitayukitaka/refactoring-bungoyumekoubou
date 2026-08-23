@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-flow-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
@@ -51,10 +53,20 @@ get_header();
   <div class="bottom_m_20">
     <?php
     $showrooms = get_field('showroom');
-    for ($i = 0; $i < count($showrooms); $i++) {
-      $title = $showrooms[$i]['title'];
-      $subtitle = $showrooms[$i]['subtitle'];
-      $img = $showrooms[$i]['img'];
+    $hasShowroom = false;
+    if ($showrooms) {
+      foreach ($showrooms as $row) {
+        if (!empty($row['title']) || !empty($row['subtitle']) || !empty($row['img'])) {
+          $hasShowroom = true;
+          break;
+        }
+      }
+    }
+    if ($hasShowroom) :
+      foreach ($showrooms as $i => $showroom) :
+        if (empty($showroom['title']) && empty($showroom['subtitle']) && empty($showroom['img'])) {
+          continue;
+        }
     ?>
       <section class="service_model_wrap flow__showroom robots">
         <div class="flow__showroom_content">
@@ -62,11 +74,15 @@ get_header();
             <span>
               <?php echo sprintf("%02d", ($i + 1)); ?>.
             </span>
-            <?php echo $title; ?>
+            <?php if (!empty($showroom['title'])) : ?>
+              <?php echo $showroom['title']; ?>
+            <?php endif; ?>
           </div>
-          <div class="flow__showroom_text">
-            <?php echo wp_kses_post($subtitle); ?>
-          </div>
+          <?php if (!empty($showroom['subtitle'])) : ?>
+            <div class="flow__showroom_text">
+              <?php echo wp_kses_post($showroom['subtitle']); ?>
+            </div>
+          <?php endif; ?>
           <?php
           if ($i == count($showrooms) - 1) { ?>
             <div class="go_to_details">
@@ -76,9 +92,11 @@ get_header();
           }
           ?>
         </div>
-        <div class="flow__showroom_img">
-          <img src="<?php echo esc_url($img); ?>">
-        </div>
+        <?php if (!empty($showroom['img'])) : ?>
+          <div class="flow__showroom_img">
+            <img src="<?php echo esc_url($showroom['img']); ?>">
+          </div>
+        <?php endif; ?>
       </section>
       <?php
       if ($i != count($showrooms) - 1) {
@@ -89,7 +107,8 @@ get_header();
       }
       ?>
     <?php
-    }
+      endforeach;
+    endif;
     ?>
   </div>
 

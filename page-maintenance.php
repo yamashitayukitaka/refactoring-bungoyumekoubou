@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-maintenance-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
@@ -43,79 +45,99 @@ get_header();
   </section>
 
   <section class="u-mb100">
+    <?php
+    $maintenance = get_field('maintenance');
+    if ($maintenance && (!empty($maintenance['img']) || !empty($maintenance['txt']) || !empty($maintenance['description']))) :
+    ?>
     <div class="concept__policy1" id="maintenance-description">
-      <?php
-      $maintenance = get_field('maintenance');
-      $maintenance_txt = $maintenance['txt'];
-      $maintenance_img = $maintenance['img'];
-      $maintenance_description = $maintenance['description'];
-      ?>
       <div class="concept__policy1 maintenance-description">
-        <div class="design-right-image">
-          <img src="<?php echo esc_url($maintenance_img); ?>">
-        </div>
+        <?php if (!empty($maintenance['img'])) : ?>
+          <div class="design-right-image">
+            <img src="<?php echo esc_url($maintenance['img']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy2-content">
           <div class="u-mb20">
             <p class=" concept__policy1-mainttl maintenance-ttl"><span class="marker">
                 アフターメンテナンス</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $maintenance_txt; ?>
-          </div>
+          <?php if (!empty($maintenance['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $maintenance['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
-      <p class="l-content--middle maintenance-description">
-        <?php echo $maintenance_description; ?><br><br>
-      </p>
+      <?php if (!empty($maintenance['description'])) : ?>
+        <p class="l-content--middle maintenance-description">
+          <?php echo $maintenance['description']; ?><br><br>
+        </p>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
 
-    <div class="support__conver_devices">点検内容</div>
     <?php
     $inspection = get_field('inspection');
-    $img_1 = $inspection['img_1'];
-    $txt_1 = $inspection['txt_1'];
-    $img_2 = $inspection['img_2'];
-    $txt_2 = $inspection['txt_2'];
-    $img_3 = $inspection['img_3'];
-    $txt_3 = $inspection['txt_3'];
-    $description = $inspection['description'];
+    if ($inspection && (!empty($inspection['img_1']) || !empty($inspection['txt_1']) || !empty($inspection['img_2']) || !empty($inspection['txt_2']) || !empty($inspection['img_3']) || !empty($inspection['txt_3']) || !empty($inspection['description']))) :
     ?>
+    <div class="support__conver_devices">点検内容</div>
     <div class="l-content--middle samplelogo__three_points">
       <div class="samplelogo__three_items_renovation mx-auto u-mb40">
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_1); ?>">
+        <?php if (!empty($inspection['img_1']) || !empty($inspection['txt_1'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($inspection['img_1'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($inspection['img_1']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($inspection['txt_1'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $inspection['txt_1']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_1; ?>
+        <?php endif; ?>
+        <?php if (!empty($inspection['img_2']) || !empty($inspection['txt_2'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($inspection['img_2'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($inspection['img_2']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($inspection['txt_2'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $inspection['txt_2']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_2); ?>">
+        <?php endif; ?>
+        <?php if (!empty($inspection['img_3']) || !empty($inspection['txt_3'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($inspection['img_3'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($inspection['img_3']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($inspection['txt_3'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $inspection['txt_3']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_2; ?>
-          </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_3); ?>">
-          </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_3; ?>
-          </div>
-        </div>
+        <?php endif; ?>
       </div>
       <div class="inspection-description">
         <img class="inspection-description--img" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_5.webp'); ?>">
 
         <img class="inspection_description_img2" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_6.webp'); ?>">
-        <p class="inspection-description--txt"><?php echo $description; ?></p>
+        <?php if (!empty($inspection['description'])) : ?>
+          <p class="inspection-description--txt"><?php echo $inspection['description']; ?></p>
+        <?php endif; ?>
 
       </div>
     </div>
+    <?php endif; ?>
 
     <div class="support__conver_devices">保証と保守期間</div>
     <div class="l-content--middle inspection-description">

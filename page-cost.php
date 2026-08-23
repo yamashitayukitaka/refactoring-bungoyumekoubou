@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-cost-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
@@ -111,13 +113,14 @@ get_header();
     <div class="concept__policy1" id="cost1">
       <?php
       $cost = get_field('cost_one');
-      $cost_txt = $cost['txt'];
-      $cost_img = $cost['img'];
+      if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-right-image">
-          <img src="<?php echo esc_url($cost_img); ?>" class="img_shadow">
-        </div>
+        <?php if (!empty($cost['img'])) : ?>
+          <div class="design-right-image">
+            <img src="<?php echo esc_url($cost['img']); ?>" class="img_shadow">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy2-content">
           <div class="design__paint1_content_ttl">
             <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
@@ -128,11 +131,14 @@ get_header();
                 サポートする家づくり</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $cost_txt; ?>
-          </div>
+          <?php if (!empty($cost['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $cost['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
+      <?php endif; ?>
     </div>
 
     <div class="common_commitment_subttl mt-6">
@@ -184,17 +190,14 @@ get_header();
     <div class="concept__policy1" id="cost2">
       <?php
       $cost = get_field('cost_two');
-      $cost_txt = $cost['txt'];
-      $cost_img = $cost['img'];
-      $point_txt_one = $cost['subtxt_one'];
-      $point_img_one = $cost['subimg_one'];
-      $point_txt_two = $cost['subtxt_two'];
-      $point_img_two = $cost['subimg_two'];
+      if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-left-image">
-          <img src="<?php echo esc_url($cost_img); ?>" alt="" class="img_shadow">
-        </div>
+        <?php if (!empty($cost['img'])) : ?>
+          <div class="design-left-image">
+            <img src="<?php echo esc_url($cost['img']); ?>" alt="" class="img_shadow">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy1-content">
 
           <div class="design__paint1_content_ttl">
@@ -206,11 +209,14 @@ get_header();
                 充実した<span class="u-orange">標準設備</span></span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $cost_txt; ?>
-          </div>
+          <?php if (!empty($cost['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $cost['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
+      <?php endif; ?>
 
 
       <div class="common_commitment_subttl mt-6">
@@ -301,16 +307,14 @@ get_header();
     <div class="concept__policy1" id="cost3">
       <?php
       $cost = get_field('cost_three');
-      $cost_txt = $cost['txt'];
-      $cost_img = $cost['img'];
-      // $point_img_one = $cost['point_one'];
-      // $point_img_two = $cost['point_two'];
-      // $point_img_three = $cost['point_three'];
+      if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
       <div class="concept__policy1 cost-three">
-        <div class="design-right-image">
-          <img src="<?php echo esc_url($cost_img); ?>" class="img_shadow">
-        </div>
+        <?php if (!empty($cost['img'])) : ?>
+          <div class="design-right-image">
+            <img src="<?php echo esc_url($cost['img']); ?>" class="img_shadow">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy2-content">
 
           <div class="design__paint1_content_ttl">
@@ -323,11 +327,14 @@ get_header();
                 サポート体制</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $cost_txt; ?>
-          </div>
+          <?php if (!empty($cost['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $cost['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
+      <?php endif; ?>
 
       <div class="design__paint1">
         <div class="design__paint1_container noto-san-jp">
@@ -411,17 +418,14 @@ get_header();
     <div class="concept__policy1" id="cost4">
       <?php
       $cost = get_field('cost_four');
-      $cost_txt = $cost['txt'];
-      $cost_img = $cost['img'];
-      $point_txt_one = $cost['subtxt_one'];
-      $point_img_one = $cost['subimg_one'];
-      $point_txt_two = $cost['subtxt_two'];
-      $point_img_two = $cost['subimg_two'];
+      if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-left-image">
-          <img src="<?php echo esc_url($cost_img); ?>" alt="" class="img_shadow">
-        </div>
+        <?php if (!empty($cost['img'])) : ?>
+          <div class="design-left-image">
+            <img src="<?php echo esc_url($cost['img']); ?>" alt="" class="img_shadow">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy1-content">
 
           <div class="design__paint1_content_ttl">
@@ -434,11 +438,14 @@ get_header();
                 <span class="u-orange">丁寧</span>なプランニング</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $cost_txt; ?>
-          </div>
+          <?php if (!empty($cost['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $cost['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
+      <?php endif; ?>
 
       <div class="design__paint1">
         <div class="design__paint1_container noto-san-jp">

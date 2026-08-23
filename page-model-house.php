@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-model-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
@@ -44,10 +46,8 @@ get_header();
 
   <section class="TOS-housing service_model_wrap u-mb100">
     <?php
-    $model = get_field('model-sample')[0];
-    $studio_img = $model['img_1'];
-    $design_img = $model['img_2'];
-    $description = $model['desc'];
+    $models = get_field('model-sample');
+    $model = ($models && !empty($models[0])) ? $models[0] : null;
     ?>
     <figure class="title__left-ribbon">
       <img src="<?php echo esc_url(IMG_URL . '/left-ribbon.webp'); ?>">
@@ -67,15 +67,23 @@ get_header();
             スタイリッシュなデザイン</span></p>
       </div>
     </div>
-    <figure class="dream_studio">
-      <img src="<?php echo esc_url($studio_img); ?>">
-    </figure>
-    <figure class="dream_design">
-      <img src="<?php echo esc_url($design_img); ?>">
-    </figure>
-    <div class="TOS-housing__text u-mb100">
-      <?php echo wp_kses_post($description); ?>
-    </div>
+    <?php if ($model && (!empty($model['img_1']) || !empty($model['img_2']) || !empty($model['desc']))) : ?>
+    <?php if (!empty($model['img_1'])) : ?>
+      <figure class="dream_studio">
+        <img src="<?php echo esc_url($model['img_1']); ?>">
+      </figure>
+    <?php endif; ?>
+    <?php if (!empty($model['img_2'])) : ?>
+      <figure class="dream_design">
+        <img src="<?php echo esc_url($model['img_2']); ?>">
+      </figure>
+    <?php endif; ?>
+    <?php if (!empty($model['desc'])) : ?>
+      <div class="TOS-housing__text u-mb100">
+        <?php echo wp_kses_post($model['desc']); ?>
+      </div>
+    <?php endif; ?>
+    <?php endif; ?>
     <div class="service_model_gallery">
       <?php get_template_part('hasThumbSlider-loop', 'hasThumbSlider'); ?>
     </div>
@@ -91,10 +99,8 @@ get_header();
 
   <section class="TOS-housing service_model_wrap u-mb100">
     <?php
-    $model = get_field('model-sample')[1];
-    $studio_img = $model['img_1'];
-    $design_img = $model['img_2'];
-    $description = $model['desc'];
+    $models = get_field('model-sample');
+    $model = ($models && !empty($models[1])) ? $models[1] : null;
     ?>
     <figure class="title__right-ribbon">
       <img src="<?php echo esc_url(IMG_URL . '/right-ribbon.webp'); ?>">
@@ -117,21 +123,41 @@ get_header();
             ヨーロピアンな家</span></p>
       </div>
     </div>
-    <figure class="dream_studio_shelly">
-      <img src="<?php echo esc_url($studio_img); ?>">
-    </figure>
-    <figure class="dream_design">
-      <img src="<?php echo esc_url($design_img); ?>">
-    </figure>
-    <div class="TOS-housing__text">
-      <?php echo wp_kses_post($description); ?>
-    </div>
+    <?php if ($model && (!empty($model['img_1']) || !empty($model['img_2']) || !empty($model['desc']))) : ?>
+    <?php if (!empty($model['img_1'])) : ?>
+      <figure class="dream_studio_shelly">
+        <img src="<?php echo esc_url($model['img_1']); ?>">
+      </figure>
+    <?php endif; ?>
+    <?php if (!empty($model['img_2'])) : ?>
+      <figure class="dream_design">
+        <img src="<?php echo esc_url($model['img_2']); ?>">
+      </figure>
+    <?php endif; ?>
+    <?php if (!empty($model['desc'])) : ?>
+      <div class="TOS-housing__text">
+        <?php echo wp_kses_post($model['desc']); ?>
+      </div>
+    <?php endif; ?>
+    <?php endif; ?>
 
     <span class="house__details">
       <a class="link__btn" href="https://sankaido.com/shelly-house/" target="_blank">Shelly Houseについて</a>
     </span>
 
     <?php $hasThumbsliders = get_field('b-img'); ?>
+    <?php
+    $hasGalleryB = false;
+    if ($hasThumbsliders) {
+      foreach ($hasThumbsliders as $row) {
+        if (!empty($row['img'])) {
+          $hasGalleryB = true;
+          break;
+        }
+      }
+    }
+    ?>
+    <?php if ($hasGalleryB) : ?>
 
     <section class="service_model_gallery u-mb100">
       <h3 class="c-title--sectionEn">
@@ -144,21 +170,26 @@ get_header();
         <?php if ($hasThumbsliders) : ?>
           <ul class="js-hasThumbSlider c-hasThumbSlider__list">
             <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-              <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+              <?php if (!empty($hasThumbslider['img'])) : ?>
+                <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+              <?php endif; ?>
             <?php endforeach; ?>
           </ul>
           <ul class="c-hasThumbSlider__thumbnail__list">
             <?php $count = 0; ?>
             <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-              <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
-                <img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
-              </li>
+              <?php if (!empty($hasThumbslider['img'])) : ?>
+                <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
+                  <img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+                </li>
+              <?php endif; ?>
             <?php endforeach; ?>
           </ul>
         <?php endif; ?>
       </div>
 
     </section>
+    <?php endif; ?>
 
     <div class="u-center u-mb100">
       <span class="house__details">
@@ -171,10 +202,8 @@ get_header();
 
   <section class="TOS-housing service_model_wrap u-mb100">
     <?php
-    $model = get_field('model-sample')[2];
-    $studio_img = $model['img_1'];
-    $design_img = $model['img_2'];
-    $description = $model['desc'];
+    $models = get_field('model-sample');
+    $model = ($models && !empty($models[2])) ? $models[2] : null;
     ?>
 
      <figure class="title__left-ribbon">
@@ -201,21 +230,41 @@ get_header();
       </div>
     </div>
 
-    <figure class="dream_studio_shelly">
-        <img src="<?php echo esc_url($studio_img); ?>">
+    <?php if ($model && (!empty($model['img_1']) || !empty($model['img_2']) || !empty($model['desc']))) : ?>
+    <?php if (!empty($model['img_1'])) : ?>
+      <figure class="dream_studio_shelly">
+        <img src="<?php echo esc_url($model['img_1']); ?>">
       </figure>
+    <?php endif; ?>
+    <?php if (!empty($model['img_2'])) : ?>
       <figure class="dream_design">
-        <img src="<?php echo esc_url($design_img); ?>">
+        <img src="<?php echo esc_url($model['img_2']); ?>">
       </figure>
+    <?php endif; ?>
+    <?php if (!empty($model['desc'])) : ?>
       <div class="TOS-housing__text">
-        <?php echo wp_kses_post($description); ?>
+        <?php echo wp_kses_post($model['desc']); ?>
       </div>
+    <?php endif; ?>
+    <?php endif; ?>
 
     <span class="house__details">
       <a class="link__btn" href="<?php echo esc_url (home_url('irohaie') ); ?>" target="_blank">いろは家について</a>
     </span>
 
     <?php $hasThumbsliders = get_field('c-img'); ?>
+    <?php
+    $hasGalleryC = false;
+    if ($hasThumbsliders) {
+      foreach ($hasThumbsliders as $row) {
+        if (!empty($row['img'])) {
+          $hasGalleryC = true;
+          break;
+        }
+      }
+    }
+    ?>
+    <?php if ($hasGalleryC) : ?>
 
     <section class="service_model_gallery u-mb100">
       <h3 class="c-title--sectionEn">
@@ -228,7 +277,7 @@ get_header();
         <?php if ($hasThumbsliders) : ?>
           <ul class="js-hasThumbSlider c-hasThumbSlider__list">
             <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-              <?php if ($hasThumbslider['img']) : ?>
+              <?php if (!empty($hasThumbslider['img'])) : ?>
                 <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
               <?php endif; ?>
             <?php endforeach; ?>
@@ -236,7 +285,7 @@ get_header();
           <ul class="c-hasThumbSlider__thumbnail__list">
             <?php $count = 0; ?>
             <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-              <?php if ($hasThumbslider['img']) : ?>
+              <?php if (!empty($hasThumbslider['img'])) : ?>
                 <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
                   <img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                 </li>
@@ -247,6 +296,7 @@ get_header();
       </div>
 
     </section>
+    <?php endif; ?>
 
     <div class="u-center u-mb100">
       <span class="house__details">

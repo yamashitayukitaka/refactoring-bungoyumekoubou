@@ -35,64 +35,64 @@ get_header();
 <table class = "p-recruit__table">
     <tbody class = "p-recruit__tbody">
 
-    <?php if ($requirements) :?><!--サブフィールドを持っているか条件分岐。ACFでグループを使用するときはこの条件分岐が必要 -->
-      <?php if ($requirements['jobName']):?><!--サブフィールドが値を持っているかの条件分岐-->
+    <?php if ($requirements && (!empty($requirements['jobName']) || !empty($requirements['lisence']) || !empty($requirements['salary']) || !empty($requirements['bonus']) || !empty($requirements['raise']) || !empty($requirements['location']) || !empty($requirements['vacation']) || !empty($requirements['use']) || !empty($requirements['insurance']))) :?><!--サブフィールドを持っているか条件分岐。ACFでグループを使用するときはこの条件分岐が必要 -->
+      <?php if ($requirements && !empty($requirements['jobName'])):?>
         <tr  class = "p-recruit__tr">
           <th class = "p-recruit__th">職種名</th>
           <td class = "p-recruit__td"><?php echo $requirements['jobName']; ?></td>
         </tr>
       <?php endif; ?>
       
-      <?php if ($requirements['lisence']):?>
+      <?php if (!empty($requirements['lisence'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">資格</th>
           <td class = "p-recruit__td"><?php echo $requirements['lisence']; ?></td>
         </tr>
       <?php endif; ?>
       
-      <?php if ($requirements['salary']):?>
+      <?php if (!empty($requirements['salary'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">給与</th>
           <td class = "p-recruit__td"><?php echo $requirements['salary']; ?></td>
         </tr>
       <?php endif; ?>
       
-      <?php if ($requirements['bonus']):?>
+      <?php if (!empty($requirements['bonus'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">賞与</th>
           <td class = "p-recruit__td"><?php echo $requirements['bonus']; ?></td>
         </tr>
       <?php endif; ?>
 
-      <?php if ($requirements['raise']):?>
+      <?php if (!empty($requirements['raise'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">昇給</th>
           <td class = "p-recruit__td"><?php echo $requirements['raise']; ?></td>
         </tr>
       <?php endif; ?>
       
-      <?php if ($requirements['location']):?>
+      <?php if (!empty($requirements['location'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">勤務地</th>
           <td class = "p-recruit__td"><?php echo $requirements['location']; ?></td>
         </tr>
       <?php endif; ?>
       
-      <?php if ($requirements['vacation']):?>
+      <?php if (!empty($requirements['vacation'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">休日・休暇</th>
           <td class = "p-recruit__td"><?php echo $requirements['vacation']; ?></td>
         </tr>
       <?php endif; ?>
 
-      <?php if ($requirements['use']):?>
+      <?php if (!empty($requirements['use'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">使用期間</th>
           <td class = "p-recruit__td"><?php echo $requirements['use']; ?></td>
         </tr>
       <?php endif; ?>
       
-      <?php if ($requirements['insurance']):?>
+      <?php if (!empty($requirements['insurance'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">社会保険</th>
           <td class = "p-recruit__td"><?php echo $requirements['insurance']; ?></td>

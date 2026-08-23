@@ -53,7 +53,10 @@ get_header();
             <li class="p-staff__list__item">
               <a href="<?php the_permalink(); ?>">
                 <figure class="p-staff__img__wrap">
-                  <img src="<?php the_field('staff-img'); ?>" alt="スタッフイメージ" class="p-staff__img">
+                  <?php $staff_img = get_field('staff-img'); ?>
+                  <?php if ($staff_img) : ?>
+                  <img src="<?php echo esc_url($staff_img); ?>" alt="スタッフイメージ" class="p-staff__img">
+                  <?php endif; ?>
                 </figure>
                 <p class="p-staff__name">
                   <?php the_title(); ?>

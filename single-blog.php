@@ -36,17 +36,26 @@ get_header();
     <?php if( have_rows('contents') ): //柔軟コンテンツフィールドの値を持っているかどうかをチェック ?>
       <?php while ( have_rows('contents') ) : the_row(); //値のループ ?>
         <?php if( get_row_layout() == 'img-column' ): //レイアウト名1があった場合に出力 ?>
+          <?php $img = get_sub_field('img'); ?>
+          <?php if ($img) : ?>
           <div class = "p-flex__one__imgWrap u-mb50">
-            <img src = "<?php the_sub_field('img');?>">
+            <img src = "<?php echo esc_url($img);?>">
           </div>
+          <?php endif; ?>
         <?php elseif( get_row_layout() == 'ttl-column' ): //レイアウト名2があった場合に出力 ?>
+          <?php $ttl = get_sub_field('ttl'); ?>
+          <?php if ($ttl) : ?>
           <h4 class = "c-title--middle u-mb50">
-            <?php the_sub_field('ttl'); //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
+            <?php echo $ttl; //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
           </h4>
+          <?php endif; ?>
         <?php elseif( get_row_layout() == 'txt-column' ): //レイアウト名2があった場合に出力 ?>
+          <?php $txt = get_sub_field('txt'); ?>
+          <?php if ($txt) : ?>
           <p class = "u-mb50">
-            <?php the_sub_field('txt'); //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
+            <?php echo $txt; //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
           </p>
+          <?php endif; ?>
         <?php endif; ?>
       <?php endwhile; ?>
     <?php endif; ?>

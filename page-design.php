@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-design-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- <section class="l_content_middle_70 u-mb50 support-title">
@@ -136,18 +138,16 @@ get_header();
   <section class="design-wrapper u-mb100">
     <div class="concept__policy1" id="design1">
       <?php
-      $design = get_field('designs')[0];
-      $design_txt = $design['txt'];
-      $design_img = $design['img'];
-      $point_txt_one = $design['point_txt_one'];
-      $point_img_one = $design['point_img_one'];
-      $point_txt_two = $design['point_txt_two'];
-      $point_img_two = $design['point_img_two'];
+      $designs = get_field('designs');
+      $design = ($designs && !empty($designs[0])) ? $designs[0] : null;
+      if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']) || !empty($design['point_img_two']) || !empty($design['point_txt_two']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-right-image">
-          <img src="<?php echo esc_url($design_img); ?>">
-        </div>
+        <?php if (!empty($design['img'])) : ?>
+          <div class="design-right-image">
+            <img src="<?php echo esc_url($design['img']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy2-content">
           <h3 class="c-title--sectionLine concept__policy1-subttl">
             DESIGN 01
@@ -159,17 +159,21 @@ get_header();
                 <span class="u-orange">動線</span>をつくるデザイン</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $design_txt; ?>
-          </div>
+          <?php if (!empty($design['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $design['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
       <div class="design__paint1">
         <div class="design__paint1_container noto-san-jp">
 
-          <div class="design__paint1_img">
-            <img src="<?php echo esc_url($point_img_one); ?>">
-          </div>
+          <?php if (!empty($design['point_img_one'])) : ?>
+            <div class="design__paint1_img">
+              <img src="<?php echo esc_url($design['point_img_one']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="design__paint1_content">
             <div class="design__paint1_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
@@ -177,17 +181,21 @@ get_header();
             <p class="paint_subtit">
               <span class=" u-orange">家事らく</span>動線
             </p>
-            <div class="design__paint2_content_txt">
-              <?php echo $point_txt_one; ?>
-            </div>
+            <?php if (!empty($design['point_txt_one'])) : ?>
+              <div class="design__paint2_content_txt">
+                <?php echo $design['point_txt_one']; ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
       <div class="design__paint2">
         <div class="design__paint2_container noto-san-jp">
-          <div class="design__paint2_img sp_tab">
-            <img src="<?php echo esc_url($point_img_two); ?>">
-          </div>
+          <?php if (!empty($design['point_img_two'])) : ?>
+            <div class="design__paint2_img sp_tab">
+              <img src="<?php echo esc_url($design['point_img_two']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="design__paint2_content">
             <div class="design__paint2_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
@@ -195,16 +203,21 @@ get_header();
             <p class="paint_subtit">
               <span class=" u-orange">子育て</span>動線
             </p>
-            <div class="design__paint2_content_txt">
-              <?php echo $point_txt_two; ?>
+            <?php if (!empty($design['point_txt_two'])) : ?>
+              <div class="design__paint2_content_txt">
+                <?php echo $design['point_txt_two']; ?>
+              </div>
+            <?php endif; ?>
+          </div>
+          <?php if (!empty($design['point_img_two'])) : ?>
+            <div class="design__paint2_img pc">
+              <img src="<?php echo esc_url($design['point_img_two']); ?>">
             </div>
-          </div>
-          <div class="design__paint2_img pc">
-            <img src="<?php echo esc_url($point_img_two); ?>">
-          </div>
+          <?php endif; ?>
 
         </div>
       </div>
+      <?php endif; ?>
     </div>
 
     <div class="border_bottom bottom_m_7">
@@ -214,18 +227,16 @@ get_header();
     <!-- point2 -->
     <div class="concept__policy1" id="design2">
       <?php
-      $design = get_field('designs')[1];
-      $design_txt = $design['txt'];
-      $design_img = $design['img'];
-      $point_txt_one = $design['point_txt_one'];
-      $point_img_one = $design['point_img_one'];
-      // $point_txt_two = $design['point_txt_two'];
-      // $point_img_two = $design['point_img_two'];
+      $designs = get_field('designs');
+      $design = ($designs && !empty($designs[1])) ? $designs[1] : null;
+      if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-left-image">
-          <img src="<?php echo esc_url($design_img); ?>" alt="">
-        </div>
+        <?php if (!empty($design['img'])) : ?>
+          <div class="design-left-image">
+            <img src="<?php echo esc_url($design['img']); ?>" alt="">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy1-content">
           <h3 class="c-title--sectionLine concept__policy1-subttl">
             DESIGN 02
@@ -237,9 +248,11 @@ get_header();
                 デザインする</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $design_txt; ?>
-          </div>
+          <?php if (!empty($design['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $design['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
 
@@ -247,9 +260,11 @@ get_header();
       <div class="design__paint1 sp_b_10">
         <div class="design__paint1_container noto-san-jp">
 
-          <div class="design__paint1_img">
-            <img src="<?php echo esc_url($point_img_one); ?>">
-          </div>
+          <?php if (!empty($design['point_img_one'])) : ?>
+            <div class="design__paint1_img">
+              <img src="<?php echo esc_url($design['point_img_one']); ?>">
+            </div>
+          <?php endif; ?>
           <div class=" design__paint1_content">
             <div class="design__paint1_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
@@ -258,12 +273,15 @@ get_header();
               <span class=" u-orange">こんなお家がいいな</span>を<br>
               楽しく共有
             </p>
-            <div class="design__paint2_content_txt">
-              <?php echo $point_txt_one; ?>
-            </div>
+            <?php if (!empty($design['point_txt_one'])) : ?>
+              <div class="design__paint2_content_txt">
+                <?php echo $design['point_txt_one']; ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
+      <?php endif; ?>
       <!-- <div class="design__paint2">
         <div class="design__paint2_container noto-san-jp">
           <div class="design__paint2_content">
@@ -292,18 +310,16 @@ get_header();
     <!-- point3 -->
     <div class="concept__policy1" id="design3">
       <?php
-      $design = get_field('designs')[2];
-      $design_txt = $design['txt'];
-      $design_img = $design['img'];
-      $point_txt_one = $design['point_txt_one'];
-      $point_img_one = $design['point_img_one'];
-      $point_txt_two = $design['point_txt_two'];
-      $point_img_two = $design['point_img_two'];
+      $designs = get_field('designs');
+      $design = ($designs && !empty($designs[2])) ? $designs[2] : null;
+      if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']) || !empty($design['point_img_two']) || !empty($design['point_txt_two']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-right-image">
-          <img src="<?php echo esc_url($design_img); ?>">
-        </div>
+        <?php if (!empty($design['img'])) : ?>
+          <div class="design-right-image">
+            <img src="<?php echo esc_url($design['img']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy2-content">
           <h3 class="c-title--sectionLine concept__policy1-subttl">
             DESIGN 03
@@ -316,17 +332,21 @@ get_header();
               </span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $design_txt; ?>
-          </div>
+          <?php if (!empty($design['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $design['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
       <div class="design__paint1">
         <div class="design__paint1_container noto-san-jp">
 
-          <div class="design__paint1_img">
-            <img src="<?php echo esc_url($point_img_one); ?>">
-          </div>
+          <?php if (!empty($design['point_img_one'])) : ?>
+            <div class="design__paint1_img">
+              <img src="<?php echo esc_url($design['point_img_one']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="design__paint1_content">
             <div class="design__paint1_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
@@ -337,17 +357,21 @@ get_header();
                 家全体に<span class="u-orange">行き渡る</span>空間デザイン
               </p>
             </div>
-            <div class="design__paint2_content_txt">
-              <?php echo $point_txt_one; ?>
-            </div>
+            <?php if (!empty($design['point_txt_one'])) : ?>
+              <div class="design__paint2_content_txt">
+                <?php echo $design['point_txt_one']; ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
       </div>
       <div class="design__paint2">
         <div class="design__paint2_container noto-san-jp">
-          <div class="design__paint2_img sp_tab">
-            <img src="<?php echo esc_url($point_img_two); ?>">
-          </div>
+          <?php if (!empty($design['point_img_two'])) : ?>
+            <div class="design__paint2_img sp_tab">
+              <img src="<?php echo esc_url($design['point_img_two']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="design__paint2_content">
             <div class="design__paint2_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
@@ -356,19 +380,24 @@ get_header();
               <span class="u-orange">エネルギー効率</span>を<br>
               <span class="u-orange">最大化</span>するデザイン
             </p>
-            <div class="design__paint2_content_txt">
-              <?php echo $point_txt_two; ?>
-            </div>
+            <?php if (!empty($design['point_txt_two'])) : ?>
+              <div class="design__paint2_content_txt">
+                <?php echo $design['point_txt_two']; ?>
+              </div>
+            <?php endif; ?>
             <div class="content_center top_p_3">
               <a class="link__btn" href="<?php echo esc_url(home_url('/quality/')); ?>">性能について</a>
             </div>
           </div>
-          <div class="design__paint2_img pc">
-            <img src="<?php echo esc_url($point_img_two); ?>">
-          </div>
+          <?php if (!empty($design['point_img_two'])) : ?>
+            <div class="design__paint2_img pc">
+              <img src="<?php echo esc_url($design['point_img_two']); ?>">
+            </div>
+          <?php endif; ?>
 
         </div>
       </div>
+      <?php endif; ?>
     </div>
 
     <div class="border_bottom bottom_m_7">
@@ -377,18 +406,16 @@ get_header();
     <!-- point4 -->
     <div class="concept__policy1 bottom_m_15" id="design4">
       <?php
-      $design = get_field('designs')[3];
-      $design_txt = $design['txt'];
-      $design_img = $design['img'];
-      $point_txt_one = $design['point_txt_one'];
-      $point_img_one = $design['point_img_one'];
-      // $point_txt_two = $design['point_txt_two'];
-      // $point_img_two = $design['point_img_two'];
+      $designs = get_field('designs');
+      $design = ($designs && !empty($designs[3])) ? $designs[3] : null;
+      if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']))) :
       ?>
       <div class="concept__policy1">
-        <div class="design-left-image">
-          <img src="<?php echo esc_url($design_img); ?>" alt="">
-        </div>
+        <?php if (!empty($design['img'])) : ?>
+          <div class="design-left-image">
+            <img src="<?php echo esc_url($design['img']); ?>" alt="">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy1-content">
           <h3 class="c-title--sectionLine concept__policy1-subttl">
             DESIGN 04
@@ -400,9 +427,11 @@ get_header();
                 しやすいデザイン</span>
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $design_txt; ?>
-          </div>
+          <?php if (!empty($design['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $design['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
 
@@ -410,9 +439,11 @@ get_header();
       <div class="design__paint1">
         <div class="design__paint1_container noto-san-jp">
 
-          <div class="design__paint1_img">
-            <img src="<?php echo esc_url($point_img_one); ?>">
-          </div>
+          <?php if (!empty($design['point_img_one'])) : ?>
+            <div class="design__paint1_img">
+              <img src="<?php echo esc_url($design['point_img_one']); ?>">
+            </div>
+          <?php endif; ?>
           <div class=" design__paint1_content">
             <div class="design__paint1_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
@@ -422,15 +453,18 @@ get_header();
                 <span class="u-orange">故障時</span>にもすぐに<span class="u-orange">修理</span>しやすく
               </p>
             </div>
-            <div class="design__paint2_content_txt">
-              <?php echo $point_txt_one; ?>
-            </div>
+            <?php if (!empty($design['point_txt_one'])) : ?>
+              <div class="design__paint2_content_txt">
+                <?php echo $design['point_txt_one']; ?>
+              </div>
+            <?php endif; ?>
             <div class="content_center top_p_3">
               <a class="link__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサポートについて</a>
             </div>
           </div>
         </div>
       </div>
+      <?php endif; ?>
       <!-- <div class="design__paint2">
         <div class="design__paint2_container noto-san-jp">
           <div class="design__paint2_content">

@@ -16,7 +16,8 @@
         ]
       );?>
 
-      <?php if(get_field('property-category')): ?>
+      <?php $property_category = get_field('property-category'); ?>
+      <?php if($property_category): ?>
         <?php foreach($terms as $term):?>
           <span class = "c-id u-mb8"><?php echo esc_html($term->name); ?></span>
         <?php endforeach;?>
@@ -33,7 +34,8 @@
         ]
       );?>
 
-      <?php if(get_field('property-area')): ?>
+      <?php $property_area = get_field('property-area'); ?>
+      <?php if($property_area): ?>
         <?php foreach($tags as $tag):?>
           <div><span class = "p-content__tag"><?php echo esc_html($tag->name); ?></span></div>
         <?php endforeach;?>
@@ -43,22 +45,26 @@
       </p>
       <?php 
         $topInfo = get_field('top-info');
-        if($topInfo):
-        $topInfoArea = $topInfo['area'];
-        $topInfoSchool = $topInfo['school'];
+        if($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']))):
       ?>
-        <p class = "p-content__list__txt">土地面積：<?php echo esc_html($topInfoArea);?></p>
-        <p class = "p-content__list__txt">校区：<?php echo esc_html($topInfoSchool);?></p>
+        <?php if (!empty($topInfo['area'])): ?>
+        <p class = "p-content__list__txt">土地面積：<?php echo esc_html($topInfo['area']);?></p>
+        <?php endif; ?>
+        <?php if (!empty($topInfo['school'])): ?>
+        <p class = "p-content__list__txt">校区：<?php echo esc_html($topInfo['school']);?></p>
+        <?php endif; ?>
       <?php endif; ?>
 
       <?php 
         $topInfoUsed = get_field('top-info-used');
-        if($topInfoUsed):
-        $topInfoUsedFloor = $topInfoUsed['floor'];
-        $topInfoUsedSchool = $topInfoUsed['school'];
+        if($topInfoUsed && (!empty($topInfoUsed['floor']) || !empty($topInfoUsed['school']))):
       ?>
-        <p class = "p-content__list__txt">間取り：<?php echo esc_html($topInfoUsedFloor);?></p>
-        <p class = "p-content__list__txt">校区：<?php echo esc_html($topInfoUsedSchool);?></p>
+        <?php if (!empty($topInfoUsed['floor'])): ?>
+        <p class = "p-content__list__txt">間取り：<?php echo esc_html($topInfoUsed['floor']);?></p>
+        <?php endif; ?>
+        <?php if (!empty($topInfoUsed['school'])): ?>
+        <p class = "p-content__list__txt">校区：<?php echo esc_html($topInfoUsed['school']);?></p>
+        <?php endif; ?>
       <?php endif; ?>
 
     </div>

@@ -20,7 +20,9 @@ get_header();
     </div>
 
     <!-- <?php $mv = get_field('mv-irohaie-img'); ?>
-    <figure class="c-heig__img__wrap c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure> -->
+    <?php if ($mv) : ?>
+    <figure class="c-heig__img__wrap c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?> -->
   </div>
 
   <div class="service_irohaie">
@@ -247,15 +249,24 @@ get_header();
         </p>
         <!-- <div class="iroha__feature-detail u-mb50">
           <?php
-          $detail = get_field('insulation')[0];
+          $insulation = get_field('insulation');
+          $detail = ($insulation && !empty($insulation[0])) ? $insulation[0] : null;
+          if ($detail && (!empty($detail['title']) || !empty($detail['txt']) || !empty($detail['img']))) :
           ?>
           <div class="feature-detail-txt">
+            <?php if (!empty($detail['title'])) : ?>
             <h2 class="u-mb20"><?php echo $detail['title']; ?></h2>
+            <?php endif; ?>
+            <?php if (!empty($detail['txt'])) : ?>
             <p><?php echo $detail['txt']; ?></p>
+            <?php endif; ?>
           </div>
+          <?php if (!empty($detail['img'])) : ?>
           <figure class="feature-detail-img">
             <img src="<?php echo esc_url($detail['img']); ?>">
           </figure>
+          <?php endif; ?>
+          <?php endif; ?>
         </div> -->
         <div class="iroha__three_points u-mb80">
           <h2 class="three_points-title u-mb20">
@@ -300,32 +311,56 @@ get_header();
           </div>
           <!-- <div class="iroha__three_points_wrapper">
             <?php
-            for ($i = 0; $i < 3; $i++) {
-              $point_item = get_field('three_points')[$i];
+            $three_points = get_field('three_points');
+            if ($three_points) :
+              for ($i = 0; $i < 3; $i++) {
+                if (empty($three_points[$i])) {
+                  continue;
+                }
+                $point_item = $three_points[$i];
+                if (empty($point_item['img']) && empty($point_item['title']) && empty($point_item['txt'])) {
+                  continue;
+                }
             ?>
               <div class="iroha__point_item">
+                <?php if (!empty($point_item['img'])) : ?>
                 <figure class="point_item-img">
                   <img src="<?php echo esc_url($point_item['img']); ?>">
                 </figure>
+                <?php endif; ?>
+                <?php if (!empty($point_item['title'])) : ?>
                 <h3 class="point_item-title">
                   <?php echo $point_item['title']; ?>
                   </h2>
+                <?php endif; ?>
+                  <?php if (!empty($point_item['txt'])) : ?>
                   <p class="point_item-txt"><?php echo $point_item['txt']; ?></p>
+                  <?php endif; ?>
               </div>
-            <?php } ?>
+            <?php }
+            endif; ?>
           </div> -->
         </div>
         <!-- <div class="iroha__feature-detail">
           <?php
-          $detail = get_field('insulation')[1];
+          $insulation = get_field('insulation');
+          $detail = ($insulation && !empty($insulation[1])) ? $insulation[1] : null;
+          if ($detail && (!empty($detail['img']) || !empty($detail['title']) || !empty($detail['txt']))) :
           ?>
+          <?php if (!empty($detail['img'])) : ?>
           <figure class="feature-detail-img">
             <img src="<?php echo esc_url($detail['img']); ?>">
           </figure>
+          <?php endif; ?>
           <div class="feature-detail-txt">
+            <?php if (!empty($detail['title'])) : ?>
             <h2 class="u-mb20"><?php echo $detail['title']; ?></h2>
+            <?php endif; ?>
+            <?php if (!empty($detail['txt'])) : ?>
             <p><?php echo $detail['txt']; ?></p>
+            <?php endif; ?>
           </div>
+          <?php endif; ?>
         </div> -->
       </div>
 
@@ -355,26 +390,49 @@ get_header();
         <div class="iroha__features-title u-mb10">
           ➤10の満足品質
         </div>
+        <?php
+          $qualities = get_field('satisfying_quality');
+          $hasQuality = false;
+          if ($qualities) {
+            foreach ($qualities as $row) {
+              if (!empty($row['img']) || !empty($row['title']) || !empty($row['txt'])) {
+                $hasQuality = true;
+                break;
+              }
+            }
+          }
+        ?>
+        <?php if ($hasQuality) : ?>
         <div class="iroha__quality_wrapper ">
           <?php
-          $qualities = get_field('satisfying_quality');
-          for ($i = 0; $i < count($qualities); $i++) {
-            $quality = $qualities[$i];
+            foreach ($qualities as $i => $quality) :
+              if (empty($quality['img']) && empty($quality['title']) && empty($quality['txt'])) {
+                continue;
+              }
           ?>
             <div class="quality_item">
-              <div class="quality_img">
-                <img src="<?php echo esc_url($quality['img']); ?>">
-              </div>
+              <?php if (!empty($quality['img'])) : ?>
+                <div class="quality_img">
+                  <img src="<?php echo esc_url($quality['img']); ?>">
+                </div>
+              <?php endif; ?>
               <div class="quality_desc">
-                <h3 class="quality_title">
-                  <span class="font_orange"><?php echo sprintf("%02d", ($i + 1)) . "."; ?></span>
-                  <?php echo $quality['title']; ?>
-                </h3>
-                <p class="quality_txt"><?php echo $quality['txt']; ?></p>
+                <?php if (!empty($quality['title'])) : ?>
+                  <h3 class="quality_title">
+                    <span class="font_orange"><?php echo sprintf("%02d", ($i + 1)) . "."; ?></span>
+                    <?php echo $quality['title']; ?>
+                  </h3>
+                <?php endif; ?>
+                <?php if (!empty($quality['txt'])) : ?>
+                  <p class="quality_txt"><?php echo $quality['txt']; ?></p>
+                <?php endif; ?>
               </div>
             </div>
-          <?php } ?>
+          <?php
+            endforeach;
+          ?>
         </div>
+        <?php endif; ?>
       </div>
     </section>
   </div>

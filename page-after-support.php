@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-support-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
@@ -101,33 +103,41 @@ get_header();
 
   <section class="l_content_middle_80 support1 noto-sans-jp" id="support1">
     <?php
-    $guarantee = get_field('support_guarantee')[0];
-    $title = $guarantee['title'];
-    $txt = $guarantee['txt'];
-    $img = $guarantee['img'];
+    $guarantees = get_field('support_guarantee');
+    $guarantee = ($guarantees && !empty($guarantees[0])) ? $guarantees[0] : null;
+    if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
     ?>
     <div class="support__content">
       <div class="support__content_text">
         <div class="support__content_number">
           <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
         </div>
-        <p class="c_title_orangeLine_t"><span class="marker">
-            <?php echo $title ?></span>
-        </p>
+        <?php if (!empty($guarantee['title'])) : ?>
+          <p class="c_title_orangeLine_t"><span class="marker">
+              <?php echo $guarantee['title']; ?></span>
+          </p>
+        <?php endif; ?>
         <p class="common_meta_content">
           建物保証<span>20年</span>、最長<span>60年</span>まで延長可能
         </p>
-        <div class="support__content_img sp_tab">
-          <img src="<?php echo esc_url($img); ?>">
-        </div>
-        <div class="commitment__security1_content_maintext">
-          <?php echo $txt; ?>
-        </div>
+        <?php if (!empty($guarantee['img'])) : ?>
+          <div class="support__content_img sp_tab">
+            <img src="<?php echo esc_url($guarantee['img']); ?>">
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($guarantee['txt'])) : ?>
+          <div class="commitment__security1_content_maintext">
+            <?php echo $guarantee['txt']; ?>
+          </div>
+        <?php endif; ?>
       </div>
-      <div class="support__content_img pc">
-        <img src="<?php echo esc_url($img); ?>">
-      </div>
+      <?php if (!empty($guarantee['img'])) : ?>
+        <div class="support__content_img pc">
+          <img src="<?php echo esc_url($guarantee['img']); ?>">
+        </div>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
     <div class="support__content_otherimg">
       <img src="<?php echo esc_url(IMG_URL . '/maintenance/maintenance_7.webp'); ?>">
     </div>
@@ -141,57 +151,70 @@ get_header();
   </section>
   <section class="l_content_middle_80 support1 noto-sans-jp" id="support2">
     <?php
-    $guarantee = get_field('support_guarantee')[1];
-    $title = $guarantee['title'];
-    $txt = $guarantee['txt'];
-    $img = $guarantee['img'];
+    $guarantees = get_field('support_guarantee');
+    $guarantee = ($guarantees && !empty($guarantees[1])) ? $guarantees[1] : null;
+    if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
     ?>
     <div class="support__content">
       <div class="support__content_text">
         <div class="support__content_number">
           <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
         </div>
-        <p class="c_title_orangeLine_t">
-          <span class="marker">
-            <?php echo $title ?></span>
-        </p>
-        <div class="support__content_img sp_tab">
-          <img src="<?php echo esc_url($img); ?>">
-        </div>
-        <div class="commitment__security1_content_maintext">
-          <?php echo $txt; ?>
-        </div>
+        <?php if (!empty($guarantee['title'])) : ?>
+          <p class="c_title_orangeLine_t">
+            <span class="marker">
+              <?php echo $guarantee['title']; ?></span>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($guarantee['img'])) : ?>
+          <div class="support__content_img sp_tab">
+            <img src="<?php echo esc_url($guarantee['img']); ?>">
+          </div>
+        <?php endif; ?>
+        <?php if (!empty($guarantee['txt'])) : ?>
+          <div class="commitment__security1_content_maintext">
+            <?php echo $guarantee['txt']; ?>
+          </div>
+        <?php endif; ?>
       </div>
-      <div class="support__content_img pc">
-        <img src="<?php echo esc_url($img); ?>">
-      </div>
+      <?php if (!empty($guarantee['img'])) : ?>
+        <div class="support__content_img pc">
+          <img src="<?php echo esc_url($guarantee['img']); ?>">
+        </div>
+      <?php endif; ?>
 
     </div>
+    <?php endif; ?>
   </section>
 
   <section class=" support1 noto-sans-jp" id="support3">
     <div class="l_content_middle_80">
       <?php
-      $guarantee = get_field('support_guarantee')[2];
-      $title = $guarantee['title'];
-      $txt = $guarantee['txt'];
-      $img = $guarantee['img'];
+      $guarantees = get_field('support_guarantee');
+      $guarantee = ($guarantees && !empty($guarantees[2])) ? $guarantees[2] : null;
+      if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
       ?>
       <div class="support__content">
         <div class="support__content_text">
           <div class="support__content_number">
             <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
           </div>
-          <p class="c_title_orangeLine_t">
-            <span class="marker">
-              <?php echo $title ?></span>
-          </p>
-          <div class="commitment__security1_content_maintext">
-            <?php echo wp_kses_post($txt); ?>
-          </div>
-          <div class="support__content_img sp_tab">
-            <img src="<?php echo esc_url($img); ?>">
-          </div>
+          <?php if (!empty($guarantee['title'])) : ?>
+            <p class="c_title_orangeLine_t">
+              <span class="marker">
+                <?php echo $guarantee['title']; ?></span>
+            </p>
+          <?php endif; ?>
+          <?php if (!empty($guarantee['txt'])) : ?>
+            <div class="commitment__security1_content_maintext">
+              <?php echo wp_kses_post($guarantee['txt']); ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($guarantee['img'])) : ?>
+            <div class="support__content_img sp_tab">
+              <img src="<?php echo esc_url($guarantee['img']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="support__threesecurity">
             <div class="support__threesecurity_ttl">
               <span>3つ</span>の安心ポイント
@@ -203,10 +226,13 @@ get_header();
             </div>
           </div>
         </div>
-        <div class="support__content_img pc">
-          <img src="<?php echo esc_url($img); ?>">
-        </div>
+        <?php if (!empty($guarantee['img'])) : ?>
+          <div class="support__content_img pc">
+            <img src="<?php echo esc_url($guarantee['img']); ?>">
+          </div>
+        <?php endif; ?>
       </div>
+      <?php endif; ?>
       <p class="support3__text">
         通常1～2年程度の保証しかない、トイレやキッチンなどの住宅設備機器も延長して10年間に渡り保証します。
         <br>
@@ -294,37 +320,45 @@ get_header();
 
   <section class="l_content_middle_80 support4 noto-sans-jp" id="support4">
     <?php
-    $guarantee = get_field('support_guarantee')[3];
-    $title = $guarantee['title'];
-    $txt = $guarantee['txt'];
-    $img = $guarantee['img'];
+    $guarantees = get_field('support_guarantee');
+    $guarantee = ($guarantees && !empty($guarantees[3])) ? $guarantees[3] : null;
+    if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
     ?>
     <div class="support__content">
       <div class="support__content_text">
         <div class="support__content_number">
           <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
         </div>
-        <p class="c_title_orangeLine_t">
-          <span class="marker">
-            <?php echo $title ?></span>
-        </p>
-        <div class="support__content_img sp_tab">
-          <img src="<?php echo esc_url($img); ?>">
-        </div>
+        <?php if (!empty($guarantee['title'])) : ?>
+          <p class="c_title_orangeLine_t">
+            <span class="marker">
+              <?php echo $guarantee['title']; ?></span>
+          </p>
+        <?php endif; ?>
+        <?php if (!empty($guarantee['img'])) : ?>
+          <div class="support__content_img sp_tab">
+            <img src="<?php echo esc_url($guarantee['img']); ?>">
+          </div>
+        <?php endif; ?>
         <!-- <p class="common_meta_content">
           定期的な点検が<br />永い安心と快適をつくる
         </p> -->
-        <div class="commitment__security1_content_maintext">
-          <?php echo $txt; ?>
-        </div>
+        <?php if (!empty($guarantee['txt'])) : ?>
+          <div class="commitment__security1_content_maintext">
+            <?php echo $guarantee['txt']; ?>
+          </div>
+        <?php endif; ?>
         <div class="content_center top_p_3">
           <a class="link__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターメンテナンスへ</a>
         </div>
       </div>
-      <div class="support__content_img pc">
-        <img src="<?php echo esc_url($img); ?>">
-      </div>
+      <?php if (!empty($guarantee['img'])) : ?>
+        <div class="support__content_img pc">
+          <img src="<?php echo esc_url($guarantee['img']); ?>">
+        </div>
+      <?php endif; ?>
     </div>
+    <?php endif; ?>
     <!-- <div class="l_content_middle_60 top_p_5 bottom_p_5">
       <p class="description_inspection_txt ">プロによる定期点検を20年間に渡り保証します
       </p>
