@@ -15,7 +15,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-page'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <section class="l_content_middle_70 u-mb100">
@@ -32,12 +34,18 @@ get_header();
     </div>
     <div class="p-about__message">
       <?php $president = get_field('president'); ?>
-      <figure class="p-about__message__imgWrap">
-        <img src="<?php echo esc_url($president['img']); ?>" class="p-about__message__img">
-      </figure>
-      <p class="p-about__message__txt">
-        <?php echo esc_html($president['txt']); ?>
-      </p>
+      <?php if ($president && (!empty($president['img']) || !empty($president['txt']))) : ?>
+        <?php if (!empty($president['img'])) : ?>
+          <figure class="p-about__message__imgWrap">
+            <img src="<?php echo esc_url($president['img']); ?>" class="p-about__message__img">
+          </figure>
+        <?php endif; ?>
+        <?php if (!empty($president['txt'])) : ?>
+          <p class="p-about__message__txt">
+            <?php echo esc_html($president['txt']); ?>
+          </p>
+        <?php endif; ?>
+      <?php endif; ?>
     </div>
     <dl>
       <dt class="p-about__message__bold ">株式会社 豊後夢工房</dt>
@@ -63,6 +71,7 @@ get_header();
       </div>
     </div>
     <?php $table = get_field('works-table'); ?>
+    <?php if ($table) : ?>
     <table class="c-table__about">
       <tbody class="c-table__about__tbody">
         <tr class="c-table__about__tr">
@@ -160,6 +169,7 @@ get_header();
         </tr>
       </tbody>
     </table>
+    <?php endif; ?>
   </section>
   <section class="u-pt50 u-mb100">
     <!-- <div class="l_content_middle_70">
@@ -431,22 +441,31 @@ get_header();
     </div>
     <?php
     $qas = get_field('answers');
-    for ($i = 0; $i < count($qas); $i++) {
-      $question = $qas[$i]['question'];
-      $answer = $qas[$i]['answer'];
+    if ($qas) :
+      foreach ($qas as $i => $qa) :
+        if (empty($qa['question']) && empty($qa['answer'])) {
+          continue;
+        }
     ?>
       <button class="accordion">
         <span class="accordion-number">
           <?php echo sprintf("%02d", ($i + 1)); ?>
         </span>
-        <?php echo $question; ?>
+        <?php if (!empty($qa['question'])) : ?>
+        <?php echo $qa['question']; ?>
+        <?php endif; ?>
       </button>
       <div class="panel">
         <p>
-          <?php echo $answer; ?>
+          <?php if (!empty($qa['answer'])) : ?>
+          <?php echo $qa['answer']; ?>
+          <?php endif; ?>
         </p>
       </div>
-    <?php } ?>
+    <?php
+      endforeach;
+    endif;
+    ?>
   </section>
 
 

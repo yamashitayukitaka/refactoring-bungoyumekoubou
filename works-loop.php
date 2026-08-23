@@ -1,10 +1,23 @@
 <li class = "p-content__list__item">
   <a href = "<?php the_permalink(); ?>" class = "p-content__list__link">
     <?php $sliders = get_field('works-slider-list'); ?>
-    <?php if ($sliders):?>
+    <?php
+    $hasSliderImg = false;
+    if ($sliders) {
+      foreach ($sliders as $row) {
+        if (!empty($row['works-slider-img'])) {
+          $hasSliderImg = true;
+          break;
+        }
+      }
+    }
+    ?>
+    <?php if ($hasSliderImg):?>
       <ul class = "js-worksSlider p-content__slider__list">
         <?php foreach($sliders as $slider):?>
+          <?php if (!empty($slider['works-slider-img'])): ?>
           <li class = "p-content__slider__item"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" class = "p-content__slider__img"></li>
+          <?php endif; ?>
         <?php endforeach;?>
       </ul>
     <?php endif; ?>
@@ -47,13 +60,11 @@
         <?php endforeach;?>
       <?php endif; ?>
       <?php $area = get_field('works-area'); ?>
-      <?php if($area):?>
-        <?php if($area['total-floor']):?>
+      <?php if($area && !empty($area['total-floor'])):?>
           <dl class = "u-flex">
             <dt>延床面積&nbsp;&nbsp;</dt>
             <dd><?php echo esc_html($area['total-floor']);?></dd>
           <dl>
-        <?php endif; ?>
       <?php endif; ?>
   　</div>
   </a>  

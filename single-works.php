@@ -10,7 +10,9 @@ get_header();
     <div class = "p-works__mv u-mb50">
       <ul class = "js-worksSlider l-content--middle">
         <?php foreach($sliders as $slider):?>
+          <?php if (!empty($slider['works-slider-img'])): ?>
           <li class = "p-works__mv__list"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" alt = "施工事例サムネイルスライダー画像"></li>
+          <?php endif; ?>
         <?php endforeach;?>
       </ul>
     </div>
@@ -28,7 +30,8 @@ get_header();
           ]
       );?>
 
-      <?php if(get_field('works-type')): ?>
+      <?php $works_type = get_field('works-type'); ?>
+      <?php if($works_type): ?>
         <div class = "c-id__wrap--top">
           <?php foreach($worksTypes as $worksType):?>
             <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>
@@ -37,15 +40,15 @@ get_header();
       <?php endif; ?>
 
       <?php $area = get_field('works-area'); ?>
-        <?php if($area):?>
+        <?php if($area && (!empty($area['site']) || !empty($area['total-floor']))):?>
          
-          <?php if($area['site']):?>
+          <?php if (!empty($area['site'])):?>
             <dl class = "u-flex">
               <dt>敷地面積&nbsp;&nbsp;</dt>
               <dd><?php echo esc_html($area['site']);?></dd>
             </dl>
           <?php endif; ?>
-          <?php if($area['total-floor']):?> 
+          <?php if (!empty($area['total-floor'])):?> 
             <dl class = "u-flex">
               <dt>延床面積&nbsp;&nbsp;</dt>
               <dd><?php echo esc_html($area['total-floor']);?></dd>
@@ -55,30 +58,27 @@ get_header();
     </div>
     <div class = "l-content--middle u-mb100">
       <?php $table = get_field('works-table'); ?>
-      <?php if($table):?>
-        <?php if($table['plan-of-feature'] || $table['area']):?>
+      <?php if($table && (!empty($table['plan-of-feature']) || !empty($table['area']))):?>
         <table class = "c-table">
+          <?php if (!empty($table['plan-of-feature'])):?>
           <tr class = "c-table__tr">
             <th class = "c-table__th">間取りの特徴</th>
             <td class = "c-table__td"><?php echo esc_html($table['plan-of-feature']);?></td>
           </tr>
+          <?php endif; ?>
+          <?php if (!empty($table['area'])):?>
           <tr class = "c-table__tr">
             <th class = "c-table__th">建築エリア</th>
             <td class = "c-table__td"><?php echo esc_html($table['area']);?></td>
           </tr>
+          <?php endif; ?>
         </table>
       <?php endif; ?>
-    <?php endif; ?>
     </div>
   </section>
 
   <?php $outline = get_field('outline'); ?>
-  <?php if($outline):?>
-    <?php $ttl = $outline ['ttl'];
-          $txt = $outline ['txt'];
-    ?>
-  
-    <?php if($ttl||$txt):?>
+  <?php if($outline && (!empty($outline['ttl']) || !empty($outline['txt']))):?>
       <section class = "l-content--middle u-mb100">
         <h3 class = "c-title--sectionEn">
           OUTLINE
@@ -86,10 +86,13 @@ get_header();
         <p class = "c-title--sectionSub u-mb30">
           概要
         </p>
-        <p class = "c-title--middle"><?php echo esc_html($ttl);?></p>
-        <p class = "c-txt--middleBold"><?php echo esc_html($txt);?></p>
+        <?php if(!empty($outline['ttl'])):?>
+        <p class = "c-title--middle"><?php echo esc_html($outline['ttl']);?></p>
+        <?php endif; ?>
+        <?php if(!empty($outline['txt'])):?>
+        <p class = "c-txt--middleBold"><?php echo esc_html($outline['txt']);?></p>
+        <?php endif; ?>
       </section>
-    <?php endif; ?>
   <?php endif; ?>
 
   <section class = "l-content--middle u-mb100">
@@ -129,15 +132,7 @@ get_header();
 
 <div class = "u-mb100">
   <?php $voice = get_field('voice');?>
-      
-  <?php if (!empty($voice)) : ?>
-
-    <?php $voice_img = $voice['img'];
-        $voice_txt = $voice['txt'];
-        $voice_address = $voice['address'];
-        $voice_name = $voice['name']; ?>
-
-    <?php if($voice_img || $voice_txt || $voice_address || $voice_name):?>
+  <?php if ($voice && (!empty($voice['img']) || !empty($voice['txt']) || !empty($voice['address']) || !empty($voice['name']))) : ?>
       <section class = "u-bg p-works__voice">
         <div class = "l-content--middle">
           <h3 class = "c-title--sectionEn">
@@ -150,59 +145,52 @@ get_header();
 
           <div class = "p-works__voice__nameWrap l-content u-mb50">
             <!--<div class = "p-works__voice__nameInner">-->
-              <p class = "p-works__voice__bold"><?php echo esc_html($voice_address);?></p>
-              <p class = "p-works__voice__bold"><?php echo esc_html($voice_name);?></p>
+              <?php if(!empty($voice['address'])):?>
+              <p class = "p-works__voice__bold"><?php echo esc_html($voice['address']);?></p>
+              <?php endif; ?>
+              <?php if(!empty($voice['name'])):?>
+              <p class = "p-works__voice__bold"><?php echo esc_html($voice['name']);?></p>
+              <?php endif; ?>
             <!--</div>-->
           </div>
 
           <div class = "p-works__voice__wrap l-content">
-            <?php if($voice_img):?>
+            <?php if(!empty($voice['img'])):?>
               <figure class = "p-works__voice__imgWrap">
-                <img src = "<?php echo esc_url($voice_img);?>">
+                <img src = "<?php echo esc_url($voice['img']);?>">
               </figure>
             <?php endif; ?>
             
-            <?php if($voice_txt):?>
+            <?php if(!empty($voice['txt'])):?>
               <p class = "p-works__voice__txt">
-                <?php echo wp_kses_post($voice_txt);?>
+                <?php echo wp_kses_post($voice['txt']);?>
               </p>
             <?php endif; ?>
           </div>
         </div>
       </section>
-
-    <?php endif; ?>
   <?php endif; ?>
 
   <?php $qs = get_field('qs');?>
-  <?php if($qs):?>
-    
-    <?php 
-      $qs_img = $qs['img'];
-      $qs_txt = $qs['txt'];
-    ?>
-
-    <?php if($qs_img || $qs_txt):?>
+  <?php if($qs && (!empty($qs['img']) || !empty($qs['txt']))):?>
       <section class = "u-bg p-works__voice">
 
         <div class = "l-content--middle">
           <div class = "p-works__voice__wrap l-content">
-            <?php if ($qs_img):?>
+            <?php if (!empty($qs['img'])):?>
               <figure class = "p-works__voice__imgWrap">
-                <img src = "<?php echo esc_url($qs_img);?>">
+                <img src = "<?php echo esc_url($qs['img']);?>">
               </figure>
             <?php endif; ?>
-            <?php if ($qs_txt):?>
+            <?php if (!empty($qs['txt'])):?>
               <p class = "p-works__voice__txt">
-                <?php echo wp_kses_post($qs_txt);?>
+                <?php echo wp_kses_post($qs['txt']);?>
               </p>
             <?php endif; ?>
           </div>
         </div>
 
       </section>
-
-    <?php endif; ?>
   <?php endif; ?>
 </div>
 

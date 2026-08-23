@@ -1,5 +1,16 @@
 <?php $hasThumbsliders = get_field('a-imgs'); ?>
-  <?php if($hasThumbsliders):?>
+<?php
+$hasGallery = false;
+if ($hasThumbsliders) {
+  foreach ($hasThumbsliders as $row) {
+    if (!empty($row['img'])) {
+      $hasGallery = true;
+      break;
+    }
+  }
+}
+?>
+  <?php if($hasGallery):?>
     <section class = "l-content--middle u-mb100">
       <h3 class = "c-title--sectionEn">
         GALLERY
@@ -10,18 +21,20 @@
     
       <ul class = "js-hasThumbSlider c-hasThumbSlider__list">
         <?php foreach($hasThumbsliders as $hasThumbslider):?>
+          <?php if (!empty($hasThumbslider['img'])) : ?>
           <li class = "c-hasThumbSlider__list__item"><img src = "<?php echo esc_url($hasThumbslider['img']); ?>" alt = "ギャラリー画像" class = "c-hasThumbSlider__list__img"></li>
+          <?php endif; ?>
         <?php endforeach;?>
       </ul>
       <ul class = "c-hasThumbSlider__thumbnail__list">
         <?php $count = 0; ?>
         <?php foreach($hasThumbsliders as $hasThumbslider): ?>
+          <?php if (!empty($hasThumbslider['img'])) : ?>
           <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
             <img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class = "c-hasThumbSlider__thumbnail__img">
           </li>
+          <?php endif; ?>
         <?php endforeach; ?>
       </ul>
-    <?php endif; ?>
   </section>
-
-
+  <?php endif; ?>

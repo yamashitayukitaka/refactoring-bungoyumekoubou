@@ -21,7 +21,10 @@ get_header();
   <div class = "p-staff__production__content">
     <div class = "p-staff__production__profile">
       <figure class = "p-staff__production__imgWrap">
-        <img src="<?php the_field('staff-img'); ?>" alt="スタッフイメージ" class ="p-staff__img">
+        <?php $staff_img = get_field('staff-img'); ?>
+        <?php if ($staff_img) : ?>
+        <img src="<?php echo esc_url($staff_img); ?>" alt="スタッフイメージ" class ="p-staff__img">
+        <?php endif; ?>
       </figure>
 
       <?php foreach($terms as $term):?>
@@ -30,20 +33,25 @@ get_header();
 
       <dl class = "u-flex">
         <dt class = "p-staff__production__dt"><?php the_title(); ?></dt>
-        <dd class = "p-staff__production__profileName"><?php the_field('english-name'); ?></dd>
+        <?php $english_name = get_field('english-name'); ?>
+        <?php if ($english_name) : ?>
+        <dd class = "p-staff__production__profileName"><?php echo esc_html($english_name); ?></dd>
+        <?php endif; ?>
       </dl>
 
-      <?php if(get_field('lisence')): ?>
+      <?php $lisence = get_field('lisence'); ?>
+      <?php if($lisence): ?>
         <dl class = "u-flex">
           <dt class = "p-staff__production__dt">資格&nbsp;&nbsp;</dt>
-          <dd class = "p-staff__production__dt"><?php the_field('lisence'); ?></dd>
+          <dd class = "p-staff__production__dt"><?php echo esc_html($lisence); ?></dd>
         </dl>
       <?php endif; ?>
     </div>
 
-    <?php if(get_field('self-introduction-img')): ?>
+    <?php $self_introduction_img = get_field('self-introduction-img'); ?>
+    <?php if($self_introduction_img): ?>
       <figure class = "p-staff__production__desc">
-        <img src="<?php the_field('self-introduction-img'); ?>" alt="自己紹介画像" class ="p-staff__production__descImg">
+        <img src="<?php echo esc_url($self_introduction_img); ?>" alt="自己紹介画像" class ="p-staff__production__descImg">
       </figure>
     <?php endif; ?>
   </div>
@@ -54,53 +62,79 @@ get_header();
 </section>
 
 <?php $myBest = get_field('my-best'); ?>
-<?php if(!empty($myBest['my-best-ttl']) || !empty($myBest['my-best-1']) || !empty($myBest['my-best-2']) || !empty($myBest['my-best-3'])):?>
+<?php if($myBest && (!empty($myBest['my-best-ttl']) || !empty($myBest['my-best-1']) || !empty($myBest['my-best-2']) || !empty($myBest['my-best-3']))):?>
   <section class = "p-staff__myBest">
     <div class = "p-staff__myBest__ttlWrap">
       <p class = "p-staff__myBest__txt">あなたのマイベスト3を教えて</p>
       <h3 class = "p-staff__myBest__ttl">MyBest&nbsp;<span class = "u-orange--mv">3</span></h3>
+      <?php if (!empty($myBest['my-best-ttl'])):?>
       <p class = "p-staff__myBest__txt"><?php echo esc_html($myBest['my-best-ttl']);?></p>
+      <?php endif; ?>
     </div>
     <ul class = "p-staff__myBest__list">
+      <?php if (!empty($myBest['my-best-1'])):?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">1</span></h4>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-1']);?></p>
       </li>
+      <?php endif; ?>
+      <?php if (!empty($myBest['my-best-2'])):?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">2</span></h4>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-2']);?></p>
       </li>
+      <?php endif; ?>
+      <?php if (!empty($myBest['my-best-3'])):?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">3</span></h4>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-3']);?></p>
       </li>
+      <?php endif; ?>
     </ul>
   </section>
 <?php endif; ?>
+<?php $questions = get_field('question'); ?>
+<?php
+$hasQuestion = false;
+if ($questions) {
+  foreach ($questions as $question) {
+    if (!empty($question['question-ttl']) || !empty($question['question-img']) || !empty($question['question-answer'])) {
+      $hasQuestion = true;
+      break;
+    }
+  }
+}
+?>
+<?php if ($hasQuestion): ?>
 <section class = "p-staff__question l-content--middle">
-  <?php $questions = get_field('question'); ?>
-    <?php if($questions):?>
       <?php foreach ( $questions as $question ) :?>
+        <?php if (empty($question['question-ttl']) && empty($question['question-img']) && empty($question['question-answer'])) {
+          continue;
+        } ?>
         <div class = "p-staff__question__content">
           <div class = "p-staff__question__ttlWrap">
             <p>
+              <?php if (!empty($question['question-ttl'])):?>
               <span class = "marker p-staff__question__ttl--another"><?php echo esc_html($question['question-ttl']);?></span>
+              <?php endif; ?>
             </p>
           </div>
           <div class = "p-staff__question__right">
-            <?php if($question['question-img']):?>
+            <?php if (!empty($question['question-img'])):?>
               <figure class = "p-staff__question__imgWrap">
                 <img src = "<?php echo esc_url($question['question-img']);?>"class = "p-staff__question__img" alt = "質問画像">
               </figure>
             <?php endif; ?>
+            <?php if (!empty($question['question-answer'])):?>
             <p class = "p-staff__question__txt">
               <?php echo wp_kses_post($question['question-answer']);?>
             </p>
+            <?php endif; ?>
           </div>
         </div>
       <?php endforeach; ?>
-    <?php endif; ?>
 </section>
+<?php endif; ?>
 
 <section class = "l-content">
   <div class = "u-center u-mb10">
@@ -128,7 +162,10 @@ get_header();
         <li class ="p-content__list__item">
           <a href = "<?php the_permalink(); ?>">
             <figure class = "p-content__list__imgWrap">
-              <img src="<?php the_field('staff-img'); ?>" alt="スタッフイメージ" class ="p-staff__img">
+              <?php $staff_img = get_field('staff-img'); ?>
+              <?php if ($staff_img) : ?>
+              <img src="<?php echo esc_url($staff_img); ?>" alt="スタッフイメージ" class ="p-staff__img">
+              <?php endif; ?>
             </figure>
             <?php $Tags = get_the_terms(get_the_ID(),'department', 
               //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、

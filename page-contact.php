@@ -1,5 +1,5 @@
 <?php
-// Template Name: Contact
+// Template Name: contact
 get_header();
 ?>
 <main>
@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-page',363); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php endif; ?>
   </div>
   <section class="p-contact l-content">
     <div class="c-title__wrap--sectionLine">

@@ -28,7 +28,8 @@ get_header();
   </section>
   <section class="l-content--middle u-mb100">
 
-    <?php if (get_field('property-area')) : ?>
+    <?php $property_area = get_field('property-area'); ?>
+    <?php if ($property_area) : ?>
       <?php foreach ($terms as $term) : ?>
         <div class="c-id__wrap--top u-mb50">
           <span class="c-id"><?php echo esc_html($term->name); ?></span>
@@ -36,70 +37,45 @@ get_header();
       <?php endforeach; ?>
     <?php endif; ?>
 
-    <?php $topInfo = get_field('top-info');
-    $topInfoArea = $topInfo['area'];
-    $topInfoSchool = $topInfo['school'];
-    $copy = $topInfo['copy'];
-    $price = $topInfo['price'];
-    ?>
+    <?php $topInfo = get_field('top-info'); ?>
+    <?php if ($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']) || !empty($topInfo['copy']) || !empty($topInfo['price']))) : ?>
 
     <div class="p-property__dl__flex">
       <div class="p-property__dl__wrap">
 
-        <?php if ($topInfoArea) : ?>
+        <?php if (!empty($topInfo['area'])) : ?>
           <dl class="p-property__dl">
             <dt class="p-property__dl__txt">土地面積:</dt>
-            <dd class="p-property__dl__txt"><?php echo esc_html($topInfoArea); ?></dd>
+            <dd class="p-property__dl__txt"><?php echo esc_html($topInfo['area']); ?></dd>
           </dl>
         <?php endif; ?>
-        <?php if ($topInfoSchool) : ?>
+        <?php if (!empty($topInfo['school'])) : ?>
           <dl class="p-property__dl">
             <dt class="p-property__dl__txt">校区:</dt>
-            <dd class="p-property__dl__txt"><?php echo esc_html($topInfoSchool); ?></dd>
+            <dd class="p-property__dl__txt"><?php echo esc_html($topInfo['school']); ?></dd>
           </dl>
         <?php endif; ?>
       </div>
     </div>
-    <?php if ($copy) : ?>
+    <?php if (!empty($topInfo['copy'])) : ?>
       <p class="p-property__copy u-center u-mb50">
-        <?php echo esc_html($copy); ?>
+        <?php echo esc_html($topInfo['copy']); ?>
       </p>
     <?php endif; ?>
 
-    <?php if ($price) : ?>
+    <?php if (!empty($topInfo['price'])) : ?>
       <div class="p-property__price">
-        <span class="p-property__price__num"><?php echo esc_html($price); ?></span><span class="p-property__price__unit"></span>
+        <span class="p-property__price__num"><?php echo esc_html($topInfo['price']); ?></span><span class="p-property__price__unit"></span>
       </div>
+    <?php endif; ?>
     <?php endif; ?>
 
   </section>
 
   <?php get_template_part('hasThumbSlider-loop', 'hasThumbSlider'); ?>
 
-  <?php
-  $detail = get_field('detail');
-  $name = $detail['name'];
-  $address = $detail['address'];
-  $traffic = $detail['traffic'];
-  $price = $detail['price'];
-  $landArea = $detail['land-area'];
-  $elementary = $detail['elementary'];
-  $juniorHigh = $detail['junior-high'];
-  $point = $detail['point'];
-  $ground = $detail['ground'];
-  $purpose = $detail['purpose'];
-  $health = $detail['health'];
-  $FloorAreaRatio = $detail['floor-area-ratio'];
-  $urban = $detail['urban'];
-  $contactPath = $detail['contact-path'];
-  $transaction = $detail['transaction'];
-  $commission = $detail['commission'];
-  $facility = $detail['facility'];
-  $remarks = $detail['remarks'];
-  $contact = $detail['contact'];
-  ?>
-
-  <?php if ($detail) : ?>
+  <?php $detail = get_field('detail'); ?>
+  <?php if ($detail && (!empty($detail['name']) || !empty($detail['address']) || !empty($detail['traffic']) || !empty($detail['price']) || !empty($detail['land-area']) || !empty($detail['elementary']) || !empty($detail['junior-high']) || !empty($detail['point']) || !empty($detail['ground']) || !empty($detail['purpose']) || !empty($detail['health']) || !empty($detail['floor-area-ratio']) || !empty($detail['urban']) || !empty($detail['contact-path']) || !empty($detail['transaction']) || !empty($detail['commission']) || !empty($detail['facility']) || !empty($detail['remarks']) || !empty($detail['contact']))) : ?>
     <section class="l-content--middle u-mb100">
       <h3 class="c-title--sectionEn">
         DETAIL
@@ -109,85 +85,123 @@ get_header();
       </p>
 
       <div class="p-property__dl__infoWrap u-mb50">
+        <?php if (!empty($detail['name'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--short">物件名</dt>
-          <dd class="p-property__dt__value--long"><?php echo esc_html($name); ?></dd>
+          <dd class="p-property__dt__value--long"><?php echo esc_html($detail['name']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['address'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--short">所在地</dt>
-          <dd class="p-property__dt__value--long"><?php echo esc_html($address); ?></dd>
+          <dd class="p-property__dt__value--long"><?php echo esc_html($detail['address']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['traffic'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--short">交通</dt>
-          <dd class="p-property__dt__value--long"><?php echo esc_html($traffic); ?></dd>
+          <dd class="p-property__dt__value--long"><?php echo esc_html($detail['traffic']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['price'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--md">価格</dt>
-          <dd class="p-property__dt__value--md"><?php echo esc_html($price); ?></dd>
+          <dd class="p-property__dt__value--md"><?php echo esc_html($detail['price']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['land-area'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--md">土地面積</dt>
-          <dd class="p-property__dt__value--md"><?php echo esc_html($landArea); ?></dd>
+          <dd class="p-property__dt__value--md"><?php echo esc_html($detail['land-area']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['elementary'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--md">小学校区</dt>
-          <dd class="p-property__dt__value--md"><?php echo esc_html($elementary); ?></dd>
+          <dd class="p-property__dt__value--md"><?php echo esc_html($detail['elementary']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['junior-high'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--md">中学校区</dt>
-          <dd class="p-property__dt__value--md"><?php echo esc_html($juniorHigh); ?></dd>
+          <dd class="p-property__dt__value--md"><?php echo esc_html($detail['junior-high']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['point'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--lg">POINT</dt>
-          <dd class="p-property__dt__value--lg"><?php echo wp_kses_post($point); ?></dd>
+          <dd class="p-property__dt__value--lg"><?php echo wp_kses_post($detail['point']); ?></dd>
         </dl>
+        <?php endif; ?>
       </div>
 
       <div class="p-property__dl__infoWrap u-mb50">
+        <?php if (!empty($detail['ground'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">地目</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($ground); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['ground']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['purpose'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">用途地域</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($purpose); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['purpose']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['health'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">建ぺい率</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($health); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['health']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['floor-area-ratio'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">容積率</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($FloorAreaRatio); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['floor-area-ratio']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['urban'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">都市計画</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($urban); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['urban']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['contact-path'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">接道</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($contactPath); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['contact-path']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['transaction'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">取引形態</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($transaction); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['transaction']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['commission'])) : ?>
         <dl class="p-property__dl__info--half">
           <dt class="p-property__dt__item--sm">仲介手数料</dt>
-          <dd class="p-property__dt__value--sm"><?php echo esc_html($commission); ?></dd>
+          <dd class="p-property__dt__value--sm"><?php echo esc_html($detail['commission']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['facility'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--lg">設備</dt>
-          <dd class="p-property__dt__value--lg"><?php echo esc_html($facility); ?></dd>
+          <dd class="p-property__dt__value--lg"><?php echo esc_html($detail['facility']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['remarks'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--lg">備考</dt>
-          <dd class="p-property__dt__value--lg"><?php echo esc_html($remarks); ?></dd>
+          <dd class="p-property__dt__value--lg"><?php echo esc_html($detail['remarks']); ?></dd>
         </dl>
+        <?php endif; ?>
+        <?php if (!empty($detail['contact'])) : ?>
         <dl class="p-property__dl__info">
           <dt class="p-property__dt__item--lg">お問い合わせ先</dt>
-          <dd class="p-property__dt__value--lg"><?php echo wp_kses_post($contact); ?></dd>
+          <dd class="p-property__dt__value--lg"><?php echo wp_kses_post($detail['contact']); ?></dd>
         </dl>
+        <?php endif; ?>
       </div>
       <div class="u-center">
         <a href="#contact" class="c-button--page">お問い合わせ</a>

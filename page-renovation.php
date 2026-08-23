@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-renovation-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
@@ -44,16 +46,17 @@ get_header();
   </section>
 
   <section class="u-mb100">
+    <?php
+    $renovation = get_field('renovation');
+    if ($renovation && (!empty($renovation['img']) || !empty($renovation['txt']))) :
+    ?>
     <div class="concept__policy1" id="maintenance-description">
-      <?php
-      $renovation = get_field('renovation');
-      $renovation_txt = $renovation['txt'];
-      $renovation_img = $renovation['img'];
-      ?>
       <div class="concept__policy1 maintenance-description">
-        <div class="design-right-image">
-          <img src="<?php echo esc_url($renovation_img); ?>">
-        </div>
+        <?php if (!empty($renovation['img'])) : ?>
+          <div class="design-right-image">
+            <img src="<?php echo esc_url($renovation['img']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="concept__policy2-content">
           <div class="u-mb20">
             <p class=" concept__policy1-mainttl maintenance-ttl concept__policy1-mainttl">
@@ -61,133 +64,187 @@ get_header();
 
             </p>
           </div>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo $renovation_txt; ?>
-          </div>
+          <?php if (!empty($renovation['txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo $renovation['txt']; ?>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
+    <?php endif; ?>
 
     <section class="u-mb100">
+      <?php
+      $beforeafter_imgs = get_field('beforeafter');
+      $imgs_one = ($beforeafter_imgs && !empty($beforeafter_imgs[0])) ? $beforeafter_imgs[0] : null;
+      $imgs_two = ($beforeafter_imgs && !empty($beforeafter_imgs[1])) ? $beforeafter_imgs[1] : null;
+      if (
+        ($imgs_one && (!empty($imgs_one['after_img_1']) || !empty($imgs_one['before_img']) || !empty($imgs_one['after_img_2'])))
+        || ($imgs_two && (!empty($imgs_two['after_img_1']) || !empty($imgs_two['before_img']) || !empty($imgs_two['after_img_2'])))
+      ) :
+      ?>
       <div class="support__conver_devices">ビフォーアフター</div>
       <div class="changeStatus service_model_wrap">
         <?php
-        $beforeafter_imgs = get_field('beforeafter');
-        $imgs_one = $beforeafter_imgs[0];
-        $imgs_two = $beforeafter_imgs[1];
+          if ($imgs_one && (!empty($imgs_one['after_img_1']) || !empty($imgs_one['before_img']) || !empty($imgs_one['after_img_2']))) :
         ?>
         <div class="before1">
           <div class="status_container">
-            <div class="after1_left">
-              <img src="<?php echo esc_url($imgs_one['after_img_1']); ?>">
+            <?php if (!empty($imgs_one['after_img_1'])) : ?>
+              <div class="after1_left">
+                <img src="<?php echo esc_url($imgs_one['after_img_1']); ?>">
 
-              <span>AFTER</span>
-            </div>
-            <div class="before1_right">
-              <img src="<?php echo esc_url($imgs_one['before_img']); ?>">
-              <span>BEFORE</span>
-            </div>
+                <span>AFTER</span>
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($imgs_one['before_img'])) : ?>
+              <div class="before1_right">
+                <img src="<?php echo esc_url($imgs_one['before_img']); ?>">
+                <span>BEFORE</span>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
-        <div class="after1">
-          <div class="status_container">
-            <div class="after1_img">
-              <img src="<?php echo esc_url($imgs_one['after_img_2']); ?>">
-              <span>AFTER</span>
+        <?php if (!empty($imgs_one['after_img_2'])) : ?>
+          <div class="after1">
+            <div class="status_container">
+              <div class="after1_img">
+                <img src="<?php echo esc_url($imgs_one['after_img_2']); ?>">
+                <span>AFTER</span>
+              </div>
             </div>
           </div>
-        </div>
+        <?php endif; ?>
+        <?php endif; ?>
+        <?php
+          if ($imgs_two && (!empty($imgs_two['after_img_1']) || !empty($imgs_two['before_img']) || !empty($imgs_two['after_img_2']))) :
+        ?>
         <div class="before2">
           <div class="status_container">
-            <div class="after2_left">
-              <img src="<?php echo esc_url($imgs_two['after_img_1']); ?>">
-              <span>AFTER</span>
-            </div>
-            <div class="before2_right">
-              <img src="<?php echo esc_url($imgs_two['before_img']); ?>">
-              <span>BEFORE</span>
-            </div>
+            <?php if (!empty($imgs_two['after_img_1'])) : ?>
+              <div class="after2_left">
+                <img src="<?php echo esc_url($imgs_two['after_img_1']); ?>">
+                <span>AFTER</span>
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($imgs_two['before_img'])) : ?>
+              <div class="before2_right">
+                <img src="<?php echo esc_url($imgs_two['before_img']); ?>">
+                <span>BEFORE</span>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
-        <div class="after2">
-          <div class="status_container">
-            <div class="after2_img">
-              <img src="<?php echo esc_url($imgs_two['after_img_2']); ?>">
-              <span>AFTER</span>
+        <?php if (!empty($imgs_two['after_img_2'])) : ?>
+          <div class="after2">
+            <div class="status_container">
+              <div class="after2_img">
+                <img src="<?php echo esc_url($imgs_two['after_img_2']); ?>">
+                <span>AFTER</span>
+              </div>
             </div>
           </div>
-        </div>
+        <?php endif; ?>
+        <?php endif; ?>
       </div>
+      <?php endif; ?>
     </section>
 
-    <div class="support__conver_devices">リフォーム内容</div>
     <?php
     $details = get_field('rnv_details');
-    $img_1 = $details['img_1'];
-    $txt_1 = $details['txt_1'];
-    $img_2 = $details['img_2'];
-    $txt_2 = $details['txt_2'];
-    $img_3 = $details['img_3'];
-    $txt_3 = $details['txt_3'];
-    $img_4 = $details['img_4'];
-    $txt_4 = $details['txt_4'];
-    $img_5 = $details['img_5'];
-    $txt_5 = $details['txt_5'];
-    $img_6 = $details['img_6'];
-    $txt_6 = $details['txt_6'];
+    if ($details && (!empty($details['img_1']) || !empty($details['txt_1']) || !empty($details['img_2']) || !empty($details['txt_2']) || !empty($details['img_3']) || !empty($details['txt_3']) || !empty($details['img_4']) || !empty($details['txt_4']) || !empty($details['img_5']) || !empty($details['txt_5']) || !empty($details['img_6']) || !empty($details['txt_6']))) :
     ?>
+    <div class="support__conver_devices">リフォーム内容</div>
     <div class="service_model_wrap samplelogo__three_points">
       <div class="samplelogo__three_items_renovation mx-auto u-mb40">
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_1); ?>">
+        <?php if (!empty($details['img_1']) || !empty($details['txt_1'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($details['img_1'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($details['img_1']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($details['txt_1'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $details['txt_1']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_1; ?>
+        <?php endif; ?>
+        <?php if (!empty($details['img_2']) || !empty($details['txt_2'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($details['img_2'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($details['img_2']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($details['txt_2'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $details['txt_2']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_2); ?>">
+        <?php endif; ?>
+        <?php if (!empty($details['img_3']) || !empty($details['txt_3'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($details['img_3'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($details['img_3']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($details['txt_3'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $details['txt_3']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_2; ?>
+        <?php endif; ?>
+        <?php if (!empty($details['img_4']) || !empty($details['txt_4'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($details['img_4'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($details['img_4']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($details['txt_4'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $details['txt_4']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_3); ?>">
+        <?php endif; ?>
+        <?php if (!empty($details['img_5']) || !empty($details['txt_5'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($details['img_5'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($details['img_5']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($details['txt_5'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $details['txt_5']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_3; ?>
+        <?php endif; ?>
+        <?php if (!empty($details['img_6']) || !empty($details['txt_6'])) : ?>
+          <div class="samplelogo_item-one">
+            <?php if (!empty($details['img_6'])) : ?>
+              <div class="samplelogo_item_img">
+                <img src="<?php echo esc_url($details['img_6']); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if (!empty($details['txt_6'])) : ?>
+              <div class="samplelogo_button mx-auto">
+                <?php echo $details['txt_6']; ?>
+              </div>
+            <?php endif; ?>
           </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_4); ?>">
-          </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_4; ?>
-          </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_5); ?>">
-          </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_5; ?>
-          </div>
-        </div>
-        <div class="samplelogo_item-one">
-          <div class="samplelogo_item_img">
-            <img src="<?php echo esc_url($img_6); ?>">
-          </div>
-          <div class="samplelogo_button mx-auto">
-            <?php echo $txt_6; ?>
-          </div>
-        </div>
+        <?php endif; ?>
       </div>
     </div>
+    <?php endif; ?>
   </section>
 
   <section class="u-mb100">
@@ -199,9 +256,11 @@ get_header();
     ?>
     <div class="design__paint2 service_model_wrap u-mb80">
       <div class="renovation__paint_container noto-san-jp">
-        <div class="process_img sp_tab">
-          <img src="<?php echo esc_url($process['img_1']); ?>">
-        </div>
+        <?php if ($process && !empty($process['img_1'])) : ?>
+          <div class="process_img sp_tab">
+            <img src="<?php echo esc_url($process['img_1']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="process_content">
           <p class="c-title--orangeLine process_content_ttl"><span class="marker">
               <span class="u-orange">01. </span>お問合わせ</span>
@@ -213,17 +272,21 @@ get_header();
             <a class="link__btn" href="#contact">お問合わせする</a>
           </span>
         </div>
-        <div class="process_img pc">
-          <img src="<?php echo esc_url($process['img_1']); ?>">
-        </div>
+        <?php if ($process && !empty($process['img_1'])) : ?>
+          <div class="process_img pc">
+            <img src="<?php echo esc_url($process['img_1']); ?>">
+          </div>
+        <?php endif; ?>
       </div>
     </div>
     <div class="common__down_btn"></div>
     <div class="design__paint2 service_model_wrap u-mb80">
       <div class="renovation__paint_container noto-san-jp">
-        <div class="process_img sp_tab">
-          <img src="<?php echo esc_url($process['img_2']); ?>">
-        </div>
+        <?php if ($process && !empty($process['img_2'])) : ?>
+          <div class="process_img sp_tab">
+            <img src="<?php echo esc_url($process['img_2']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="process_content">
           <p class="c-title--orangeLine process_content_ttl"><span class="marker">
               <span class="u-orange">02. </span>現地訪問と調査</span>
@@ -232,17 +295,21 @@ get_header();
             お問合わせ後、1級施工管理技師と営業担当が現地を訪問し、詳細な聞き取りと現地調査を行います。内容によっては一級建築士が同行します。
           </p>
         </div>
-        <div class="process_img pc">
-          <img src="<?php echo esc_url($process['img_2']); ?>">
-        </div>
+        <?php if ($process && !empty($process['img_2'])) : ?>
+          <div class="process_img pc">
+            <img src="<?php echo esc_url($process['img_2']); ?>">
+          </div>
+        <?php endif; ?>
       </div>
     </div>
     <div class="common__down_btn"></div>
     <div class="design__paint2 service_model_wrap">
       <div class="renovation__paint_container noto-san-jp">
-        <div class="process_img sp_tab">
-          <img src="<?php echo esc_url($process['img_3']); ?>">
-        </div>
+        <?php if ($process && !empty($process['img_3'])) : ?>
+          <div class="process_img sp_tab">
+            <img src="<?php echo esc_url($process['img_3']); ?>">
+          </div>
+        <?php endif; ?>
         <div class="process_content">
           <p class="c-title--orangeLine process_content_ttl"><span class="marker">
               <span class="u-orange">03. </span>お見積り</span>
@@ -251,9 +318,11 @@ get_header();
             現地調査の結果に基づき、お見積りを作成いたします。内容を確認していただき、ご納得していただいてから、ゆめリフォームのスタートです！
           </p>
         </div>
-        <div class="process_img pc">
-          <img src="<?php echo esc_url($process['img_3']); ?>">
-        </div>
+        <?php if ($process && !empty($process['img_3'])) : ?>
+          <div class="process_img pc">
+            <img src="<?php echo esc_url($process['img_3']); ?>">
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </section>
@@ -265,12 +334,16 @@ get_header();
     <section class="design-wrapper u-mb100 top_p_7">
       <div class="concept__policy1">
         <?php
-        $point = get_field('rnv_point')[0];
+        $points = get_field('rnv_point');
+        $point = ($points && !empty($points[0])) ? $points[0] : null;
+        if ($point && (!empty($point['img']) || !empty($point['txt']))) :
         ?>
         <div class="concept__policy1">
-          <div class="design-right-image">
-            <img src="<?php echo esc_url($point['img']); ?>">
-          </div>
+          <?php if (!empty($point['img'])) : ?>
+            <div class="design-right-image">
+              <img src="<?php echo esc_url($point['img']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="concept__policy2-content">
             <div class="design__paint1_content_ttl">
               <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
@@ -281,21 +354,28 @@ get_header();
                   持つスタッフが<span class="u-orange">対応</span></span>
               </p>
             </div>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo $point['txt']; ?>
-            </div>
+            <?php if (!empty($point['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo $point['txt']; ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
+        <?php endif; ?>
       </div>
 
       <div class="concept__policy1">
         <?php
-        $point = get_field('rnv_point')[1];
+        $points = get_field('rnv_point');
+        $point = ($points && !empty($points[1])) ? $points[1] : null;
+        if ($point && (!empty($point['img']) || !empty($point['txt']))) :
         ?>
         <div class="concept__policy1">
-          <div class="design-left-image">
-            <img src="<?php echo esc_url($point['img']); ?>">
-          </div>
+          <?php if (!empty($point['img'])) : ?>
+            <div class="design-left-image">
+              <img src="<?php echo esc_url($point['img']); ?>">
+            </div>
+          <?php endif; ?>
           <div class="concept__policy1-content">
 
             <div class="design__paint1_content_ttl">
@@ -306,11 +386,14 @@ get_header();
                   <span class="u-orange">安心</span>の<span class="u-orange">施工監督体制</span></span>
               </p>
             </div>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo $point['txt']; ?>
-            </div>
+            <?php if (!empty($point['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo $point['txt']; ?>
+              </div>
+            <?php endif; ?>
           </div>
         </div>
+        <?php endif; ?>
       </div>
     </section>
   </section>

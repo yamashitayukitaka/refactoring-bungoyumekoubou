@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-recruit-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php endif; ?>
   </div>
 
   <section class="l-content--middle u-mb100">
@@ -27,37 +29,45 @@ get_header();
         </p>
       </div>
     </div>
-    <div class="recruit__message">
-      <?php $president = get_field('recruit-president'); ?>
-      <div class="recruit__message__photo sp">
-        <figure class="recruit__message__imgWrap u-mb40">
-          <img src="<?php echo esc_url($president['img']); ?>" class="recruit__message__img">
-        </figure>
-        <dl>
-          <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
-          <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
-        </dl>
-      </div>
-      <div class="recruit__message__desc">
-        <div class="recruit__message__txt">
-          <p class="c-title--orangeLine"><span class="marker">豊後の地で、<br>
-              共に夢を実現する仲間へ</span></p>
-          <br><br>
+    <?php $president = get_field('recruit-president'); ?>
+    <?php if ($president && (!empty($president['img']) || !empty($president['txt']))) : ?>
+      <div class="recruit__message">
+        <div class="recruit__message__photo sp">
+          <?php if (!empty($president['img'])) : ?>
+            <figure class="recruit__message__imgWrap u-mb40">
+              <img src="<?php echo esc_url($president['img']); ?>" class="recruit__message__img">
+            </figure>
+          <?php endif; ?>
+          <dl>
+            <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
+            <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
+          </dl>
         </div>
-        <p class="recruit__message__subtxt">
-          <?php echo wp_kses_post($president['txt']); ?>
-        </p>
+        <div class="recruit__message__desc">
+          <div class="recruit__message__txt">
+            <p class="c-title--orangeLine"><span class="marker">豊後の地で、<br>
+                共に夢を実現する仲間へ</span></p>
+            <br><br>
+          </div>
+          <?php if (!empty($president['txt'])) : ?>
+            <p class="recruit__message__subtxt">
+              <?php echo wp_kses_post($president['txt']); ?>
+            </p>
+          <?php endif; ?>
+        </div>
+        <div class="recruit__message__photo pc_tab">
+          <?php if (!empty($president['img'])) : ?>
+            <figure class="recruit__message__imgWrap u-mb40">
+              <img src="<?php echo esc_url($president['img']); ?>" class="recruit__message__img">
+            </figure>
+          <?php endif; ?>
+          <dl>
+            <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
+            <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
+          </dl>
+        </div>
       </div>
-      <div class="recruit__message__photo pc_tab">
-        <figure class="recruit__message__imgWrap u-mb40">
-          <img src="<?php echo esc_url($president['img']); ?>" class="recruit__message__img">
-        </figure>
-        <dl>
-          <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
-          <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
-        </dl>
-      </div>
-    </div>
+    <?php endif; ?>
   </section>
 
   <?php get_template_part('staff-loop', 'staff'); ?>
@@ -81,22 +91,31 @@ get_header();
     </div>
     <?php
     $qas = get_field('answers');
-    for ($i = 0; $i < count($qas); $i++) {
-      $question = $qas[$i]['question'];
-      $answer = $qas[$i]['answer'];
+    if ($qas) :
+      foreach ($qas as $i => $qa) :
+        if (empty($qa['question']) && empty($qa['answer'])) {
+          continue;
+        }
     ?>
       <button class="accordion">
         <span class="accordion-number">
           <?php echo sprintf("%02d", ($i + 1)); ?>
         </span>
-        <?php echo $question; ?>
+        <?php if (!empty($qa['question'])) : ?>
+        <?php echo $qa['question']; ?>
+        <?php endif; ?>
       </button>
       <div class="panel">
         <p>
-          <?php echo $answer; ?>
+          <?php if (!empty($qa['answer'])) : ?>
+          <?php echo $qa['answer']; ?>
+          <?php endif; ?>
         </p>
       </div>
-    <?php } ?>
+    <?php
+      endforeach;
+    endif;
+    ?>
   </section>
 
   <!-- <section class="l-content">
@@ -377,41 +396,51 @@ get_header();
 
   <section class="l-content--middle u-mb90">
     <div class="recruit__interview">
-      <?php $interviews = get_field('recruit-interview')['recruit-interview-content'];
-      for ($i = 0; $i < count($interviews); $i++) {
-        $title = $interviews[$i]["r-interview-content-tit"];
-        $users = $interviews[$i]["r-interview-content-user"];
+      <?php
+      $interview_group = get_field('recruit-interview');
+      if ($interview_group && !empty($interview_group['recruit-interview-content'])) :
+        foreach ($interview_group['recruit-interview-content'] as $interview) :
+          if (empty($interview['r-interview-content-tit']) && empty($interview['r-interview-content-user'])) {
+            continue;
+          }
       ?>
         <div class="c-title__wrap--sectionLine">
           <h3 class="c-title--sectionLine">
             INTERVIEW
           </h3>
           <div>
-            <p class="c-title--orangeLine u-mb30">
-              <?php echo $title; ?>
-            </p>
+            <?php if (!empty($interview['r-interview-content-tit'])) : ?>
+              <p class="c-title--orangeLine u-mb30">
+                <?php echo $interview['r-interview-content-tit']; ?>
+              </p>
+            <?php endif; ?>
           </div>
         </div>
-        <div class="recruit__interview__user__wrap">
-          <?php
-          for ($j = 0; $j < count($users); $j++) {
-            $user_img = $users[$j]["r-content-user-img"];
-            $user_txt = $users[$j]["r-content-user-txt"];
-          ?>
-            <div class="recruit__interview__user  u-mb100">
-              <figure class=" recruit__interview__imgWrap">
-                <img src="<?php echo esc_url($user_img); ?>" class="recruit__interview__img">
-              </figure>
-              <p class="recruit__interview__usertxt">
-                <?php echo $user_txt ?>
-              </p>
-            </div>
-          <?php
-          }
-          ?>
-        </div>
+        <?php if (!empty($interview['r-interview-content-user'])) : ?>
+          <div class="recruit__interview__user__wrap">
+            <?php foreach ($interview['r-interview-content-user'] as $user) :
+              if (empty($user['r-content-user-img']) && empty($user['r-content-user-txt'])) {
+                continue;
+              }
+            ?>
+              <div class="recruit__interview__user  u-mb100">
+                <?php if (!empty($user['r-content-user-img'])) : ?>
+                  <figure class=" recruit__interview__imgWrap">
+                    <img src="<?php echo esc_url($user['r-content-user-img']); ?>" class="recruit__interview__img">
+                  </figure>
+                <?php endif; ?>
+                <?php if (!empty($user['r-content-user-txt'])) : ?>
+                  <p class="recruit__interview__usertxt">
+                    <?php echo $user['r-content-user-txt'] ?>
+                  </p>
+                <?php endif; ?>
+              </div>
+            <?php endforeach; ?>
+          </div>
+        <?php endif; ?>
       <?php
-      }
+        endforeach;
+      endif;
       ?>
   </section>
 
@@ -430,26 +459,41 @@ get_header();
       </div>
     </div>
     <?php $table = get_field('recruit-app'); ?>
-    <table class="c-table__about">
-      <tbody class="c-table__about__tbody">
-        <?php
-        for ($i = 0; $i < count($table); $i++) {
-          $title = $table[$i]['recruit-app-title'];
-          $content = $table[$i]['recruit-app-content'];
-        ?>
-          <tr class="c-table__about__tr">
-            <th class="c-table__about__th">
-              <?php echo $title; ?>
-            </th>
-            <td class="c-table__about__td">
-              <?php echo $content; ?>
-            </td>
-          </tr>
-        <?php
+    <?php
+    $hasApp = false;
+    if ($table) {
+      foreach ($table as $row) {
+        if (!empty($row['recruit-app-title']) || !empty($row['recruit-app-content'])) {
+          $hasApp = true;
+          break;
         }
-        ?>
-      </tbody>
-    </table>
+      }
+    }
+    ?>
+    <?php if ($hasApp) : ?>
+      <table class="c-table__about">
+        <tbody class="c-table__about__tbody">
+          <?php foreach ($table as $row) :
+            if (empty($row['recruit-app-title']) && empty($row['recruit-app-content'])) {
+              continue;
+            }
+          ?>
+            <tr class="c-table__about__tr">
+              <th class="c-table__about__th">
+                <?php if (!empty($row['recruit-app-title'])) : ?>
+                <?php echo $row['recruit-app-title']; ?>
+                <?php endif; ?>
+              </th>
+              <td class="c-table__about__td">
+                <?php if (!empty($row['recruit-app-content'])) : ?>
+                <?php echo $row['recruit-app-content']; ?>
+                <?php endif; ?>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+    <?php endif; ?>
     <figure class=" recruit__recruit__bottomImg">
       <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="recruit__recruit__img">
     </figure>
@@ -461,9 +505,9 @@ get_header();
       わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
       またはお電話にてお気軽にご連絡ください。
     </p>
-    <a href="tel:0975941481" class="recruit__contact__info">
+    <a href="tel:<?php echo $tel_number ? esc_attr($tel_number) : '0975941481'; ?>" class="recruit__contact__info">
       <span class="recruit__contact__info__txt">応募はこちら</span>
-      <p class=recruit__contact__info__tel>TEL.　<span class="recruit__contact__info__tel__number">097-594-1481</span>
+      <p class=recruit__contact__info__tel>TEL.　<span class="recruit__contact__info__tel__number"><?php echo $tel_number ? esc_html($tel_number) : '097-594-1481'; ?></span>
       </p>
     </a>
   </div>

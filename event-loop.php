@@ -15,7 +15,8 @@
         ]
       );?>
 
-      <?php if(get_field('event-type')): ?>
+      <?php $event_type = get_field('event-type'); ?>
+      <?php if($event_type): ?>
         <?php foreach($eventTypes as $eventType):?>
           <span class = "c-id u-mb15"><?php echo esc_html($eventType->name); ?></span>
         <?php endforeach;?>
@@ -57,11 +58,12 @@
         </dl>
       <?php endif; ?>
 
-      <?php if(get_field('event-place')): ?>
+      <?php $event_place = get_field('event-place'); ?>
+      <?php if($event_place): ?>
         <dl class = "u-flex u-mb15">
           <dt class = "p-content__list__txt u-nowrap">開催場所&nbsp;:&nbsp;</dt>
           <dd class = "p-content__list__txt">
-            <?php the_field('event-place'); ?>
+            <?php echo esc_html($event_place); ?>
           </dd>
         </dl>
       <?php endif; ?>

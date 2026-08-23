@@ -13,7 +13,9 @@ get_header();
       </p>
     </div>
     <?php $mv = get_field('mv-faq-img'); ?>
-    <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php if ($mv) : ?>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <?php endif; ?>
   </div>
 
 
@@ -53,22 +55,31 @@ get_header();
   <section class="faq u-mb200">
     <?php
     $qas = get_field('faq_questions_answers');
-    for ($i = 0; $i < count($qas); $i++) {
-      $question = $qas[$i]['question'];
-      $answer = $qas[$i]['answer'];
+    if ($qas) :
+      foreach ($qas as $i => $qa) :
+        if (empty($qa['question']) && empty($qa['answer'])) {
+          continue;
+        }
     ?>
       <button class="accordion">
         <span class="accordion-number">
           <?php echo sprintf("%02d", ($i + 1)); ?>
         </span>
-        <?php echo $question; ?>
+        <?php if (!empty($qa['question'])) : ?>
+        <?php echo $qa['question']; ?>
+        <?php endif; ?>
       </button>
       <div class="panel">
         <p>
-          <?php echo $answer; ?>
+          <?php if (!empty($qa['answer'])) : ?>
+          <?php echo $qa['answer']; ?>
+          <?php endif; ?>
         </p>
       </div>
-    <?php } ?>
+    <?php
+      endforeach;
+    endif;
+    ?>
   </section>
 
   <?php include get_template_directory() . '/common.php' ?>
