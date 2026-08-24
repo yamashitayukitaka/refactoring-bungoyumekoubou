@@ -39,63 +39,63 @@ get_header();
       <?php if ($requirements && !empty($requirements['jobName'])):?>
         <tr  class = "p-recruit__tr">
           <th class = "p-recruit__th">職種名</th>
-          <td class = "p-recruit__td"><?php echo $requirements['jobName']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['jobName']); ?></td>
         </tr>
       <?php endif; ?>
       
       <?php if (!empty($requirements['lisence'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">資格</th>
-          <td class = "p-recruit__td"><?php echo $requirements['lisence']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['lisence']); ?></td>
         </tr>
       <?php endif; ?>
       
       <?php if (!empty($requirements['salary'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">給与</th>
-          <td class = "p-recruit__td"><?php echo $requirements['salary']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['salary']); ?></td>
         </tr>
       <?php endif; ?>
       
       <?php if (!empty($requirements['bonus'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">賞与</th>
-          <td class = "p-recruit__td"><?php echo $requirements['bonus']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['bonus']); ?></td>
         </tr>
       <?php endif; ?>
 
       <?php if (!empty($requirements['raise'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">昇給</th>
-          <td class = "p-recruit__td"><?php echo $requirements['raise']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['raise']); ?></td>
         </tr>
       <?php endif; ?>
       
       <?php if (!empty($requirements['location'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">勤務地</th>
-          <td class = "p-recruit__td"><?php echo $requirements['location']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['location']); ?></td>
         </tr>
       <?php endif; ?>
       
       <?php if (!empty($requirements['vacation'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">休日・休暇</th>
-          <td class = "p-recruit__td"><?php echo $requirements['vacation']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['vacation']); ?></td>
         </tr>
       <?php endif; ?>
 
       <?php if (!empty($requirements['use'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">使用期間</th>
-          <td class = "p-recruit__td"><?php echo $requirements['use']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['use']); ?></td>
         </tr>
       <?php endif; ?>
       
       <?php if (!empty($requirements['insurance'])):?>
         <tr class = "p-recruit__tr">
           <th class = "p-recruit__th">社会保険</th>
-          <td class = "p-recruit__td"><?php echo $requirements['insurance']; ?></td>
+          <td class = "p-recruit__td"><?php echo esc_html($requirements['insurance']); ?></td>
         </tr>
       <?php endif; ?>
       <?php endif; ?>

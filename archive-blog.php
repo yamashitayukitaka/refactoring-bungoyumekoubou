@@ -57,7 +57,7 @@ get_header();
               </figure>
             
               <div>
-                <deta class = "p-blog__list__deta"><?php echo get_the_date('y/m/d'); ?></deta>
+                <deta class = "p-blog__list__deta"><?php echo esc_html(get_the_date('y/m/d')); ?></deta>
                   <p><?php the_title(); ?></p>
               </div>
             </a>

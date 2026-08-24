@@ -60,7 +60,7 @@ get_header();
       <?php foreach($areaTags as $areaTag):?>
         <?php $areaSlug = $areaTag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo get_term_link($areaSlug,$tag); ?>" class = "js-tab c-tag__list__link">
+          <a href = "<?php echo esc_url(get_term_link($areaSlug,$tag)); ?>" class = "js-tab c-tag__list__link">
             <?php echo esc_html($areaTag->name); ?>
           </a>
         </li>

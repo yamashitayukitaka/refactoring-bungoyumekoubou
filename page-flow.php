@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-flow-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -75,7 +75,7 @@ get_header();
               <?php echo sprintf("%02d", ($i + 1)); ?>.
             </span>
             <?php if (!empty($showroom['title'])) : ?>
-              <?php echo $showroom['title']; ?>
+              <?php echo wp_kses_post($showroom['title']); ?>
             <?php endif; ?>
           </div>
           <?php if (!empty($showroom['subtitle'])) : ?>

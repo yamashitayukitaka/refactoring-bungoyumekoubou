@@ -102,13 +102,13 @@ get_header();
           <?php echo sprintf("%02d", ($i + 1)); ?>
         </span>
         <?php if (!empty($qa['question'])) : ?>
-        <?php echo $qa['question']; ?>
+        <?php echo esc_html($qa['question']); ?>
         <?php endif; ?>
       </button>
       <div class="panel">
         <p>
           <?php if (!empty($qa['answer'])) : ?>
-          <?php echo $qa['answer']; ?>
+          <?php echo wp_kses_post($qa['answer']); ?>
           <?php endif; ?>
         </p>
       </div>
@@ -411,7 +411,7 @@ get_header();
           <div>
             <?php if (!empty($interview['r-interview-content-tit'])) : ?>
               <p class="c-title--orangeLine u-mb30">
-                <?php echo $interview['r-interview-content-tit']; ?>
+                <?php echo wp_kses_post($interview['r-interview-content-tit']); ?>
               </p>
             <?php endif; ?>
           </div>
@@ -431,7 +431,7 @@ get_header();
                 <?php endif; ?>
                 <?php if (!empty($user['r-content-user-txt'])) : ?>
                   <p class="recruit__interview__usertxt">
-                    <?php echo $user['r-content-user-txt'] ?>
+                    <?php echo wp_kses_post($user['r-content-user-txt']) ?>
                   </p>
                 <?php endif; ?>
               </div>
@@ -481,12 +481,12 @@ get_header();
             <tr class="c-table__about__tr">
               <th class="c-table__about__th">
                 <?php if (!empty($row['recruit-app-title'])) : ?>
-                <?php echo $row['recruit-app-title']; ?>
+                <?php echo esc_html($row['recruit-app-title']); ?>
                 <?php endif; ?>
               </th>
               <td class="c-table__about__td">
                 <?php if (!empty($row['recruit-app-content'])) : ?>
-                <?php echo $row['recruit-app-content']; ?>
+                <?php echo wp_kses_post($row['recruit-app-content']); ?>
                 <?php endif; ?>
               </td>
             </tr>

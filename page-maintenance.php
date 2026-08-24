@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-maintenance-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -64,14 +64,14 @@ get_header();
           </div>
           <?php if (!empty($maintenance['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $maintenance['txt']; ?>
+              <?php echo wp_kses_post($maintenance['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
       </div>
       <?php if (!empty($maintenance['description'])) : ?>
         <p class="l-content--middle maintenance-description">
-          <?php echo $maintenance['description']; ?><br><br>
+          <?php echo wp_kses_post($maintenance['description']); ?><br><br>
         </p>
       <?php endif; ?>
     </div>
@@ -93,7 +93,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($inspection['txt_1'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $inspection['txt_1']; ?>
+                <?php echo wp_kses_post($inspection['txt_1']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -107,7 +107,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($inspection['txt_2'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $inspection['txt_2']; ?>
+                <?php echo wp_kses_post($inspection['txt_2']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -121,7 +121,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($inspection['txt_3'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $inspection['txt_3']; ?>
+                <?php echo wp_kses_post($inspection['txt_3']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -132,7 +132,7 @@ get_header();
 
         <img class="inspection_description_img2" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_6.webp'); ?>">
         <?php if (!empty($inspection['description'])) : ?>
-          <p class="inspection-description--txt"><?php echo $inspection['description']; ?></p>
+          <p class="inspection-description--txt"><?php echo wp_kses_post($inspection['description']); ?></p>
         <?php endif; ?>
 
       </div>

@@ -22,7 +22,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-concept-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -95,7 +95,7 @@ get_header();
         </div>
         <?php if (!empty($policy_one['policy_one_txt'])) : ?>
           <div class="concept__policy1-text u-mb25">
-            <?php echo $policy_one['policy_one_txt']; ?>
+            <?php echo wp_kses_post($policy_one['policy_one_txt']); ?>
           </div>
         <?php endif; ?>
         <div class="content_center">
@@ -124,7 +124,7 @@ get_header();
         </div>
         <?php if (!empty($policy_two['policy_two_txt'])) : ?>
           <div class="concept__policy2-text u-mb25">
-            <?php echo $policy_two['policy_two_txt']; ?>
+            <?php echo wp_kses_post($policy_two['policy_two_txt']); ?>
           </div>
         <?php endif; ?>
         <div class="content_center">
@@ -153,7 +153,7 @@ get_header();
         </div>
         <?php if (!empty($policy_three['policy_three_txt'])) : ?>
           <div class="concept__policy1-text u-mb25">
-            <?php echo $policy_three['policy_three_txt']; ?>
+            <?php echo wp_kses_post($policy_three['policy_three_txt']); ?>
           </div>
         <?php endif; ?>
         <div class="content_center">
@@ -237,7 +237,7 @@ get_header();
       <?php $team_txt = get_field('concept-team_txt'); ?>
       <?php if ($team_txt) : ?>
         <p class="concept__system_team_content u-mb20">
-          <?php echo $team_txt; ?>
+          <?php echo wp_kses_post($team_txt); ?>
         </p>
       <?php endif; ?>
       <div class="go_list_wrapper">

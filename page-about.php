@@ -16,7 +16,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-page'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -452,13 +452,13 @@ get_header();
           <?php echo sprintf("%02d", ($i + 1)); ?>
         </span>
         <?php if (!empty($qa['question'])) : ?>
-        <?php echo $qa['question']; ?>
+        <?php echo esc_html($qa['question']); ?>
         <?php endif; ?>
       </button>
       <div class="panel">
         <p>
           <?php if (!empty($qa['answer'])) : ?>
-          <?php echo $qa['answer']; ?>
+          <?php echo wp_kses_post($qa['answer']); ?>
           <?php endif; ?>
         </p>
       </div>

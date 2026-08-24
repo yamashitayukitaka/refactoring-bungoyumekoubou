@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-cost-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -133,7 +133,7 @@ get_header();
           </div>
           <?php if (!empty($cost['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $cost['txt']; ?>
+              <?php echo wp_kses_post($cost['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -211,7 +211,7 @@ get_header();
           </div>
           <?php if (!empty($cost['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $cost['txt']; ?>
+              <?php echo wp_kses_post($cost['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -275,7 +275,7 @@ get_header();
               <span class=" u-orange">無料間取り図、3Dパース</span>を作成
             </p>
             <div class="design__paint2_content_txt">
-              <?php echo $point_txt_one; ?>
+              <?php echo wp_kses_post($point_txt_one); ?>
             </div>
           </div>
         </div>
@@ -288,7 +288,7 @@ get_header();
               <span class="u-orange">状況確認</span>もしっかりと
             </p>
             <div class="design__paint2_content_txt">
-              <?php echo $point_txt_two; ?>
+              <?php echo wp_kses_post($point_txt_two); ?>
             </div>
           </div>
           <div class="design__paint2_img">
@@ -329,7 +329,7 @@ get_header();
           </div>
           <?php if (!empty($cost['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $cost['txt']; ?>
+              <?php echo wp_kses_post($cost['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -440,7 +440,7 @@ get_header();
           </div>
           <?php if (!empty($cost['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $cost['txt']; ?>
+              <?php echo wp_kses_post($cost['txt']); ?>
             </div>
           <?php endif; ?>
         </div>

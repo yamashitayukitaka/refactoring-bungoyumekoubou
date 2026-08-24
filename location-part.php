@@ -39,14 +39,14 @@ if ($stores) {
           <?php endif; ?>
           <div class="location_item_first_info">
             <div class="location_item_first_info_txt">
-              <?php if (!empty($store['address'])) : ?><span class="location_detail_info"><?php echo $store['address']; ?></span><?php endif; ?>
-              <?php if (!empty($store['postal_code'])) : ?><span class="location_detail_info"><?php echo $store['postal_code']; ?></span><?php endif; ?>
-              <?php if (!empty($store['building'])) : ?><span class="location_detail_info"><?php echo $store['building']; ?></span><?php endif; ?>
-              <?php if (!empty($store['phone'])) : ?><span class="location_detail_info"><?php echo $store['phone']; ?></span><?php endif; ?>
+              <?php if (!empty($store['address'])) : ?><span class="location_detail_info"><?php echo esc_html($store['address']); ?></span><?php endif; ?>
+              <?php if (!empty($store['postal_code'])) : ?><span class="location_detail_info"><?php echo esc_html($store['postal_code']); ?></span><?php endif; ?>
+              <?php if (!empty($store['building'])) : ?><span class="location_detail_info"><?php echo esc_html($store['building']); ?></span><?php endif; ?>
+              <?php if (!empty($store['phone'])) : ?><span class="location_detail_info"><?php echo esc_html($store['phone']); ?></span><?php endif; ?>
             </div>
             <?php if (!empty($store['map'])) : ?>
             <div class="location_item_first_map">
-              <iframe src="<?php echo $store['map']; ?>" style="border:0;" allowfullscreen="" loading="lazy" width="100%"
+              <iframe src="<?php echo esc_url($store['map']); ?>" style="border:0;" allowfullscreen="" loading="lazy" width="100%"
                 height="230px" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <?php endif; ?>

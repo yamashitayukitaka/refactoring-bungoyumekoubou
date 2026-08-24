@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-renovation-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -66,7 +66,7 @@ get_header();
           </div>
           <?php if (!empty($renovation['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $renovation['txt']; ?>
+              <?php echo wp_kses_post($renovation['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -167,7 +167,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($details['txt_1'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $details['txt_1']; ?>
+                <?php echo wp_kses_post($details['txt_1']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -181,7 +181,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($details['txt_2'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $details['txt_2']; ?>
+                <?php echo wp_kses_post($details['txt_2']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -195,7 +195,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($details['txt_3'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $details['txt_3']; ?>
+                <?php echo wp_kses_post($details['txt_3']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -209,7 +209,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($details['txt_4'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $details['txt_4']; ?>
+                <?php echo wp_kses_post($details['txt_4']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -223,7 +223,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($details['txt_5'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $details['txt_5']; ?>
+                <?php echo wp_kses_post($details['txt_5']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -237,7 +237,7 @@ get_header();
             <?php endif; ?>
             <?php if (!empty($details['txt_6'])) : ?>
               <div class="samplelogo_button mx-auto">
-                <?php echo $details['txt_6']; ?>
+                <?php echo wp_kses_post($details['txt_6']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -356,7 +356,7 @@ get_header();
             </div>
             <?php if (!empty($point['txt'])) : ?>
               <div class="concept__policy2-text u-mb25">
-                <?php echo $point['txt']; ?>
+                <?php echo wp_kses_post($point['txt']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -388,7 +388,7 @@ get_header();
             </div>
             <?php if (!empty($point['txt'])) : ?>
               <div class="concept__policy2-text u-mb25">
-                <?php echo $point['txt']; ?>
+                <?php echo wp_kses_post($point['txt']); ?>
               </div>
             <?php endif; ?>
           </div>
