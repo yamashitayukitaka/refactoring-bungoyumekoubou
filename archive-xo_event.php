@@ -35,6 +35,7 @@ get_header();
           すべて
         </a>
       </li>
+      <?php if ($terms && !is_wp_error($terms)): ?>
       <?php foreach($terms as $term):?>
         <li class = "c-term__list__item">
           <a href = "<?php echo esc_url (get_term_link($term)); ?>">
@@ -42,6 +43,7 @@ get_header();
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
     <?php $eventTags = get_terms($tag, 
@@ -59,6 +61,7 @@ get_header();
           <a href = "#" class = "u-currentTab c-tag__list__link">すべて</a>
         </li>
       
+      <?php if ($eventTags && !is_wp_error($eventTags)): ?>
       <?php foreach($eventTags as $eventTag):?>
         <?php $eventSlug = $eventTag->slug ;?>
         <li class = "c-tag__list__item">
@@ -67,6 +70,7 @@ get_header();
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
   <section class = "l-content u-mb100">

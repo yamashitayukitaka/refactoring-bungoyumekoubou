@@ -150,6 +150,7 @@ if ($lootUrl === $archiveUrl) {
           すべて
         </a>
       </li>
+      <?php if ($terms && !is_wp_error($terms)): ?>
       <?php foreach($terms as $term):?>
         <?php $termSlug = $term -> slug;?>
         <li class = "c-term__list__item">
@@ -158,6 +159,7 @@ if ($lootUrl === $archiveUrl) {
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
     
     <?php elseif ($lootSlug): ?>
@@ -168,6 +170,7 @@ if ($lootUrl === $archiveUrl) {
             すべて
           </a>
         </li>
+        <?php if ($terms && !is_wp_error($terms)): ?>
         <?php foreach($terms as $term):?>
           <?php $termSlug = $term -> slug;?>
             <li class = "c-term__list__item <?php if ($lootSlug === $termSlug):?>u-current<?php endif; ?>">
@@ -176,6 +179,7 @@ if ($lootUrl === $archiveUrl) {
               </a>
             </li>
         <?php endforeach;?>
+        <?php endif; ?>
       </ul>
 
     <?php else:?>
@@ -186,6 +190,7 @@ if ($lootUrl === $archiveUrl) {
             すべて
           </a>
         </li>
+        <?php if ($terms && !is_wp_error($terms)): ?>
         <?php foreach($terms as $term):?>
           <?php $termSlug = $term -> slug;?>
             <li class = "c-term__list__item">
@@ -194,6 +199,7 @@ if ($lootUrl === $archiveUrl) {
               </a>
             </li>
         <?php endforeach;?>
+        <?php endif; ?>
       </ul>
     
     <?php endif; ?>
@@ -222,6 +228,7 @@ if ($lootUrl === $archiveUrl) {
       </li>
     <?php endif; ?>
       
+      <?php if ($eventTags && !is_wp_error($eventTags)): ?>
       <?php foreach($eventTags as $eventTag):?>
         <?php $eventSlug = $eventTag->slug ;?>
           <li class = "c-tag__list__item">
@@ -230,6 +237,7 @@ if ($lootUrl === $archiveUrl) {
             </a>
           </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
  

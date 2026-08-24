@@ -31,6 +31,7 @@ get_header();
           すべて
         </a>
       </li>
+      <?php if ($terms && !is_wp_error($terms)): ?>
       <?php foreach($terms as $term):?>
         <li>
           <a href = "<?php echo esc_url (get_term_link($term)); ?>">
@@ -38,6 +39,7 @@ get_header();
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
     <ul>

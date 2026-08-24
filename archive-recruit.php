@@ -29,6 +29,7 @@
       ]
     );?>
     
+    <?php if ($types && !is_wp_error($types)): ?>
     <?php foreach($types as $type):?>
     <?php $term_id = $type->term_id ;?>
     <?php
@@ -62,6 +63,7 @@
       </li>
 
     <?php endforeach;?>
+    <?php endif; ?>
     <?php
         $sorry = array(
         'post_type' => $postType,

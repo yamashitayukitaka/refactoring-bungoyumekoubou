@@ -54,7 +54,7 @@
                       );?>
 
                     <?php $event_type = get_field('event-type'); ?>
-                    <?php if($event_type): ?>
+                    <?php if($event_type && $eventTypes && !is_wp_error($eventTypes)): ?>
                       <div class = "c-id__wrap">
                         <?php foreach($eventTypes as $eventType):?>
                           <span class = "c-id u-mb15"><?php echo esc_html($eventType->name); ?></span>

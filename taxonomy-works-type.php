@@ -32,6 +32,7 @@
           すべて
         </a>
       </li>
+      <?php if ($terms && !is_wp_error($terms)): ?>
       <?php foreach($terms as $term):?>
         <?php $termName = $term -> name;?>
         <li class = "c-term__list__item <?php if($mainQueryTermName === $termName):?> u-current <?php endif; ?>">
@@ -40,6 +41,7 @@
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
     
     <?php $worksTags = get_terms($tag, 
@@ -51,7 +53,7 @@
         ]
       );?>
 
-    <?php if($worksTags):?>
+    <?php if($worksTags && !is_wp_error($worksTags)):?>
 
       <ul class = "c-tag__list l-content--large">
         

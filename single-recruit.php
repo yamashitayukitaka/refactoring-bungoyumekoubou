@@ -6,8 +6,12 @@ get_header();
 <?php 
   $taxonomy ='recruit-type';
   $parents = wp_get_post_terms( get_the_ID(), $taxonomy, array('parent' => 0));
-  $parent = $parents[0]->name;
-  $parent_id = $parents[0]->term_id;
+  $parent = '';
+  $parent_id = 0;
+  if ($parents && !is_wp_error($parents)) {
+    $parent = $parents[0]->name;
+    $parent_id = $parents[0]->term_id;
+  }
   $requirements = get_field('requirements');
 ?>
 
