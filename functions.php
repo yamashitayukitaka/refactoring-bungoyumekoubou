@@ -136,15 +136,6 @@ if (is_admin_bar_showing()) {
   });
 }
 
-//自動出力されるｐタグを出力させない
-function custom_remove_paragraph_from_content($content)
-{
-  $content = preg_replace('/<p>/', '', $content);
-  $content = preg_replace('/<\/p>/', '', $content);
-  return $content;
-}
-add_filter('the_content', 'custom_remove_paragraph_from_content');
-
 if (function_exists('acf_add_options_page')) {
   acf_add_options_page(array(
     'page_title'    => 'サイト全体管理',
