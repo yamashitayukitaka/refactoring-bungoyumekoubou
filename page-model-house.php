@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-model-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 

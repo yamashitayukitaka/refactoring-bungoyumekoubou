@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-support-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -114,7 +114,7 @@ get_header();
         </div>
         <?php if (!empty($guarantee['title'])) : ?>
           <p class="c_title_orangeLine_t"><span class="marker">
-              <?php echo $guarantee['title']; ?></span>
+              <?php echo esc_html($guarantee['title']); ?></span>
           </p>
         <?php endif; ?>
         <p class="common_meta_content">
@@ -127,7 +127,7 @@ get_header();
         <?php endif; ?>
         <?php if (!empty($guarantee['txt'])) : ?>
           <div class="commitment__security1_content_maintext">
-            <?php echo $guarantee['txt']; ?>
+            <?php echo wp_kses_post($guarantee['txt']); ?>
           </div>
         <?php endif; ?>
       </div>
@@ -163,7 +163,7 @@ get_header();
         <?php if (!empty($guarantee['title'])) : ?>
           <p class="c_title_orangeLine_t">
             <span class="marker">
-              <?php echo $guarantee['title']; ?></span>
+              <?php echo esc_html($guarantee['title']); ?></span>
           </p>
         <?php endif; ?>
         <?php if (!empty($guarantee['img'])) : ?>
@@ -173,7 +173,7 @@ get_header();
         <?php endif; ?>
         <?php if (!empty($guarantee['txt'])) : ?>
           <div class="commitment__security1_content_maintext">
-            <?php echo $guarantee['txt']; ?>
+            <?php echo wp_kses_post($guarantee['txt']); ?>
           </div>
         <?php endif; ?>
       </div>
@@ -202,7 +202,7 @@ get_header();
           <?php if (!empty($guarantee['title'])) : ?>
             <p class="c_title_orangeLine_t">
               <span class="marker">
-                <?php echo $guarantee['title']; ?></span>
+                <?php echo esc_html($guarantee['title']); ?></span>
             </p>
           <?php endif; ?>
           <?php if (!empty($guarantee['txt'])) : ?>
@@ -332,7 +332,7 @@ get_header();
         <?php if (!empty($guarantee['title'])) : ?>
           <p class="c_title_orangeLine_t">
             <span class="marker">
-              <?php echo $guarantee['title']; ?></span>
+              <?php echo esc_html($guarantee['title']); ?></span>
           </p>
         <?php endif; ?>
         <?php if (!empty($guarantee['img'])) : ?>
@@ -345,7 +345,7 @@ get_header();
         </p> -->
         <?php if (!empty($guarantee['txt'])) : ?>
           <div class="commitment__security1_content_maintext">
-            <?php echo $guarantee['txt']; ?>
+            <?php echo wp_kses_post($guarantee['txt']); ?>
           </div>
         <?php endif; ?>
         <div class="content_center top_p_3">

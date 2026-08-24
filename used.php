@@ -284,7 +284,7 @@ get_header();
         アクセス
       </p>
       <div class = "p-property__iframe__wrap">
-        <?php echo $map; ?>
+        <?php echo wazeka_kses_iframe($map); ?>
       </div>
     </section>
   <?php endif; ?>

@@ -224,7 +224,7 @@ if ($lootUrl === $archiveUrl) {
       <?php foreach($worksTags as $worksTag):?>
         <?php $worksSlug = $worksTag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo get_term_link($worksSlug,$tag); ?>" class = "js-tab c-tag__list__link <?php if ($worksSlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
+          <a href = "<?php echo esc_url(get_term_link($worksSlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($worksSlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
             <?php echo esc_html($worksTag->name); ?>
           </a>
         </li>

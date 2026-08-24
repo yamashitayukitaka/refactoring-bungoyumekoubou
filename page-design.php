@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-design-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -161,7 +161,7 @@ get_header();
           </div>
           <?php if (!empty($design['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $design['txt']; ?>
+              <?php echo wp_kses_post($design['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -183,7 +183,7 @@ get_header();
             </p>
             <?php if (!empty($design['point_txt_one'])) : ?>
               <div class="design__paint2_content_txt">
-                <?php echo $design['point_txt_one']; ?>
+                <?php echo wp_kses_post($design['point_txt_one']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -205,7 +205,7 @@ get_header();
             </p>
             <?php if (!empty($design['point_txt_two'])) : ?>
               <div class="design__paint2_content_txt">
-                <?php echo $design['point_txt_two']; ?>
+                <?php echo wp_kses_post($design['point_txt_two']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -250,7 +250,7 @@ get_header();
           </div>
           <?php if (!empty($design['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $design['txt']; ?>
+              <?php echo wp_kses_post($design['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -275,7 +275,7 @@ get_header();
             </p>
             <?php if (!empty($design['point_txt_one'])) : ?>
               <div class="design__paint2_content_txt">
-                <?php echo $design['point_txt_one']; ?>
+                <?php echo wp_kses_post($design['point_txt_one']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -293,7 +293,7 @@ get_header();
               楽しく共有
             </p>
             <div class="design__paint2_content_txt">
-              <?php echo $point_txt_two; ?>
+              <?php echo wp_kses_post($point_txt_two); ?>
             </div>
           </div>
           <div class="design__paint2_img">
@@ -334,7 +334,7 @@ get_header();
           </div>
           <?php if (!empty($design['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $design['txt']; ?>
+              <?php echo wp_kses_post($design['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -359,7 +359,7 @@ get_header();
             </div>
             <?php if (!empty($design['point_txt_one'])) : ?>
               <div class="design__paint2_content_txt">
-                <?php echo $design['point_txt_one']; ?>
+                <?php echo wp_kses_post($design['point_txt_one']); ?>
               </div>
             <?php endif; ?>
           </div>
@@ -382,7 +382,7 @@ get_header();
             </p>
             <?php if (!empty($design['point_txt_two'])) : ?>
               <div class="design__paint2_content_txt">
-                <?php echo $design['point_txt_two']; ?>
+                <?php echo wp_kses_post($design['point_txt_two']); ?>
               </div>
             <?php endif; ?>
             <div class="content_center top_p_3">
@@ -429,7 +429,7 @@ get_header();
           </div>
           <?php if (!empty($design['txt'])) : ?>
             <div class="concept__policy2-text u-mb25">
-              <?php echo $design['txt']; ?>
+              <?php echo wp_kses_post($design['txt']); ?>
             </div>
           <?php endif; ?>
         </div>
@@ -455,7 +455,7 @@ get_header();
             </div>
             <?php if (!empty($design['point_txt_one'])) : ?>
               <div class="design__paint2_content_txt">
-                <?php echo $design['point_txt_one']; ?>
+                <?php echo wp_kses_post($design['point_txt_one']); ?>
               </div>
             <?php endif; ?>
             <div class="content_center top_p_3">
@@ -477,7 +477,7 @@ get_header();
               </p>
             </div>
             <div class="design__paint2_content_txt">
-              <?php echo $point_txt_two; ?>
+              <?php echo wp_kses_post($point_txt_two); ?>
             </div>
           </div>
           <div class="design__paint2_img">

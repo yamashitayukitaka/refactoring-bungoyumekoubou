@@ -14,7 +14,7 @@ get_header();
     </div>
     <?php $mv = get_field('mv-quality-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -128,7 +128,7 @@ get_header();
         </div>
         <?php if (!empty($quality['title'])) : ?>
           <p class="common_meta_content">
-            <?php echo $quality['title']; ?>
+            <?php echo esc_html($quality['title']); ?>
           </p>
         <?php endif; ?>
         <?php if (!empty($quality['txt'])) : ?>
@@ -253,12 +253,12 @@ get_header();
         </div>
         <?php if (!empty($quality['title'])) : ?>
           <p class="common_meta_content">
-            <?php echo $quality['title']; ?>
+            <?php echo esc_html($quality['title']); ?>
           </p>
         <?php endif; ?>
         <?php if (!empty($quality['txt'])) : ?>
           <div class="support__content_maintext">
-            <?php echo $quality['txt']; ?>
+            <?php echo wp_kses_post($quality['txt']); ?>
           </div>
         <?php endif; ?>
       </div>
@@ -313,7 +313,7 @@ get_header();
       <?php endif; ?>
       <?php if (!empty($stable_structure['txt'])) : ?>
         <div class="commitment__woodframe_txt">
-          <?php echo $stable_structure['txt']; ?>
+          <?php echo wp_kses_post($stable_structure['txt']); ?>
         </div>
       <?php endif; ?>
     </div>
@@ -334,7 +334,7 @@ get_header();
         <?php endif; ?>
         <?php if (!empty($energy['txt'])) : ?>
           <div class=" commitment__mersystem_txt">
-            <?php echo $energy['txt']; ?>
+            <?php echo wp_kses_post($energy['txt']); ?>
           </div>
         <?php endif; ?>
         <?php if (!empty($energy['img'])) : ?>
@@ -440,12 +440,12 @@ get_header();
         </div>
         <?php if (!empty($quality['title'])) : ?>
           <p class="common_meta_content">
-            <?php echo $quality['title']; ?>
+            <?php echo esc_html($quality['title']); ?>
           </p>
         <?php endif; ?>
         <?php if (!empty($quality['txt'])) : ?>
           <div class="support__content_maintext">
-            <?php echo $quality['txt']; ?>
+            <?php echo wp_kses_post($quality['txt']); ?>
           </div>
         <?php endif; ?>
       </div>
@@ -538,7 +538,7 @@ get_header();
         </div>
         <?php if (!empty($quality['title'])) : ?>
           <p class="common_meta_content">
-            <?php echo $quality['title']; ?>
+            <?php echo esc_html($quality['title']); ?>
           </p>
         <?php endif; ?>
         <?php if (!empty($quality['txt'])) : ?>
@@ -603,12 +603,12 @@ get_header();
         </div>
         <?php if (!empty($quality['title'])) : ?>
           <p class="common_meta_content">
-            <?php echo $quality['title']; ?>
+            <?php echo esc_html($quality['title']); ?>
           </p>
         <?php endif; ?>
         <?php if (!empty($quality['txt'])) : ?>
           <div class="support__content_maintext ">
-            <?php echo $quality['txt']; ?>
+            <?php echo wp_kses_post($quality['txt']); ?>
           </div>
         <?php endif; ?>
       </div>

@@ -97,13 +97,13 @@ get_header();
     <?php $event_main_txt = get_field('event-main-txt'); ?>
     <?php if ($event_main_txt) : ?>
     <p class="c-title--middle u-mb50">
-      <?php echo $event_main_txt; ?>
+      <?php echo wp_kses_post($event_main_txt); ?>
     </p>
     <?php endif; ?>
     <?php $event_txt = get_field('event-txt'); ?>
     <?php if ($event_txt) : ?>
     <p class="c-txt--middleBold u-mb50">
-      <?php echo $event_txt; ?>
+      <?php echo wp_kses_post($event_txt); ?>
     </p>
     <?php endif; ?>
     <?php if (have_rows('flex')) : // 柔軟なコンテンツフィールドの名前 
@@ -123,10 +123,10 @@ get_header();
                     <?php endif; ?>
                   </figure>
                   <?php if ($ttl) : ?>
-                  <p class="c-title--middle"><?php echo $ttl; ?></p>
+                  <p class="c-title--middle"><?php echo esc_html($ttl); ?></p>
                   <?php endif; ?>
                   <?php if ($txt) : ?>
-                  <p class="c-txt--middleBold"><?php echo $txt; ?></p>
+                  <p class="c-txt--middleBold"><?php echo wp_kses_post($txt); ?></p>
                   <?php endif; ?>
                 </div>
               <?php endwhile; ?>
@@ -144,10 +144,10 @@ get_header();
                     <?php endif; ?>
                   </figure>
                   <?php if ($ttl) : ?>
-                  <p class="c-title--middle"><?php echo $ttl; ?></p>
+                  <p class="c-title--middle"><?php echo esc_html($ttl); ?></p>
                   <?php endif; ?>
                   <?php if ($txt) : ?>
-                  <p class="c-txt--middleBold"><?php echo $txt; ?></p>
+                  <p class="c-txt--middleBold"><?php echo wp_kses_post($txt); ?></p>
                   <?php endif; ?>
                 </div>
               <?php endwhile; ?>
@@ -167,10 +167,10 @@ get_header();
                     <?php endif; ?>
                   </figure>
                   <?php if ($ttl) : ?>
-                  <p class="c-title--middle u-mb10"><?php echo $ttl; ?></p>
+                  <p class="c-title--middle u-mb10"><?php echo esc_html($ttl); ?></p>
                   <?php endif; ?>
                   <?php if ($txt) : ?>
-                  <p class="c-txt--middleBold"><?php echo $txt; ?></p>
+                  <p class="c-txt--middleBold"><?php echo wp_kses_post($txt); ?></p>
                   <?php endif; ?>
                 </div>
               <?php endwhile; ?>
@@ -266,7 +266,7 @@ get_header();
           会場について
         </p>
         <div class="p-event__googleMapWrap">
-          <?php echo $googleMap; ?>
+          <?php echo wazeka_kses_iframe($googleMap); ?>
         </div>
       </section>
     <?php endif; ?>

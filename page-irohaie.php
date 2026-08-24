@@ -21,7 +21,7 @@ get_header();
 
     <!-- <?php $mv = get_field('mv-irohaie-img'); ?>
     <?php if ($mv) : ?>
-    <figure class="c-heig__img__wrap c-pageMv__img__wrap" style="background-image: url('<?php echo $mv; ?>');"></figure>
+    <figure class="c-heig__img__wrap c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?> -->
   </div>
 
@@ -255,10 +255,10 @@ get_header();
           ?>
           <div class="feature-detail-txt">
             <?php if (!empty($detail['title'])) : ?>
-            <h2 class="u-mb20"><?php echo $detail['title']; ?></h2>
+            <h2 class="u-mb20"><?php echo esc_html($detail['title']); ?></h2>
             <?php endif; ?>
             <?php if (!empty($detail['txt'])) : ?>
-            <p><?php echo $detail['txt']; ?></p>
+            <p><?php echo wp_kses_post($detail['txt']); ?></p>
             <?php endif; ?>
           </div>
           <?php if (!empty($detail['img'])) : ?>
@@ -330,11 +330,11 @@ get_header();
                 <?php endif; ?>
                 <?php if (!empty($point_item['title'])) : ?>
                 <h3 class="point_item-title">
-                  <?php echo $point_item['title']; ?>
+                  <?php echo esc_html($point_item['title']); ?>
                   </h2>
                 <?php endif; ?>
                   <?php if (!empty($point_item['txt'])) : ?>
-                  <p class="point_item-txt"><?php echo $point_item['txt']; ?></p>
+                  <p class="point_item-txt"><?php echo wp_kses_post($point_item['txt']); ?></p>
                   <?php endif; ?>
               </div>
             <?php }
@@ -354,10 +354,10 @@ get_header();
           <?php endif; ?>
           <div class="feature-detail-txt">
             <?php if (!empty($detail['title'])) : ?>
-            <h2 class="u-mb20"><?php echo $detail['title']; ?></h2>
+            <h2 class="u-mb20"><?php echo esc_html($detail['title']); ?></h2>
             <?php endif; ?>
             <?php if (!empty($detail['txt'])) : ?>
-            <p><?php echo $detail['txt']; ?></p>
+            <p><?php echo wp_kses_post($detail['txt']); ?></p>
             <?php endif; ?>
           </div>
           <?php endif; ?>
@@ -420,11 +420,11 @@ get_header();
                 <?php if (!empty($quality['title'])) : ?>
                   <h3 class="quality_title">
                     <span class="font_orange"><?php echo sprintf("%02d", ($i + 1)) . "."; ?></span>
-                    <?php echo $quality['title']; ?>
+                    <?php echo esc_html($quality['title']); ?>
                   </h3>
                 <?php endif; ?>
                 <?php if (!empty($quality['txt'])) : ?>
-                  <p class="quality_txt"><?php echo $quality['txt']; ?></p>
+                  <p class="quality_txt"><?php echo wp_kses_post($quality['txt']); ?></p>
                 <?php endif; ?>
               </div>
             </div>

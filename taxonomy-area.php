@@ -60,7 +60,7 @@
       <?php foreach($eventTags as $eventTag):?>
         <?php $eventSlug = $eventTag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo get_term_link($eventSlug,$tag); ?>" class = "js-tab c-tag__list__link">
+          <a href = "<?php echo esc_url(get_term_link($eventSlug,$tag)); ?>" class = "js-tab c-tag__list__link">
             <?php echo esc_html($eventTag->name); ?>
           </a>
         </li>

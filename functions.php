@@ -186,6 +186,27 @@ function enqueue_swiper_assets()
 }
 add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
 
+function wazeka_kses_iframe($html)
+{
+  return wp_kses(
+    $html,
+    array(
+      'iframe' => array(
+        'src' => true,
+        'width' => true,
+        'height' => true,
+        'style' => true,
+        'allow' => true,
+        'allowfullscreen' => true,
+        'loading' => true,
+        'referrerpolicy' => true,
+        'frameborder' => true,
+        'class' => true,
+      ),
+    )
+  );
+}
+
 function taxonomy_orderby_description( $orderby, $args ) {
 
   if ( $args['orderby'] == 'description' ) {

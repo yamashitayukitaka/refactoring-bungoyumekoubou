@@ -12,10 +12,10 @@
           <?php endif; ?>
           </figure>
           <?php if ($flex_ttl) : ?>
-          <p class = "c-title--middle"><?php echo $flex_ttl; ?></p>
+          <p class = "c-title--middle"><?php echo esc_html($flex_ttl); ?></p>
           <?php endif; ?>
           <?php if ($flex_txt) : ?>
-          <p class = "c-txt--middleBold"><?php echo $flex_txt; ?></p>
+          <p class = "c-txt--middleBold"><?php echo wp_kses_post($flex_txt); ?></p>
           <?php endif; ?>
         </div>
       <?php endwhile; ?>
@@ -33,10 +33,10 @@
           <?php endif; ?>
           </figure>
           <?php if ($flex_ttl) : ?>
-          <p class = "c-title--middle"><?php echo $flex_ttl; ?></p>
+          <p class = "c-title--middle"><?php echo esc_html($flex_ttl); ?></p>
           <?php endif; ?>
           <?php if ($flex_txt) : ?>
-          <p class = "c-txt--middleBold"><?php echo $flex_txt; ?></p>
+          <p class = "c-txt--middleBold"><?php echo wp_kses_post($flex_txt); ?></p>
           <?php endif; ?>
         </div>
       <?php endwhile; ?>
@@ -56,10 +56,10 @@
           <?php endif; ?>
           </figure>
           <?php if ($flex_ttl) : ?>
-          <p class = "c-title--middle"><?php echo $flex_ttl; ?></p>
+          <p class = "c-title--middle"><?php echo esc_html($flex_ttl); ?></p>
           <?php endif; ?>
           <?php if ($flex_txt) : ?>
-          <p class = "c-txt--middleBold"><?php echo $flex_txt; ?></p>
+          <p class = "c-txt--middleBold"><?php echo wp_kses_post($flex_txt); ?></p>
           <?php endif; ?>
         </div>
       <?php endwhile; ?>

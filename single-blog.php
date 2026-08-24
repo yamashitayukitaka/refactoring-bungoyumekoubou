@@ -14,7 +14,7 @@ get_header();
       <?php the_title(); ?>
     </h3>
 
-    <deta class = "p-blog__deta"><?php echo get_the_date('y/m/d'); ?></deta>
+    <deta class = "p-blog__deta"><?php echo esc_html(get_the_date('y/m/d')); ?></deta>
 
     <?php if (has_post_thumbnail()) : ?>
       <figure class="p-flex__one__imgWrap u-mb200">
@@ -46,14 +46,14 @@ get_header();
           <?php $ttl = get_sub_field('ttl'); ?>
           <?php if ($ttl) : ?>
           <h4 class = "c-title--middle u-mb50">
-            <?php echo $ttl; //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
+            <?php echo esc_html($ttl); //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
           </h4>
           <?php endif; ?>
         <?php elseif( get_row_layout() == 'txt-column' ): //レイアウト名2があった場合に出力 ?>
           <?php $txt = get_sub_field('txt'); ?>
           <?php if ($txt) : ?>
           <p class = "u-mb50">
-            <?php echo $txt; //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
+            <?php echo wp_kses_post($txt); //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
           </p>
           <?php endif; ?>
         <?php endif; ?>
