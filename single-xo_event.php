@@ -28,12 +28,14 @@ get_header();
           'order' => 'ASC',
         ]
       ); ?>
+      <?php if ($eventTypes && !is_wp_error($eventTypes)) : ?>
       <?php foreach ($eventTypes as $eventType) : ?>
         <div class="c-id__wrap--top">
           <span class="c-id"><?php echo esc_html($eventType->name); ?></span>
           <span class = "c-id--end">終了</span>
         </div>
       <?php endforeach; ?>
+      <?php endif; ?>
     <?php endif; ?>
 
     <dl class="u-flex">

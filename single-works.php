@@ -31,7 +31,7 @@ get_header();
       );?>
 
       <?php $works_type = get_field('works-type'); ?>
-      <?php if($works_type): ?>
+      <?php if($works_type && $worksTypes && !is_wp_error($worksTypes)): ?>
         <div class = "c-id__wrap--top">
           <?php foreach($worksTypes as $worksType):?>
             <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>

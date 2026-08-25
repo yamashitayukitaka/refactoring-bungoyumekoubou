@@ -25,6 +25,7 @@ get_header();
     'order' => 'ASC',
   ]);
   ?>
+  <?php if ($terms && !is_wp_error($terms)) : ?>
   <?php foreach ($terms as $term) : ?>
     <?php $slug = $term->slug; ?>
     <section>
@@ -69,6 +70,7 @@ get_header();
         </div>
     </section>
   <?php endforeach; ?>
+  <?php endif; ?>
 
   <?php get_template_part('common', 'common'); ?>
 

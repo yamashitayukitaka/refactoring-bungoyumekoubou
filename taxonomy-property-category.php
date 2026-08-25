@@ -33,6 +33,7 @@
           すべて
         </a>
       </li>
+      <?php if ($terms && !is_wp_error($terms)): ?>
       <?php foreach($terms as $term):?>
         <?php $termName = $term -> name;?>
         <li class = "c-term__list__item <?php if($mainQueryTermName === $termName):?> u-current <?php endif; ?>">
@@ -41,6 +42,7 @@
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
     <?php $propertyTags = get_terms($tag, 
@@ -58,6 +60,7 @@
         <a href = "<?php echo esc_url(home_url('property-category/' . $mainQueryTermSlug)); ?>" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
       </li>
       
+      <?php if ($propertyTags && !is_wp_error($propertyTags)): ?>
       <?php foreach($propertyTags as $propertyTag):?>
         <?php $propertySlug = $propertyTag->slug ;?>
         <li class = "c-tag__list__item">
@@ -66,6 +69,7 @@
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
   <section class = "l-content">

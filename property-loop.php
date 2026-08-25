@@ -17,7 +17,7 @@
       );?>
 
       <?php $property_category = get_field('property-category'); ?>
-      <?php if($property_category): ?>
+      <?php if($property_category && $terms && !is_wp_error($terms)): ?>
         <?php foreach($terms as $term):?>
           <span class = "c-id u-mb8"><?php echo esc_html($term->name); ?></span>
         <?php endforeach;?>
@@ -35,7 +35,7 @@
       );?>
 
       <?php $property_area = get_field('property-area'); ?>
-      <?php if($property_area): ?>
+      <?php if($property_area && $tags && !is_wp_error($tags)): ?>
         <?php foreach($tags as $tag):?>
           <div><span class = "p-content__tag"><?php echo esc_html($tag->name); ?></span></div>
         <?php endforeach;?>

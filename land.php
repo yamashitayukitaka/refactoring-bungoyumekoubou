@@ -29,7 +29,7 @@ get_header();
   <section class="l-content--middle u-mb100">
 
     <?php $property_area = get_field('property-area'); ?>
-    <?php if ($property_area) : ?>
+    <?php if ($property_area && $terms && !is_wp_error($terms)) : ?>
       <?php foreach ($terms as $term) : ?>
         <div class="c-id__wrap--top u-mb50">
           <span class="c-id"><?php echo esc_html($term->name); ?></span>

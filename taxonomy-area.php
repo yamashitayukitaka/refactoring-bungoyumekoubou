@@ -32,6 +32,7 @@
         すべて
       </a>
     </li>
+    <?php if ($terms && !is_wp_error($terms)): ?>
     <?php foreach($terms as $term):?>
       <?php $termName = $term -> name;?>
       <li class = "c-term__list__item <?php if($mainQueryTermName === $termName):?> u-current <?php endif; ?>">
@@ -40,6 +41,7 @@
         </a>
       </li>
     <?php endforeach;?>
+    <?php endif; ?>
   </ul>
 
   <?php $eventTags = get_terms($tag, 
@@ -57,6 +59,7 @@
         <a href = "<?php echo esc_url(home_url('area/' . $mainQueryTermSlug)); ?>" class = "js-all c-tag__list__link u-currentTab">すべて</a>
       </li>
       
+      <?php if ($eventTags && !is_wp_error($eventTags)): ?>
       <?php foreach($eventTags as $eventTag):?>
         <?php $eventSlug = $eventTag->slug ;?>
         <li class = "c-tag__list__item">
@@ -65,6 +68,7 @@
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
   <section class = "l-content">

@@ -30,6 +30,7 @@ get_header();
         すべて
       </a>
     </li>
+    <?php if ($terms && !is_wp_error($terms)): ?>
     <?php foreach($terms as $term):?>
       <li class = "c-term__list__item">
         <a href = "<?php echo esc_url (get_term_link($term)); ?>">
@@ -37,6 +38,7 @@ get_header();
         </a>
       </li>
     <?php endforeach;?>
+    <?php endif; ?>
   </ul>
 
  
@@ -49,7 +51,7 @@ get_header();
         ]
       );?>
 
-    <?php if($worksTags):?>
+    <?php if($worksTags && !is_wp_error($worksTags)):?>
 
       <ul class = "c-tag__list l-content--large">
         

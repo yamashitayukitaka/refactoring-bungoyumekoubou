@@ -27,9 +27,11 @@ get_header();
         <?php endif; ?>
       </figure>
 
+      <?php if ($terms && !is_wp_error($terms)): ?>
       <?php foreach($terms as $term):?>
         <div class = "c-id"><?php echo esc_html($term->name); ?></div>
       <?php endforeach;?>
+      <?php endif; ?>
 
       <dl class = "u-flex">
         <dt class = "p-staff__production__dt"><?php the_title(); ?></dt>
@@ -178,7 +180,7 @@ if ($questions) {
                 ]
             );?>
 
-            <?php if($Tags):?>
+            <?php if($Tags && !is_wp_error($Tags)):?>
               <?php foreach($Tags as $Tag):?>
                 <span class = "c-id"><?php echo esc_html($Tag->name); ?></span>
                 <p><?php the_title(); ?></p>

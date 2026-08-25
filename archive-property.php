@@ -31,6 +31,7 @@ get_header();
       </a>
     </li>
   
+    <?php if ($terms && !is_wp_error($terms)): ?>
     <?php foreach($terms as $term):?>
       <li class = "c-term__list__item">
         <a href = "<?php echo esc_url (get_term_link($term)); ?>">
@@ -38,6 +39,7 @@ get_header();
         </a>
       </li>
     <?php endforeach;?>
+    <?php endif; ?>
   </ul>
 
   <?php $areaTags = get_terms($tag, 
@@ -57,6 +59,7 @@ get_header();
       </li>
       
       
+      <?php if ($areaTags && !is_wp_error($areaTags)): ?>
       <?php foreach($areaTags as $areaTag):?>
         <?php $areaSlug = $areaTag->slug ;?>
         <li class = "c-tag__list__item">
@@ -65,6 +68,7 @@ get_header();
           </a>
         </li>
       <?php endforeach;?>
+      <?php endif; ?>
     </ul>
 
     <section class = "l-content">

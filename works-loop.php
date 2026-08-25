@@ -33,7 +33,7 @@
           ]
       );?>
 
-      <?php if($worksTypes):?>
+      <?php if($worksTypes && !is_wp_error($worksTypes)):?>
         <?php foreach($worksTypes as $worksType):?>
           <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>
         <?php endforeach;?>
@@ -54,7 +54,7 @@
           ]
       );?>
 
-      <?php if($worksTags):?>
+      <?php if($worksTags && !is_wp_error($worksTags)):?>
         <?php foreach($worksTags as $worksTag):?>
           <span class = "c-tag__txt">#<?php echo esc_html($worksTag->name); ?></span>
         <?php endforeach;?>
