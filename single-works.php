@@ -4,20 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 get_header();
 ?>
 <main class = "u-pt100">
-<!--
-<?php $sliders = get_field('works-slider-list'); ?>
-  <?php if($sliders):?>
-    <div class = "p-works__mv u-mb50">
-      <ul class = "js-worksSlider l-content--middle">
-        <?php foreach($sliders as $slider):?>
-          <?php if (!empty($slider['works-slider-img'])): ?>
-          <li class = "p-works__mv__list"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" alt = "施工事例サムネイルスライダー画像"></li>
-          <?php endif; ?>
-        <?php endforeach;?>
-      </ul>
-    </div>
-  <?php endif; ?>
-  -->
   <section>
     <div class = "l-content--large u-mb50">
       <h2 class = "c-title--large u-mb20"><?php the_title(); ?></h2>

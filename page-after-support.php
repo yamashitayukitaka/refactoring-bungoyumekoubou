@@ -359,16 +359,6 @@ get_header();
       <?php endif; ?>
     </div>
     <?php endif; ?>
-    <!-- <div class="l_content_middle_60 top_p_5 bottom_p_5">
-      <p class="description_inspection_txt ">プロによる定期点検を20年間に渡り保証します
-      </p>
-      <div class="inspection-description--img ">
-        <img class="" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_5.webp'); ?>">
-      </div>
-      <div class="inspection_description_img2 bottom_p_5">
-        <img src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_6.webp'); ?>">
-      </div>
-    </div> -->
   </section>
 
   <?php include get_template_directory() . '/common.php'   ?>

@@ -282,11 +282,6 @@ get_header();
                     <p><span class="service_sub_marker">お手入れ楽々自動洗浄機能付き<br class="pc_tab">
                             タンクレスシャワートイレ</span></p>
                 </div>
-                <!-- <div>
-                    <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_30.webp' ?>" alt="">
-                    <p><span class="service_sub_marker">キレイが長持ち、雨で汚れが落ちる<br class="pc_tab">
-                            メンテナンスフリー外壁</span></p>
-                </div> -->
             </div>
         </div>
 
