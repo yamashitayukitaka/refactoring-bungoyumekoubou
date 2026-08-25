@@ -370,9 +370,6 @@ get_header();
             <p>建物に伝わる地震のエネルギー(加速度)を約40%から48%吸収することができます。吸収することにより建物の変位と揺れを早く抑え、建物への負担を軽減します。</p>
           </div>
           <div class="mersystem_box_right">
-            <!-- <div class="mersystem_img_full">
-              <img src="<?php echo esc_url(IMG_URL . '/performance/performance_11.webp'); ?>" class="img_shadow">
-            </div> -->
             <div class="mersystem_img_full  ">
               <img src="<?php echo esc_url(IMG_URL . '/performance/performance_12.webp'); ?>" class="">
             </div>

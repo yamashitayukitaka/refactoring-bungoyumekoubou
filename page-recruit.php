@@ -118,24 +118,6 @@ get_header();
     ?>
   </section>
 
-  <!-- <section class="l-content">
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine">
-        MOVIE
-      </h3>
-      <div>
-        <p class="c-title--orangeLine u-mb50">
-          <span class="marker">会社紹介映像</span>
-        </p>
-      </div>
-    </div>
-
-    <video controls autoplay muted loop class="p-about__video">
-      <source src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/video/video.m4v">
-      お使いのブラウザは動画タグに対応していません。
-    </video>
-  </section> -->
-
   <!-- 会社沿革 -->
   <section class="u-pt50 u-mb100">
     <!-- <div class="l_content_middle_70">

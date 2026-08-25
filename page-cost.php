@@ -264,39 +264,6 @@ get_header();
 
 
 
-      <!-- <div class="design__paint1">
-        <div class="design__paint1_container noto-san-jp">
-
-          <div class="design__paint1_img">
-            <img src="<?php echo esc_url($point_img_one); ?>" class="img_shadow">
-          </div>
-          <div class=" design__paint1_content">
-            <p class="paint_subtit">
-              <span class=" u-orange">無料間取り図、3Dパース</span>を作成
-            </p>
-            <div class="design__paint2_content_txt">
-              <?php echo wp_kses_post($point_txt_one); ?>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="design__paint2">
-        <div class="design__paint2_container noto-san-jp">
-          <div class="design__paint2_content">
-            <p class="paint_subtit">
-              プランニング前の<span class="u-orange">土地</span>の<br>
-              <span class="u-orange">状況確認</span>もしっかりと
-            </p>
-            <div class="design__paint2_content_txt">
-              <?php echo wp_kses_post($point_txt_two); ?>
-            </div>
-          </div>
-          <div class="design__paint2_img">
-            <img src="<?php echo esc_url($point_img_two); ?>" class="img_shadow">
-          </div>
-
-        </div>
-      </div> -->
     </div>
 
     <div class="border_bottom bottom_m_7">
@@ -375,43 +342,7 @@ get_header();
         </div>
       </div>
 
-      <!-- <div class="support__conver_devices">夢工房の標準仕様<span class="u-orange">3つ</span>のポイント</div>
-
-      <div class="l_content_middle_70 samplelogo__three_points">
-        <div class="samplelogo__three_items mx-auto u-mb40">
-          <div class="samplelogo_item-one">
-            <div class="samplelogo_item_img">
-              <img src="<?php echo esc_url($point_img_one); ?>" class="img_shadow">
-            </div>
-            <div class="samplelogo_button mx-auto">
-              <strong>01.</strong>快適
-            </div>
-          </div>
-          <div class="samplelogo_item-one">
-            <div class="samplelogo_item_img">
-              <img src="<?php echo esc_url($point_img_two); ?>" class="img_shadow">
-            </div>
-            <div class="samplelogo_button mx-auto">
-              <strong>02.</strong>省エネ
-            </div>
-          </div>
-          <div class="samplelogo_item-one">
-            <div class="samplelogo_item_img">
-              <img src="<?php echo esc_url($point_img_three); ?>" class="img_shadow">
-            </div>
-            <div class="samplelogo_button mx-auto">
-              <strong>03.</strong>耐震
-            </div>
-          </div>
-        </div>
-        <p class="samplelogo_text mx-auto mx-6">
-          快適性能、省エネ性能、耐震性能、適切なシステムがそろって高性能住宅ができると考えています。<br>
-          豊後夢工房では、どのプランでもこの3つは必ずかね備えています。
-        </p>
-      </div> -->
     </div>
-
-
     <div class="border_bottom bottom_m_7">
     </div>
     <!-- point4 -->

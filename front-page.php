@@ -101,40 +101,6 @@ get_header();
           <span class="marker">あなたの「ゆめ」を叶える、特別なラインナップ</span>
         </p>
       </div>
-      <!--
-      <ul class = "p-top__lineUp__list">
-        <li class = "p-top__lineUp__item">
-          <div class = "p-top__lineUp__txtWrap">
-            <h4 class = "p-top__lineUp__ttl">タイトル</h4>
-            <p class = "p-top__lineUp__txt">
-              テキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキスト
-            </p>
-          </div>
-          <figure class = "p-top__lineUp__img" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top02.webp');"></figure>
-        </li>
-        <li class = "p-top__lineUp__item">
-          <div class = "p-top__lineUp__txtWrap">
-            <h4 class = "p-top__lineUp__ttl">タイトル</h4>
-            <p class = "p-top__lineUp__txt">
-              テキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキスト
-            </p>
-          </div>
-          <figure class = "p-top__lineUp__img" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top02.webp');"></figure>
-        </li>
-        <li class = "p-top__lineUp__item">
-          <div class = "p-top__lineUp__txtWrap">
-            <h4 class = "p-top__lineUp__ttl">タイトル</h4>
-            <p class = "p-top__lineUp__txt">
-              テキストテキストテキストテキストテキストテキスト
-              テキストテキストテキストテキストテキストテキスト
-            </p>
-          </div>
-          <figure class = "p-top__lineUp__img" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top02.webp');"></figure>
-        </li>
-      </ul>
-      -->
       <ul class="p-top__lineUpRow__list">
         <li class="p-top__lineUpRow__item">
           <a href="<?php echo esc_url(home_url('heig')); ?>">
@@ -180,26 +146,6 @@ get_header();
     </div>
 </div>
 <!-- WINKMARK LP INDEX 1 end-->
-    <!-- 
-    <?php
-    $event = array(
-      'post_type' => 'xo_event',
-      'posts_per_page' => 4,
-      'orderby' => 'menu_order',
-      'order' => 'ASC',
-    ); ?>
-    <?php $eventLoop = new WP_Query($event); ?>
-    <?php if ($eventLoop->have_posts()) : ?>
-      <ul class="p-content__list u-mb50">
-        <?php while ($eventLoop->have_posts()) : $eventLoop->the_post(); ?>
-          <?php get_template_part('event-loop', 'event'); ?>
-      <?php endwhile;
-      endif;
-      wp_reset_postdata(); ?>
-      </ul>
-      <div class="u-center">
-        <a href="<?php echo esc_url(home_url('xo_event')); ?>" class="c-button--page">イベント一覧へ</a>
-      </div> -->
   </section>
 
   <a href="<?php echo esc_url(home_url('model-house')); ?>">

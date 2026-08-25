@@ -18,31 +18,6 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <!-- <section class="l_content_middle_70 u-mb50 support-title">
-    <figure>
-      <img src="<?php echo esc_url(IMG_URL . '/flow-left.webp'); ?>" alt="デザインへのこだわり">
-    </figure>
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine">
-        デザインへのこだわり
-      </h3>
-      <div>
-        <p class="c-title--orangeLine">
-          <span class="u-orange">快適な住まい</span>をご提供するための
-        </p>
-      </div>
-      <div>
-        <p class="c-title--orangeLine u-mb50">
-          <span class="u-orange">デザイン</span>のこだわり
-        </p>
-      </div>
-    </div>
-    <figure>
-      <img src="<?php echo esc_url(IMG_URL . '/flow-right.webp'); ?>" alt="デザインへのこだわり">
-    </figure>
-  </section> -->
-
-
   <!-- トップタイトル概要 -->
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
@@ -282,26 +257,6 @@ get_header();
         </div>
       </div>
       <?php endif; ?>
-      <!-- <div class="design__paint2">
-        <div class="design__paint2_container noto-san-jp">
-          <div class="design__paint2_content">
-            <div class="design__paint2_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
-            </div>
-            <p class="paint_subtit">
-              <span class=" u-orange">「こんなお家がいいな」</span>を<br>
-              楽しく共有
-            </p>
-            <div class="design__paint2_content_txt">
-              <?php echo wp_kses_post($point_txt_two); ?>
-            </div>
-          </div>
-          <div class="design__paint2_img">
-            <img src="<?php echo esc_url($point_img_two); ?>">
-          </div>
-
-        </div>
-      </div> -->
     </div>
 
     <div class="border_bottom bottom_m_7">
@@ -465,27 +420,6 @@ get_header();
         </div>
       </div>
       <?php endif; ?>
-      <!-- <div class="design__paint2">
-        <div class="design__paint2_container noto-san-jp">
-          <div class="design__paint2_content">
-            <div class="design__paint2_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
-            </div>
-            <div>
-              <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl">
-                <span class="u-orange">低コスト</span>
-              </p>
-            </div>
-            <div class="design__paint2_content_txt">
-              <?php echo wp_kses_post($point_txt_two); ?>
-            </div>
-          </div>
-          <div class="design__paint2_img">
-            <img src="<?php echo esc_url($point_img_two); ?>">
-          </div>
-
-        </div>
-      </div> -->
     </div>
 
   </section>

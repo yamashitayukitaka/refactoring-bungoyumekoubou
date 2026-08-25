@@ -19,7 +19,7 @@ get_header();
     </div>
 </div>
 <!-- WINKMARK LP INDEX 1 end-->
-<!-- 
+
   <?php $terms = get_terms($taxonomy, 
     [
     'hide_empty' => false,
@@ -99,7 +99,7 @@ get_header();
       
     </section>
   <?php get_template_part('xo-event','calendar'); ?>
-  -->
+ 
 </main>
   
 <?php get_footer(); ?>
