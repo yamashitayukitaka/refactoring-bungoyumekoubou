@@ -19,10 +19,6 @@ get_header();
       <img src="<?php echo esc_url(IMG_URL . '/irohaie/top_img_i.webp'); ?>">
     </div>
 
-    <!-- <?php $mv = get_field('mv-irohaie-img'); ?>
-    <?php if ($mv) : ?>
-    <figure class="c-heig__img__wrap c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
-    <?php endif; ?> -->
   </div>
 
   <div class="service_irohaie">
@@ -179,9 +175,6 @@ get_header();
             </a>
           </div>
         </div>
-        <!-- <figure>
-          <img src="<?php echo esc_url(IMG_URL . '/point_one_step_two.webp'); ?>">
-        </figure> -->
         <span class="iroha__ref-txt">※オプション内容により金額は異なります。</span>
         <span class="iroha-top-desc-link">
           <a class="link__btn" href="#irohaie">資料請求・お問い合わせ</a>
@@ -247,27 +240,6 @@ get_header();
           外に排出する全熱交換型換気システムです。外気を室内の温度・湿度に近づけて取り入<br class="pc_tab">
           れるので、お部屋の快適性を維持しながら24時間計画換気を実現します。<br>
         </p>
-        <!-- <div class="iroha__feature-detail u-mb50">
-          <?php
-          $insulation = get_field('insulation');
-          $detail = ($insulation && !empty($insulation[0])) ? $insulation[0] : null;
-          if ($detail && (!empty($detail['title']) || !empty($detail['txt']) || !empty($detail['img']))) :
-          ?>
-          <div class="feature-detail-txt">
-            <?php if (!empty($detail['title'])) : ?>
-            <h2 class="u-mb20"><?php echo esc_html($detail['title']); ?></h2>
-            <?php endif; ?>
-            <?php if (!empty($detail['txt'])) : ?>
-            <p><?php echo wp_kses_post($detail['txt']); ?></p>
-            <?php endif; ?>
-          </div>
-          <?php if (!empty($detail['img'])) : ?>
-          <figure class="feature-detail-img">
-            <img src="<?php echo esc_url($detail['img']); ?>">
-          </figure>
-          <?php endif; ?>
-          <?php endif; ?>
-        </div> -->
         <div class="iroha__three_points u-mb80">
           <h2 class="three_points-title u-mb20">
             <span class="font_orange">4</span>つのポイント
@@ -309,59 +281,7 @@ get_header();
               </h3>
             </div>
           </div>
-          <!-- <div class="iroha__three_points_wrapper">
-            <?php
-            $three_points = get_field('three_points');
-            if ($three_points) :
-              for ($i = 0; $i < 3; $i++) {
-                if (empty($three_points[$i])) {
-                  continue;
-                }
-                $point_item = $three_points[$i];
-                if (empty($point_item['img']) && empty($point_item['title']) && empty($point_item['txt'])) {
-                  continue;
-                }
-            ?>
-              <div class="iroha__point_item">
-                <?php if (!empty($point_item['img'])) : ?>
-                <figure class="point_item-img">
-                  <img src="<?php echo esc_url($point_item['img']); ?>">
-                </figure>
-                <?php endif; ?>
-                <?php if (!empty($point_item['title'])) : ?>
-                <h3 class="point_item-title">
-                  <?php echo esc_html($point_item['title']); ?>
-                  </h2>
-                <?php endif; ?>
-                  <?php if (!empty($point_item['txt'])) : ?>
-                  <p class="point_item-txt"><?php echo wp_kses_post($point_item['txt']); ?></p>
-                  <?php endif; ?>
-              </div>
-            <?php }
-            endif; ?>
-          </div> -->
         </div>
-        <!-- <div class="iroha__feature-detail">
-          <?php
-          $insulation = get_field('insulation');
-          $detail = ($insulation && !empty($insulation[1])) ? $insulation[1] : null;
-          if ($detail && (!empty($detail['img']) || !empty($detail['title']) || !empty($detail['txt']))) :
-          ?>
-          <?php if (!empty($detail['img'])) : ?>
-          <figure class="feature-detail-img">
-            <img src="<?php echo esc_url($detail['img']); ?>">
-          </figure>
-          <?php endif; ?>
-          <div class="feature-detail-txt">
-            <?php if (!empty($detail['title'])) : ?>
-            <h2 class="u-mb20"><?php echo esc_html($detail['title']); ?></h2>
-            <?php endif; ?>
-            <?php if (!empty($detail['txt'])) : ?>
-            <p><?php echo wp_kses_post($detail['txt']); ?></p>
-            <?php endif; ?>
-          </div>
-          <?php endif; ?>
-        </div> -->
       </div>
 
       <div class="feature_item u-mb80">

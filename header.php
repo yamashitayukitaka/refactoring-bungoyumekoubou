@@ -83,14 +83,6 @@
         style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	
-  <!-- <div id="u-loading">
-    <div class="u-spinner">
-      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/logo.webp">
-    </div>
-  </div> -->
-
-
-
   <header id="js-measure" class="l-header">
 
     <div class="l-header__content">

@@ -12,22 +12,7 @@ get_header();
     ブログ
   </h2>
   
-  <!-- <ul class = "p-bread__list">
-    <li class = "p-bread__list__item"><a href = "<?php echo esc_url (home_url('') ); ?>" class = "p-bread__list__link">ホーム</a><span class = "p-bread__list__arrow">></span></li>
-    <li class = "p-bread__list__item">ブログ</li>
-  </ul> -->
- 
     <ul class = "p-blog__list u-flex l-content">
-      <!-- <?php
-        $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;//get_query_var('paged')で現在表示されているページ番号を取得する。
-        $blogs = array(
-        'post_type' => 'blog',
-        'posts_per_page' => 6,
-        'paged'=>$paged,//get_query_varで得られた現在表示されているページ番号を渡す。この部分は、ページネーションが正しく機能するために非常に重要です。get_query_var('paged') で取得した値を 'paged' => $paged としてクエリに設定することで、正しいページが表示されるようになります。
-        'order' => 'DESC',
-        'orderby' => 'post_date',
-        );?> -->
-   
       <?php
         // 月別アーカイブページかどうかを判定
         if (is_month()) {
@@ -67,34 +52,13 @@ get_header();
        wp_reset_postdata();?>
     </ul>
 
-    <?php if ($blogLoop->found_posts > $blogs['posts_per_page']):?>
+    <?php if ($blogLoop->found_posts > $blogLoop->get('posts_per_page')):?>
       <div class = "u-mb50">
         <?php the_posts_pagination(); ?>
       </div>
     <?php endif; ?>
 
     <section class = "p-blog__search l-content u-mb100">
-      <!-- <p class = "p-blog__search__ttl">
-        最新記事
-      </p> -->
-      <!-- <div class = "p-blog__search__latest">
-        <?php
-          $args = array(
-          'post_type' => 'blog',
-          'posts_per_page' => 4,
-          'orderby' => 'date', // 投稿を日付で並べ替えます。
-          'order' => 'DESC', // 降順に並べ替えます（新しい順）。
-          );?>
-          <?php $blogLoop = new WP_Query($args);?>
-          <?php if ($blogLoop->have_posts()): ?>
-          <?php while ($blogLoop->have_posts()) : $blogLoop->the_post();?>
-          <a href = "<?php the_permalink(); ?>">
-          <?php the_title(); ?>
-          </a>
-        <?php endwhile;
-        endif;
-        wp_reset_postdata();?>
-      </div> -->
       <p class = "p-blog__search__ttl">
         アーカイブ
       </p>
