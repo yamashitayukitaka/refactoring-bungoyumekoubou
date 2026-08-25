@@ -161,12 +161,6 @@ function remove_admin_bar_new_post()
 }
 add_action('wp_before_admin_bar_render', 'remove_admin_bar_new_post');
 
-function my_custom_styles()
-{
-  wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/custom-style.css');
-}
-add_action('wp_enqueue_scripts', 'my_custom_styles');
-
 define('IMG_URL', get_template_directory_uri() . '/dist/img');
 
 function enqueue_swiper_assets()
