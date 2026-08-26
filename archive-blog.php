@@ -62,9 +62,9 @@ get_header();
        wp_reset_postdata();?>
     </ul>
 
-    <?php if ($blogLoop->found_posts > $blogs['posts_per_page']):?>
+    <?php if ($blogLoop->max_num_pages > 1):?>
       <div class = "u-mb50">
-        <?php the_posts_pagination(); ?>
+        <?php wazeka_query_pagination($blogLoop); ?>
       </div>
     <?php endif; ?>
 

@@ -93,8 +93,8 @@ get_header();
         wp_reset_postdata();?>
       </ul>
     
-    <?php if ($eventLoop->found_posts > $event['posts_per_page']):?>
-      <?php the_posts_pagination(); ?>
+    <?php if ($eventLoop->max_num_pages > 1):?>
+      <?php wazeka_query_pagination($eventLoop); ?>
     <?php endif; ?>
       
     </section>

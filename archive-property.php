@@ -91,9 +91,9 @@ get_header();
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($propertyLoop->found_posts > $property['posts_per_page']):?>
+    <?php if ($propertyLoop->max_num_pages > 1):?>
       <div class = "u-mb50">
-        <?php the_posts_pagination(); ?>
+        <?php wazeka_query_pagination($propertyLoop); ?>
       </div>
     <?php endif; ?>
     

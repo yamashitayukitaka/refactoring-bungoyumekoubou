@@ -100,9 +100,9 @@
         <?php endif;
         wp_reset_postdata();?>
         
-        <?php if ($eventLoop->found_posts > $event['posts_per_page']):?>
+        <?php if ($eventLoop->max_num_pages > 1):?>
           <div class = "u-mb50">
-            <?php the_posts_pagination(); ?>
+            <?php wazeka_query_pagination($eventLoop); ?>
           </div>
         <?php endif; ?>
 

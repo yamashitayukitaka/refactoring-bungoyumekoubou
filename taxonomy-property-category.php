@@ -100,9 +100,9 @@
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($myOuery->found_posts > $args['posts_per_page']):?>
+    <?php if ($myOuery->max_num_pages > 1):?>
       <div class = "u-mb50">
-        <?php the_posts_pagination(); ?>
+        <?php wazeka_query_pagination($myOuery); ?>
       </div>
     <?php endif; ?>
     

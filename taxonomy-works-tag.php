@@ -159,9 +159,9 @@ if ($lootSlug) {
       <?php endif;
       wp_reset_postdata();?>
     
-      <?php if ($worksLoop->found_posts > $works['posts_per_page']):?>
+      <?php if ($worksLoop->max_num_pages > 1):?>
         <div class = "u-mb50">
-          <?php the_posts_pagination(); ?>
+          <?php wazeka_query_pagination($worksLoop); ?>
         </div>
       <?php endif; ?>
   </section>
