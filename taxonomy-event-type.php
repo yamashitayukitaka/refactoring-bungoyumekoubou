@@ -65,6 +65,11 @@ if (isset($segments[0]) && $segments[0] === 'area' && isset($segments[1])) {
   // この部分で何も処理しないことで、セッションに保存された $lootSlug をそのまま使用
 }
 
+$query_area = sanitize_title((string) get_query_var('event_area'));
+if ($query_area) {
+  $lootSlug = $query_area;
+}
+
 ?>
 
 <?php
@@ -232,7 +237,7 @@ if ($lootUrl === $archiveUrl) {
       <?php foreach($eventTags as $eventTag):?>
         <?php $eventSlug = $eventTag->slug ;?>
           <li class = "c-tag__list__item">
-            <a href = "<?php echo esc_url(get_term_link($eventSlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($eventSlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
+            <a href = "<?php echo esc_url($lootSlug ? add_query_arg('event_area', $lootSlug, get_term_link($eventSlug,$tag)) : get_term_link($eventSlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($eventSlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
               <?php echo esc_html($eventTag->name); ?>
             </a>
           </li>
