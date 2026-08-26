@@ -63,6 +63,11 @@ if (isset($segments[0]) && $segments[0] === 'property-category' && isset($segmen
   // この部分で何も処理しないことで、セッションに保存された $lootSlug をそのまま使用
 }
 
+$query_category = sanitize_title((string) get_query_var('property_category'));
+if ($query_category) {
+  $lootSlug = $query_category;
+}
+
 ?>
 
 <?php
@@ -227,7 +232,7 @@ if ($lootUrl === $archiveUrl) {
     <?php foreach($propertyTags as $propertyTag):?>
       <?php $propertySlug = $propertyTag->slug ;?>
       <li class = "c-tag__list__item">
-        <a href = "<?php echo esc_url(get_term_link($propertySlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($propertySlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
+        <a href = "<?php echo esc_url($lootSlug ? add_query_arg('property_category', $lootSlug, get_term_link($propertySlug,$tag)) : get_term_link($propertySlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($propertySlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
           <?php echo esc_html($propertyTag->name); ?>
         </a>
       </li>

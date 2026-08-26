@@ -204,6 +204,7 @@ add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
 function wazeka_query_vars($vars)
 {
   $vars[] = 'works_type';
+  $vars[] = 'property_category';
   return $vars;
 }
 add_filter('query_vars', 'wazeka_query_vars');
