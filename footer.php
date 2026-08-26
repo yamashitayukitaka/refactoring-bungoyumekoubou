@@ -129,7 +129,7 @@
                   <li>
                     <h3 class="c-navigation__inner__ttl">夢づくりサポート</h3>
                     <ul>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('maintenenance')); ?>" class="c-navigation__inner__link">ー安心の保証制度</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('after-support')); ?>" class="c-navigation__inner__link">ー安心の保証制度</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('flow')); ?>" class="c-navigation__inner__link">ー家づくりのながれ</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('faq')); ?>" class="c-navigation__inner__link">ーよくあるご質問</a></li>
                     </ul>
@@ -137,7 +137,7 @@
                   <li>
                     <h3 class="c-navigation__inner__ttl">住まいのアフターメンテナンス</h3>
                     <ul>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('after-support')); ?>" class="c-navigation__inner__link">ーアフターサポート</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('maintenance')); ?>" class="c-navigation__inner__link">ーアフターメンテナンス</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('renovation')); ?>" class="c-navigation__inner__link">ーゆめリフォーム</a></li>
                     </ul>
                   </li>
