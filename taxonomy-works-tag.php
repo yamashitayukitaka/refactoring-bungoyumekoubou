@@ -63,6 +63,11 @@ if (isset($segments[0]) && $segments[0] === 'works-type' && isset($segments[1]))
   // この部分で何も処理しないことで、セッションに保存された $lootSlug をそのまま使用
 }
 
+$query_type = sanitize_title((string) get_query_var('works_type'));
+if ($query_type) {
+  $lootSlug = $query_type;
+}
+
 ?>
 
 <?php
@@ -230,7 +235,7 @@ if ($lootUrl === $archiveUrl) {
       <?php foreach($worksTags as $worksTag):?>
         <?php $worksSlug = $worksTag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(get_term_link($worksSlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($worksSlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
+          <a href = "<?php echo esc_url($lootSlug ? add_query_arg('works_type', $lootSlug, get_term_link($worksSlug,$tag)) : get_term_link($worksSlug,$tag)); ?>" class = "js-tab c-tag__list__link <?php if ($worksSlug === $mainQueryTermSlug):?>u-currentTab<?php endif; ?>">
             <?php echo esc_html($worksTag->name); ?>
           </a>
         </li>

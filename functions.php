@@ -200,3 +200,10 @@ function taxonomy_orderby_description( $orderby, $args ) {
   return $orderby;
 }
 add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+
+function wazeka_query_vars($vars)
+{
+  $vars[] = 'works_type';
+  return $vars;
+}
+add_filter('query_vars', 'wazeka_query_vars');
