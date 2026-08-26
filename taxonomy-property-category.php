@@ -64,7 +64,7 @@
       <?php foreach($propertyTags as $propertyTag):?>
         <?php $propertySlug = $propertyTag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(get_term_link($propertySlug,$tag)); ?>" class = "js-tab c-tag__list__link">
+          <a href = "<?php echo esc_url(add_query_arg('property_category', $mainQueryTermSlug, get_term_link($propertySlug,$tag))); ?>" class = "js-tab c-tag__list__link">
             <?php echo esc_html($propertyTag->name); ?>
           </a>
         </li>
