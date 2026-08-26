@@ -2,26 +2,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-// セッション開始
-if (session_status() === PHP_SESSION_NONE) {
-  session_start();
-}
-
 get_header(); ?>
-
-<!--if (!session_id()) { session_start(); } と if (session_status() === PHP_SESSION_NONE) { session_start(); } の違いは、セッションの状態を確認する方法にあります。
-1. if (!session_id()) { session_start(); }
-これは session_id() を使って、セッションIDが既に生成されているかを確認します。
-セッションIDが存在しない場合、新しいセッションを開始します。
-制約: セッションが既に開始されていても、セッションIDが検出されない場合（例えば、セッション管理がクッキーやヘッダーで正しく処理されていない場合など）、セッションの持続が正しく処理されない可能性があります。
-2. if (session_status() === PHP_SESSION_NONE) { session_start(); }
-session_status() はセッションの状態を直接確認し、セッションがアクティブか無効か、まだ開始されていないかを返します。
-PHP_SESSION_NONE をチェックすることで、セッションがまだ開始されていない場合のみ新しいセッションを開始します。
-利点: この方法は、セッションがまだ開始されていない場合にのみ開始されるので、より確実にセッションのライフサイクルを管理できます。
-なぜこれがあなたのケースでうまくいくのか:
-複数のリクエストやヘッダーが関与する場面（例えば taxonomy-works-type.php と taxonomy-works-tag.php の間の遷移）では、session_status() を使うことで、セッションが一度だけ正しく開始され、セッションのリセットやデータの不一致が避けられます。そのため、ページ間の遷移時に $lootSlug が保持され、意図通りに動作するのです。
--->
-
 
 <?php 
   $taxonomy = 'works-type';
@@ -32,66 +13,10 @@ PHP_SESSION_NONE をチェックすることで、セッションがまだ開始
 ?>
 
 <?php
-$referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
-// 現在のページの遷移元のURLを取得する
-$lootUrl = htmlspecialchars($referer);
-$archiveUrl = home_url('works/');
-$tagArchiveUrl = home_url('works-tag/' . $mainQueryTermSlug . '/');
-
-// $lootSlug をセッションから取得する
-if (isset($_SESSION['lootSlug'])) {
-    $lootSlug = $_SESSION['lootSlug'];
-} else {
-    $lootSlug = '';
-}
-
-// URLのパース
-$parsed_url = parse_url($lootUrl);
-$path = isset($parsed_url['path']) ? $parsed_url['path'] : '';
-$segments = explode('/', trim($path, '/'));
-
-// $segments のチェックと $lootSlug の設定
-if (isset($segments[0]) && $segments[0] === 'works-type' && isset($segments[1])) {
-  $lootSlug = $segments[1];
-  // $lootSlug をセッションに保存する
-  $_SESSION['lootSlug'] = $lootSlug;
-} elseif ($lootUrl === $archiveUrl) {
-  // $lootSlug を初期化または空にする
-  $lootSlug = '';
-  unset($_SESSION['lootSlug']);
-} elseif (strpos($lootUrl, 'works-tag') !== false) {
-  // この部分で何も処理しないことで、セッションに保存された $lootSlug をそのまま使用
-}
-
-$query_type = sanitize_title((string) get_query_var('works_type'));
-if ($query_type) {
-  $lootSlug = $query_type;
-}
-
-?>
-
-<?php
+$lootSlug = sanitize_title((string) get_query_var('works_type'));
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-// クエリの設定
-if ($lootUrl === $archiveUrl) {
-    // $lootUrl が $archiveUrl と同じ場合の処理
-    $works = array(
-        'post_type' => 'works',
-        'posts_per_page' =>6,
-        'paged' => $paged,
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'tax_query' => array(
-            array(
-                'taxonomy' => $tag,
-                'field' => 'slug',
-                'terms' => $mainQueryTermSlug,
-            ),
-        ),
-    );
-} elseif ($lootSlug) {
-    // $lootSlug がセットされている場合の処理
+if ($lootSlug) {
     $works = array(
         'post_type' => 'works',
         'posts_per_page' =>6,
@@ -113,7 +38,6 @@ if ($lootUrl === $archiveUrl) {
         ),
     );
 } else {
-    // デフォルトのクエリなど、$lootSlug が空の場合の処理
     $works = array(
         'post_type' => 'works',
         'posts_per_page' =>6,
@@ -145,27 +69,7 @@ if ($lootUrl === $archiveUrl) {
     ]
   );?>
 
-<?php if ($lootUrl === $archiveUrl):?>
-
-<ul class = "c-term__list">
-  <li class = "c-term__list__item u-current">
-    <a href = "<?php echo esc_url (get_post_type_archive_link('works')); ?>">
-      すべて
-    </a>
-  </li>
-  <?php if ($terms && !is_wp_error($terms)): ?>
-  <?php foreach($terms as $term):?>
-    <?php $termSlug = $term -> slug;?>
-    <li class = "c-term__list__item">
-      <a href = "<?php echo esc_url (get_term_link($term)); ?>">
-        <?php echo esc_html($term->name); ?>
-      </a>
-    </li>
-  <?php endforeach;?>
-  <?php endif; ?>
-</ul>
-
-<?php elseif ($lootSlug): ?>
+<?php if ($lootSlug): ?>
 
   <ul class = "c-term__list">
     <li class = "c-term__list__item">
