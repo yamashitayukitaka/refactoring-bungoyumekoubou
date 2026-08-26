@@ -209,3 +209,18 @@ function wazeka_query_vars($vars)
   return $vars;
 }
 add_filter('query_vars', 'wazeka_query_vars');
+
+function wazeka_query_pagination($query)
+{
+  if (!$query instanceof WP_Query || $query->max_num_pages <= 1) {
+    return;
+  }
+
+  $big = 999999999;
+  echo paginate_links(array(
+    'base'    => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+    'format'  => '?paged=%#%',
+    'current' => max(1, (int) get_query_var('paged')),
+    'total'   => $query->max_num_pages,
+  ));
+}
