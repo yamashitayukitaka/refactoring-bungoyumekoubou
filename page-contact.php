@@ -12,7 +12,7 @@ get_header();
         CONTACT
       </p>
     </div>
-    <?php $mv = get_field('mv-page',363); ?>
+    <?php $mv = get_field('main-visual'); ?>
     <?php if ($mv) : ?>
     <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>

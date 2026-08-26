@@ -161,11 +161,7 @@
     </div>
   </div>
 
-  <?php $stores = get_field('store_informations', 410); ?>
-  <!--410はメインクエリ以外で特定の投稿やページからカスタムフィールドを取得するための投稿ID（ポストID）です。
-  get_field関数はAdvanced Custom Fields (ACF) プラグインの一部で、特定の投稿やページに関連するカスタム
-  フィールドの値を取得するために使用されます。ここでの410は、そのカスタムフィールドが関連付けられている
-  投稿のIDを示しています。-->
+  <?php $stores = get_field('store_informations', 'option'); ?>
 
   <?php
   $hasStore = false;
