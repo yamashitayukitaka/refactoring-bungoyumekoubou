@@ -1,5 +1,4 @@
 <?php
-// Template Name: single-xo_event
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -19,8 +18,6 @@ get_header();
       <?php $eventTypes = get_the_terms(
         get_the_ID(),
         'event-type',
-        //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-        //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
         [
           'hide_empty' => false,
           'parent' => 0,
@@ -41,15 +38,10 @@ get_header();
     <dl class="u-flex">
       <dt>開催日</dt>
       <?php
-      // カスタムフィールドの値を取得
       $always = get_field('always');
-      // カスタムフィールドが存在する場合の処理
       if ($always) :
-        // 投稿のIDを取得
         $post_id = get_the_ID();
-        // カスタムフィールドの値を取得
         $always_value = get_post_meta($post_id, 'always', true);
-        // 真偽値として出力
         if ($always_value === '1') : ?>
           <dd class="p-event__always">&nbsp;&nbsp;<?php echo esc_html('常時開催中'); ?></dd>
         <?php endif; ?>
@@ -108,8 +100,7 @@ get_header();
       <?php echo wp_kses_post($event_txt); ?>
     </p>
     <?php endif; ?>
-    <?php if (have_rows('flex')) : // 柔軟なコンテンツフィールドの名前 
-    ?>
+    <?php if (have_rows('flex')) : ?>
       <?php while (have_rows('flex')) : the_row(); ?>
         <?php if (get_row_layout() == 'two-column') : ?>
           <div class="p-flex__two u-mb50">
@@ -187,15 +178,10 @@ get_header();
         <th class="c-table__th">開催日</th>
         <td class="c-table__td">
           <?php
-          // カスタムフィールドの値を取得
           $always = get_field('always');
-          // カスタムフィールドが存在する場合の処理
           if ($always) :
-            // 投稿のIDを取得
             $post_id = get_the_ID();
-            // カスタムフィールドの値を取得
             $always_value = get_post_meta($post_id, 'always', true);
-            // 真偽値として出力
             if ($always_value === '1') : ?>
               <p class="p-event__always">&nbsp;&nbsp;<?php echo esc_html('常時開催中'); ?></p>
             <?php endif; ?>

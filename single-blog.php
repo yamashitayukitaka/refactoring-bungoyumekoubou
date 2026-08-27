@@ -33,27 +33,27 @@ get_header();
       <?php endwhile; ?>
     <?php endif; ?>
 
-    <?php if( have_rows('contents') ): //柔軟コンテンツフィールドの値を持っているかどうかをチェック ?>
-      <?php while ( have_rows('contents') ) : the_row(); //値のループ ?>
-        <?php if( get_row_layout() == 'img-column' ): //レイアウト名1があった場合に出力 ?>
+    <?php if( have_rows('contents') ): ?>
+      <?php while ( have_rows('contents') ) : the_row(); ?>
+        <?php if( get_row_layout() == 'img-column' ): ?>
           <?php $img = get_sub_field('img'); ?>
           <?php if ($img) : ?>
           <div class = "p-flex__one__imgWrap u-mb50">
             <img src = "<?php echo esc_url($img);?>">
           </div>
           <?php endif; ?>
-        <?php elseif( get_row_layout() == 'ttl-column' ): //レイアウト名2があった場合に出力 ?>
+        <?php elseif( get_row_layout() == 'ttl-column' ): ?>
           <?php $ttl = get_sub_field('ttl'); ?>
           <?php if ($ttl) : ?>
           <h4 class = "c-title--middle u-mb50">
-            <?php echo esc_html($ttl); //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
+            <?php echo esc_html($ttl); ?>
           </h4>
           <?php endif; ?>
-        <?php elseif( get_row_layout() == 'txt-column' ): //レイアウト名2があった場合に出力 ?>
+        <?php elseif( get_row_layout() == 'txt-column' ): ?>
           <?php $txt = get_sub_field('txt'); ?>
           <?php if ($txt) : ?>
           <p class = "u-mb50">
-            <?php echo wp_kses_post($txt); //柔軟コンテンツ内は'the_sub_field'や'get_sub_field'を使用 ?>
+            <?php echo wp_kses_post($txt); ?>
           </p>
           <?php endif; ?>
         <?php endif; ?>
@@ -65,7 +65,6 @@ get_header();
     </p>
     <div> 
       <?php wp_get_archives(array(
-        //これらの設定によりarcive-$posttype.phpで月別アーカイブを表示することが可能になる。
           'type' => 'monthly',
           'format' => 'custom',
           'show_post_count' => true,

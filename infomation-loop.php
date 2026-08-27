@@ -20,8 +20,6 @@ if ($infomations) {
       周辺情報
     </p>
     <ul class = "p-property__infomation__list u-mb50">
-      <!--PHPのcountはJavaScriptのlengthと同じように、配列の要素数を取得するために使用される-->
-      
         <?php for ($i = 0; $i < count($infomations); $i++): ?>
           <?php $infomation = $infomations[$i]; ?>
           <?php if (!empty($infomation['img']) || !empty($infomation['txt']) || !empty($infomation['value'])) : ?>

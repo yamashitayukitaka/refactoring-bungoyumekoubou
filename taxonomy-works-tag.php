@@ -7,7 +7,7 @@ get_header(); ?>
 <?php 
   $taxonomy = 'works-type';
   $tag = 'works-tag';
-  $mainQueryTerm = get_queried_object(); // taxonomy-$taxonomy.php テンプレートファイル内で現在のメインクエリのターム情報を取得できます。
+  $mainQueryTerm = get_queried_object();
   $mainQueryTermName = $mainQueryTerm -> name;
   $mainQueryTermSlug = $mainQueryTerm -> slug;
 ?>

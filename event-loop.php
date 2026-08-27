@@ -4,9 +4,7 @@
       <?php the_post_thumbnail();?>
     </figure>
     <div class = "p-content__list__txtWrap">
-      <?php $eventTypes = get_the_terms(get_the_ID(),'event-type', 
-      //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-      //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+      <?php $eventTypes = get_the_terms(get_the_ID(),'event-type',
         [
           'hide_empty' => false,
           'parent' =>0,
@@ -33,15 +31,10 @@
           <dt class = "p-content__list__txt">開催日&nbsp;:&nbsp;</dt>
           <dd class = "p-content__list__txt">
             <?php 
-              // カスタムフィールドの値を取得
               $always = get_field('always');
-              // カスタムフィールドが存在する場合の処理
               if ($always):
-                // 投稿のIDを取得
                 $post_id = get_the_ID();
-                // カスタムフィールドの値を取得
                 $always_value = get_post_meta($post_id, 'always', true);
-                // 真偽値として出力
                 if ($always_value === '1'): ?>
                 <p class = "p-event__always js-always">&nbsp;&nbsp;<?php echo esc_html('常時開催中'); ?></p>
               <?php endif; ?>

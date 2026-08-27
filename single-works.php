@@ -1,5 +1,4 @@
 <?php 
-// Template Name: works-single
 if ( ! defined( 'ABSPATH' ) ) exit;
 get_header();
 ?>
@@ -85,7 +84,7 @@ get_header();
     <?php get_template_part('hasThumbSlider-loop','hasThumbSlider');?>
   </section>
 
-  <?php if (have_rows('flex-design')) : // 柔軟なコンテンツフィールドの名前 ?>
+  <?php if (have_rows('flex-design')) : ?>
     <section class = "u-bg">
       <div class = "l-content--middle p-flex__outer">
         <h3 class = "c-title--sectionEn">
@@ -101,7 +100,7 @@ get_header();
     </section>
   <?php endif; ?>
   
-  <?php if (have_rows('flex-facilities')) : // 柔軟なコンテンツフィールドの名前 ?>
+  <?php if (have_rows('flex-facilities')) : ?>
     <section class = "l-content--middle p-flex__outer">
       <h3 class = "c-title--sectionEn">
         FACILITIES
