@@ -1,13 +1,13 @@
 (function($){ 
-  
-  const staffWidth = document.querySelector('.js-staffImg').offsetWidth;
-  document.documentElement.style.setProperty("--staffWidth", staffWidth + "px");
+  const staffImg = document.querySelector('.js-staffImg');
+  if (!staffImg) {
+    return;
+  }
 
-  window.addEventListener("resize", function () {
-  const staffWidth = document.querySelector('.js-staffImg').offsetWidth;
-  document.documentElement.style.setProperty("--staffWidth", staffWidth + "px");
-  
-});
+  const setStaffWidth = function () {
+    document.documentElement.style.setProperty("--staffWidth", staffImg.offsetWidth + "px");
+  };
 
-
+  setStaffWidth();
+  window.addEventListener("resize", setStaffWidth);
 })(jQuery);

@@ -23,7 +23,7 @@ function wazeka_scripts()
       true
     );
   }
-  if (is_page('about') || is_post_type_archive('staff') || is_singular('staff') || is_front_page()) {
+  if (is_page('about') || is_singular('staff')) {
     wp_enqueue_script(
       'wazeka-page',
       $js . '/about.js',
