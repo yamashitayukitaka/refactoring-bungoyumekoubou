@@ -171,15 +171,6 @@
         </div>
       </section>
     </footer>
-    <?php if (is_tax(array('works-type', 'works-tag', 'area')) || is_post_type_archive(array('works', 'xo_event')) || is_singular(array('works', 'xo_event')) || is_front_page() || is_page_template(array('used.php', 'land.php', 'rental.php')) || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))) : ?>
-      <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/hasThumbSlider.js" defer></script>
-    <?php endif; ?>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/test.js" defer></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/staffSlider.js" defer></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/faq.js" defer></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/commonSlick.js" defer></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/afterWordpressLoop.js" defer></script>
-    <script src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/js/booking-package.js" defer></script>
     <?php wp_footer(); ?>
     <?php if(is_front_page() ): ?>
       <!-- WINKMARK LP INDEX 2 start-->
