@@ -203,14 +203,6 @@ add_action('wp_before_admin_bar_render', 'remove_admin_bar_new_post');
 
 define('IMG_URL', get_template_directory_uri() . '/dist/img');
 
-function enqueue_swiper_assets()
-{
-  wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
-
-  wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), null, true);
-}
-add_action('wp_enqueue_scripts', 'enqueue_swiper_assets');
-
 function wazeka_kses_iframe($html)
 {
   return wp_kses(
