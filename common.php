@@ -183,10 +183,6 @@
       <div class="p-location__content">
         <div class="p-location__inner l_content_large_t">
           <ul class="js-commonSlick p-location__list pc_tab">
-            <!--isset は、変数が存在し、かつ null でないことを確認します。
-            これにより、未定義の変数や配列要素にアクセスしようとした場合のエラーを防ぎます。
-            empty は、変数が空（空文字列、0、null、false など）であるかどうかを確認します。
-            ただし、変数が未定義の場合も true を返します。-->
             <?php if (!empty($store['detail'])) : ?>
             <?php foreach ($store['detail'] as $item) : ?>
               <?php if (!empty($item['detail_img'])) : ?>

@@ -22,9 +22,7 @@
       </ul>
     <?php endif; ?>
     <div class = "p-content__list__txtWrap">
-      <?php $worksTypes = get_the_terms(get_the_ID(),'works-type', 
-        //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-        //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+      <?php $worksTypes = get_the_terms(get_the_ID(),'works-type',
           [
             'hide_empty' => false,
             'parent' =>0,
@@ -43,9 +41,7 @@
         </p>
       <?php endif; ?>
 
-      <?php $worksTags = get_the_terms(get_the_ID(),'works-tag', 
-        //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-        //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+      <?php $worksTags = get_the_terms(get_the_ID(),'works-tag',
           [
             'hide_empty' => false,
             'parent' =>0,

@@ -1,11 +1,10 @@
 <?php 
-  // Template Name: works-type
-  if ( ! defined( 'ABSPATH' ) ) exit;
-  get_header();
+if ( ! defined( 'ABSPATH' ) ) exit;
+get_header();
 ?>
   <?php 
     $taxonomy = 'works-type';
-    $mainQueryTerm = get_queried_object(); // taxonomy-$taxonomy.php テンプレートファイル内で現在のメインクエリのターム情報を取得できます。
+    $mainQueryTerm = get_queried_object();
     $mainQueryTermName = $mainQueryTerm -> name;
     $mainQueryTermSlug = $mainQueryTerm -> slug;
     $tag = 'works-tag';
@@ -61,7 +60,6 @@
           <a href = "<?php echo esc_url(home_url('works-type/' . $mainQueryTermSlug)); ?>" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
         </li>
         
-        <!-- "."はworks-type/'と変数$mainQueryTermSlugの値を結合して一つの文字列にする-->
         <?php foreach($worksTags as $worksTag):?>
           <?php $worksSlug = $worksTag->slug ;?>
           <li class = "c-tag__list__item">
@@ -76,11 +74,11 @@
 
   <section class = "l-content">
     <?php
-      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;//get_query_var('paged')で現在表示されているページ番号を取得する。
+      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       $works = array(
       'post_type' => 'works',
       'posts_per_page' =>6,
-      'paged'=>$paged,//get_query_varで得られた現在表示されているページ番号を渡す。この部分は、ページネーションが正しく機能するために非常に重要です。get_query_var('paged') で取得した値を 'paged' => $paged としてクエリに設定することで、正しいページが表示されるようになります。
+      'paged'=>$paged,
       'orderby' => 'menu_order',
       'order' => 'ASC',
       'tax_query' => array(

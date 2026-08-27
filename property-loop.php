@@ -5,9 +5,7 @@
     </figure>
     <div class = "p-content__list__txtWrap">
 
-      <?php $terms = get_the_terms(get_the_ID(),'property-category', 
-      //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-      //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+      <?php $terms = get_the_terms(get_the_ID(),'property-category',
         [
           'hide_empty' => false,
           'parent' =>0,
@@ -23,9 +21,7 @@
         <?php endforeach;?>
       <?php endif; ?>
 
-      <?php $tags = get_the_terms(get_the_ID(),'property-area', 
-      //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-      //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+      <?php $tags = get_the_terms(get_the_ID(),'property-area',
         [
           'hide_empty' => false,
           'parent' =>0,

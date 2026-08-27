@@ -23,15 +23,6 @@ function wazeka_scripts()
       true
     );
   }
-  // if (is_singular('xo_event')) {
-  //   wp_enqueue_script(
-  //     'wazeka-event',
-  //     get_template_directory_uri() . '/dist/js/booking-package.js',
-  //     array(),
-  //     '1.0.0',
-  //     true
-  //   );
-  //}
   if (is_page('about') || is_post_type_archive('staff') || is_singular('staff') || is_front_page()) {
     wp_enqueue_script(
       'wazeka-page',
@@ -42,13 +33,11 @@ function wazeka_scripts()
     );
   }
 
-  // defer属性を付与する
   wp_script_add_data('wazeka-common', 'defer', true);
   wp_script_add_data('wazeka-top', 'defer', true);
   wp_script_add_data('wazeka-event', 'defer', true);
   wp_script_add_data('wazeka-page', 'defer', true);
 
-  //css読み込み
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/src/style.css', array(), '1.0.0');
   wp_enqueue_style('ichikawa-style', get_template_directory_uri() . '/src/ichikawa.css', array(), '1.0.0');
   wp_enqueue_style('tamura-style', get_template_directory_uri() . '/src/tamura.css', array(), '1.0.0');
@@ -67,11 +56,10 @@ function wazeka_scripts()
       '1.0.0'
     ); 
   } 
-}//cssのときはtrueを削除しないと、パスが通らない
+}
 
 add_action('wp_enqueue_scripts', 'wazeka_scripts');
 
-//サムネイル有効化
 function irodori_theme()
 {
   add_theme_support('post-thumbnails');
@@ -79,23 +67,18 @@ function irodori_theme()
 
 add_action('after_setup_theme', 'irodori_theme');
 
-//the_archive_titleで表示されるアーカイブという記述を削除
 function remove_archive_prefix($title)
 {
   return preg_replace('/^アーカイブ: /', '', $title);
 }
 add_filter('get_the_archive_title', 'remove_archive_prefix');
 
-//the_archive_titleで表示されるspanタグを削除
 function remove_archive_span_tag($title)
 {
-  return strip_tags($title); // タグを削除して返す
+  return strip_tags($title);
 }
 add_filter('get_the_archive_title', 'remove_archive_span_tag');
 
-//search.phpで検索結果の表示のためのループはメインクエリ、メインループを使用するので、制御したい場合は、
-//サブループを使用せずに、functions.phpでフィルターフックを使用する
-//seach.phpの結果表示をカスタム投稿タイプblogに制限する
 function custom_search_filter($query)
 {
   if ($query->is_search && !is_admin()) {
@@ -105,28 +88,23 @@ function custom_search_filter($query)
 }
 add_filter('pre_get_posts', 'custom_search_filter');
 
-//seach.phpでページネーションが使用できるようにpagedを設定する。
-//1ページの表示件数を3件に設定する
 function custom_search_pagination($query)
 {
   if ($query->is_search && !is_admin()) {
-    $query->set('posts_per_page', 5); // 1ページあたりの投稿数
+    $query->set('posts_per_page', 5);
     $query->set('paged', get_query_var('paged') ? get_query_var('paged') : 1);
   }
   return $query;
 }
 add_filter('pre_get_posts', 'custom_search_pagination');
 
-//the_excerptで表示される文字数を20文字に設定
 function custom_excerpt_length($length)
 {
-  return 20; // 20文字に設定する場合
+  return 20;
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
-//アドミンバーが表示されたときの余白を消す
 if (is_admin_bar_showing()) {
-  // Admin Barの余白を削除するスタイルをbody要素に追加
   add_action('wp_head', function () {
     echo '<style type="text/css">
             body {
@@ -147,10 +125,9 @@ if (function_exists('acf_add_options_page')) {
 }
 
 
-//デフォルトの投稿を削除
 function remove_default_post_type()
 {
-  remove_menu_page('edit.php'); // 投稿メニューを削除
+  remove_menu_page('edit.php');
 }
 add_action('admin_menu', 'remove_default_post_type');
 

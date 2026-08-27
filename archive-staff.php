@@ -1,5 +1,4 @@
 <?php
-// Template Name: staff
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>

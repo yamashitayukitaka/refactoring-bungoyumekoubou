@@ -1,5 +1,4 @@
 <?php 
-// Template Name: archive-xo_event
 if ( ! defined( 'ABSPATH' ) ) exit;
 get_header();
 ?>
@@ -75,11 +74,11 @@ get_header();
 
   <section class = "l-content u-mb100">
     <?php
-      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;//get_query_var('paged')で現在表示されているページ番号を取得する。
+      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       $event = array(
       'post_type' => 'xo_event',
       'posts_per_page' =>7,
-      'paged'=>$paged,//get_query_varで得られた現在表示されているページ番号を渡す。この部分は、ページネーションが正しく機能するために非常に重要です。get_query_var('paged') で取得した値を 'paged' => $paged としてクエリに設定することで、正しいページが表示されるようになります。
+      'paged'=>$paged,
       'orderby' => 'menu_order',
       'order' => 'ASC',
     );?>

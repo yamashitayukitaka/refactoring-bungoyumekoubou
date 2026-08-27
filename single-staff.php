@@ -1,11 +1,10 @@
 <?php 
-// Template Name: staff
 if ( ! defined( 'ABSPATH' ) ) exit;
 get_header();
 ?>
 
 <?php $post_id = get_the_ID();?>
-<?php $terms = wp_get_post_terms($post_id, 'department'); // 'category' を他のタクソノミー（例：'post_tag'）に置き換え可能?>
+<?php $terms = wp_get_post_terms($post_id, 'department'); ?>
 
 <main>
 <div class = "c-pageMv u-mb100">
@@ -169,9 +168,7 @@ if ($questions) {
               <img src="<?php echo esc_url($staff_img); ?>" alt="スタッフイメージ" class ="p-staff__img">
               <?php endif; ?>
             </figure>
-            <?php $Tags = get_the_terms(get_the_ID(),'department', 
-              //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-              //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+            <?php $Tags = get_the_terms(get_the_ID(),'department',
                 [
                   'hide_empty' => false,
                   'parent' =>0,

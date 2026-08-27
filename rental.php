@@ -74,9 +74,6 @@ get_header();
         詳細情報
       </p>
 
-      <!--テキストのみを出力したい場合: esc_htmlが適しています。すべてのHTMLタグをエスケープするため、純粋なテキストを安全に表示できます。-->
-      <!--一部のHTMLタグを許可したい場合: wp_kses_postが適しています。ユーザー投稿などで特定のHTMLタグを許可しつつ、その他の有害なタグを排除できます。-->
-
       <div class = "p-property__dl__infoWrap u-mb50">
         <?php if (!empty($detail['name'])):?>
         <dl class = "p-property__dl__info">
@@ -232,7 +229,7 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <?php if (have_rows('flex-point')) : // 柔軟なコンテンツフィールドの名前 ?>
+  <?php if (have_rows('flex-point')) : ?>
   <section class = "u-bg u-mb100 p-works__design">
     <div class = "l-content--middle">
       <h3 class = "c-title--sectionEn">
@@ -248,7 +245,7 @@ get_header();
    </section>
   <?php endif; ?>
 
-  <?php if (have_rows('flex-facilities')) : // 柔軟なコンテンツフィールドの名前 ?>
+  <?php if (have_rows('flex-facilities')) : ?>
     <section class = "l-content--middle u-mb100">
       <h3 class = "c-title--sectionEn">
         FACILITIES

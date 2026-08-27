@@ -42,9 +42,7 @@
                       <?php the_title(); ?>
                     </p>
                     
-                      <?php $eventTypes = get_the_terms(get_the_ID(),'event-type', 
-                      //get_terms  と　get_the_termsの違いは、get_the_termsはループ内でget_the_idを引数にとれば、
-                      //その投稿に紐ずくタームのみを取得でき、get_termsはループ外でターム一覧を取得する
+                      <?php $eventTypes = get_the_terms(get_the_ID(),'event-type',
                         [
                           'hide_empty' => false,
                           'parent' =>0,

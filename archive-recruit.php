@@ -1,6 +1,5 @@
 <?php 
-  // Template Name: recruit
-    if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) exit;
   get_header();
 ?>
 

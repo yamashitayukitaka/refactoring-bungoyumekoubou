@@ -39,7 +39,7 @@ get_header();
 <table class = "p-recruit__table">
     <tbody class = "p-recruit__tbody">
 
-    <?php if ($requirements && (!empty($requirements['jobName']) || !empty($requirements['lisence']) || !empty($requirements['salary']) || !empty($requirements['bonus']) || !empty($requirements['raise']) || !empty($requirements['location']) || !empty($requirements['vacation']) || !empty($requirements['use']) || !empty($requirements['insurance']))) :?><!--サブフィールドを持っているか条件分岐。ACFでグループを使用するときはこの条件分岐が必要 -->
+    <?php if ($requirements && (!empty($requirements['jobName']) || !empty($requirements['lisence']) || !empty($requirements['salary']) || !empty($requirements['bonus']) || !empty($requirements['raise']) || !empty($requirements['location']) || !empty($requirements['vacation']) || !empty($requirements['use']) || !empty($requirements['insurance']))) :?>
       <?php if ($requirements && !empty($requirements['jobName'])):?>
         <tr  class = "p-recruit__tr">
           <th class = "p-recruit__th">職種名</th>
