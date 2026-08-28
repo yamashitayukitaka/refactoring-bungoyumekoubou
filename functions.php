@@ -4,7 +4,7 @@ function wazeka_scripts()
 
   wp_enqueue_script('jquery');
 
-  wp_enqueue_script('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js', array('jquery'), '1.9.0', true);
+  wp_register_script('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js', array('jquery'), '1.9.0', true);
   $js = get_template_directory_uri() . '/dist/js';
 
   wp_enqueue_script(
