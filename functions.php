@@ -33,7 +33,7 @@ function wazeka_scripts()
     );
   }
 
-  if (is_tax(array('works-type', 'works-tag', 'area')) || is_post_type_archive(array('works', 'xo_event')) || is_singular(array('works', 'xo_event')) || is_front_page() || is_page_template(array('used.php', 'land.php', 'rental.php')) || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))) {
+  if (is_singular('works') || is_page_template(array('used.php', 'land.php', 'rental.php')) || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))) {
     wp_enqueue_script(
       'wazeka-has-thumb-slider',
       $js . '/hasThumbSlider.js',
@@ -73,7 +73,7 @@ function wazeka_scripts()
     );
   }
 
-  if (is_front_page() || is_page(array('heig', 'rireve', 'about', 'concept', 'quality', 'cost', 'design', 'flow', 'faq', 'after-support', 'maintenance', 'renovation', 'model-house')) || is_post_type_archive('staff') || is_singular('staff')) {
+  if (is_front_page() || is_page(array('heig', 'rireve')) || is_post_type_archive('staff') || is_singular('staff')) {
     wp_enqueue_script(
       'wazeka-common-slick',
       $js . '/commonSlick.js',
