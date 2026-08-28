@@ -1,0 +1,11 @@
+.top_Slider,
+.service_slider,
+.js-worksSlider,
+.js-commonSlick,
+.js-hasThumbSlider,
+.js-staffSlider,
+.js-staffSlider--reverse {
+  &:not(.slick-initialized)>*:not(:first-child) {
+    display: none;
+  }
+}
