@@ -2,7 +2,7 @@
   /*画像がすべて読み込まれた後に実行させないと
   サムネイルクリックイベントが正しく実行されなかった 
   */
-  window.onload = function() {
+  window.addEventListener('load', function() {
     var $slider = $('.js-commonSlick').slick({
       infinite: true,
       slidesToShow: 1,
@@ -25,11 +25,8 @@
       var slideIndex = $(this).data('slide');
       $slider.slick('slickGoTo', slideIndex);
     });
-  };
 
-// 田村追加
-  setTimeout(function() {
-    $('.top_Slider').slick({ //{}を入れる
+    $('.top_Slider').slick({
       fade: true,
       autoplay: true,
       speed: 1500,
@@ -38,9 +35,8 @@
       pauseOnHover: false,
       arrows: false,
     });
-  }, 2000); 
-  setTimeout(function() {
-    $('.service_slider').slick({ //{}を入れる
+
+    $('.service_slider').slick({
       fade: true,
       autoplay: true,
       speed: 1500,
@@ -49,6 +45,5 @@
       pauseOnHover: false,
       arrows: false,
     });
-  }, 2000); 
-
+  });
 })(jQuery);
