@@ -85,7 +85,7 @@ get_header();
     <?php endif; ?>
     <?php endif; ?>
     <div class="service_model_gallery">
-      <?php get_template_part('hasThumbSlider-loop', 'hasThumbSlider'); ?>
+      <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
     </div>
 
 
@@ -348,7 +348,7 @@ get_header();
     <?php if ($eventLoop->have_posts()) : ?>
       <ul class="p-content__list u-mb50">
         <?php while ($eventLoop->have_posts()) : $eventLoop->the_post(); ?>
-          <?php get_template_part('event-loop', 'event'); ?>
+          <?php get_template_part('template-parts/event-loop'); ?>
       <?php endwhile;
       endif;
       wp_reset_postdata(); ?>
@@ -359,7 +359,7 @@ get_header();
   </section>
 
 
-  <?php include get_template_directory() . '/common.php'   ?>
+  <?php get_template_part('template-parts/common'); ?>
 
 
 </main>

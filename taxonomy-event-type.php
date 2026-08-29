@@ -155,7 +155,7 @@ if ($lootSlug) {
       <?php if ($eventLoop->have_posts()): ?>
         <ul class = "p-content__list js-allswitch">
           <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
-            <?php get_template_part('event-loop','event'); ?>
+            <?php get_template_part('template-parts/event-loop'); ?>
           <?php endwhile;?>
         </ul>
       <?php endif;
@@ -168,6 +168,6 @@ if ($lootSlug) {
     <?php endif; ?>
 
   </section>
-  <?php get_template_part('xo-event','calendar'); ?>
+  <?php get_template_part('template-parts/xo-event'); ?>
 </main>
 <?php get_footer(); ?>

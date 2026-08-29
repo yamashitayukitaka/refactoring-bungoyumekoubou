@@ -53,7 +53,7 @@ get_header();
     </dl>
   </section>
 
-  <?php get_template_part('staff-loop', 'staff'); ?>
+  <?php get_template_part('template-parts/staff-loop'); ?>
 
   <div class="u-center u-mb150">
     <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--page">
@@ -470,11 +470,11 @@ get_header();
 
 
 
-  <?php get_template_part('recruit-part', 'recruit'); ?>
+  <?php get_template_part('template-parts/recruit-part'); ?>
 
-  <?php include get_template_directory() . '/common.php' ?>
+  <?php get_template_part('template-parts/common'); ?>
 
-  <?php get_template_part('common-footer', 'common-footer'); ?>
+  <?php get_template_part('template-parts/common-footer'); ?>
 
 </main>
 

@@ -71,7 +71,7 @@ get_header();
   <?php endforeach; ?>
   <?php endif; ?>
 
-  <?php get_template_part('common', 'common'); ?>
+  <?php get_template_part('template-parts/common'); ?>
 
 </main>
 <?php get_footer(); ?>

@@ -72,7 +72,7 @@ get_header();
 
   </section>
 
-  <?php get_template_part('hasThumbSlider-loop', 'hasThumbSlider'); ?>
+  <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
 
   <?php $detail = get_field('detail'); ?>
   <?php if ($detail && (!empty($detail['name']) || !empty($detail['address']) || !empty($detail['traffic']) || !empty($detail['price']) || !empty($detail['land-area']) || !empty($detail['elementary']) || !empty($detail['junior-high']) || !empty($detail['point']) || !empty($detail['ground']) || !empty($detail['purpose']) || !empty($detail['health']) || !empty($detail['floor-area-ratio']) || !empty($detail['urban']) || !empty($detail['contact-path']) || !empty($detail['transaction']) || !empty($detail['commission']) || !empty($detail['facility']) || !empty($detail['remarks']) || !empty($detail['contact']))) : ?>
@@ -224,7 +224,7 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <?php get_template_part('infomation-loop', 'infomation'); ?>
+  <?php get_template_part('template-parts/infomation-loop'); ?>
 
   <div class="l-content--middle recruit__contact__form u-mb100">
     <p class="recruit__contact__desc">
@@ -254,7 +254,7 @@ get_header();
       <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
     </div>
   </section>
-  <?php get_template_part('common-footer', 'common'); ?>
+  <?php get_template_part('template-parts/common-footer'); ?>
 
 </main>
 

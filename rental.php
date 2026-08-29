@@ -62,7 +62,7 @@ get_header();
   </section>
 
   
-  <?php get_template_part('hasThumbSlider-loop','hasThumbSlider');?>
+  <?php get_template_part('template-parts/hasThumbSlider-loop');?>
  
   <?php $detail = get_field('detail'); ?>
   <?php if($detail && (!empty($detail['name']) || !empty($detail['traffic']) || !empty($detail['address']) || !empty($detail['document']) || !empty($detail['mutual']) || !empty($detail['security']) || !empty($detail['key']) || !empty($detail['renewal']) || !empty($detail['insurance']) || !empty($detail['deposit']) || !empty($detail['brokerage']) || !empty($detail['floor']) || !empty($detail['total']) || !empty($detail['site']) || !empty($detail['age']) || !empty($detail['parking']) || !empty($detail['move']) || !empty($detail['structure']) || !empty($detail['transaction']) || !empty($detail['elementary']) || !empty($detail['juniorHigh']) || !empty($detail['facility']) || !empty($detail['point']) || !empty($detail['remarks']) || !empty($detail['contact']))):?>
@@ -239,7 +239,7 @@ get_header();
         ポイント
       </p>
       <?php while (have_rows('flex-point')) : the_row(); ?>
-        <?php get_template_part('flex-loop','flex'); ?>
+        <?php get_template_part('template-parts/flex-loop'); ?>
       <?php endwhile; ?>
     </div>
    </section>
@@ -254,7 +254,7 @@ get_header();
         設備
       </p>
       <?php while (have_rows('flex-facilities')) : the_row(); ?>
-        <?php get_template_part('flex-loop','flex'); ?>
+        <?php get_template_part('template-parts/flex-loop'); ?>
       <?php endwhile; ?>
     </section>
   <?php endif; ?>
@@ -275,7 +275,7 @@ get_header();
     </div>
   </section>
   
-  <?php get_template_part('common-footer','common'); ?>
+  <?php get_template_part('template-parts/common-footer'); ?>
 
 </main>
 

@@ -426,7 +426,7 @@ get_header();
     </div>
   </section>
 
-  <?php include get_template_directory() . '/common.php'   ?>
+  <?php get_template_part('template-parts/common'); ?>
 
 
 </main>

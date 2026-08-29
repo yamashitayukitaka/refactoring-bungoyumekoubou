@@ -24,7 +24,7 @@
     <?php if ($worksLoop->have_posts()): ?>
       <ul class = "p-content__list js-allswitch">
         <?php while ($worksLoop->have_posts()) : $worksLoop->the_post();?>
-          <?php get_template_part('works-loop','works'); ?>
+          <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
@@ -69,7 +69,7 @@
 <?php if ($eventLoop->have_posts()): ?>
   <ul class = "p-content__list u-mb50">
     <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
-      <?php get_template_part('event-loop','event'); ?>
+      <?php get_template_part('template-parts/event-loop'); ?>
     <?php endwhile;
     endif;
     wp_reset_postdata();?>

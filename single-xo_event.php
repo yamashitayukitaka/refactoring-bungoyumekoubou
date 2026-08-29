@@ -280,5 +280,5 @@ get_header();
       </section>
     <?php endif; ?>
 </main>
-<?php get_template_part('common-link', 'link'); ?>
+<?php get_template_part('template-parts/common-link'); ?>
 <?php get_footer(); ?>
