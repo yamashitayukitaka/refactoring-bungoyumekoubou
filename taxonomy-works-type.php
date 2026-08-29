@@ -94,7 +94,7 @@ get_header();
     <?php if ($worksLoop->have_posts()): ?>
       <ul class = "p-content__list js-allswitch">
         <?php while ($worksLoop->have_posts()) : $worksLoop->the_post();?>
-          <?php get_template_part('works-loop','works'); ?>
+          <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;

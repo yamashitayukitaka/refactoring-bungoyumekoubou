@@ -70,7 +70,7 @@ get_header();
     <?php endif; ?>
   </section>
 
-  <?php get_template_part('staff-loop', 'staff'); ?>
+  <?php get_template_part('template-parts/staff-loop'); ?>
 
   <div class="u-center u-mb150">
     <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--page">
@@ -510,6 +510,6 @@ get_header();
     </div>
   </section>
 
-  <?php get_template_part('common-link', 'link'); ?>
+  <?php get_template_part('template-parts/common-link'); ?>
 </main>
 <?php get_footer(); ?>

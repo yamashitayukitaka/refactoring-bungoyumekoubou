@@ -93,7 +93,7 @@ get_header();
     <?php if ($myOuery->have_posts()): ?>
       <ul class = "p-content__list js-allswitch">
         <?php while ($myOuery->have_posts()) : $myOuery->the_post();?>
-          <?php get_template_part('property-loop','property'); ?>
+          <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;

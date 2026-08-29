@@ -84,7 +84,7 @@ get_header();
     <?php if ($propertyLoop->have_posts()): ?>
       <ul class = "p-content__list">
         <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post();?>
-          <?php get_template_part('property-loop','property'); ?>
+          <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;

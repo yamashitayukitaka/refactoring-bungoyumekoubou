@@ -133,7 +133,7 @@ get_header();
         </div>
     </div>
 
-    <?php get_template_part('hasThumbSlider-loop', 'hasThumbSlider'); ?>
+    <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
 
     <!-- HEIGの標準仕様 -->
     <div class="specification_wrap">
@@ -466,7 +466,7 @@ get_header();
         <ul class="p-content__list u-mb100">
             <?php if ($worksLoop->have_posts()) :
                 while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
-                    <?php get_template_part('works-loop', 'works'); ?>
+                    <?php get_template_part('template-parts/works-loop'); ?>
             <?php endwhile;
             endif;
             wp_reset_postdata(); ?>

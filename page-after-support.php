@@ -361,7 +361,7 @@ get_header();
     <?php endif; ?>
   </section>
 
-  <?php include get_template_directory() . '/common.php'   ?>
+  <?php get_template_part('template-parts/common'); ?>
 
 </main>
 <?php get_footer(); ?>

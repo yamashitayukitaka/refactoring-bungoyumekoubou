@@ -191,8 +191,8 @@ if ($questions) {
   </ul>
 </section>
 
-<?php get_template_part('recruit-part','recruit'); ?>
-<?php get_template_part('common','common'); ?>
-<?php get_template_part('common-link','link'); ?>
+<?php get_template_part('template-parts/recruit-part'); ?>
+<?php get_template_part('template-parts/common'); ?>
+<?php get_template_part('template-parts/common-link'); ?>
 </main>
 <?php get_footer(); ?>

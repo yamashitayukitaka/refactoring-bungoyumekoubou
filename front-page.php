@@ -162,7 +162,7 @@ get_header();
     </section>
   </a>
 
-  <?php get_template_part('studio-part', 'studio'); ?>
+  <?php get_template_part('template-parts/studio-part'); ?>
 
   <a href="<?php echo esc_url(home_url('catalog')); ?>">
     <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top01.webp');">
@@ -201,7 +201,7 @@ get_header();
     <?php if ($worksLoop->have_posts()) : ?>
       <ul class="p-content__list u-mb50">
         <?php while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
-          <?php get_template_part('works-loop', 'works'); ?>
+          <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile; ?>
       </ul>
     <?php endif;
@@ -300,7 +300,7 @@ get_header();
     <?php if ($propertyLoop->have_posts()) : ?>
       <ul class="p-content__list">
         <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post(); ?>
-          <?php get_template_part('property-loop', 'property'); ?>
+          <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile; ?>
       </ul>
     <?php endif;

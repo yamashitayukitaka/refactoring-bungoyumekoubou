@@ -72,7 +72,7 @@ get_header();
     <?php endif; ?>
   </section>
 
-  <?php get_template_part('hasThumbSlider-loop','hasThumbSlider');?>
+  <?php get_template_part('template-parts/hasThumbSlider-loop');?>
   
   <?php $detail = get_field('detail'); ?>
   <?php if($detail && (!empty($detail['price']) || !empty($detail['name']) || !empty($detail['traffic']) || !empty($detail['address']) || !empty($detail['floor']) || !empty($detail['totalFloor']) || !empty($detail['siteArea']) || !empty($detail['age']) || !empty($detail['elementary']) || !empty($detail['junior-high']) || !empty($detail['point']) || !empty($detail['ground']) || !empty($detail['purpose']) || !empty($detail['health']) || !empty($detail['floor-area-ratio']) || !empty($detail['urban']) || !empty($detail['contact-path']) || !empty($detail['structure']) || !empty($detail['transaction']) || !empty($detail['commission']) || !empty($detail['delivery']) || !empty($detail['facility']) || !empty($detail['remarks']) || !empty($detail['contact']))):?>
@@ -251,7 +251,7 @@ get_header();
           デザイン
         </p>
         <?php while (have_rows('flex-design')) : the_row(); ?>
-          <?php get_template_part('flex-loop','flex'); ?>
+          <?php get_template_part('template-parts/flex-loop'); ?>
         <?php endwhile; ?>
       </div>
     </section>
@@ -266,7 +266,7 @@ get_header();
         設備
       </p>
       <?php while (have_rows('flex-facilities')) : the_row(); ?>
-        <?php get_template_part('flex-loop','flex'); ?>
+        <?php get_template_part('template-parts/flex-loop'); ?>
       <?php endwhile; ?>
     <?php endif; ?>
   </section>
@@ -286,7 +286,7 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <?php get_template_part('infomation-loop','infomation'); ?>
+  <?php get_template_part('template-parts/infomation-loop'); ?>
 
   <section class="p-contact l-content" id = "contact">
     <div class="c-title__wrap--sectionLine">
@@ -303,7 +303,7 @@ get_header();
       <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
     </div>
   </section>
-  <?php get_template_part('common-footer','common'); ?>
+  <?php get_template_part('template-parts/common-footer'); ?>
 
 </main>
 <?php get_footer(); ?>

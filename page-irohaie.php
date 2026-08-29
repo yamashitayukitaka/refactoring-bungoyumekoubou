@@ -205,7 +205,7 @@ get_header();
     </section>
   </div>
 
-  <?php get_template_part('hasThumbSlider-loop', 'hasThumbSlider'); ?>
+  <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
 
   <div class="l_content_middle_70 l_content_middle_70_sp">
     <section class="iroha__features  u-mb100">
@@ -397,7 +397,7 @@ get_header();
     <ul class="p-content__list u-mb100">
       <?php if ($worksLoop->have_posts()) :
         while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
-          <?php get_template_part('works-loop', 'works'); ?>
+          <?php get_template_part('template-parts/works-loop'); ?>
       <?php endwhile;
       endif;
       wp_reset_postdata(); ?>

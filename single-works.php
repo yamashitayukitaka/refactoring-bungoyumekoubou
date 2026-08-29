@@ -81,7 +81,7 @@ get_header();
   <?php endif; ?>
 
   <section class = "l-content--middle u-mb100">
-    <?php get_template_part('hasThumbSlider-loop','hasThumbSlider');?>
+    <?php get_template_part('template-parts/hasThumbSlider-loop');?>
   </section>
 
   <?php if (have_rows('flex-design')) : ?>
@@ -94,7 +94,7 @@ get_header();
           デザイン
         </p>
         <?php while (have_rows('flex-design')) : the_row(); ?>
-          <?php get_template_part('flex-loop','flex'); ?>
+          <?php get_template_part('template-parts/flex-loop'); ?>
         <?php endwhile; ?>
       </div>
     </section>
@@ -109,7 +109,7 @@ get_header();
         設備
       </p>
       <?php while (have_rows('flex-facilities')) : the_row(); ?>
-        <?php get_template_part('flex-loop','flex'); ?>
+        <?php get_template_part('template-parts/flex-loop'); ?>
       <?php endwhile; ?>
     </section>
   <?php endif; ?>
@@ -197,5 +197,5 @@ get_header();
 
 </main>
 
-<?php get_template_part('common-link','link'); ?>
+<?php get_template_part('template-parts/common-link'); ?>
 <?php get_footer(); ?>

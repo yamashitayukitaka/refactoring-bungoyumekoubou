@@ -86,7 +86,7 @@ get_header();
     <?php if ($eventLoop->have_posts()): ?>
       <ul class = "p-content__list js-prepend">
         <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
-          <?php get_template_part('event-loop','event'); ?>
+          <?php get_template_part('template-parts/event-loop'); ?>
         <?php endwhile;
         endif;
         wp_reset_postdata();?>
@@ -97,7 +97,7 @@ get_header();
     <?php endif; ?>
       
     </section>
-  <?php get_template_part('xo-event','calendar'); ?>
+  <?php get_template_part('template-parts/xo-event'); ?>
  
 </main>
   
