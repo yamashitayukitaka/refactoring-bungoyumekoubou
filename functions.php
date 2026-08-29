@@ -130,12 +130,13 @@ function wazeka_scripts()
 
 add_action('wp_enqueue_scripts', 'wazeka_scripts');
 
-function irodori_theme()
+function wazeka_theme()
 {
   add_theme_support('post-thumbnails');
+  add_theme_support('title-tag');
 }
 
-add_action('after_setup_theme', 'irodori_theme');
+add_action('after_setup_theme', 'wazeka_theme');
 
 function remove_archive_prefix($title)
 {
