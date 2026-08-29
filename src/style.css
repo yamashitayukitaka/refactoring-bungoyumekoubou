@@ -3808,4 +3808,15 @@ a:hover {
 
 .u-nowrap {
   white-space: nowrap;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.top_Slider:not(.slick-initialized) > *:not(:first-child),
+.service_slider:not(.slick-initialized) > *:not(:first-child),
+.js-worksSlider:not(.slick-initialized) > *:not(:first-child),
+.js-commonSlick:not(.slick-initialized) > *:not(:first-child),
+.js-hasThumbSlider:not(.slick-initialized) > *:not(:first-child),
+.js-staffSlider:not(.slick-initialized) > *:not(:first-child),
+.js-staffSlider--reverse:not(.slick-initialized) > *:not(:first-child) {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
