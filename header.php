@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html <?php language_attributes(); ?>>
 
 
 <head>
@@ -76,7 +76,7 @@
 
 
 
-<body>
+<body <?php body_class(); ?>>
 <!-- Google Tag Manager WINKMARK (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR6HSXJ5" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
