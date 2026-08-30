@@ -1,39 +1,4 @@
 .p-works{
-  &__mv{
-    width: 100%;
-    //height: calc(var(--windowHeight) - var(--headerHeight));
-    overflow: hidden;
-    @include mq(){
-      height: 60vh;
-    }
-    & .slick-slider{
-      height: 100%;
-    }
-    & .slick-track{
-      height: 100%;
-    }
-    & .slick-list{
-      height: 100%;
-      & div{
-        height: 100%;
-        & li{
-         // height: 100%;
-          & img{
-            height: 100%;
-          }
-        }
-      }
-    }
-    &__list{
-      width: 100%;
-      aspect-ratio: 900/562;
-      overflow: hidden;
-      @include mq(){
-        height: 100%;
-        aspect-ratio: initial;
-      }
-    }
-  }
   &__design{
     padding: 10rem 0;
   }
