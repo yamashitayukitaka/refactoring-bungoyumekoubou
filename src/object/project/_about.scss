@@ -159,24 +159,4 @@
       }
     }
   }
-  &__studio{
-    &__list{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-    &__item{
-      background: $gray;
-      width: calc(342/900*100%);
-      &:nth-of-type(2n - 1){
-        margin-right: calc(100% - (342/900*100%)*2);
-      }
-    }
-  }
-  &__video{
-    display: block;
-    margin: 0 auto 10rem;
-    width: calc(781/1000*100%);
-    aspect-ratio:781/488;
-  }
 }
