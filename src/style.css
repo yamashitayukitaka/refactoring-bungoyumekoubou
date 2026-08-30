@@ -2222,25 +2222,6 @@ a:hover {
     margin-right: 0;
   }
 }
-.p-about__studio__list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.p-about__studio__item {
-  background: #EEEEEE;
-  width: 38%;
-}
-.p-about__studio__item:nth-of-type(2n - 1) {
-  margin-right: 24%;
-}
-.p-about__video {
-  display: block;
-  margin: 0 auto 10rem;
-  width: 78.1%;
-  aspect-ratio: 781/488;
-}
-
 .p-staff__list {
   display: flex;
   flex-wrap: wrap;
