@@ -102,7 +102,7 @@
 
       <section class="l-footer__bottom">
         <div class="l-content--middle">
-          <nav class="c-navigation--footer">
+          <nav>
             <ul class="c-navigation__list--footer">
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
@@ -145,23 +145,23 @@
               </li>
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
-                  <li class="c-navigation__list__item--footer">
+                  <li>
                     <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="c-navigation__list__link--footer">イベント情報</a>
                   </li>
-                  <li class="c-navigation__list__item--footer">
+                  <li>
                     <a href="<?php echo esc_url(home_url('/')); ?>works" class="c-navigation__list__link--footer">施工事例＆お客様の声</a>
                   </li>
-                  <li class="c-navigation__list__item--footer">
+                  <li>
                     <a href="<?php echo esc_url(home_url('/')); ?>property" class="c-navigation__list__link--footer">土地・物件情報</a>
                   </li>
                 </ul>
               </li>
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
-                  <li class="c-navigation__list__item--footer">
+                  <li>
                     <a href="<?php echo esc_url(home_url('/')); ?>model-house" class="c-navigation__list__link--footer">モデルハウス</a>
                   </li>
-                  <li class="c-navigation__list__item--footer">
+                  <li>
                     <a href="<?php echo esc_url(home_url('/')); ?>contact" class="c-navigation__list__link--footer">来場予約</a>
                   </li>
                 </ul>
