@@ -26,13 +26,6 @@
     top: 50%;
     left:2%;
     z-index: 99999;
-    &--small{
-      @extend .c-hasThumbSlider__prev;
-      border-top:solid 2px $white;
-      border-left:solid 2px $white;
-      width:2rem;
-      height:2rem;
-    }
   }
   &__next{
     &:hover{
@@ -48,13 +41,6 @@
     top: 50%;
     right:2%;
     z-index: 99999;
-    &--small{
-      @extend .c-hasThumbSlider__next;
-      border-right:solid 2px $white;
-      border-top:solid 2px $white;
-      width:2rem;
-      height:2rem;
-    }
   }
   &__thumbnail{
     &__list{

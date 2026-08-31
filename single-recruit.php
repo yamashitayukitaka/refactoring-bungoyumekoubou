@@ -110,7 +110,7 @@ get_header();
     エントリーはこちら  >
   </a>
   
-  <a href ="<?php echo esc_url (home_url('recruit') ); ?>" class = "c-button--jp u-mb100 u-opacity js-up">一覧に戻る</a>
+  <a href ="<?php echo esc_url (home_url('recruit') ); ?>" class = "u-mb100 u-opacity js-up">一覧に戻る</a>
 
 </main>
 

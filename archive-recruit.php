@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
           <?php echo ($type->name); ?>
         </p>
         <?php while ( $recruitLoop->have_posts() ): $recruitLoop->the_post(); ?>
-            <a href = "<?php the_permalink(); ?>" class = "c-button--jp p-recruit-department__list__button">
+            <a href = "<?php the_permalink(); ?>" class = "p-recruit-department__list__button">
               <?php the_title(); ?>
             </a>
             <?php endwhile;?> 
