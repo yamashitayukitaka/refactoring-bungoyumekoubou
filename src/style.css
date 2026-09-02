@@ -963,7 +963,8 @@ a:hover {
   font-size: 16px;
 }
 
-#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
+#booking-package_inputFormPanel .bottomBarPanel,
+#booking-package_pay_with_stripe_konbini .bottomBarPanel {
   width: 15rem;
 }
 
@@ -975,7 +976,8 @@ a:hover {
   margin: auto;
 }
 
-#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
+#booking-package_inputFormPanel .bottomBarPanel,
+#booking-package_pay_with_stripe_konbini .bottomBarPanel {
   margin: auto;
 }
 
@@ -1086,7 +1088,8 @@ a:hover {
   align-items: center;
 }
 
-#booking-package_calendarPage .symbolPanel, #booking-package_calendarPage .numberInsteadOfSymbols {
+#booking-package_calendarPage .symbolPanel,
+#booking-package_calendarPage .numberInsteadOfSymbols {
   opacity: 0;
 }
 
@@ -1155,15 +1158,28 @@ a:hover {
   align-items: center;
 }
 
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
+.xo-event-calendar table caption,
+.xo-event-calendar table tbody,
+.xo-event-calendar table td,
+.xo-event-calendar table tfoot,
+.xo-event-calendar table th,
+.xo-event-calendar table thead,
+.xo-event-calendar table tr {
   height: 42px;
 }
 
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
+.xo-event-calendar table caption,
+.xo-event-calendar table tbody,
+.xo-event-calendar table td,
+.xo-event-calendar table tfoot,
+.xo-event-calendar table th,
+.xo-event-calendar table thead,
+.xo-event-calendar table tr {
   padding: 7px !important;
 }
 
-.xo-event-calendar table.xo-month td, .xo-event-calendar table.xo-month th {
+.xo-event-calendar table.xo-month td,
+.xo-event-calendar table.xo-month th {
   border: none !important;
 }
 
@@ -1220,7 +1236,12 @@ a:hover {
   height: 60px;
 }
 
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead {
+.xo-event-calendar table caption,
+.xo-event-calendar table tbody,
+.xo-event-calendar table td,
+.xo-event-calendar table tfoot,
+.xo-event-calendar table th,
+.xo-event-calendar table thead {
   height: 50px;
 }
 
@@ -2974,37 +2995,37 @@ a:hover {
   border: solid 3px #EA6800;
 }
 
-.c-cardList__list {
+.c-cardList {
   width: 105%;
   display: flex;
   flex-wrap: wrap;
   transform: translateX(-4.7619047619%);
   margin-bottom: 3rem;
 }
-.c-cardList__list__dl {
+.c-cardList__dl {
   display: flex;
   align-items: center;
 }
-.c-cardList__list__item {
+.c-cardList__item {
   width: 28.5714285714%;
   margin-left: 4.7619047619%;
   margin-bottom: 5rem;
 }
 @media screen and (max-width: 768px) {
-  .c-cardList__list__item {
+  .c-cardList__item {
     width: 45%;
   }
 }
-.c-cardList__list__item.slick-list {
+.c-cardList__item.slick-list {
   width: 300px;
 }
-.c-cardList__list__imgWrap {
+.c-cardList__imgWrap {
   width: 100%;
   aspect-ratio: 309/193;
   margin-bottom: 1rem;
   overflow: hidden;
 }
-.c-cardList__list__txt {
+.c-cardList__txt {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: normal;
   font-size: 1.4rem;
@@ -3026,6 +3047,66 @@ a:hover {
 .c-cardList__slider__item {
   width: 100%;
   aspect-ratio: 309/192;
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) {
+  display: flex;
+  width: 100%;
+  margin-bottom: 7.2rem;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) {
+    width: 45%;
+    flex-direction: column;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__imgWrap {
+  width: 46.6%;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__imgWrap {
+    width: 100%;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5%;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap {
+  padding: 1.5rem 0;
+  width: 48.9%;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap {
+    padding: 0;
+    width: 100%;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap .c-cardList__ttl {
+  line-height: 1.5789473684;
+  letter-spacing: 0.12rem;
+  margin-bottom: 0.7rem;
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap .c-cardList__txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .slick-list {
+  width: 466px;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .slick-list {
+    width: 100% !important;
+  }
 }
 
 .c-pageMv {
@@ -3166,7 +3247,6 @@ a:hover {
 .c-form__link {
   color: #EA6800;
 }
-
 .c-form__wrap {
   background: #FAF7F2;
   padding: 9.5rem 0;

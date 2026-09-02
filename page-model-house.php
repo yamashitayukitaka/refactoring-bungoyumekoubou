@@ -346,7 +346,7 @@ get_header();
     ); ?>
     <?php $eventLoop = new WP_Query($event); ?>
     <?php if ($eventLoop->have_posts()) : ?>
-      <ul class="c-cardList__list u-mb50">
+      <ul class="c-cardList u-mb50">
         <?php while ($eventLoop->have_posts()) : $eventLoop->the_post(); ?>
           <?php get_template_part('template-parts/event-loop'); ?>
       <?php endwhile;

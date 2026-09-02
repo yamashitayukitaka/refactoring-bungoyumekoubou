@@ -1,5 +1,5 @@
-<li class = "c-cardList__list__item">
-  <a href = "<?php the_permalink(); ?>" class = "c-cardList__list__link">
+<li class = "c-cardList__item">
+  <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
     <?php $sliders = get_field('works-slider-list'); ?>
     <?php
     $hasSliderImg = false;
@@ -21,7 +21,7 @@
         <?php endforeach;?>
       </ul>
     <?php endif; ?>
-    <div class = "c-cardList__list__txtWrap">
+    <div class = "c-cardList__txtWrap">
       <?php $worksTypes = get_the_terms(get_the_ID(),'works-type',
           [
             'hide_empty' => false,
@@ -36,7 +36,7 @@
           <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>
         <?php endforeach;?>
         
-        <p class = "c-cardList__list__ttl">
+        <p class = "c-cardList__ttl">
           <?php the_title(); ?>
         </p>
       <?php endif; ?>

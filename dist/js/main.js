@@ -320,7 +320,7 @@ $(listItem).each(function() {
 });
 }
 
-checkEndDateAndShowTag('.c-cardList__list__item');
+checkEndDateAndShowTag('.c-cardList__item');
 checkEndDateAndShowTag('.p-xo-event__list__item');
 checkEndDateAndShowTag('.js-searchEnd');
 
