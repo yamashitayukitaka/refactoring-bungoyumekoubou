@@ -10,6 +10,9 @@
 
 // vendor
 @import "vendor/slick";
+@import "vendor/mw-wp-form";
+@import "vendor/booking-package";
+@import "vendor/xo-event-calendar";
 
 // project
 @import "object/project/hamburger";
@@ -18,7 +21,6 @@
 @import "object/project/works";
 @import "object/project/xo_event";
 @import "object/project/event";
-@import "object/project/booking-package";
 @import "object/project/flex";
 @import "object/project/about";
 @import "object/project/staff";

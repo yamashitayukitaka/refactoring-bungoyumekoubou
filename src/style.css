@@ -939,6 +939,310 @@ a:hover {
   display: none;
 }
 
+#mw_wp_form_mw-wp-form-12 {
+  background: #FAF7F2;
+  padding: 9.5rem 0;
+  margin-bottom: 150px;
+}
+
+#booking-package_calendarPage {
+  display: block !important;
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit {
+  display: flex;
+  justify-content: center;
+}
+
+#booking-package button {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  width: 15rem;
+  background: orange;
+  font-size: 16px;
+}
+
+#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
+  width: 15rem;
+}
+
+#booking-package_inputFormPanel .cartPanel {
+  width: 15rem;
+}
+
+#booking-package_inputFormPanel .cartPanel {
+  margin: auto;
+}
+
+#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
+  margin: auto;
+}
+
+#booking-package_calendarPage .day_slot {
+  position: relative;
+}
+
+#booking-package_calendarPage .day_slot {
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#booking-package_calendarPage .pastDay {
+  background-color: #fff !important;
+}
+
+#booking-package_calendarPage .dateField {
+  position: relative;
+  z-index: 99999;
+}
+
+#booking-package_calendarPage .week_slot {
+  border: none !important;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  margin-bottom: initial !important;
+  font-size: 2rem;
+  line-height: 2.5;
+}
+
+#booking-package_calendarPage .available_day .dateField {
+  color: #fff !important;
+}
+
+#booking-package_calendarPage .dateField {
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  #booking-package_calendarPage .dateField {
+    font-size: 20px;
+  }
+}
+
+.selectable_day_slot {
+  display: none;
+}
+
+#booking-package_schedulePage .daysListPanel {
+  display: none;
+}
+
+#booking-package_schedulePage .topPanel {
+  border: none !important;
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit {
+  border: none;
+}
+
+#booking-package_schedulePage .positionOfPanelNotHavingCourseForScheduleListPanel {
+  box-shadow: none !important;
+}
+
+#booking-package_schedulePage .courseListPanel {
+  left: 50% !important;
+  transform: translateX(-50%);
+  position: relative !important;
+  width: 100% !important;
+}
+
+#blockPanel {
+  height: 10rem !important;
+}
+
+#booking-package .selectable_time_slot {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:400px) {
+  #booking-package .selectable_time_slot {
+    justify-content: space-between;
+  }
+}
+
+#booking-package_calendarPage {
+  margin-bottom: 10rem !important;
+}
+
+#booking-package_schedulePage .courseListPanel {
+  height: auto !important;
+}
+
+#booking-package_calendarPage .available_day .dateField {
+  width: 5rem !important;
+  height: 5rem;
+  background: rgb(234, 104, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#booking-package_calendarPage .symbolPanel, #booking-package_calendarPage .numberInsteadOfSymbols {
+  opacity: 0;
+}
+
+.timeSlot {
+  font-size: 2.2rem;
+}
+
+.xo-event-calendar {
+  width: 86.7647058824%;
+  overflow: initial !important;
+}
+@media screen and (max-width: 1025px) {
+  .xo-event-calendar {
+    width: 100%;
+  }
+}
+
+.xo-event-calendar table.xo-month > thead th.sunday {
+  background: #FFA5A5;
+  color: #fff !important;
+}
+
+.xo-event-calendar table.xo-month {
+  border: none !important;
+}
+
+.xo-event-calendar table.xo-month > thead th {
+  background: #E1DEDB;
+  padding: 12px 0px 15px !important;
+  font-size: 11px !important;
+  font-weight: normal !important;
+  text-align: center;
+}
+
+.xo-event-calendar table.xo-month > thead th.saturday {
+  background: #A0B2FF;
+  color: #fff;
+}
+
+.xo-event-calendar table.xo-month .month-dayname-space {
+  height: 100%;
+}
+
+.xo-event-calendar table.xo-month .month-event {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .xo-event-calendar table.xo-month td a {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div {
+  text-align: center !important;
+  padding: 6px !important;
+  font-size: 18px !important;
+  border-radius: 50%;
+  margin: auto;
+  width: 40px;
+  height: 40px !important;
+  color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
+  height: 42px;
+}
+
+.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
+  padding: 7px !important;
+}
+
+.xo-event-calendar table.xo-month td, .xo-event-calendar table.xo-month th {
+  border: none !important;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div.other-month {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div {
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.other-month {
+  display: none;
+}
+
+.xo-event-calendar table.xo-month button span.nav-prev {
+  position: relative !important;
+  left: 15px !important;
+}
+
+.xo-event-calendar table.xo-month button span.nav-next {
+  position: relative !important;
+  right: 30px !important;
+}
+
+.xo-event-calendar table.xo-month button {
+  overflow: initial !important;
+  width: 0 !important;
+}
+
+.xo-event-calendar table.xo-month .month-week {
+  height: 50px;
+}
+
+.xo-event-calendar table.xo-month .month-event-space {
+  display: none;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td {
+  z-index: 9999;
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+}
+.xo-event-calendar table.xo-month .month-dayname td:hover {
+  opacity: 0.6;
+}
+
+.xo-event-calendar table tr {
+  height: 60px;
+}
+
+.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead {
+  height: 50px;
+}
+
+.xo-event-calendar table.xo-month > thead th {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .xo-event-calendar table.xo-month .month-dayname td div {
+    font-size: 2.4rem !important;
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .xo-event-calendar table.xo-month .month-dayname td div {
+    font-size: 2rem;
+    width: 4.3rem !important;
+    height: 4.3rem !important;
+  }
+}
+
 .p-hamburger {
   width: 100vw;
   height: calc(100vh - var(--headerHeight));
@@ -1510,155 +1814,6 @@ a:hover {
   overflow-y: scroll;
 }
 
-.xo-event-calendar {
-  width: 86.7647058824%;
-  overflow: initial !important;
-}
-@media screen and (max-width: 1025px) {
-  .xo-event-calendar {
-    width: 100%;
-  }
-}
-
-.xo-event-calendar table.xo-month > thead th.sunday {
-  background: #FFA5A5;
-  color: #fff !important;
-}
-
-.xo-event-calendar table.xo-month {
-  border: none !important;
-}
-
-.xo-event-calendar table.xo-month > thead th {
-  background: #E1DEDB;
-  padding: 12px 0px 15px !important;
-  font-size: 11px !important;
-  font-weight: normal !important;
-  text-align: center;
-}
-
-.xo-event-calendar table.xo-month > thead th.saturday {
-  background: #A0B2FF;
-  color: #fff;
-}
-
-.xo-event-calendar table.xo-month .month-dayname-space {
-  height: 100%;
-}
-
-.xo-event-calendar table.xo-month .month-event {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .xo-event-calendar table.xo-month td a {
-    display: block;
-    margin-top: 10px;
-  }
-}
-
-.xo-event-calendar table.xo-month .month-dayname td div {
-  text-align: center !important;
-  padding: 6px !important;
-  font-size: 18px !important;
-  border-radius: 50%;
-  margin: auto;
-  width: 40px;
-  height: 40px !important;
-  color: #242424;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
-  height: 42px;
-}
-
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
-  padding: 7px !important;
-}
-
-.xo-event-calendar table.xo-month td, .xo-event-calendar table.xo-month th {
-  border: none !important;
-}
-
-.xo-event-calendar table.xo-month .month-dayname td div.other-month {
-  background: #fff;
-  color: rgba(0, 0, 0, 0.5);
-  cursor: default;
-}
-
-.xo-event-calendar table.xo-month .month-dayname td div {
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-.other-month {
-  display: none;
-}
-
-.xo-event-calendar table.xo-month button span.nav-prev {
-  position: relative !important;
-  left: 15px !important;
-}
-
-.xo-event-calendar table.xo-month button span.nav-next {
-  position: relative !important;
-  right: 30px !important;
-}
-
-.xo-event-calendar table.xo-month button {
-  overflow: initial !important;
-  width: 0 !important;
-}
-
-.xo-event-calendar table.xo-month .month-week {
-  height: 50px;
-}
-
-.xo-event-calendar table.xo-month .month-event-space {
-  display: none;
-}
-
-.xo-event-calendar table.xo-month .month-dayname td {
-  z-index: 9999;
-  position: relative;
-  height: 10px;
-  cursor: pointer;
-}
-.xo-event-calendar table.xo-month .month-dayname td:hover {
-  opacity: 0.6;
-}
-
-.xo-event-calendar table tr {
-  height: 60px;
-}
-
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead {
-  height: 50px;
-}
-
-.xo-event-calendar table.xo-month > thead th {
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 768px) {
-  .xo-event-calendar table.xo-month .month-dayname td div {
-    font-size: 2.4rem !important;
-    height: 5rem !important;
-    width: 5rem !important;
-  }
-}
-@media screen and (max-width: 520px) {
-  .xo-event-calendar table.xo-month .month-dayname td div {
-    font-size: 2rem;
-    width: 4.3rem !important;
-    height: 4.3rem !important;
-  }
-}
-
 .p-event__ttl {
   font-size: 3.84rem;
   line-height: 1.2894736842;
@@ -1669,155 +1824,6 @@ a:hover {
 .p-event__googleMapWrap {
   width: 100%;
   aspect-ratio: 877/493;
-}
-
-#booking-package_calendarPage {
-  display: block !important;
-}
-
-#booking-package_schedulePage .bottomPanelForPositionInherit {
-  display: flex;
-  justify-content: center;
-}
-
-#booking-package button {
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem;
-  width: 15rem;
-  background: orange;
-  font-size: 16px;
-}
-
-#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
-  width: 15rem;
-}
-
-#booking-package_inputFormPanel .cartPanel {
-  width: 15rem;
-}
-
-#booking-package_inputFormPanel .cartPanel {
-  margin: auto;
-}
-
-#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
-  margin: auto;
-}
-
-#booking-package_calendarPage .day_slot {
-  position: relative;
-}
-
-#booking-package_calendarPage .day_slot {
-  border: none !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#booking-package_calendarPage .pastDay {
-  background-color: #fff !important;
-}
-
-#booking-package_calendarPage .dateField {
-  position: relative;
-  z-index: 99999;
-}
-
-#booking-package_calendarPage .week_slot {
-  border: none !important;
-  border-top: 1px solid #000 !important;
-  border-bottom: 1px solid #000 !important;
-  margin-bottom: initial !important;
-  font-size: 2rem;
-  line-height: 2.5;
-}
-
-#booking-package_calendarPage .available_day .dateField {
-  color: #fff !important;
-}
-
-#booking-package_calendarPage .dateField {
-  font-size: 2.4rem;
-}
-@media screen and (max-width: 768px) {
-  #booking-package_calendarPage .dateField {
-    font-size: 20px;
-  }
-}
-
-.selectable_day_slot {
-  display: none;
-}
-
-#booking-package_schedulePage .daysListPanel {
-  display: none;
-}
-
-#booking-package_schedulePage .topPanel {
-  border: none !important;
-}
-
-#booking-package_schedulePage .bottomPanelForPositionInherit {
-  border: none;
-}
-
-#booking-package_schedulePage .positionOfPanelNotHavingCourseForScheduleListPanel {
-  box-shadow: none !important;
-}
-
-#booking-package_schedulePage .courseListPanel {
-  left: 50% !important;
-  transform: translateX(-50%);
-  position: relative !important;
-  width: 100% !important;
-}
-
-#blockPanel {
-  height: 10rem !important;
-}
-
-#booking-package .selectable_time_slot {
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width:400px) {
-  #booking-package .selectable_time_slot {
-    justify-content: space-between;
-  }
-}
-
-#booking-package_calendarPage {
-  margin-bottom: 10rem !important;
-}
-
-#booking-package_schedulePage .courseListPanel {
-  height: auto !important;
-}
-
-#booking-package_calendarPage .available_day .dateField {
-  width: 5rem !important;
-  height: 5rem;
-  background: rgb(234, 104, 0);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#booking-package_calendarPage .symbolPanel, #booking-package_calendarPage .numberInsteadOfSymbols {
-  opacity: 0;
-}
-
-.timeSlot {
-  font-size: 2.2rem;
 }
 
 .p-flex__two {
@@ -3159,12 +3165,6 @@ a:hover {
 }
 .c-form__link {
   color: #EA6800;
-}
-
-#mw_wp_form_mw-wp-form-12 {
-  background: #FAF7F2;
-  padding: 9.5rem 0;
-  margin-bottom: 150px;
 }
 
 .p-contact__form {
