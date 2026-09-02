@@ -1,9 +1,9 @@
-<li class = "p-content__list__item">
-  <a href = "<?php the_permalink(); ?>" class = "p-content__list__link">
-    <figure class = "p-content__list__imgWrap">
+<li class = "c-cardList__list__item">
+  <a href = "<?php the_permalink(); ?>" class = "c-cardList__list__link">
+    <figure class = "c-cardList__list__imgWrap">
       <?php the_post_thumbnail();?>
     </figure>
-    <div class = "p-content__list__txtWrap">
+    <div class = "c-cardList__list__txtWrap">
 
       <?php $terms = get_the_terms(get_the_ID(),'property-category',
         [
@@ -33,10 +33,10 @@
       <?php $property_area = get_field('property-area'); ?>
       <?php if($property_area && $tags && !is_wp_error($tags)): ?>
         <?php foreach($tags as $tag):?>
-          <div><span class = "p-content__tag"><?php echo esc_html($tag->name); ?></span></div>
+          <div><span class = "c-cardList__tag"><?php echo esc_html($tag->name); ?></span></div>
         <?php endforeach;?>
       <?php endif; ?>
-      <p class = "p-content__list__ttl">
+      <p class = "c-cardList__list__ttl">
         <?php the_title(); ?>
       </p>
       <?php 
@@ -44,10 +44,10 @@
         if($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']))):
       ?>
         <?php if (!empty($topInfo['area'])): ?>
-        <p class = "p-content__list__txt">土地面積：<?php echo esc_html($topInfo['area']);?></p>
+        <p class = "c-cardList__list__txt">土地面積：<?php echo esc_html($topInfo['area']);?></p>
         <?php endif; ?>
         <?php if (!empty($topInfo['school'])): ?>
-        <p class = "p-content__list__txt">校区：<?php echo esc_html($topInfo['school']);?></p>
+        <p class = "c-cardList__list__txt">校区：<?php echo esc_html($topInfo['school']);?></p>
         <?php endif; ?>
       <?php endif; ?>
 
@@ -56,10 +56,10 @@
         if($topInfoUsed && (!empty($topInfoUsed['floor']) || !empty($topInfoUsed['school']))):
       ?>
         <?php if (!empty($topInfoUsed['floor'])): ?>
-        <p class = "p-content__list__txt">間取り：<?php echo esc_html($topInfoUsed['floor']);?></p>
+        <p class = "c-cardList__list__txt">間取り：<?php echo esc_html($topInfoUsed['floor']);?></p>
         <?php endif; ?>
         <?php if (!empty($topInfoUsed['school'])): ?>
-        <p class = "p-content__list__txt">校区：<?php echo esc_html($topInfoUsed['school']);?></p>
+        <p class = "c-cardList__list__txt">校区：<?php echo esc_html($topInfoUsed['school']);?></p>
         <?php endif; ?>
       <?php endif; ?>
 

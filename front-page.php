@@ -199,7 +199,7 @@ get_header();
     ); ?>
     <?php $worksLoop = new WP_Query($works); ?>
     <?php if ($worksLoop->have_posts()) : ?>
-      <ul class="p-content__list u-mb50">
+      <ul class="c-cardList__list u-mb50">
         <?php while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile; ?>
@@ -298,7 +298,7 @@ get_header();
     ); ?>
     <?php $propertyLoop = new WP_Query($property); ?>
     <?php if ($propertyLoop->have_posts()) : ?>
-      <ul class="p-content__list">
+      <ul class="c-cardList__list">
         <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post(); ?>
           <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile; ?>

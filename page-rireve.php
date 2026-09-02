@@ -528,7 +528,7 @@ get_header();
         $worksLoop = new WP_Query($args);
         ?>
 
-        <ul class="p-content__list u-mb100">
+        <ul class="c-cardList__list u-mb100">
             <?php if ($worksLoop->have_posts()) :
                 while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
                     <?php get_template_part('template-parts/works-loop'); ?>

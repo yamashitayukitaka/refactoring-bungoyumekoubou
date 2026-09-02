@@ -22,7 +22,7 @@
 
     <?php $worksLoop = new WP_Query($works);?>
     <?php if ($worksLoop->have_posts()): ?>
-      <ul class = "p-content__list js-allswitch">
+      <ul class = "c-cardList__list js-allswitch">
         <?php while ($worksLoop->have_posts()) : $worksLoop->the_post();?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>
@@ -67,7 +67,7 @@
 );?>
 <?php $eventLoop = new WP_Query($event);?>
 <?php if ($eventLoop->have_posts()): ?>
-  <ul class = "p-content__list u-mb50">
+  <ul class = "c-cardList__list u-mb50">
     <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
       <?php get_template_part('template-parts/event-loop'); ?>
     <?php endwhile;

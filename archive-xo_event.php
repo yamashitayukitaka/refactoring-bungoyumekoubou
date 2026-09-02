@@ -84,7 +84,7 @@ get_header();
     );?>
     <?php $eventLoop = new WP_Query($event);?>
     <?php if ($eventLoop->have_posts()): ?>
-      <ul class = "p-content__list js-prepend">
+      <ul class = "c-cardList__list js-prepend">
         <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
           <?php get_template_part('template-parts/event-loop'); ?>
         <?php endwhile;

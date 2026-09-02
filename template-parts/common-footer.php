@@ -21,7 +21,7 @@
 );?>
 <?php $eventLoop = new WP_Query($event);?>
 <?php if ($eventLoop->have_posts()): ?>
-  <ul class = "p-content__list u-mb50">
+  <ul class = "c-cardList__list u-mb50">
     <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
       <?php get_template_part('template-parts/event-loop'); ?>
     <?php endwhile;
@@ -54,7 +54,7 @@
   );?>
   <?php $propertyLoop = new WP_Query($property);?>
   <?php if ($propertyLoop->have_posts()): ?>
-    <ul class = "p-content__list">
+    <ul class = "c-cardList__list">
       <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post();?>
         <?php get_template_part('template-parts/property-loop'); ?>
       <?php endwhile;?>

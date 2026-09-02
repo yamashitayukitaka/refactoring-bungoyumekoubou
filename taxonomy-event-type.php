@@ -153,7 +153,7 @@ if ($lootSlug) {
   <section class = "l-content">
     <?php $eventLoop = new WP_Query($event);?>
       <?php if ($eventLoop->have_posts()): ?>
-        <ul class = "p-content__list js-allswitch">
+        <ul class = "c-cardList__list js-allswitch">
           <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
             <?php get_template_part('template-parts/event-loop'); ?>
           <?php endwhile;?>
