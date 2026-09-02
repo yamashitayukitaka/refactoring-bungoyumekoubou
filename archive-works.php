@@ -82,7 +82,7 @@ get_header();
     );?>
     <?php $worksLoop = new WP_Query($works);?>
     <?php if ($worksLoop->have_posts()): ?>
-      <ul class = "p-content__list js-allswitch">
+      <ul class = "c-cardList c-cardList--lead js-allswitch">
         <?php while ($worksLoop->have_posts()) : $worksLoop->the_post();?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>

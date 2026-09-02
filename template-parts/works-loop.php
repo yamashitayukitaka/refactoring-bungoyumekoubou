@@ -1,5 +1,5 @@
-<li class = "p-content__list__item">
-  <a href = "<?php the_permalink(); ?>" class = "p-content__list__link">
+<li class = "c-cardList__item">
+  <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
     <?php $sliders = get_field('works-slider-list'); ?>
     <?php
     $hasSliderImg = false;
@@ -13,15 +13,15 @@
     }
     ?>
     <?php if ($hasSliderImg):?>
-      <ul class = "js-worksSlider p-content__slider__list">
+      <ul class = "js-worksSlider c-cardList__slider__list">
         <?php foreach($sliders as $slider):?>
           <?php if (!empty($slider['works-slider-img'])): ?>
-          <li class = "p-content__slider__item"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" class = "p-content__slider__img"></li>
+          <li class = "c-cardList__slider__item"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" class = "c-cardList__slider__img"></li>
           <?php endif; ?>
         <?php endforeach;?>
       </ul>
     <?php endif; ?>
-    <div class = "p-content__list__txtWrap">
+    <div class = "c-cardList__txtWrap">
       <?php $worksTypes = get_the_terms(get_the_ID(),'works-type',
           [
             'hide_empty' => false,
@@ -36,7 +36,7 @@
           <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>
         <?php endforeach;?>
         
-        <p class = "p-content__list__ttl">
+        <p class = "c-cardList__ttl">
           <?php the_title(); ?>
         </p>
       <?php endif; ?>

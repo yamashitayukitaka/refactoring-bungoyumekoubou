@@ -149,7 +149,7 @@ if ($questions) {
     </p>
   </div>
   
-  <ul class = "p-content__list">
+  <ul class = "c-cardList">
     <?php
     $args = array(
     'post_type' => 'staff',
@@ -160,9 +160,9 @@ if ($questions) {
     <?php $staffLoop = new WP_Query($args);?>
     <?php if ($staffLoop ->have_posts()): ?>
       <?php while ($staffLoop ->have_posts()) : $staffLoop ->the_post();?>
-        <li class ="p-content__list__item">
+        <li class ="c-cardList__item">
           <a href = "<?php the_permalink(); ?>">
-            <figure class = "p-content__list__imgWrap">
+            <figure class = "c-cardList__imgWrap">
               <?php $staff_img = get_field('staff-img'); ?>
               <?php if ($staff_img) : ?>
               <img src="<?php echo esc_url($staff_img); ?>" alt="スタッフイメージ" class ="p-staff__img">

@@ -929,6 +929,341 @@ a:hover {
   bottom: 0;
 }
 
+.top_Slider:not(.slick-initialized) > *:not(:first-child),
+.service_slider:not(.slick-initialized) > *:not(:first-child),
+.js-worksSlider:not(.slick-initialized) > *:not(:first-child),
+.js-commonSlick:not(.slick-initialized) > *:not(:first-child),
+.js-hasThumbSlider:not(.slick-initialized) > *:not(:first-child),
+.js-staffSlider:not(.slick-initialized) > *:not(:first-child),
+.js-staffSlider--reverse:not(.slick-initialized) > *:not(:first-child) {
+  display: none;
+}
+
+#mw_wp_form_mw-wp-form-12 {
+  background: #FAF7F2;
+  padding: 9.5rem 0;
+  margin-bottom: 150px;
+}
+
+#booking-package_calendarPage {
+  display: block !important;
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit {
+  display: flex;
+  justify-content: center;
+}
+
+#booking-package button {
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  width: 15rem;
+  background: orange;
+  font-size: 16px;
+}
+
+#booking-package_inputFormPanel .bottomBarPanel,
+#booking-package_pay_with_stripe_konbini .bottomBarPanel {
+  width: 15rem;
+}
+
+#booking-package_inputFormPanel .cartPanel {
+  width: 15rem;
+}
+
+#booking-package_inputFormPanel .cartPanel {
+  margin: auto;
+}
+
+#booking-package_inputFormPanel .bottomBarPanel,
+#booking-package_pay_with_stripe_konbini .bottomBarPanel {
+  margin: auto;
+}
+
+#booking-package_calendarPage .day_slot {
+  position: relative;
+}
+
+#booking-package_calendarPage .day_slot {
+  border: none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#booking-package_calendarPage .pastDay {
+  background-color: #fff !important;
+}
+
+#booking-package_calendarPage .dateField {
+  position: relative;
+  z-index: 99999;
+}
+
+#booking-package_calendarPage .week_slot {
+  border: none !important;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #000 !important;
+  margin-bottom: initial !important;
+  font-size: 2rem;
+  line-height: 2.5;
+}
+
+#booking-package_calendarPage .available_day .dateField {
+  color: #fff !important;
+}
+
+#booking-package_calendarPage .dateField {
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  #booking-package_calendarPage .dateField {
+    font-size: 20px;
+  }
+}
+
+.selectable_day_slot {
+  display: none;
+}
+
+#booking-package_schedulePage .daysListPanel {
+  display: none;
+}
+
+#booking-package_schedulePage .topPanel {
+  border: none !important;
+}
+
+#booking-package_schedulePage .bottomPanelForPositionInherit {
+  border: none;
+}
+
+#booking-package_schedulePage .positionOfPanelNotHavingCourseForScheduleListPanel {
+  box-shadow: none !important;
+}
+
+#booking-package_schedulePage .courseListPanel {
+  left: 50% !important;
+  transform: translateX(-50%);
+  position: relative !important;
+  width: 100% !important;
+}
+
+#blockPanel {
+  height: 10rem !important;
+}
+
+#booking-package .selectable_time_slot {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:400px) {
+  #booking-package .selectable_time_slot {
+    justify-content: space-between;
+  }
+}
+
+#booking-package_calendarPage {
+  margin-bottom: 10rem !important;
+}
+
+#booking-package_schedulePage .courseListPanel {
+  height: auto !important;
+}
+
+#booking-package_calendarPage .available_day .dateField {
+  width: 5rem !important;
+  height: 5rem;
+  background: rgb(234, 104, 0);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#booking-package_calendarPage .symbolPanel,
+#booking-package_calendarPage .numberInsteadOfSymbols {
+  opacity: 0;
+}
+
+.timeSlot {
+  font-size: 2.2rem;
+}
+
+.xo-event-calendar {
+  width: 86.7647058824%;
+  overflow: initial !important;
+}
+@media screen and (max-width: 1025px) {
+  .xo-event-calendar {
+    width: 100%;
+  }
+}
+
+.xo-event-calendar table.xo-month > thead th.sunday {
+  background: #FFA5A5;
+  color: #fff !important;
+}
+
+.xo-event-calendar table.xo-month {
+  border: none !important;
+}
+
+.xo-event-calendar table.xo-month > thead th {
+  background: #E1DEDB;
+  padding: 12px 0px 15px !important;
+  font-size: 11px !important;
+  font-weight: normal !important;
+  text-align: center;
+}
+
+.xo-event-calendar table.xo-month > thead th.saturday {
+  background: #A0B2FF;
+  color: #fff;
+}
+
+.xo-event-calendar table.xo-month .month-dayname-space {
+  height: 100%;
+}
+
+.xo-event-calendar table.xo-month .month-event {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .xo-event-calendar table.xo-month td a {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div {
+  text-align: center !important;
+  padding: 6px !important;
+  font-size: 18px !important;
+  border-radius: 50%;
+  margin: auto;
+  width: 40px;
+  height: 40px !important;
+  color: #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xo-event-calendar table caption,
+.xo-event-calendar table tbody,
+.xo-event-calendar table td,
+.xo-event-calendar table tfoot,
+.xo-event-calendar table th,
+.xo-event-calendar table thead,
+.xo-event-calendar table tr {
+  height: 42px;
+}
+
+.xo-event-calendar table caption,
+.xo-event-calendar table tbody,
+.xo-event-calendar table td,
+.xo-event-calendar table tfoot,
+.xo-event-calendar table th,
+.xo-event-calendar table thead,
+.xo-event-calendar table tr {
+  padding: 7px !important;
+}
+
+.xo-event-calendar table.xo-month td,
+.xo-event-calendar table.xo-month th {
+  border: none !important;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div.other-month {
+  background: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td div {
+  position: relative;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.other-month {
+  display: none;
+}
+
+.xo-event-calendar table.xo-month button span.nav-prev {
+  position: relative !important;
+  left: 15px !important;
+}
+
+.xo-event-calendar table.xo-month button span.nav-next {
+  position: relative !important;
+  right: 30px !important;
+}
+
+.xo-event-calendar table.xo-month button {
+  overflow: initial !important;
+  width: 0 !important;
+}
+
+.xo-event-calendar table.xo-month .month-week {
+  height: 50px;
+}
+
+.xo-event-calendar table.xo-month .month-event-space {
+  display: none;
+}
+
+.xo-event-calendar table.xo-month .month-dayname td {
+  z-index: 9999;
+  position: relative;
+  height: 10px;
+  cursor: pointer;
+}
+.xo-event-calendar table.xo-month .month-dayname td:hover {
+  opacity: 0.6;
+}
+
+.xo-event-calendar table tr {
+  height: 60px;
+}
+
+.xo-event-calendar table caption,
+.xo-event-calendar table tbody,
+.xo-event-calendar table td,
+.xo-event-calendar table tfoot,
+.xo-event-calendar table th,
+.xo-event-calendar table thead {
+  height: 50px;
+}
+
+.xo-event-calendar table.xo-month > thead th {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+  .xo-event-calendar table.xo-month .month-dayname td div {
+    font-size: 2.4rem !important;
+    height: 5rem !important;
+    width: 5rem !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .xo-event-calendar table.xo-month .month-dayname td div {
+    font-size: 2rem;
+    width: 4.3rem !important;
+    height: 4.3rem !important;
+  }
+}
+
 .p-hamburger {
   width: 100vw;
   height: calc(100vh - var(--headerHeight));
@@ -1110,7 +1445,7 @@ a:hover {
 }
 .p-top__desc {
   background: #FAF7F2;
-  /*margin-bottom: 10rem;*/
+  margin-bottom: 10rem;
 }
 .p-top__desc__content {
   position: relative;
@@ -1500,155 +1835,6 @@ a:hover {
   overflow-y: scroll;
 }
 
-.xo-event-calendar {
-  width: 86.7647058824%;
-  overflow: initial !important;
-}
-@media screen and (max-width: 1025px) {
-  .xo-event-calendar {
-    width: 100%;
-  }
-}
-
-.xo-event-calendar table.xo-month > thead th.sunday {
-  background: #FFA5A5;
-  color: #fff !important;
-}
-
-.xo-event-calendar table.xo-month {
-  border: none !important;
-}
-
-.xo-event-calendar table.xo-month > thead th {
-  background: #E1DEDB;
-  padding: 12px 0px 15px !important;
-  font-size: 11px !important;
-  font-weight: normal !important;
-  text-align: center;
-}
-
-.xo-event-calendar table.xo-month > thead th.saturday {
-  background: #A0B2FF;
-  color: #fff;
-}
-
-.xo-event-calendar table.xo-month .month-dayname-space {
-  height: 100%;
-}
-
-.xo-event-calendar table.xo-month .month-event {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .xo-event-calendar table.xo-month td a {
-    display: block;
-    margin-top: 10px;
-  }
-}
-
-.xo-event-calendar table.xo-month .month-dayname td div {
-  text-align: center !important;
-  padding: 6px !important;
-  font-size: 18px !important;
-  border-radius: 50%;
-  margin: auto;
-  width: 40px;
-  height: 40px !important;
-  color: #242424;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
-  height: 42px;
-}
-
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead, .xo-event-calendar table tr {
-  padding: 7px !important;
-}
-
-.xo-event-calendar table.xo-month td, .xo-event-calendar table.xo-month th {
-  border: none !important;
-}
-
-.xo-event-calendar table.xo-month .month-dayname td div.other-month {
-  background: #fff;
-  color: rgba(0, 0, 0, 0.5);
-  cursor: default;
-}
-
-.xo-event-calendar table.xo-month .month-dayname td div {
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-.other-month {
-  display: none;
-}
-
-.xo-event-calendar table.xo-month button span.nav-prev {
-  position: relative !important;
-  left: 15px !important;
-}
-
-.xo-event-calendar table.xo-month button span.nav-next {
-  position: relative !important;
-  right: 30px !important;
-}
-
-.xo-event-calendar table.xo-month button {
-  overflow: initial !important;
-  width: 0 !important;
-}
-
-.xo-event-calendar table.xo-month .month-week {
-  height: 50px;
-}
-
-.xo-event-calendar table.xo-month .month-event-space {
-  display: none;
-}
-
-.xo-event-calendar table.xo-month .month-dayname td {
-  z-index: 9999;
-  position: relative;
-  height: 10px;
-  cursor: pointer;
-}
-.xo-event-calendar table.xo-month .month-dayname td:hover {
-  opacity: 0.6;
-}
-
-.xo-event-calendar table tr {
-  height: 60px;
-}
-
-.xo-event-calendar table caption, .xo-event-calendar table tbody, .xo-event-calendar table td, .xo-event-calendar table tfoot, .xo-event-calendar table th, .xo-event-calendar table thead {
-  height: 50px;
-}
-
-.xo-event-calendar table.xo-month > thead th {
-  vertical-align: middle;
-}
-
-@media screen and (max-width: 768px) {
-  .xo-event-calendar table.xo-month .month-dayname td div {
-    font-size: 2.4rem !important;
-    height: 5rem !important;
-    width: 5rem !important;
-  }
-}
-@media screen and (max-width: 520px) {
-  .xo-event-calendar table.xo-month .month-dayname td div {
-    font-size: 2rem;
-    width: 4.3rem !important;
-    height: 4.3rem !important;
-  }
-}
-
 .p-event__ttl {
   font-size: 3.84rem;
   line-height: 1.2894736842;
@@ -1659,209 +1845,6 @@ a:hover {
 .p-event__googleMapWrap {
   width: 100%;
   aspect-ratio: 877/493;
-}
-
-#booking-package_calendarPage {
-  display: block !important;
-}
-
-#booking-package_schedulePage .bottomPanelForPositionInherit {
-  display: flex;
-  justify-content: center;
-}
-
-#booking-package button {
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem;
-  width: 15rem;
-  background: orange;
-  font-size: 16px;
-}
-
-#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
-  width: 15rem;
-}
-
-#booking-package_inputFormPanel .cartPanel {
-  width: 15rem;
-}
-
-#booking-package_inputFormPanel .cartPanel {
-  margin: auto;
-}
-
-#booking-package_inputFormPanel .bottomBarPanel, #booking-package_pay_with_stripe_konbini .bottomBarPanel {
-  margin: auto;
-}
-
-#booking-package_calendarPage .day_slot {
-  position: relative;
-}
-
-#booking-package_calendarPage .day_slot {
-  border: none !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#booking-package_calendarPage .pastDay {
-  background-color: #fff !important;
-}
-
-#booking-package_calendarPage .dateField {
-  position: relative;
-  z-index: 99999;
-}
-
-#booking-package_calendarPage .week_slot {
-  border: none !important;
-  border-top: 1px solid #000 !important;
-  border-bottom: 1px solid #000 !important;
-  margin-bottom: initial !important;
-  font-size: 2rem;
-  line-height: 2.5;
-}
-
-#booking-package_calendarPage .available_day .dateField {
-  color: #fff !important;
-}
-
-#booking-package_calendarPage .dateField {
-  font-size: 2.4rem;
-}
-@media screen and (max-width: 768px) {
-  #booking-package_calendarPage .dateField {
-    font-size: 20px;
-  }
-}
-
-.selectable_day_slot {
-  display: none;
-}
-
-#booking-package_schedulePage .daysListPanel {
-  display: none;
-}
-
-#booking-package_schedulePage .topPanel {
-  border: none !important;
-}
-
-#booking-package_schedulePage .bottomPanelForPositionInherit {
-  border: none;
-}
-
-#booking-package_schedulePage .positionOfPanelNotHavingCourseForScheduleListPanel {
-  box-shadow: none !important;
-}
-
-#booking-package_schedulePage .courseListPanel {
-  left: 50% !important;
-  transform: translateX(-50%);
-  position: relative !important;
-  width: 100% !important;
-}
-
-#blockPanel {
-  height: 10rem !important;
-}
-
-#booking-package .selectable_time_slot {
-  justify-content: space-around;
-  display: flex;
-  align-items: center;
-}
-@media screen and (max-width:400px) {
-  #booking-package .selectable_time_slot {
-    justify-content: space-between;
-  }
-}
-
-#booking-package_calendarPage {
-  margin-bottom: 10rem !important;
-}
-
-#booking-package_schedulePage .courseListPanel {
-  height: auto !important;
-}
-
-#booking-package_calendarPage .available_day .dateField {
-  width: 5rem !important;
-  height: 5rem;
-  background: rgb(234, 104, 0);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#booking-package_calendarPage .symbolPanel, #booking-package_calendarPage .numberInsteadOfSymbols {
-  opacity: 0;
-}
-
-.timeSlot {
-  font-size: 2.2rem;
-}
-
-.p-content__list {
-  width: 105%;
-  display: flex;
-  flex-wrap: wrap;
-  transform: translateX(-4.7619047619%);
-  margin-bottom: 3rem;
-}
-.p-content__list__dl {
-  display: flex;
-  align-items: center;
-}
-.p-content__list__item {
-  width: 28.5714285714%;
-  margin-left: 4.7619047619%;
-  margin-bottom: 5rem;
-}
-@media screen and (max-width: 768px) {
-  .p-content__list__item {
-    width: 45%;
-  }
-}
-.p-content__list__item.slick-list {
-  width: 300px;
-}
-.p-content__list__imgWrap {
-  width: 100%;
-  aspect-ratio: 309/193;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-.p-content__list__txt {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: normal;
-  font-size: 1.4rem;
-  line-height: 1.6428571429;
-}
-.p-content__tag {
-  border: solid 1px #EA6800;
-  padding: 0.3rem 1rem;
-  display: inline-block;
-  border-radius: 0.9rem;
-  font-size: 1.1rem;
-  line-height: 1.0909090909;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: normal;
-}
-.p-content__slider__img {
-  height: 100%;
-}
-.p-content__slider__item {
-  width: 100%;
-  aspect-ratio: 309/192;
 }
 
 .p-flex__two {
@@ -2058,6 +2041,7 @@ a:hover {
     margin-right: 0;
   }
 }
+
 .p-staff__list {
   display: flex;
   flex-wrap: wrap;
@@ -2959,6 +2943,10 @@ a:hover {
 .c-hasThumbSlider__list__img {
   height: 100%;
 }
+.c-hasThumbSlider__prev:hover {
+  opacity: 0.6 !important;
+  cursor: pointer !important;
+}
 .c-hasThumbSlider__prev {
   border-top: solid 4px #ffffff;
   border-left: solid 4px #ffffff;
@@ -2970,9 +2958,9 @@ a:hover {
   left: 2%;
   z-index: 99999;
 }
-.c-hasThumbSlider__prev:hover {
-  opacity: 0.6 !important;
-  cursor: pointer !important;
+.c-hasThumbSlider__next:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 .c-hasThumbSlider__next {
   border-top: solid 4px #ffffff;
@@ -2984,10 +2972,6 @@ a:hover {
   top: 50%;
   right: 2%;
   z-index: 99999;
-}
-.c-hasThumbSlider__next:hover {
-  opacity: 0.6;
-  cursor: pointer;
 }
 .c-hasThumbSlider__thumbnail__list {
   display: flex;
@@ -3009,6 +2993,120 @@ a:hover {
 }
 .c-hasThumbSlider__active {
   border: solid 3px #EA6800;
+}
+
+.c-cardList {
+  width: 105%;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateX(-4.7619047619%);
+  margin-bottom: 3rem;
+}
+.c-cardList__dl {
+  display: flex;
+  align-items: center;
+}
+.c-cardList__item {
+  width: 28.5714285714%;
+  margin-left: 4.7619047619%;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList__item {
+    width: 45%;
+  }
+}
+.c-cardList__item.slick-list {
+  width: 300px;
+}
+.c-cardList__imgWrap {
+  width: 100%;
+  aspect-ratio: 309/193;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.c-cardList__txt {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6428571429;
+}
+.c-cardList__tag {
+  border: solid 1px #EA6800;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  border-radius: 0.9rem;
+  font-size: 1.1rem;
+  line-height: 1.0909090909;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: normal;
+}
+.c-cardList__slider__img {
+  height: 100%;
+}
+.c-cardList__slider__item {
+  width: 100%;
+  aspect-ratio: 309/192;
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) {
+  display: flex;
+  width: 100%;
+  margin-bottom: 7.2rem;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) {
+    width: 45%;
+    flex-direction: column;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__imgWrap {
+  width: 46.6%;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__imgWrap {
+    width: 100%;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 5%;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap {
+  padding: 1.5rem 0;
+  width: 48.9%;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap {
+    padding: 0;
+    width: 100%;
+  }
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap .c-cardList__ttl {
+  line-height: 1.5789473684;
+  letter-spacing: 0.12rem;
+  margin-bottom: 0.7rem;
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .c-cardList__link .c-cardList__txtWrap .c-cardList__txt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.7142857143;
+}
+.c-cardList--lead .c-cardList__item:nth-of-type(1) .slick-list {
+  width: 466px;
+}
+@media screen and (max-width: 768px) {
+  .c-cardList--lead .c-cardList__item:nth-of-type(1) .slick-list {
+    width: 100% !important;
+  }
 }
 
 .c-pageMv {
@@ -3149,14 +3247,7 @@ a:hover {
 .c-form__link {
   color: #EA6800;
 }
-
-#mw_wp_form_mw-wp-form-12 {
-  background: #FAF7F2;
-  padding: 9.5rem 0;
-  margin-bottom: 150px;
-}
-
-.p-contact__form {
+.c-form__wrap {
   background: #FAF7F2;
   padding: 9.5rem 0;
   margin-bottom: 150px;
@@ -3171,13 +3262,17 @@ a:hover {
   height: 100%;
 }
 
-.nav-links {
+.c-pagination {
   display: flex;
   justify-content: center;
   gap: 2%;
 }
-
-.page-numbers {
+.c-pagination .nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+.c-pagination .page-numbers {
   width: 5.5rem;
   height: 5.5rem;
   border: solid 1px #CCCCCC;
@@ -3186,8 +3281,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
-.current {
+.c-pagination .current {
   background: #D9D9D9;
 }
 
@@ -3541,15 +3635,4 @@ a:hover {
 
 .u-nowrap {
   white-space: nowrap;
-}
-
-.top_Slider:not(.slick-initialized) > *:not(:first-child),
-.service_slider:not(.slick-initialized) > *:not(:first-child),
-.js-worksSlider:not(.slick-initialized) > *:not(:first-child),
-.js-commonSlick:not(.slick-initialized) > *:not(:first-child),
-.js-hasThumbSlider:not(.slick-initialized) > *:not(:first-child),
-.js-staffSlider:not(.slick-initialized) > *:not(:first-child),
-.js-staffSlider--reverse:not(.slick-initialized) > *:not(:first-child) {
-  display: none;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

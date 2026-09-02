@@ -147,7 +147,7 @@ if ($lootSlug) {
   <section class = "l-content">
     <?php $myOuery = new WP_Query($args);?>
       <?php if ($myOuery->have_posts()): ?>
-        <ul class = "p-content__list js-allswitch">
+        <ul class = "c-cardList js-allswitch">
           <?php while ($myOuery->have_posts()) : $myOuery->the_post();?>
             <?php get_template_part('template-parts/property-loop'); ?>
           <?php endwhile;?>

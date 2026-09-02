@@ -120,15 +120,6 @@ function wazeka_scripts()
     wp_enqueue_style('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css', array(), '1.9.0');
     wp_enqueue_style('slick-carousel-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css', array(), '1.9.0');
   }
-
-  if (is_post_type_archive(array('works','xo_event','property')) || is_front_page()) {
-    wp_enqueue_style(
-      'wazeka-works-style',
-      get_template_directory_uri() .'/src/content-first.css',
-      array(),
-      '1.0.0'
-    ); 
-  } 
 }
 
 add_action('wp_enqueue_scripts', 'wazeka_scripts');
@@ -260,10 +251,15 @@ function wazeka_query_pagination($query)
   }
 
   $big = 999999999;
-  echo paginate_links(array(
+  $links = paginate_links(array(
     'base'    => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
     'format'  => '?paged=%#%',
     'current' => max(1, (int) get_query_var('paged')),
     'total'   => $query->max_num_pages,
+    'echo'    => false,
   ));
+  if ($links === null || $links === '') {
+    return;
+  }
+  echo '<nav class="c-pagination">' . $links . '</nav>';
 }

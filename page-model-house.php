@@ -310,7 +310,7 @@ get_header();
 
 
 
-  <section class="p-contact l-content" id="contact">
+  <section class="l-content" id="contact">
     <div class="c-title__wrap--sectionLine">
       <h3 class="c-title--sectionLine">
         CONTACT
@@ -321,7 +321,7 @@ get_header();
         </p>
       </div>
     </div>
-    <div class="p-contact__form">
+    <div class="c-form__wrap">
       <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
     </div>
   </section>
@@ -346,7 +346,7 @@ get_header();
     ); ?>
     <?php $eventLoop = new WP_Query($event); ?>
     <?php if ($eventLoop->have_posts()) : ?>
-      <ul class="p-content__list u-mb50">
+      <ul class="c-cardList u-mb50">
         <?php while ($eventLoop->have_posts()) : $eventLoop->the_post(); ?>
           <?php get_template_part('template-parts/event-loop'); ?>
       <?php endwhile;

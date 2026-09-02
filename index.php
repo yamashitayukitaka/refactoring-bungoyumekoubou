@@ -45,7 +45,7 @@ get_header();
           <?php endwhile; ?>
         </ul>
         <div class="u-mb50">
-          <?php the_posts_pagination(); ?>
+          <?php the_posts_pagination(array('class' => 'c-pagination')); ?>
         </div>
       <?php endif; ?>
     <?php else : ?>
