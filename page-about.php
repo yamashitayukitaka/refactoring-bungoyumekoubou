@@ -70,8 +70,6 @@ get_header();
         <p class="c-title--orangeLine u-mb50"><span class="marker">会社概要</span></p>
       </div>
     </div>
-    <?php $table = get_field('works-table'); ?>
-    <?php if ($table) : ?>
     <table class="c-table__about">
       <tbody class="c-table__about__tbody">
         <tr class="c-table__about__tr">
@@ -169,7 +167,6 @@ get_header();
         </tr>
       </tbody>
     </table>
-    <?php endif; ?>
   </section>
   <section class="u-pt50 u-mb100">
     <!-- <div class="l_content_middle_70">
