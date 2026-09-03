@@ -1,0 +1,24 @@
+{
+  "name": "wazeka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/style.scss dist/css/style.css",
+    "sass": "sass --watch src/style.scss dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamashitayukitaka/refactoring-bungoyumekoubou.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamashitayukitaka/refactoring-bungoyumekoubou/issues"
+  },
+  "homepage": "https://github.com/yamashitayukitaka/refactoring-bungoyumekoubou#readme",
+  "dependencies": {
+    "sass": "^1.103.1"
+  }
+}
