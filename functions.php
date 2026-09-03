@@ -103,7 +103,7 @@ function wazeka_scripts()
     );
   }
 
-  wp_enqueue_style('custom-style', get_template_directory_uri() . '/src/style.css', array(), '1.0.0');
+  wp_enqueue_style('custom-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0');
   wp_enqueue_style('ichikawa-style', get_template_directory_uri() . '/src/ichikawa.css', array(), '1.0.0');
   wp_enqueue_style('tamura-style', get_template_directory_uri() . '/src/tamura.css', array(), '1.0.0');
 
