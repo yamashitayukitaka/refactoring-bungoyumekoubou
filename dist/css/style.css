@@ -923,7 +923,7 @@ a:hover {
   bottom: 0;
 }
 
-.top_Slider:not(.slick-initialized) > *:not(:first-child),
+#js-topSlider:not(.slick-initialized) > *:not(:first-child),
 .service_slider:not(.slick-initialized) > *:not(:first-child),
 .js-worksSlider:not(.slick-initialized) > *:not(:first-child),
 .js-commonSlick:not(.slick-initialized) > *:not(:first-child),
@@ -3112,6 +3112,30 @@ a:hover {
     height: 500px;
   }
 }
+.c-pageMv__img {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.c-pageMv__img:nth-of-type(1) {
+  background-image: url(../img/top_slider/top1.webp);
+}
+.c-pageMv__img:nth-of-type(2) {
+  background-image: url(../img/top_slider/top9.webp);
+}
+.c-pageMv__img:nth-of-type(3) {
+  background-image: url(../img/top_slider/top4.webp);
+}
+.c-pageMv__img:nth-of-type(4) {
+  background-image: url(../img/top_slider/top5.webp);
+}
+.c-pageMv__img:nth-of-type(5) {
+  background-image: url(../img/top_slider/top6.webp);
+}
+.c-pageMv__img:nth-of-type(6) {
+  background-image: url(../img/top_slider/top8.webp);
+}
 .c-pageMv__img__wrap {
   width: 84.3333333333%;
   margin-left: auto;
@@ -3121,10 +3145,10 @@ a:hover {
 }
 .c-pageMv__img__wrap--top {
   width: 100%;
-  margin-left: auto;
-  background-size: cover;
-  height: 100%;
-  background-position: top center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-repeat: no-repeat;
 }
 .c-pageMv__ttl {
   font-size: 3.6rem;
