@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/style.scss dist/css/style.css",
-    "sass": "sass --watch src/style.scss dist/css/style.css"
+    "sass": "sass --watch src/style.scss dist/css/style.css",
+    "build-vite": "vite build",
+    "vite": "vite build --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "homepage": "https://github.com/yamashitayukitaka/refactoring-bungoyumekoubou#readme",
   "dependencies": {
     "sass": "^1.103.1"
+  },
+  "devDependencies": {
+    "vite": "^8.2.2"
   }
 }
