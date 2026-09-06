@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/style.scss dist/css/style.css",
-    "sass": "sass --watch src/style.scss dist/css/style.css"
+    "sass": "sass --watch src/style.scss dist/css/style.css",
+    "build:js": "vite build",
+    "dev:js": "vite build --watch"
   },
   "repository": {
     "type": "git",
