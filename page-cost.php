@@ -21,7 +21,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt="">
+      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt="">
     </figure>
     <figure class="illustration_3">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">
@@ -123,7 +123,7 @@ get_header();
         <?php endif; ?>
         <div class="concept__policy2-content">
           <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
           </div>
           <div>
             <p class="c-title--orangeLine concept__policy1-mainttl"><span class="marker">
@@ -201,7 +201,7 @@ get_header();
         <div class="concept__policy1-content">
 
           <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
           </div>
           <div>
             <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl">
@@ -285,7 +285,7 @@ get_header();
         <div class="concept__policy2-content">
 
           <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/point3.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/common/point3.webp'); ?>">
           </div>
           <div>
             <p class="c-title--orangeLine concept__policy1-mainttl">
@@ -360,7 +360,7 @@ get_header();
         <div class="concept__policy1-content">
 
           <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/point4.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/common/point4.webp'); ?>">
           </div>
           <div>
             <p class="c-title--orangeLine concept__policy1-mainttl">

@@ -21,7 +21,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt="">
+      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt="">
     </figure>
     <figure class="illustration_3">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">
@@ -151,7 +151,7 @@ get_header();
           <?php endif; ?>
           <div class="design__paint1_content">
             <div class="design__paint1_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
             </div>
             <p class="paint_subtit">
               <span class=" u-orange">家事らく</span>動線
@@ -173,7 +173,7 @@ get_header();
           <?php endif; ?>
           <div class="design__paint2_content">
             <div class="design__paint2_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
             </div>
             <p class="paint_subtit">
               <span class=" u-orange">子育て</span>動線
@@ -242,7 +242,7 @@ get_header();
           <?php endif; ?>
           <div class=" design__paint1_content">
             <div class="design__paint1_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
             </div>
             <p class="paint_subtit">
               <span class=" u-orange">こんなお家がいいな</span>を<br>
@@ -304,7 +304,7 @@ get_header();
           <?php endif; ?>
           <div class="design__paint1_content">
             <div class="design__paint1_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
             </div>
             <div>
               <p class="paint_subtit">
@@ -329,7 +329,7 @@ get_header();
           <?php endif; ?>
           <div class="design__paint2_content">
             <div class="design__paint2_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
             </div>
             <p class="paint_subtit">
               <span class="u-orange">エネルギー効率</span>を<br>
@@ -401,7 +401,7 @@ get_header();
           <?php endif; ?>
           <div class=" design__paint1_content">
             <div class="design__paint1_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
             </div>
             <div>
               <p class=" u-mb10 paint_subtit">

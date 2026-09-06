@@ -33,7 +33,7 @@ get_header();
           <img src="<?php echo IMG_URL . '/top/top-des1.webp' ?>" alt="">
         </div>
         <div class="concept__top-des-image2">
-          <img src="<?php echo IMG_URL . '/family_img.webp' ?>" alt="">
+          <img src="<?php echo IMG_URL . '/illustration/family_img.webp' ?>" alt="">
         </div>
       </div>
       <div class="concept__top-des-text roboto">
@@ -187,7 +187,7 @@ get_header();
         </p>
       </div>
       <figure class="illustration_1">
-        <img src="<?php echo esc_url(IMG_URL . '/yume_img3.webp'); ?>" alt="安心の保証制度">
+        <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img3.webp'); ?>" alt="安心の保証制度">
       </figure>
     </div>
     <div class="concept__sysign_sixoptions u-mb20">

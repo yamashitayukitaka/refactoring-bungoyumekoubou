@@ -40,7 +40,7 @@ get_header();
       </div>
       <div class="iroha__about-content">
         <figure class="iroha-content-img sp">
-          <img src="<?php echo esc_url(IMG_URL . '/iroha_about_content.webp'); ?>">
+          <img src="<?php echo esc_url(IMG_URL . '/irohaie/iroha_about_content.webp'); ?>">
         </figure>
         <p class="iroha-content-txt">
           はじめての家づくり<br>
@@ -50,7 +50,7 @@ get_header();
           はじめての家づくりは<br class="sp">わからないことがたくさん。
         </p>
         <figure class="iroha-content-img pc_tab">
-          <img src="<?php echo esc_url(IMG_URL . '/iroha_about_content.webp'); ?>">
+          <img src="<?php echo esc_url(IMG_URL . '/irohaie/iroha_about_content.webp'); ?>">
         </figure>
       </div>
     </section>
@@ -66,7 +66,7 @@ get_header();
     <div class="iroha__type-contain pc_tab">
       <h2 class="iroha-contain-txt">住まいの基本、すべて入ったいえのこと。</h2>
       <figure class="iroha-contain-img">
-        <img src="<?php echo esc_url(IMG_URL . '/wave.webp'); ?>">
+        <img src="<?php echo esc_url(IMG_URL . '/irohaie/wave.webp'); ?>">
       </figure>
     </div>
     <div class="iroha__type-contain sp">
@@ -80,7 +80,7 @@ get_header();
   <div class="service_irohaie">
     <section class="iroha__point  u-mb100" id="point1">
       <figure class="iroha__point-title-img">
-        <img src="<?php echo esc_url(IMG_URL . '/point1.webp'); ?>">
+        <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
       </figure>
       <div>
         <p class="c-title--orangeLine txt_center">
@@ -119,7 +119,7 @@ get_header();
           安心して家づくりができます！<br>
         </p>
         <figure class="iroha-bottom-img">
-          <img src="<?php echo esc_url(IMG_URL . '/yume_img3.webp'); ?>">
+          <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img3.webp'); ?>">
         </figure>
       </div>
     </section>
@@ -128,7 +128,7 @@ get_header();
   <div class="service_irohaie">
     <section class="iroha__point  u-mb100" id="point2">
       <figure class="iroha__point-title-img">
-        <img src="<?php echo esc_url(IMG_URL . '/point2.webp'); ?>">
+        <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
       </figure>
       <div>
         <p class="c-title--orangeLine txt_center"><span class="marker">
@@ -139,7 +139,7 @@ get_header();
         <h2>STEP01</h2>
         <p>まずは基本となる住宅のタイプを選びましょう。</p>
         <figure>
-          <img src="<?php echo esc_url(IMG_URL . '/point_one_step_one.webp'); ?>">
+          <img src="<?php echo esc_url(IMG_URL . '/irohaie/point_one_step_one.webp'); ?>">
         </figure>
       </div>
       <div class="iroha__point-step">
@@ -186,7 +186,7 @@ get_header();
   <div class=" service_irohaie">
     <section class="iroha__point  u-mb100" id="point3">
       <figure class="iroha__point-title-img">
-        <img src="<?php echo esc_url(IMG_URL . '/point3.webp'); ?>">
+        <img src="<?php echo esc_url(IMG_URL . '/common/point3.webp'); ?>">
       </figure>
       <div>
         <p class="c-title--orangeLine txt_center"><span class="marker">

@@ -20,7 +20,7 @@ get_header();
 
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt="">
+      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt="">
     </figure>
     <figure class="illustration_3">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">
@@ -168,7 +168,7 @@ get_header();
           <div class="commitment__security_items">
             <div class="commitment__security_item_one">
               <div class="commitment__security_item_one_img">
-                <img src="<?php echo esc_url(IMG_URL . '/zeh_2.webp'); ?>" alt="ZEH">
+                <img src="<?php echo esc_url(IMG_URL . '/performance/zeh_2.webp'); ?>" alt="ZEH">
               </div>
               <div class="commitment__security_item_content">
                 <h5>省エネ</h5>
@@ -178,7 +178,7 @@ get_header();
             </div>
             <div class="commitment__security_item_one">
               <div class="commitment__security_item_one_img">
-                <img src="<?php echo esc_url(IMG_URL . '/zeh_3.webp'); ?>" alt="ZEH">
+                <img src="<?php echo esc_url(IMG_URL . '/performance/zeh_3.webp'); ?>" alt="ZEH">
               </div>
               <div class="commitment__security_item_content">
                 <h5>創エネ</h5>
@@ -188,7 +188,7 @@ get_header();
 
             <div class="commitment__security_item_one">
               <div class="commitment__security_item_one_img">
-                <img src="<?php echo esc_url(IMG_URL . '/zeh_1.webp'); ?>" alt="ZEH">
+                <img src="<?php echo esc_url(IMG_URL . '/performance/zeh_1.webp'); ?>" alt="ZEH">
               </div>
               <div class="commitment__security_item_content">
                 <h5>高断熱</h5>
@@ -209,7 +209,7 @@ get_header();
       </div>
       <div class="commitment__winner2020_content l_content_middle_70">
         <div class="winner2020_img">
-          <img src="<?php echo esc_url(IMG_URL . '/winner2020.webp'); ?>">
+          <img src="<?php echo esc_url(IMG_URL . '/performance/winner2020.webp'); ?>">
         </div>
         <div class=" winner2020_txt">
           一般財団法人日本地域開発センターが主催する優れた省エネルギー住宅を表彰する制度「ハウス･オブ･ザ･イヤー･イン･エナジー2020」において、豊後夢工房の「Rireve」が「優秀賞」を受賞。豊後夢工房ではZEH住宅が標準仕様です。
@@ -231,7 +231,7 @@ get_header();
           <bold>各モデルハウスにて豊後夢工房の住まいをご体感いただくことが出来ます。お気軽にお立ち寄りいただき、未来基準のエコ住宅をお確かめください。</bold>
         </div>
         <div class="commitment__rankingtwo_content_img">
-          <img src="<?php echo esc_url(IMG_URL . '/smarthouse.webp'); ?>">
+          <img src="<?php echo esc_url(IMG_URL . '/performance/smarthouse.webp'); ?>">
         </div>
       </div>
     </div>
