@@ -42,16 +42,11 @@ get_header();
         </p>
       </li>
     </ul>
-    <div class="c-pageMv__img__wrap--top top_Slider">
-      <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top1"></div>
-      <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top2"></div>
-      <!-- <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top3"></div> -->
-      <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top4"></div>
-      <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top5"></div>
-      <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top6"></div>
-      <!-- <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top7"></div> -->
-      <div class="c-pageMv__img__wrap--top c-pageMv__img__wrap--top8"></div>
-    </div>
+    <ul id="js-topSlider" class="c-pageMv__img__wrap c-pageMv__img__wrap--top">
+      <?php for ($i = 0; $i < 6; $i++) : ?>
+        <li class="c-pageMv__img"></li>
+      <?php endfor; ?>
+    </ul>
     <!-- <section class = "p-newYear">
       <p class = "p-newYear__txt l-content--ratio">平素は格別のご愛顧を賜り、厚くお礼申し上げます。
         <br>誠に勝手ながら、下記期間を年末年始休業期間とさせていただきます。

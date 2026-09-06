@@ -1,8 +1,8 @@
-(function($){ 
+(function ($) {
   /*画像がすべて読み込まれた後に実行させないと
   サムネイルクリックイベントが正しく実行されなかった 
   */
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     var $slider = $('.js-commonSlick').slick({
       infinite: true,
       slidesToShow: 1,
@@ -15,22 +15,22 @@
     });
 
     // 現在のスライドに対応するサムネイルにクラスを付与
-    $slider.on('afterChange', function(event, slick, currentSlide) {
+    $slider.on('afterChange', function (event, slick, currentSlide) {
       $('.p-location__thumb__item').removeClass('p-location__thumb__active');
       $('.p-location__thumb__item[data-slide="' + currentSlide + '"]').addClass('p-location__thumb__active');
     });
 
     // サムネイルクリックイベント
-    $('.p-location__thumb__item').click(function() {
+    $('.p-location__thumb__item').click(function () {
       var slideIndex = $(this).data('slide');
       $slider.slick('slickGoTo', slideIndex);
     });
 
-    $('.top_Slider').slick({
+    $('#js-topSlider').slick({
       fade: true,
       autoplay: true,
       speed: 1500,
-      autoplaySpeed : 4000,
+      autoplaySpeed: 4000,
       pauseOnFocus: false,
       pauseOnHover: false,
       arrows: false,
@@ -40,7 +40,7 @@
       fade: true,
       autoplay: true,
       speed: 1500,
-      autoplaySpeed : 4000,
+      autoplaySpeed: 4000,
       pauseOnFocus: false,
       pauseOnHover: false,
       arrows: false,
