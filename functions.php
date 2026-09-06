@@ -9,6 +9,13 @@ function wazeka_scripts()
 
   wp_enqueue_script(
     'wazeka-common',
+    $js . '/common.js',
+    array(),
+    '1.0.0',
+    true
+  );
+  wp_enqueue_script(
+    'wazeka-main',
     $js . '/main.js',
     array('jquery'),
     '1.0.0',
