@@ -210,7 +210,7 @@ get_header();
         <!-- スタンダード1 -->
         <div class="specification rireve_background">
             <div class="heig_right_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_right.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
             </div>
 
             <div class="standard_title_left">
@@ -247,7 +247,7 @@ get_header();
         <!-- スタンダード2 -->
         <div class="specification rireve_background">
             <div class="heig_left_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_standard_left.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
             </div>
             <div class="standard_title_right">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_15.webp' ?>" alt="">
@@ -295,7 +295,7 @@ get_header();
         <!-- スタンダード3 -->
         <div class="specification rireve_background">
             <div class="heig_right_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_right.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
             </div>
             <div class="standard_title_left">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_16.webp' ?>" alt="">
@@ -355,7 +355,7 @@ get_header();
         <!-- スタンダード4 -->
         <div class="specification rireve_background">
             <div class="heig_left_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_standard_left.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
             </div>
             <div class="standard_title_right">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_17.webp' ?>" alt="">
@@ -413,7 +413,7 @@ get_header();
         <!-- スタンダード5 -->
         <div class="specification rireve_background">
             <div class="heig_right_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_right.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
             </div>
             <div class="standard_title_left">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_18.webp' ?>" alt="">
@@ -453,7 +453,7 @@ get_header();
         <!-- スタンダード6 -->
         <div class="specification rireve_background">
             <div class="heig_left_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_standard_left.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
             </div>
             <div class="standard_title_right">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_19.webp' ?>" alt="">

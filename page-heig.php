@@ -142,7 +142,7 @@ get_header();
         <!-- スタンダード1 -->
         <div class="specification">
             <div class="heig_right_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_right.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
             </div>
             <div class="standard_title_left">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_10.webp' ?>" alt="">
@@ -178,7 +178,7 @@ get_header();
         <!-- スタンダード2 -->
         <div class="specification">
             <div class="heig_left_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_standard_left.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
             </div>
             <div class="standard_title_right">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_11.webp' ?>" alt="">
@@ -226,7 +226,7 @@ get_header();
         <!-- スタンダード3 -->
         <div class="specification">
             <div class="heig_right_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_right.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
             </div>
             <div class="standard_title_left">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_12.webp' ?>" alt="">
@@ -288,7 +288,7 @@ get_header();
         <!-- スタンダード4 -->
         <div class="specification">
             <div class="heig_left_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_standard_left.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
             </div>
             <div class="standard_title_right">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_13.webp' ?>" alt="">
@@ -347,7 +347,7 @@ get_header();
         <!-- スタンダード5 -->
         <div class="specification">
             <div class="heig_right_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_right.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
             </div>
             <div class="standard_title_left">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_14.webp' ?>" alt="">
@@ -387,7 +387,7 @@ get_header();
         <!-- スタンダード6 -->
         <div class="specification">
             <div class="heig_left_icon">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig_standard_left.webp' ?>" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
             </div>
             <div class="standard_title_right">
                 <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_15.webp' ?>" alt="">

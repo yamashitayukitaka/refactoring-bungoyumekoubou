@@ -84,7 +84,7 @@ get_header();
         <br>私たち豊後夢工房は、あなたとご家族が笑顔で快適に過ごせる
         <br><span class="u-orange--sm">「快適ゆめ空間」</span>をご提供する施工会社です。
       </p>
-      <span class="p-top__desc__imgWrap--right" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/support-right.webp');"></span>
+      <span class="p-top__desc__imgWrap--right" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/support-right.webp');"></span>
     </div>
   </section>
 

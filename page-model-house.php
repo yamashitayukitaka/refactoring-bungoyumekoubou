@@ -21,7 +21,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt=" モデルハウス">
+      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt=" モデルハウス">
     </figure>
     <figure class="illustration_3">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt=" モデルハウス">
@@ -50,7 +50,7 @@ get_header();
     $model = ($models && !empty($models[0])) ? $models[0] : null;
     ?>
     <figure class="title__left-ribbon">
-      <img src="<?php echo esc_url(IMG_URL . '/left-ribbon.webp'); ?>">
+      <img src="<?php echo esc_url(IMG_URL . '/common/left-ribbon.webp'); ?>">
     </figure>
     <div class="house__title">
       <div class="house__title-left">
@@ -103,7 +103,7 @@ get_header();
     $model = ($models && !empty($models[1])) ? $models[1] : null;
     ?>
     <figure class="title__right-ribbon">
-      <img src="<?php echo esc_url(IMG_URL . '/right-ribbon.webp'); ?>">
+      <img src="<?php echo esc_url(IMG_URL . '/common/right-ribbon.webp'); ?>">
     </figure>
     <div class="house__title">
       <div class="house__title-left">
@@ -207,7 +207,7 @@ get_header();
     ?>
 
      <figure class="title__left-ribbon">
-      <img src="<?php echo esc_url(IMG_URL . '/left-ribbon.webp'); ?>">
+      <img src="<?php echo esc_url(IMG_URL . '/common/left-ribbon.webp'); ?>">
     </figure>
 
     <div class="house__title">

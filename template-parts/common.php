@@ -1,6 +1,6 @@
 <section class=" l_content_middle_t u-mb100 BUNGO_YUME_STUDIO">
   <figure class="BUNGO_YUME_STUDIO__topImg">
-    <img src="<?php echo esc_url(IMG_URL . '/support-right.webp'); ?>" alt="安心の保証制度">
+    <img src="<?php echo esc_url(IMG_URL . '/common/support-right.webp'); ?>" alt="安心の保証制度">
   </figure>
   <div class="c-title__wrap--sectionLine ">
     <h3 class="c-title--sectionLine c_title__wrap_sectionLine_t">
@@ -144,7 +144,7 @@
     </div>
   </div>
   <figure class="BUNGO_YUME_STUDIO__bottomImg">
-    <img src="<?php echo esc_url(IMG_URL . '/support-left.webp'); ?>" alt="安心の保証制度">
+    <img src="<?php echo esc_url(IMG_URL . '/common/support-left.webp'); ?>" alt="安心の保証制度">
   </figure>
 </section>
 

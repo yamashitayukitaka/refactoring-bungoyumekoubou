@@ -21,7 +21,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt="">
+      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt="">
     </figure>
     <figure class="illustration_3">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">

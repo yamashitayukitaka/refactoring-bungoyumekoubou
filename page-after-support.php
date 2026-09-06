@@ -21,7 +21,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="l_content_middle_80 support-title u-mb100 illustration_set">
     <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt="">
+      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt="">
     </figure>
     <figure class="illustration_3">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">
@@ -251,7 +251,7 @@ get_header();
       <div class="support__dreams">
         <div class="support__each_dream">
           <div class="support__dream_img">
-            <img src="<?php echo esc_url(IMG_URL . '/dream_1.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/after/dream_1.webp'); ?>">
           </div>
           <div class="support__dream_content">
             <div class="support__dream_ttl">システムキッチン</div>
@@ -264,7 +264,7 @@ get_header();
         </div>
         <div class="support__each_dream">
           <div class="support__dream_img">
-            <img src="<?php echo esc_url(IMG_URL . '/dream_2.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/after/dream_2.webp'); ?>">
           </div>
           <div class="support__dream_content">
             <div class="support__dream_ttl">システムバス</div>
@@ -276,7 +276,7 @@ get_header();
         </div>
         <div class="support__each_dream">
           <div class="support__dream_img">
-            <img src="<?php echo esc_url(IMG_URL . '/dream_3.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/after/dream_3.webp'); ?>">
           </div>
           <div class="support__dream_content">
             <div class="support__dream_ttl">温水洗浄トイレ</div>
@@ -286,7 +286,7 @@ get_header();
         </div>
         <div class="support__each_dream">
           <div class="support__dream_img">
-            <img src="<?php echo esc_url(IMG_URL . '/dream_4.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/after/dream_4.webp'); ?>">
           </div>
           <div class="support__dream_content">
             <div class="support__dream_ttl">給湯器</div>
@@ -297,7 +297,7 @@ get_header();
         </div>
         <div class="support__each_dream">
           <div class="support__dream_img">
-            <img src="<?php echo esc_url(IMG_URL . '/dream_5.webp'); ?>">
+            <img src="<?php echo esc_url(IMG_URL . '/after/dream_5.webp'); ?>">
           </div>
           <div class="support__dream_content">
             <div class="support__dream_ttl">洗面台</div>
