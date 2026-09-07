@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass src/style.scss dist/css/style.css",
-    "sass": "sass --watch src/style.scss dist/css/style.css",
+    "build": "sass src/scss/style.scss dist/css/style.css",
+    "sass": "sass --watch src/scss/style.scss dist/css/style.css",
     "build-vite": "vite build",
     "vite": "vite build --watch"
   },
