@@ -1304,6 +1304,9 @@ a:hover {
 }
 .p-hamburger__child__list {
   width: 100%;
+  overflow: hidden;
+  height: 0;
+  transition: height 400ms ease-in-out;
 }
 .p-hamburger__child__item {
   width: 100%;
@@ -1343,11 +1346,26 @@ a:hover {
   border-bottom: solid 1px #EEEEEE;
 }
 .p-hamburger__nav__item--bottom {
-  padding: 4rem 0 1rem;
+  padding: 4rem 0 0;
 }
 .p-hamburger__nav__link {
   display: block;
   padding: 22px 0;
+}
+.p-hamburger__nav__link--hasChild {
+  position: relative;
+}
+.p-hamburger__nav__link--hasChild::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  border-bottom: solid 2px #000;
+  border-right: solid 2px #000;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .open .p-hamburger__button__line:nth-of-type(1) {
@@ -1375,22 +1393,6 @@ a:hover {
   transform: translateX(0);
   transition-property: all;
   transition-duration: 0.8s;
-}
-
-.js-open {
-  position: relative;
-}
-.js-open::before {
-  content: "";
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  border-bottom: solid 2px #000;
-  border-right: solid 2px #000;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .p-top__mv__appealList {

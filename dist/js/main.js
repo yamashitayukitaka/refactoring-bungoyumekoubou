@@ -65,26 +65,6 @@ $("a[href^='#']").on("click", function () {
   return false;
 });
 
-/*ハンバーガーメニュー*/
-
-$('#js-openHamburger').click(function(){
-  $('#js-hamburger').toggleClass('show');
-  $(this).toggleClass('open');
-  setTimeout(function() {
-    $('#js-hamburger__nav').toggleClass('navOpen');
-  });
-});
-
-window.addEventListener("resize", function () {
-  const width = $(window).width();
-  if(width > 1200){
-    $('#js-hamburger').removeClass('show');
-    $('#js-openHamburger').removeClass('open')
-    $('#js-hamburger__nav').removeClass('navOpen');
-  }
-});
-
-
 // .js-toggleクラスの要素を隠す
 $('.js-toggle').hide();
 
@@ -103,15 +83,6 @@ $('.js-hover').each(function(){
   // .js-toggle要素にマウスアウトしたときにtargetを隠す
   target.mouseout(function() {
     target.hide();
-  });
-});
-
-
-$('.js-slide').hide();
-
-$('.js-open').each(function(){
-  $(this).click(function(){
-    $(this).siblings('.js-slide').slideToggle();
   });
 });
 
