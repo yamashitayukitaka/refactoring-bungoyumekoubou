@@ -329,8 +329,8 @@
             <a href="<?php echo esc_url(home_url()); ?>" class="p-hamburger__nav__link">ホーム</a>
           </li>
           <li class="p-hamburger__nav__item">
-            <a class="p-hamburger__nav__link js-open">豊後夢工房の家づくり</a>
-            <ul class="p-hamburger__child__list js-slide">
+            <a class="p-hamburger__nav__link p-hamburger__nav__link--hasChild js-hamburgerOpen">豊後夢工房の家づくり</a>
+            <ul class="p-hamburger__child__list js-hamburgerSlide">
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url(home_url("/")); ?>concept" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">わたしたちの思い</p>
@@ -382,8 +382,8 @@
             </ul>
           </li>
           <li class="p-hamburger__nav__item">
-            <a class="p-hamburger__nav__link js-open">サービスラインナップ</a>
-            <ul class="p-hamburger__child__list js-slide">
+            <a class="p-hamburger__nav__link p-hamburger__nav__link--hasChild js-hamburgerOpen">サービスラインナップ</a>
+            <ul class="p-hamburger__child__list js-hamburgerSlide">
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url(home_url("/")); ?>rireve" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">リレーヴ</p>
@@ -420,8 +420,8 @@
             <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="p-hamburger__nav__link">イベント</a>
           </li>
           <li class="p-hamburger__nav__item">
-            <a class="p-hamburger__nav__link js-open">サポート</a>
-            <ul class="p-hamburger__child__list js-slide">
+            <a class="p-hamburger__nav__link p-hamburger__nav__link--hasChild js-hamburgerOpen">サポート</a>
+            <ul class="p-hamburger__child__list js-hamburgerSlide">
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url(home_url("/")); ?>after-support" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">安心の保証制度</p>
@@ -449,8 +449,8 @@
             </ul>
           </li>
           <li class="p-hamburger__nav__item">
-            <a class="p-hamburger__nav__link js-open">メンテナンス</a>
-            <ul class="p-hamburger__child__list js-slide">
+            <a class="p-hamburger__nav__link p-hamburger__nav__link--hasChild js-hamburgerOpen">メンテナンス</a>
+            <ul class="p-hamburger__child__list js-hamburgerSlide">
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url(home_url("/")); ?>maintenance" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">アフターメンテナンス</p>
