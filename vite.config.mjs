@@ -6,6 +6,7 @@ export default defineConfig({
   build: {
     outDir: 'dist/js',
     emptyOutDir: false,
+    minify: false,
     rollupOptions: {
       input: {
         common: resolve(import.meta.dirname, 'src/js/common.js'),
