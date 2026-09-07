@@ -52,6 +52,9 @@
   &__child {
     &__list {
       width: 100%;
+      overflow: hidden;
+      height: 0;
+      transition: height 400ms ease-in-out;
     }
 
     &__item {
@@ -160,37 +163,4 @@
   transform: translateX(0);
   transition-property: all;
   transition-duration: .8s;
-}
-
-.js-hamburgerSlide {
-  overflow: hidden;
-  max-height: 0;
-}
-
-.slideOpen {
-  animation: slideDown 400ms ease-in-out forwards;
-}
-
-.slideClose {
-  animation: slideUp 400ms ease-in-out forwards;
-}
-
-@keyframes slideDown {
-  from {
-    max-height: 0;
-  }
-
-  to {
-    max-height: var(--slide-height);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    max-height: var(--slide-height);
-  }
-
-  to {
-    max-height: 0;
-  }
 }

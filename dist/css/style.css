@@ -1304,6 +1304,9 @@ a:hover {
 }
 .p-hamburger__child__list {
   width: 100%;
+  overflow: hidden;
+  height: 0;
+  transition: height 400ms ease-in-out;
 }
 .p-hamburger__child__item {
   width: 100%;
@@ -1392,35 +1395,6 @@ a:hover {
   transition-duration: 0.8s;
 }
 
-.js-hamburgerSlide {
-  overflow: hidden;
-  max-height: 0;
-}
-
-.slideOpen {
-  animation: slideDown 400ms ease-in-out forwards;
-}
-
-.slideClose {
-  animation: slideUp 400ms ease-in-out forwards;
-}
-
-@keyframes slideDown {
-  from {
-    max-height: 0;
-  }
-  to {
-    max-height: var(--slide-height);
-  }
-}
-@keyframes slideUp {
-  from {
-    max-height: var(--slide-height);
-  }
-  to {
-    max-height: 0;
-  }
-}
 .p-top__mv__appealList {
   display: flex;
   position: absolute;
