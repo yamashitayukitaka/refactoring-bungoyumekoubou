@@ -1,4 +1,16 @@
 (function() {
+	//#region src/js/modules/layoutVars.js
+	function setLayoutVars() {
+		const height = window.innerHeight;
+		const headerHeight = document.getElementById("js-measure").offsetHeight;
+		document.documentElement.style.setProperty("--windowHeight", height + "px");
+		document.documentElement.style.setProperty("--headerHeight", headerHeight + "px");
+	}
+	setLayoutVars();
+	window.addEventListener("resize", function() {
+		setLayoutVars();
+	});
+	//#endregion
 	//#region src/js/modules/hamburger.js
 	function closeHamburgerSlides() {
 		document.querySelectorAll(".js-hamburgerSlide").forEach(function(childList) {
