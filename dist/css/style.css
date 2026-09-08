@@ -3579,15 +3579,6 @@ a:hover {
   padding-top: 10rem;
 }
 
-.u-up {
-  opacity: 0;
-  transform: translateY(50px);
-  animation-fill-mode: forwards;
-  animation-duration: 2s; /* アニメーションの持続時間を0.5秒に設定 */
-  animation-name: up; /* 使用するアニメーション名を指定 */
-  animation-timing-function: ease-in-out; /* アニメーションのタイミング関数を指定 */
-}
-
 .u-opacity {
   opacity: 0;
 }
@@ -3596,16 +3587,6 @@ a:hover {
   font-weight: bold;
 }
 
-@keyframes up {
-  from {
-    transform: translateY(50px);
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 #u-loading {
   width: 100vw;
   height: 100vh;
