@@ -28,17 +28,6 @@
   // });
 
 
-  $('.js-top').hide();
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll > windowHeight) {
-      $('.js-top').show();
-    } else {
-      $('.js-top').hide();
-    }
-  });
-
   $("a[href^='#']").on("click", function () {
     const href = $(this).attr("href");
     const target = $(href == "#" || href == "" ? "html" : href);

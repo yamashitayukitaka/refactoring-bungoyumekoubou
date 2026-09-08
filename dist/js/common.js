@@ -46,4 +46,14 @@
 		});
 	});
 	//#endregion
+	//#region src/js/modules/goToTop.js
+	var goToTop = document.querySelector(".js-goToTop");
+	if (goToTop) {
+		goToTop.style.display = "none";
+		window.addEventListener("scroll", function() {
+			if (window.scrollY > window.innerHeight) goToTop.style.display = "";
+			else goToTop.style.display = "none";
+		});
+	}
+	//#endregion
 })();
