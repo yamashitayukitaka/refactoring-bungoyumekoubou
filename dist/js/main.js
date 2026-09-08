@@ -36,28 +36,6 @@
     return false;
   });
 
-  // .js-toggleクラスの要素を隠す
-  $('.js-toggle').hide();
-
-  // .js-hoverクラスの各要素に対して処理を行う
-  $('.js-hover').each(function () {
-    const target = $(this).find('.js-toggle');
-
-    // .js-hover要素にマウスオーバーしたときにtargetを表示し、他のtargetを隠す
-    $(this).mouseover(function () {
-      // すべての.js-toggle要素を隠す
-      $('.js-toggle').hide();
-      // 現在のtargetを表示
-      target.show();
-    });
-
-    // .js-toggle要素にマウスアウトしたときにtargetを隠す
-    target.mouseout(function () {
-      target.hide();
-    });
-  });
-
-
   //window.addEventListener('load', () => {
   // ローディングアニメーション
   // const spinner = document.getElementById('u-loading');
@@ -69,7 +47,25 @@
 
 
 
+  // $('.js-toggle').hide();
 
+  // // .js-hoverクラスの各要素に対して処理を行う
+  // $('.js-hover').each(function () {
+  //   const target = $(this).find('.js-toggle');
+
+  //   // .js-hover要素にマウスオーバーしたときにtargetを表示し、他のtargetを隠す
+  //   $(this).mouseover(function () {
+  //     // すべての.js-toggle要素を隠す
+  //     $('.js-toggle').hide();
+  //     // 現在のtargetを表示
+  //     target.show();
+  //   });
+
+  //   // .js-toggle要素にマウスアウトしたときにtargetを隠す
+  //   target.mouseout(function () {
+  //     target.hide();
+  //   });
+  // });
 
   $('.other-month').remove();
   $('.p-xo-event__list__item').hide();

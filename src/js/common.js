@@ -2,3 +2,4 @@
 import './modules/layoutVars.js';
 import './modules/hamburger.js';
 import './modules/goToTop.js';
+import './modules/navHover.js';
