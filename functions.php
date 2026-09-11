@@ -1,6 +1,7 @@
 <?php
 require_once get_theme_file_path('/inc/enqueue.php');
 require_once get_theme_file_path('/inc/post-types.php');
+require_once get_theme_file_path('/inc/acf.php');
 
 function wazeka_theme()
 {
@@ -56,17 +57,6 @@ if (is_admin_bar_showing()) {
         </style>';
   });
 }
-
-if (function_exists('acf_add_options_page')) {
-  acf_add_options_page(array(
-    'page_title'    => 'サイト全体管理',
-    'menu_title'    => 'サイト全体管理',
-    'menu_slug'     => 'theme-top-setting',
-    'capability'    => 'edit_posts',
-    'redirect'      => false
-  ));
-}
-
 
 function remove_default_post_type()
 {
