@@ -21,15 +21,6 @@ function wazeka_scripts()
     '1.0.0',
     true
   );
-  if (is_front_page()) {
-    wp_enqueue_script(
-      'wazeka-top',
-      $js . '/top.js',
-      array('jquery'),
-      '1.0.0',
-      true
-    );
-  }
   if (is_page('about') || is_singular('staff')) {
     wp_enqueue_script(
       'wazeka-page',
