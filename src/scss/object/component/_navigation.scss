@@ -1,7 +1,7 @@
 .c-navigation{
   display: flex;
   justify-content: flex-end;
-  &--top{
+  &--cta{
     @include mq(xl){
       position: fixed;
       left: 0;
@@ -25,7 +25,7 @@
       display: flex;
       flex-wrap: wrap;
     }
-    &--top{
+    &--cta{
       display: flex;
       @include mq(xl){
         width: 100%;
@@ -36,7 +36,7 @@
       font-size: 1.5rem;
       letter-spacing: calc(17.3/15);
       color: $pureBlack;
-      &--top{
+      &--cta{
         font-size: 1.5rem;
         letter-spacing: calc(17.3/15);
         color: $white;
@@ -53,7 +53,7 @@
       &:first-of-type{
         margin-left: 0;
       }
-      &--top{
+      &--cta{
         width: 15rem;
         height: 4.5rem;
         display:flex;

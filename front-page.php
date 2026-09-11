@@ -3,8 +3,8 @@ if (!defined('ABSPATH')) exit;
 get_header();
 ?>
 <main class="p-top">
-  <!-- <div class="c-pageMv c_pageMv_t js-mvHeight p-newYear__TemporaryChange__mb"> -->
-  <div class="c-pageMv c_pageMv_t js-mvHeight">
+  <!-- <div class="c-pageMv c_pageMv_t p-newYear__TemporaryChange__mb"> -->
+  <div class="c-pageMv c_pageMv_t">
     <div class="c-pageMv__ttl__wrap">
       <h2 class="c-pageMv__ttl">
         住まいに<span class="u-orange--mv">夢</span>を、
@@ -15,8 +15,8 @@ get_header();
         <br>freedom in your future
       </p>
     </div>
-    <!-- <ul class="p-top__mv__appealList p-newYear__TemporaryChange js-navList"> -->
-    <ul class="p-top__mv__appealList js-navList">
+    <!-- <ul class="p-top__mv__appealList p-newYear__TemporaryChange"> -->
+    <ul class="p-top__mv__appealList">
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">断熱性能</p>

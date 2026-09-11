@@ -115,18 +115,18 @@
             <li class="l-header__sns__insta"><a href="https://www.instagram.com/bungoyumekoubou/"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/instagram.webp" alt="insta"></a></li>
             <li class="l-header__sns__line"><a href="https://lin.ee/86brEGxs"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/h-line.webp" alt="友だち追加"></a></li>
           </ul>
-          <nav class="c-navigation c-navigation--top">
-            <ul class="c-navigation__list--top js-navList">
-              <li class="c-navigation__list__item--top">
-                <a href="<?php echo esc_url(home_url("/")); ?>property" class="c-navigation__list__link--top u-none__mobile--xl">土地・物件情報</a>
-                <a href="<?php echo esc_url(home_url("/")); ?>model-house" class="c-navigation__list__link--top u-none__pc--xl">モデルハウス</a>
+          <nav class="c-navigation c-navigation--cta">
+            <ul class="c-navigation__list--cta js-navList">
+              <li class="c-navigation__list__item--cta">
+                <a href="<?php echo esc_url(home_url("/")); ?>property" class="c-navigation__list__link--cta u-none__mobile--xl">土地・物件情報</a>
+                <a href="<?php echo esc_url(home_url("/")); ?>model-house" class="c-navigation__list__link--cta u-none__pc--xl">モデルハウス</a>
               </li>
-              <li class="c-navigation__list__item--top">
-                <a href="<?php echo esc_url(home_url("/")); ?>catalog" class="c-navigation__list__link--top u-none__mobile--xl">カタログ請求</a>
-                <a href="<?php echo esc_url(home_url("/")); ?>property" class="c-navigation__list__link--top u-none__pc--xl">土地・物件情報</a>
+              <li class="c-navigation__list__item--cta">
+                <a href="<?php echo esc_url(home_url("/")); ?>catalog" class="c-navigation__list__link--cta u-none__mobile--xl">カタログ請求</a>
+                <a href="<?php echo esc_url(home_url("/")); ?>property" class="c-navigation__list__link--cta u-none__pc--xl">土地・物件情報</a>
               </li>
-              <li class="c-navigation__list__item--top">
-                <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="c-navigation__list__link--top">見学予約</a>
+              <li class="c-navigation__list__item--cta">
+                <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="c-navigation__list__link--cta">見学予約</a>
               </li>
             </ul>
           </nav>
@@ -135,7 +135,7 @@
         <?php if ( is_singular('xo_event') ) :?>
           <style>
             @media all and (max-width: 1200px) {
-              .c-navigation--top{
+              .c-navigation--cta{
                 display:none;
               }
             }
@@ -498,14 +498,14 @@
           </li>
           <li class="p-hamburger__nav__item--bottom u-none__pc--xl">
             <ul class="c-navigation__list--bottom">
-              <li class="c-navigation__list__item--top">
-                <a href="<?php echo esc_url(home_url("/")); ?>model-house" class="c-navigation__list__link--top">モデルハウス</a>
+              <li class="c-navigation__list__item--cta">
+                <a href="<?php echo esc_url(home_url("/")); ?>model-house" class="c-navigation__list__link--cta">モデルハウス</a>
               </li>
-              <li class="c-navigation__list__item--top">
-                <a href="<?php echo esc_url(home_url("/")); ?>property" class="c-navigation__list__link--top">土地・物件情報</a>
+              <li class="c-navigation__list__item--cta">
+                <a href="<?php echo esc_url(home_url("/")); ?>property" class="c-navigation__list__link--cta">土地・物件情報</a>
               </li>
-              <li class="c-navigation__list__item--top">
-                <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="c-navigation__list__link--top">見学予約</a>
+              <li class="c-navigation__list__item--cta">
+                <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="c-navigation__list__link--cta">見学予約</a>
               </li>
             </ul>
           </li>
