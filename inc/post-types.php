@@ -1,4 +1,8 @@
 <?php
+if (!defined('ABSPATH')) {
+  exit;
+}
+
 function wazeka_register_post_types()
 {
   $post_types = array(
