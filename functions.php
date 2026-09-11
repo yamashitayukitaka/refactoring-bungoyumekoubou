@@ -70,10 +70,20 @@ function wazeka_scripts()
     );
   }
 
-  if (is_page(array('about', 'faq', 'recruit'))) {
+  if (is_page('faq')) {
     wp_enqueue_script(
       'wazeka-faq',
       $js . '/faq.js',
+      array(),
+      '1.0.0',
+      true
+    );
+  }
+
+  if (is_page('recruit')) {
+    wp_enqueue_script(
+      'wazeka-recruit',
+      $js . '/recruit.js',
       array(),
       '1.0.0',
       true

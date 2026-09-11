@@ -97,7 +97,7 @@
 
       <?php
       if ( ! ( is_singular('xo_event') || is_post_type_archive('xo_event') ) ) {?>
-        <a href="#" class="l-footer__goTop__link  js-top">ページトップへもどる</a>
+        <a href="#" class="l-footer__goTop__link js-goToTop">ページトップへもどる</a>
       <?php }?>
 
       <section class="l-footer__bottom">

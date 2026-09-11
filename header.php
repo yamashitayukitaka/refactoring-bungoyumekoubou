@@ -146,7 +146,7 @@
         <nav class="c-navigation u-none__mobile--xxl">
           <ul class="c-navigation__list">
 
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url('')); ?>">ホーム</a>
             </li>
 
@@ -229,17 +229,17 @@
               </ul>
             </li>
 
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url("/")); ?>works" class="c-navigation__list__link">
                 施工事例
               </a>
             </li>
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url("/")); ?>model-house" class="c-navigation__list__link">
                 モデルハウス
               </a>
             </li>
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url("/")); ?>xo_event" class="c-navigation__list__link">
                 イベント
               </a>
@@ -294,17 +294,17 @@
                 </li>
               </ul>
             </li>
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url("/")); ?>recruit" class="c-navigation__list__link">
                 採用情報
               </a>
             </li>
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url("/")); ?>blog" class="c-navigation__list__link">
                 ブログ
               </a>
             </li>
-            <li class="c-navigation__list__item js-hover">
+            <li class="c-navigation__list__item">
               <a href="<?php echo esc_url(home_url("/")); ?>contact" class="c-navigation__list__link">
                 お問い合わせ
               </a>

@@ -6,8 +6,8 @@
   "scripts": {
     "build": "sass src/scss/style.scss dist/css/style.css",
     "sass": "sass --watch src/scss/style.scss dist/css/style.css",
-    "build-vite": "vite build",
-    "vite": "vite build --watch"
+    "build-vite": "node build-vite.mjs",
+    "vite": "node build-vite.mjs --watch"
   },
   "repository": {
     "type": "git",
