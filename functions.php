@@ -2,6 +2,7 @@
 require_once get_theme_file_path('/inc/enqueue.php');
 require_once get_theme_file_path('/inc/post-types.php');
 require_once get_theme_file_path('/inc/acf.php');
+require_once get_theme_file_path('/inc/query.php');
 require_once get_theme_file_path('/inc/pagination.php');
 
 function wazeka_theme()
@@ -23,25 +24,6 @@ function remove_archive_span_tag($title)
   return strip_tags($title);
 }
 add_filter('get_the_archive_title', 'remove_archive_span_tag');
-
-function custom_search_filter($query)
-{
-  if ($query->is_search && !is_admin()) {
-    $query->set('post_type', array('blog'));
-  }
-  return $query;
-}
-add_filter('pre_get_posts', 'custom_search_filter');
-
-function custom_search_pagination($query)
-{
-  if ($query->is_search && !is_admin()) {
-    $query->set('posts_per_page', 5);
-    $query->set('paged', get_query_var('paged') ? get_query_var('paged') : 1);
-  }
-  return $query;
-}
-add_filter('pre_get_posts', 'custom_search_pagination');
 
 function custom_excerpt_length($length)
 {
@@ -103,12 +85,3 @@ function taxonomy_orderby_description( $orderby, $args ) {
   return $orderby;
 }
 add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
-
-function wazeka_query_vars($vars)
-{
-  $vars[] = 'works_type';
-  $vars[] = 'property_category';
-  $vars[] = 'event_area';
-  return $vars;
-}
-add_filter('query_vars', 'wazeka_query_vars');
