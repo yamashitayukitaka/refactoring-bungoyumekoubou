@@ -2,6 +2,7 @@
 require_once get_theme_file_path('/inc/enqueue.php');
 require_once get_theme_file_path('/inc/post-types.php');
 require_once get_theme_file_path('/inc/acf.php');
+require_once get_theme_file_path('/inc/pagination.php');
 
 function wazeka_theme()
 {
@@ -111,23 +112,3 @@ function wazeka_query_vars($vars)
   return $vars;
 }
 add_filter('query_vars', 'wazeka_query_vars');
-
-function wazeka_query_pagination($query)
-{
-  if (!$query instanceof WP_Query || $query->max_num_pages <= 1) {
-    return;
-  }
-
-  $big = 999999999;
-  $links = paginate_links(array(
-    'base'    => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-    'format'  => '?paged=%#%',
-    'current' => max(1, (int) get_query_var('paged')),
-    'total'   => $query->max_num_pages,
-    'echo'    => false,
-  ));
-  if ($links === null || $links === '') {
-    return;
-  }
-  echo '<nav class="c-pagination">' . $links . '</nav>';
-}
