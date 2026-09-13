@@ -6,11 +6,13 @@
   display: inline-block;
   text-align: center;
   padding: 0 1rem;
-  color: #ffffff;
+  color: #fff;
   background: #22668D;
+
   &:nth-of-type(1){
     margin-left: 0;
   }
+
   &--end{
     font-style: normal;
     font-weight: 400;
@@ -18,15 +20,17 @@
     height: 1.9rem;
     text-align: center;
     padding: 0 1rem;
-    color: #ffffff;
+    color: #fff;
     background: gray;
     display: none;
   }
+
   &__wrap{
     display: flex;
     column-gap:5%;
     flex-wrap: wrap;
     width: 100%;
+
     &--top{
       display: flex;
       justify-content: center;

@@ -6,6 +6,7 @@
     font-weight: bold;
     text-align: center;
   }
+
   &--section{
     font-size: 2.4rem;
     letter-spacing:.04rem;
@@ -17,6 +18,7 @@
     width:100%;
     background:$beige;
   }
+
   &--middle{
     font-size: 2.4rem;
     letter-spacing:.4rem;
@@ -24,6 +26,7 @@
     line-height: calc(38/24);
     text-align: center;
   }
+
   &--sectionEn{
     font-size:3.6rem;
     letter-spacing:0.28rem;
@@ -31,10 +34,13 @@
     line-height: calc(60/33);
     text-align: center;
   }
+
   &--sectionEnWhite{
     @extend .c-title--sectionEn;
+
     color: $white !important;
   }
+
   &--sectionSub{
     font-size:1.4rem;
     letter-spacing:0.03rem;
@@ -43,6 +49,7 @@
     text-align: center;
     color:$orange;
   }
+
   &--sectionLine{
     display: inline-block;
     font-size:3.6rem;
@@ -50,6 +57,7 @@
     font-weight:bold;
     line-height:1.5;
     text-align: center;
+
     &::after{
       display: block;
       content:"";
@@ -60,11 +68,13 @@
       left: 0;
     }
   }
+
   &__wrap{
      &--sectionLine{
       text-align: center;
     }
   }
+
   &--orangeLine{
     font-size: 2.4rem;
     letter-spacing:0.68rem;
@@ -73,18 +83,20 @@
     position: relative;
     display: inline-block;
     z-index: 99;
-    //&::after{
-      //display: block;
-      //width: 100%;
-      //content:"";
-      //height: 0.7rem;
-      //background:$lineColor;
-      //position: absolute;
-      //left: 0;
-      //bottom:0.5rem;
-      //z-index:-1;
-    //}
+
+    // &::after{
+      // display: block;
+      // width: 100%;
+      // content:"";
+      // height: 0.7rem;
+      // background:$lineColor;
+      // position: absolute;
+      // left: 0;
+      // bottom:0.5rem;
+      // z-index:-1;
+    // }
   }
+
   &--orange{
     color:$orange;
     font-size: 1.6rem;

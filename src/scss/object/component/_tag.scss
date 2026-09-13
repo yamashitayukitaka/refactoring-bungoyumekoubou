@@ -5,6 +5,7 @@
     transform: translateX(-0.6rem);
     margin-bottom: 6.6rem;
     flex-wrap: wrap;
+
     &__link{
       display: block;
       font-family: $roboto !important;
@@ -20,10 +21,12 @@
       margin-left:0.6rem;
       margin-bottom: 0.09rem;
     }
+
     &__item{
       margin-bottom: 1rem;
     }
   }
+
   &__txt{
     font-family: $roboto !important;
     font-style: normal;

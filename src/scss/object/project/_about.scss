@@ -2,6 +2,7 @@
   &__message{
     display: flex;
     justify-content: space-between;
+
     &__txt{
       font-size: 1.5rem;
       letter-spacing:0.04rem;
@@ -10,10 +11,12 @@
       color:$pureBlack;
       width: calc(605/900*100%);
     }
+
     &__imgWrap{
       width: calc(255/900*100%);
       aspect-ratio: 255/340;
     }
+
     &__bold{
       font-size: 1.8rem;
       font-weight: bold;
@@ -23,6 +26,7 @@
       text-align: right;
     }
   }
+
   &__staff{
     &__list{
       position: relative;
@@ -31,6 +35,7 @@
       width: calc((200px*4) + 15px);
       margin: auto;
       z-index:99;
+
       &::after{
         position: absolute;
         display: block;
@@ -42,30 +47,36 @@
         left: -10%;
         z-index:-1;
       }
+
       @include mq(lg){
         width:92%;
       }
     }
+
     &__listItem{
       width:calc((200/815)*100%);
       aspect-ratio: 1/1;
       margin-left:calc((5/815)*100%);
       margin-bottom:calc((5/815)*100%);
+
       &:nth-of-type(4n + 1){
         margin-left: 0;
       }
     }
+
     &__listImg{
       width: 100%;
       height: 100%;
     }
   }
+
   &__recruit{
     background: $deepBeige;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1.6rem;
+
     &__ttl{
       color: $white;
       font-size: 5.8rem;
@@ -73,6 +84,7 @@
       margin-bottom:1rem;
       text-align: center;
     }
+
     &__ttlSub{
       color:$white;
       font-size: 1.6rem;
@@ -81,6 +93,7 @@
       margin-bottom: 1.7rem;
       text-align: center;
     }
+
     &__txt{
       color:$white;
       font-size: 2.0rem;
@@ -90,6 +103,7 @@
       margin-bottom: 3rem;
       text-align: center;
     }
+
     &__link{
       display: block;
       color:$white;
@@ -98,6 +112,7 @@
       letter-spacing: 0.04rem;
       text-align: center;
     }
+
     &__content{
       width:100%;
       height: 100%;
@@ -107,10 +122,12 @@
       z-index: 1;
       padding-top: 3.2rem;
       padding-bottom: calc( 3.2rem - 0.8rem);
+
       @include mq(lg){
         flex-direction: column;
       }
     }
+
     &__txtWrap{
       display: inline-block;
       position: absolute;
@@ -118,6 +135,7 @@
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 99;
+
       @include mq(lg){
         position: initial;
         top: initial;
@@ -129,30 +147,37 @@
       }
     }
   }
+
   &__recruitStaff{
     &__list{
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       transform: translateX(1.5px);
+
       @include mq(lg){
         justify-content: space-between;
       }
     }
+
     &__listItem{
       width:calc(112 / 1200 *100%);
       aspect-ratio:112/140;
       margin-left: 0.8rem;
       margin-bottom: 0.8rem;
+
       @include mq(lg){
         width:15%;
         margin-left: initial;
       }
+
       &:nth-of-type(3n - 2){
         margin-left: 0;
       }
+
       &:nth-of-type(6n - 3){
         margin-right:calc(100% - ((var(--staffWidth))*6) - 0.8rem * 4 - 3px);
+
         @include mq(lg){
           margin-right: 0;
         }

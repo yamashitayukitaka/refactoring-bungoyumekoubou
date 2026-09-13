@@ -74,7 +74,7 @@
       width: 85%;
       text-align: center;
 
-      @include mq() {
+      @include mq {
         width: 70%;
       }
     }
@@ -83,7 +83,7 @@
       width: 15%;
       aspect-ratio: 6/4;
 
-      @include mq() {
+      @include mq {
         width: 30%;
       }
 

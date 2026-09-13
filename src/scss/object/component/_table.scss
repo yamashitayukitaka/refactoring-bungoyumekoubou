@@ -1,5 +1,6 @@
 .c-table{
   width: 100%;
+
   &__th{
     font-weight: bold;
     font-size: 1.6rem;
@@ -10,6 +11,7 @@
     display: flex;
     align-items: center;
   }
+
   &__td{
     width:calc(620/900*100%);
     padding-left: 3.4rem;
@@ -20,21 +22,26 @@
     display: flex;
     align-items: center;
   }
+
   &__tr{
     border-bottom: solid 1px $gray;
     display: flex;
   }
+
   &__about{
     width: 100%;
+
     &__tbody{
       width: 100%;
     }
+
     &__tr{
       width: 100%;
       display:flex;
       justify-content: space-between;
       
     }
+
     &__th{
       display: block;
       width: calc(180/900*100%);
@@ -43,6 +50,7 @@
       text-align: center;
       color:$orange
     }
+
     &__td{
       display: block;
       width: calc(675/900*100%);

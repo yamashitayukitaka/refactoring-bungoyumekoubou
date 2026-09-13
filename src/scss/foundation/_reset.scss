@@ -1,6 +1,7 @@
 /*! destyle.css v1.0.15 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model */
+
 /* ============================================ */
 
 * {
@@ -13,6 +14,7 @@
 }
 
 /* Document */
+
 /* ============================================ */
 
 /**
@@ -23,11 +25,12 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -webkit-tap-highlight-color: transparent; /* 3*/
+  text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3 */
 }
 
 /* Sections */
+
 /* ============================================ */
 
 /**
@@ -47,6 +50,7 @@ main {
 }
 
 /* Vertical rhythm */
+
 /* ============================================ */
 
 p,
@@ -62,6 +66,7 @@ dl {
 }
 
 /* Headings */
+
 /* ============================================ */
 
 h1,
@@ -77,6 +82,7 @@ h6 {
 }
 
 /* Lists (enumeration) */
+
 /* ============================================ */
 
 ul,
@@ -87,6 +93,7 @@ ol {
 }
 
 /* Lists (definition) */
+
 /* ============================================ */
 
 dt {
@@ -98,6 +105,7 @@ dd {
 }
 
 /* Grouping content */
+
 /* ============================================ */
 
 /**
@@ -131,6 +139,7 @@ address {
 }
 
 /* Text-level semantics */
+
 /* ============================================ */
 
 /**
@@ -205,6 +214,7 @@ sup {
 }
 
 /* Embedded content */
+
 /* ============================================ */
 
 /**
@@ -224,6 +234,7 @@ iframe {
 }
 
 /* Forms */
+
 /* ============================================ */
 
 /**
@@ -235,7 +246,7 @@ input,
 optgroup,
 select,
 textarea {
-  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
   vertical-align: middle;
   color: inherit;
@@ -254,13 +265,13 @@ textarea {
  */
 
 [type="checkbox"] {
-  -webkit-appearance: checkbox;
   appearance: checkbox;
+  appearance: auto;
 }
 
 [type="radio"] {
-  -webkit-appearance: radio;
   appearance: radio;
+  appearance: auto;
 }
 
 /**
@@ -294,7 +305,7 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
-  -webkit-appearance: none;
+  appearance: none;
   appearance: none;
 }
 
@@ -408,7 +419,7 @@ textarea {
  */
 
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 /**
@@ -417,7 +428,7 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
+  appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
 
@@ -430,6 +441,7 @@ label[for] {
 }
 
 /* Interactive */
+
 /* ============================================ */
 
 /*
@@ -457,6 +469,7 @@ summary {
 }
 
 /* Table */
+
 /* ============================================ */
 
 table {
@@ -480,6 +493,7 @@ th {
 }
 
 /* Misc */
+
 /* ============================================ */
 
 /**

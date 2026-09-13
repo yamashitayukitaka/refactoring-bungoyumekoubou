@@ -7,52 +7,61 @@
 .u-none__pc {
   // display: noneだけを付与するために、.u-none__pcではmin-widthを使う
   &--xxl {
-    @media screen and (min-width: 1401px) {
+    @media screen and (width >= 1401px) {
       display: none !important;
     }
   }
+
   &--xl {
-    @media screen and (min-width: 1201px) {
+    @media screen and (width >= 1201px) {
       display: none;
     }
   }
+
   &--lg {
-    @media screen and (min-width: 1026px) {
+    @media screen and (width >= 1026px) {
       display: none;
     }
   }
+
   &--md {
-    @media screen and (min-width: 769px) {
+    @media screen and (width >= 769px) {
       display: none;
     }
   }
+
   &--sm {
-    @media screen and (min-width: 521px) {
+    @media screen and (width >= 521px) {
       display: none;
     }
   }
 }
+
 .u-none__mobile {
   &--xxl {
     @include mq(xxl) {
       display: none;
     }
   }
+
   &--xl {
     @include mq(xl) {
       display: none;
     }
   }
+
   &--lg {
     @include mq(lg) {
       display: none;
     }
   }
+
   &--md {
-    @include mq() {
+    @include mq {
       display: none;
     }
   }
+
   &--sm {
     @include mq(sm) {
       display: none;
@@ -66,10 +75,12 @@
     transform: translate(-50%, -50%);
     opacity: 0;
   }
+
   1% {
     transform: translate(-50%, calc(-50% + 60px));
     opacity: 0;
   }
+
   100% {
     transform: translate(-50%, -50%);
     opacity: 1;
@@ -81,6 +92,7 @@
     transform: scale(1.1);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;

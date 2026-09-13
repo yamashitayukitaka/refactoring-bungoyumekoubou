@@ -2,23 +2,28 @@
   &__list{
     display: flex;
     flex-wrap: wrap;
+
     &__item{
       width: calc(309/1000*100%);
       margin-left: calc((((1000 - 309*3) / 1000)*100%)/2);
       margin-bottom: 3.5rem;
+
       &:nth-of-type(3n + 1){
         margin-left: 0;
       }
     }
   }
+
   &__img{
     height: 100%;
+
     &__wrap{
       width: 100%;
       aspect-ratio: 309/192;
       margin-bottom: 3rem;
     }
   }
+
   &__name{
     font-size: 1.5rem;
     line-height: calc(25/15);
@@ -26,29 +31,36 @@
     text-align: center;
     font-weight: bold;
   }
+
   &__production{
     margin-bottom: 5.3rem;
+
     &__content{
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 3.5rem;
     }
+
     &__profile{
       width: calc(482/1100*100%);
     }
+
     &__imgWrap{
       width: 100%;
       aspect-ratio: 482/455;
       margin-bottom:2rem;
     }
+
     &__desc{
       width: calc(412/1100*100%);
       aspect-ratio:412/242;
     }
+
     &__descImg{
       height: 100%;
     }
+
     &__profileName{
       color:$orange;
       font-size: 1.5rem;
@@ -58,51 +70,61 @@
       align-items: center;
       margin-left: 1rem;
     }
+
     &__dt{
       font-size:2.4rem;
       letter-spacing:0.04rem;
     }
+
     &__txt{
       font-size: 1.2rem;
       line-height: calc(22/12);
       font-weight: bold;
     }
   }
+
   &__myBest{
     display: flex;
     justify-content:space-between;
     align-items: center;
     margin-bottom: 12rem;
+
     &__ttlWrap{
       background:$beige;
       width: calc(411/1000*100%);
       padding: 7rem 0;
-      //transform: translateX(calc(-1*(130/411)*100%));
+
+      // transform: translateX(calc(-1*(130/411)*100%));
       padding-left: calc(130/1000*100%);
       padding-right:calc(37/1000*100%);
     }
+
     &__list{
       width: calc(639/1000*100%);
       padding-right:15%;
       margin-left: 5rem;
     }
+
     &__item{
       border-bottom: 1px dotted $black;
       height: 7.55rem;
       display: flex;
       align-items: center;
     }
+
     &__num{
       font-size: 1.8rem;
       font-weight: bold;
       display: flex;
       align-items:center;
     }
+
     &__txt{
       font-size: 1.6rem;
       line-height: calc(21/16);
       font-weight: bold;
     }
+
     &__ttl{
       font-size: 2.8rem;
       font-weight: bold;
@@ -110,6 +132,7 @@
       align-items: baseline;
     }
   }
+
   &__question{
     &__content{
       width: 100%;
@@ -118,21 +141,26 @@
       justify-content: space-between;
       flex-wrap: wrap;
     }
+
     &__right{
       width: calc(434/900*100%);
     }
+
     &__imgWrap{
       width: 100%;
       aspect-ratio: 434/271;
       margin-bottom: 3rem;
     }
+
     &__img{
       height: 100%;
     }
+
     &__ttlWrap{
       width: calc(100% - (434/900*100%));
       padding-right: calc(80/900*100%);
     }
+
     &__ttl{
       font-size: 2.4rem;
       font-weight: bold;
@@ -140,6 +168,7 @@
       letter-spacing:0.04rem;
       display: inline-block;
       position: relative;
+
       &::after{
         content:"";
         width: 100%;
@@ -150,6 +179,7 @@
         background:$lineColor;
         z-index: -1;
       }
+
       &--another{
         font-size: 2.4rem;
         font-weight: bold;
@@ -158,6 +188,7 @@
         display: inline-block;
       }
     }
+
     &__txt{
       font-size: 1.6rem;
       line-height: calc(34/16);

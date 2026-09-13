@@ -1,19 +1,20 @@
 .p-blog{
   &__list{
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 5%;
-    row-gap: 5rem;
+    gap: 5rem 5%;
     flex-wrap: wrap;
     margin-bottom: 10rem;
+
     &__item{
       width: 30%;
     }
+
     &__img{
       aspect-ratio: 3/2;
       margin-bottom: 1rem;
     }
   }
+
   &__search{
     &__ttl{
       width: 30rem;
@@ -21,16 +22,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #ffffff;
+      color: #fff;
       padding: 1rem 0;
       margin-bottom: 1rem;
     }
+
     &__latest{
       display: flex;
       flex-direction: column;
       margin-bottom: 1rem;
     }
   }
+
   &__deta{
     display: block;
     text-align: center;

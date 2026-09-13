@@ -15,7 +15,7 @@
     margin-left: calc(50/1050*100%);
     margin-bottom: 5rem;
 
-    @include mq() {
+    @include mq {
       width: 45%;
     }
 
@@ -66,7 +66,7 @@
       width: 100%;
       margin-bottom: 7.2rem;
 
-      @include mq() {
+      @include mq {
         width: 45%;
         flex-direction: column;
       }
@@ -74,7 +74,7 @@
       .c-cardList__imgWrap {
         width: 46.6%;
 
-        @include mq() {
+        @include mq {
           width: 100%;
         }
       }
@@ -85,7 +85,7 @@
         justify-content: space-between;
         gap: 5%;
 
-        @include mq() {
+        @include mq {
           width: 100%;
           flex-direction: column;
         }
@@ -94,7 +94,7 @@
           padding: 1.5rem 0;
           width: 48.9%;
 
-          @include mq() {
+          @include mq {
             padding: 0;
             width: 100%;
           }
@@ -117,7 +117,7 @@
       .slick-list {
         width: 466px;
 
-        @include mq() {
+        @include mq {
           width: 100% !important;
         }
       }
