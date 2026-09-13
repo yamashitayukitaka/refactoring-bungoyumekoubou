@@ -5,7 +5,7 @@
 .js-hasThumbSlider,
 .js-staffSlider,
 .js-staffSlider--reverse {
-  &:not(.slick-initialized)>*:not(:first-child) {
+  &:not(.slick-initialized) > *:not(:first-child) {
     display: none;
   }
 }
@@ -13,6 +13,6 @@
 .slick-list,
 .slick-track,
 .slick-slide,
-.slick-slide>div {
+.slick-slide > div {
   height: 100%;
 }

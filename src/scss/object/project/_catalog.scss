@@ -1,57 +1,66 @@
-.p-catalog{
-  &__mv{
-    &__img{
-      height:100%;
+.p-catalog {
+  &__mv {
+    &__img {
+      height: 100%;
       position: absolute;
       z-index: 1;
     }
-    &__logo{
+
+    &__logo {
       display: block;
-      //width: calc(481/1200*100%);
+
+      // width: calc(481/1200*100%);
       width: 20%;
       aspect-ratio: 481/356;
       position: absolute;
       z-index: 99;
-      top:calc(106/610*100%);
-      left: calc(100/1200*100%);
-      @include mq(){
+      top: calc(106 / 610 * 100%);
+      left: calc(100 / 1200 * 100%);
+
+      @include mq {
         width: 25rem;
       }
     }
   }
-  &__desc{
-    &__txt{
+
+  &__desc {
+    &__txt {
       width: 100%;
       text-align: center;
       font-size: 1.6rem;
-      line-height: calc(25/16);
-      letter-spacing:0.03rem;
+      line-height: calc(25 / 16);
+      letter-spacing: 0.03rem;
       font-weight: normal;
       margin-bottom: 6.5rem;
     }
-    &__list{
+
+    &__list {
       display: flex;
       width: 100%;
       justify-content: space-between;
       margin-bottom: 4rem;
     }
-    &__listTxt{
+
+    &__listTxt {
       margin-bottom: 6rem;
     }
-    &__listTtl{
+
+    &__listTtl {
       font-size: 1.6rem;
       font-weight: bold;
-      line-height:2.54rem;
-      letter-spacing:0.03rem
+      line-height: 2.54rem;
+      letter-spacing: 0.03rem;
     }
-    &__listItem{
-      width:30%;
+
+    &__listItem {
+      width: 30%;
     }
-    &__listTxtItem{
+
+    &__listTxtItem {
       font-size: 1.6rem;
       font-weight: bold;
-      line-height:2.54rem;
-      letter-spacing:0.03rem
+      line-height: 2.54rem;
+      letter-spacing: 0.03rem;
     }
   }
 }

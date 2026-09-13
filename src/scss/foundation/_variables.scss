@@ -1,55 +1,54 @@
 // Color
-$white: #ffffff;
-$beige: #F7F0E7;
-$beige2: #FFFBEF;
-$beige3:#FFF3E2;
-$beige4:#FAF7F2;
-$lineColor:#FFEBB4;
+$white: #fff;
+$beige: #f7f0e7;
+$beige2: #fffbef;
+$beige3: #fff3e2;
+$beige4: #faf7f2;
+$lineColor: #ffebb4;
 $lightBeige: #faf5ef;
-$deepBeige:#9DCFA5;
+$deepBeige: #9dcfa5;
 $brown: #9d6f2e;
 $deepBrown: #452c08;
 $darkBrown: #260000;
 $lightYellow: #eed08f;
-$orange:#EA6800;
-$orange2:#E88D12;
-$yellow:#FABB05;
-$gray:#EEEEEE;
-$gray2:#C9C9C9;
-$gray3:#D9D9D9;
-$gray4:#FAF7F2;
-$gray5:#E8E8E8;
-$gray6:#EEEEEE;
-$gray7:#CCCCCC;
+$orange: #ea6800;
+$orange2: #e88d12;
+$yellow: #fabb05;
+$gray: #eee;
+$gray2: #c9c9c9;
+$gray3: #d9d9d9;
+$gray4: #faf7f2;
+$gray5: #e8e8e8;
+$gray6: #eee;
+$gray7: #ccc;
 $darkGray: #8c8c8c;
-$footerColor:#404040;
-$lightBlack: #111111;
+$footerColor: #404040;
+$lightBlack: #111;
 $black: #242424;
-$pureBlack: #000000;
-$red : #ED6A10;
+$pureBlack: #000;
+$red: #ed6a10;
 
 // Font
-//$yuGothic: YuGothic, "Yu Gothic", sans-serif;
-//$yuMincho: YuMincho, "Yu Mincho", serif;
-//$montserrat: "Montserrat", sans-serif;
-//$inter:"Inter", sans-serif;
-//$roboto:"Roboto", sans-serif;
-$yuGothic: "Noto Sans JP", sans-serif;
-$yuMincho: "Noto Sans JP", sans-serif;
-$inter:"Noto Sans JP", sans-serif;
-$roboto:"Noto Sans JP", sans-serif;
-
+// $yuGothic: YuGothic, "Yu Gothic", sans-serif;
+// $yuMincho: YuMincho, "Yu Mincho", serif;
+// $montserrat: "Montserrat", sans-serif;
+// $inter:"Inter", sans-serif;
+// $roboto:"Roboto", sans-serif;
+$yuGothic: 'Noto Sans JP', sans-serif;
+$yuMincho: 'Noto Sans JP', sans-serif;
+$inter: 'Noto Sans JP', sans-serif;
+$roboto: 'Noto Sans JP', sans-serif;
 
 // メディアクエリ
 
 $breakpoints: (
-  "ssm": "screen and (max-width:400px)",
-  "sm": "screen and (max-width: 520px)",
-  "md": "screen and (max-width: 768px)",
-  "lg": "screen and (max-width: 1025px)",
-  "xl": "screen and (max-width: 1200px)",
-  "xxl": "screen and (max-width: 1400px)",
-  "xxxl": "screen and (max-width: 1500px)",
+  'ssm': 'screen and (max-width:400px)',
+  'sm': 'screen and (max-width: 520px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1025px)',
+  'xl': 'screen and (max-width: 1200px)',
+  'xxl': 'screen and (max-width: 1400px)',
+  'xxxl': 'screen and (max-width: 1500px)',
 ) !default;
 
 @mixin mq($breakpoint: md) {

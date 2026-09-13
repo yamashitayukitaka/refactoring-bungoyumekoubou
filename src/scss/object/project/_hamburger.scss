@@ -20,7 +20,7 @@
 
     &:hover {
       cursor: pointer;
-      opacity: .6;
+      opacity: 0.6;
     }
 
     &__line {
@@ -74,7 +74,7 @@
       width: 85%;
       text-align: center;
 
-      @include mq() {
+      @include mq {
         width: 70%;
       }
     }
@@ -83,7 +83,7 @@
       width: 15%;
       aspect-ratio: 6/4;
 
-      @include mq() {
+      @include mq {
         width: 30%;
       }
 
@@ -112,7 +112,7 @@
         position: relative;
 
         &::before {
-          content: "";
+          content: '';
           display: block;
           width: 2rem;
           height: 2rem;
@@ -136,7 +136,7 @@
           top: 50%;
           transform: rotate(-45deg);
           transition-property: all;
-          transition-duration: .5s;
+          transition-duration: 0.5s;
         }
 
         &:nth-of-type(2) {
@@ -148,7 +148,7 @@
           top: 50%;
           transform: rotate(45deg);
           transition-property: all;
-          transition-duration: .5s;
+          transition-duration: 0.5s;
         }
       }
     }
@@ -162,5 +162,5 @@
 .navOpen {
   transform: translateX(0);
   transition-property: all;
-  transition-duration: .8s;
+  transition-duration: 0.8s;
 }

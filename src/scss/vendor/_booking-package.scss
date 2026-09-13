@@ -10,7 +10,7 @@
 #booking-package button {
   color: #fff;
   text-align: center;
-  padding: .5rem;
+  padding: 0.5rem;
   width: 15rem;
   background: orange;
   font-size: 16px;
@@ -70,7 +70,7 @@
 #booking-package_calendarPage .dateField {
   font-size: 2.4rem;
 
-  @include mq() {
+  @include mq {
     font-size: 20px;
   }
 }
@@ -78,7 +78,6 @@
 .selectable_day_slot {
   display: none;
 }
-
 
 #booking-package_schedulePage .daysListPanel {
   display: none;
@@ -107,7 +106,6 @@
   height: 10rem !important;
 }
 
-
 #booking-package .selectable_time_slot {
   justify-content: space-around;
   display: flex;
@@ -129,7 +127,7 @@
 #booking-package_calendarPage .available_day .dateField {
   width: 5rem !important;
   height: 5rem;
-  background: rgb(234, 104, 0);
+  background: rgb(234 104 0);
   border-radius: 50%;
   position: absolute;
   top: 50%;

@@ -2,7 +2,7 @@
   width: calc(105%);
   display: flex;
   flex-wrap: wrap;
-  transform: translateX(-(calc(50/1050*100%)));
+  transform: translateX(-(calc(50 / 1050 * 100%)));
   margin-bottom: 3rem;
 
   &__dl {
@@ -11,11 +11,11 @@
   }
 
   &__item {
-    width: calc(300/1050*100%);
-    margin-left: calc(50/1050*100%);
+    width: calc(300 / 1050 * 100%);
+    margin-left: calc(50 / 1050 * 100%);
     margin-bottom: 5rem;
 
-    @include mq() {
+    @include mq {
       width: 45%;
     }
 
@@ -35,16 +35,16 @@
     font-family: $inter;
     font-weight: normal;
     font-size: 1.4rem;
-    line-height: calc(23/14);
+    line-height: calc(23 / 14);
   }
 
   &__tag {
     border: solid 1px $orange;
-    padding: .3rem 1rem;
+    padding: 0.3rem 1rem;
     display: inline-block;
-    border-radius: .9rem;
+    border-radius: 0.9rem;
     font-size: 1.1rem;
-    line-height: calc(12/11);
+    line-height: calc(12 / 11);
     font-family: $roboto;
     font-weight: normal;
   }
@@ -66,7 +66,7 @@
       width: 100%;
       margin-bottom: 7.2rem;
 
-      @include mq() {
+      @include mq {
         width: 45%;
         flex-direction: column;
       }
@@ -74,7 +74,7 @@
       .c-cardList__imgWrap {
         width: 46.6%;
 
-        @include mq() {
+        @include mq {
           width: 100%;
         }
       }
@@ -85,7 +85,7 @@
         justify-content: space-between;
         gap: 5%;
 
-        @include mq() {
+        @include mq {
           width: 100%;
           flex-direction: column;
         }
@@ -94,13 +94,13 @@
           padding: 1.5rem 0;
           width: 48.9%;
 
-          @include mq() {
+          @include mq {
             padding: 0;
             width: 100%;
           }
 
           .c-cardList__ttl {
-            line-height: calc(30/19);
+            line-height: calc(30 / 19);
             letter-spacing: 0.12rem;
             margin-bottom: 0.7rem;
           }
@@ -109,7 +109,7 @@
             font-style: normal;
             font-weight: 400;
             font-size: 1.4rem;
-            line-height: calc(24/14);
+            line-height: calc(24 / 14);
           }
         }
       }
@@ -117,7 +117,7 @@
       .slick-list {
         width: 466px;
 
-        @include mq() {
+        @include mq {
           width: 100% !important;
         }
       }
