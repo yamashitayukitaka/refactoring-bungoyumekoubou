@@ -1,5 +1,5 @@
 .xo-event-calendar {
-  width: calc(472/544*100%);
+  width: calc(472 / 544 * 100%);
   overflow: initial !important;
 
   @include mq(lg) {
@@ -7,8 +7,8 @@
   }
 }
 
-.xo-event-calendar table.xo-month>thead th.sunday {
-  background: #FFA5A5;
+.xo-event-calendar table.xo-month > thead th.sunday {
+  background: #ffa5a5;
   color: #fff !important;
 }
 
@@ -16,16 +16,16 @@
   border: none !important;
 }
 
-.xo-event-calendar table.xo-month>thead th {
-  background: #E1DEDB;
+.xo-event-calendar table.xo-month > thead th {
+  background: #e1dedb;
   padding: 12px 0 15px !important;
   font-size: 11px !important;
   font-weight: normal !important;
   text-align: center;
 }
 
-.xo-event-calendar table.xo-month>thead th.saturday {
-  background: #A0B2FF;
+.xo-event-calendar table.xo-month > thead th.saturday {
+  background: #a0b2ff;
   color: #fff;
 }
 
@@ -129,7 +129,7 @@
   cursor: pointer;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
@@ -146,7 +146,7 @@
   height: 50px;
 }
 
-.xo-event-calendar table.xo-month>thead th {
+.xo-event-calendar table.xo-month > thead th {
   vertical-align: middle;
 }
 

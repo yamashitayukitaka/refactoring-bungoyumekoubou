@@ -1,53 +1,53 @@
-.l-content{
+.l-content {
   width: 1000px;
   margin: auto;
 
-  @include mq(xl){
+  @include mq(xl) {
     width: 92%;
   }
 
-  &--large{
+  &--large {
     width: 1100px;
     margin: auto;
 
-    @include mq(xl){
+    @include mq(xl) {
       width: 92%;
     }
   }
 
-  &--middle{
+  &--middle {
     width: 900px;
     margin: auto;
 
-    @include mq(lg){
+    @include mq(lg) {
       width: 92%;
     }
   }
 
-  &--xl{
+  &--xl {
     width: 1200px;
     margin: auto;
 
-    @include mq(xxl){
+    @include mq(xxl) {
       width: 92%;
     }
   }
 
-  &--sm{
+  &--sm {
     width: 850px;
     margin: auto;
 
-    @include mq(lg){
+    @include mq(lg) {
       width: 92%;
     }
   }
 
-  &--percent{
+  &--percent {
     width: 98%;
     margin: auto;
   }
 
-  &--ratio{
+  &--ratio {
     width: 92%;
     margin: auto;
   }

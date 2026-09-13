@@ -1,14 +1,14 @@
-.p-event{
-  &__ttl{
+.p-event {
+  &__ttl {
     font-size: 3.84rem;
-    line-height: calc(49/38);
-    letter-spacing: .04rem;
+    line-height: calc(49 / 38);
+    letter-spacing: 0.04rem;
     font-weight: bold;
     text-align: center;
   }
 
-  &__googleMapWrap{
+  &__googleMapWrap {
     width: 100%;
-    aspect-ratio:877/493;
+    aspect-ratio: 877/493;
   }
 }

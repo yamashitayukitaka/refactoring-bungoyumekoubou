@@ -99,18 +99,15 @@
   }
 }
 
-.u-current{
-  background:$orange;
-  color:$white;
+.u-current {
+  background: $orange;
+  color: $white;
 }
 
-.u-currentTab{
-  border-color:$orange !important;
-  color:$orange;
+.u-currentTab {
+  border-color: $orange !important;
+  color: $orange;
 }
-
-
-
 
 .u-mb0 {
   margin-bottom: 0 !important;
@@ -153,7 +150,7 @@
 }
 
 .u-mb10 {
-  margin-bottom: 1.0rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .u-mb12 {
@@ -177,7 +174,7 @@
 }
 
 .u-mb20 {
-  margin-bottom: 2.0rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .u-mb22 {
@@ -201,7 +198,7 @@
 }
 
 .u-mb30 {
-  margin-bottom: 3.0rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .u-mb32 {
@@ -221,7 +218,7 @@
 }
 
 .u-mb40 {
-  margin-bottom: 4.0rem !important;
+  margin-bottom: 4rem !important;
 }
 
 .u-mb42 {
@@ -237,23 +234,23 @@
 }
 
 .u-mb50 {
-  margin-bottom: 5.0rem !important;
+  margin-bottom: 5rem !important;
 }
 
 .u-mb60 {
-  margin-bottom: 6.0rem !important;
+  margin-bottom: 6rem !important;
 }
 
 .u-mb70 {
-  margin-bottom: 7.0rem !important;
+  margin-bottom: 7rem !important;
 }
 
 .u-mb80 {
-  margin-bottom: 8.0rem !important;
+  margin-bottom: 8rem !important;
 }
 
 .u-mb90 {
-  margin-bottom: 9.0rem !important;
+  margin-bottom: 9rem !important;
 }
 
 .u-mb100 {
@@ -272,29 +269,29 @@
   margin-bottom: 20rem !important;
 }
 
-.u-ml10{
-  margin-left: 1.0rem;
+.u-ml10 {
+  margin-left: 1rem;
 }
 
-.u-pt50{
+.u-pt50 {
   padding-top: 5rem;
 }
 
-.u-pt100{
+.u-pt100 {
   padding-top: 10rem;
 }
 
-.u-opacity{
+.u-opacity {
   opacity: 0;
 }
 
-.u-bold{
+.u-bold {
   font-weight: bold;
 }
 
-#u-loading{
-  width:100vw;
-  height:100vh;
+#u-loading {
+  width: 100vw;
+  height: 100vh;
   background: #fff;
   position: fixed;
   z-index: 99999999;
@@ -305,50 +302,50 @@
   left: 0;
 }
 
-.u-spinner{
+.u-spinner {
   display: inline-block;
   width: 25rem;
   animation: spin 2s linear 1;
   text-align: center;
 }
 
-.u-center{
+.u-center {
   display: block;
   text-align: center;
 }
 
-.u-flex{
-  display: flex;;
+.u-flex {
+  display: flex;
 }
 
-.u-bg{
+.u-bg {
   background: $beige2;
 }
 
-.u-orange--sm{
-  color:$orange;
+.u-orange--sm {
+  color: $orange;
   font-weight: bold;
   font-size: 1.6rem;
 }
 
-.u-orange{
-  color:$orange;
+.u-orange {
+  color: $orange;
   font-weight: bold;
   font-size: 2.4rem;
 }
 
-.u-orange--large{
-  color:$orange;
+.u-orange--large {
+  color: $orange;
   font-weight: bold;
   font-size: 3.1rem;
 }
 
-.u-orange--mv{
-  color:$orange;
+.u-orange--mv {
+  color: $orange;
   font-weight: bold;
-  font-size:3.6rem;
+  font-size: 3.6rem;
 }
 
-.u-nowrap{
-  white-space:nowrap;
+.u-nowrap {
+  white-space: nowrap;
 }

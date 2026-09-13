@@ -16,7 +16,7 @@
     background-position: center;
 
     &__wrap {
-      width: calc(1012px/1200px*100%);
+      width: calc(1012px / 1200px * 100%);
       margin-left: auto;
       background-size: cover;
       height: 100%;
@@ -29,34 +29,34 @@
         list-style: none;
         background-repeat: no-repeat;
 
-        >.c-pageMv__img:nth-of-type(1),
+        > .c-pageMv__img:nth-of-type(1),
         .slick-slide:nth-of-type(1) .c-pageMv__img {
-          background-image: url("../img/top_slider/top1.webp");
+          background-image: url('../img/top_slider/top1.webp');
         }
 
-        >.c-pageMv__img:nth-of-type(2),
+        > .c-pageMv__img:nth-of-type(2),
         .slick-slide:nth-of-type(2) .c-pageMv__img {
-          background-image: url("../img/top_slider/top9.webp");
+          background-image: url('../img/top_slider/top9.webp');
         }
 
-        >.c-pageMv__img:nth-of-type(3),
+        > .c-pageMv__img:nth-of-type(3),
         .slick-slide:nth-of-type(3) .c-pageMv__img {
-          background-image: url("../img/top_slider/top4.webp");
+          background-image: url('../img/top_slider/top4.webp');
         }
 
-        >.c-pageMv__img:nth-of-type(4),
+        > .c-pageMv__img:nth-of-type(4),
         .slick-slide:nth-of-type(4) .c-pageMv__img {
-          background-image: url("../img/top_slider/top5.webp");
+          background-image: url('../img/top_slider/top5.webp');
         }
 
-        >.c-pageMv__img:nth-of-type(5),
+        > .c-pageMv__img:nth-of-type(5),
         .slick-slide:nth-of-type(5) .c-pageMv__img {
-          background-image: url("../img/top_slider/top6.webp");
+          background-image: url('../img/top_slider/top6.webp');
         }
 
-        >.c-pageMv__img:nth-of-type(6),
+        > .c-pageMv__img:nth-of-type(6),
         .slick-slide:nth-of-type(6) .c-pageMv__img {
-          background-image: url("../img/top_slider/top8.webp");
+          background-image: url('../img/top_slider/top8.webp');
         }
       }
     }
@@ -87,11 +87,11 @@
       z-index: 9;
 
       &::before {
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         background: $white;
-        opacity: .5;
+        opacity: 0.5;
         top: 0;
         left: 0;
         position: absolute;
@@ -103,7 +103,7 @@
 
     &--small {
       font-size: 1.6rem;
-      line-height: calc(26/13);
+      line-height: calc(26 / 13);
       letter-spacing: 0.18rem;
       color: $pureBlack;
       position: relative;
@@ -115,11 +115,11 @@
   &__subTtl {
     color: $pureBlack;
     font-size: 2rem;
-    line-height: calc(52/20);
+    line-height: calc(52 / 20);
     letter-spacing: 0.18rem;
     font-weight: bold;
     position: relative;
     z-index: 999;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
   }
 }

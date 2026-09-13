@@ -1,24 +1,24 @@
-.p-blog{
-  &__list{
+.p-blog {
+  &__list {
     display: flex;
     gap: 5rem 5%;
     flex-wrap: wrap;
     margin-bottom: 10rem;
 
-    &__item{
+    &__item {
       width: 30%;
     }
 
-    &__img{
+    &__img {
       aspect-ratio: 3/2;
       margin-bottom: 1rem;
     }
   }
 
-  &__search{
-    &__ttl{
+  &__search {
+    &__ttl {
       width: 30rem;
-      background: #EA6800;
+      background: #ea6800;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,14 +27,14 @@
       margin-bottom: 1rem;
     }
 
-    &__latest{
+    &__latest {
       display: flex;
       flex-direction: column;
       margin-bottom: 1rem;
     }
   }
 
-  &__deta{
+  &__deta {
     display: block;
     text-align: center;
     font-size: 2rem;

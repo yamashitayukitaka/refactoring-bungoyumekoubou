@@ -1,6 +1,6 @@
-.p-xo-event{
-  &__search{
-    background:$orange;
+.p-xo-event {
+  &__search {
+    background: $orange;
     width: 48%;
     display: flex;
     justify-content: center;
@@ -9,92 +9,92 @@
     padding: 2rem 0;
     margin-bottom: 3rem;
 
-    @include mq{
+    @include mq {
       width: 100%;
     }
 
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       background: $gray;
-      color:#000
+      color: #000;
     }
 
-    &__wrap{
+    &__wrap {
       display: flex;
       justify-content: space-between;
     }
   }
 
-  &__time{
+  &__time {
     width: 100%;
     text-align: center;
     display: block;
     padding-top: 1.3rem;
   }
 
-  &__outer{
+  &__outer {
     display: flex;
     justify-content: space-between;
 
-    @include mq{
+    @include mq {
       flex-direction: column;
     }
   }
 
-  &__wrap{
-  width:calc(544/1100*100%);
-  display: flex;
-  justify-content: center;
-
-    @include mq{
-      margin:0 auto 5rem;
-      width: 100%;
-    }
-
-    @include mq(sm){
-      margin:0 auto 20px;
-    }
-  }
-
-  &__content{
-    width:calc(544/1100*100%);
+  &__wrap {
+    width: calc(544 / 1100 * 100%);
     display: flex;
     justify-content: center;
 
-    @include mq{
+    @include mq {
+      margin: 0 auto 5rem;
+      width: 100%;
+    }
+
+    @include mq(sm) {
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__content {
+    width: calc(544 / 1100 * 100%);
+    display: flex;
+    justify-content: center;
+
+    @include mq {
       width: 100%;
     }
   }
 
-  &__list{
-    width: calc(472/544*100%);
+  &__list {
+    width: calc(472 / 544 * 100%);
 
-    &__imgWrap{
-      width: calc(205/472*100%);
-      aspect-ratio:205/127;
+    &__imgWrap {
+      width: calc(205 / 472 * 100%);
+      aspect-ratio: 205/127;
 
-      & img{
+      & img {
         height: 100%;
       }
     }
 
-    &__link{
+    &__link {
       display: flex;
       justify-content: space-between;
     }
 
-    &__startDate{
+    &__startDate {
       display: none;
     }
 
-    &__endDate{
+    &__endDate {
       display: none;
     }
 
-    &__txtContent{
-      width: calc(258/472*100%);
+    &__txtContent {
+      width: calc(258 / 472 * 100%);
     }
 
-    &__item{
+    &__item {
       /* &:nth-of-type(1){
         border-top: 1px solid $black;
       } */
@@ -102,8 +102,8 @@
       padding: 28px 8px;
     }
 
-    &__overflow{
-      max-height:390px;
+    &__overflow {
+      max-height: 390px;
       overflow-y: scroll;
     }
   }
