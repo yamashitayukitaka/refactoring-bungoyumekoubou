@@ -49,7 +49,10 @@ $breakpoints: (
   'xl': 'screen and (max-width: 1200px)',
   'xxl': 'screen and (max-width: 1400px)',
   'xxxl': 'screen and (max-width: 1500px)',
-) !default;
+  // レガシーCSS由来
+  'sp': 'screen and (max-width: 599px)',
+  'tab': 'screen and (max-width: 1050px)',
+  ) !default;
 
 @mixin mq($breakpoint: md) {
   @media #{map-get($breakpoints, $breakpoint)} {
