@@ -1,0 +1,214 @@
+---
+description: SCSS / BEM の記述ルール
+globs: src/scss/**/*.scss
+alwaysApply: false
+---
+
+##　基本方針
+
+- 既存のデザイン、レイアウト、表示状態、レスポンシブ挙動を変更しない。
+- リファクタリングの目的は、コードの可読性・保守性・再利用性を向上させることである。
+- 見た目を変更するための修正は行わない。
+- 既存コードの意図を確認してから変更する。
+- 動作しているコードを理由なく書き換えない。
+- 変更範囲は必要最小限にする。
+
+## CSS設計
+
+- 既存のFLOCSS設計を維持する。
+
+- 以下のレイヤーを基本とする。
+  - Foundation
+  - Layout
+  - Object
+  - vendor
+
+- Objectは必要に応じて以下の責務に分ける。
+  - Component
+  - Project
+  - Utility
+
+  -component
+  　- デザインを見て他のページでも使用されることが確定していて、ある程度小さなグループのものを
+      componentとする。接頭辞は.c-
+  -project
+    - componentにできないグループはprojectになる。おそらく大抵はページ単位で作成されるが、トップページ
+      はセクションごとになることも多い。接頭辞は.p-
+  -utility
+    - 必ず記述するのはメディアクエリを利用して、PCのみ表示・スマホのみ表示という機能を実現するための
+     下記のスタイル。必要に応じて特定のmarginを確保するスタイルなども記述することがある。接頭辞は.u-
+     
+     例：utility.scss
+
+      ```scss
+        .u-none__pc {
+        
+        &--xxl {
+          @media screen and (width >= 1401px) {
+            display: none !important;
+          }
+        }
+
+        &--xl {
+          @media screen and (width >= 1201px) {
+            display: none;
+          }
+        }
+
+        &--lg {
+          @media screen and (width >= 1026px) {
+            display: none;
+          }
+        }
+
+        &--md {
+          @media screen and (width >= 769px) {
+            display: none;
+          }
+        }
+
+        &--sm {
+          @media screen and (width >= 521px) {
+            display: none;
+          }
+        }
+      }
+
+      .u-none__mobile {
+        &--xxl {
+          @include mq(xxl) {
+            display: none;
+          }
+        }
+
+        &--xl {
+          @include mq(xl) {
+            display: none;
+          }
+        }
+
+        &--lg {
+          @include mq(lg) {
+            display: none;
+          }
+        }
+
+        &--md {
+          @include mq {
+            display: none;
+          }
+        }
+
+        &--sm {
+          @include mq(sm) {
+            display: none;
+          }
+        }
+      }
+
+
+      ```
+
+- vendorはプラグインやcdnなど外部のサービスが独自に吐き出したclassに対してスタイルを付与する場合に使用する
+
+
+## 命名規則
+- BEM記法を使用する
+- Block: `.c-button`
+- Element: `.c-button__text`
+- Modifier: `.c-button--primary`
+
+### 影響範囲
+- 影響範囲を最低にする為に以下を守ること
+  - base.scss以外ではタグに直接スタイルを書かない。
+  - class名 imgのようにタグに直接スタイルを書かず、タグにBEMで指定したうえでスタイルを付与する。
+  - !importantを原則禁止し、「クラスを分けて当てない」を正とする。
+
+### ページ固有Projectに関する命名規則
+- ページ固有のProjectには `p-ページスラッグ` をBlockとして使用する。
+- ページ固有Projectの第1階層のElementには、対応するsection名を使用する。
+- section名は、そのsectionの役割・内容を表す名称とする。
+
+### 数字使用禁止
+- web標準に合わせ、推測可能な命名にするために以下を守ること
+　- class名にp-about_list__item--1,p-about_list__1やp-about_list__item--twoや  p-about_list__twoなどのように意味を持たない連番としての数字使用を禁止する。数字ではなく推測可能な　英単語を使用するものとする
+  -　例：p-about_list__item--wide
+
+
+## SCSS記法
+- *.scssではBlock / Element / Modifierをそれぞれ `&__` / `&--` で接続する。
+
+例：Aboutページ
+
+```scss
+.p-about {
+  &__title {
+    ...
+    &__wrap {
+      ...
+    }
+  }
+
+  &__message {
+    ...
+    &__list {
+      ...
+    }
+  }
+
+  &--archive {
+    ...
+  }
+}
+```
+
+## ネスト
+- ネストを深くしすぎない
+- 原則3階層以内
+- HTML構造に依存した過度なセレクタを避ける
+
+## リファクタリング
+- 見た目を変えないことを最優先する
+- 不要なセレクタのみ削除する
+- 既存HTMLを変更する場合は理由を明示する
+
+## JavaScriptフック
+- JavaScriptから参照する要素には js- 接頭辞を使用する。
+- JavaScriptフックとCSSのスタイル用クラスを分離する。
+- js- クラスに対して、原則としてSCSSのスタイルを直接記述しない。
+
+## レスポンシブ
+- PCファーストとし、原則として min-width は使用せず、max-width を使用して対応する。
+- 差分のスタイルのみを@includeで指定する
+
+例
+```scss
+.p-about {
+  &__title {
+    ...
+    &__wrap {
+      ...
+      @include mq{
+        ...
+      }
+    }
+  }
+
+  &__message {
+    ...
+     @include mq{
+        ...
+      }
+    &__list {
+      ...
+      @include mq{
+        ...
+      }
+    }
+  }
+
+  &--archive {
+    ...
+  }
+}
+```
