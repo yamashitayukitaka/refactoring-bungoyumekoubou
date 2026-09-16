@@ -247,7 +247,6 @@ optgroup,
 select,
 textarea {
   appearance: none;
-  appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -265,12 +264,10 @@ textarea {
  */
 
 [type='checkbox'] {
-  appearance: checkbox;
   appearance: auto;
 }
 
 [type='radio'] {
-  appearance: radio;
   appearance: auto;
 }
 
@@ -305,7 +302,6 @@ button,
 [type='reset'],
 [type='submit'] {
   cursor: pointer;
-  appearance: none;
   appearance: none;
 }
 
@@ -428,7 +424,7 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  appearance: button; /* 1 */
+  appearance: auto; /* 1 */
   font: inherit; /* 2 */
 }
 
