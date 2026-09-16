@@ -3504,29 +3504,29 @@ a:hover {
   }
 }
 .p-rireve__specification__media--left {
-  width: 50vw !important;
-  margin-left: -17.25vw !important;
+  width: 50vw;
+  margin-left: -17.25vw;
 }
 @media screen and (max-width: 599px) {
   .p-rireve__specification__media--left {
-    width: 96vw !important;
-    margin-left: -3vw !important;
+    width: 96vw;
+    margin-left: -3vw;
   }
 }
 .p-rireve__specification__media--right {
-  width: 50vw !important;
-  margin-right: -17.25vw !important;
+  width: 50vw;
+  margin-right: -17.25vw;
 }
 @media screen and (max-width: 599px) {
   .p-rireve__specification__media--right {
-    width: 96vw !important;
-    margin-right: -3vw !important;
+    width: 96vw;
+    margin-right: -3vw;
   }
 }
 .p-rireve__specification__mediaImg {
   width: 50vw;
   height: auto;
-  aspect-ratio: 16/10 !important;
+  aspect-ratio: 16/10;
   object-fit: cover;
 }
 @media screen and (max-width: 599px) {
@@ -3553,7 +3553,7 @@ a:hover {
   }
 }
 .p-rireve__specification__row--ptLoose {
-  padding-top: 10% !important;
+  padding-top: 10%;
 }
 
 .p-staff__list {
