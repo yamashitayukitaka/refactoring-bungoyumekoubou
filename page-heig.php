@@ -269,10 +269,10 @@ get_header();
         </div>
         <div class="p-heig__specification__gridItem">
           <img class="p-heig__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_28.webp' ?>" alt="">
-          <p class="p-heig__specification__gridText u-none__pc--sp"><span class="p-heig__subMarker">
+          <p class="p-heig__specification__gridText sp"><span class="p-heig__subMarker">
               家丸ごと浄水ANOA(アノア)
             </span></p>
-          <p class="p-heig__specification__gridText u-none__mobile--sp"><span class="p-heig__subMarker">
+          <p class="p-heig__specification__gridText pc_tab"><span class="p-heig__subMarker">
               暮らしの水をまるごとキレイに<br>
               家丸ごと浄水ANOA(アノア)
             </span></p>
@@ -441,41 +441,42 @@ get_header();
     </div>
   </section>
 
-
-  <section class="l-content">
-    <p class="c-title--large">HEIGの施工事例をみる</p>
-    <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
-    <?php
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    $args = array(
-      'post_type' => 'works',
-      'posts_per_page' => 3,
-      'order' => 'DESC',
-      'paged' => $paged,
-      'tax_query' => array(
-        array(
-          'taxonomy' => 'works-type',
-          'terms' => array('heig'),
-          'field' => 'slug'
-        ),
+  <?php
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+  $args = array(
+    'post_type' => 'works',
+    'posts_per_page' => 3,
+    'order' => 'DESC',
+    'paged' => $paged,
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'works-type',
+        'terms' => array('heig'),
+        'field' => 'slug'
       ),
-    );
-    $worksLoop = new WP_Query($args);
-    ?>
+    ),
+  );
+  $worksLoop = new WP_Query($args);
+  ?>
 
-    <ul class="c-cardList u-mb100">
-      <?php if ($worksLoop->have_posts()) :
-        while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
+  <?php if ($worksLoop->have_posts()) : ?>
+    <section class="l-content">
+      <p class="c-title--large">HEIGの施工事例をみる</p>
+      <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
+      <ul class="c-cardList u-mb100">
+        <?php while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
-      <?php endwhile;
-      endif;
-      wp_reset_postdata(); ?>
-    </ul>
+        <?php endwhile; ?>
+      </ul>
 
-    <div class="u-center u-mb150">
-      <a class="c-button--page" href="<?php echo esc_url(home_url('/')); ?>works-type/heig">一覧を見る</a>
-    </div>
-  </section>
+      <div class="u-center u-mb150">
+        <a class="c-button--page" href="<?php echo esc_url(home_url('/')); ?>works-type/heig">一覧を見る</a>
+      </div>
+    </section>
+  <?php
+  endif;
+  wp_reset_postdata();
+  ?>
 
   <section class="p-top__lineUp u-mb0">
     <div class="l-content--large">
