@@ -18,6 +18,13 @@
     }
   }
 
+  // レガシーCSS由来（旧 .sp_tab: PCで非表示）
+  &--tab {
+    @media screen and (width >= 1051px) {
+      display: none;
+    }
+  }
+
   &--lg {
     @media screen and (width >= 1026px) {
       display: none;
@@ -26,6 +33,13 @@
 
   &--md {
     @media screen and (width >= 769px) {
+      display: none;
+    }
+  }
+
+  // レガシーCSS由来（旧 .sp: PC/Tabで非表示）
+  &--sp {
+    @media screen and (width >= 599px) {
       display: none;
     }
   }
@@ -50,6 +64,13 @@
     }
   }
 
+  // レガシーCSS由来（旧 .pc: Tab以下で非表示）
+  &--tab {
+    @include mq(tab) {
+      display: none;
+    }
+  }
+
   &--lg {
     @include mq(lg) {
       display: none;
@@ -58,6 +79,13 @@
 
   &--md {
     @include mq {
+      display: none;
+    }
+  }
+
+  // レガシーCSS由来（旧 .pc_tab: SPで非表示）
+  &--sp {
+    @include mq(sp) {
       display: none;
     }
   }

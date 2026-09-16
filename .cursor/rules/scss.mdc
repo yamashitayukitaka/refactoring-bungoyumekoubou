@@ -45,7 +45,7 @@ alwaysApply: false
         
         &--xxl {
           @media screen and (width >= 1401px) {
-            display: none !important;
+            display: none;
           }
         }
 
@@ -178,7 +178,9 @@ alwaysApply: false
 - js- クラスに対して、原則としてSCSSのスタイルを直接記述しない。
 
 ## レスポンシブ
-- PCファーストとし、原則として min-width は使用せず、max-width を使用して対応する。
+
+###メディアクエリ
+- PCファーストとし、原則としてはmin-width は使用しない。
 - 差分のスタイルのみを@includeで指定する
 
 例
@@ -212,3 +214,77 @@ alwaysApply: false
   }
 }
 ```
+
+###表示非表示
+- 原則として以下を使用するものとする。
+
+      ```scss
+        .u-none__pc {
+        
+        &--xxl {
+          @media screen and (width >= 1401px) {
+            display: none;
+          }
+        }
+
+        &--xl {
+          @media screen and (width >= 1201px) {
+            display: none;
+          }
+        }
+
+        &--lg {
+          @media screen and (width >= 1026px) {
+            display: none;
+          }
+        }
+
+        &--md {
+          @media screen and (width >= 769px) {
+            display: none;
+          }
+        }
+
+        &--sm {
+          @media screen and (width >= 521px) {
+            display: none;
+          }
+        }
+      }
+
+      .u-none__mobile {
+        &--xxl {
+          @include mq(xxl) {
+            display: none;
+          }
+        }
+
+        &--xl {
+          @include mq(xl) {
+            display: none;
+          }
+        }
+
+        &--lg {
+          @include mq(lg) {
+            display: none;
+          }
+        }
+
+        &--md {
+          @include mq {
+            display: none;
+          }
+        }
+
+        &--sm {
+          @include mq(sm) {
+            display: none;
+          }
+        }
+      }
+
+
+      ```
+- レガシーcssのpc_tabなどは上記に置き換える。
+- 該当するもの場合は上記を踏襲してあらたにclassを作成する。

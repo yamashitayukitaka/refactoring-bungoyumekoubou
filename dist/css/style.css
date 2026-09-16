@@ -212,7 +212,6 @@ optgroup,
 select,
 textarea {
   appearance: none;
-  appearance: none;
   vertical-align: middle;
   color: inherit;
   font: inherit;
@@ -229,12 +228,10 @@ textarea {
  * Reset radio and checkbox appearance to preserve their look in iOS.
  */
 [type=checkbox] {
-  appearance: checkbox;
   appearance: auto;
 }
 
 [type=radio] {
-  appearance: radio;
   appearance: auto;
 }
 
@@ -266,7 +263,6 @@ button,
 [type=reset],
 [type=submit] {
   cursor: pointer;
-  appearance: none;
   appearance: none;
 }
 
@@ -377,7 +373,7 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  appearance: button; /* 1 */
+  appearance: auto; /* 1 */
   font: inherit; /* 2 */
 }
 
@@ -2045,18 +2041,18 @@ a:hover {
 }
 
 .p-heig {
-  overflow-x: clip !important;
+  overflow-x: clip;
 }
 .p-heig__heading {
   text-align: center;
-  font-size: 30px !important;
+  font-size: 30px;
   letter-spacing: 2px;
-  font-weight: bold !important;
+  font-weight: bold;
   line-height: 1.8;
   padding-bottom: 5%;
 }
 .p-heig__heading--noSpace {
-  padding: 0% !important;
+  padding: 0%;
 }
 @media screen and (max-width: 1050px) {
   .p-heig__heading {
@@ -2121,7 +2117,7 @@ a:hover {
   letter-spacing: 1.5px;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
-  text-shadow: 1px 2px 3px #ffffff;
+  text-shadow: 1px 2px 3px #fff;
 }
 @media screen and (max-width: 599px) {
   .p-heig__intro__text {
@@ -2133,11 +2129,11 @@ a:hover {
 .p-heig__intro__em {
   color: #ed6a10;
   font-weight: bold;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 @media screen and (max-width: 599px) {
   .p-heig__intro__em {
-    font-size: 18px !important;
+    font-size: 18px;
   }
 }
 .p-heig__mv {
@@ -2216,11 +2212,11 @@ a:hover {
 }
 .p-heig__marker {
   background: linear-gradient(transparent 60%, #ffebb4 50%);
-  font-size: 30px !important;
+  font-size: 30px;
   letter-spacing: 2px;
   line-height: 1.8;
-  font-weight: bold !important;
-  color: #000 !important;
+  font-weight: bold;
+  color: #000;
 }
 @media screen and (max-width: 1050px) {
   .p-heig__marker {
@@ -2235,10 +2231,10 @@ a:hover {
 .p-heig__subMarker {
   background: linear-gradient(transparent 80%, #ffebb4 50%);
   font-size: 18px;
-  line-height: 1.3 !important;
+  line-height: 1.3;
   padding-top: 3%;
   font-weight: bold;
-  color: #000 !important;
+  color: #000;
 }
 @media screen and (max-width: 599px) {
   .p-heig__subMarker {
@@ -2323,7 +2319,7 @@ a:hover {
   }
 }
 .p-heig__reason__list {
-  padding: 0% 0 10% 0;
+  padding: 0% 0 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -2349,11 +2345,11 @@ a:hover {
   }
 }
 .p-heig__specification {
-  margin: 15% auto 10% auto;
+  margin: 15% auto 10%;
 }
 .p-heig__specification__block {
   background-color: #faf7f2;
-  padding: 7% 5% 10% 5%;
+  padding: 7% 5% 10%;
   position: relative;
   margin: 0 auto;
   margin-top: 10%;
@@ -2368,7 +2364,7 @@ a:hover {
 }
 @media screen and (max-width: 599px) {
   .p-heig__specification__block {
-    padding: 15% 3% 10% 3%;
+    padding: 15% 3% 10%;
     margin-top: 20%;
     width: 94%;
     min-width: 350px;
@@ -2448,7 +2444,7 @@ a:hover {
 }
 .p-heig__specification__gridText {
   font-size: 18px;
-  line-height: 1.3 !important;
+  line-height: 1.3;
   padding-top: 3%;
   font-weight: bold;
   text-align: center;
@@ -2469,7 +2465,7 @@ a:hover {
   aspect-ratio: 16/9;
   object-fit: cover;
 }
-.p-heig__specification__grid--2 {
+.p-heig__specification__grid--wide {
   display: flex;
   justify-content: space-between;
   padding-top: 10%;
@@ -2477,18 +2473,18 @@ a:hover {
   margin: 0 auto;
   flex-wrap: wrap;
 }
-.p-heig__specification__grid--2 .p-heig__specification__gridItem {
+.p-heig__specification__grid--wide .p-heig__specification__gridItem {
   width: 48%;
 }
 @media screen and (max-width: 599px) {
-  .p-heig__specification__grid--2Flush {
-    display: block !important;
+  .p-heig__specification__grid--wideFlush {
+    display: block;
   }
-  .p-heig__specification__grid--2Flush .p-heig__specification__gridItem {
+  .p-heig__specification__grid--wideFlush .p-heig__specification__gridItem {
     width: 100%;
   }
 }
-.p-heig__specification__grid--3 {
+.p-heig__specification__grid--mid {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2496,10 +2492,10 @@ a:hover {
   width: 100%;
   margin: 0 auto;
 }
-.p-heig__specification__grid--3 .p-heig__specification__gridItem {
+.p-heig__specification__grid--mid .p-heig__specification__gridItem {
   width: 30%;
 }
-.p-heig__specification__grid--4 {
+.p-heig__specification__grid--narrow {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -2507,11 +2503,11 @@ a:hover {
   width: 100%;
   margin: 0 auto;
 }
-.p-heig__specification__grid--4 .p-heig__specification__gridItem {
+.p-heig__specification__grid--narrow .p-heig__specification__gridItem {
   width: 23%;
 }
 @media screen and (max-width: 599px) {
-  .p-heig__specification__grid--4 .p-heig__specification__gridItem {
+  .p-heig__specification__grid--narrow .p-heig__specification__gridItem {
     width: 48%;
   }
 }
@@ -2548,8 +2544,8 @@ a:hover {
 .p-heig__specification__img--full {
   width: 100%;
   height: auto;
-  aspect-ratio: unset !important;
-  object-fit: contain !important;
+  aspect-ratio: unset;
+  object-fit: contain;
 }
 .p-heig__specification__label--left {
   position: absolute;
@@ -2634,7 +2630,7 @@ a:hover {
     gap: unset;
   }
 }
-.p-heig__specification__row--pt10 {
+.p-heig__specification__row--ptLoose {
   padding-top: 10% !important;
 }
 
@@ -3920,6 +3916,11 @@ a:hover {
     display: none;
   }
 }
+@media screen and (width >= 1051px) {
+  .u-none__pc--tab {
+    display: none;
+  }
+}
 @media screen and (width >= 1026px) {
   .u-none__pc--lg {
     display: none;
@@ -3927,6 +3928,11 @@ a:hover {
 }
 @media screen and (width >= 769px) {
   .u-none__pc--md {
+    display: none;
+  }
+}
+@media screen and (width >= 599px) {
+  .u-none__pc--sp {
     display: none;
   }
 }
@@ -3946,6 +3952,11 @@ a:hover {
     display: none;
   }
 }
+@media screen and (max-width: 1050px) {
+  .u-none__mobile--tab {
+    display: none;
+  }
+}
 @media screen and (max-width: 1025px) {
   .u-none__mobile--lg {
     display: none;
@@ -3953,6 +3964,11 @@ a:hover {
 }
 @media screen and (max-width: 768px) {
   .u-none__mobile--md {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .u-none__mobile--sp {
     display: none;
   }
 }
