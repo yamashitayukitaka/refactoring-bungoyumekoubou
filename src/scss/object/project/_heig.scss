@@ -14,11 +14,11 @@
     }
 
     @include mq(tab) {
-      font-size: max(3vw, 25px);
+      font-size: 25px;
     }
 
     @include mq(sp) {
-      font-size: max(4.5vw, 20px);
+      font-size: 20px;
     }
   }
 
@@ -181,11 +181,11 @@
     color: #000;
 
     @include mq(tab) {
-      font-size: max(3vw, 25px);
+      font-size: 25px;
     }
 
     @include mq(sp) {
-      font-size: max(3vw, 20px);
+      font-size: 20px;
     }
   }
 
@@ -237,8 +237,6 @@
       padding-top: 7%;
 
       @include mq(sp) {
-        font-size: inherit;
-        line-height: inherit;
         padding-top: 0;
       }
     }
@@ -339,12 +337,8 @@
       font-weight: bold;
       color: #ea6800;
 
-      @include mq(tab) {
-        font-size: min(2.6vw, 23px);
-      }
-
       @include mq(sp) {
-        font-size: max(4vw, 18px);
+        font-size: 18px;
         padding-top: 3%;
       }
     }
@@ -376,7 +370,7 @@
       color: #ea6800;
 
       @include mq(sp) {
-        font-size: max(4vw, 18px);
+        font-size: 18px;
       }
     }
 
