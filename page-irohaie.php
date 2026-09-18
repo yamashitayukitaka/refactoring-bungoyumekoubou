@@ -377,7 +377,7 @@ get_header();
 
   </section>
 
-  <section class="p-top__lineUp u-mb0">
+  <section class="c-lineUp u-mb0">
     <div class="l-content--large">
       <div class="u-center u-mb15">
         <h3 class="c-title--sectionLine">
@@ -388,26 +388,26 @@ get_header();
         <p class="c-title--orangeLine">あなたの「ゆめ」を叶える、特別なラインナップ</p>
       </div>
 
-      <ul class="p-top__lineUpRow__list">
-        <li class="p-top__lineUpRow__item">
+      <ul class="c-lineUp__list">
+        <li class="c-lineUp__item">
           <a href="<?php echo esc_url(home_url('heig')); ?>">
-            <figure class="p-top__lineUpRow__imgWrap"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group01.webp" alt=""></figure>
-            <span class="p-top__lineUpRow__tag">自由設計</span>
-            <p class="p-top__lineUpRow__txt">暮らしをもっと自由に</p>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group01.webp" alt=""></figure>
+            <span class="c-lineUp__tag">自由設計</span>
+            <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
-        <li class="p-top__lineUpRow__item">
+        <li class="c-lineUp__item">
           <a href="<?php echo esc_url(home_url('rireve')); ?>">
-            <figure class="p-top__lineUpRow__imgWrap"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group02.webp" alt=""></figure>
-            <span class="p-top__lineUpRow__tag">自由設計</span>
-            <p class="p-top__lineUpRow__txt">次世代のZEHハウス</p>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group02.webp" alt=""></figure>
+            <span class="c-lineUp__tag">自由設計</span>
+            <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
-        <li class="p-top__lineUpRow__item">
+        <li class="c-lineUp__item">
           <a href="<?php echo esc_url(home_url('irohaie')); ?>">
-            <figure class="p-top__lineUpRow__imgWrap"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group03.webp" alt=""></figure>
-            <span class="p-top__lineUpRow__tag">自由設計</span>
-            <p class="p-top__lineUpRow__txt">安心の定額制、なのに自由設計</p>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group03.webp" alt=""></figure>
+            <span class="c-lineUp__tag">自由設計</span>
+            <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>
         </li>
       </ul>

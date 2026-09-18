@@ -75,7 +75,7 @@
     margin: 0 auto;
   }
 
-  .p-top__lineUpRow__imgWrap {
+  .c-lineUp__media {
     aspect-ratio: 16/10;
   }
 
@@ -130,7 +130,7 @@
     z-index: 1;
   }
 
-  .p-top__lineUpRow__imgWrap {
+  .c-lineUp__media {
     aspect-ratio: 16/10;
   }
 
@@ -202,7 +202,7 @@
     z-index: 1;
   }
 
-  .p-top__lineUpRow__imgWrap {
+  .c-lineUp__media {
     aspect-ratio: 16/10;
   }
 
