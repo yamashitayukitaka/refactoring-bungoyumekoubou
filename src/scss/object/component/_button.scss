@@ -19,6 +19,15 @@
     color: #fff;
     font-weight: bold;
     padding: 0 4rem;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #ea6800;
+    transition: 0.5s;
+
+    &:hover {
+      color: #ea6800;
+      background: #fff;
+    }
   }
 
   &--bookingTime {

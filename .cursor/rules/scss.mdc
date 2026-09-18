@@ -32,12 +32,14 @@ alwaysApply: false
   　- デザインを見て他のページでも使用されることが確定していて、ある程度小さなグループのものを
       componentとする。接頭辞は.c-
     - 粒度の判断基準は「そのまま他サイトにも転用できるか」とする。
+    - 他サイトにも転用できない固有のものであってもページを横断する場合はcomponentにしてよい
   -project
     - componentにできないグループはprojectになる。おそらく大抵はページ単位で作成されるが、トップページ
       はセクションごとになることも多い。接頭辞は.p-
   -utility
+  　- u-mbはcomponentかまたは同じclassが同一ページにあり、下marginのみスタイルが異なる場合にのみ使用を許可する
     - 必ず記述するのはメディアクエリを利用して、PCのみ表示・スマホのみ表示という機能を実現するための
-     下記のスタイル。必要に応じて特定のmarginを確保するスタイルなども記述することがある。接頭辞は.u-
+    - 下記のスタイル。必要に応じて特定のmarginを確保するスタイルなども記述することがある。接頭辞は.u-
      
      例：utility.scss
 
@@ -135,6 +137,26 @@ alwaysApply: false
 　- class名にp-about_list__item--1,p-about_list__1やp-about_list__item--twoや  p-about_list__twoなどのように意味を持たない連番としての数字使用を禁止する。数字ではなく推測可能な　英単語を使用するものとする
   -　例：p-about_list__item--wide
 
+### 汎用語の扱い
+- `content` は意味がぶれやすいため、新規では原則使用しない。
+- 幅を縛る枠は `container` / `inner`、または既存の `l-content--*` を使う。
+- セクションや部品の本体は `body` / `panel` を使う。
+- `wrap` は「包む以外の意味がない箱」に限定し、多用しない。
+- ページ固有の Element は構造語（`item` / `txt` / `wrap`）より、役割が分かる語（`about` / `media` / `accent` / `cta` など）を優先する。
+- 共通 UI（`l-header` / `l-footer` / list 系）では、必要に応じて簡潔な構造語（`list` / `item` / `link` / `img`）を使ってよい。
+
+### レガシークラスの扱い
+- レガシークラスは残さず、該当する `p-*` / `c-*` の BEM にスタイルを移してから HTML から削除する。
+- タグ直スタイル・`!important` は持ち込まない。
+- 他ページ共有のレガシーは、削除前に影響範囲を確認する。
+
+### Modifier の付け方
+- Modifier は単体で使わず、必ず対象の Block / Element とセットで付与する。
+  - 例: `p-irohaie__features__media p-irohaie__features__media--seismicTop`
+- Modifier には差分スタイルのみを書く。共通スタイルは Element 本体に残す。
+- HTML を1クラスにするためだけに `@extend` で Element を取り込まない。
+- 差分が大きく「同じ Element の亜種」と言えない場合は、Modifier ではなく別 Element にする。
+- 例: `__media--seismicTop` ではなく `__seismicMedia`
 
 ## SCSS記法
 - *.scssではBlock / Element / Modifierをそれぞれ `&__` / `&--` で接続する。
@@ -172,6 +194,9 @@ alwaysApply: false
 - 見た目を変えないことを最優先する
 - 不要なセレクタのみ削除する
 - 既存HTMLを変更する場合は理由を明示する
+- レガシーclassをBEMに統合出来る場合は、スタイルをBEM側に吸収させて、レガシーclassを削除する。!important やタグ直指定は持ち込まない。
+- 他ページでも使っているレガシーは、影響確認してから削除
+- 
 
 ## JavaScriptフック
 - JavaScriptから参照する要素には js- 接頭辞を使用する。
