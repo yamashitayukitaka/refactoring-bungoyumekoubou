@@ -376,20 +376,88 @@
 
 }
 
-@media screen and (min-width:1051px) {
+@media screen and (min-width:1051px) {
+
+
+
 
   .rireve_txt {
     font-family: "Noto Serif JP",serif !important;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .p-staff__production__desc {
     width: 50% !important;
     aspect-ratio: 16/10 !important;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .heig_reason_wrap {
     padding: 7% 15%;
-  }
+  }
+
+
 
   .heig_reason_box {
     padding: 0%0 10%0;
@@ -440,18 +508,44 @@
     font-size: 15px;
     line-height: 2;
     padding-top: 7%;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .full_img {
     width: 100%;
     height: auto;
     aspect-ratio: unset !important;
     object-fit: contain !important;
-  }
+  }
+
 
   .top_m_3_box {
     margin: 0 20%;
-  }
+  }
+
+
+
+
+
+
 
   .mersystem_title_box {
     display: flex;
@@ -856,90 +950,21 @@
     width: 100% !important;
   }
 
-  .service_irohaie {
-    margin: 0 auto;
-    width: 70%;
-    min-width: 950px;
-  }
 
-  .irohaie_top {
-    display: flex;
-    justify-content: center;
-    height: auto !important;
-    height: 100% !important;
-  }
 
-  .irohaie_top_left {
-    width: 50%;
-  }
 
-  .irohaie_top_left div:first-child {
-    margin: 0 auto;
-    width: 70%;
-    margin-left: 19%;
-    padding-top: 3%;
-  }
 
-  .irohaie_top_left div:last-child {
-    margin: 0 auto;
-    width: 40%;
-    margin-left: 30%;
-    padding-top: 3%;
-    transform: scale(-1,1);
-  }
 
-  .irohaie_top_right {
-    width: 50%;
-    height: auto;
-  }
 
-  .irohaie_top_right img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
 
-  .iroha-content-img {
-    width: 35%;
-  }
 
-  .iroha-bottom-img {
-    width: 40%;
-  }
 
-  .irohaie_service_box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
-    padding: 3% 5%;
-  }
 
-  .irohaie_service_box div {
-    width: 30%;
-    padding-bottom: 5%;
-  }
 
-  .irohaie_taisin_img_top {
-    padding: 5%0 2%0;
-  }
 
-  .irohaie_taisin_img {
-    width: 70%;
-    min-width: 600px;
-  }
 
-  .iroha__point_item {
-    width: 24%;
-  }
 
-  .point_item-img {
-    width: 100%;
-  }
 
-  .irohaie_des {
-    padding-top: 0%;
-  }
 
   .concept__policy1-subttl {
     line-height: 1.5;
@@ -1007,17 +1032,81 @@
 @media only screen and (min-width:599px) and (max-width:1050px) {
   .sp_tab_t_10 {
     margin-top: 10%;
-  }
+  }
+
+
 
   .rireve_txt {
     font-family: "Noto Serif JP",serif !important;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .heig_reason_wrap {
     padding: 7% 5%;
     max-width: 700px;
     margin: 0 auto;
-  }
+  }
+
+
 
   .heig_reason_box {
     padding: 0%0 10%0;
@@ -1068,14 +1157,40 @@
     font-size: 15px;
     line-height: 2;
     padding-top: 7%;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .full_img {
     width: 100%;
     height: auto;
     aspect-ratio: unset !important;
     object-fit: contain !important;
-  }
+  }
+
+
+
+
+
+
+
 
   .mersystem_title_box {
     display: flex;
@@ -1489,87 +1604,24 @@
     width: 100% !important;
   }
 
-  .service_irohaie {
-    margin: 0 auto;
-    width: 90%;
-    min-width: 500px;
-  }
 
   .l_content_middle_70_sp {
     padding-left: 10% !important;
     padding-right: 10% !important;
   }
 
-  .irohaie_top {
-    display: flex;
-    justify-content: center;
-    min-height: 400px;
-    align-items: center;
-  }
 
-  .irohaie_top_left {
-    width: 70%;
-  }
 
-  .irohaie_top_left div:first-child {
-    margin: 0 auto;
-    width: 77%;
-    margin-left: 12%;
-    padding-top: 3%;
-  }
 
-  .irohaie_top_left div:last-child {
-    margin: 0 auto;
-    width: 45%;
-    margin-left: 25%;
-    padding-top: 3%;
-    transform: scale(-1,1);
-  }
 
-  .irohaie_top_right {
-    width: 50%;
-    height: 100%;
-  }
 
-  .irohaie_top_right img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
 
-  .iroha-content-img {
-    width: 35%;
-  }
 
-  .iroha-bottom-img {
-    width: 40%;
-  }
 
-  .irohaie_service_box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
-    padding: 3% 5%;
-  }
 
-  .irohaie_service_box div {
-    width: 30%;
-    padding-bottom: 5%;
-  }
 
-  .irohaie_taisin_img_top {
-    padding: 5%0 2%0;
-  }
 
-  .irohaie_taisin_img {
-    width: 70%;
-    min-width: 500px;
-  }
 
-  .iroha__point_item {
-    width: 40%;
-  }
 
   .l_content_middle_60_sp {
     padding-left: 10% !important;
@@ -1581,13 +1633,7 @@
     padding-right: 10% !important;
   }
 
-  .point_item-img {
-    width: 100%;
-  }
 
-  .irohaie_des {
-    padding-top: 0%;
-  }
 
   .concept__policy1-subttl {
     line-height: 1.5;
@@ -1665,17 +1711,88 @@
 
   .sp_tab_t_10 {
     margin-top: 10%;
-  }
+  }
+
+
 
   .rireve_txt {
     font-family: "Noto Serif JP",serif !important;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .heig_reason_wrap {
     padding: 7% 5%;
     max-width: 700px;
     margin: 0 auto;
-  }
+  }
+
+
 
   .heig_reason_box {
     padding: 0%0 10%0;
@@ -1728,14 +1845,42 @@
     height: auto;
     text-align: center;
     margin: 0 auto;
-  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .full_img {
     width: 100%;
     height: auto;
     aspect-ratio: unset !important;
     object-fit: contain !important;
-  }
+  }
+
+
+
+
+
+
+
+
+
 
   .mersystem_title_box {
     display: flex;
@@ -2166,93 +2311,23 @@
     width: 100% !important;
   }
 
-  .txt_center {
-    text-align: center !important;
-  }
-
-  .service_irohaie {
-    margin: 0 auto;
-    width: 100%;
-    min-width: 350px;
-  }
-
   .l_content_middle_70_sp {
     padding-left: 5% !important;
     padding-right: 5% !important;
   }
 
-  .irohaie_top_left {
-    width: 100%;
-  }
 
-  .irohaie_top_left div:first-child {
-    margin: 0 auto;
-    width: 80%;
-    padding-top: 5%;
-  }
 
-  .irohaie_top_left div:last-child {
-    margin: 0 auto;
-    width: 55%;
-    padding-top: 6%;
-    transform: scale(-1,1);
-  }
 
-  .irohaie_top_right {
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-  }
 
-  .irohaie_top_right img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 10px;
-  }
 
-  .iroha-content-img {
-    width: 63%;
-    margin: 0 auto;
-  }
 
-  .iroha-contain-txt {
-    text-decoration: #ed6a10 wavy underline;
-  }
 
-  .iroha-bottom-img {
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 5%;
-  }
 
-  .irohaie_service_box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5%;
-    padding: 3% 5%;
-  }
 
-  .irohaie_service_box div {
-    width: 30%;
-    padding-bottom: 5%;
-  }
 
-  .irohaie_taisin_img_top {
-    padding: 5%0 2%0;
-  }
 
-  .irohaie_taisin_img {
-    width: 70%;
-    min-width: 350px;
-  }
 
-  .iroha__point_item {
-    width: 40%;
-  }
 
   .l_content_middle_60_sp {
     padding-left: 2% !important;
@@ -2264,14 +2339,7 @@
     padding-right: 3% !important;
   }
 
-  .point_item-img {
-    width: 100%;
-  }
 
-  .irohaie_des {
-    padding-top: 0%;
-    margin: 0 2%;
-  }
 
   .concept__policy1-subttl {
     line-height: 1.5;
