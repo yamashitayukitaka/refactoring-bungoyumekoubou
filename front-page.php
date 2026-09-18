@@ -202,7 +202,7 @@ get_header();
     <?php endif;
     wp_reset_postdata(); ?>
     <div class="u-center">
-      <a href="<?php echo esc_url(home_url('works')); ?>" class="c-button--page">施工事例一覧へ</a>
+      <a href="<?php echo esc_url(home_url('works')); ?>" class="c-button--outline">施工事例一覧へ</a>
     </div>
   </section>
   <section class="u-mb80">
@@ -245,7 +245,7 @@ get_header();
       </p>
     </div>
     <div class="u-center u-mb30">
-      <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--page">スタッフ一覧へ</a>
+      <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--outline">スタッフ一覧へ</a>
     </div>
     <?php
     $args = array(
@@ -303,7 +303,7 @@ get_header();
   </section>
 
   <div class="u-center u-mb50">
-    <a href="<?php echo esc_url(home_url('property')); ?>" class="c-button--page">土地・物件情報一覧へ</a>
+    <a href="<?php echo esc_url(home_url('property')); ?>" class="c-button--outline">土地・物件情報一覧へ</a>
   </div>
 
   <!--
