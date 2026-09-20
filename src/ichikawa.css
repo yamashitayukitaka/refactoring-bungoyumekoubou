@@ -887,9 +887,6 @@
   .panel-active {
     display:block;
   }
-  #design1 {
-    margin-top:18rem;
-  }
   .design__paint1_container {
     display:flex;
     justify-content:center;
@@ -964,10 +961,7 @@
     margin-right:-2rem;
     box-shadow:5px 5px 5px rgba(128,128,128,0.5);
   }
-  .design__paint2_content_ttl {
-    width:12.2rem;
-    margin-bottom:1rem;
-  }
+  
   .design__paint2_content_txt {
     font-size:1.6rem;
     line-height:3.1rem;
@@ -1001,12 +995,8 @@
   .design-wrapper {
     background-color:white;
   }
-  .cost_line {
-    font-size:2.4rem;
-  }
-  .cost_line span {
-    font-size:2.4rem;
-  }
+  
+  
   .samplelogo__three_items_renovation {
     display:flex;
     gap:4.4rem;
@@ -2692,9 +2682,6 @@
   .panel-active {
     display:block;
   }
-  #design1 {
-    margin-top:18rem;
-  }
   .design__paint1_container {
     padding:0 6rem;
     margin-top:10rem;
@@ -2764,10 +2751,7 @@
     margin-right:-2rem;
     box-shadow:5px 5px 5px rgba(128,128,128,0.5);
   }
-  .design__paint2_content_ttl {
-    width:12.2rem;
-    margin-bottom:1rem;
-  }
+  
   .design__paint2_content_txt {
     font-size:15px;
     letter-spacing:0.4px;
@@ -2803,12 +2787,8 @@
   .design-wrapper {
     background-color:white;
   }
-  .cost_line {
-    font-size:2.4rem;
-  }
-  .cost_line span {
-    font-size:2.4rem;
-  }
+  
+  
   .samplelogo__three_items_renovation {
     display:flex;
     gap:4.4rem;
@@ -4536,9 +4516,6 @@
   .panel-active {
     display:block;
   }
-  #design1 {
-    margin-top:18rem;
-  }
   .design__paint1_container {
     padding:0 5%;
     margin-top:10%;
@@ -4608,10 +4585,7 @@
     margin-right:-2rem;
     box-shadow:5px 5px 5px rgba(128,128,128,0.5);
   }
-  .design__paint2_content_ttl {
-    width:12.2rem;
-    margin-bottom:1rem;
-  }
+  
   .design__paint2_content_txt {
     line-height:1.8;
     font-size:2rem;
@@ -4647,12 +4621,8 @@
   .design-wrapper {
     background-color:white;
   }
-  .cost_line {
-    font-size:2.4rem;
-  }
-  .cost_line span {
-    font-size:2.4rem;
-  }
+  
+  
   .samplelogo__three_items_renovation {
     display:flex;
     gap:3rem;
