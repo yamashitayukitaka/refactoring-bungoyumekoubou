@@ -1,0 +1,430 @@
+.p-design {
+  &__intro {
+    position: relative;
+    padding: 8% 10% 12%;
+    width: 100%;
+    background-image:
+      url('../img/illustration/family_img.webp'),
+      url('../img/illustration/yume_img9.webp'),
+      url('../img/illustration/house.webp');
+    background-repeat: no-repeat;
+    background-size: 20% auto, 8% auto, 10% auto;
+    background-position:
+      right 9% top 0,
+      left 10% bottom 0,
+      left 18% bottom 2%;
+
+    @include mq(tab) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    @include mq(sp) {
+      margin-bottom: 5%;
+      padding-top: 30%;
+      padding-bottom: 8%;
+      background-size: 30% auto, 14% auto, 22% auto;
+      background-position:
+        right 2% top 2%,
+        left 25% top 20%,
+        left 3% top 8%;
+    }
+
+    &__lead {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__nav {
+    width: 70%;
+    min-width: 900px;
+    height: auto;
+    background-color: $beige4;
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 3.2rem 8rem 4.5rem;
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+      padding: 3.2rem 6rem 4.5rem;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 0;
+      padding: 5% 2% 7%;
+    }
+
+    &__heading {
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-align: center;
+      color: $pureBlack;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4.4rem;
+      gap: 6rem 4rem;
+
+      @include mq(tab) {
+        gap: 4rem;
+      }
+
+      @include mq(sp) {
+        gap: 2rem;
+      }
+    }
+
+    &__link {
+      width: 45%;
+      text-decoration: none;
+    }
+
+    &__card {
+      border: 1px solid $red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      padding: 1rem;
+    }
+
+    &__number {
+      width: 14rem;
+      border-bottom: 1px solid $pureBlack;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      text-align: center;
+      padding-bottom: 0.5rem;
+    }
+
+    &__numberImg {
+      width: 65%;
+      height: auto;
+    }
+
+    &__label {
+      color: $pureBlack;
+      font-size: 2rem;
+      line-height: 31.9px;
+      text-align: center;
+      padding-top: 0.5rem;
+    }
+
+    &__emphasis {
+      color: $red;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  &__points {
+    background-color: $white;
+  }
+
+  &__point {
+    position: relative;
+    margin-bottom: 17rem;
+
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
+
+    &--lead {
+      margin-top: 18rem;
+    }
+
+    &--last {
+      margin-bottom: 15%;
+    }
+
+    &__hero {
+      position: relative;
+    }
+
+    &__media {
+      width: 60%;
+
+      @include mq(tab) {
+        width: 80%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+
+      &--right {
+        margin-left: auto;
+
+        @include mq(tab) {
+          width: 90%;
+        }
+
+        @include mq(sp) {
+          width: 100%;
+        }
+      }
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__panel {
+      position: absolute;
+      width: 50%;
+      z-index: 10;
+      background-color: $white;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+      border-top: 4px solid $red;
+      padding: 3.5%;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(tab) {
+        position: relative;
+        width: 75%;
+        top: auto;
+        transform: none;
+        margin-top: -13%;
+      }
+
+      @include mq(sp) {
+        width: 88%;
+        padding: 5%;
+      }
+
+      &--left {
+        left: 0;
+
+        @include mq(tab) {
+          left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+        }
+      }
+
+      &--right {
+        right: 0;
+
+        @include mq(tab) {
+          right: auto;
+          margin-left: auto;
+          margin-bottom: 10%;
+        }
+      }
+    }
+
+    &__label {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 3.2rem;
+      color: #333;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+
+    &__headline {
+      font-size: 2.6rem;
+      text-underline-offset: -9px;
+      letter-spacing: 6.5px;
+      font-weight: 700;
+    }
+
+    &__emphasis {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: $orange;
+    }
+
+    &__text {
+      padding-top: 2rem;
+      font-size: 1.7rem;
+      color: $pureBlack;
+      letter-spacing: 0.3px;
+      line-height: 1.8;
+      font-weight: 400;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      @include mq(sp) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__detail {
+    &--spaced {
+      @include mq(tab) {
+        margin-bottom: 10%;
+      }
+    }
+
+    &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      padding: 0 6rem;
+      margin-top: 10rem;
+
+      @include mq(tab) {
+        display: block;
+      }
+
+      @include mq(sp) {
+        padding: 0 5%;
+        margin-top: 10%;
+      }
+    }
+
+    &__media {
+      width: 45.4%;
+      z-index: 0;
+      position: relative;
+
+      @include mq(tab) {
+        width: 80%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+
+      &--left {
+        @include mq(tab) {
+          margin-right: auto;
+        }
+      }
+
+      &--right {
+        @include mq(tab) {
+          margin-left: auto;
+        }
+      }
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      background-color: #fefbf8;
+      padding: 3rem;
+      position: relative;
+      z-index: 10;
+      width: 46%;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+
+      @include mq(tab) {
+        width: 65%;
+        margin-top: -25%;
+      }
+
+      @include mq(sp) {
+        width: 100vw;
+        margin-top: -5%;
+        margin-left: -5vw;
+      }
+
+      &--afterMedia {
+        margin-left: -2rem;
+
+        @include mq(tab) {
+          margin-left: auto;
+        }
+      }
+
+      &--beforeMedia {
+        margin-right: -2rem;
+
+        @include mq(tab) {
+          margin-right: auto;
+          margin-bottom: 10%;
+        }
+      }
+    }
+
+    &__pointLabel {
+      margin-bottom: 1rem;
+      width: 12.2rem;
+    }
+
+    &__pointLabelImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__subtit {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      @include mq(tab) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+      }
+    }
+
+    &__emphasis {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $orange;
+
+      @include mq(tab) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+      }
+    }
+
+    &__link {
+      color: #2190ca;
+      font-weight: 700;
+    }
+
+    &__bodyText {
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      letter-spacing: 1.8px;
+
+      @include mq(tab) {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+      }
+
+      @include mq(sp) {
+        font-size: 2rem;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    &__cta {
+      display: grid;
+      place-content: center;
+      padding-top: 3%;
+    }
+  }
+
+  &__divider {
+    border-bottom: 1px solid rgb(189 189 189);
+    margin-bottom: 7%;
+  }
+}

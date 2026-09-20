@@ -158,6 +158,9 @@ alwaysApply: false
 - 差分が大きく「同じ Element の亜種」と言えない場合は、Modifier ではなく別 Element にする。
 - 例: `__media--seismicTop` ではなく `__seismicMedia`
 
+### 位置を表す Modifier
+- レイアウトの左右は `--left` / `--right` を使う。
+
 ## SCSS記法
 - *.scssではBlock / Element / Modifierをそれぞれ `&__` / `&--` で接続する。
 
@@ -325,3 +328,7 @@ alwaysApply: false
 ## line-height
 -単位なしとする。 
 -font-sizeとheightを同じサイズに指定)をする場合など、意図を持って指定する場合はpx等も許可。
+
+## 装飾用画像
+- <figure> / <img> にせず、CSS の background（または疑似要素）で扱う
+- <figure> は本文を補足する図版に限る
