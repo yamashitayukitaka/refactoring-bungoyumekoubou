@@ -12,7 +12,7 @@
     "format:check": "prettier --check .",
     "lint:scss": "stylelint \"src/scss/**/*.scss\"",
     "lint:scss:fix": "stylelint \"src/scss/**/*.scss\" --fix",
-    "markup": "markuplint"
+    "markup": "markuplint \"**/*.{html,php}\""
   },
   "repository": {
     "type": "git",
