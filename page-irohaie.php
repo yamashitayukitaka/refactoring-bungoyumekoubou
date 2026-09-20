@@ -372,7 +372,7 @@ get_header();
     </ul>
 
     <div class="u-center u-mb150">
-      <a class="c-button--page" href="<?php echo esc_url(home_url('/')); ?>works-type/irohaie">一覧を見る</a>
+      <a class="c-button--outline" href="<?php echo esc_url(home_url('/')); ?>works-type/irohaie">一覧を見る</a>
     </div>
 
   </section>

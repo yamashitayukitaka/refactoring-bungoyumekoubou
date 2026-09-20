@@ -31,7 +31,7 @@
     wp_reset_postdata();?>
 
   <div class = "u-center">
-    <a href = "<?php echo esc_url (home_url('works') ); ?>" class = "c-button--page">施工事例一覧へ</a>
+    <a href = "<?php echo esc_url (home_url('works') ); ?>" class = "c-button--outline">施工事例一覧へ</a>
   </div>
 
 </section>
@@ -75,6 +75,6 @@
     wp_reset_postdata();?>
   </ul>
   <div class = "u-center">
-    <a href = "<?php echo esc_url (home_url('xo_event') ); ?>" class = "c-button--page">イベント一覧へ</a>
+    <a href = "<?php echo esc_url (home_url('xo_event') ); ?>" class = "c-button--outline">イベント一覧へ</a>
   </div>
 </section>

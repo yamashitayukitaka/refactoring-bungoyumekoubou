@@ -236,7 +236,7 @@ get_header();
     <?php endif; ?>
 
     <div class = "u-center">
-      <a href = "#contact" class = "c-button--page">お問い合わせ</a>
+      <a href = "#contact" class = "c-button--outline">お問い合わせ</a>
     </div>
 
   </section>

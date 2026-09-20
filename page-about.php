@@ -56,7 +56,7 @@ get_header();
   <?php get_template_part('template-parts/staff-loop'); ?>
 
   <div class="u-center u-mb150">
-    <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--page">
+    <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--outline">
       一覧を見る
     </a>
   </div>
