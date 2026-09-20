@@ -362,10 +362,11 @@
   font-size: 2.4rem;
 }
 
-// 色・太字のみ。font-size は親に持たせる（.u-orange からの段階移行用）
+// 色・太字のみ。font-size は親に持たせる（* リセット対策で inherit 必須）
 .u-textOrange {
   color: $orange;
   font-weight: bold;
+  font-size: inherit;
 }
 
 .u-orange--large {

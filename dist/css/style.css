@@ -4336,6 +4336,7 @@ a:hover {
 .p-design__nav__emphasis {
   color: #ed6a10;
   font-weight: bold;
+  font-size: inherit;
 }
 .p-design__points {
   background-color: #fff;
@@ -6282,6 +6283,7 @@ a:hover {
 .u-textOrange {
   color: #ea6800;
   font-weight: bold;
+  font-size: inherit;
 }
 
 .u-orange--large {
