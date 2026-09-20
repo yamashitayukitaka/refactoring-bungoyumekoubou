@@ -120,7 +120,6 @@
 
     &__emphasis {
       color: $red;
-      font-size: 2rem;
       font-weight: bold;
     }
   }
@@ -238,12 +237,6 @@
       text-underline-offset: -9px;
       letter-spacing: 6.5px;
       font-weight: 700;
-    }
-
-    &__emphasis {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: $orange;
     }
 
     &__text {
@@ -376,17 +369,6 @@
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
-
-      @include mq(tab) {
-        font-size: 18px;
-        letter-spacing: 0.8px;
-      }
-    }
-
-    &__emphasis {
-      font-size: 2rem;
-      font-weight: 700;
-      color: $orange;
 
       @include mq(tab) {
         font-size: 18px;

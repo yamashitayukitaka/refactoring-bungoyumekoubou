@@ -362,6 +362,12 @@
   font-size: 2.4rem;
 }
 
+// 色・太字のみ。font-size は親に持たせる（.u-orange からの段階移行用）
+.u-textOrange {
+  color: $orange;
+  font-weight: bold;
+}
+
 .u-orange--large {
   color: $orange;
   font-weight: bold;

@@ -4335,7 +4335,6 @@ a:hover {
 }
 .p-design__nav__emphasis {
   color: #ed6a10;
-  font-size: 2rem;
   font-weight: bold;
 }
 .p-design__points {
@@ -4449,11 +4448,6 @@ a:hover {
   text-underline-offset: -9px;
   letter-spacing: 6.5px;
   font-weight: 700;
-}
-.p-design__point__emphasis {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #ea6800;
 }
 .p-design__point__text {
   padding-top: 2rem;
@@ -4584,17 +4578,6 @@ a:hover {
 }
 @media screen and (max-width: 1050px) {
   .p-design__detail__subtit {
-    font-size: 18px;
-    letter-spacing: 0.8px;
-  }
-}
-.p-design__detail__emphasis {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #ea6800;
-}
-@media screen and (max-width: 1050px) {
-  .p-design__detail__emphasis {
     font-size: 18px;
     letter-spacing: 0.8px;
   }
@@ -6294,6 +6277,11 @@ a:hover {
   color: #ea6800;
   font-weight: bold;
   font-size: 2.4rem;
+}
+
+.u-textOrange {
+  color: #ea6800;
+  font-weight: bold;
 }
 
 .u-orange--large {

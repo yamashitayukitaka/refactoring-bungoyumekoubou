@@ -26,8 +26,8 @@ get_header();
       </h3>
       <div>
         <div>
-          <p class="c-title--orangeLine p-design__intro__lead"><span class="u-orange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
-              <span class="u-orange">デザイン</span>のこだわり<br>
+          <p class="c-title--orangeLine p-design__intro__lead"><span class="u-textOrange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
+              <span class="u-textOrange">デザイン</span>のこだわり<br>
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ get_header();
   <!-- メニュー -->
   <section class="p-design__nav">
     <div class="p-design__nav__heading">
-      <span class="u-orange">豊後夢工房</span>がこだわる<span class="u-orange">デザイン</span>へのこだわり
+      <span class="u-textOrange">豊後夢工房</span>がこだわる<span class="u-textOrange">デザイン</span>へのこだわり
     </div>
     <div class="p-design__nav__list">
       <a href="#design1" class="p-design__nav__link">
@@ -115,8 +115,8 @@ get_header();
           </h3>
           <div>
             <p class="c-title--orangeLine p-design__point__headline">
-              <span class="p-design__point__emphasis">家族の暮らし</span>に合わせた<br>
-                <span class="p-design__point__emphasis">動線</span>をつくるデザイン
+              <span class="u-textOrange">家族の暮らし</span>に合わせた<br>
+                <span class="u-textOrange">動線</span>をつくるデザイン
             </p>
           </div>
           <?php if (!empty($design['txt'])) : ?>
@@ -138,7 +138,7 @@ get_header();
               <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
-              <span class="p-design__detail__emphasis">家事らく</span>動線
+              <span class="u-textOrange">家事らく</span>動線
             </p>
             <?php if (!empty($design['point_txt_one'])) : ?>
               <div class="p-design__detail__bodyText">
@@ -160,7 +160,7 @@ get_header();
               <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
-              <span class="p-design__detail__emphasis">子育て</span>動線
+              <span class="u-textOrange">子育て</span>動線
             </p>
             <?php if (!empty($design['point_txt_two'])) : ?>
               <div class="p-design__detail__bodyText">
@@ -199,7 +199,7 @@ get_header();
           </h3>
           <div>
             <p class="c-title--orangeLine u-mb10 p-design__point__headline">
-              <span class="p-design__point__emphasis">住む人らしさ</span>を<br>
+              <span class="u-textOrange">住む人らしさ</span>を<br>
                 デザインする
             </p>
           </div>
@@ -223,7 +223,7 @@ get_header();
               <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
-              <span class="p-design__detail__emphasis">こんなお家がいいな</span>を<br>
+              <span class="u-textOrange">こんなお家がいいな</span>を<br>
               楽しく共有
             </p>
             <?php if (!empty($design['point_txt_one'])) : ?>
@@ -258,8 +258,8 @@ get_header();
           </h3>
           <div>
             <p class="c-title--orangeLine p-design__point__headline">
-              <span class="p-design__point__emphasis">太陽</span>と<span class="p-design__point__emphasis">自然</span>の恵みを生かし、<br class="u-none__mobile--sp">
-                <span class="p-design__point__emphasis">快適</span>と<span class="p-design__point__emphasis">エネルギー</span>をつくる
+              <span class="u-textOrange">太陽</span>と<span class="u-textOrange">自然</span>の恵みを生かし、<br class="u-none__mobile--sp">
+                <span class="u-textOrange">快適</span>と<span class="u-textOrange">エネルギー</span>をつくる
             </p>
           </div>
           <?php if (!empty($design['txt'])) : ?>
@@ -282,8 +282,8 @@ get_header();
             </div>
             <div>
               <p class="p-design__detail__subtit">
-                <span class="p-design__detail__emphasis">心地よい風</span>と、<span class="p-design__detail__emphasis">自然光</span>が<br>
-                家全体に<span class="p-design__detail__emphasis">行き渡る</span>空間デザイン
+                <span class="u-textOrange">心地よい風</span>と、<span class="u-textOrange">自然光</span>が<br>
+                家全体に<span class="u-textOrange">行き渡る</span>空間デザイン
               </p>
             </div>
             <?php if (!empty($design['point_txt_one'])) : ?>
@@ -306,8 +306,8 @@ get_header();
               <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
-              <span class="p-design__detail__emphasis">エネルギー効率</span>を<br>
-              <span class="p-design__detail__emphasis">最大化</span>するデザイン
+              <span class="u-textOrange">エネルギー効率</span>を<br>
+              <span class="u-textOrange">最大化</span>するデザイン
             </p>
             <?php if (!empty($design['point_txt_two'])) : ?>
               <div class="p-design__detail__bodyText">
@@ -349,7 +349,7 @@ get_header();
           </h3>
           <div>
             <p class="c-title--orangeLine u-mb10 p-design__point__headline">
-              <span class="p-design__point__emphasis">メンテナンス</span><br>
+              <span class="u-textOrange">メンテナンス</span><br>
                 しやすいデザイン
             </p>
           </div>
@@ -374,7 +374,7 @@ get_header();
             </div>
             <div>
               <p class="u-mb10 p-design__detail__subtit">
-                <span class="p-design__detail__emphasis">故障時</span>にもすぐに<span class="p-design__detail__emphasis">修理</span>しやすく
+                <span class="u-textOrange">故障時</span>にもすぐに<span class="u-textOrange">修理</span>しやすく
               </p>
             </div>
             <?php if (!empty($design['point_txt_one'])) : ?>
