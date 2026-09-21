@@ -1,4 +1,5 @@
 <?php
+// Template Name: cost
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -115,29 +116,29 @@ get_header();
       $cost = get_field('cost_one');
       if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
-      <div class="concept__policy1">
-        <?php if (!empty($cost['img'])) : ?>
-          <div class="design-right-image">
-            <img src="<?php echo esc_url($cost['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy2-content">
-          <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
-          </div>
-          <div>
-            <p class="c-title--orangeLine concept__policy1-mainttl"><span class="marker">
-                <span class="u-orange">経済的な暮らし</span>を<br>
-                サポートする家づくり</span>
-            </p>
-          </div>
-          <?php if (!empty($cost['txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($cost['txt']); ?>
+        <div class="concept__policy1">
+          <?php if (!empty($cost['img'])) : ?>
+            <div class="design-right-image">
+              <img src="<?php echo esc_url($cost['img']); ?>" class="img_shadow">
             </div>
           <?php endif; ?>
+          <div class="concept__policy2-content">
+            <div class="design__paint1_content_ttl">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
+            </div>
+            <div>
+              <p class="c-title--orangeLine concept__policy1-mainttl"><span class="marker">
+                  <span class="u-orange">経済的な暮らし</span>を<br>
+                  サポートする家づくり</span>
+              </p>
+            </div>
+            <?php if (!empty($cost['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo wp_kses_post($cost['txt']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
-      </div>
       <?php endif; ?>
     </div>
 
@@ -192,30 +193,30 @@ get_header();
       $cost = get_field('cost_two');
       if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
-      <div class="concept__policy1">
-        <?php if (!empty($cost['img'])) : ?>
-          <div class="design-left-image">
-            <img src="<?php echo esc_url($cost['img']); ?>" alt="" class="img_shadow">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy1-content">
-
-          <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
-          </div>
-          <div>
-            <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl">
-              <span class="marker">
-                充実した<span class="u-orange">標準設備</span></span>
-            </p>
-          </div>
-          <?php if (!empty($cost['txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($cost['txt']); ?>
+        <div class="concept__policy1">
+          <?php if (!empty($cost['img'])) : ?>
+            <div class="design-left-image">
+              <img src="<?php echo esc_url($cost['img']); ?>" alt="" class="img_shadow">
             </div>
           <?php endif; ?>
+          <div class="concept__policy1-content">
+
+            <div class="design__paint1_content_ttl">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
+            </div>
+            <div>
+              <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl">
+                <span class="marker">
+                  充実した<span class="u-orange">標準設備</span></span>
+              </p>
+            </div>
+            <?php if (!empty($cost['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo wp_kses_post($cost['txt']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
-      </div>
       <?php endif; ?>
 
 
@@ -276,31 +277,31 @@ get_header();
       $cost = get_field('cost_three');
       if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
-      <div class="concept__policy1 cost-three">
-        <?php if (!empty($cost['img'])) : ?>
-          <div class="design-right-image">
-            <img src="<?php echo esc_url($cost['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy2-content">
-
-          <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/common/point3.webp'); ?>">
-          </div>
-          <div>
-            <p class="c-title--orangeLine concept__policy1-mainttl">
-              <span class="marker">
-                <span class="u-orange">ワンストップ</span>での<br>
-                サポート体制</span>
-            </p>
-          </div>
-          <?php if (!empty($cost['txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($cost['txt']); ?>
+        <div class="concept__policy1 cost-three">
+          <?php if (!empty($cost['img'])) : ?>
+            <div class="design-right-image">
+              <img src="<?php echo esc_url($cost['img']); ?>" class="img_shadow">
             </div>
           <?php endif; ?>
+          <div class="concept__policy2-content">
+
+            <div class="design__paint1_content_ttl">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point3.webp'); ?>">
+            </div>
+            <div>
+              <p class="c-title--orangeLine concept__policy1-mainttl">
+                <span class="marker">
+                  <span class="u-orange">ワンストップ</span>での<br>
+                  サポート体制</span>
+              </p>
+            </div>
+            <?php if (!empty($cost['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo wp_kses_post($cost['txt']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
-      </div>
       <?php endif; ?>
 
       <div class="design__paint1">
@@ -351,31 +352,31 @@ get_header();
       $cost = get_field('cost_four');
       if ($cost && (!empty($cost['img']) || !empty($cost['txt']))) :
       ?>
-      <div class="concept__policy1">
-        <?php if (!empty($cost['img'])) : ?>
-          <div class="design-left-image">
-            <img src="<?php echo esc_url($cost['img']); ?>" alt="" class="img_shadow">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy1-content">
-
-          <div class="design__paint1_content_ttl">
-            <img src="<?php echo esc_url(IMG_URL . '/common/point4.webp'); ?>">
-          </div>
-          <div>
-            <p class="c-title--orangeLine concept__policy1-mainttl">
-              <span class="marker">
-                <span class="u-orange">大手他社</span>にはできない<br>
-                <span class="u-orange">丁寧</span>なプランニング</span>
-            </p>
-          </div>
-          <?php if (!empty($cost['txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($cost['txt']); ?>
+        <div class="concept__policy1">
+          <?php if (!empty($cost['img'])) : ?>
+            <div class="design-left-image">
+              <img src="<?php echo esc_url($cost['img']); ?>" alt="" class="img_shadow">
             </div>
           <?php endif; ?>
+          <div class="concept__policy1-content">
+
+            <div class="design__paint1_content_ttl">
+              <img src="<?php echo esc_url(IMG_URL . '/common/point4.webp'); ?>">
+            </div>
+            <div>
+              <p class="c-title--orangeLine concept__policy1-mainttl">
+                <span class="marker">
+                  <span class="u-orange">大手他社</span>にはできない<br>
+                  <span class="u-orange">丁寧</span>なプランニング</span>
+              </p>
+            </div>
+            <?php if (!empty($cost['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo wp_kses_post($cost['txt']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
-      </div>
       <?php endif; ?>
 
       <div class="design__paint1">

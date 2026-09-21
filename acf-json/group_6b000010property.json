@@ -1,0 +1,316 @@
+{
+  "key": "group_6b000010property",
+  "title": "物件情報",
+  "fields": [
+    {
+      "key": "field_6b000010cat",
+      "label": "物件種別",
+      "name": "property-category",
+      "type": "taxonomy",
+      "taxonomy": "property-category",
+      "field_type": "checkbox",
+      "return_format": "id"
+    },
+    {
+      "key": "field_6b000010area",
+      "label": "物件エリア",
+      "name": "property-area",
+      "type": "taxonomy",
+      "taxonomy": "property-area",
+      "field_type": "checkbox",
+      "return_format": "id"
+    },
+    {
+      "key": "field_6b000010top",
+      "label": "物件概要",
+      "name": "top-info",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000010ta",
+          "label": "面積",
+          "name": "area",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010ts",
+          "label": "学校区",
+          "name": "school",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010tc",
+          "label": "キャッチコピー",
+          "name": "copy",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010tp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000010used",
+      "label": "中古物件概要",
+      "name": "top-info-used",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000010uf",
+          "label": "間取り",
+          "name": "floor",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010us",
+          "label": "学校区",
+          "name": "school",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010uc",
+          "label": "キャッチコピー",
+          "name": "top-copy",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010up",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000010detail",
+      "label": "詳細",
+      "name": "detail",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000010dn",
+          "label": "名称",
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010da",
+          "label": "住所",
+          "name": "address",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010dt",
+          "label": "交通",
+          "name": "traffic",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010dd",
+          "label": "資料",
+          "name": "document",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010dm",
+          "label": "共益費",
+          "name": "mutual",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010dp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000010map",
+      "label": "地図HTML",
+      "name": "mhtml",
+      "type": "textarea"
+    },
+    {
+      "key": "field_6b000010info",
+      "label": "物件情報",
+      "name": "infomation",
+      "type": "repeater",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_6b000010ii",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000010it",
+          "label": "本文",
+          "name": "txt",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000010iv",
+          "label": "値",
+          "name": "value",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000015top",
+      "label": "土地概要",
+      "name": "top",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000015tm",
+          "label": "管理費",
+          "name": "management",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000015ts",
+          "label": "安全性",
+          "name": "security",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000015tc",
+          "label": "キャッチコピー",
+          "name": "copy",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000015tp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000015point",
+      "label": "物件ポイント",
+      "name": "flex-point",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000015poi",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000015pot",
+          "label": "タイトル",
+          "name": "ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000015pox",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    },
+    {
+      "key": "field_6b000015design",
+      "label": "デザイン",
+      "name": "flex-design",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000015di",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000015dtl",
+          "label": "タイトル",
+          "name": "ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000015dx",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    },
+    {
+      "key": "field_6b000015facility",
+      "label": "設備",
+      "name": "flex-facilities",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000015fi",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000015ft",
+          "label": "タイトル",
+          "name": "ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000015fx",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "property"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

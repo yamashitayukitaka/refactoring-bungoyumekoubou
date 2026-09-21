@@ -1,0 +1,116 @@
+{
+  "key": "group_6b000018staff",
+  "title": "スタッフ",
+  "fields": [
+    {
+      "key": "field_6b000018img",
+      "label": "プロフィール写真",
+      "name": "staff-img",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_6b000018en",
+      "label": "英語名",
+      "name": "english-name",
+      "type": "text"
+    },
+    {
+      "key": "field_6b000018license",
+      "label": "資格",
+      "name": "lisence",
+      "type": "text"
+    },
+    {
+      "key": "field_6b000018intro",
+      "label": "自己紹介画像",
+      "name": "self-introduction-img",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_6b000018best",
+      "label": "マイベスト3",
+      "name": "my-best",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000018bestttl",
+          "label": "見出し",
+          "name": "my-best-ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000018best1",
+          "label": "Best 1",
+          "name": "my-best-1",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000018best2",
+          "label": "Best 2",
+          "name": "my-best-2",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000018best3",
+          "label": "Best 3",
+          "name": "my-best-3",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000018question",
+      "label": "スタッフQ&A",
+      "name": "question",
+      "type": "repeater",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_6b000018qtitle",
+          "label": "質問タイトル",
+          "name": "question-ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000018qimg",
+          "label": "質問画像",
+          "name": "question-img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000018answer",
+          "label": "回答",
+          "name": "question-answer",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "staff"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

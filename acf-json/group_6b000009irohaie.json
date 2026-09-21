@@ -1,0 +1,55 @@
+{
+  "key": "group_6b000009irohaie",
+  "title": "いろは家",
+  "fields": [
+    {
+      "key": "field_6b000009quality",
+      "label": "品質ポイント",
+      "name": "satisfying_quality",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000009qi",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000009qt",
+          "label": "タイトル",
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000009qx",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-irohaie.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

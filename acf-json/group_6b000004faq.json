@@ -1,0 +1,55 @@
+{
+  "key": "group_6b000004faq",
+  "title": "よくあるご質問",
+  "fields": [
+    {
+      "key": "field_6b000004mv",
+      "label": "メインビジュアル",
+      "name": "mv-faq-img",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_6b000004qas",
+      "label": "質問と回答",
+      "name": "faq_questions_answers",
+      "type": "repeater",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_6b000004q",
+          "label": "質問",
+          "name": "question",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000004a",
+          "label": "回答",
+          "name": "answer",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-faq.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

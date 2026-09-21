@@ -1,4 +1,5 @@
 <?php
+// Template Name: recruit
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -97,21 +98,21 @@ get_header();
           continue;
         }
     ?>
-      <button class="accordion">
-        <span class="accordion-number">
-          <?php echo sprintf("%02d", ($i + 1)); ?>
-        </span>
-        <?php if (!empty($qa['question'])) : ?>
-        <?php echo esc_html($qa['question']); ?>
-        <?php endif; ?>
-      </button>
-      <div class="panel">
-        <p>
-          <?php if (!empty($qa['answer'])) : ?>
-          <?php echo wp_kses_post($qa['answer']); ?>
+        <button class="accordion">
+          <span class="accordion-number">
+            <?php echo sprintf("%02d", ($i + 1)); ?>
+          </span>
+          <?php if (!empty($qa['question'])) : ?>
+            <?php echo esc_html($qa['question']); ?>
           <?php endif; ?>
-        </p>
-      </div>
+        </button>
+        <div class="panel">
+          <p>
+            <?php if (!empty($qa['answer'])) : ?>
+              <?php echo wp_kses_post($qa['answer']); ?>
+            <?php endif; ?>
+          </p>
+        </div>
     <?php
       endforeach;
     endif;
@@ -386,40 +387,40 @@ get_header();
             continue;
           }
       ?>
-        <div class="c-title__wrap--sectionLine">
-          <h3 class="c-title--sectionLine">
-            INTERVIEW
-          </h3>
-          <div>
-            <?php if (!empty($interview['r-interview-content-tit'])) : ?>
-              <p class="c-title--orangeLine u-mb30">
-                <?php echo wp_kses_post($interview['r-interview-content-tit']); ?>
-              </p>
-            <?php endif; ?>
+          <div class="c-title__wrap--sectionLine">
+            <h3 class="c-title--sectionLine">
+              INTERVIEW
+            </h3>
+            <div>
+              <?php if (!empty($interview['r-interview-content-tit'])) : ?>
+                <p class="c-title--orangeLine u-mb30">
+                  <?php echo wp_kses_post($interview['r-interview-content-tit']); ?>
+                </p>
+              <?php endif; ?>
+            </div>
           </div>
-        </div>
-        <?php if (!empty($interview['r-interview-content-user'])) : ?>
-          <div class="recruit__interview__user__wrap">
-            <?php foreach ($interview['r-interview-content-user'] as $user) :
-              if (empty($user['r-content-user-img']) && empty($user['r-content-user-txt'])) {
-                continue;
-              }
-            ?>
-              <div class="recruit__interview__user  u-mb100">
-                <?php if (!empty($user['r-content-user-img'])) : ?>
-                  <figure class=" recruit__interview__imgWrap">
-                    <img src="<?php echo esc_url($user['r-content-user-img']); ?>" class="recruit__interview__img">
-                  </figure>
-                <?php endif; ?>
-                <?php if (!empty($user['r-content-user-txt'])) : ?>
-                  <p class="recruit__interview__usertxt">
-                    <?php echo wp_kses_post($user['r-content-user-txt']) ?>
-                  </p>
-                <?php endif; ?>
-              </div>
-            <?php endforeach; ?>
-          </div>
-        <?php endif; ?>
+          <?php if (!empty($interview['r-interview-content-user'])) : ?>
+            <div class="recruit__interview__user__wrap">
+              <?php foreach ($interview['r-interview-content-user'] as $user) :
+                if (empty($user['r-content-user-img']) && empty($user['r-content-user-txt'])) {
+                  continue;
+                }
+              ?>
+                <div class="recruit__interview__user  u-mb100">
+                  <?php if (!empty($user['r-content-user-img'])) : ?>
+                    <figure class=" recruit__interview__imgWrap">
+                      <img src="<?php echo esc_url($user['r-content-user-img']); ?>" class="recruit__interview__img">
+                    </figure>
+                  <?php endif; ?>
+                  <?php if (!empty($user['r-content-user-txt'])) : ?>
+                    <p class="recruit__interview__usertxt">
+                      <?php echo wp_kses_post($user['r-content-user-txt']) ?>
+                    </p>
+                  <?php endif; ?>
+                </div>
+              <?php endforeach; ?>
+            </div>
+          <?php endif; ?>
       <?php
         endforeach;
       endif;
@@ -463,12 +464,12 @@ get_header();
             <tr class="c-table__about__tr">
               <th class="c-table__about__th">
                 <?php if (!empty($row['recruit-app-title'])) : ?>
-                <?php echo esc_html($row['recruit-app-title']); ?>
+                  <?php echo esc_html($row['recruit-app-title']); ?>
                 <?php endif; ?>
               </th>
               <td class="c-table__about__td">
                 <?php if (!empty($row['recruit-app-content'])) : ?>
-                <?php echo wp_kses_post($row['recruit-app-content']); ?>
+                  <?php echo wp_kses_post($row['recruit-app-content']); ?>
                 <?php endif; ?>
               </td>
             </tr>

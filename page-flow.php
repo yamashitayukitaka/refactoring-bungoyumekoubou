@@ -1,4 +1,5 @@
 <?php
+// Template Name: flow
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -68,44 +69,44 @@ get_header();
           continue;
         }
     ?>
-      <section class="service_model_wrap flow__showroom robots">
-        <div class="flow__showroom_content">
-          <div class="flow__showroom_ttl">
-            <span>
-              <?php echo sprintf("%02d", ($i + 1)); ?>.
-            </span>
-            <?php if (!empty($showroom['title'])) : ?>
-              <?php echo wp_kses_post($showroom['title']); ?>
+        <section class="service_model_wrap flow__showroom robots">
+          <div class="flow__showroom_content">
+            <div class="flow__showroom_ttl">
+              <span>
+                <?php echo sprintf("%02d", ($i + 1)); ?>.
+              </span>
+              <?php if (!empty($showroom['title'])) : ?>
+                <?php echo wp_kses_post($showroom['title']); ?>
+              <?php endif; ?>
+            </div>
+            <?php if (!empty($showroom['subtitle'])) : ?>
+              <div class="flow__showroom_text">
+                <?php echo wp_kses_post($showroom['subtitle']); ?>
+              </div>
             <?php endif; ?>
+            <?php
+            if ($i == count($showrooms) - 1) { ?>
+              <div class="go_to_details">
+                <a class="form__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサービスについて</a>
+              </div>
+            <?php
+            }
+            ?>
           </div>
-          <?php if (!empty($showroom['subtitle'])) : ?>
-            <div class="flow__showroom_text">
-              <?php echo wp_kses_post($showroom['subtitle']); ?>
+          <?php if (!empty($showroom['img'])) : ?>
+            <div class="flow__showroom_img">
+              <img src="<?php echo esc_url($showroom['img']); ?>">
             </div>
           <?php endif; ?>
-          <?php
-          if ($i == count($showrooms) - 1) { ?>
-            <div class="go_to_details">
-              <a class="form__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサービスについて</a>
-            </div>
-          <?php
-          }
-          ?>
-        </div>
-        <?php if (!empty($showroom['img'])) : ?>
-          <div class="flow__showroom_img">
-            <img src="<?php echo esc_url($showroom['img']); ?>">
-          </div>
-        <?php endif; ?>
-      </section>
-      <?php
-      if ($i != count($showrooms) - 1) {
-      ?>
-        <div class="common__down_btn"></div>
-        <div></div>
-      <?php
-      }
-      ?>
+        </section>
+        <?php
+        if ($i != count($showrooms) - 1) {
+        ?>
+          <div class="common__down_btn"></div>
+          <div></div>
+        <?php
+        }
+        ?>
     <?php
       endforeach;
     endif;

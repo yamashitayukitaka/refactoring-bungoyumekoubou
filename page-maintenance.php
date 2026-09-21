@@ -1,4 +1,5 @@
 <?php
+// Template Name: maintenance
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -49,94 +50,94 @@ get_header();
     $maintenance = get_field('maintenance');
     if ($maintenance && (!empty($maintenance['img']) || !empty($maintenance['txt']) || !empty($maintenance['description']))) :
     ?>
-    <div class="concept__policy1" id="maintenance-description">
-      <div class="concept__policy1 maintenance-description">
-        <?php if (!empty($maintenance['img'])) : ?>
-          <div class="design-right-image">
-            <img src="<?php echo esc_url($maintenance['img']); ?>">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy2-content">
-          <div class="u-mb20">
-            <p class=" concept__policy1-mainttl maintenance-ttl"><span class="marker">
-                アフターメンテナンス</span>
-            </p>
-          </div>
-          <?php if (!empty($maintenance['txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($maintenance['txt']); ?>
+      <div class="concept__policy1" id="maintenance-description">
+        <div class="concept__policy1 maintenance-description">
+          <?php if (!empty($maintenance['img'])) : ?>
+            <div class="design-right-image">
+              <img src="<?php echo esc_url($maintenance['img']); ?>">
             </div>
           <?php endif; ?>
+          <div class="concept__policy2-content">
+            <div class="u-mb20">
+              <p class=" concept__policy1-mainttl maintenance-ttl"><span class="marker">
+                  アフターメンテナンス</span>
+              </p>
+            </div>
+            <?php if (!empty($maintenance['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo wp_kses_post($maintenance['txt']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
+        <?php if (!empty($maintenance['description'])) : ?>
+          <p class="l-content--middle maintenance-description">
+            <?php echo wp_kses_post($maintenance['description']); ?><br><br>
+          </p>
+        <?php endif; ?>
       </div>
-      <?php if (!empty($maintenance['description'])) : ?>
-        <p class="l-content--middle maintenance-description">
-          <?php echo wp_kses_post($maintenance['description']); ?><br><br>
-        </p>
-      <?php endif; ?>
-    </div>
     <?php endif; ?>
 
     <?php
     $inspection = get_field('inspection');
     if ($inspection && (!empty($inspection['img_1']) || !empty($inspection['txt_1']) || !empty($inspection['img_2']) || !empty($inspection['txt_2']) || !empty($inspection['img_3']) || !empty($inspection['txt_3']) || !empty($inspection['description']))) :
     ?>
-    <div class="support__conver_devices">点検内容</div>
-    <div class="l-content--middle samplelogo__three_points">
-      <div class="samplelogo__three_items_renovation mx-auto u-mb40">
-        <?php if (!empty($inspection['img_1']) || !empty($inspection['txt_1'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($inspection['img_1'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($inspection['img_1']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($inspection['txt_1'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($inspection['txt_1']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($inspection['img_2']) || !empty($inspection['txt_2'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($inspection['img_2'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($inspection['img_2']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($inspection['txt_2'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($inspection['txt_2']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($inspection['img_3']) || !empty($inspection['txt_3'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($inspection['img_3'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($inspection['img_3']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($inspection['txt_3'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($inspection['txt_3']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-      </div>
-      <div class="inspection-description">
-        <img class="inspection-description--img" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_5.webp'); ?>">
+      <div class="support__conver_devices">点検内容</div>
+      <div class="l-content--middle samplelogo__three_points">
+        <div class="samplelogo__three_items_renovation mx-auto u-mb40">
+          <?php if (!empty($inspection['img_1']) || !empty($inspection['txt_1'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($inspection['img_1'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($inspection['img_1']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($inspection['txt_1'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($inspection['txt_1']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($inspection['img_2']) || !empty($inspection['txt_2'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($inspection['img_2'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($inspection['img_2']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($inspection['txt_2'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($inspection['txt_2']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($inspection['img_3']) || !empty($inspection['txt_3'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($inspection['img_3'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($inspection['img_3']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($inspection['txt_3'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($inspection['txt_3']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+        </div>
+        <div class="inspection-description">
+          <img class="inspection-description--img" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_5.webp'); ?>">
 
-        <img class="inspection_description_img2" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_6.webp'); ?>">
-        <?php if (!empty($inspection['description'])) : ?>
-          <p class="inspection-description--txt"><?php echo wp_kses_post($inspection['description']); ?></p>
-        <?php endif; ?>
+          <img class="inspection_description_img2" src=" <?php echo esc_url(IMG_URL . '/maintenance/maintenance_6.webp'); ?>">
+          <?php if (!empty($inspection['description'])) : ?>
+            <p class="inspection-description--txt"><?php echo wp_kses_post($inspection['description']); ?></p>
+          <?php endif; ?>
 
+        </div>
       </div>
-    </div>
     <?php endif; ?>
 
     <div class="support__conver_devices">保証と保守期間</div>

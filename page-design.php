@@ -1,4 +1,5 @@
 <?php
+// Template Name: design
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -27,7 +28,7 @@ get_header();
       <div>
         <div>
           <p class="c-title--orangeLine p-design__intro__lead"><span class="u-textOrange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
-              <span class="u-textOrange">デザイン</span>のこだわり<br>
+            <span class="u-textOrange">デザイン</span>のこだわり<br>
           </p>
         </div>
       </div>
@@ -103,78 +104,78 @@ get_header();
       $design = ($designs && !empty($designs[0])) ? $designs[0] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']) || !empty($design['point_img_two']) || !empty($design['point_txt_two']))) :
       ?>
-      <div class="p-design__point__hero">
-        <?php if (!empty($design['img'])) : ?>
-          <div class="p-design__point__media p-design__point__media--right">
-            <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="p-design__point__panel p-design__point__panel--left">
-          <h3 class="c-title--sectionLine p-design__point__label">
-            DESIGN 01
-          </h3>
-          <div>
-            <p class="c-title--orangeLine p-design__point__headline">
-              <span class="u-textOrange">家族の暮らし</span>に合わせた<br>
+        <div class="p-design__point__hero">
+          <?php if (!empty($design['img'])) : ?>
+            <div class="p-design__point__media p-design__point__media--right">
+              <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
+            </div>
+          <?php endif; ?>
+          <div class="p-design__point__panel p-design__point__panel--left">
+            <h3 class="c-title--sectionLine p-design__point__label">
+              DESIGN 01
+            </h3>
+            <div>
+              <p class="c-title--orangeLine p-design__point__headline">
+                <span class="u-textOrange">家族の暮らし</span>に合わせた<br>
                 <span class="u-textOrange">動線</span>をつくるデザイン
-            </p>
-          </div>
-          <?php if (!empty($design['txt'])) : ?>
-            <div class="p-design__point__text u-mb25">
-              <?php echo wp_kses_post($design['txt']); ?>
+              </p>
             </div>
-          <?php endif; ?>
-        </div>
-      </div>
-      <div class="p-design__detail">
-        <div class="p-design__detail__inner">
-          <?php if (!empty($design['point_img_one'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--left">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
-            </div>
-          <?php endif; ?>
-          <div class="p-design__detail__body p-design__detail__body--afterMedia">
-            <div class="p-design__detail__pointLabel">
-              <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
-            </div>
-            <p class="p-design__detail__subtit">
-              <span class="u-textOrange">家事らく</span>動線
-            </p>
-            <?php if (!empty($design['point_txt_one'])) : ?>
-              <div class="p-design__detail__bodyText">
-                <?php echo wp_kses_post($design['point_txt_one']); ?>
+            <?php if (!empty($design['txt'])) : ?>
+              <div class="p-design__point__text u-mb25">
+                <?php echo wp_kses_post($design['txt']); ?>
               </div>
             <?php endif; ?>
           </div>
         </div>
-      </div>
-      <div class="p-design__detail">
-        <div class="p-design__detail__inner">
-          <?php if (!empty($design['point_img_two'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
+        <div class="p-design__detail">
+          <div class="p-design__detail__inner">
+            <?php if (!empty($design['point_img_one'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--left">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
+              </div>
+            <?php endif; ?>
+            <div class="p-design__detail__body p-design__detail__body--afterMedia">
+              <div class="p-design__detail__pointLabel">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
+              </div>
+              <p class="p-design__detail__subtit">
+                <span class="u-textOrange">家事らく</span>動線
+              </p>
+              <?php if (!empty($design['point_txt_one'])) : ?>
+                <div class="p-design__detail__bodyText">
+                  <?php echo wp_kses_post($design['point_txt_one']); ?>
+                </div>
+              <?php endif; ?>
             </div>
-          <?php endif; ?>
-          <div class="p-design__detail__body p-design__detail__body--beforeMedia">
-            <div class="p-design__detail__pointLabel">
-              <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
+          </div>
+        </div>
+        <div class="p-design__detail">
+          <div class="p-design__detail__inner">
+            <?php if (!empty($design['point_img_two'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
+              </div>
+            <?php endif; ?>
+            <div class="p-design__detail__body p-design__detail__body--beforeMedia">
+              <div class="p-design__detail__pointLabel">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
+              </div>
+              <p class="p-design__detail__subtit">
+                <span class="u-textOrange">子育て</span>動線
+              </p>
+              <?php if (!empty($design['point_txt_two'])) : ?>
+                <div class="p-design__detail__bodyText">
+                  <?php echo wp_kses_post($design['point_txt_two']); ?>
+                </div>
+              <?php endif; ?>
             </div>
-            <p class="p-design__detail__subtit">
-              <span class="u-textOrange">子育て</span>動線
-            </p>
-            <?php if (!empty($design['point_txt_two'])) : ?>
-              <div class="p-design__detail__bodyText">
-                <?php echo wp_kses_post($design['point_txt_two']); ?>
+            <?php if (!empty($design['point_img_two'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
               </div>
             <?php endif; ?>
           </div>
-          <?php if (!empty($design['point_img_two'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
-            </div>
-          <?php endif; ?>
         </div>
-      </div>
       <?php endif; ?>
     </div>
 
@@ -187,53 +188,53 @@ get_header();
       $design = ($designs && !empty($designs[1])) ? $designs[1] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']))) :
       ?>
-      <div class="p-design__point__hero">
-        <?php if (!empty($design['img'])) : ?>
-          <div class="p-design__point__media">
-            <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="p-design__point__panel p-design__point__panel--right">
-          <h3 class="c-title--sectionLine p-design__point__label">
-            DESIGN 02
-          </h3>
-          <div>
-            <p class="c-title--orangeLine u-mb10 p-design__point__headline">
-              <span class="u-textOrange">住む人らしさ</span>を<br>
+        <div class="p-design__point__hero">
+          <?php if (!empty($design['img'])) : ?>
+            <div class="p-design__point__media">
+              <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
+            </div>
+          <?php endif; ?>
+          <div class="p-design__point__panel p-design__point__panel--right">
+            <h3 class="c-title--sectionLine p-design__point__label">
+              DESIGN 02
+            </h3>
+            <div>
+              <p class="c-title--orangeLine u-mb10 p-design__point__headline">
+                <span class="u-textOrange">住む人らしさ</span>を<br>
                 デザインする
-            </p>
-          </div>
-          <?php if (!empty($design['txt'])) : ?>
-            <div class="p-design__point__text u-mb25">
-              <?php echo wp_kses_post($design['txt']); ?>
+              </p>
             </div>
-          <?php endif; ?>
-        </div>
-      </div>
-
-      <div class="p-design__detail p-design__detail--spaced">
-        <div class="p-design__detail__inner">
-          <?php if (!empty($design['point_img_one'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--left">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
-            </div>
-          <?php endif; ?>
-          <div class="p-design__detail__body p-design__detail__body--afterMedia">
-            <div class="p-design__detail__pointLabel">
-              <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
-            </div>
-            <p class="p-design__detail__subtit">
-              <span class="u-textOrange">こんなお家がいいな</span>を<br>
-              楽しく共有
-            </p>
-            <?php if (!empty($design['point_txt_one'])) : ?>
-              <div class="p-design__detail__bodyText">
-                <?php echo wp_kses_post($design['point_txt_one']); ?>
+            <?php if (!empty($design['txt'])) : ?>
+              <div class="p-design__point__text u-mb25">
+                <?php echo wp_kses_post($design['txt']); ?>
               </div>
             <?php endif; ?>
           </div>
         </div>
-      </div>
+
+        <div class="p-design__detail p-design__detail--spaced">
+          <div class="p-design__detail__inner">
+            <?php if (!empty($design['point_img_one'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--left">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
+              </div>
+            <?php endif; ?>
+            <div class="p-design__detail__body p-design__detail__body--afterMedia">
+              <div class="p-design__detail__pointLabel">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
+              </div>
+              <p class="p-design__detail__subtit">
+                <span class="u-textOrange">こんなお家がいいな</span>を<br>
+                楽しく共有
+              </p>
+              <?php if (!empty($design['point_txt_one'])) : ?>
+                <div class="p-design__detail__bodyText">
+                  <?php echo wp_kses_post($design['point_txt_one']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
       <?php endif; ?>
     </div>
 
@@ -246,85 +247,85 @@ get_header();
       $design = ($designs && !empty($designs[2])) ? $designs[2] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']) || !empty($design['point_img_two']) || !empty($design['point_txt_two']))) :
       ?>
-      <div class="p-design__point__hero">
-        <?php if (!empty($design['img'])) : ?>
-          <div class="p-design__point__media p-design__point__media--right">
-            <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="p-design__point__panel p-design__point__panel--left">
-          <h3 class="c-title--sectionLine p-design__point__label">
-            DESIGN 03
-          </h3>
-          <div>
-            <p class="c-title--orangeLine p-design__point__headline">
-              <span class="u-textOrange">太陽</span>と<span class="u-textOrange">自然</span>の恵みを生かし、<br class="u-none__mobile--sp">
-                <span class="u-textOrange">快適</span>と<span class="u-textOrange">エネルギー</span>をつくる
-            </p>
-          </div>
-          <?php if (!empty($design['txt'])) : ?>
-            <div class="p-design__point__text u-mb25">
-              <?php echo wp_kses_post($design['txt']); ?>
+        <div class="p-design__point__hero">
+          <?php if (!empty($design['img'])) : ?>
+            <div class="p-design__point__media p-design__point__media--right">
+              <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
             </div>
           <?php endif; ?>
-        </div>
-      </div>
-      <div class="p-design__detail">
-        <div class="p-design__detail__inner">
-          <?php if (!empty($design['point_img_one'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--left">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
-            </div>
-          <?php endif; ?>
-          <div class="p-design__detail__body p-design__detail__body--afterMedia">
-            <div class="p-design__detail__pointLabel">
-              <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
-            </div>
+          <div class="p-design__point__panel p-design__point__panel--left">
+            <h3 class="c-title--sectionLine p-design__point__label">
+              DESIGN 03
+            </h3>
             <div>
-              <p class="p-design__detail__subtit">
-                <span class="u-textOrange">心地よい風</span>と、<span class="u-textOrange">自然光</span>が<br>
-                家全体に<span class="u-textOrange">行き渡る</span>空間デザイン
+              <p class="c-title--orangeLine p-design__point__headline">
+                <span class="u-textOrange">太陽</span>と<span class="u-textOrange">自然</span>の恵みを生かし、<br class="u-none__mobile--sp">
+                <span class="u-textOrange">快適</span>と<span class="u-textOrange">エネルギー</span>をつくる
               </p>
             </div>
-            <?php if (!empty($design['point_txt_one'])) : ?>
-              <div class="p-design__detail__bodyText">
-                <?php echo wp_kses_post($design['point_txt_one']); ?>
+            <?php if (!empty($design['txt'])) : ?>
+              <div class="p-design__point__text u-mb25">
+                <?php echo wp_kses_post($design['txt']); ?>
               </div>
             <?php endif; ?>
           </div>
         </div>
-      </div>
-      <div class="p-design__detail">
-        <div class="p-design__detail__inner">
-          <?php if (!empty($design['point_img_two'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
-            </div>
-          <?php endif; ?>
-          <div class="p-design__detail__body p-design__detail__body--beforeMedia">
-            <div class="p-design__detail__pointLabel">
-              <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
-            </div>
-            <p class="p-design__detail__subtit">
-              <span class="u-textOrange">エネルギー効率</span>を<br>
-              <span class="u-textOrange">最大化</span>するデザイン
-            </p>
-            <?php if (!empty($design['point_txt_two'])) : ?>
-              <div class="p-design__detail__bodyText">
-                <?php echo wp_kses_post($design['point_txt_two']); ?>
+        <div class="p-design__detail">
+          <div class="p-design__detail__inner">
+            <?php if (!empty($design['point_img_one'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--left">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
               </div>
             <?php endif; ?>
-            <div class="p-design__detail__cta">
-              <a class="c-button--orange" href="<?php echo esc_url(home_url('/quality/')); ?>">性能について</a>
+            <div class="p-design__detail__body p-design__detail__body--afterMedia">
+              <div class="p-design__detail__pointLabel">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
+              </div>
+              <div>
+                <p class="p-design__detail__subtit">
+                  <span class="u-textOrange">心地よい風</span>と、<span class="u-textOrange">自然光</span>が<br>
+                  家全体に<span class="u-textOrange">行き渡る</span>空間デザイン
+                </p>
+              </div>
+              <?php if (!empty($design['point_txt_one'])) : ?>
+                <div class="p-design__detail__bodyText">
+                  <?php echo wp_kses_post($design['point_txt_one']); ?>
+                </div>
+              <?php endif; ?>
             </div>
           </div>
-          <?php if (!empty($design['point_img_two'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
-            </div>
-          <?php endif; ?>
         </div>
-      </div>
+        <div class="p-design__detail">
+          <div class="p-design__detail__inner">
+            <?php if (!empty($design['point_img_two'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
+              </div>
+            <?php endif; ?>
+            <div class="p-design__detail__body p-design__detail__body--beforeMedia">
+              <div class="p-design__detail__pointLabel">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
+              </div>
+              <p class="p-design__detail__subtit">
+                <span class="u-textOrange">エネルギー効率</span>を<br>
+                <span class="u-textOrange">最大化</span>するデザイン
+              </p>
+              <?php if (!empty($design['point_txt_two'])) : ?>
+                <div class="p-design__detail__bodyText">
+                  <?php echo wp_kses_post($design['point_txt_two']); ?>
+                </div>
+              <?php endif; ?>
+              <div class="p-design__detail__cta">
+                <a class="c-button--orange" href="<?php echo esc_url(home_url('/quality/')); ?>">性能について</a>
+              </div>
+            </div>
+            <?php if (!empty($design['point_img_two'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_two']); ?>" alt="">
+              </div>
+            <?php endif; ?>
+          </div>
+        </div>
       <?php endif; ?>
     </div>
 
@@ -337,57 +338,57 @@ get_header();
       $design = ($designs && !empty($designs[3])) ? $designs[3] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']))) :
       ?>
-      <div class="p-design__point__hero">
-        <?php if (!empty($design['img'])) : ?>
-          <div class="p-design__point__media">
-            <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="p-design__point__panel p-design__point__panel--right">
-          <h3 class="c-title--sectionLine p-design__point__label">
-            DESIGN 04
-          </h3>
-          <div>
-            <p class="c-title--orangeLine u-mb10 p-design__point__headline">
-              <span class="u-textOrange">メンテナンス</span><br>
-                しやすいデザイン
-            </p>
-          </div>
-          <?php if (!empty($design['txt'])) : ?>
-            <div class="p-design__point__text u-mb25">
-              <?php echo wp_kses_post($design['txt']); ?>
+        <div class="p-design__point__hero">
+          <?php if (!empty($design['img'])) : ?>
+            <div class="p-design__point__media">
+              <img class="p-design__point__mediaImg" src="<?php echo esc_url($design['img']); ?>" alt="">
             </div>
           <?php endif; ?>
-        </div>
-      </div>
-
-      <div class="p-design__detail">
-        <div class="p-design__detail__inner">
-          <?php if (!empty($design['point_img_one'])) : ?>
-            <div class="p-design__detail__media p-design__detail__media--left">
-              <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
-            </div>
-          <?php endif; ?>
-          <div class="p-design__detail__body p-design__detail__body--afterMedia">
-            <div class="p-design__detail__pointLabel">
-              <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
-            </div>
+          <div class="p-design__point__panel p-design__point__panel--right">
+            <h3 class="c-title--sectionLine p-design__point__label">
+              DESIGN 04
+            </h3>
             <div>
-              <p class="u-mb10 p-design__detail__subtit">
-                <span class="u-textOrange">故障時</span>にもすぐに<span class="u-textOrange">修理</span>しやすく
+              <p class="c-title--orangeLine u-mb10 p-design__point__headline">
+                <span class="u-textOrange">メンテナンス</span><br>
+                しやすいデザイン
               </p>
             </div>
-            <?php if (!empty($design['point_txt_one'])) : ?>
-              <div class="p-design__detail__bodyText">
-                <?php echo wp_kses_post($design['point_txt_one']); ?>
+            <?php if (!empty($design['txt'])) : ?>
+              <div class="p-design__point__text u-mb25">
+                <?php echo wp_kses_post($design['txt']); ?>
               </div>
             <?php endif; ?>
-            <div class="p-design__detail__cta">
-              <a class="c-button--orange" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサポートについて</a>
+          </div>
+        </div>
+
+        <div class="p-design__detail">
+          <div class="p-design__detail__inner">
+            <?php if (!empty($design['point_img_one'])) : ?>
+              <div class="p-design__detail__media p-design__detail__media--left">
+                <img class="p-design__detail__mediaImg" src="<?php echo esc_url($design['point_img_one']); ?>" alt="">
+              </div>
+            <?php endif; ?>
+            <div class="p-design__detail__body p-design__detail__body--afterMedia">
+              <div class="p-design__detail__pointLabel">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
+              </div>
+              <div>
+                <p class="u-mb10 p-design__detail__subtit">
+                  <span class="u-textOrange">故障時</span>にもすぐに<span class="u-textOrange">修理</span>しやすく
+                </p>
+              </div>
+              <?php if (!empty($design['point_txt_one'])) : ?>
+                <div class="p-design__detail__bodyText">
+                  <?php echo wp_kses_post($design['point_txt_one']); ?>
+                </div>
+              <?php endif; ?>
+              <div class="p-design__detail__cta">
+                <a class="c-button--orange" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサポートについて</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       <?php endif; ?>
     </div>
 
