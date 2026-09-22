@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
-<main>
+<main class="p-faq">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__ttl__wrap">
       <h2 class="c-pageMv__ttl">
@@ -19,69 +19,54 @@ get_header();
     <?php endif; ?>
   </div>
 
-
-  <!-- トップタイトル概要 -->
-  <section class="l_content_middle_80 support-title u-mb100 illustration_set">
-    <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt="">
-    </figure>
-    <figure class="illustration_3">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">
-    </figure>
-    <figure class="illustration_4">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt="">
-    </figure>
+  <section class="p-faq__overview">
     <div class="c-title__wrap--sectionLine">
       <h3 class="c-title--sectionLine u-mb40">
         よくあるご質問
       </h3>
       <div>
         <div>
-          <p class="c-title--orangeLine "><span class="marker">
-              お客様からよくいただく<br>
-              <span class="u-orange">ご質問</span>とその<span class="u-orange">回答</span>をまとめています</span>
-
+          <p class="c-title--orangeLine">
+            お客様からよくいただく<br>
+            <span class="u-orange">ご質問</span>とその<span class="u-orange">回答</span>をまとめています
           </p>
         </div>
       </div>
     </div>
+    <p class="p-faq__lead l-content--middle">
+      もし、こちらに掲載されていない質問がございましたら、<br class="u-none__mobile--sp">
+      お気軽にお問い合わせください。
+    </p>
   </section>
 
-
-  <p class="l-content--middle u-mb100 flow-desc">
-    もし、こちらに掲載されていない質問がございましたら、<br class="pc_tab">
-    お気軽にお問い合わせください。
-  </p>
-
-  <section class="faq u-mb200">
-    <?php
-    $qas = get_field('faq_questions_answers');
-    if ($qas) :
-      foreach ($qas as $i => $qa) :
-        if (empty($qa['question']) && empty($qa['answer'])) {
-          continue;
-        }
-    ?>
-        <button class="accordion">
-          <span class="accordion-number">
-            <?php echo sprintf("%02d", ($i + 1)); ?>
-          </span>
-          <?php if (!empty($qa['question'])) : ?>
-            <?php echo esc_html($qa['question']); ?>
-          <?php endif; ?>
-        </button>
-        <div class="panel">
-          <p>
-            <?php if (!empty($qa['answer'])) : ?>
-              <?php echo wp_kses_post($qa['answer']); ?>
-            <?php endif; ?>
-          </p>
-        </div>
-    <?php
-      endforeach;
-    endif;
-    ?>
-  </section>
+  <?php
+  $qas = get_field('faq_questions_answers');
+  if ($qas) :
+  ?>
+    <section class="p-faq__list">
+      <ul class="c-accordion">
+        <?php foreach ($qas as $i => $qa) :
+          if (empty($qa['question']) || empty($qa['answer'])) {
+            continue;
+          }
+        ?>
+          <li class="c-accordion__item">
+            <button type="button" class="c-accordion__trigger js-accordion">
+              <span class="c-accordion__number">
+                <?php echo sprintf('%02d', ($i + 1)); ?>
+              </span>
+              <?php echo esc_html($qa['question']); ?>
+            </button>
+            <div class="c-accordion__panel">
+              <p class="c-accordion__body">
+                <?php echo wp_kses_post($qa['answer']); ?>
+              </p>
+            </div>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    </section>
+  <?php endif; ?>
 
   <?php get_template_part('template-parts/common'); ?>
 

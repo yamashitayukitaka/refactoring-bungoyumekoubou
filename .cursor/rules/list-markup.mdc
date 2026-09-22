@@ -1,0 +1,62 @@
+---
+description: 繰り返し項目の HTML は ul / li でマークアップする
+globs: **/*.php
+alwaysApply: false
+---
+
+## 基本方針
+
+- **同種の項目が2件以上並ぶ**場合は、可能な限り `ul` > `li` で表現する。
+- 目的はセマンティクス・アクセシビリティ・構造の予測性の向上。見た目は変えない。
+- レイアウト目的だけの `div` 連打は避け、リストとして意味が通る箇所は `ul` / `li` を優先する。
+
+## 使う場面
+
+| 内容 | 構造 |
+|---|---|
+| FAQ・Q&A | `section` > `ul` > `li`（各1問1答） |
+| ナビ・パンくず | `nav` > `ul` > `li` > `a` |
+| カード・記事一覧 | `section` > `ul` > `li` |
+| アコーディオン一覧 | `ul.c-accordion` > `li.c-accordion__item` |
+
+## 使わない場面
+
+- 単一要素のみ（リストにする意味がない）
+- `li` の中身がリスト項目として成立しない複合レイアウト（無理に `li` にしない）
+
+## BEM との組み合わせ
+
+- **各項目** … `li` に `__item`（例: `c-accordion__item`, `p-design__nav__item`）
+- **項目内の要素** … `li` の子に `__link`, `__title`, `__body` など
+- 連番クラス（`--1`, `__item--two`）は禁止。`scss.mdc` と同様、意味のある語を使う。
+
+## 推奨パターン
+
+```html
+<!-- FAQ -->
+<section class="p-faq__list">
+  <ul class="c-accordion">
+    <li class="c-accordion__item">
+      <button type="button" class="c-accordion__trigger js-accordion">…</button>
+      <div class="c-accordion__panel">…</div>
+    </li>
+  </ul>
+</section>
+
+<!-- ナビ -->
+<nav class="p-design__nav" aria-label="…">
+  <ul class="p-design__nav__list">
+    <li class="p-design__nav__item">
+      <a href="#design1" class="p-design__nav__link">…</a>
+    </li>
+  </ul>
+</nav>
+```
+
+## リファクタ時の手順
+
+1. 繰り返しブロックを `ul` > `li` に置き換える
+2. `__item` など BEM を `li` に付与する
+3. 見た目・挙動が変わらないことを確認する
+
+
