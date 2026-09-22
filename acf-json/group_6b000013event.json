@@ -1,226 +1,240 @@
 {
-  "key": "group_6b000013event",
-  "title": "イベント詳細",
-  "fields": [
-    {
-      "key": "field_6b000013type",
-      "label": "イベント種別",
-      "name": "event-type",
-      "type": "taxonomy",
-      "taxonomy": "event-type",
-      "field_type": "checkbox",
-      "return_format": "id"
-    },
-    {
-      "key": "field_6b000013always",
-      "label": "開催中",
-      "name": "always",
-      "type": "true_false",
-      "ui": 1
-    },
-    {
-      "key": "field_6b000013start",
-      "label": "開始日時",
-      "name": "event-start-time",
-      "type": "date_time_picker",
-      "display_format": "Y-m-d H:i:s",
-      "return_format": "Y-m-d H:i:s"
-    },
-    {
-      "key": "field_6b000013end",
-      "label": "終了日時",
-      "name": "event-end-time",
-      "type": "date_time_picker",
-      "display_format": "Y-m-d H:i:s",
-      "return_format": "Y-m-d H:i:s"
-    },
-    {
-      "key": "field_6b000013place",
-      "label": "開催場所",
-      "name": "event-place",
-      "type": "text"
-    },
-    {
-      "key": "field_6b000013main",
-      "label": "概要",
-      "name": "event-main-txt",
-      "type": "wysiwyg",
-      "tabs": "all",
-      "toolbar": "full",
-      "media_upload": 1
-    },
-    {
-      "key": "field_6b000013txt",
-      "label": "本文",
-      "name": "event-txt",
-      "type": "wysiwyg",
-      "tabs": "all",
-      "toolbar": "full",
-      "media_upload": 1
-    },
-    {
-      "key": "field_6b000013closing",
-      "label": "締めの文章",
-      "name": "closing-sentence",
-      "type": "group",
-      "layout": "block",
-      "sub_fields": [
+    "key": "group_6b000013event",
+    "title": "イベント詳細",
+    "fields": [
         {
-          "key": "field_6b000013ct",
-          "label": "タイトル",
-          "name": "title",
-          "type": "text"
+            "key": "field_6b000013type",
+            "label": "イベント種別",
+            "name": "event-type",
+            "type": "taxonomy",
+            "taxonomy": "event-type",
+            "field_type": "checkbox",
+            "return_format": "id"
         },
         {
-          "key": "field_6b000013cx",
-          "label": "本文",
-          "name": "txt",
-          "type": "wysiwyg",
-          "tabs": "all",
-          "toolbar": "full",
-          "media_upload": 1
+            "key": "field_6b000013always",
+            "label": "開催中",
+            "name": "always",
+            "type": "true_false",
+            "ui": 1
+        },
+        {
+            "key": "field_6b000013start",
+            "label": "開始日時",
+            "name": "event-start-time",
+            "type": "date_time_picker",
+            "display_format": "Y-m-d H:i:s",
+            "return_format": "Y-m-d H:i:s"
+        },
+        {
+            "key": "field_6b000013end",
+            "label": "終了日時",
+            "name": "event-end-time",
+            "type": "date_time_picker",
+            "display_format": "Y-m-d H:i:s",
+            "return_format": "Y-m-d H:i:s"
+        },
+        {
+            "key": "field_6b000013place",
+            "label": "開催場所",
+            "name": "event-place",
+            "type": "text"
+        },
+        {
+            "key": "field_6b000013main",
+            "label": "概要",
+            "name": "event-main-txt",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_6b000013txt",
+            "label": "本文",
+            "name": "event-txt",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_6b000013closing",
+            "label": "締めの文章",
+            "name": "closing-sentence",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000013ct",
+                    "label": "タイトル",
+                    "name": "title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000013cx",
+                    "label": "本文",
+                    "name": "txt",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                }
+            ]
+        },
+        {
+            "key": "field_6b000013map",
+            "label": "Google Map",
+            "name": "googleMap",
+            "type": "textarea"
+        },
+        {
+            "key": "field_6b000013cac",
+            "label": "問い合わせコード",
+            "name": "cac",
+            "type": "text"
+        },
+        {
+            "key": "field_6b000013flex",
+            "label": "コンテンツ",
+            "name": "flex",
+            "type": "flexible_content",
+            "button_label": "レイアウトを追加",
+            "layouts": {
+                "layout_6b0000132col": {
+                    "key": "layout_6b0000132col",
+                    "name": "two-column",
+                    "label": "2カラム",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000013f1",
+                            "label": "コンテンツ1",
+                            "name": "contents-1",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000013f1i",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000013f1t",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000013f1x",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_6b000013f2",
+                            "label": "コンテンツ2",
+                            "name": "contents-2",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000013f2i",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000013f2t",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000013f2x",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6b0000131col": {
+                    "key": "layout_6b0000131col",
+                    "name": "one-column",
+                    "label": "1カラム",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000013fc",
+                            "label": "コンテンツ",
+                            "name": "contents",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000013fci",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000013fct",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000013fcx",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            }
         }
-      ]
-    },
-    {
-      "key": "field_6b000013map",
-      "label": "Google Map",
-      "name": "googleMap",
-      "type": "textarea"
-    },
-    {
-      "key": "field_6b000013cac",
-      "label": "問い合わせコード",
-      "name": "cac",
-      "type": "text"
-    },
-    {
-      "key": "field_6b000013flex",
-      "label": "コンテンツ",
-      "name": "flex",
-      "type": "repeater",
-      "layout": "block",
-      "sub_fields": [
-        {
-          "key": "field_6b000013ft",
-          "label": "タイトル",
-          "name": "ttl",
-          "type": "text"
-        },
-        {
-          "key": "field_6b000013f1",
-          "label": "コンテンツ1",
-          "name": "contents-1",
-          "type": "repeater",
-          "layout": "block",
-          "sub_fields": [
+    ],
+    "location": [
+        [
             {
-              "key": "field_6b000013i1",
-              "label": "画像",
-              "name": "img",
-              "type": "image",
-              "return_format": "url",
-              "preview_size": "medium"
-            },
-            {
-              "key": "field_6b000013t1",
-              "label": "タイトル",
-              "name": "ttl",
-              "type": "text"
-            },
-            {
-              "key": "field_6b000013x1",
-              "label": "本文",
-              "name": "txt",
-              "type": "wysiwyg",
-              "tabs": "all",
-              "toolbar": "full",
-              "media_upload": 1
+                "param": "post_type",
+                "operator": "==",
+                "value": "xo_event"
             }
-          ]
-        },
-        {
-          "key": "field_6b000013f2",
-          "label": "コンテンツ2",
-          "name": "contents-2",
-          "type": "repeater",
-          "layout": "block",
-          "sub_fields": [
-            {
-              "key": "field_6b000013i2",
-              "label": "画像",
-              "name": "img",
-              "type": "image",
-              "return_format": "url",
-              "preview_size": "medium"
-            },
-            {
-              "key": "field_6b000013t2",
-              "label": "タイトル",
-              "name": "ttl",
-              "type": "text"
-            },
-            {
-              "key": "field_6b000013x2",
-              "label": "本文",
-              "name": "txt",
-              "type": "wysiwyg",
-              "tabs": "all",
-              "toolbar": "full",
-              "media_upload": 1
-            }
-          ]
-        },
-        {
-          "key": "field_6b000013fc",
-          "label": "コンテンツ",
-          "name": "contents",
-          "type": "repeater",
-          "layout": "block",
-          "sub_fields": [
-            {
-              "key": "field_6b000013ic",
-              "label": "画像",
-              "name": "img",
-              "type": "image",
-              "return_format": "url",
-              "preview_size": "medium"
-            },
-            {
-              "key": "field_6b000013tc",
-              "label": "タイトル",
-              "name": "ttl",
-              "type": "text"
-            },
-            {
-              "key": "field_6b000013xc",
-              "label": "本文",
-              "name": "txt",
-              "type": "wysiwyg",
-              "tabs": "all",
-              "toolbar": "full",
-              "media_upload": 1
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "location": [
-    [
-      {
-        "param": "post_type",
-        "operator": "==",
-        "value": "xo_event"
-      }
-    ]
-  ],
-  "menu_order": 0,
-  "position": "normal",
-  "style": "default",
-  "label_placement": "top",
-  "instruction_placement": "label",
-  "hide_on_screen": "",
-  "active": true,
-  "show_in_rest": 0
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "show_in_rest": 0
 }
