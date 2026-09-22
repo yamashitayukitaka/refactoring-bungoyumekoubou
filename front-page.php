@@ -5,12 +5,12 @@ get_header();
 <main class="p-top">
   <!-- <div class="c-pageMv c_pageMv_t p-newYear__TemporaryChange__mb"> -->
   <div class="c-pageMv c_pageMv_t">
-    <div class="c-pageMv__ttl__wrap">
-      <h2 class="c-pageMv__ttl">
+    <div class="c-pageMv__heading">
+      <h2 class="c-pageMv__heading__title">
         住まいに<span class="u-orange--mv">夢</span>を、
         <br>暮らしに<span class="u-orange--mv">豊かさ</span>を。
       </h2>
-      <p class="c-pageMv__ttl--small">
+      <p class="c-pageMv__heading__title--small">
         Dream in your heart,
         <br>freedom in your future
       </p>
@@ -42,9 +42,9 @@ get_header();
         </p>
       </li>
     </ul>
-    <ul id="js-topSlider" class="c-pageMv__img__wrap c-pageMv__img__wrap--top">
+    <ul id="js-topSlider" class="c-pageMv__visual c-pageMv__visual--top">
       <?php for ($i = 0; $i < 6; $i++) : ?>
-        <li class="c-pageMv__img"></li>
+        <li class="c-pageMv__visual__item"></li>
       <?php endfor; ?>
     </ul>
     <!-- <section class = "p-newYear">
