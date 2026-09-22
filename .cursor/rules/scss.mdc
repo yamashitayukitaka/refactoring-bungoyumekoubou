@@ -121,6 +121,18 @@ alwaysApply: false
 - Element: `.c-button__text`
 - Modifier: `.c-button--primary`
 
+### Element の深さ（孫まで）
+- **孫要素までは `__` 2つで構造を表現する**（`Block__子__孫`）。
+- ひ孫以降は class 名に含めず、孫 Element の Modifier や SCSS の上書きで表現する。
+- 許容は概ねひ孫程度まで。それより深くなる場合は Block（`p-*` / `c-*`）の分割を検討する。
+- **子 Element** は DOM 上の「まとまり」に付ける。
+
+```
+NG:  .p-top__mainvisual__copy__subtitle   ← 曾孫まで class 名で繋ぐ
+OK:  .p-top__mainvisual__subtitle          ← 子__孫で止める
+```
+
+
 ### 影響範囲
 - 影響範囲を最低にする為に以下を守ること
   - base.scss以外ではタグに直接スタイルを書かない。
@@ -199,7 +211,6 @@ alwaysApply: false
 - 既存HTMLを変更する場合は理由を明示する
 - レガシーclassをBEMに統合出来る場合は、スタイルをBEM側に吸収させて、レガシーclassを削除する。!important やタグ直指定は持ち込まない。
 - 他ページでも使っているレガシーは、影響確認してから削除
-- 
 
 ## JavaScriptフック
 - JavaScriptから参照する要素には js- 接頭辞を使用する。
@@ -208,7 +219,7 @@ alwaysApply: false
 
 ## レスポンシブ
 
-###メディアクエリ
+### メディアクエリ
 - PCファーストとし、原則としてはmin-width は使用しない。
 - 差分のスタイルのみを@includeで指定する
 
@@ -244,8 +255,8 @@ alwaysApply: false
 }
 ```
 
--表示非表示
- - 原則として以下を使用するものとする。
+### 表示非表示
+- 原則として以下を使用するものとする。
 
       ```scss
         .u-none__pc {
