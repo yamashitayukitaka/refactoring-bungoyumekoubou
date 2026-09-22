@@ -1,5 +1,6 @@
-<?php 
-if ( ! defined( 'ABSPATH' ) ) exit;
+<?php
+// Template Name: entry
+if (!defined('ABSPATH')) exit;
 get_header();
 ?>
 <section class = "p-top__contact l-content u-mb150">
