@@ -5,11 +5,11 @@ get_header();
 ?>
 <main class="">
   <div class="c-pageMv u-mb100">
-    <div class="c-pageMv__ttl__wrap">
-      <h2 class="c-pageMv__ttl u-mb20">
+    <div class="c-pageMv__heading">
+      <h2 class="c-pageMv__heading__title u-mb20">
         わたしたちの思い
       </h2>
-      <p class="c-pageMv__subTtl_b c-conceptpage">
+      <p class="c-pageMv__heading__subTitle_b c-conceptpage">
         <span class="font_orange">夢</span>をカタチに、<br>
         暮らしをもっと<span class="font_orange">豊か</span>に
       </p>
@@ -17,13 +17,13 @@ get_header();
         Dream in your heart,<br>
         freedom in your future
       </p>
-      <!-- <p class="c-pageMv__subTtl">
+      <!-- <p class="c-pageMv__heading__subTitle">
         CONCEPT
       </p> -->
     </div>
     <?php $mv = get_field('mv-concept-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 

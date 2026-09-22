@@ -5,17 +5,17 @@ get_header();
 ?>
 <main>
   <div class="c-pageMv u-mb100">
-    <div class="c-pageMv__ttl__wrap">
-      <h2 class="c-pageMv__ttl">
+    <div class="c-pageMv__heading">
+      <h2 class="c-pageMv__heading__title">
         ゆめづくりの流れ
       </h2>
-      <p class="c-pageMv__subTtl">
+      <p class="c-pageMv__heading__subTitle">
         FLOW
       </p>
     </div>
     <?php $mv = get_field('mv-flow-img'); ?>
     <?php if ($mv) : ?>
-      <figure class="c-pageMv__img__wrap" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
     <?php endif; ?>
   </div>
 
