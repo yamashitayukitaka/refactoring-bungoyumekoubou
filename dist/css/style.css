@@ -4615,6 +4615,43 @@ a:hover {
   margin-bottom: 7%;
 }
 
+.p-faq__overview {
+  margin-bottom: 10rem;
+  position: relative;
+  padding: 0 10%;
+  width: 100%;
+  background-image: url("../img/illustration/family_img.webp"), url("../img/illustration/yume_img9.webp"), url("../img/illustration/house.webp");
+  background-repeat: no-repeat;
+  background-size: 20% auto, 8% auto, 10% auto;
+  background-position: right 9% top -6%, left 10% bottom -8%, left 18% bottom -3%;
+}
+@media screen and (max-width: 1050px) {
+  .p-faq__overview {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-faq__overview {
+    padding-top: 10%;
+    background-size: 30% auto, 14% auto, 22% auto;
+    background-position: right 2% top -28%, left 25% top -7%, left 3% top -21%;
+  }
+}
+.p-faq__lead {
+  margin-top: 10rem;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .p-faq__lead {
+    font-size: 2rem;
+    padding: 0 3%;
+  }
+}
+.p-faq__list {
+  margin-bottom: 20rem;
+}
+
 .p-staff__list {
   display: flex;
   flex-wrap: wrap;
@@ -5268,6 +5305,84 @@ a:hover {
   justify-content: center !important;
   align-items: center;
   font-size: 2.2rem;
+}
+
+.c-accordion {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+  border-bottom: 1px solid #ed6a10;
+}
+@media screen and (max-width: 1050px) {
+  .c-accordion {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .c-accordion {
+    width: 96%;
+  }
+}
+.c-accordion--full {
+  width: 100%;
+}
+.c-accordion__trigger {
+  background-color: #fff;
+  color: #ed6a10;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.8rem;
+  transition: 0.4s;
+  border-top: solid 1px;
+}
+@media screen and (max-width: 599px) {
+  .c-accordion__trigger {
+    font-size: 2rem;
+  }
+}
+.c-accordion__trigger::after {
+  content: "+";
+  color: #ed6a10;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.c-accordion__trigger:hover, .c-accordion__trigger.is-active {
+  background-color: #ed6a10;
+  color: #fff;
+}
+.c-accordion__trigger:hover::after, .c-accordion__trigger.is-active::after {
+  color: #fff;
+}
+.c-accordion__trigger:hover .c-accordion__number, .c-accordion__trigger.is-active .c-accordion__number {
+  color: #fff;
+}
+.c-accordion__trigger.is-active::after {
+  content: "−";
+}
+.c-accordion__number {
+  margin-right: 2rem;
+}
+.c-accordion__panel {
+  display: none;
+  padding: 18px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #333;
+}
+.c-accordion__panel.is-open {
+  display: block;
+}
+@media screen and (max-width: 599px) {
+  .c-accordion__body {
+    font-size: 2rem;
+  }
 }
 
 .c-title--large {

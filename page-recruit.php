@@ -93,30 +93,29 @@ get_header();
     <?php
     $qas = get_field('answers');
     if ($qas) :
-      foreach ($qas as $i => $qa) :
-        if (empty($qa['question']) && empty($qa['answer'])) {
-          continue;
-        }
     ?>
-        <button class="accordion">
-          <span class="accordion-number">
-            <?php echo sprintf("%02d", ($i + 1)); ?>
-          </span>
-          <?php if (!empty($qa['question'])) : ?>
-            <?php echo esc_html($qa['question']); ?>
-          <?php endif; ?>
-        </button>
-        <div class="panel">
-          <p>
-            <?php if (!empty($qa['answer'])) : ?>
-              <?php echo wp_kses_post($qa['answer']); ?>
-            <?php endif; ?>
-          </p>
-        </div>
-    <?php
-      endforeach;
-    endif;
-    ?>
+      <ul class="c-accordion c-accordion--full">
+        <?php foreach ($qas as $i => $qa) :
+          if (empty($qa['question']) || empty($qa['answer'])) {
+            continue;
+          }
+        ?>
+          <li class="c-accordion__item">
+            <button type="button" class="c-accordion__trigger js-accordion">
+              <span class="c-accordion__number">
+                <?php echo sprintf('%02d', ($i + 1)); ?>
+              </span>
+              <?php echo esc_html($qa['question']); ?>
+            </button>
+            <div class="c-accordion__panel">
+              <p class="c-accordion__body">
+                <?php echo wp_kses_post($qa['answer']); ?>
+              </p>
+            </div>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+    <?php endif; ?>
   </section>
 
   <!-- 会社沿革 -->

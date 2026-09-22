@@ -1,9 +1,9 @@
-document.querySelectorAll('.accordion').forEach(function (element) {
-  element.classList.remove('active');
+document.querySelectorAll('.js-accordion').forEach(function (element) {
+  element.classList.remove('is-active');
+  element.nextElementSibling.classList.remove('is-open');
 
   element.addEventListener('click', function () {
-    this.classList.toggle('active');
-    const panel = this.nextElementSibling;
-    panel.classList.toggle('panel-active');
+    this.classList.toggle('is-active');
+    this.nextElementSibling.classList.toggle('is-open');
   });
 });

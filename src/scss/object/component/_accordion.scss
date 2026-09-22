@@ -1,0 +1,88 @@
+.c-accordion {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+  border-bottom: 1px solid $red;
+
+  @include mq(tab) {
+    width: 90%;
+  }
+
+  @include mq(sp) {
+    width: 96%;
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &__trigger {
+    background-color: $white;
+    color: $red;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.8rem;
+    transition: 0.4s;
+    border-top: solid 1px;
+
+    @include mq(sp) {
+      font-size: 2rem;
+    }
+
+    &::after {
+      content: '+';
+      color: $red;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+
+    &:hover,
+    &.is-active {
+      background-color: $red;
+      color: $white;
+    }
+
+    &:hover::after,
+    &.is-active::after {
+      color: $white;
+    }
+
+    &:hover .c-accordion__number,
+    &.is-active .c-accordion__number {
+      color: $white;
+    }
+
+    &.is-active::after {
+      content: '−';
+    }
+  }
+
+  &__number {
+    margin-right: 2rem;
+  }
+
+  &__panel {
+    display: none;
+    padding: 18px;
+    background-color: $white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #333;
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  &__body {
+    @include mq(sp) {
+      font-size: 2rem;
+    }
+  }
+}
