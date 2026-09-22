@@ -1,0 +1,159 @@
+{
+  "key": "group_6b000020land",
+  "title": "土地情報",
+  "fields": [
+    {
+      "key": "field_6b000020cat",
+      "label": "物件種別",
+      "name": "property-category",
+      "type": "taxonomy",
+      "taxonomy": "property-category",
+      "field_type": "checkbox",
+      "return_format": "id"
+    },
+    {
+      "key": "field_6b000020area",
+      "label": "物件エリア",
+      "name": "property-area",
+      "type": "taxonomy",
+      "taxonomy": "property-area",
+      "field_type": "checkbox",
+      "return_format": "id"
+    },
+    {
+      "key": "field_6b000020top",
+      "label": "物件概要",
+      "name": "top-info",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000020ta",
+          "label": "面積",
+          "name": "area",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020ts",
+          "label": "学校区",
+          "name": "school",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020tc",
+          "label": "キャッチコピー",
+          "name": "copy",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020tp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000020detail",
+      "label": "詳細",
+      "name": "detail",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000020dn",
+          "label": "名称",
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020da",
+          "label": "住所",
+          "name": "address",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020dt",
+          "label": "交通",
+          "name": "traffic",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020dd",
+          "label": "資料",
+          "name": "document",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020dm",
+          "label": "共益費",
+          "name": "mutual",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020dp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000020map",
+      "label": "地図HTML",
+      "name": "mhtml",
+      "type": "textarea"
+    },
+    {
+      "key": "field_6b000020info",
+      "label": "物件情報",
+      "name": "infomation",
+      "type": "repeater",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_6b000020ii",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000020it",
+          "label": "本文",
+          "name": "txt",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000020iv",
+          "label": "値",
+          "name": "value",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "property"
+      },
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "land.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

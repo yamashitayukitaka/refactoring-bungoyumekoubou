@@ -1,0 +1,188 @@
+{
+  "key": "group_6b000030rental",
+  "title": "賃貸物件",
+  "fields": [
+    {
+      "key": "field_6b000030cat",
+      "label": "物件種別",
+      "name": "property-category",
+      "type": "taxonomy",
+      "taxonomy": "property-category",
+      "field_type": "checkbox",
+      "return_format": "id"
+    },
+    {
+      "key": "field_6b000030area",
+      "label": "物件エリア",
+      "name": "property-area",
+      "type": "taxonomy",
+      "taxonomy": "property-area",
+      "field_type": "checkbox",
+      "return_format": "id"
+    },
+    {
+      "key": "field_6b000030detail",
+      "label": "詳細",
+      "name": "detail",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000030dn",
+          "label": "名称",
+          "name": "name",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030da",
+          "label": "住所",
+          "name": "address",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030dt",
+          "label": "交通",
+          "name": "traffic",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030dd",
+          "label": "資料",
+          "name": "document",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030dm",
+          "label": "共益費",
+          "name": "mutual",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030dp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000030top",
+      "label": "土地概要",
+      "name": "top",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000030tm",
+          "label": "管理費",
+          "name": "management",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030ts",
+          "label": "安全性",
+          "name": "security",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030tc",
+          "label": "キャッチコピー",
+          "name": "copy",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030tp",
+          "label": "価格",
+          "name": "price",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000030point",
+      "label": "物件ポイント",
+      "name": "flex-point",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000030poi",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000030pot",
+          "label": "タイトル",
+          "name": "ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030pox",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    },
+    {
+      "key": "field_6b000030facility",
+      "label": "設備",
+      "name": "flex-facilities",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000030fi",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000030ft",
+          "label": "タイトル",
+          "name": "ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000030fx",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "property"
+      },
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "rental.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}
