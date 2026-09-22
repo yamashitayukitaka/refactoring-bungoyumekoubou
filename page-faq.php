@@ -1,4 +1,5 @@
 <?php
+// Template Name: faq
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -61,21 +62,21 @@ get_header();
           continue;
         }
     ?>
-      <button class="accordion">
-        <span class="accordion-number">
-          <?php echo sprintf("%02d", ($i + 1)); ?>
-        </span>
-        <?php if (!empty($qa['question'])) : ?>
-        <?php echo esc_html($qa['question']); ?>
-        <?php endif; ?>
-      </button>
-      <div class="panel">
-        <p>
-          <?php if (!empty($qa['answer'])) : ?>
-          <?php echo wp_kses_post($qa['answer']); ?>
+        <button class="accordion">
+          <span class="accordion-number">
+            <?php echo sprintf("%02d", ($i + 1)); ?>
+          </span>
+          <?php if (!empty($qa['question'])) : ?>
+            <?php echo esc_html($qa['question']); ?>
           <?php endif; ?>
-        </p>
-      </div>
+        </button>
+        <div class="panel">
+          <p>
+            <?php if (!empty($qa['answer'])) : ?>
+              <?php echo wp_kses_post($qa['answer']); ?>
+            <?php endif; ?>
+          </p>
+        </div>
     <?php
       endforeach;
     endif;

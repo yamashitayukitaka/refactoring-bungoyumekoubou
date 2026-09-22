@@ -1,4 +1,5 @@
 <?php
+// Template Name: renovation
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -50,28 +51,28 @@ get_header();
     $renovation = get_field('renovation');
     if ($renovation && (!empty($renovation['img']) || !empty($renovation['txt']))) :
     ?>
-    <div class="concept__policy1" id="maintenance-description">
-      <div class="concept__policy1 maintenance-description">
-        <?php if (!empty($renovation['img'])) : ?>
-          <div class="design-right-image">
-            <img src="<?php echo esc_url($renovation['img']); ?>">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy2-content">
-          <div class="u-mb20">
-            <p class=" concept__policy1-mainttl maintenance-ttl concept__policy1-mainttl">
-              <span class="marker">ゆめリフォーム</span>
-
-            </p>
-          </div>
-          <?php if (!empty($renovation['txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($renovation['txt']); ?>
+      <div class="concept__policy1" id="maintenance-description">
+        <div class="concept__policy1 maintenance-description">
+          <?php if (!empty($renovation['img'])) : ?>
+            <div class="design-right-image">
+              <img src="<?php echo esc_url($renovation['img']); ?>">
             </div>
           <?php endif; ?>
+          <div class="concept__policy2-content">
+            <div class="u-mb20">
+              <p class=" concept__policy1-mainttl maintenance-ttl concept__policy1-mainttl">
+                <span class="marker">ゆめリフォーム</span>
+
+              </p>
+            </div>
+            <?php if (!empty($renovation['txt'])) : ?>
+              <div class="concept__policy2-text u-mb25">
+                <?php echo wp_kses_post($renovation['txt']); ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </div>
       </div>
-    </div>
     <?php endif; ?>
 
     <section class="u-mb100">
@@ -84,70 +85,70 @@ get_header();
         || ($imgs_two && (!empty($imgs_two['after_img_1']) || !empty($imgs_two['before_img']) || !empty($imgs_two['after_img_2'])))
       ) :
       ?>
-      <div class="support__conver_devices">ビフォーアフター</div>
-      <div class="changeStatus service_model_wrap">
-        <?php
+        <div class="support__conver_devices">ビフォーアフター</div>
+        <div class="changeStatus service_model_wrap">
+          <?php
           if ($imgs_one && (!empty($imgs_one['after_img_1']) || !empty($imgs_one['before_img']) || !empty($imgs_one['after_img_2']))) :
-        ?>
-        <div class="before1">
-          <div class="status_container">
-            <?php if (!empty($imgs_one['after_img_1'])) : ?>
-              <div class="after1_left">
-                <img src="<?php echo esc_url($imgs_one['after_img_1']); ?>">
+          ?>
+            <div class="before1">
+              <div class="status_container">
+                <?php if (!empty($imgs_one['after_img_1'])) : ?>
+                  <div class="after1_left">
+                    <img src="<?php echo esc_url($imgs_one['after_img_1']); ?>">
 
-                <span>AFTER</span>
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($imgs_one['before_img'])) : ?>
-              <div class="before1_right">
-                <img src="<?php echo esc_url($imgs_one['before_img']); ?>">
-                <span>BEFORE</span>
-              </div>
-            <?php endif; ?>
-          </div>
-        </div>
-        <?php if (!empty($imgs_one['after_img_2'])) : ?>
-          <div class="after1">
-            <div class="status_container">
-              <div class="after1_img">
-                <img src="<?php echo esc_url($imgs_one['after_img_2']); ?>">
-                <span>AFTER</span>
+                    <span>AFTER</span>
+                  </div>
+                <?php endif; ?>
+                <?php if (!empty($imgs_one['before_img'])) : ?>
+                  <div class="before1_right">
+                    <img src="<?php echo esc_url($imgs_one['before_img']); ?>">
+                    <span>BEFORE</span>
+                  </div>
+                <?php endif; ?>
               </div>
             </div>
-          </div>
-        <?php endif; ?>
-        <?php endif; ?>
-        <?php
+            <?php if (!empty($imgs_one['after_img_2'])) : ?>
+              <div class="after1">
+                <div class="status_container">
+                  <div class="after1_img">
+                    <img src="<?php echo esc_url($imgs_one['after_img_2']); ?>">
+                    <span>AFTER</span>
+                  </div>
+                </div>
+              </div>
+            <?php endif; ?>
+          <?php endif; ?>
+          <?php
           if ($imgs_two && (!empty($imgs_two['after_img_1']) || !empty($imgs_two['before_img']) || !empty($imgs_two['after_img_2']))) :
-        ?>
-        <div class="before2">
-          <div class="status_container">
-            <?php if (!empty($imgs_two['after_img_1'])) : ?>
-              <div class="after2_left">
-                <img src="<?php echo esc_url($imgs_two['after_img_1']); ?>">
-                <span>AFTER</span>
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($imgs_two['before_img'])) : ?>
-              <div class="before2_right">
-                <img src="<?php echo esc_url($imgs_two['before_img']); ?>">
-                <span>BEFORE</span>
-              </div>
-            <?php endif; ?>
-          </div>
-        </div>
-        <?php if (!empty($imgs_two['after_img_2'])) : ?>
-          <div class="after2">
-            <div class="status_container">
-              <div class="after2_img">
-                <img src="<?php echo esc_url($imgs_two['after_img_2']); ?>">
-                <span>AFTER</span>
+          ?>
+            <div class="before2">
+              <div class="status_container">
+                <?php if (!empty($imgs_two['after_img_1'])) : ?>
+                  <div class="after2_left">
+                    <img src="<?php echo esc_url($imgs_two['after_img_1']); ?>">
+                    <span>AFTER</span>
+                  </div>
+                <?php endif; ?>
+                <?php if (!empty($imgs_two['before_img'])) : ?>
+                  <div class="before2_right">
+                    <img src="<?php echo esc_url($imgs_two['before_img']); ?>">
+                    <span>BEFORE</span>
+                  </div>
+                <?php endif; ?>
               </div>
             </div>
-          </div>
-        <?php endif; ?>
-        <?php endif; ?>
-      </div>
+            <?php if (!empty($imgs_two['after_img_2'])) : ?>
+              <div class="after2">
+                <div class="status_container">
+                  <div class="after2_img">
+                    <img src="<?php echo esc_url($imgs_two['after_img_2']); ?>">
+                    <span>AFTER</span>
+                  </div>
+                </div>
+              </div>
+            <?php endif; ?>
+          <?php endif; ?>
+        </div>
       <?php endif; ?>
     </section>
 
@@ -155,95 +156,95 @@ get_header();
     $details = get_field('rnv_details');
     if ($details && (!empty($details['img_1']) || !empty($details['txt_1']) || !empty($details['img_2']) || !empty($details['txt_2']) || !empty($details['img_3']) || !empty($details['txt_3']) || !empty($details['img_4']) || !empty($details['txt_4']) || !empty($details['img_5']) || !empty($details['txt_5']) || !empty($details['img_6']) || !empty($details['txt_6']))) :
     ?>
-    <div class="support__conver_devices">リフォーム内容</div>
-    <div class="service_model_wrap samplelogo__three_points">
-      <div class="samplelogo__three_items_renovation mx-auto u-mb40">
-        <?php if (!empty($details['img_1']) || !empty($details['txt_1'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($details['img_1'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($details['img_1']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($details['txt_1'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($details['txt_1']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($details['img_2']) || !empty($details['txt_2'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($details['img_2'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($details['img_2']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($details['txt_2'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($details['txt_2']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($details['img_3']) || !empty($details['txt_3'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($details['img_3'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($details['img_3']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($details['txt_3'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($details['txt_3']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($details['img_4']) || !empty($details['txt_4'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($details['img_4'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($details['img_4']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($details['txt_4'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($details['txt_4']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($details['img_5']) || !empty($details['txt_5'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($details['img_5'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($details['img_5']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($details['txt_5'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($details['txt_5']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($details['img_6']) || !empty($details['txt_6'])) : ?>
-          <div class="samplelogo_item-one">
-            <?php if (!empty($details['img_6'])) : ?>
-              <div class="samplelogo_item_img">
-                <img src="<?php echo esc_url($details['img_6']); ?>">
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($details['txt_6'])) : ?>
-              <div class="samplelogo_button mx-auto">
-                <?php echo wp_kses_post($details['txt_6']); ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
+      <div class="support__conver_devices">リフォーム内容</div>
+      <div class="service_model_wrap samplelogo__three_points">
+        <div class="samplelogo__three_items_renovation mx-auto u-mb40">
+          <?php if (!empty($details['img_1']) || !empty($details['txt_1'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($details['img_1'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($details['img_1']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($details['txt_1'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($details['txt_1']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($details['img_2']) || !empty($details['txt_2'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($details['img_2'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($details['img_2']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($details['txt_2'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($details['txt_2']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($details['img_3']) || !empty($details['txt_3'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($details['img_3'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($details['img_3']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($details['txt_3'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($details['txt_3']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($details['img_4']) || !empty($details['txt_4'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($details['img_4'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($details['img_4']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($details['txt_4'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($details['txt_4']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($details['img_5']) || !empty($details['txt_5'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($details['img_5'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($details['img_5']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($details['txt_5'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($details['txt_5']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+          <?php if (!empty($details['img_6']) || !empty($details['txt_6'])) : ?>
+            <div class="samplelogo_item-one">
+              <?php if (!empty($details['img_6'])) : ?>
+                <div class="samplelogo_item_img">
+                  <img src="<?php echo esc_url($details['img_6']); ?>">
+                </div>
+              <?php endif; ?>
+              <?php if (!empty($details['txt_6'])) : ?>
+                <div class="samplelogo_button mx-auto">
+                  <?php echo wp_kses_post($details['txt_6']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+        </div>
       </div>
-    </div>
     <?php endif; ?>
   </section>
 
@@ -338,29 +339,29 @@ get_header();
         $point = ($points && !empty($points[0])) ? $points[0] : null;
         if ($point && (!empty($point['img']) || !empty($point['txt']))) :
         ?>
-        <div class="concept__policy1">
-          <?php if (!empty($point['img'])) : ?>
-            <div class="design-right-image">
-              <img src="<?php echo esc_url($point['img']); ?>">
-            </div>
-          <?php endif; ?>
-          <div class="concept__policy2-content">
-            <div class="design__paint1_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
-            </div>
-            <div>
-              <p class="c-title--orangeLine concept__policy1-mainttl"><span class="marker">
-                  <span class="u-orange">豊富な経験</span>と<span class="u-orange">知識</span>を<br>
-                  持つスタッフが<span class="u-orange">対応</span></span>
-              </p>
-            </div>
-            <?php if (!empty($point['txt'])) : ?>
-              <div class="concept__policy2-text u-mb25">
-                <?php echo wp_kses_post($point['txt']); ?>
+          <div class="concept__policy1">
+            <?php if (!empty($point['img'])) : ?>
+              <div class="design-right-image">
+                <img src="<?php echo esc_url($point['img']); ?>">
               </div>
             <?php endif; ?>
+            <div class="concept__policy2-content">
+              <div class="design__paint1_content_ttl">
+                <img src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>">
+              </div>
+              <div>
+                <p class="c-title--orangeLine concept__policy1-mainttl"><span class="marker">
+                    <span class="u-orange">豊富な経験</span>と<span class="u-orange">知識</span>を<br>
+                    持つスタッフが<span class="u-orange">対応</span></span>
+                </p>
+              </div>
+              <?php if (!empty($point['txt'])) : ?>
+                <div class="concept__policy2-text u-mb25">
+                  <?php echo wp_kses_post($point['txt']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
           </div>
-        </div>
         <?php endif; ?>
       </div>
 
@@ -370,29 +371,29 @@ get_header();
         $point = ($points && !empty($points[1])) ? $points[1] : null;
         if ($point && (!empty($point['img']) || !empty($point['txt']))) :
         ?>
-        <div class="concept__policy1">
-          <?php if (!empty($point['img'])) : ?>
-            <div class="design-left-image">
-              <img src="<?php echo esc_url($point['img']); ?>">
-            </div>
-          <?php endif; ?>
-          <div class="concept__policy1-content">
-
-            <div class="design__paint1_content_ttl">
-              <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
-            </div>
-            <div>
-              <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
-                  <span class="u-orange">安心</span>の<span class="u-orange">施工監督体制</span></span>
-              </p>
-            </div>
-            <?php if (!empty($point['txt'])) : ?>
-              <div class="concept__policy2-text u-mb25">
-                <?php echo wp_kses_post($point['txt']); ?>
+          <div class="concept__policy1">
+            <?php if (!empty($point['img'])) : ?>
+              <div class="design-left-image">
+                <img src="<?php echo esc_url($point['img']); ?>">
               </div>
             <?php endif; ?>
+            <div class="concept__policy1-content">
+
+              <div class="design__paint1_content_ttl">
+                <img src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>">
+              </div>
+              <div>
+                <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
+                    <span class="u-orange">安心</span>の<span class="u-orange">施工監督体制</span></span>
+                </p>
+              </div>
+              <?php if (!empty($point['txt'])) : ?>
+                <div class="concept__policy2-text u-mb25">
+                  <?php echo wp_kses_post($point['txt']); ?>
+                </div>
+              <?php endif; ?>
+            </div>
           </div>
-        </div>
         <?php endif; ?>
       </div>
     </section>

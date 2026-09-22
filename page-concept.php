@@ -1,4 +1,5 @@
 <?php
+// Template Name: concept
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
@@ -77,90 +78,90 @@ get_header();
     $policy_three = get_field('concept-policy_three');
     ?>
     <?php if ($policy_one && (!empty($policy_one['policy_one_img']) || !empty($policy_one['policy_one_txt']))) : ?>
-    <div class="concept__policy1">
-      <?php if (!empty($policy_one['policy_one_img'])) : ?>
-        <div class="concept__policy1-image">
-          <img src="<?php echo esc_url($policy_one['policy_one_img']); ?>" alt="">
-        </div>
-      <?php endif; ?>
-      <div class="concept__policy1-content">
-        <h3 class="c-title--sectionLine concept__policy1-subttl">
-          POLICY 01
-        </h3>
-        <div>
-          <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
-              <span class="u-orange">自由</span>に<span class="u-orange">デザイン</span>する<br>
-              という楽しさ</span>
-          </p>
-        </div>
-        <?php if (!empty($policy_one['policy_one_txt'])) : ?>
-          <div class="concept__policy1-text u-mb25">
-            <?php echo wp_kses_post($policy_one['policy_one_txt']); ?>
+      <div class="concept__policy1">
+        <?php if (!empty($policy_one['policy_one_img'])) : ?>
+          <div class="concept__policy1-image">
+            <img src="<?php echo esc_url($policy_one['policy_one_img']); ?>" alt="">
           </div>
         <?php endif; ?>
-        <div class="content_center">
-          <a class="link__btn" href="<?php echo esc_url(home_url('/design/')); ?>">デザインのこだわりを見る</a>
+        <div class="concept__policy1-content">
+          <h3 class="c-title--sectionLine concept__policy1-subttl">
+            POLICY 01
+          </h3>
+          <div>
+            <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
+                <span class="u-orange">自由</span>に<span class="u-orange">デザイン</span>する<br>
+                という楽しさ</span>
+            </p>
+          </div>
+          <?php if (!empty($policy_one['policy_one_txt'])) : ?>
+            <div class="concept__policy1-text u-mb25">
+              <?php echo wp_kses_post($policy_one['policy_one_txt']); ?>
+            </div>
+          <?php endif; ?>
+          <div class="content_center">
+            <a class="link__btn" href="<?php echo esc_url(home_url('/design/')); ?>">デザインのこだわりを見る</a>
+          </div>
         </div>
       </div>
-    </div>
     <?php endif; ?>
     <?php if ($policy_two && (!empty($policy_two['policy_two_img']) || !empty($policy_two['policy_two_txt']))) : ?>
-    <div class="concept__policy1">
-      <?php if (!empty($policy_two['policy_two_img'])) : ?>
-        <div class="concept__policy2-image">
-          <img src="<?php echo esc_url($policy_two['policy_two_img']); ?>" alt="">
-        </div>
-      <?php endif; ?>
-      <div class="concept__policy2-content">
-        <h3 class="c-title--sectionLine concept__policy1-subttl">
-          POLICY 02
-        </h3>
-        <div>
-          <p class="c-title--orangeLine concept__policy1-mainttl">
-            <span class="marker">
-              <span class="u-orange">コスト</span>を抑えた<br>
-              <span class="u-orange">スマート</span>な家づくり</span>
-          </p>
-        </div>
-        <?php if (!empty($policy_two['policy_two_txt'])) : ?>
-          <div class="concept__policy2-text u-mb25">
-            <?php echo wp_kses_post($policy_two['policy_two_txt']); ?>
+      <div class="concept__policy1">
+        <?php if (!empty($policy_two['policy_two_img'])) : ?>
+          <div class="concept__policy2-image">
+            <img src="<?php echo esc_url($policy_two['policy_two_img']); ?>" alt="">
           </div>
         <?php endif; ?>
-        <div class="content_center">
-          <a class="link__btn" href="<?php echo esc_url(home_url('/cost/')); ?>">コストへのこだわりを見る</a>
+        <div class="concept__policy2-content">
+          <h3 class="c-title--sectionLine concept__policy1-subttl">
+            POLICY 02
+          </h3>
+          <div>
+            <p class="c-title--orangeLine concept__policy1-mainttl">
+              <span class="marker">
+                <span class="u-orange">コスト</span>を抑えた<br>
+                <span class="u-orange">スマート</span>な家づくり</span>
+            </p>
+          </div>
+          <?php if (!empty($policy_two['policy_two_txt'])) : ?>
+            <div class="concept__policy2-text u-mb25">
+              <?php echo wp_kses_post($policy_two['policy_two_txt']); ?>
+            </div>
+          <?php endif; ?>
+          <div class="content_center">
+            <a class="link__btn" href="<?php echo esc_url(home_url('/cost/')); ?>">コストへのこだわりを見る</a>
+          </div>
         </div>
       </div>
-    </div>
     <?php endif; ?>
 
     <?php if ($policy_three && (!empty($policy_three['policy_three_img']) || !empty($policy_three['policy_three_txt']))) : ?>
-    <div class="concept__policy1 sp_tab_t_10">
-      <?php if (!empty($policy_three['policy_three_img'])) : ?>
-        <div class="concept__policy1-image ">
-          <img src="<?php echo esc_url($policy_three['policy_three_img']); ?>" alt="">
-        </div>
-      <?php endif; ?>
-      <div class="concept__policy1-content">
-        <h3 class="c-title--sectionLine concept__policy1-subttl">
-          POLICY 03
-        </h3>
-        <div>
-          <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
-              <span class="u-orange">心地よく暮らせる</span><br>
-              ということ</span>
-          </p>
-        </div>
-        <?php if (!empty($policy_three['policy_three_txt'])) : ?>
-          <div class="concept__policy1-text u-mb25">
-            <?php echo wp_kses_post($policy_three['policy_three_txt']); ?>
+      <div class="concept__policy1 sp_tab_t_10">
+        <?php if (!empty($policy_three['policy_three_img'])) : ?>
+          <div class="concept__policy1-image ">
+            <img src="<?php echo esc_url($policy_three['policy_three_img']); ?>" alt="">
           </div>
         <?php endif; ?>
-        <div class="content_center">
-          <a class="link__btn" href="<?php echo esc_url(home_url('/quality/')); ?>">性能のこだわりを見る</a>
+        <div class="concept__policy1-content">
+          <h3 class="c-title--sectionLine concept__policy1-subttl">
+            POLICY 03
+          </h3>
+          <div>
+            <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
+                <span class="u-orange">心地よく暮らせる</span><br>
+                ということ</span>
+            </p>
+          </div>
+          <?php if (!empty($policy_three['policy_three_txt'])) : ?>
+            <div class="concept__policy1-text u-mb25">
+              <?php echo wp_kses_post($policy_three['policy_three_txt']); ?>
+            </div>
+          <?php endif; ?>
+          <div class="content_center">
+            <a class="link__btn" href="<?php echo esc_url(home_url('/quality/')); ?>">性能のこだわりを見る</a>
+          </div>
         </div>
       </div>
-    </div>
     <?php endif; ?>
 
   </section>

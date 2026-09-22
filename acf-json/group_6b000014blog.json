@@ -1,0 +1,55 @@
+{
+  "key": "group_6b000014blog",
+  "title": "ブログ詳細",
+  "fields": [
+    {
+      "key": "field_6b000014contents",
+      "label": "記事コンテンツ",
+      "name": "contents",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000014i",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000014t",
+          "label": "タイトル",
+          "name": "ttl",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000014x",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "blog"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

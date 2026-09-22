@@ -1,0 +1,255 @@
+{
+    "key": "group_6b000020land",
+    "title": "土地情報",
+    "fields": [
+        {
+            "key": "field_6b000020cat",
+            "label": "物件種別",
+            "name": "property-category",
+            "type": "taxonomy",
+            "taxonomy": "property-category",
+            "field_type": "checkbox",
+            "return_format": "id"
+        },
+        {
+            "key": "field_6b000020area",
+            "label": "物件エリア",
+            "name": "property-area",
+            "type": "taxonomy",
+            "taxonomy": "property-area",
+            "field_type": "checkbox",
+            "return_format": "id"
+        },
+        {
+            "key": "field_6b000020top",
+            "label": "物件概要",
+            "name": "top-info",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000020ta",
+                    "label": "面積",
+                    "name": "area",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020ts",
+                    "label": "学校区",
+                    "name": "school",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020tc",
+                    "label": "キャッチコピー",
+                    "name": "copy",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020tp",
+                    "label": "価格",
+                    "name": "price",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_6b000020detail",
+            "label": "詳細",
+            "name": "detail",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000020dn",
+                    "label": "物件名",
+                    "name": "name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020da",
+                    "label": "所在地",
+                    "name": "address",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dt",
+                    "label": "交通",
+                    "name": "traffic",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dp",
+                    "label": "価格",
+                    "name": "price",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dla",
+                    "label": "土地面積",
+                    "name": "land-area",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020de",
+                    "label": "小学校区",
+                    "name": "elementary",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dj",
+                    "label": "中学校区",
+                    "name": "junior-high",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dpt",
+                    "label": "POINT",
+                    "name": "point",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_6b000020dg",
+                    "label": "地目",
+                    "name": "ground",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dpu",
+                    "label": "用途地域",
+                    "name": "purpose",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dh",
+                    "label": "建ぺい率",
+                    "name": "health",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dfr",
+                    "label": "容積率",
+                    "name": "floor-area-ratio",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020du",
+                    "label": "都市計画",
+                    "name": "urban",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dcp",
+                    "label": "接道",
+                    "name": "contact-path",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dtr",
+                    "label": "取引形態",
+                    "name": "transaction",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dco",
+                    "label": "仲介手数料",
+                    "name": "commission",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dfa",
+                    "label": "設備",
+                    "name": "facility",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dre",
+                    "label": "備考",
+                    "name": "remarks",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020dct",
+                    "label": "お問い合わせ先",
+                    "name": "contact",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                }
+            ]
+        },
+        {
+            "key": "field_6b000020aimgs",
+            "label": "ギャラリー",
+            "name": "a-imgs",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6b000020ai",
+                    "label": "画像",
+                    "name": "img",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
+            "key": "field_6b000020map",
+            "label": "地図HTML",
+            "name": "mhtml",
+            "type": "textarea"
+        },
+        {
+            "key": "field_6b000020info",
+            "label": "周辺情報",
+            "name": "infomation",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6b000020ii",
+                    "label": "画像",
+                    "name": "img",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6b000020it",
+                    "label": "本文",
+                    "name": "txt",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000020iv",
+                    "label": "値",
+                    "name": "value",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "land.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "show_in_rest": 0
+}

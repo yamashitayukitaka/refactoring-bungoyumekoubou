@@ -1,0 +1,164 @@
+{
+    "key": "group_6b000008recruit",
+    "title": "採用情報",
+    "fields": [
+        {
+            "key": "field_6b000008mv",
+            "label": "メインビジュアル",
+            "name": "mv-recruit-img",
+            "type": "image",
+            "return_format": "url",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6b000008pres",
+            "label": "代表メッセージ",
+            "name": "recruit-president",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000008pi",
+                    "label": "画像",
+                    "name": "img",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6b000008pt",
+                    "label": "本文",
+                    "name": "txt",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                }
+            ]
+        },
+        {
+            "key": "field_6b000008qa",
+            "label": "採用Q&A",
+            "name": "answers",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6b000008qq",
+                    "label": "質問",
+                    "name": "question",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000008qa2",
+                    "label": "回答",
+                    "name": "answer",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                }
+            ]
+        },
+        {
+            "key": "field_6b000008int",
+            "label": "スタッフインタビュー",
+            "name": "recruit-interview",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000008ic",
+                    "label": "インタビュー",
+                    "name": "recruit-interview-content",
+                    "type": "repeater",
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000008ict",
+                            "label": "タイトル",
+                            "name": "r-interview-content-tit",
+                            "type": "wysiwyg",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1
+                        },
+                        {
+                            "key": "field_6b000008icu",
+                            "label": "ユーザー",
+                            "name": "r-interview-content-user",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000008ui",
+                                    "label": "画像",
+                                    "name": "r-content-user-img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000008ut",
+                                    "label": "本文",
+                                    "name": "r-content-user-txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_6b000008app",
+            "label": "募集要項",
+            "name": "recruit-app",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6b000008al",
+                    "label": "項目",
+                    "name": "recruit-app-title",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000008av",
+                    "label": "内容",
+                    "name": "recruit-app-content",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                }
+            ]
+        },
+        {
+            "key": "field_6b000008tel",
+            "label": "採用電話番号",
+            "name": "recruite-tel-number",
+            "type": "text"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-recruit.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "show_in_rest": 0
+}

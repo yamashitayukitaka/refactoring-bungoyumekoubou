@@ -1,4 +1,5 @@
 <?php
+// Template Name: heig
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>

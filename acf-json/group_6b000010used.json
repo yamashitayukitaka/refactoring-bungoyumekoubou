@@ -1,0 +1,541 @@
+{
+    "key": "group_6b000010used",
+    "title": "建売住宅・中古物件",
+    "fields": [
+        {
+            "key": "field_6b000010cat",
+            "label": "物件種別",
+            "name": "property-category",
+            "type": "taxonomy",
+            "taxonomy": "property-category",
+            "field_type": "checkbox",
+            "return_format": "id"
+        },
+        {
+            "key": "field_6b000010area",
+            "label": "物件エリア",
+            "name": "property-area",
+            "type": "taxonomy",
+            "taxonomy": "property-area",
+            "field_type": "checkbox",
+            "return_format": "id"
+        },
+        {
+            "key": "field_6b000010used",
+            "label": "中古物件概要",
+            "name": "top-info-used",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000010uf",
+                    "label": "間取り",
+                    "name": "floor",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010us",
+                    "label": "学校区",
+                    "name": "school",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010uc",
+                    "label": "キャッチコピー",
+                    "name": "top-copy",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010up",
+                    "label": "価格",
+                    "name": "price",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_6b000010detail",
+            "label": "詳細",
+            "name": "detail",
+            "type": "group",
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6b000010dp",
+                    "label": "価格",
+                    "name": "price",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_6b000010dn",
+                    "label": "物件名",
+                    "name": "name",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dt",
+                    "label": "交通",
+                    "name": "traffic",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010da",
+                    "label": "所在地",
+                    "name": "address",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010df",
+                    "label": "間取り",
+                    "name": "floor",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dtf",
+                    "label": "延床面積",
+                    "name": "totalFloor",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dsa",
+                    "label": "土地面積",
+                    "name": "siteArea",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dag",
+                    "label": "築年数",
+                    "name": "age",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010de",
+                    "label": "小学校区",
+                    "name": "elementary",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dj",
+                    "label": "中学校区",
+                    "name": "junior-high",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dpt",
+                    "label": "POINT",
+                    "name": "point",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_6b000010dg",
+                    "label": "地目",
+                    "name": "ground",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dpu",
+                    "label": "用途地域",
+                    "name": "purpose",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dh",
+                    "label": "建ぺい率",
+                    "name": "health",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dfr",
+                    "label": "容積率",
+                    "name": "floor-area-ratio",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010du",
+                    "label": "都市計画",
+                    "name": "urban",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dcp",
+                    "label": "接道",
+                    "name": "contact-path",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dst",
+                    "label": "構造",
+                    "name": "structure",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dtr",
+                    "label": "取引形態",
+                    "name": "transaction",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dco",
+                    "label": "仲介手数料",
+                    "name": "commission",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dde",
+                    "label": "引渡し",
+                    "name": "delivery",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010dfa",
+                    "label": "設備",
+                    "name": "facility",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_6b000010dre",
+                    "label": "備考",
+                    "name": "remarks",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1
+                },
+                {
+                    "key": "field_6b000010dct",
+                    "label": "お問い合わせ先",
+                    "name": "contact",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_6b000010aimgs",
+            "label": "ギャラリー",
+            "name": "a-imgs",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6b000010ai",
+                    "label": "画像",
+                    "name": "img",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
+            "key": "field_6b000010map",
+            "label": "地図HTML",
+            "name": "mhtml",
+            "type": "textarea"
+        },
+        {
+            "key": "field_6b000010info",
+            "label": "周辺情報",
+            "name": "infomation",
+            "type": "repeater",
+            "layout": "table",
+            "sub_fields": [
+                {
+                    "key": "field_6b000010ii",
+                    "label": "画像",
+                    "name": "img",
+                    "type": "image",
+                    "return_format": "url",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_6b000010it",
+                    "label": "本文",
+                    "name": "txt",
+                    "type": "text"
+                },
+                {
+                    "key": "field_6b000010iv",
+                    "label": "値",
+                    "name": "value",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "key": "field_6b000010design",
+            "label": "デザイン",
+            "name": "flex-design",
+            "type": "flexible_content",
+            "button_label": "レイアウトを追加",
+            "layouts": {
+                "layout_6b000010d2col": {
+                    "key": "layout_6b000010d2col",
+                    "name": "two-column",
+                    "label": "2カラム",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000010df1",
+                            "label": "コンテンツ1",
+                            "name": "contents-1",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000010df1i",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000010df1t",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000010df1x",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_6b000010df2",
+                            "label": "コンテンツ2",
+                            "name": "contents-2",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000010df2i",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000010df2t",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000010df2x",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6b000010d1col": {
+                    "key": "layout_6b000010d1col",
+                    "name": "one-column",
+                    "label": "1カラム",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000010dfc",
+                            "label": "コンテンツ",
+                            "name": "contents",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000010dfci",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000010dfct",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000010dfcx",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            }
+        },
+        {
+            "key": "field_6b000010facility",
+            "label": "設備",
+            "name": "flex-facilities",
+            "type": "flexible_content",
+            "button_label": "レイアウトを追加",
+            "layouts": {
+                "layout_6b000010f2col": {
+                    "key": "layout_6b000010f2col",
+                    "name": "two-column",
+                    "label": "2カラム",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000010ff1",
+                            "label": "コンテンツ1",
+                            "name": "contents-1",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000010ff1i",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000010ff1t",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000010ff1x",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        },
+                        {
+                            "key": "field_6b000010ff2",
+                            "label": "コンテンツ2",
+                            "name": "contents-2",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000010ff2i",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000010ff2t",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000010ff2x",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6b000010f1col": {
+                    "key": "layout_6b000010f1col",
+                    "name": "one-column",
+                    "label": "1カラム",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6b000010ffc",
+                            "label": "コンテンツ",
+                            "name": "contents",
+                            "type": "repeater",
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_6b000010ffci",
+                                    "label": "画像",
+                                    "name": "img",
+                                    "type": "image",
+                                    "return_format": "url",
+                                    "preview_size": "medium"
+                                },
+                                {
+                                    "key": "field_6b000010ffct",
+                                    "label": "タイトル",
+                                    "name": "ttl",
+                                    "type": "text"
+                                },
+                                {
+                                    "key": "field_6b000010ffcx",
+                                    "label": "本文",
+                                    "name": "txt",
+                                    "type": "wysiwyg",
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "used.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "show_in_rest": 0
+}

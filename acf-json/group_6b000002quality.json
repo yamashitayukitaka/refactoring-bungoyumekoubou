@@ -1,0 +1,115 @@
+{
+  "key": "group_6b000002quality",
+  "title": "品質へのこだわり",
+  "fields": [
+    {
+      "key": "field_6b000002mv",
+      "label": "メインビジュアル",
+      "name": "mv-quality-img",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_6b000002quality",
+      "label": "品質ポイント",
+      "name": "quality",
+      "type": "repeater",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000002qt",
+          "label": "タイトル",
+          "name": "title",
+          "type": "text"
+        },
+        {
+          "key": "field_6b000002qx",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        },
+        {
+          "key": "field_6b000002qi",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        }
+      ]
+    },
+    {
+      "key": "field_6b000002stable",
+      "label": "安定した構造",
+      "name": "stable_structure",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000002si",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000002st",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    },
+    {
+      "key": "field_6b000002energy",
+      "label": "制震装置",
+      "name": "energy",
+      "type": "group",
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6b000002ei",
+          "label": "画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000002et",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-quality.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

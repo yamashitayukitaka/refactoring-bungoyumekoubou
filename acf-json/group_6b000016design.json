@@ -1,0 +1,91 @@
+{
+  "key": "group_6b000016design",
+  "title": "デザイン",
+  "fields": [
+    {
+      "key": "field_6b000016mv",
+      "label": "メインビジュアル",
+      "name": "mv-design-img",
+      "type": "image",
+      "return_format": "url",
+      "preview_size": "medium"
+    },
+    {
+      "key": "field_6b000016designs",
+      "label": "デザインポイント",
+      "name": "designs",
+      "type": "repeater",
+      "layout": "table",
+      "sub_fields": [
+        {
+          "key": "field_6b000016img",
+          "label": "メイン画像",
+          "name": "img",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000016txt",
+          "label": "本文",
+          "name": "txt",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        },
+        {
+          "key": "field_6b000016pi1",
+          "label": "ポイント画像1",
+          "name": "point_img_one",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000016pt1",
+          "label": "ポイント文1",
+          "name": "point_txt_one",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        },
+        {
+          "key": "field_6b000016pi2",
+          "label": "ポイント画像2",
+          "name": "point_img_two",
+          "type": "image",
+          "return_format": "url",
+          "preview_size": "medium"
+        },
+        {
+          "key": "field_6b000016pt2",
+          "label": "ポイント文2",
+          "name": "point_txt_two",
+          "type": "wysiwyg",
+          "tabs": "all",
+          "toolbar": "full",
+          "media_upload": 1
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "page_template",
+        "operator": "==",
+        "value": "page-design.php"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "show_in_rest": 0
+}

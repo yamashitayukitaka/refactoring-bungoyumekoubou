@@ -1,4 +1,5 @@
 <?php
+// Template Name: rireve
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
