@@ -1,0 +1,153 @@
+---
+description: ACF の設計方針・現状の在り方・テンプレート実装ルール
+globs: acf-json/**/*.json,**/page-*.php
+alwaysApply: false
+---
+
+## 基本方針
+
+ACF は **「運用者が変えるコンテンツ」だけ** に使う。固定ページの構成・文言・画像が更新されないものは、テンプレート直書き + `dist/img/` で管理する。
+
+- レガシーに repeater / group / 連番フィールド / 直書きが混在しているが、**新規・リファクタ時は本ルールに寄せる**
+- 既存ページを一括で揃え直す必要はない。触るページだけ適用する
+- フィールド定義は **ACF Local JSON**（`acf-json/*.json`）を正とする。管理画面での変更は JSON に同期する
+
+## ACF を使う / 使わない
+
+| 運用 | 実装 |
+|---|---|
+| 管理画面で差し替える（MV・本文・ギャラリー等） | ACF |
+| ページ構成・ステップ数・ラベルが固定 | テンプレート直書き |
+| 件数が変わる・順番を入れ替える | **repeater** |
+| 件数固定だが画像・文言だけ CMS 更新 | repeater または group（テンプレはループ化） |
+
+**避けること**
+
+- 文言は直書き・画像だけ ACF（`rnv_process` 型の中途半端）
+- repeater があるのに `[0]` / `[1]` 固定アクセス
+- `img_1`〜`img_6` + PHP 6回コピペ
+- 更新しない固定コンテンツまで repeater 化（過剰設計）
+
+## フィールド設計
+
+### 推奨: repeater
+
+同種の項目が2件以上・件数が変わる可能性がある場合。
+
+```json
+{
+  "type": "repeater",
+  "name": "faq_questions_answers",
+  "sub_fields": [
+    { "name": "question", "type": "text" },
+    { "name": "answer", "type": "wysiwyg" }
+  ]
+}
+```
+
+### 許容: 固定 group × N
+
+件数が仕様で固定で、repeater 化しない場合。
+
+
+### 画像フィールド
+- 直書きに移行した画像は `IMG_URL . '/スラッグ/ファイル名'` に置く（例: `renovation/process_01.png`）
+
+### MV（メインビジュアル）
+
+ページごとにフィールド名がバラバラ（レガシー）。**既存名を維持**し、新規ページでは `mv-{スラッグ}-img` に統一する。
+
+| ページ | フィールド名 |
+|---|---|
+| about | `mv-page` |
+| contact | `main-visual` |
+| cost | `mv-cost-img` |
+| renovation | `mv-renovation-img` |
+| faq | `mv-faq-img` |
+| … | `mv-*-img` 系が大半 |
+
+## テンプレート実装
+
+### `get_field()` の呼び出し
+
+- **ファイル先頭でまとめて取得しない**（配列化して `foreach` 用に加工するのは、ループ直前のセクション内のみ可）
+- 各セクション内で `get_field()` するか、repeater はセクション直前で1回取得して `foreach`
+- 空チェック: `if ($items)` → `foreach` 内で `empty()` スキップ
+
+```php
+<?php
+$qas = get_field('faq_questions_answers');
+if ($qas) :
+?>
+  <ul class="c-accordion">
+    <?php foreach ($qas as $qa) :
+      if (empty($qa['question']) || empty($qa['answer'])) {
+        continue;
+      }
+    ?>
+      <li class="c-accordion__item">…</li>
+    <?php endforeach; ?>
+  </ul>
+<?php endif; ?>
+```
+
+### 直書き + ループ
+
+固定コンテンツでも **マークアップが同型で、差分がデータだけ** の場合は、セクション内の配列 + `foreach` + `ul`/`li` を使ってよい（`list-markup.mdc` に従う）。
+
+- 例: `page-renovation.php` の `$process_steps` / `$detail_items`
+- 配列のキー名は意味のある語（`title`, `text`, `img`, `label`）。`img_1` 形式は使わない
+
+### 直書き（ループにしない）
+
+**マークアップが複雑・件ごとに構造が違う** 場合は、無理にループ化しない。**各件は HTML 直書き**にする。
+
+ループにしない判断基準:
+
+- 見出しの `u-orange` / `<br>` の入れ方が件ごとに違う
+- レイアウト差分を modifier クラスや配列キー（`media_modifier` 等）で持たないと表現できない
+
+
+レイアウトの左右反転など **見た目だけの差分** は、PHP ループより CSS（例: `nth-child(odd/even)`）で寄せる。
+
+
+### 出力
+
+- テキスト: `esc_html()`
+- URL: `esc_url()`
+- WYSIWYG: `wp_kses_post()`
+- 直書き HTML にリンクを含む場合も `wp_kses_post()` または該当タグのみ許可
+
+## 現状マップ（固定ページ）
+
+
+### ACF あり（代表例）
+
+### `page-renovation.php` の分離（リファクタ後）
+
+| セクション | 管理方法 |
+|---|---|
+| MV | ACF `mv-renovation-img` |
+| イントロ | 直書き |
+| 概要（about） | 直書き + `dist/img/renovation/about.png` |
+| ビフォーアフター | 直書き + `beforeafter_case01_*` 等 |
+| リフォーム内容 | 直書き `$detail_items` ループ |
+| 施工の流れ | 直書き `$process_steps` ループ |
+| 特徴 | 直書き `ul`/`li`（左右は CSS `nth-child`） |
+
+## Local JSON 運用
+
+- 保存先: `acf-json/`
+- 紐付け: 多くは `page_template` == `page-*.php`
+- CPT 用: `works`, `staff`, `blog` 等は各 `group_*.json` の `location` を確認
+- オプションページ: `inc/acf.php` の `theme-top-setting`（サイト全体管理）
+- フィールド追加・削除時は **JSON とテンプレートを同時に更新**する
+
+## リファクタ時の手順
+
+1. **更新要件を決める** — CMS で触るか、固定か
+2. 触らない → ACF フィールド削除 + テンプレ直書き + 画像を `dist/img/{スラッグ}/` に配置
+3. 触る・件数変動 → repeater 化 + `foreach` + `ul`/`li`（`list-markup.mdc`）。ただしマークアップが件ごとに複雑なら直書きのまま（上記「直書き（ループにしない）」）
+4. `acf-json` を更新し、不要フィールドを残さない
+
+
