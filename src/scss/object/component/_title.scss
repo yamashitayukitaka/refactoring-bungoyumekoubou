@@ -75,22 +75,21 @@
     }
   }
 
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   &--orangeLine {
     font-size: 2.4rem;
     letter-spacing: 0.68rem;
     color: $pureBlack;
-    font-weight: bold;
+    font-weight: 700;
     position: relative;
     display: inline-block;
     z-index: 99;
-    background: linear-gradient(transparent 70%, #ffebb4 50%);
-
-    // 移行中: 配下に残るレガシー .marker の二重適用を防ぐ
-    .marker {
-      background: none;
-      font-size: inherit;
-      font-weight: inherit;
-    }
   }
 
   &--orange {
@@ -99,4 +98,12 @@
     text-align: center;
     font-weight: bold;
   }
+}
+
+// tamura.css の span.marker から移行
+// * { font-size: 1.6rem } リセット対策で親の typography を継承
+.marker {
+  font-size: inherit;
+  font-weight: inherit;
+  background: linear-gradient(transparent 70%, #ffebb4 50%);
 }
