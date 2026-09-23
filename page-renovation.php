@@ -20,8 +20,8 @@ get_header();
   </div>
 
   <!-- トップタイトル概要 -->
-  <section class="p-renovation__intro">
-    <div class="c-title__head">
+  <section class="c-title__intro">
+    <div class="c-title__intro__head">
       <h3 class="c-title--sectionLine u-mb40">ゆめリフォーム</h3>
       <p class="c-title--orangeLine">
         <span class="marker">

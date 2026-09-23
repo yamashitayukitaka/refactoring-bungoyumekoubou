@@ -20,17 +20,8 @@ get_header();
   </div>
 
   <!-- トップタイトル概要 -->
-  <section class="l_content_middle_80 support-title u-mb100 illustration_set">
-    <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/family_img.webp'); ?>" alt=" モデルハウス">
-    </figure>
-    <figure class="illustration_3">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt=" モデルハウス">
-    </figure>
-    <figure class="illustration_4">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt=" モデルハウス">
-    </figure>
-    <div class="c-title__head">
+  <section class="c-title__intro">
+    <div class="c-title__intro__head">
       <h3 class="c-title--sectionLine u-mb40">モデルハウス</h3>
       <p class="c-title--orangeLine">
         <span class="marker">

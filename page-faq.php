@@ -19,8 +19,8 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="p-faq__overview">
-    <div class="c-title__head">
+  <section class="c-title__intro">
+    <div class="c-title__intro__head">
       <h3 class="c-title--sectionLine u-mb40">よくあるご質問</h3>
       <p class="c-title--orangeLine">
         <span class="marker">
