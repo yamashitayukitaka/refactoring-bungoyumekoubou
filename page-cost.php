@@ -30,19 +30,15 @@ get_header();
     <figure class="illustration_4">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt="">
     </figure>
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        コストへのこだわり
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine "><span class="marker">
-              大手他社よりも<br class="sp"><span class="u-orange">ワンランク上</span>の<span class="u-orange">設備</span>、<br>
-              <span class="u-orange">プランニング</span>、<span class="u-orange">デザ</span><span class="u-orange">イン</span>、<br>
-              <span class="u-orange">高品質</span>を<span class="u-orange">低コスト</span>で提供します。</span>
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">コストへのこだわり</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          大手他社よりも<br class="sp"><span class="u-orange">ワンランク上</span>の<span class="u-orange">設備</span>、<br>
+          <span class="u-orange">プランニング</span>、<span class="u-orange">デザ</span><span class="u-orange">イン</span>、<br>
+          <span class="u-orange">高品質</span>を<span class="u-orange">低コスト</span>で提供します。
+        </span>
+      </p>
     </div>
   </section>
 

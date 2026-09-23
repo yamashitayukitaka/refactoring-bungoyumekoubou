@@ -710,21 +710,6 @@
     font-weight: 700 !important;
   }
 
-  span.marker {
-    background: linear-gradient(transparent 70%,#ffebb4 50%);
-  }
-
-  .span_bold1 span.marker {
-    font-weight: bold;
-    font-size: 2.4rem;
-    background: linear-gradient(transparent 70%,#ffebb4 50%);
-  }
-
-  .c-title--orangeLine span.marker {
-    font-weight: bold;
-    font-size: 2.4rem;
-  }
-
   .content_center {
     display: grid;
     place-content: center;
@@ -1315,21 +1300,6 @@
     font-size: 5rem !important;
     letter-spacing: 0.68rem !important;
     font-weight: 700 !important;
-  }
-
-  span.marker {
-    background: linear-gradient(transparent 70%,#ffebb4 50%);
-  }
-
-  .span_bold1 span.marker {
-    font-weight: bold;
-    font-size: 2.4rem;
-    background: linear-gradient(transparent 70%,#ffebb4 50%);
-  }
-
-  .c-title--orangeLine span.marker {
-    font-weight: bold;
-    font-size: 2.4rem;
   }
 
   .content_center {
@@ -1954,21 +1924,6 @@
     font-size: 5rem !important;
     letter-spacing: 0.68rem !important;
     font-weight: 700 !important;
-  }
-
-  span.marker {
-    background: linear-gradient(transparent 70%,#ffebb4 50%);
-  }
-
-  .span_bold1 span.marker {
-    font-weight: bold;
-    font-size: 2.4rem;
-    background: linear-gradient(transparent 70%,#ffebb4 50%);
-  }
-
-  .c-title--orangeLine span.marker {
-    font-weight: bold;
-    font-size: 2.4rem;
   }
 
   .content_center {

@@ -30,18 +30,14 @@ get_header();
     <figure class="illustration_4">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt=" モデルハウス">
     </figure>
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        モデルハウス
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine "><span class="marker">
-              <span class="u-orange">見て</span>、<span class="u-orange">触れて</span>、<span class="u-orange">感じる</span>。<br>
-              <span class="u-orange">理想の住まい</span>を<span class="u-orange">体験</span>してください！</span>
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">モデルハウス</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          <span class="u-orange">見て</span>、<span class="u-orange">触れて</span>、<span class="u-orange">感じる</span>。<br>
+          <span class="u-orange">理想の住まい</span>を<span class="u-orange">体験</span>してください！
+        </span>
+      </p>
     </div>
   </section>
 

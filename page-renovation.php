@@ -21,19 +21,14 @@ get_header();
 
   <!-- トップタイトル概要 -->
   <section class="p-renovation__intro">
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine">
-        ゆめリフォーム
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine p-renovation__intro__lead"><span class="marker">
-              あなたの<span class="u-orange">大切な住まい</span>を、<br>
-              もっと<span class="u-orange">素敵に</span>、もっと<span class="u-orange">快適</span>に
-            </span>
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">ゆめリフォーム</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          あなたの<span class="u-orange">大切な住まい</span>を、<br>
+          もっと<span class="u-orange">素敵に</span>、もっと<span class="u-orange">快適</span>に
+        </span>
+      </p>
     </div>
   </section>
 
@@ -44,7 +39,7 @@ get_header();
       </div>
       <div class="p-renovation__about__panel p-renovation__about__panel--left">
         <div class="p-renovation__about__titleWrap">
-          <p class="c-title--orangeLine p-renovation__about__title">
+          <p class="p-renovation__about__title">
             <span class="marker">ゆめリフォーム</span>
           </p>
         </div>

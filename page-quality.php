@@ -29,16 +29,14 @@ get_header();
     <figure class="illustration_4">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt="">
     </figure>
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        品質へのこだわり
-      </h3>
-      <div>
-        <p class="c-title--orangeLine">
-          <span class="marker"><span class="u-orange">高品質な住まい</span>を<br class="sp">ご提供するための<br>
-            <span class="u-orange">5つ</span>のこだわり</span>
-        </p>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">品質へのこだわり</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          <span class="u-orange">高品質な住まい</span>を<br class="sp">ご提供するための<br>
+          <span class="u-orange">5つ</span>のこだわり
+        </span>
+      </p>
     </div>
   </section>
 

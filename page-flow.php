@@ -30,18 +30,14 @@ get_header();
     <figure class="illustration_4">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt="">
     </figure>
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        いえづくりのながれ
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine "><span class="marker">
-              <span class="u-orange">出会い</span>から完成<span class="u-orange">お引き渡し</span>まで<br>
-              <span class="u-orange">家づくりの流れ</span>をご紹介致します。
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">いえづくりのながれ</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          <span class="u-orange">出会い</span>から完成<span class="u-orange">お引き渡し</span>まで<br>
+          <span class="u-orange">家づくりの流れ</span>をご紹介致します。
+        </span>
+      </p>
     </div>
   </section>
 

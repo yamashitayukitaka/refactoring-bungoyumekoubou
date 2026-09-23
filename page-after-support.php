@@ -30,18 +30,14 @@ get_header();
     <figure class="illustration_4">
       <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt="">
     </figure>
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        安心の保証制度
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine "><span class="marker">
-              あなたの<span class="u-orange">大切</span>な<span class="u-orange">おうち</span>を<br>
-              ずっと<span class="u-orange">快適</span>に、ずっと<span class="u-orange">安心</span>に
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">安心の保証制度</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          あなたの<span class="u-orange">大切</span>な<span class="u-orange">おうち</span>を<br>
+          ずっと<span class="u-orange">快適</span>に、ずっと<span class="u-orange">安心</span>に
+        </span>
+      </p>
     </div>
   </section>
 
