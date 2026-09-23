@@ -20,8 +20,8 @@ get_header();
   </div>
 
   <!-- トップタイトル概要 -->
-  <section class="p-design__intro u-mb100">
-    <div class="c-title__head">
+  <section class="c-title__intro">
+    <div class="c-title__intro__head">
       <h3 class="c-title--sectionLine u-mb40">デザインへのこだわり</h3>
       <p class="c-title--orangeLine">
         <span class="marker">

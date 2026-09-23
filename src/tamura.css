@@ -736,30 +736,6 @@
     z-index: -1;
   }
 
-  .illustration_2 {
-    position: absolute;
-    right: 9%;
-    top: -6%;
-    width: 20%;
-    z-index: -1;
-  }
-
-  .illustration_3 {
-    position: absolute;
-    left: 10%;
-    bottom: -8%;
-    width: 8%;
-    z-index: -1;
-  }
-
-  .illustration_4 {
-    position: absolute;
-    left: 18%;
-    bottom: -3%;
-    width: 10%;
-    z-index: -4;
-  }
-
   .txt_18 {
     font-size: 1.8rem;
   }
@@ -886,10 +862,6 @@
   .concept__policy1-subttl {
     line-height: 1.5;
     letter-spacing: 1px;
-  }
-
-  .c-title--orangeLine::after {
-    display: none !important;
   }
 
   .c-pageMv__heading__subTitle {
@@ -1328,30 +1300,6 @@
     z-index: -1;
   }
 
-  .illustration_2 {
-    position: absolute;
-    right: 9%;
-    top: -6%;
-    width: 20%;
-    z-index: -1;
-  }
-
-  .illustration_3 {
-    position: absolute;
-    left: 10%;
-    bottom: -8%;
-    width: 8%;
-    z-index: -1;
-  }
-
-  .illustration_4 {
-    position: absolute;
-    left: 18%;
-    bottom: -3%;
-    width: 10%;
-    z-index: -4;
-  }
-
   .txt_18 {
     font-size: 1.8rem;
   }
@@ -1481,10 +1429,6 @@
   .concept__policy1-subttl {
     line-height: 1.5;
     letter-spacing: 1px;
-  }
-
-  .c-title--orangeLine::after {
-    display: none !important;
   }
 
   .c-pageMv__heading__subTitle {
@@ -1942,7 +1886,6 @@
 
   .illustration_set {
     position: relative;
-    padding-top: 10%;
   }
 
   .illustration_1 {
@@ -1953,33 +1896,8 @@
     max-width: 154px;
   }
 
-  .illustration_2 {
-    position: absolute;
-    right: 2%;
-    top: -28%;
-    width: 30%;
-    z-index: 2;
-    min-width: 130px;
-  }
-
   .service_model_wrap_sp {
     width: 100% !important;
-  }
-
-  .illustration_3 {
-    position: absolute;
-    left: 25%;
-    top: -7%;
-    width: 14%;
-  }
-
-  .illustration_4 {
-    min-width: 85px;
-    position: absolute;
-    left: 3%;
-    top: -21%;
-    width: 22%;
-    z-index: -4;
   }
 
   .txt_18 {
@@ -2109,10 +2027,6 @@
   .concept__policy1-subttl {
     line-height: 1.5;
     letter-spacing: 1px;
-  }
-
-  .c-title--orangeLine::after {
-    display: none !important;
   }
 
   .c-pageMv__heading__subTitle {

@@ -1,35 +1,4 @@
 .p-faq {
-  &__overview {
-    margin-bottom: 10rem;
-    position: relative;
-    padding: 0 10%;
-    width: 100%;
-    background-image:
-      url('../img/illustration/family_img.webp'),
-      url('../img/illustration/yume_img9.webp'),
-      url('../img/illustration/house.webp');
-    background-repeat: no-repeat;
-    background-size: 20% auto, 8% auto, 10% auto;
-    background-position:
-      right 9% top -6%,
-      left 10% bottom -8%,
-      left 18% bottom -3%;
-
-    @include mq(tab) {
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-
-    @include mq(sp) {
-      padding-top: 10%;
-      background-size: 30% auto, 14% auto, 22% auto;
-      background-position:
-        right 2% top -28%,
-        left 25% top -7%,
-        left 3% top -21%;
-    }
-  }
-
   &__lead {
     margin-top: 10rem;
     text-align: center;
