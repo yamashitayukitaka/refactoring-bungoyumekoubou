@@ -1,0 +1,647 @@
+.p-renovation {
+  &__intro {
+    margin-bottom: 10rem;
+    position: relative;
+    padding: 8% 10% 12%;
+    width: 100%;
+    background-image:
+      url('../img/illustration/family_img.webp'),
+      url('../img/illustration/yume_img9.webp'),
+      url('../img/illustration/house.webp');
+    background-repeat: no-repeat;
+    background-size: 20% auto, 8% auto, 10% auto;
+    background-position:
+      right 9% top 0,
+      left 10% bottom 0,
+      left 18% bottom 2%;
+
+    @include mq(tab) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    @include mq(sp) {
+      margin-bottom: 5%;
+      padding-top: 30%;
+      padding-bottom: 8%;
+      background-size: 30% auto, 14% auto, 22% auto;
+      background-position:
+        right 2% top 2%,
+        left 25% top 20%,
+        left 3% top 8%;
+    }
+
+    .c-title--sectionLine {
+      margin-bottom: 4rem;
+    }
+
+    &__lead {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__sectionTitle {
+    text-align: center;
+    background-color: $beige4;
+    padding: 1.5rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    width: 70%;
+
+    @include mq(tab) {
+      width: 90%;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+    }
+  }
+
+  &__about {
+    margin-bottom: 10rem;
+
+    &__titleWrap {
+      margin-bottom: 2rem;
+    }
+
+    &__hero {
+      position: relative;
+      margin-bottom: 17rem;
+
+      @include mq(tab) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__media {
+      width: 60%;
+
+      @include mq(tab) {
+        width: 90%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+
+      &--right {
+        margin-left: auto;
+      }
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__panel {
+      position: absolute;
+      width: 50%;
+      z-index: 10;
+      background-color: $white;
+      border-top: 4px solid $red;
+      padding: 3.5%;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(tab) {
+        position: relative;
+        width: 75%;
+        top: auto;
+        transform: none;
+        margin-top: -13%;
+      }
+
+      @include mq(sp) {
+        width: 88%;
+        padding: 5%;
+      }
+
+      &--left {
+        left: 0;
+
+        @include mq(tab) {
+          left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    &__text {
+      padding-top: 2rem;
+      font-size: 1.7rem;
+      color: $pureBlack;
+      letter-spacing: 0.03rem;
+      line-height: 1.8;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+
+      @include mq(tab) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05rem;
+      }
+
+      @include mq(sp) {
+        font-size: 2rem;
+        letter-spacing: 0.03rem;
+      }
+    }
+  }
+
+  &__beforeAfter {
+    margin-bottom: 10rem;
+  }
+
+  &__compare {
+    padding: 4.5rem 0;
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__primary {
+      position: relative;
+      width: 100%;
+    }
+
+    &__secondary {
+      position: relative;
+      width: 100%;
+      margin-top: 10.7rem;
+      margin-bottom: 33.5rem;
+    }
+
+    &__row {
+      padding: 0 5rem;
+    }
+
+    &__sub {
+      width: 100%;
+    }
+
+    &__afterMain {
+      width: 60%;
+      margin-top: 20.9rem;
+      position: relative;
+
+      &--offset {
+        position: absolute;
+        width: 50%;
+        right: 10rem;
+        top: 19.2rem;
+        z-index: 99;
+        margin-top: 0;
+      }
+    }
+
+    &__beforeThumb {
+      width: 20.3%;
+      right: 5rem;
+      top: -21rem;
+      position: absolute;
+
+      &--offset {
+        width: 42.5%;
+        position: relative;
+        right: auto;
+        top: auto;
+      }
+    }
+
+    &__afterWide {
+      margin-left: auto;
+      width: 60%;
+      margin-top: 2rem;
+      position: relative;
+
+      &--offset {
+        margin-right: auto;
+        width: 61%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__badge {
+      color: $white;
+      font-size: 1.6rem;
+      padding: 0.1rem 0.2rem;
+      letter-spacing: 0.28rem;
+      font-weight: 400;
+      display: flex;
+      width: 14rem;
+      justify-content: center;
+
+      &--after {
+        background-color: $red;
+      }
+
+      &--before {
+        background-color: #333;
+        margin-left: auto;
+        margin-top: 1.5rem;
+      }
+
+      &--sub {
+        margin-left: auto;
+        position: absolute;
+        left: -15rem;
+        bottom: 0;
+      }
+    }
+
+    &__afterMain .p-renovation__compare__badge--after {
+      margin-left: auto;
+      position: absolute;
+      right: -15rem;
+      bottom: 0;
+    }
+
+    &__afterMain--offset .p-renovation__compare__badge--after {
+      position: absolute;
+      bottom: 0.5rem;
+      left: -15rem;
+      right: auto;
+      margin-left: 0;
+    }
+
+    &__beforeThumb--offset .p-renovation__compare__badge--before {
+      position: absolute;
+      left: 0;
+      bottom: -4.5rem;
+      margin-top: 0;
+    }
+
+    &__afterWide--offset .p-renovation__compare__badge--after {
+      position: absolute;
+      bottom: 0;
+      right: -15rem;
+      margin-left: 0;
+    }
+  }
+
+  &__details {
+    margin-bottom: 10rem;
+
+    &__list {
+      list-style: none;
+      display: flex;
+      gap: 4.4rem;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      padding: 0;
+
+      @include mq(sp) {
+        gap: 3rem;
+        justify-content: space-around;
+        padding: 0 5%;
+      }
+    }
+
+    &__item {
+      margin: 0;
+      padding: 0;
+      width: 30%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.28rem;
+
+      @include mq(tab) {
+        width: 29%;
+      }
+
+      @include mq(sp) {
+        width: 46%;
+      }
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__label {
+      position: relative;
+      padding: 1rem;
+      color: $red;
+      display: flex;
+      justify-content: center;
+      box-shadow: 5px 5px 5px rgb(237 106 16 / 50%);
+      align-items: center;
+      border-radius: 3.5rem;
+      background-color: $white;
+      margin-top: -2.5rem;
+      left: 17%;
+      width: 66%;
+      text-align: center;
+
+      @include mq(tab) {
+        margin: 0 auto;
+        margin-top: -2.5rem;
+        width: 80%;
+        left: auto;
+        white-space: nowrap;
+      }
+
+      strong {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 3.19rem;
+        color: $red;
+      }
+    }
+  }
+
+  &__process {
+    margin-bottom: 10rem;
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__step {
+      margin-bottom: 8rem;
+    }
+
+    &__row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      margin-top: 10rem;
+      font-family: 'Noto Sans JP', sans-serif;
+
+      @include mq(tab) {
+        display: block;
+      }
+    }
+
+    &__media {
+      width: 50%;
+      z-index: 0;
+      position: relative;
+
+      @include mq(tab) {
+        width: 85%;
+        margin-left: auto;
+      }
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__panel {
+      display: inline-block;
+      background-color: #fefbf8;
+      padding: 2.7rem 3.8rem 2rem;
+      position: relative;
+      z-index: 10;
+      width: 49%;
+      margin-right: -2rem;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+
+      @include mq(tab) {
+        width: 70%;
+        margin-top: -15%;
+        margin-right: -2rem;
+      }
+
+      @include mq(sp) {
+        width: 80%;
+        margin-top: -15%;
+        margin-right: -2rem;
+      }
+    }
+
+    &__title {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+
+      .u-orange {
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: 0;
+      }
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      letter-spacing: 0.05rem;
+      line-height: 1.8;
+
+      a {
+        color: #2190ca;
+        font-weight: 700;
+        padding: 0 0.5rem;
+        text-decoration-line: underline;
+      }
+    }
+
+    &__cta {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2rem;
+    }
+
+    &__arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 3.3rem 5.8rem 0;
+      border-color: $red transparent transparent;
+      margin: 1% auto 0;
+    }
+  }
+
+  &__features {
+    margin-bottom: 10rem;
+    padding-top: 7%;
+    background-color: $white;
+  }
+
+  &__features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    > .p-renovation__features__item:nth-child(odd) {
+      .p-renovation__feature__media {
+        margin-left: auto;
+      }
+
+      .p-renovation__feature__panel {
+        left: 0;
+
+        @include mq(tab) {
+          left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+        }
+      }
+    }
+
+    > .p-renovation__features__item:nth-child(even) {
+      .p-renovation__feature__media {
+        @include mq(tab) {
+          width: 80%;
+        }
+      }
+
+      .p-renovation__feature__panel {
+        right: 0;
+
+        @include mq(tab) {
+          right: auto;
+          margin-left: auto;
+          margin-bottom: 10%;
+        }
+      }
+
+      .p-renovation__feature__headline {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__features__item {
+    position: relative;
+    margin: 0 0 17rem;
+    padding: 0;
+
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__feature {
+    &__hero {
+      position: relative;
+    }
+
+    &__media {
+      width: 60%;
+
+      @include mq(tab) {
+        width: 90%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__panel {
+      position: absolute;
+      width: 50%;
+      z-index: 10;
+      background-color: $white;
+      border-top: 4px solid $red;
+      padding: 3.5%;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(tab) {
+        position: relative;
+        width: 75%;
+        top: auto;
+        transform: none;
+        margin-top: -13%;
+      }
+
+      @include mq(sp) {
+        width: 88%;
+        padding: 5%;
+      }
+
+    }
+
+    &__badge {
+      margin-bottom: 1rem;
+      width: 12.2rem;
+    }
+
+    &__badgeImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__headline {
+      font-size: 2.6rem;
+      text-underline-offset: -9px;
+      letter-spacing: 0.65rem;
+      font-weight: 700;
+
+    }
+
+    &__text {
+      padding-top: 2rem;
+      font-size: 1.7rem;
+      color: $pureBlack;
+      letter-spacing: 0.03rem;
+      line-height: 1.8;
+      font-weight: 400;
+      margin-bottom: 2.5rem;
+
+      @include mq(tab) {
+        font-size: 1.6rem;
+        letter-spacing: 0.05rem;
+      }
+
+      @include mq(sp) {
+        font-size: 2rem;
+        letter-spacing: 0.03rem;
+      }
+    }
+  }
+}
