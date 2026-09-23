@@ -21,17 +21,14 @@ get_header();
 
   <!-- トップタイトル概要 -->
   <section class="p-design__intro u-mb100">
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        デザインへのこだわり
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine p-design__intro__lead"><span class="u-textOrange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
-            <span class="u-textOrange">デザイン</span>のこだわり<br>
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">デザインへのこだわり</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          <span class="u-orange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
+          <span class="u-orange">デザイン</span>のこだわり<br>
+        </span>
+      </p>
     </div>
   </section>
 

@@ -20,18 +20,14 @@ get_header();
   </div>
 
   <section class="p-faq__overview">
-    <div class="c-title__wrap--sectionLine">
-      <h3 class="c-title--sectionLine u-mb40">
-        よくあるご質問
-      </h3>
-      <div>
-        <div>
-          <p class="c-title--orangeLine">
-            お客様からよくいただく<br>
-            <span class="u-orange">ご質問</span>とその<span class="u-orange">回答</span>をまとめています
-          </p>
-        </div>
-      </div>
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine u-mb40">よくあるご質問</h3>
+      <p class="c-title--orangeLine">
+        <span class="marker">
+          お客様からよくいただく<br>
+          <span class="u-orange">ご質問</span>とその<span class="u-orange">回答</span>をまとめています
+        </span>
+      </p>
     </div>
     <p class="p-faq__lead l-content--middle">
       もし、こちらに掲載されていない質問がございましたら、<br class="u-none__mobile--sp">
