@@ -902,87 +902,10 @@
   }
   
   
-  .samplelogo__three_items_renovation {
-    display:flex;
-    gap:4.4rem;
-    flex-wrap:wrap;
-  }
-  .samplelogo_item-one {
-    width:30%;
-    display:flex;
-    position:relative;
-    flex-direction:column;
-    font-size:1.5rem;
-    line-height:2.5rem;
-    letter-spacing:2.8px;
-  }
-  .samplelogo_button {
-    position:relative;
-    padding:1rem;
-    color:#ed6a10;
-    display:flex;
-    justify-content:center;
-    box-shadow:5px 5px 5px rgba(237,106,16,0.5);
-    align-items:center;
-    border-radius:35px;
-    background-color:white;
-    margin-top:-2.5rem;
-    left:17%;
-    width:66%;
-  }
-  .samplelogo_button strong {
-    font-size:2.4rem;
-    font-weight:bold;
-    line-height:3.19rem;
-    color:#ed6a10;
-  }
   .samplelogo_text {
     text-align:center;
     justify-content:center;
     align-items:center;
-  }
-  .maintenance-ttl {
-    font-size:3.2rem;
-  }
-  .maintenance-ttl span {
-    font-size:3.2rem;
-    font-weight:700;
-  }
-  .maintenance-description {
-    font-size:2rem;
-    letter-spacing:0.1rem;
-    font-weight:400;
-    margin-bottom:8rem!important;
-  }
-  .inspection-description {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding-bottom:8rem;
-  }
-  .go-support {
-    align-self:flex-end;
-    margin-top:4rem;
-  }
-  .inspection-description--txt {
-    text-align:center;
-    font-size:2rem;
-    letter-spacing:1;
-    margin-top:5rem!important;
-    margin-bottom:5rem!important;
-  }
-  .inspection-description--img {
-    width:100%;
-  }
-  .inspection_description_img2 {
-    width:50%;
-    padding-top:5%;
-    text-align:center;
-    margin:0 auto;
-  }
-  #maintenance-description {
-    margin-bottom:8rem!important;
   }
   .single-swiper {
     padding-top:5%!important;
@@ -2436,90 +2359,11 @@
   }
   
   
-  .samplelogo__three_items_renovation {
-    display:flex;
-    gap:4.4rem;
-    flex-wrap:wrap;
-  }
-  .samplelogo_item-one {
-    width:29%;
-    display:flex;
-    position:relative;
-    flex-direction:column;
-    font-size:1.5rem;
-    line-height:2.5rem;
-    letter-spacing:2.8px;
-  }
-  .samplelogo_button {
-    position:relative;
-    padding:1rem;
-    color:#ed6a10;
-    display:flex;
-    justify-content:center;
-    box-shadow:5px 5px 5px rgba(237,106,16,0.5);
-    align-items:center;
-    border-radius:35px;
-    background-color:white;
-    margin:0 auto;
-    margin-top:-2.5rem;
-    width:80%;
-    text-align:center;
-    white-space:nowrap;
-  }
-  .samplelogo_button strong {
-    font-size:2.4rem;
-    font-weight:bold;
-    line-height:3.19rem;
-    color:#ed6a10;
-  }
   .samplelogo_text {
     text-align:center;
     justify-content:center;
     align-items:center;
     padding-bottom:8%;
-  }
-  .maintenance-ttl {
-    font-size:3.2rem;
-  }
-  .maintenance-ttl span {
-    font-size:3.2rem;
-    font-weight:700;
-  }
-  .maintenance-description {
-    font-size:2rem;
-    letter-spacing:0.1rem;
-    font-weight:400;
-    margin-bottom:8rem!important;
-  }
-  .inspection-description {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding-bottom:8rem;
-  }
-  .go-support {
-    align-self:flex-end;
-    margin-top:4rem;
-  }
-  .inspection-description--txt {
-    text-align:center;
-    font-size:2rem;
-    letter-spacing:1;
-    margin-top:5rem!important;
-    margin-bottom:5rem!important;
-  }
-  .inspection-description--img {
-    width:100%;
-  }
-  .inspection_description_img2 {
-    width:50%;
-    padding-top:5%;
-    text-align:center;
-    margin:0 auto;
-  }
-  #maintenance-description {
-    margin-bottom:8rem!important;
   }
   .single-swiper {
     padding-top:5%!important;
@@ -4011,93 +3855,11 @@
   }
   
   
-  .samplelogo__three_items_renovation {
-    display:flex;
-    gap:3rem;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    margin:0 auto;
-    padding:0 5%;
-  }
-  .samplelogo_item-one {
-    width:46%;
-    display:flex;
-    position:relative;
-    flex-direction:column;
-    font-size:1.5rem;
-    line-height:2.5rem;
-    letter-spacing:2.8px;
-  }
-  .samplelogo_button {
-    position:relative;
-    padding:1rem;
-    color:#ed6a10;
-    display:flex;
-    justify-content:center;
-    box-shadow:5px 5px 5px rgba(237,106,16,0.5);
-    align-items:center;
-    border-radius:35px;
-    background-color:white;
-    margin:0 auto;
-    margin-top:-2.5rem;
-    width:80%;
-    text-align:center;
-    white-space:nowrap;
-  }
-  .samplelogo_button strong {
-    font-size:2.4rem;
-    font-weight:bold;
-    line-height:3.19rem;
-    color:#ed6a10;
-  }
   .samplelogo_text {
     text-align:center;
     justify-content:center;
     align-items:center;
     padding-bottom:8%;
-  }
-  .maintenance-ttl {
-    font-size:3.2rem;
-  }
-  .maintenance-ttl span {
-    font-size:3.2rem;
-    font-weight:700;
-  }
-  .maintenance-description {
-    font-size:2rem;
-    letter-spacing:0.1rem;
-    font-weight:400;
-    margin-bottom:8rem!important;
-  }
-  .inspection-description {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding-bottom:8rem;
-  }
-  .go-support {
-    align-self:flex-end;
-    margin-top:4rem;
-  }
-  .inspection-description--txt {
-    text-align:center;
-    font-size:2rem;
-    letter-spacing:1;
-    margin-top:5rem!important;
-    margin-bottom:5rem!important;
-  }
-  .inspection-description--img {
-    width:100%;
-  }
-  .inspection_description_img2 {
-    width:50%;
-    padding-top:5%;
-    text-align:center;
-    margin:0 auto;
-  }
-  #maintenance-description {
-    margin-bottom:8rem!important;
   }
   .single-swiper {
     padding-top:5%!important;
