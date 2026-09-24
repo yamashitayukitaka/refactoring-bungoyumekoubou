@@ -26,7 +26,7 @@ get_header();
       <figure class="p-irohaie__about__logo">
         <img class="p-irohaie__about__logoImg" src="<?php echo esc_url(IMG_URL . '/irohaie/irohaie_logo.webp'); ?>" alt="">
       </figure>
-      <div class="c-title__wrap--sectionLine">
+      <div class="c-title__head">
         <h3 class="c-title--sectionLine">
           ABOUT
         </h3>
@@ -329,7 +329,7 @@ get_header();
   </section>
 
   <section class="l-content" id="irohaie">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         CONTACT
       </h3>

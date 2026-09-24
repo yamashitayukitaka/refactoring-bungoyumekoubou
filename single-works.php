@@ -180,7 +180,7 @@ get_header();
 </div>
 
   <section class="l-content">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         CONTACT
       </h3>

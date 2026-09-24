@@ -262,7 +262,7 @@ get_header();
     <?php $cac = get_field('cac'); ?>
     <?php if ($cac) : ?>
       <section class="l-content--middle" id = "booking">
-        <div class="c-title__wrap--sectionLine">
+        <div class="c-title__head">
           <h3 class="c-title--sectionLine">
             CONTACT
           </h3>

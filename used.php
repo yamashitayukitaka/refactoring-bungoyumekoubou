@@ -289,7 +289,7 @@ get_header();
   <?php get_template_part('template-parts/infomation-loop'); ?>
 
   <section class="l-content" id = "contact">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         CONTACT
       </h3>

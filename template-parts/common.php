@@ -150,7 +150,7 @@
 
 
 <div class="single-swiper location__content ">
-  <div class="c-title__wrap--sectionLine">
+  <div class="c-title__head">
     <h3 class="c-title--sectionLine">
       LOCATION
     </h3>

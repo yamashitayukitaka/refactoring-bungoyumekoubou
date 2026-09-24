@@ -20,7 +20,7 @@ get_header();
   </div>
 
   <section class="l-content--middle u-mb100">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         MESSAGE
       </h3>
@@ -80,7 +80,7 @@ get_header();
   </div>
 
   <section class="l-content--middle u-mb200">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         CORPORATE STANDARD
       </h3>
@@ -121,7 +121,7 @@ get_header();
   <!-- 会社沿革 -->
   <section class="u-pt50 u-mb100">
     <!-- <div class="l_content_middle_70">
-      <div class="c-title__wrap--sectionLine">
+      <div class="c-title__head">
         <h3 class="c-title--sectionLine">
           HISTORY
         </h3>
@@ -133,7 +133,7 @@ get_header();
       </div>
     </div> -->
 
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         HISTORY
       </h3>
@@ -386,7 +386,7 @@ get_header();
             continue;
           }
       ?>
-          <div class="c-title__wrap--sectionLine">
+          <div class="c-title__head">
             <h3 class="c-title--sectionLine">
               INTERVIEW
             </h3>
@@ -430,7 +430,7 @@ get_header();
     <figure class=" recruit__recruit__topImg">
       <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="recruit__recruit__img">
     </figure>
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         RECRUIT
       </h3>
@@ -495,7 +495,7 @@ get_header();
   </div>
 
   <section class="l-content">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         APPLICATION
       </h3>
