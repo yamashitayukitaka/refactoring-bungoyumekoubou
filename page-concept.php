@@ -3,23 +3,20 @@
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
-<main class="">
+<main class="p-concept">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title u-mb20">
         わたしたちの思い
       </h2>
-      <p class="c-pageMv__heading__subTitle_b c-conceptpage">
-        <span class="font_orange">夢</span>をカタチに、<br>
-        暮らしをもっと<span class="font_orange">豊か</span>に
+      <p class="p-concept__mv__lead">
+        <span class="u-textOrange">夢</span>をカタチに、<br>
+        暮らしをもっと<span class="u-textOrange">豊か</span>に
       </p>
-      <p class="c-conceptPageDesc noto-sans-jp">
+      <p class="p-concept__mv__en">
         Dream in your heart,<br>
         freedom in your future
       </p>
-      <!-- <p class="c-pageMv__heading__subTitle">
-        CONCEPT
-      </p> -->
     </div>
     <?php $mv = get_field('mv-concept-img'); ?>
     <?php if ($mv) : ?>
@@ -27,227 +24,180 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="concept__top-description">
-    <div class="concept__top-des-container">
-      <div class="concept__top-des-image">
-        <div class="concept__top-des-image1">
-          <img src="<?php echo IMG_URL . '/top/top-des1.webp' ?>" alt="">
+  <section class="p-concept__intro">
+    <div class="p-concept__intro__inner">
+      <div class="p-concept__intro__photos">
+        <div class="p-concept__intro__photo">
+          <img class="p-concept__intro__img" src="<?php echo IMG_URL; ?>/top/top-des1.webp" alt="">
         </div>
-        <div class="concept__top-des-image2">
-          <img src="<?php echo IMG_URL . '/illustration/family_img.webp' ?>" alt="">
+        <div class="p-concept__intro__family">
+          <img class="p-concept__intro__img" src="<?php echo IMG_URL; ?>/illustration/family_img.webp" alt="">
         </div>
       </div>
-      <div class="concept__top-des-text roboto">
+      <div class="p-concept__intro__text">
         <br>
-        <div class="concept__top-des-text1">
+        <p class="p-concept__intro__paragraph">
           「豊後夢工房(ぶんごゆめこうぼう)」の名前には、大分(豊後)に暮らす皆さまの夢を形にするという強い思いが込められています。「工房」とは、職人が心を込めて作品を作り上げる場所。
           私たちはその名の通り、一人ひとりのお客様の個性を大切にし、夢を叶える住まいを丁寧に作り上げることを使命としています。
-
-          <!-- 私たちはそれぞれのお客さまが持つ個性を大切に、住まいづくりのお手伝いをしています。 -->
-
-          <br>
-          <!-- 豊後の地に、夢をお届けする工房。それが私たち<span class="font_orange">「豊後夢工房」 </span>です。 -->
-        </div>
-        <div class="concept__top-des-text2">
+        </p>
+        <p class="p-concept__intro__paragraph">
           豊後夢工房は、住まいを通じて個性を表現できる場所です。<br>
           暮らしの理想や夢をお持ちの方々も、具体的なイメージがまだ湧いていなくても、いつも気軽に相談できるパートナーでありたいと考えています。
-        </div>
-        <div class="concept__top-des-text3">
-          住まいづくりは、とても自由です。家が欲しい、そのひとつの入口からあなたに合った「暮らし」を一緒に探したい。まずは、暮らしのイメージを一緒に語り合いませんか。
-        </div>
-        あなたの住まいを、<span class="font_orange">楽しく</span>、もっと<span class="font_orange">自由</span>に。
-      </div>
-    </div>
-  </section>
-
-  <section class="concept__policy u-mb100">
-
-    <div class="c-title__wrap--sectionLin concept__policy-title">
-      <h3 class="c-title--sectionLine">
-        POLICY
-      </h3>
-      <div class="span_bold1">
-        <p class="c-title--orangeLine u-mb50"><span class="marker">
-            <span class="u-orange">豊後夢工房</span>が大切にしていること</span>
         </p>
+        <p class="p-concept__intro__paragraph">
+          住まいづくりは、とても自由です。家が欲しい、そのひとつの入口からあなたに合った「暮らし」を一緒に探したい。まずは、暮らしのイメージを一緒に語り合いませんか。
+        </p>
+        あなたの住まいを、<span class="u-textOrange">楽しく</span>、もっと<span class="u-textOrange">自由</span>に。
       </div>
     </div>
-    <?php
-    $policy_one = get_field('concept-policy_one');
-    $policy_two = get_field('concept-policy_two');
-    $policy_three = get_field('concept-policy_three');
-    ?>
-    <?php if ($policy_one && (!empty($policy_one['policy_one_img']) || !empty($policy_one['policy_one_txt']))) : ?>
-      <div class="concept__policy1">
-        <?php if (!empty($policy_one['policy_one_img'])) : ?>
-          <div class="concept__policy1-image">
-            <img src="<?php echo esc_url($policy_one['policy_one_img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy1-content">
-          <h3 class="c-title--sectionLine concept__policy1-subttl">
-            POLICY 01
-          </h3>
-          <div>
-            <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
-                <span class="u-orange">自由</span>に<span class="u-orange">デザイン</span>する<br>
-                という楽しさ</span>
-            </p>
-          </div>
-          <?php if (!empty($policy_one['policy_one_txt'])) : ?>
-            <div class="concept__policy1-text u-mb25">
-              <?php echo wp_kses_post($policy_one['policy_one_txt']); ?>
-            </div>
-          <?php endif; ?>
-          <div class="content_center">
-            <a class="link__btn" href="<?php echo esc_url(home_url('/design/')); ?>">デザインのこだわりを見る</a>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
-    <?php if ($policy_two && (!empty($policy_two['policy_two_img']) || !empty($policy_two['policy_two_txt']))) : ?>
-      <div class="concept__policy1">
-        <?php if (!empty($policy_two['policy_two_img'])) : ?>
-          <div class="concept__policy2-image">
-            <img src="<?php echo esc_url($policy_two['policy_two_img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy2-content">
-          <h3 class="c-title--sectionLine concept__policy1-subttl">
-            POLICY 02
-          </h3>
-          <div>
-            <p class="c-title--orangeLine concept__policy1-mainttl">
-              <span class="marker">
-                <span class="u-orange">コスト</span>を抑えた<br>
-                <span class="u-orange">スマート</span>な家づくり</span>
-            </p>
-          </div>
-          <?php if (!empty($policy_two['policy_two_txt'])) : ?>
-            <div class="concept__policy2-text u-mb25">
-              <?php echo wp_kses_post($policy_two['policy_two_txt']); ?>
-            </div>
-          <?php endif; ?>
-          <div class="content_center">
-            <a class="link__btn" href="<?php echo esc_url(home_url('/cost/')); ?>">コストへのこだわりを見る</a>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
-
-    <?php if ($policy_three && (!empty($policy_three['policy_three_img']) || !empty($policy_three['policy_three_txt']))) : ?>
-      <div class="concept__policy1 sp_tab_t_10">
-        <?php if (!empty($policy_three['policy_three_img'])) : ?>
-          <div class="concept__policy1-image ">
-            <img src="<?php echo esc_url($policy_three['policy_three_img']); ?>" alt="">
-          </div>
-        <?php endif; ?>
-        <div class="concept__policy1-content">
-          <h3 class="c-title--sectionLine concept__policy1-subttl">
-            POLICY 03
-          </h3>
-          <div>
-            <p class="c-title--orangeLine u-mb10 concept__policy1-mainttl"><span class="marker">
-                <span class="u-orange">心地よく暮らせる</span><br>
-                ということ</span>
-            </p>
-          </div>
-          <?php if (!empty($policy_three['policy_three_txt'])) : ?>
-            <div class="concept__policy1-text u-mb25">
-              <?php echo wp_kses_post($policy_three['policy_three_txt']); ?>
-            </div>
-          <?php endif; ?>
-          <div class="content_center">
-            <a class="link__btn" href="<?php echo esc_url(home_url('/quality/')); ?>">性能のこだわりを見る</a>
-          </div>
-        </div>
-      </div>
-    <?php endif; ?>
-
   </section>
 
-  <section class="service_model_wrap service_model_wrap_sp">
-    <div class="support-title">
-      <figure class="system-degisn-left-img">
-        <img src=" <?php echo esc_url(IMG_URL . '/top/system-left.webp'); ?>" alt="安心の保証制度">
-      </figure>
+  <section class="p-concept__policy">
+    <div class="c-title__head">
+      <h3 class="c-title--sectionLine">POLICY</h3>
+      <p class="c-title--orangeLine u-mb50">
+        <span class="marker">
+          <span class="u-orange">豊後夢工房</span>が大切にしていること
+        </span>
+      </p>
+    </div>
+    <ul class="p-concept__policy__list">
+      <li class="p-concept__policy__item">
+        <div class="p-concept__policy__media">
+          <img class="p-concept__policy__img" src="<?php echo IMG_URL; ?>/concept/concept1.png" alt="">
+        </div>
+        <div class="p-concept__policy__panel">
+
+            <h3 class="c-title--sectionLine">POLICY 01</h3>
+            <p class="c-title--orangeLine u-mb10">
+              <span class="marker">
+                <span class="u-orange">自由</span>に<span class="u-orange">デザイン</span>する<br>
+                という楽しさ
+              </span>
+            </p>
+          <div class="p-concept__policy__text">
+            「家を建てたいな。」と思った日から、みんないろんな想像をすると思います。<br>
+            こんな暮らしがしてみたい、こんなデザインがいい。<br>
+            自由に想像し、楽しみます。私たちも自分の家を作る気持ちで、一緒にワクワクさせてもらっています。<br>
+            決まった枠にとらわれず、自由に暮らしをデザインするところからスタートです。
+          </div>
+          <div class="p-concept__policy__action">
+            <a class="p-concept__policy__link" href="<?php echo home_url('/design/'); ?>">デザインのこだわりを見る</a>
+          </div>
+        </div>
+      </li>
+      <li class="p-concept__policy__item">
+        <div class="p-concept__policy__media">
+          <img class="p-concept__policy__img" src="<?php echo IMG_URL; ?>/concept/concept2.png" alt="">
+        </div>
+        <div class="p-concept__policy__panel">
+          <h3 class="c-title--sectionLine">POLICY 02</h3>
+          <p class="c-title--orangeLine u-mb10">
+            <span class="marker">
+              <span class="u-orange">コスト</span>を抑えた<br>
+              <span class="u-orange">スマート</span>な家づくり
+            </span>
+          </p>
+          <div class="p-concept__policy__text">
+            家づくりで大切なのは持続可能性です。そのためには、日々のランニングコストや経済性が欠かせません。<br>
+            私たちは、経済性と快適性を兼ね備えたZEH住宅を基盤とし、エネルギー効率を最大化しています。<br>
+            また、最新の再生可能エネルギーを導入することで、ランニングコストを大幅に削減した住宅を提供しています。<br>
+            夢工房ならではの価格で、コストを抑えながらもワンランク上のスマートな家づくりを実現します。
+          </div>
+          <div class="p-concept__policy__action">
+            <a class="p-concept__policy__link" href="<?php echo home_url('/cost/'); ?>">コストへのこだわりを見る</a>
+          </div>
+        </div>
+      </li>
+      <li class="p-concept__policy__item">
+        <div class="p-concept__policy__media">
+          <img class="p-concept__policy__img" src="<?php echo IMG_URL; ?>/concept/concept3.png" alt="">
+        </div>
+        <div class="p-concept__policy__panel">
+          <h3 class="c-title--sectionLine">POLICY 03</h3>
+          <p class="c-title--orangeLine u-mb10">
+            <span class="marker">
+              <span class="u-orange">心地よく暮らせる</span><br>
+              ということ
+            </span>
+          </p>
+          <div class="p-concept__policy__text">
+            家は人生のベースです。安心して暮らしてほしい。
+            私たちはデザインの良さだけを追求する家は作りません。自由なデザインを、安心して暮らせる住み心地の面からも考え、いつも住まい手のことを考え家を建てています。最新の技術と経験を生かし、未来基準の高性能住宅を提供します。
+          </div>
+          <div class="p-concept__policy__action">
+            <a class="p-concept__policy__link" href="<?php echo home_url('/quality/'); ?>">性能のこだわりを見る</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="p-concept__system">
+    <div class="p-concept__system__head">
       <div>
-        <div class="c-title__wrap--sectionLine">
+        <div class="c-title__head">
           <h3 class="c-title--sectionLine">
             SYSTEM & DESIGN
           </h3>
-          <div class="u-mb40">
-            <p class="c-title--orangeLine span_bold1"><span class="marker">
-                豊後夢工房の<span class="u-orange">組織力</span>と<span class="u-orange">デザイン力</span></span>
-            </p>
-          </div>
+          <p class="c-title--orangeLine p-concept__system__title"><span class="marker">
+              豊後夢工房の<span class="u-orange">組織力</span>と<span class="u-orange">デザイン力</span></span>
+          </p>
         </div>
-        <p class="u-mb50 flow-desc txt_18">
+        <p class="p-concept__system__lead">
           土地探しから家づくりの相談、メンテナンスまで、<br>
-          <strong class="font_orange">ワンストップで</strong>住まいづくりをおまかせできます
+          <strong class="u-textOrange">ワンストップで</strong>住まいづくりをおまかせできます
         </p>
-      </div>
-      <figure class="illustration_1">
-        <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img3.webp'); ?>" alt="安心の保証制度">
-      </figure>
-    </div>
-    <div class="concept__sysign_sixoptions u-mb20">
-      <div class="concept__sysign_options_items">
-
-        <div class="concept__sysign_item">
-          <p>LAND</p>
-          <span>土地</span>
-        </div>
-        <div class="concept__sysign_item">
-          <p>DESIGN</p>
-          <span>設計</span>
-        </div>
-      </div>
-      <div class="concept__sysign_options_items">
-
-        <div class="concept__sysign_item">
-          <p>PLANNER</p>
-          <span>営業</span>
-        </div>
-        <div class="concept__cross pc_tab"></div>
-        <div class="concept__sysign_item">
-          <p>COORDINATOR</p>
-          <span class="pc_tab">インテリアコーディネーター</span>
-          <span class="sp">コーディネーター</span>
-        </div>
-      </div>
-      <div class="concept__sysign_options_items">
-
-        <div class="concept__sysign_item">
-          <p>SUPERVISOR</p>
-          <span>施工</span>
-        </div>
-        <div class="concept__sysign_item">
-          <p>MAINTENANCE</p>
-          <span>メンテナンス</span>
-        </div>
       </div>
     </div>
-    <div class="concept__team u-mb100">
-      <div class="u-mb20">
-        <p class="c-title--orangeLine">
-          <span class="marker">
-            <span class="u-orange">Team 夢工房</span>の<span class="u-orange">デザイン力</span></span>
-        </p>
-      </div>
-      <?php $team_txt = get_field('concept-team_txt'); ?>
-      <?php if ($team_txt) : ?>
-        <p class="concept__system_team_content u-mb20">
-          <?php echo wp_kses_post($team_txt); ?>
-        </p>
-      <?php endif; ?>
-      <div class="go_list_wrapper">
-        <a class="form__btn" href="<?php echo esc_url(home_url('/staff/')); ?>">ゆめづくりスタッフ一覧へ</a>
+    <div class="p-concept__roles">
+      <ul class="p-concept__roles__list">
+        <li class="p-concept__roles__item">
+          <p class="p-concept__roles__en">LAND</p>
+          <span class="p-concept__roles__ja">土地</span>
+        </li>
+        <li class="p-concept__roles__item">
+          <p class="p-concept__roles__en">DESIGN</p>
+          <span class="p-concept__roles__ja">設計</span>
+        </li>
+      </ul>
+      <ul class="p-concept__roles__list">
+        <li class="p-concept__roles__item">
+          <p class="p-concept__roles__en">PLANNER</p>
+          <span class="p-concept__roles__ja">営業</span>
+        </li>
+        <li class="p-concept__roles__mark u-none__mobile--sp" aria-hidden="true"></li>
+        <li class="p-concept__roles__item">
+          <p class="p-concept__roles__en">COORDINATOR</p>
+          <span class="p-concept__roles__ja u-none__mobile--sp">インテリアコーディネーター</span>
+          <span class="p-concept__roles__ja u-none__pc--sp">コーディネーター</span>
+        </li>
+      </ul>
+      <ul class="p-concept__roles__list">
+        <li class="p-concept__roles__item">
+          <p class="p-concept__roles__en">SUPERVISOR</p>
+          <span class="p-concept__roles__ja">施工</span>
+        </li>
+        <li class="p-concept__roles__item">
+          <p class="p-concept__roles__en">MAINTENANCE</p>
+          <span class="p-concept__roles__ja">メンテナンス</span>
+        </li>
+      </ul>
+    </div>
+    <div class="p-concept__team">
+      <p class="c-title--orangeLine p-concept__team__title">
+        <span class="marker">
+          <span class="u-orange">Team 夢工房</span>の<span class="u-orange">デザイン力</span></span>
+      </p>
+      <p class="p-concept__team__text">
+        家づくりのプロ集団としての品質を高めるために、各部署との連携は不可欠です。特にチームワークを重視する豊後夢工房では、お客様に最高のサービスを提供するための社内環境づくりに注力しています。社内ネットワークを活用し、家づくりのデータを全社員が共有し、全体会議を開いて問題点や改善点を話し合うことで、各部署の壁を越えて自由にアイディアを出し合えるオープンな体制を整えています。情報を共有し合い、お客様のニーズに応える感度を高めながら、創造的なデザイン力を提案します。
+      </p>
+      <div class="p-concept__team__action">
+        <a class="p-concept__team__link" href="<?php echo home_url('/staff/'); ?>">ゆめづくりスタッフ一覧へ</a>
       </div>
     </div>
   </section>
 
   <?php get_template_part('template-parts/common'); ?>
-
 </main>
 <?php get_footer(); ?>

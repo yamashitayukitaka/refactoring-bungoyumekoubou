@@ -1,0 +1,547 @@
+.p-concept {
+  overflow-x: hidden;
+
+  &__mv {
+    &__lead {
+      font-size: 2.5rem;
+      line-height: 2;
+      letter-spacing: 0.18rem;
+      font-weight: bold;
+      position: relative;
+      z-index: 999;
+      border-left: 4px solid $orange;
+      padding-left: 2rem;
+
+      .u-textOrange {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__en {
+      position: relative;
+      z-index: 999;
+      font-size: 2rem;
+      line-height: 1.8;
+      margin-top: 2rem;
+    }
+  }
+
+  &__intro {
+    width: 100%;
+    height: auto;
+    background-color: $white;
+
+    @include mq(tab) {
+      width: 90vw;
+      margin: 0 auto;
+    }
+
+    @include mq(sp) {
+      width: 95vw;
+    }
+
+    &__inner {
+      padding: 6rem 5rem 8rem;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 5rem;
+
+      @include mq(tab) {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        gap: 0;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__photos {
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    &__photo {
+      position: relative;
+      width: 11rem;
+
+      @include mq(tab) {
+        width: 30%;
+      }
+
+      @include mq(sp) {
+        display: none;
+      }
+    }
+
+    &__family {
+      position: relative;
+      width: 37rem;
+      transform: scale(-1, 1);
+
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__text {
+      font-size: 2.16rem;
+      font-weight: 600;
+      width: 63rem;
+
+      @include mq(tab) {
+        width: auto;
+        margin: 0 auto;
+        padding-bottom: 15%;
+      }
+    }
+
+    &__paragraph {
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 2rem;
+
+      @include mq(sp) {
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__policy {
+    background-color: $beige4;
+    padding-bottom: 5rem;
+    margin-bottom: 10rem;
+    padding-top: 8rem;
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__label.c-title--sectionLine {
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 3.2rem;
+      color: #333333;
+      letter-spacing: 1px;
+      line-height: 1.5;
+    }
+
+    &__title.c-title--orangeLine {
+      margin-bottom: 1rem;
+      font-size: 2.6rem;
+      letter-spacing: 6.5px;
+      font-weight: 700;
+      text-underline-offset: -9px;
+
+      .u-orange {
+        font-size: 2.6rem;
+      }
+    }
+
+    &__item {
+      position: relative;
+      margin-bottom: 17rem;
+
+      @include mq(tab) {
+        position: static;
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        @include mq(tab) {
+          margin-top: 10%;
+        }
+      }
+
+      &:nth-child(even) {
+        .p-concept__policy__media {
+          margin-left: auto;
+
+          @include mq(tab) {
+            margin-top: 10%;
+          }
+        }
+
+        .p-concept__policy__panel {
+          right: auto;
+          left: 0;
+
+          @include mq(tab) {
+            left: auto;
+            margin-left: 0;
+            margin-right: auto;
+            margin-bottom: 5%;
+          }
+        }
+
+        .p-concept__policy__title {
+          margin-bottom: 0;
+        }
+
+        .p-concept__policy__text {
+          padding-top: 2rem;
+
+          @include mq(tab) {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+          }
+
+          @include mq(sp) {
+            padding-top: 0;
+            font-size: 2rem;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+
+    &__media {
+      width: 60%;
+
+      @include mq(tab) {
+        width: 80%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__panel {
+      position: absolute;
+      width: 50%;
+      z-index: 10;
+      background-color: $white;
+      box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
+      border-top: 4px solid $red;
+      padding: 3.5%;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(tab) {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 75%;
+        margin-left: auto;
+        margin-top: -13%;
+        margin-bottom: 10%;
+      }
+
+      @include mq(sp) {
+        width: 88%;
+        padding: 5%;
+      }
+    }
+
+    &__text {
+      margin-bottom: 2.5rem;
+      font-size: 1.7rem;
+      color: $pureBlack;
+      letter-spacing: 0.3px;
+      line-height: 1.8;
+      font-weight: 400;
+
+      @include mq(sp) {
+        font-size: 2rem;
+      }
+    }
+
+    &__action {
+      display: grid;
+      place-content: center;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $white;
+      background-color: $orange;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 48px;
+      text-align: center;
+      transition: 0.5s;
+      padding: 0 4rem;
+      position: relative;
+      border-radius: 24px;
+      border: 1px solid $orange;
+
+      @include mq(sp) {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        color: $orange;
+        background-color: $white;
+      }
+    }
+  }
+
+  &__system {
+    margin: 0 auto;
+    width: 70%;
+    min-width: 900px;
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 350px;
+      margin-top: 15%;
+    }
+
+    &__head {
+      position: relative;
+
+      @include mq(sp) {
+        margin-bottom: 5%;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      &::before {
+        left: 0;
+        bottom: 0;
+        width: 20%;
+        aspect-ratio: 173 / 132;
+        background-image: url('../img/top/system-left.webp');
+
+        @include mq(sp) {
+          top: -42%;
+          bottom: auto;
+          width: 26%;
+        }
+      }
+
+      &::after {
+        right: 0;
+        top: 0;
+        width: 25%;
+        aspect-ratio: 754 / 598;
+        background-image: url('../img/illustration/yume_img3.webp');
+
+        @include mq(sp) {
+          top: -70%;
+          width: 38%;
+          max-width: 154px;
+          z-index: auto;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+    }
+
+    &__lead {
+      margin-bottom: 5rem;
+      text-align: center;
+      font-size: 1.8rem;
+
+      @include mq(sp) {
+        padding: 0 3%;
+      }
+
+      .u-textOrange {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__roles {
+    margin: 1rem auto 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    background-color: $beige4;
+    padding: 3.6rem 7rem;
+
+    @include mq(sp) {
+      margin-top: 5%;
+      gap: 2rem;
+      padding: 10% 3%;
+      border-radius: 0;
+    }
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item {
+      border: 1px solid $red;
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      padding: 1rem 0;
+      justify-content: center;
+      align-items: center;
+      gap: 10%;
+      background-color: $white;
+
+      @include mq(sp) {
+        width: 48%;
+      }
+    }
+
+    &__en {
+      font-size: 2.4rem;
+      font-weight: bold;
+      color: #333333;
+      text-decoration: underline solid 1px $pureBlack;
+      text-underline-offset: 10px;
+    }
+
+    &__ja {
+      font-size: 1.8rem;
+      color: $pureBlack;
+    }
+
+    &__mark {
+      position: relative;
+      width: 72px;
+      height: 72px;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 4px;
+        background-color: $pureBlack;
+        transform-origin: center;
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__team {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+
+    @include mq(sp) {
+      padding: 5% 3%;
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+    }
+
+    &__text {
+      margin-bottom: 2rem;
+      font-size: 1.8rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    &__action {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $pureBlack;
+      font-weight: bold;
+      padding: 0 5rem;
+      background-color: $white;
+      border: solid 1px #bbb;
+      line-height: 52px;
+      display: inline-block;
+      text-align: center;
+      transition: 0.5s;
+      position: relative;
+      border-radius: 24px;
+
+      &::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-right: solid 3px $pureBlack;
+        border-bottom: solid 3px $pureBlack;
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: 0.3s;
+        top: 50%;
+        right: 24px;
+        margin-top: -6px;
+      }
+
+      @include mq(tab) {
+        line-height: 48px;
+      }
+
+      @include mq(sp) {
+        line-height: 36px;
+
+        &::before {
+          width: 8px;
+          height: 8px;
+          border-right-width: 1.5px;
+          border-bottom-width: 1.5px;
+          top: 56%;
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $orange;
+        border-color: $orange;
+
+        &::before {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
