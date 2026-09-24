@@ -6003,6 +6003,9 @@ a:hover {
   background-color: #fff;
 }
 
+.p-concept {
+  overflow-x: hidden;
+}
 .p-concept__mv__lead {
   font-size: 2.5rem;
   line-height: 2;
