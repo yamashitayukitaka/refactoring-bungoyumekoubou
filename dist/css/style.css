@@ -5773,6 +5773,236 @@ a:hover {
   height: auto;
 }
 
+.p-maintenance__heading {
+  text-align: center;
+  background-color: #faf7f2;
+  padding: 1.5rem;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+.p-maintenance__note {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.p-maintenance__about {
+  margin-bottom: 8rem;
+}
+.p-maintenance__about__row {
+  position: relative;
+  margin-bottom: 8rem;
+}
+.p-maintenance__about__media {
+  width: 60%;
+  margin-left: auto;
+}
+@media screen and (max-width: 1050px) {
+  .p-maintenance__about__media {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-maintenance__about__media {
+    width: 100%;
+  }
+}
+.p-maintenance__about__img {
+  width: 100%;
+  height: auto;
+}
+.p-maintenance__about__panel {
+  position: absolute;
+  width: 50%;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
+  border-top: 4px solid #ed6a10;
+  padding: 3.5%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1050px) {
+  .p-maintenance__about__panel {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 75%;
+    margin-right: auto;
+    margin-top: -13%;
+    margin-bottom: 5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-maintenance__about__panel {
+    width: 88%;
+    padding: 5%;
+  }
+}
+.p-maintenance__about__title {
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+  letter-spacing: 6.5px;
+  font-weight: 700;
+  text-underline-offset: -9px;
+}
+.p-maintenance__about__text {
+  padding-top: 2rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+  color: #000;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+@media screen and (max-width: 1050px) {
+  .p-maintenance__about__text {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-maintenance__about__text {
+    padding-top: 0;
+    font-size: 2rem;
+    letter-spacing: 0.3px;
+  }
+}
+.p-maintenance__about__lead {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  margin-bottom: 8rem;
+}
+.p-maintenance__inspection__list {
+  display: flex;
+  gap: 4.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 599px) {
+  .p-maintenance__inspection__list {
+    gap: 3rem;
+    justify-content: space-around;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 5%;
+  }
+}
+.p-maintenance__inspection__item {
+  width: 30%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 2.8px;
+}
+@media screen and (max-width: 1050px) {
+  .p-maintenance__inspection__item {
+    width: 29%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-maintenance__inspection__item {
+    width: 46%;
+  }
+}
+.p-maintenance__inspection__img {
+  width: 100%;
+  height: auto;
+}
+.p-maintenance__inspection__label {
+  position: relative;
+  padding: 1rem;
+  color: #ed6a10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px rgba(237, 106, 16, 0.5);
+  border-radius: 35px;
+  background-color: #fff;
+  margin-top: -2.5rem;
+  left: 17%;
+  width: 66%;
+}
+@media screen and (max-width: 1050px) {
+  .p-maintenance__inspection__label {
+    left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+.p-maintenance__inspection__label strong {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.19rem;
+  color: #ed6a10;
+}
+.p-maintenance__inspection__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.p-maintenance__inspection__chart {
+  width: 100%;
+  height: auto;
+}
+.p-maintenance__inspection__schedule {
+  width: 50%;
+  padding-top: 5%;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+}
+.p-maintenance__warranty {
+  margin-bottom: 10rem;
+}
+.p-maintenance__warranty__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.p-maintenance__warranty__img {
+  width: 100%;
+  height: auto;
+}
+.p-maintenance__warranty__link {
+  align-self: flex-end;
+  margin-top: 4rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ea6800;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 48px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 4rem;
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid #ea6800;
+}
+@media screen and (max-width: 599px) {
+  .p-maintenance__warranty__link {
+    white-space: nowrap;
+  }
+}
+.p-maintenance__warranty__link:hover {
+  color: #ea6800;
+  background-color: #fff;
+}
+
 .c-navigation {
   display: flex;
   justify-content: flex-end;

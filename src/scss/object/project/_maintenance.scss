@@ -1,0 +1,244 @@
+.p-maintenance {
+  &__heading {
+    text-align: center;
+    background-color: $beige4;
+    padding: 1.5rem;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+
+  &__note {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__about {
+    margin-bottom: 8rem;
+
+    &__row {
+      position: relative;
+      margin-bottom: 8rem;
+    }
+
+    &__media {
+      width: 60%;
+      margin-left: auto;
+
+      @include mq(tab) {
+        width: 90%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__panel {
+      position: absolute;
+      width: 50%;
+      z-index: 10;
+      background-color: $white;
+      box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.5);
+      border-top: 4px solid $red;
+      padding: 3.5%;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(tab) {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 75%;
+        margin-right: auto;
+        margin-top: -13%;
+        margin-bottom: 5%;
+      }
+
+      @include mq(sp) {
+        width: 88%;
+        padding: 5%;
+      }
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+      font-size: 3.2rem;
+      letter-spacing: 6.5px;
+      font-weight: 700;
+      text-underline-offset: -9px;
+    }
+
+    &__text {
+      padding-top: 2rem;
+      margin-bottom: 2.5rem;
+      font-size: 1.7rem;
+      color: $pureBlack;
+      letter-spacing: 0.3px;
+      line-height: 1.8;
+      font-weight: 400;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      @include mq(sp) {
+        padding-top: 0;
+        font-size: 2rem;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    &__lead {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__inspection {
+    &__list {
+      display: flex;
+      gap: 4.4rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+
+      @include mq(sp) {
+        gap: 3rem;
+        justify-content: space-around;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 5%;
+      }
+    }
+
+    &__item {
+      width: 30%;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      letter-spacing: 2.8px;
+
+      @include mq(tab) {
+        width: 29%;
+      }
+
+      @include mq(sp) {
+        width: 46%;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__label {
+      position: relative;
+      padding: 1rem;
+      color: $red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 5px rgba($red, 0.5);
+      border-radius: 35px;
+      background-color: $white;
+      margin-top: -2.5rem;
+      left: 17%;
+      width: 66%;
+
+      @include mq(tab) {
+        left: auto;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        text-align: center;
+        white-space: nowrap;
+      }
+
+      strong {
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 3.19rem;
+        color: $red;
+      }
+    }
+
+    &__detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 8rem;
+    }
+
+    &__chart {
+      width: 100%;
+      height: auto;
+    }
+
+    &__schedule {
+      width: 50%;
+      padding-top: 5%;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+    }
+  }
+
+  &__warranty {
+    margin-bottom: 10rem;
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 8rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__link {
+      align-self: flex-end;
+      margin-top: 4rem;
+      text-decoration: none;
+      color: $white;
+      background-color: $orange;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 48px;
+      text-align: center;
+      transition: 0.5s;
+      padding: 0 4rem;
+      position: relative;
+      border-radius: 24px;
+      border: 1px solid $orange;
+
+      @include mq(sp) {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        color: $orange;
+        background-color: $white;
+      }
+    }
+  }
+}
