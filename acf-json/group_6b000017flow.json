@@ -9,35 +9,6 @@
       "type": "image",
       "return_format": "url",
       "preview_size": "medium"
-    },
-    {
-      "key": "field_6b000017showroom",
-      "label": "流れステップ",
-      "name": "showroom",
-      "type": "repeater",
-      "layout": "table",
-      "sub_fields": [
-        {
-          "key": "field_6b000017title",
-          "label": "タイトル",
-          "name": "title",
-          "type": "text"
-        },
-        {
-          "key": "field_6b000017subtitle",
-          "label": "サブタイトル",
-          "name": "subtitle",
-          "type": "text"
-        },
-        {
-          "key": "field_6b000017img",
-          "label": "画像",
-          "name": "img",
-          "type": "image",
-          "return_format": "url",
-          "preview_size": "medium"
-        }
-      ]
     }
   ],
   "location": [
