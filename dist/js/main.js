@@ -28,14 +28,6 @@
   // });
 
 
-  $("a[href^='#']").on("click", function () {
-    const href = $(this).attr("href");
-    const target = $(href == "#" || href == "" ? "html" : href);
-    const position = target.offset().top - headerHeight - 20; //ヘッダの高さ分位置をずらす
-    $("html, body").animate({ scrollTop: position }, 550, "swing");
-    return false;
-  });
-
   //window.addEventListener('load', () => {
   // ローディングアニメーション
   // const spinner = document.getElementById('u-loading');
