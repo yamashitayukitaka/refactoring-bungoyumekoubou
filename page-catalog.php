@@ -38,7 +38,7 @@ get_header();
     </ul>
   </section>
   <section class="l-content">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
         <h3 class="c-title--sectionLine">
           CTALOG
         </h3>

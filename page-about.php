@@ -21,7 +21,7 @@ get_header();
   </div>
 
   <section class="l_content_middle_70 u-mb100">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         MESSAGE
       </h3>
@@ -62,7 +62,7 @@ get_header();
   </div>
 
   <section class="l_content_middle_70 u-mb100">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         OUTLINE
       </h3>
@@ -170,7 +170,7 @@ get_header();
   </section>
   <section class="u-pt50 u-mb100">
     <!-- <div class="l_content_middle_70">
-      <div class="c-title__wrap--sectionLine">
+      <div class="c-title__head">
         <h3 class="c-title--sectionLine">
           HISTORY
         </h3>
@@ -182,7 +182,7 @@ get_header();
       </div>
     </div> -->
 
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         HISTORY
       </h3>
@@ -426,7 +426,7 @@ get_header();
   </section>
 
   <section class="l-content--middle u-mb200">
-    <div class="c-title__wrap--sectionLine">
+    <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         CORPORATE STANDARD
       </h3>
