@@ -1,0 +1,143 @@
+.p-flow {
+  &__lead {
+    margin: 0 auto 10rem;
+    width: 70%;
+    min-width: 900px;
+    text-align: center;
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 350px;
+      margin-top: 15%;
+      margin-bottom: 10rem;
+      font-size: 2rem;
+      padding: 0 3%;
+    }
+  }
+
+  &__steps {
+    margin-bottom: 20%;
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__item {
+      margin: 15rem auto 0;
+      width: 70%;
+      min-width: 900px;
+
+      @include mq(tab) {
+        width: 90%;
+        min-width: 500px;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+        min-width: 350px;
+        margin-top: 15%;
+      }
+
+      &:nth-child(even) {
+        .p-flow__steps__row {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &:not(:last-child)::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3.3rem 5.8rem 0 5.8rem;
+        border-color: $red transparent transparent transparent;
+        margin: 2% auto;
+      }
+    }
+
+    &__row {
+      display: flex;
+      gap: 2rem;
+
+      @include mq(sp) {
+        display: block;
+      }
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 65%;
+
+      @include mq(sp) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-bottom: 2px solid gray;
+      padding-bottom: 2rem;
+      font-size: 2.4rem;
+      line-height: 3.8rem;
+      letter-spacing: 0.3rem;
+    }
+
+    &__num {
+      margin-right: 1rem;
+      color: $red;
+      font-size: 3.2rem;
+      font-weight: bold;
+      line-height: 3.19rem;
+      letter-spacing: 0;
+    }
+
+    &__text {
+      margin-top: 2rem;
+      padding: 0 2rem;
+      color: #1a1a1a;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      text-align: center;
+
+      @include mq(sp) {
+        display: inline-block;
+        font-size: 2rem;
+      }
+    }
+
+    &__link {
+      margin-top: 2rem;
+    }
+
+    &__media {
+      width: 40%;
+
+      @include mq(sp) {
+        width: 100%;
+        padding-top: 5%;
+      }
+    }
+
+    &__img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
