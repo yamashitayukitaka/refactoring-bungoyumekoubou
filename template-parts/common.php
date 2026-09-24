@@ -2,7 +2,7 @@
   <figure class="BUNGO_YUME_STUDIO__topImg">
     <img src="<?php echo esc_url(IMG_URL . '/common/support-right.webp'); ?>" alt="安心の保証制度">
   </figure>
-  <div class="c-title__wrap--sectionLine ">
+  <div class="c-title__head">
     <h3 class="c-title--sectionLine c_title__wrap_sectionLine_t">
       BUNGO_YUME_STUDIO
     </h3>

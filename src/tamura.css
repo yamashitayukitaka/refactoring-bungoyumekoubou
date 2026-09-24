@@ -716,24 +716,8 @@
     color: #ea6800;
   }
 
-  .txt_18 .font_orange {
-    font-size: 1.8rem;
-  }
-
   .illustration_set {
     position: relative;
-  }
-
-  .illustration_1 {
-    position: absolute;
-    right: 0%;
-    top: 0;
-    width: 25%;
-    z-index: -1;
-  }
-
-  .txt_18 {
-    font-size: 1.8rem;
   }
 
   .support__content_m {
@@ -865,15 +849,6 @@
     font-size: 2.5rem;
   }
 
-  .c-pageMv__heading__subTitle_b {
-    font-size: 2.5rem;
-    line-height: 2;
-    letter-spacing: 0.18rem;
-    font-weight: bold;
-    position: relative;
-    z-index: 999;
-  }
-
   .p-about__message__txt {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
@@ -915,10 +890,6 @@
 }
 
 @media only screen and (min-width:599px) and (max-width:1050px) {
-  .sp_tab_t_10 {
-    margin-top: 10%;
-  }
-
 
 
   .rireve_txt {
@@ -1276,24 +1247,8 @@
     color: #ea6800;
   }
 
-  .txt_18 .font_orange {
-    font-size: 1.8rem;
-  }
-
   .illustration_set {
     position: relative;
-  }
-
-  .illustration_1 {
-    position: absolute;
-    right: 0%;
-    top: 0;
-    width: 25%;
-    z-index: -1;
-  }
-
-  .txt_18 {
-    font-size: 1.8rem;
   }
 
   
@@ -1428,15 +1383,6 @@
     font-size: 2.5rem;
   }
 
-  .c-pageMv__heading__subTitle_b {
-    font-size: 2.5rem;
-    line-height: 2;
-    letter-spacing: 0.18rem;
-    font-weight: bold;
-    position: relative;
-    z-index: 999;
-  }
-
   .p-about__message__txt {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
@@ -1486,10 +1432,6 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 3%;
-  }
-
-  .sp_tab_t_10 {
-    margin-top: 10%;
   }
 
 
@@ -1868,28 +1810,8 @@
     color: #ea6800;
   }
 
-  .txt_18 .font_orange {
-    font-size: 1.8rem;
-  }
-
   .illustration_set {
     position: relative;
-  }
-
-  .illustration_1 {
-    position: absolute;
-    right: 0%;
-    top: -70%;
-    width: 38%;
-    max-width: 154px;
-  }
-
-  .service_model_wrap_sp {
-    width: 100% !important;
-  }
-
-  .txt_18 {
-    font-size: 1.8rem;
   }
 
   
@@ -2020,15 +1942,6 @@
   .c-pageMv__heading__subTitle {
     color: #ed6a10;
     font-size: 2.5rem;
-  }
-
-  .c-pageMv__heading__subTitle_b {
-    font-size: 2.5rem;
-    line-height: 2;
-    letter-spacing: 0.18rem;
-    font-weight: bold;
-    position: relative;
-    z-index: 999;
   }
 
   .p-about__message__txt {

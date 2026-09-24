@@ -1,4 +1,8 @@
 .c-title {
+  &__head {
+    text-align: center;
+  }
+
   &--large {
     font-size: 3.6rem;
     line-height: calc(49 / 38);
@@ -146,7 +150,6 @@
     color: $pureBlack;
     font-weight: 700;
     position: relative;
-    display: inline-block;
     z-index: 99;
   }
 
