@@ -19,8 +19,8 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="c-title__intro">
-    <div class="c-title__intro__head">
+  <section class="c-title__decoration">
+    <div class="c-title__decoration__head">
       <h3 class="c-title--sectionLine u-mb40">品質へのこだわり</h3>
       <p class="c-title--orangeLine">
         <span class="marker">
