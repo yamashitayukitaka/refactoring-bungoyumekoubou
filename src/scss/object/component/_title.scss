@@ -179,6 +179,142 @@
     }
   }
 
+  &__decoration {
+    // legacy: .u-mb100, .support-title, .illustration_set, .l_content_middle_80（コストイントロ）
+    margin-bottom: 10rem;
+    position: relative;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    @media only screen and (min-width: 599px) and (max-width: 1050px) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    @media screen and (max-width: 599px) {
+      padding-top: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center top;
+      pointer-events: none;
+    }
+
+    // legacy .illustration_2（IMG_URL/family_img.webp）
+    &::before {
+      background-image: url('../img/family_img.webp');
+      z-index: -1;
+      aspect-ratio: 219 / 154;
+    }
+
+    // legacy .illustration_4（IMG_URL/illustration/house.webp）
+    &::after {
+      background-image: url('../img/illustration/house.webp');
+      z-index: -4;
+      aspect-ratio: 237 / 185;
+    }
+
+    @media screen and (min-width: 1051px) {
+      &::before {
+        right: 9%;
+        top: -6%;
+        width: 20%;
+      }
+
+      &::after {
+        left: 18%;
+        bottom: -3%;
+        width: 10%;
+      }
+    }
+
+    @media only screen and (min-width: 599px) and (max-width: 1050px) {
+      &::before {
+        right: 9%;
+        top: -6%;
+        width: 20%;
+        z-index: -1;
+      }
+
+      &::after {
+        left: 18%;
+        bottom: -3%;
+        width: 10%;
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      &::before {
+        right: 2%;
+        top: -28%;
+        width: 30%;
+        min-width: 130px;
+        z-index: 2;
+      }
+
+      &::after {
+        left: 3%;
+        top: -21%;
+        width: 22%;
+        min-width: 85px;
+        z-index: -4;
+      }
+    }
+
+    &__head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+
+      // legacy .illustration_3（IMG_URL/illustration/yume_img9.webp）— 基準は .illustration_set と同じ
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/illustration/yume_img9.webp');
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center top;
+        pointer-events: none;
+        z-index: -1;
+        aspect-ratio: 107 / 85;
+      }
+
+      @media screen and (min-width: 1051px) {
+        &::before {
+          left: 10%;
+          bottom: -8%;
+          width: 8%;
+        }
+      }
+
+      @media only screen and (min-width: 599px) and (max-width: 1050px) {
+        &::before {
+          left: 10%;
+          bottom: -8%;
+          width: 8%;
+        }
+      }
+
+      @media screen and (max-width: 599px) {
+        &::before {
+          left: 25%;
+          top: -7%;
+          width: 14%;
+        }
+      }
+    }
+  }
+
   &--orangeLine {
     font-size: 2.4rem;
     letter-spacing: 0.68rem;

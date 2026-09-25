@@ -20,17 +20,8 @@ get_header();
   </div>
 
   <!-- トップタイトル概要 -->
-  <section class="l_content_middle_80 support-title u-mb100 illustration_set">
-    <figure class="illustration_2">
-      <img src="<?php echo esc_url(IMG_URL . '/family_img.webp'); ?>" alt="">
-    </figure>
-    <figure class="illustration_3">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/yume_img9.webp'); ?>" alt="">
-    </figure>
-    <figure class="illustration_4">
-      <img src="<?php echo esc_url(IMG_URL . '/illustration/house.webp'); ?>" alt="">
-    </figure>
-    <div class="c-title__head">
+  <section class="c-title__decoration">
+    <div class="c-title__decoration__head">
       <h3 class="c-title--sectionLine u-mb40">コストへのこだわり</h3>
       <p class="c-title--orangeLine">
         <span class="marker">
