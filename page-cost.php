@@ -48,60 +48,68 @@ get_header();
     <div class="p-cost__nav__heading">
       <span class="u-textOrange">豊後夢工房</span>がこだわる<span class="u-textOrange">コスト</span>へのこだわり
     </div>
-    <div class="p-cost__nav__list noto-sans-jp">
-      <a href="#cost1" class="p-cost__nav__link">
-        <div class="p-cost__nav__card">
-          <div class="p-cost__nav__number">
-            <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+    <ul class="p-cost__nav__list">
+      <li class="p-cost__nav__item">
+        <a href="#cost1" class="p-cost__nav__link">
+          <div class="p-cost__nav__card">
+            <div class="p-cost__nav__number">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-cost__nav__label">
+                <span class="p-cost__nav__emphasis">経済的な暮らし</span>を<br>
+                サポートする家づくり
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="p-cost__nav__label">
-              <span class="p-cost__nav__emphasis">経済的な暮らし</span>を<br>
-              サポートする家づくり
-            </p>
+        </a>
+      </li>
+      <li class="p-cost__nav__item">
+        <a href="#cost2" class="p-cost__nav__link">
+          <div class="p-cost__nav__card">
+            <div class="p-cost__nav__number">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-cost__nav__label">
+                充実した<br>
+                <span class="p-cost__nav__emphasis">標準設備</span>
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#cost2" class="p-cost__nav__link">
-        <div class="p-cost__nav__card">
-          <div class="p-cost__nav__number">
-            <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+        </a>
+      </li>
+      <li class="p-cost__nav__item">
+        <a href="#cost3" class="p-cost__nav__link">
+          <div class="p-cost__nav__card">
+            <div class="p-cost__nav__number">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-cost__nav__label">
+                <span class="p-cost__nav__emphasis">大手他社</span>にはできない<br class="pc_tab">
+                <span class="p-cost__nav__emphasis">丁寧な</span>プランニング
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="p-cost__nav__label">
-              充実した<br>
-              <span class="p-cost__nav__emphasis">標準設備</span>
-            </p>
+        </a>
+      </li>
+      <li class="p-cost__nav__item">
+        <a href="#cost4" class="p-cost__nav__link">
+          <div class="p-cost__nav__card">
+            <div class="p-cost__nav__number">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-cost__nav__label">
+                <span class="p-cost__nav__emphasis">ワンストップ</span>での<br>
+                サポート体制
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#cost3" class="p-cost__nav__link">
-        <div class="p-cost__nav__card">
-          <div class="p-cost__nav__number">
-            <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
-          </div>
-          <div>
-            <p class="p-cost__nav__label">
-              <span class="p-cost__nav__emphasis">大手他社</span>にはできない<br class="pc_tab">
-              <span class="p-cost__nav__emphasis">丁寧な</span>プランニング
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#cost4" class="p-cost__nav__link">
-        <div class="p-cost__nav__card">
-          <div class="p-cost__nav__number">
-            <img class="p-cost__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
-          </div>
-          <div>
-            <p class="p-cost__nav__label">
-              <span class="p-cost__nav__emphasis">ワンストップ</span>での<br>
-              サポート体制
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </li>
+    </ul>
   </nav>
 
 

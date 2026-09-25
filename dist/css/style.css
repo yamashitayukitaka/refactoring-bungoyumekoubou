@@ -4263,6 +4263,10 @@ a:hover {
   justify-content: center;
   margin-top: 4.4rem;
   gap: 6rem 4rem;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 @media screen and (max-width: 1050px) {
   .p-design__nav__list {
@@ -4274,8 +4278,12 @@ a:hover {
     gap: 2rem;
   }
 }
-.p-design__nav__link {
+.p-design__nav__item {
   width: 45%;
+}
+.p-design__nav__link {
+  display: block;
+  width: 100%;
   text-decoration: none;
 }
 .p-design__nav__card {
@@ -4913,6 +4921,10 @@ a:hover {
   justify-content: center;
   margin-top: 4.4rem;
   gap: 6rem 4rem;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
 }
 @media screen and (max-width: 1050px) {
   .p-cost__nav__list {
@@ -4924,9 +4936,14 @@ a:hover {
     gap: 2rem;
   }
 }
-.p-cost__nav__link {
+.p-cost__nav__item {
   width: 45%;
+}
+.p-cost__nav__link {
+  display: block;
+  width: 100%;
   text-decoration: none;
+  height: 100%;
 }
 .p-cost__nav__card {
   border: 1px solid #ed6a10;
@@ -4961,6 +4978,11 @@ a:hover {
   line-height: 31.9px;
   text-align: center;
   padding-top: 0.5rem;
+}
+@media screen and (max-width: 599px) {
+  .p-cost__nav__label {
+    line-height: 1.5;
+  }
 }
 .p-cost__nav__emphasis {
   color: #ed6a10;

@@ -33,65 +33,73 @@ get_header();
   </section>
 
   <!-- メニュー -->
-  <section class="p-design__nav">
+  <nav class="p-design__nav" aria-label="デザインへのこだわり">
     <div class="p-design__nav__heading">
       <span class="u-textOrange">豊後夢工房</span>がこだわる<span class="u-textOrange">デザイン</span>へのこだわり
     </div>
-    <div class="p-design__nav__list">
-      <a href="#design1" class="p-design__nav__link">
-        <div class="p-design__nav__card">
-          <div class="p-design__nav__number">
-            <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+    <ul class="p-design__nav__list">
+      <li class="p-design__nav__item">
+        <a href="#design1" class="p-design__nav__link">
+          <div class="p-design__nav__card">
+            <div class="p-design__nav__number">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-design__nav__label">
+                <span class="p-design__nav__emphasis">暮らし</span>と<span class="p-design__nav__emphasis">動線</span>を<br>
+                <span class="p-design__nav__emphasis">楽</span>にするデザイン
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="p-design__nav__label">
-              <span class="p-design__nav__emphasis">暮らし</span>と<span class="p-design__nav__emphasis">動線</span>を<br>
-              <span class="p-design__nav__emphasis">楽</span>にするデザイン
-            </p>
+        </a>
+      </li>
+      <li class="p-design__nav__item">
+        <a href="#design2" class="p-design__nav__link">
+          <div class="p-design__nav__card">
+            <div class="p-design__nav__number">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-design__nav__label">
+                <span class="p-design__nav__emphasis">住む人らしさ</span>を<br>
+                大切にするデザイン
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#design2" class="p-design__nav__link">
-        <div class="p-design__nav__card">
-          <div class="p-design__nav__number">
-            <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+        </a>
+      </li>
+      <li class="p-design__nav__item">
+        <a href="#design3" class="p-design__nav__link">
+          <div class="p-design__nav__card">
+            <div class="p-design__nav__number">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-design__nav__label">
+                <span class="p-design__nav__emphasis">太陽</span>と<span class="p-design__nav__emphasis">自然</span>を<br>
+                生かすデザイン
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="p-design__nav__label">
-              <span class="p-design__nav__emphasis">住む人らしさ</span>を<br>
-              大切にするデザイン
-            </p>
+        </a>
+      </li>
+      <li class="p-design__nav__item">
+        <a href="#design4" class="p-design__nav__link">
+          <div class="p-design__nav__card">
+            <div class="p-design__nav__number">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-design__nav__label">
+                <span class="p-design__nav__emphasis">メンテナンス</span><br>
+                しやすいデザイン
+              </p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#design3" class="p-design__nav__link">
-        <div class="p-design__nav__card">
-          <div class="p-design__nav__number">
-            <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
-          </div>
-          <div>
-            <p class="p-design__nav__label">
-              <span class="p-design__nav__emphasis">太陽</span>と<span class="p-design__nav__emphasis">自然</span>を<br>
-              生かすデザイン
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#design4" class="p-design__nav__link">
-        <div class="p-design__nav__card">
-          <div class="p-design__nav__number">
-            <img class="p-design__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
-          </div>
-          <div>
-            <p class="p-design__nav__label">
-              <span class="p-design__nav__emphasis">メンテナンス</span><br>
-              しやすいデザイン
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <!-- points -->
   <section class="p-design__points u-mb100">

@@ -335,6 +335,10 @@
       justify-content: center;
       margin-top: 4.4rem;
       gap: 6rem 4rem;
+      list-style: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
 
       @include mq(tab) {
         gap: 4rem;
@@ -345,9 +349,15 @@
       }
     }
 
-    &__link {
+    &__item {
       width: 45%;
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
       text-decoration: none;
+      height: 100%;
     }
 
     &__card {
@@ -385,6 +395,10 @@
       line-height: 31.9px;
       text-align: center;
       padding-top: 0.5rem;
+
+      @include mq(sp) {
+        line-height: 1.5;
+      }
     }
 
     &__emphasis {
