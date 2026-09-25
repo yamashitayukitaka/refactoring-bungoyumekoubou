@@ -1,0 +1,655 @@
+.p-cost {
+  &__points {
+    background-color: $white;
+    margin-bottom: 10rem;
+    padding-top: 15%;
+
+    &__media {
+      width: 60%;
+
+      @include mq(tab) {
+        width: 80%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+
+      &--right {
+        margin-left: auto;
+
+        @include mq(tab) {
+          width: 90%;
+        }
+
+        @include mq(sp) {
+          width: 100%;
+        }
+      }
+    }
+
+    &__mediaImg {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 1px 5px 5px 0 rgb(189 184 184 / 50%);
+    }
+
+    &__panel {
+      position: absolute;
+      width: 50%;
+      z-index: 10;
+      background-color: $white;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+      border-top: 4px solid $red;
+      padding: 3.5%;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @include mq(tab) {
+        position: relative;
+        width: 75%;
+        top: auto;
+        transform: none;
+        margin-top: -13%;
+      }
+
+      @include mq(sp) {
+        width: 88%;
+        padding: 5%;
+      }
+
+      &--left {
+        left: 0;
+
+        @include mq(tab) {
+          left: auto;
+          margin-right: auto;
+          margin-bottom: 5%;
+        }
+      }
+
+      &--right {
+        right: 0;
+        left: auto;
+
+        @include mq(tab) {
+          right: auto;
+          margin-left: auto;
+          margin-bottom: 10%;
+        }
+      }
+    }
+
+    &__badge {
+      margin-bottom: 1rem;
+      width: 12.2rem;
+    }
+
+    &__badgeImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__headline {
+      font-size: 2.6rem;
+      text-underline-offset: -9px;
+      letter-spacing: 6.5px;
+      font-weight: 700;
+
+      .u-orange {
+        font-size: 2.6rem;
+      }
+    }
+
+    &__text {
+      padding-top: 2rem;
+      font-size: 1.7rem;
+      color: $pureBlack;
+      letter-spacing: 0.3px;
+      line-height: 1.8;
+      font-weight: 400;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+
+      @include mq(sp) {
+        font-size: 2rem;
+      }
+    }
+
+    &__cardList {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__cardInner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      padding: 0 6rem;
+      margin-top: 10rem;
+
+      @include mq(tab) {
+        display: block;
+        padding: 0 6rem;
+        margin-top: 10rem;
+      }
+
+      @include mq(sp) {
+        padding: 0 5%;
+        margin-top: 10%;
+      }
+    }
+
+    &__cardMedia {
+      width: 45.4%;
+      z-index: 0;
+      position: relative;
+
+      @include mq(tab) {
+        width: 80%;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__cardImg {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 1px 5px 5px 0 rgb(189 184 184 / 50%);
+    }
+
+    &__cardBody {
+      display: flex;
+      flex-direction: column;
+      background-color: #fefbf8;
+      padding: 3rem;
+      position: relative;
+      z-index: 10;
+      box-shadow: 5px 5px 5px rgb(128 128 128 / 50%);
+    }
+
+    &__card--overlapEnd {
+      .p-cost__points__cardMedia {
+        @include mq(tab) {
+          margin-right: auto;
+        }
+      }
+
+      .p-cost__points__cardBody {
+        width: 46%;
+        margin-left: -2rem;
+
+        @include mq(tab) {
+          width: 65%;
+          margin-top: -25%;
+          margin-left: auto;
+        }
+
+        @include mq(sp) {
+          width: 100vw;
+          margin-top: -5%;
+          margin-left: -5vw;
+        }
+      }
+    }
+
+    &__card--overlapStart {
+      .p-cost__points__cardMedia {
+        @include mq(tab) {
+          margin-left: auto;
+        }
+      }
+
+      .p-cost__points__cardBody {
+        width: 46%;
+        margin-right: -2rem;
+
+        @include mq(tab) {
+          width: 65%;
+          margin-top: -25%;
+          margin-right: auto;
+          margin-bottom: 10%;
+        }
+
+        @include mq(sp) {
+          width: 100vw;
+          margin-top: -5%;
+          margin-left: -5vw;
+          margin-bottom: 10%;
+        }
+      }
+    }
+
+    &__card--sectionEnd {
+      margin-bottom: 15%;
+    }
+
+    &__cardTitle {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      @include mq(tab) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+      }
+
+      @include mq(sp) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+      }
+
+      span {
+        font-size: inherit;
+        font-weight: 700;
+        letter-spacing: inherit;
+      }
+
+      a {
+        color: #2190ca;
+        font-weight: 700;
+      }
+    }
+
+    &__cardText {
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      letter-spacing: 1.8px;
+
+      @include mq(tab) {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+      }
+
+      @include mq(sp) {
+        line-height: 1.8;
+        font-size: 2rem;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    &__cardAction {
+      display: grid;
+      place-content: center;
+      padding-top: 3%;
+    }
+  }
+
+  &__section {
+    &__subtitle {
+      background-color: $beige4;
+      height: auto;
+      font-size: 2.3rem;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+    }
+  }
+
+  &__nav {
+    width: 70%;
+    min-width: 900px;
+    height: auto;
+    background-color: $beige4;
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 3.2rem 8rem 4.5rem;
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+      padding: 3.2rem 6rem 4.5rem;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 0;
+      padding: 5% 2% 7%;
+    }
+
+    &__heading {
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-align: center;
+      color: $pureBlack;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4.4rem;
+      gap: 6rem 4rem;
+      list-style: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+
+      @include mq(tab) {
+        gap: 4rem;
+      }
+
+      @include mq(sp) {
+        gap: 2rem;
+      }
+    }
+
+    &__item {
+      width: 45%;
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      height: 100%;
+    }
+
+    &__card {
+      border: 1px solid $red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      padding: 1rem;
+
+      @include mq(sp) {
+        justify-content: flex-start;
+        height: 100%;
+      }
+    }
+
+    &__number {
+      width: 14rem;
+      border-bottom: 1px solid $pureBlack;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      text-align: center;
+      padding-bottom: 0.5rem;
+    }
+
+    &__numberImg {
+      width: 65%;
+      height: auto;
+    }
+
+    &__label {
+      color: $pureBlack;
+      font-size: 2rem;
+      line-height: 31.9px;
+      text-align: center;
+      padding-top: 0.5rem;
+
+      @include mq(sp) {
+        line-height: 1.5;
+      }
+    }
+
+    &__emphasis {
+      color: $red;
+      font-weight: bold;
+      font-size: inherit;
+    }
+  }
+
+  &__economy {
+    margin-bottom: 7%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+
+    &__container {
+      position: relative;
+      margin-bottom: 17rem;
+
+      @include mq(tab) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 3%;
+      width: 100%;
+      padding: 5% 15%;
+      list-style: none;
+
+      @include mq(tab) {
+        padding-left: 5%;
+        padding-right: 5%;
+        max-width: 885px;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 0 auto;
+      }
+    }
+
+    &__item {
+      position: relative;
+      width: 33%;
+
+      @include mq(sp) {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 10%;
+      }
+    }
+
+    &__itemImg {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 1px 5px 5px 0 rgb(189 184 184 / 50%);
+    }
+
+    &__itemLabel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3%;
+      box-shadow: 5px 5px 5px rgb(237 106 16 / 50%);
+      border-radius: 35px;
+      position: relative;
+      margin-top: -5%;
+      z-index: 3;
+      background-color: $white;
+      text-align: center;
+      padding: 3% 5%;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: nowrap;
+
+      @include mq(tab) {
+        width: 90%;
+      }
+
+      @include mq(sp) {
+        width: 90%;
+      }
+    }
+
+    &__itemLabelIcon {
+      width: 15%;
+    }
+
+    &__itemLabelImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__itemLabelText {
+      color: $orange;
+      font-weight: 600;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &__itemDesc {
+      padding-top: 5%;
+      font-weight: 300;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      letter-spacing: 0.1rem;
+
+      @include mq(sp) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__facility {
+    margin-bottom: 7%;
+    border-bottom: 1px solid rgb(189, 189, 189);
+
+    &__container {
+      position: relative;
+      margin-bottom: 17rem;
+
+      @include mq(tab) {
+        margin-bottom: 0;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      gap: 3%;
+      width: 100%;
+      padding: 5% 15% 3%;
+      list-style: none;
+
+      @include mq(tab) {
+        padding: 5% 5% 3%;
+        max-width: 885px;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        flex-direction: column;
+        padding: 5% 5% 3%;
+        margin: 0 auto;
+      }
+    }
+
+    &__item {
+      position: relative;
+      width: 33%;
+
+      @include mq(sp) {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 10%;
+      }
+    }
+
+    &__itemImg {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 1px 5px 5px 0 rgb(189 184 184 / 50%);
+    }
+
+    &__itemLabel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3%;
+      box-shadow: 5px 5px 5px rgb(237 106 16 / 50%);
+      border-radius: 35px;
+      position: relative;
+      margin-top: -5%;
+      z-index: 3;
+      background-color: $white;
+      text-align: center;
+      padding: 3% 5%;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      white-space: nowrap;
+
+      @include mq(tab) {
+        width: 70%;
+      }
+
+      @include mq(sp) {
+        width: 90%;
+      }
+    }
+
+    &__itemLabelIcon {
+      width: 15%;
+    }
+
+    &__itemLabelImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__itemLabelText {
+      color: $orange;
+      font-weight: 600;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &__description {
+      text-align: center;
+      margin-bottom: 17rem;
+
+      @include mq(tab) {
+        padding-bottom: 8%;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__support {
+    position: relative;
+    padding-bottom: 17rem;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    margin-bottom: 7%;
+
+    @include mq(tab) {
+      margin-bottom: 0;
+    }
+
+    &__container {
+      position: relative;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__plan {
+    &__container {
+      position: relative;
+      margin-bottom: 17rem;
+
+      @include mq(tab) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

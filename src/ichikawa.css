@@ -1,4 +1,8 @@
 @media screen and (min-width:1051px) {
+  .support-title {
+    position: relative;
+  }
+
   .recruit__message {
     display:flex;
     justify-content:space-between;
@@ -2622,6 +2626,10 @@
 }
 
 @media screen and (max-width:599px) {
+  .support-title {
+    position: relative;
+  }
+
   .recruit__message {
     display:flex;
     justify-content:space-between;

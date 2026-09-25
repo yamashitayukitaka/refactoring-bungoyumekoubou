@@ -80,8 +80,7 @@
     width: 100%;
 
     @include mq(tab) {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding: 10% 5% 0;
     }
 
     &::before,
@@ -92,41 +91,52 @@
       background-size: contain;
       background-position: center;
       pointer-events: none;
+    }
+
+    // legacy tamura .illustration_2（家族）
+    &::before {
+      background-image: url('../img/illustration/family_img.webp');
       z-index: -1;
     }
 
-    &::before {
-      right: 9%;
-      top: -6%;
-      width: 20%;
-      aspect-ratio: 657 / 462;
-      background-image: url('../img/illustration/family_img.webp');
-    }
-
+    // legacy tamura .illustration_4（家）
     &::after {
-      left: 10%;
-      bottom: -8%;
-      width: 18%;
-      aspect-ratio: 216 / 103;
-      background-image: url('../img/illustration/intro-deco-left.webp');
+      background-image: url('../img/illustration/house.webp');
+      z-index: -4;
     }
 
-    @include mq(sp) {
+    @media screen and (min-width: 1051px) {
+      &::before {
+        right: 9%;
+        top: -6%;
+        width: 20%;
+        aspect-ratio: 657 / 462;
+      }
+
+      &::after {
+        left: 18%;
+        bottom: -3%;
+        width: 10%;
+        aspect-ratio: 216 / 103;
+      }
+    }
+
+    // 600px 付近で PC 用 % 指定が残るのを防ぐ（本番 tamura max-width:599px と同配置を tab まで適用）
+    @include mq(tab) {
       &::before {
         right: 2%;
         top: -28%;
         width: 30%;
         min-width: 13rem;
+        z-index: 2;
       }
 
       &::after {
         left: 3%;
         top: -21%;
         bottom: auto;
-        width: 36%;
-        min-width: 14rem;
-        aspect-ratio: 432 / 206;
-        background-image: url('../img/illustration/intro-deco-left-sp.webp');
+        width: 22%;
+        min-width: 8.5rem;
       }
     }
 
@@ -135,6 +145,37 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      width: 100%;
+
+      // legacy tamura .illustration_3
+      &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/illustration/yume_img9.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      @media screen and (min-width: 1051px) {
+        &::before {
+          left: 10%;
+          bottom: -8%;
+          width: 8%;
+          aspect-ratio: 216 / 103;
+        }
+      }
+
+      @include mq(tab) {
+        &::before {
+          left: 25%;
+          top: -7%;
+          bottom: auto;
+          width: 14%;
+        }
+      }
     }
   }
 
