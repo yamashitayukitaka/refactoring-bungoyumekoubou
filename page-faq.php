@@ -19,8 +19,8 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="c-title__intro">
-    <div class="c-title__intro__head">
+  <div class="c-title__decoration">
+    <div class="c-title__decoration__head">
       <h3 class="c-title--sectionLine u-mb40">よくあるご質問</h3>
       <p class="c-title--orangeLine">
         <span class="marker">
@@ -29,11 +29,11 @@ get_header();
         </span>
       </p>
     </div>
-    <p class="p-faq__lead l-content--middle">
-      もし、こちらに掲載されていない質問がございましたら、<br class="u-none__mobile--sp">
-      お気軽にお問い合わせください。
-    </p>
-  </section>
+  </div>
+  <p class="p-faq__lead l-content--middle">
+    もし、こちらに掲載されていない質問がございましたら、<br class="u-none__mobile--sp">
+    お気軽にお問い合わせください。
+  </p>
 
   <?php
   $qas = get_field('faq_questions_answers');

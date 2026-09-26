@@ -5227,8 +5227,8 @@ a:hover {
 }
 
 .p-faq__lead {
-  margin-top: 10rem;
   text-align: center;
+  margin-bottom: 10rem;
 }
 @media screen and (max-width: 599px) {
   .p-faq__lead {
@@ -7475,90 +7475,90 @@ a:hover {
   bottom: 0.15rem;
   left: 0;
 }
-.c-title__intro {
+.c-title__decoration {
   margin-bottom: 10rem;
   position: relative;
-  padding: 0 10%;
   width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 @media screen and (max-width: 1050px) {
-  .c-title__intro {
-    padding: 10% 5% 0;
+  .c-title__decoration {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
-.c-title__intro::before, .c-title__intro::after {
+@media screen and (max-width: 599px) {
+  .c-title__decoration {
+    padding-top: 10%;
+    margin-bottom: 5%;
+  }
+}
+.c-title__decoration::before, .c-title__decoration::after {
   content: "";
   position: absolute;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: center top;
   pointer-events: none;
 }
-.c-title__intro::before {
-  background-image: url("../img/illustration/family_img.webp");
+.c-title__decoration::before {
+  background-image: url("../img/family_img.webp");
   z-index: -1;
+  aspect-ratio: 219/154;
+  right: 9%;
+  top: -6%;
+  width: 20%;
 }
-.c-title__intro::after {
-  background-image: url("../img/illustration/house.webp");
-  z-index: -4;
-}
-@media screen and (min-width: 1051px) {
-  .c-title__intro::before {
-    right: 9%;
-    top: -6%;
-    width: 20%;
-    aspect-ratio: 657/462;
-  }
-  .c-title__intro::after {
-    left: 18%;
-    bottom: -3%;
-    width: 10%;
-    aspect-ratio: 216/103;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .c-title__intro::before {
+@media screen and (max-width: 599px) {
+  .c-title__decoration::before {
     right: 2%;
     top: -28%;
     width: 30%;
-    min-width: 13rem;
+    min-width: 130px;
     z-index: 2;
   }
-  .c-title__intro::after {
+}
+.c-title__decoration::after {
+  background-image: url("../img/illustration/house.webp");
+  z-index: -4;
+  aspect-ratio: 237/185;
+  left: 18%;
+  bottom: -3%;
+  width: 10%;
+}
+@media screen and (max-width: 599px) {
+  .c-title__decoration::after {
     left: 3%;
     top: -21%;
     bottom: auto;
     width: 22%;
-    min-width: 8.5rem;
+    min-width: 85px;
   }
 }
-.c-title__intro__head {
+.c-title__decoration__head {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
 }
-.c-title__intro__head::before {
+.c-title__decoration__head::before {
   content: "";
   position: absolute;
   background-image: url("../img/illustration/yume_img9.webp");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: center top;
   pointer-events: none;
   z-index: -1;
+  aspect-ratio: 107/85;
+  left: 10%;
+  bottom: -8%;
+  width: 8%;
 }
-@media screen and (min-width: 1051px) {
-  .c-title__intro__head::before {
-    left: 10%;
-    bottom: -8%;
-    width: 8%;
-    aspect-ratio: 216/103;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .c-title__intro__head::before {
+@media screen and (max-width: 599px) {
+  .c-title__decoration__head::before {
     left: 25%;
     top: -7%;
     bottom: auto;
