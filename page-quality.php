@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
-<main>
+<main class="p-quality">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title">
@@ -31,110 +31,96 @@ get_header();
     </div>
   </section>
 
-  <section class="commitment__top_content ">
-    <div class="support__top_title">
-      <span class="font_orange">豊後夢工房</span>がご提供する<span class="font_orange">住宅性能</span>と<span class="font_orange">品質</span>
+  <nav class="p-quality__nav noto-sans-jp" aria-label="品質へのこだわり">
+    <div class="p-quality__nav__heading">
+      <span class="u-textOrange">豊後夢工房</span>がご提供する<span class="u-textOrange">住宅性能</span>と<span class="u-textOrange">品質</span>
     </div>
-    <div class="quality__top_list noto-sans-jp">
-      <a href="#quality1" class="quality_btn">
-        <div class="quality__top_button">
-          <div class="quality__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+    <ul class="p-quality__nav__list">
+      <li class="p-quality__nav__item">
+        <a href="#quality1" class="p-quality__nav__link">
+          <div class="p-quality__nav__card">
+            <div class="p-quality__nav__number">
+              <img class="p-quality__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-quality__nav__label">ZEH(ゼッチ)</p>
+            </div>
           </div>
-          <div class="top_border">
-            <p class="quality__top_button_text">
-              ZEH(ゼッチ)
-            </p>
+        </a>
+      </li>
+      <li class="p-quality__nav__item">
+        <a href="#quality2" class="p-quality__nav__link">
+          <div class="p-quality__nav__card">
+            <div class="p-quality__nav__number">
+              <img class="p-quality__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-quality__nav__label">高耐震</p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#quality2" class="quality_btn">
-        <div class="quality__top_button">
-          <div class="quality__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+        </a>
+      </li>
+      <li class="p-quality__nav__item">
+        <a href="#quality3" class="p-quality__nav__link">
+          <div class="p-quality__nav__card">
+            <div class="p-quality__nav__number">
+              <img class="p-quality__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-quality__nav__label">高断熱</p>
+            </div>
           </div>
-          <div class="top_border">
-            <p class="quality__top_button_text">
-              高耐震
-            </p>
+        </a>
+      </li>
+      <li class="p-quality__nav__item">
+        <a href="#quality4" class="p-quality__nav__link">
+          <div class="p-quality__nav__card">
+            <div class="p-quality__nav__number">
+              <img class="p-quality__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-quality__nav__label">高気密</p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#quality3" class="quality_btn">
-        <div class="quality__top_button">
-          <div class="quality__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+        </a>
+      </li>
+      <li class="p-quality__nav__item">
+        <a href="#quality5" class="p-quality__nav__link">
+          <div class="p-quality__nav__card">
+            <div class="p-quality__nav__number">
+              <img class="p-quality__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number5.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-quality__nav__label">換気システム</p>
+            </div>
           </div>
-          <div class="top_border">
-            <p class="quality__top_button_text">
-              高断熱
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#quality4" class="quality_btn">
-        <div class="quality__top_button">
-          <div class="quality__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
-          </div>
-          <div class="top_border">
-            <p class="quality__top_button_text">
-              高気密
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#quality5" class="quality_btn">
-        <div class="quality__top_button">
-          <div class="quality__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number5.webp'); ?>" alt="">
-
-          </div>
-          <div class="top_border">
-            <p class="quality__top_button_text">
-              換気システム
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <section class="commitment__security1 noto-sans-jp " id="quality1">
-    <?php
-    $qualities = get_field('quality');
-    $quality = ($qualities && !empty($qualities[0])) ? $qualities[0] : null;
-    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
-    ?>
-      <div class="commitment__security1__content l_content_middle_80 support__content_t">
-        <div class="support__content_text content_txt">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
-          </div>
-          <div>
-            <p class="c_title_orangeLine_t ">
-              <span class="marker">ZEH(ゼッチ)</span>
-            </p>
-          </div>
-          <?php if (!empty($quality['title'])) : ?>
-            <p class="common_meta_content">
-              <?php echo esc_html($quality['title']); ?>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($quality['txt'])) : ?>
-            <div class="commitment__security1_content_maintext">
-              <?php echo wp_kses_post($quality['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class="commitment__security1__content l_content_middle_80 support__content_t">
+      <div class="support__content_text content_txt">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($quality['img'])) : ?>
-          <div class="commitment__security1_content_img content_img">
-            <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
-
+        <div>
+          <p class="c_title_orangeLine_t ">
+            <span class="marker">ZEH(ゼッチ)</span>
+          </p>
+        </div>
+        <p class="common_meta_content">
+          ネット・ゼロ・エネルギー・ハウス
+        </p>
+        <div class="commitment__security1_content_maintext">
+          家づくりで大切なのは、持続可能なことです。日々のランニングコストや経済性は欠かせません。私たちは、経済性と快適性を両立したZEH住宅を通じてエネルギー効率を最大限に高め、最新の再生可能エネルギーを取り入れることでランニングコストを大幅に削減しています。豊後夢工房ならではの価格で、コストを抑えたワンランク上のスマート住宅を実現します。
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="commitment__security1_content_img content_img">
+        <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_1.png')); ?>" class="img_shadow" alt="">
+      </div>
+    </div>
     <div class="commitment__zehhousing u-mb50 l_content_middle_80">
       <div class="commitment__zehhousing_ttl u-mb30">
         <p class="c_title_orangeLine_t">豊後夢工房は<span class="big"> <br class="sp">ZEH住宅<br class="sp"></span>が標準です。</p>
@@ -228,38 +214,25 @@ get_header();
   </section>
 
   <section class="commitment__security2 noto-sans-jp l_content_middle_80" id="quality2">
-    <?php
-    $qualities = get_field('quality');
-    $quality = ($qualities && !empty($qualities[1])) ? $qualities[1] : null;
-    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
-    ?>
-      <div class="  u-mb80 support__content_t">
-        <div class="support__content_text content_txt">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
-          </div>
-          <div class="common_subttl_deco_commitment">
-            <p class="c_title_orangeLine_t"><span class="marker">高耐震</span></p>
-          </div>
-          <?php if (!empty($quality['title'])) : ?>
-            <p class="common_meta_content">
-              <?php echo esc_html($quality['title']); ?>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($quality['txt'])) : ?>
-            <div class="support__content_maintext">
-              <?php echo wp_kses_post($quality['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class="  u-mb80 support__content_t">
+      <div class="support__content_text content_txt">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($quality['img'])) : ?>
-          <div class="commitment__security2_content_img content_img">
-            <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
-
+        <div class="common_subttl_deco_commitment">
+          <p class="c_title_orangeLine_t"><span class="marker">高耐震</span></p>
+        </div>
+        <p class="common_meta_content">
+          ZEH：普及実績および目標
+        </p>
+        <div class="support__content_maintext">
+          豊後夢工房は Sii:一般社団法人 環境共創イニシアチブによる令和 6 年度の ZEH ビルダー登録制度により、星5つ★★★★★の評価を頂きました。令和 7 年度も引き続き、Sii の執り行うネット・ゼロ・エネルギー・ハウス実証事業の定める「ZEH ビルダー」として登録いたします。つきましては過年度の実績と普及目標を公表いたします。
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="commitment__security2_content_img content_img">
+        <img src="<?php echo esc_url(content_url('uploads/2025/06/画像3.jpg')); ?>" class="img_shadow" alt="">
+      </div>
+    </div>
     <div class="commitment__security2_grade mt-6 u-mb100">
       <div class="commitment__security2_img">
         <img src="<?php echo esc_url(IMG_URL . '/performance/performance_8.webp'); ?>" class="img_shadow">
@@ -291,49 +264,31 @@ get_header();
     <div class="common_commitment_subttl mt-6">
       <span class="font_orange">木造軸組工法+ドリフトピン工法</span>が、<br class="sp">建物を面で支える強固な構造に
     </div>
-    <?php
-    $stable_structure = get_field('stable_structure');
-    if ($stable_structure && (!empty($stable_structure['img']) || !empty($stable_structure['txt']))) :
-    ?>
-      <div class="commitment__woodframe">
-        <?php if (!empty($stable_structure['img'])) : ?>
-          <div class="commitment__woodframe_img">
-            <img src="<?php echo esc_url($stable_structure['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
-        <?php if (!empty($stable_structure['txt'])) : ?>
-          <div class="commitment__woodframe_txt">
-            <?php echo wp_kses_post($stable_structure['txt']); ?>
-          </div>
-        <?php endif; ?>
+    <div class="commitment__woodframe">
+      <div class="commitment__woodframe_img">
+        <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_9.png')); ?>" class="img_shadow" alt="">
       </div>
-    <?php endif; ?>
+      <div class="commitment__woodframe_txt">
+        一般的な木造の家は、柱と梁（はり）で支えられています。この方法では、木材を組み合わせるために大きな穴を開けたり、細く削ったりするので、木材の強度が弱くなることがあります。<br><br>
+        豊後夢工房では、独自の「金物」を使って木材を補強しています。この金物のおかげで、木材に穴を開けたり細くしたりする必要がなくなり、木材本来の強さを保つことができます。<br><br>
+        さらに、金物を使うことで、柱と梁だけでなく、家全体を多面体で支える構造になります。これにより、地震に対してもより強い家を作ることができます。
+      </div>
+    </div>
     <div class="common_commitment_subttl">
       <span class="font_orange">制震装置</span>で大地震のエネルギーを大幅に吸収
     </div>
     <div class="commitment__mersystem l_content_middle_70">
-      <?php
-      $energy = get_field('energy');
-      if ($energy && (!empty($energy['img']) || !empty($energy['txt']))) :
-      ?>
-        <div class="commitment__mersystem_top">
-          <?php if (!empty($energy['img'])) : ?>
-            <div class="commitment__mersystem_img sp_tab">
-              <img src="<?php echo esc_url($energy['img']); ?>" class="img_shadow">
-            </div>
-          <?php endif; ?>
-          <?php if (!empty($energy['txt'])) : ?>
-            <div class=" commitment__mersystem_txt">
-              <?php echo wp_kses_post($energy['txt']); ?>
-            </div>
-          <?php endif; ?>
-          <?php if (!empty($energy['img'])) : ?>
-            <div class="commitment__mersystem_img pc">
-              <img src="<?php echo esc_url($energy['img']); ?>" class="img_shadow">
-            </div>
-          <?php endif; ?>
+      <div class="commitment__mersystem_top">
+        <div class="commitment__mersystem_img sp_tab">
+          <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_10.png')); ?>" class="img_shadow" alt="">
         </div>
-      <?php endif; ?>
+        <div class=" commitment__mersystem_txt">
+          豊後夢工房で採用している「制震装置 MER SYSTEM」は、地震の揺れや加速度を大幅に抑えるシステムです。地震が起きた直後から素早くエネルギーを吸収し、建物に与える揺れを最大48％減少させます。これにより、あらゆる地震の揺れに効果を発揮し、建物への被害を大幅に軽減します。最近の大地震でも、MER SYSTEMを採用した住宅はほとんど被害がなく、多くのお客様から感謝の声をいただいています。
+        </div>
+        <div class="commitment__mersystem_img pc">
+          <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_10.png')); ?>" class="img_shadow" alt="">
+        </div>
+      </div>
       <div class="commitment__link u-mb40">
         くわしくは<a href="https://www.seishin-system.com/products/" target="_blank">こちら</a>
       </div>
@@ -412,37 +367,25 @@ get_header();
   </section>
 
   <section class="commitment__security2 noto-sans-jp " id="quality3">
-    <?php
-    $qualities = get_field('quality');
-    $quality = ($qualities && !empty($qualities[2])) ? $qualities[2] : null;
-    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
-    ?>
-      <div class="  u-mb80 l_content_middle_80 support__content_t">
-        <div class="support__content_text content_txt ">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
-          </div>
-          <div class="common_subttl_deco_commitment">
-            <p class="c_title_orangeLine_t"><span class="marker">高断熱</span></p>
-          </div>
-          <?php if (!empty($quality['title'])) : ?>
-            <p class="common_meta_content">
-              <?php echo esc_html($quality['title']); ?>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($quality['txt'])) : ?>
-            <div class="support__content_maintext">
-              <?php echo wp_kses_post($quality['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class="  u-mb80 l_content_middle_80 support__content_t">
+      <div class="support__content_text content_txt ">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($quality['img'])) : ?>
-          <div class="commitment__security2_content_img content_img">
-            <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
+        <div class="common_subttl_deco_commitment">
+          <p class="c_title_orangeLine_t"><span class="marker">高断熱</span></p>
+        </div>
+        <p class="common_meta_content">
+          安心のW地震対策
+        </p>
+        <div class="support__content_maintext">
+          豊後夢工房では、地震に強い家づくりをしています。私たちは、二つの安心な地震対策を標準で取り入れています。震度7相当の揺れに複数回耐える事のできる、「壊れない耐震工法」。地震エネルギーを約1/2に軽減する「揺れない制震装置」。この二つの地震対策で、豊後夢工房で建てた家は、いつでも安心で安全な住まいです。
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="commitment__security2_content_img content_img">
+        <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_7-1.png')); ?>" class="img_shadow" alt="">
+      </div>
+    </div>
     <div class="common_commitment_subttl mt-6">
       <span class="font_orange">豊後夢工房</span>の<span class="font_orange">高断熱仕様</span>
     </div>
@@ -508,40 +451,27 @@ get_header();
   </section>
 
   <section class="commitment__security1 noto-sans-jp l_content_middle_80" id="quality4">
-    <?php
-    $qualities = get_field('quality');
-    $quality = ($qualities && !empty($qualities[3])) ? $qualities[3] : null;
-    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
-    ?>
-      <div class="commitment__security1__content u-mb80 support__content_t">
-        <div class="support__content_text content_txt">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
-          </div>
-          <div>
-            <p class="c_title_orangeLine_t"><span class="marker">
-                高気密</span>
-            </p>
-          </div>
-          <?php if (!empty($quality['title'])) : ?>
-            <p class="common_meta_content">
-              <?php echo esc_html($quality['title']); ?>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($quality['txt'])) : ?>
-            <div class="commitment__security1_content_maintext">
-              <?php echo wp_kses_post($quality['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class="commitment__security1__content u-mb80 support__content_t">
+      <div class="support__content_text content_txt">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($quality['img'])) : ?>
-          <div class="commitment__security1_content_img content_img">
-            <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
+        <div>
+          <p class="c_title_orangeLine_t"><span class="marker">
+              高気密</span>
+          </p>
+        </div>
+        <p class="common_meta_content">
+          ZEH基準を上回る断熱性能を標準仕様
+        </p>
+        <div class="commitment__security1_content_maintext">
+          私たちの家は、ZEH（ゼロ・エネルギー・ハウス）基準よりも高い断熱性能を標準としています。この高い断熱性能により、外の気温の変化が室内にあまり影響しません。そのため、一年を通して快適な室内の暮らしを実現しています。
+        </div>
       </div>
-    <?php endif; ?>
-
+      <div class="commitment__security1_content_img content_img">
+        <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_18.png')); ?>" class="img_shadow" alt="">
+      </div>
+    </div>
   </section>
 
   <section class="u-mb100">
@@ -575,37 +505,25 @@ get_header();
   </section>
 
   <section class="commitment__security2 noto-sans-jp l_content_middle_80 u-mb100" id="quality5">
-    <?php
-    $qualities = get_field('quality');
-    $quality = ($qualities && !empty($qualities[4])) ? $qualities[4] : null;
-    if ($quality && (!empty($quality['title']) || !empty($quality['txt']) || !empty($quality['img']))) :
-    ?>
-      <div class=" support__content_t  support__content_t">
-        <div class="support__content_text content_txt">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number5.webp'); ?>" alt="">
-          </div>
-          <div class="common_subttl_deco_commitment">
-            <p class="c_title_orangeLine_t"><span class="marker">24時間換気システム</span></p>
-          </div>
-          <?php if (!empty($quality['title'])) : ?>
-            <p class="common_meta_content">
-              <?php echo esc_html($quality['title']); ?>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($quality['txt'])) : ?>
-            <div class="support__content_maintext ">
-              <?php echo wp_kses_post($quality['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class=" support__content_t  support__content_t">
+      <div class="support__content_text content_txt">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number5.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($quality['img'])) : ?>
-          <div class="commitment__security2_content_img content_img">
-            <img src="<?php echo esc_url($quality['img']); ?>" class="img_shadow">
-          </div>
-        <?php endif; ?>
+        <div class="common_subttl_deco_commitment">
+          <p class="c_title_orangeLine_t"><span class="marker">24時間換気システム</span></p>
+        </div>
+        <p class="common_meta_content">
+          徹底的な気密施工
+        </p>
+        <div class="support__content_maintext ">
+          全体の気密性能を向上させ、快適な室内環境を実現するために不可欠です。隙間が少ないことで、外気の影響を受けにくくなり、冬でも暖かく、夏でも涼しい環境を保つことができます。また、エネルギー効率も向上し、光熱費の節約にもつながります。
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="commitment__security2_content_img content_img">
+        <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_21.png')); ?>" class="img_shadow" alt="">
+      </div>
+    </div>
   </section>
   <div class="l_content_middle_70 insulation_perform_wrap_t">
     <div class="insulation_perform mt-10 u-mb80 ">
