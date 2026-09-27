@@ -114,4 +114,46 @@
       }
     }
   }
+
+  &__zeh {
+    padding-bottom: 2rem;
+    margin-top: 12.5rem;
+    position: relative;
+  }
+
+  &__feature {
+    &__overview {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5%;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__overviewMedia {
+      width: 55%;
+
+      @include mq(tab) {
+        width: 80%;
+        margin: auto;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__overviewTxtWrap {
+      width: 45%;
+      padding-left: 2rem;
+
+      @include mq(tab) {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
 }

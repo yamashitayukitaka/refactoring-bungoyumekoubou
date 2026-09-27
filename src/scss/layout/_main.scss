@@ -51,4 +51,15 @@
     width: 92%;
     margin: auto;
   }
+
+  &--inner {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+
+    @include mq(tab) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
 }

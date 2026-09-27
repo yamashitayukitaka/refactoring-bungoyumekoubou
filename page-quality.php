@@ -31,7 +31,7 @@ get_header();
     </div>
   </section>
 
-  <nav class="p-quality__nav noto-sans-jp" aria-label="品質へのこだわり">
+  <nav class="p-quality__nav" aria-label="品質へのこだわり">
     <div class="p-quality__nav__heading">
       <span class="u-textOrange">豊後夢工房</span>がご提供する<span class="u-textOrange">住宅性能</span>と<span class="u-textOrange">品質</span>
     </div>
@@ -99,9 +99,9 @@ get_header();
     </ul>
   </nav>
 
-  <section class="commitment__security1 noto-sans-jp " id="quality1">
-    <div class="commitment__security1__content l_content_middle_80 support__content_t">
-      <div class="support__content_text content_txt">
+  <section class="p-quality__zeh" id="quality1">
+    <div class="l-content--inner p-quality__feature__overview">
+      <div class="p-quality__feature__overviewTxtWrap">
         <div class="support__content_number">
           <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
         </div>
@@ -117,11 +117,11 @@ get_header();
           家づくりで大切なのは、持続可能なことです。日々のランニングコストや経済性は欠かせません。私たちは、経済性と快適性を両立したZEH住宅を通じてエネルギー効率を最大限に高め、最新の再生可能エネルギーを取り入れることでランニングコストを大幅に削減しています。豊後夢工房ならではの価格で、コストを抑えたワンランク上のスマート住宅を実現します。
         </div>
       </div>
-      <div class="commitment__security1_content_img content_img">
+      <div class="p-quality__feature__overviewMedia">
         <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_1.png')); ?>" class="img_shadow" alt="">
       </div>
     </div>
-    <div class="commitment__zehhousing u-mb50 l_content_middle_80">
+    <div class="commitment__zehhousing u-mb50 l-content--inner">
       <div class="commitment__zehhousing_ttl u-mb30">
         <p class="c_title_orangeLine_t">豊後夢工房は<span class="big"> <br class="sp">ZEH住宅<br class="sp"></span>が標準です。</p>
       </div>
@@ -213,23 +213,23 @@ get_header();
     </div>
   </section>
 
-  <section class="commitment__security2 noto-sans-jp l_content_middle_80" id="quality2">
-    <div class="  u-mb80 support__content_t">
-      <div class="support__content_text content_txt">
+  <section class="commitment__security2" id="quality2">
+    <div class="p-quality__feature__overview u-mb80 l-content--inner">
+      <div class="p-quality__feature__overviewTxtWrap">
         <div class="support__content_number">
           <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
         </div>
-        <div class="common_subttl_deco_commitment">
+        <div>
           <p class="c_title_orangeLine_t"><span class="marker">高耐震</span></p>
         </div>
         <p class="common_meta_content">
           ZEH：普及実績および目標
         </p>
-        <div class="support__content_maintext">
+        <div class="commitment__security1_content_maintext">
           豊後夢工房は Sii:一般社団法人 環境共創イニシアチブによる令和 6 年度の ZEH ビルダー登録制度により、星5つ★★★★★の評価を頂きました。令和 7 年度も引き続き、Sii の執り行うネット・ゼロ・エネルギー・ハウス実証事業の定める「ZEH ビルダー」として登録いたします。つきましては過年度の実績と普及目標を公表いたします。
         </div>
       </div>
-      <div class="commitment__security2_content_img content_img">
+      <div class="p-quality__feature__overviewMedia">
         <img src="<?php echo esc_url(content_url('uploads/2025/06/画像3.jpg')); ?>" class="img_shadow" alt="">
       </div>
     </div>
@@ -367,22 +367,22 @@ get_header();
   </section>
 
   <section class="commitment__security2 noto-sans-jp " id="quality3">
-    <div class="  u-mb80 l_content_middle_80 support__content_t">
-      <div class="support__content_text content_txt ">
+    <div class="l-content--inner p-quality__feature__overview u-mb80">
+      <div class="p-quality__feature__overviewTxtWrap">
         <div class="support__content_number">
           <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
         </div>
-        <div class="common_subttl_deco_commitment">
+        <div>
           <p class="c_title_orangeLine_t"><span class="marker">高断熱</span></p>
         </div>
         <p class="common_meta_content">
           安心のW地震対策
         </p>
-        <div class="support__content_maintext">
+        <div class="commitment__security1_content_maintext">
           豊後夢工房では、地震に強い家づくりをしています。私たちは、二つの安心な地震対策を標準で取り入れています。震度7相当の揺れに複数回耐える事のできる、「壊れない耐震工法」。地震エネルギーを約1/2に軽減する「揺れない制震装置」。この二つの地震対策で、豊後夢工房で建てた家は、いつでも安心で安全な住まいです。
         </div>
       </div>
-      <div class="commitment__security2_content_img content_img">
+      <div class="p-quality__feature__overviewMedia">
         <img src="<?php echo esc_url(content_url('uploads/2024/07/performance_7-1.png')); ?>" class="img_shadow" alt="">
       </div>
     </div>
@@ -450,7 +450,7 @@ get_header();
 
   </section>
 
-  <section class="commitment__security1 noto-sans-jp l_content_middle_80" id="quality4">
+  <section class="commitment__security1 l-content--inner" id="quality4">
     <div class="commitment__security1__content u-mb80 support__content_t">
       <div class="support__content_text content_txt">
         <div class="support__content_number">

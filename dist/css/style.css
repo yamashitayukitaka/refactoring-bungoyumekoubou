@@ -707,6 +707,17 @@ a:hover {
   width: 92%;
   margin: auto;
 }
+.l-content--inner {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .l-content--inner {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 
 .l-footer__bottom {
   background: #404040;
@@ -5342,6 +5353,46 @@ a:hover {
 @media screen and (max-width: 599px) {
   .p-quality__nav__label {
     white-space: nowrap;
+  }
+}
+.p-quality__zeh {
+  padding-bottom: 2rem;
+  margin-top: 12.5rem;
+  position: relative;
+}
+.p-quality__feature__overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__feature__overview {
+    flex-direction: column;
+  }
+}
+.p-quality__feature__overviewMedia {
+  width: 55%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__feature__overviewMedia {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__feature__overviewMedia {
+    width: 100%;
+  }
+}
+.p-quality__feature__overviewTxtWrap {
+  width: 45%;
+  padding-left: 2rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__feature__overviewTxtWrap {
+    width: 100%;
+    padding-left: 0;
   }
 }
 
