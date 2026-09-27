@@ -718,6 +718,17 @@ a:hover {
     padding-right: 5%;
   }
 }
+.l-content--innerNarrow {
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .l-content--innerNarrow {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 
 .l-footer__bottom {
   background: #404040;
@@ -5240,6 +5251,12 @@ a:hover {
 .p-quality {
   overflow-x: hidden;
 }
+.p-quality__largeText {
+  font-size: 3rem;
+  letter-spacing: 0.68rem;
+  color: #000000;
+  font-weight: 500;
+}
 .p-quality__nav {
   width: 70%;
   min-width: 900px;
@@ -5371,6 +5388,40 @@ a:hover {
     flex-direction: column;
   }
 }
+.p-quality__feature__overviewNum {
+  width: 7rem;
+}
+.p-quality__feature__overviewStrong {
+  font-size: 1.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  padding-top: 1%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__feature__overviewStrong {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    padding-top: 1%;
+  }
+}
+.p-quality__feature__overviewDescription {
+  font-size: 1.6rem;
+  letter-spacing: 2.8px;
+  line-height: 25px;
+  color: black;
+  margin-top: 1.8rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__feature__overviewDescription {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    color: black;
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+  }
+}
 .p-quality__feature__overviewMedia {
   width: 55%;
 }
@@ -5394,6 +5445,1256 @@ a:hover {
     width: 100%;
     padding-left: 0;
   }
+}
+.p-quality__feature__overviewText {
+  font-size: 1.6rem;
+  letter-spacing: 0.3px;
+  line-height: 3.1rem;
+  margin-top: 2.7rem;
+  width: 94%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__feature__overviewText {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__feature__overviewText {
+    font-size: 2rem;
+    letter-spacing: 0.4px;
+    line-height: 1.8;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+.p-quality__inner--wide {
+  padding-left: 15%;
+  padding-right: 15%;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__inner--wide {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__inner--wide {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.p-quality__inner--narrow {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+}
+@media screen and (max-width: 599px) {
+  .p-quality__inner--narrow {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.p-quality__sectionHeading {
+  background-color: #faf7f2;
+  height: auto;
+  font-size: 2.3rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.p-quality__sectionHeading .u-textOrange {
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+.p-quality__zeh__standard {
+  font-size: 3.2rem;
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12.8rem;
+}
+.p-quality__zeh__standard .u-textOrange {
+  color: #ed6a10;
+  font-size: 4rem;
+}
+.p-quality__zeh__standardHeading {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+.p-quality__zeh__standardHeadingEm {
+  font-size: 5rem;
+  letter-spacing: 0.68rem;
+  font-weight: 700;
+  color: #ea6800;
+}
+.p-quality__zeh__standardBody {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__standardBody {
+    flex-direction: column;
+  }
+}
+.p-quality__zeh__faq {
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 53%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__faq {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.p-quality__zeh__faqQuestion {
+  font-size: 1.8rem;
+  line-height: 31px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+}
+.p-quality__zeh__faqQuestion .u-textOrange {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 31px;
+  letter-spacing: 1.8px;
+}
+.p-quality__zeh__faqAnswer {
+  line-height: 3.1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2.9rem;
+  text-align: left;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__faqAnswer {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.p-quality__zeh__faqAnswer .marker {
+  line-height: 3.1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin-top: 2.9rem;
+  text-align: left;
+  font-weight: bold;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__faqAnswer .marker {
+    font-size: 16px;
+  }
+}
+.p-quality__zeh__points {
+  width: 46%;
+  min-width: 476px;
+  height: auto;
+  background-color: #faf7f2;
+  padding: 0.8rem 3rem 2.8rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.2rem;
+  margin-top: 1rem;
+  border: 1px solid #ed6a10;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__points {
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+    margin: 10% auto 5%;
+    padding: 3rem 3rem 4rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__zeh__points {
+    padding: 3rem 2rem 4rem;
+  }
+}
+.p-quality__zeh__pointsHeading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 2.8px;
+  margin-top: 1rem;
+}
+.p-quality__zeh__pointsList {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.p-quality__zeh__pointsItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 19.6rem;
+  height: 6.2rem;
+  border-radius: 5rem;
+  box-shadow: 1px 3px 1px rgba(217, 82, 16, 0.5);
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__pointsItem {
+    width: 45%;
+    height: auto;
+    padding: 1.5% 3% 2.5%;
+  }
+}
+.p-quality__zeh__pointsMedia {
+  width: 4.2rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__pointsMedia {
+    width: 30%;
+  }
+}
+.p-quality__zeh__pointsImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__zeh__pointsItemBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1rem;
+}
+.p-quality__zeh__pointsItemTitle {
+  font-size: 1.5rem;
+  color: #ed6a10;
+  line-height: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__pointsItemTitle {
+    font-size: 15px;
+    line-height: 2;
+  }
+}
+.p-quality__zeh__pointsItemText {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  color: #000;
+  text-align: left;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__zeh__pointsItemText {
+    font-size: 13px;
+    line-height: 1.3;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__zeh__pointsItemText {
+    font-size: 11px;
+  }
+}
+.p-quality__award__winner {
+  display: flex;
+  flex-direction: column;
+  gap: 4.1rem;
+  padding-bottom: 4.3rem;
+}
+.p-quality__award__winnerHeading {
+  background-color: #faf7f2;
+  height: auto;
+  font-size: 2.3rem;
+  padding-top: 1.2rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+.p-quality__award__winnerBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__award__winnerBody {
+    flex-direction: column;
+  }
+}
+.p-quality__award__winnerMedia {
+  width: 47%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__award__winnerMedia {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.p-quality__award__winnerImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__award__winnerText {
+  width: 52%;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__award__winnerText {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+.p-quality__award__ranking {
+  display: flex;
+  flex-direction: column;
+  gap: 9.1rem;
+}
+.p-quality__award__rankingBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7%;
+  padding-bottom: 9rem;
+  border-bottom: 1px solid gray;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__award__rankingBody {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.p-quality__award__rankingText {
+  width: 48.5%;
+  min-width: 450px;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__award__rankingText {
+    width: 100%;
+    min-width: 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+.p-quality__award__rankingMedia {
+  width: 30%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__award__rankingMedia {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.p-quality__award__rankingImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__seismic {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10rem;
+}
+.p-quality__seismic__grade {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__grade {
+    flex-direction: column;
+  }
+}
+.p-quality__seismic__gradeMedia {
+  width: 29%;
+  min-width: 300px;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__gradeMedia {
+    width: 60%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+}
+.p-quality__seismic__gradeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__seismic__gradePanel {
+  display: flex;
+  flex-direction: column;
+  padding: 2.6rem 1.7rem 3.1rem 3.2rem;
+  width: 52%;
+  min-width: 500px;
+  border: 1px solid #ed6a10;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__gradePanel {
+    width: 80%;
+    min-width: 0;
+    margin: 5% auto 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__seismic__gradePanel {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.p-quality__seismic__gradeRow {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  letter-spacing: 1.8px;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__gradeRow {
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__seismic__gradeRow {
+    gap: 2rem;
+  }
+}
+.p-quality__seismic__gradeBadge {
+  flex-direction: column;
+  width: 14.5rem;
+  height: 14.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fabb05;
+  border: 4px solid #fabb05;
+  background-color: #5b5b5b;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+.p-quality__seismic__gradeBadgeTitle {
+  font-size: 2rem;
+  letter-spacing: 0.4px;
+  line-height: 3.79rem;
+  color: #fabb05;
+  font-weight: bold;
+  margin: 0;
+}
+.p-quality__seismic__gradeBadgeText {
+  color: #fabb05;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+.p-quality__seismic__gradeDetail {
+  font-weight: 700;
+}
+.p-quality__seismic__gradeValue {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.3;
+  display: inline;
+}
+.p-quality__seismic__gradeNote {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__gradeNote {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+  }
+}
+.p-quality__seismic__woodframe {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7.9rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__woodframe {
+    flex-direction: column;
+  }
+}
+.p-quality__seismic__woodframeMedia {
+  width: 55%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__woodframeMedia {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__seismic__woodframeMedia {
+    width: 100%;
+  }
+}
+.p-quality__seismic__woodframeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__seismic__woodframeText {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 2.8px;
+  width: 40%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__woodframeText {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    padding-top: 5%;
+  }
+}
+.p-quality__seismic__mersystem {
+  display: flex;
+  flex-direction: column;
+}
+.p-quality__seismic__mersystemIntro {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7.9rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemIntro {
+    flex-direction: column;
+  }
+}
+.p-quality__seismic__mersystemText {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  letter-spacing: 2.8px;
+  width: 40%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemText {
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    padding-top: 5%;
+  }
+}
+.p-quality__seismic__mersystemMedia {
+  width: 55%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemMedia {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__seismic__mersystemMedia {
+    width: 100%;
+  }
+}
+.p-quality__seismic__mersystemImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__seismic__mersystemLink {
+  padding-right: 7.6rem;
+  margin-left: auto;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemLink {
+    padding-right: 0;
+  }
+}
+.p-quality__seismic__mersystemLink a {
+  color: #0195ff;
+}
+.p-quality__seismic__mersystemEffects {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemEffects {
+    width: 100%;
+    padding: 5% 10% 10%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__seismic__mersystemEffects {
+    padding: 5% 5% 10%;
+  }
+}
+.p-quality__seismic__mersystemEffectsList {
+  width: 80%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemEffectsList {
+    width: 100%;
+  }
+}
+.p-quality__seismic__mersystemEffectsItem:nth-of-type(3) {
+  padding-bottom: 8rem;
+}
+.p-quality__seismic__mersystemEffectHead {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  padding-top: 8%;
+}
+.p-quality__seismic__mersystemEffectBadge {
+  background-color: #00a4ea;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.3;
+  padding: 1.5%;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemEffectBadge {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__seismic__mersystemEffectBadge {
+    font-size: 1.7rem;
+  }
+}
+.p-quality__seismic__mersystemEffectLead {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemEffectLead {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+  }
+}
+.p-quality__seismic__mersystemEffectText {
+  font-size: 1.7rem;
+  line-height: 2;
+  letter-spacing: 0.08rem;
+  padding-top: 5%;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__seismic__mersystemEffectText {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+.p-quality__seismic__mersystemEffectImg {
+  width: 100%;
+  padding-top: 5%;
+  height: auto;
+  display: block;
+}
+.p-quality__thermal {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10rem;
+}
+.p-quality__thermal__chart {
+  margin-top: 5.6rem;
+  padding-bottom: 3rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__chart {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__thermal__chart {
+    padding: 0;
+  }
+}
+.p-quality__thermal__chartImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__thermal__grade {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__grade {
+    flex-direction: column;
+  }
+}
+.p-quality__thermal__gradeMedia {
+  width: 29%;
+  min-width: 300px;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__gradeMedia {
+    width: 60%;
+    min-width: 0;
+    margin: 0 auto;
+  }
+}
+.p-quality__thermal__gradeImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__thermal__gradePanel {
+  display: flex;
+  flex-direction: column;
+  padding: 2.6rem 1.7rem 3.1rem 3.2rem;
+  width: 52%;
+  min-width: 500px;
+  border: 1px solid #ed6a10;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__gradePanel {
+    width: 80%;
+    min-width: 0;
+    margin: 5% auto 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__thermal__gradePanel {
+    width: 100%;
+    padding: 5%;
+  }
+}
+.p-quality__thermal__gradeRow {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  letter-spacing: 1.8px;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__gradeRow {
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__thermal__gradeRow {
+    gap: 2rem;
+  }
+}
+.p-quality__thermal__gradeBadge {
+  flex-direction: column;
+  width: 14.5rem;
+  height: 14.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fabb05;
+  border: 4px solid #fabb05;
+  background-color: #5b5b5b;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+.p-quality__thermal__gradeBadgeTitle {
+  font-size: 2rem;
+  letter-spacing: 0.4px;
+  line-height: 3.79rem;
+  color: #fabb05;
+  font-weight: bold;
+  margin: 0;
+}
+.p-quality__thermal__gradeBadgeText {
+  color: #fabb05;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+.p-quality__thermal__gradeDetail {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__gradeDetail {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    line-height: 1.8;
+  }
+}
+.p-quality__thermal__gradeValue {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.3;
+  display: inline;
+}
+.p-quality__thermal__benefits {
+  width: 70%;
+  min-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #faf7f2;
+  border-radius: 1rem;
+  padding: 3.4rem 6.4rem 5.5rem;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__benefits {
+    width: 90%;
+    min-width: 500px;
+    padding: 3.4rem 3rem 5.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__thermal__benefits {
+    width: 100%;
+    min-width: 0;
+  }
+}
+.p-quality__thermal__benefitsHeading {
+  font-size: 2rem;
+  margin-bottom: 5.3rem;
+  text-align: center;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__benefitsHeading {
+    margin-top: 5%;
+  }
+}
+.p-quality__thermal__benefitsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.9rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__benefitsList {
+    gap: 2rem;
+    justify-content: space-around;
+  }
+}
+.p-quality__thermal__benefitsItem {
+  background-color: #fff;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 2px rgba(237, 106, 16, 0.5);
+  width: 27rem;
+  height: 9rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__benefitsItem {
+    width: 45%;
+    height: 9rem;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+.p-quality__thermal__benefitsNumber {
+  color: #ea6800;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.p-quality__thermal__benefitsLabel {
+  border-top: 1px solid #000;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__thermal__benefitsLabel {
+    border-top: 0;
+    font-size: 1.8rem;
+  }
+}
+.p-quality__airtight {
+  margin-top: 12.5rem;
+  position: relative;
+}
+.p-quality__airtight__panel {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+  padding-bottom: 10rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__airtight__panel {
+    flex-direction: column;
+    padding: 0 10% 5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__airtight__panel {
+    padding: 0 5% 5%;
+  }
+}
+.p-quality__airtight__panelMedia {
+  width: 55%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__airtight__panelMedia {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__airtight__panelMedia {
+    width: 100%;
+  }
+}
+.p-quality__airtight__panelImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__airtight__panelBody {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__airtight__panelBody {
+    width: 100%;
+    padding-top: 5%;
+  }
+}
+.p-quality__airtight__panelLead {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__airtight__panelLead {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+.p-quality__airtight__panelText {
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__airtight__panelText {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+.p-quality__airtight__gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3%;
+  padding-bottom: 7%;
+}
+.p-quality__airtight__gallery--bordered {
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+.p-quality__airtight__galleryItem {
+  width: 33%;
+}
+.p-quality__airtight__galleryImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__ventilation {
+  display: flex;
+  flex-direction: column;
+}
+.p-quality__ventilation__overview {
+  margin-bottom: 0;
+}
+.p-quality__ventilation__benefitsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf7f2;
+  border-radius: 1rem;
+  padding: 3.4rem 6.4rem 5.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__benefitsContainer {
+    padding: 3.4rem 3rem 5.5rem;
+  }
+}
+.p-quality__ventilation__benefitsHeading {
+  font-size: 2rem;
+  margin-bottom: 5.3rem;
+  text-align: center;
+}
+.p-quality__ventilation__benefitsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.9rem;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__benefitsList {
+    gap: 2rem;
+    justify-content: space-around;
+  }
+}
+.p-quality__ventilation__benefitsItem {
+  background-color: #fff;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 2px rgba(237, 106, 16, 0.5);
+  width: 27rem;
+  height: 9rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__benefitsItem {
+    width: 45%;
+    height: 9rem;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+.p-quality__ventilation__benefitsItem--center {
+  margin: auto;
+}
+.p-quality__ventilation__benefitsTopItem {
+  width: 100%;
+}
+.p-quality__ventilation__benefitsNumber {
+  color: #ea6800;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.p-quality__ventilation__benefitsLabel {
+  border-top: 1px solid #000;
+  font-size: 1.8rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__benefitsLabel {
+    border-top: 0;
+  }
+}
+.p-quality__ventilation__airflow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+}
+.p-quality__ventilation__airflow--spacedTop {
+  padding-top: 5%;
+}
+.p-quality__ventilation__airflow--stacked {
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__airflow {
+    flex-direction: column;
+  }
+}
+.p-quality__ventilation__airflowMedia {
+  width: 50%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__airflowMedia {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__ventilation__airflowMedia {
+    width: 100%;
+  }
+}
+.p-quality__ventilation__airflowImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__ventilation__airflowBody {
+  width: 50%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__airflowBody {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__ventilation__airflowBody {
+    width: 100%;
+  }
+}
+.p-quality__ventilation__airflowTitle {
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+  color: #ea6800;
+  font-weight: bold;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__airflowTitle {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    padding-top: 3%;
+  }
+}
+.p-quality__ventilation__airflowText {
+  padding-top: 5%;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: 0.15rem;
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__airflowText {
+    padding-top: 3%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+  }
+}
+.p-quality__ventilation__diagram {
+  padding-left: 25%;
+  padding-right: 25%;
+  width: 100%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__diagram {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-quality__ventilation__diagram {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.p-quality__ventilation__diagram--spaced {
+  padding-top: 3%;
+}
+.p-quality__ventilation__diagramImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__ventilation__compare {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__compare {
+    flex-direction: column;
+  }
+}
+.p-quality__ventilation__compare--spaced {
+  padding-bottom: 15%;
+}
+.p-quality__ventilation__compareItem {
+  width: 48%;
+  margin-bottom: 5%;
+}
+.p-quality__ventilation__compareItem:nth-of-type(2) {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-quality__ventilation__compareItem {
+    width: 100%;
+  }
+}
+.p-quality__ventilation__compareImg {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.p-quality__ventilation__compareImg--cold {
+  background-color: #c5f3f6;
+}
+.p-quality__ventilation__compareImg--hot {
+  background-color: #f7e0d0;
 }
 
 .p-faq__lead {
@@ -8680,6 +9981,11 @@ a:hover {
   color: #ea6800;
   font-weight: bold;
   font-size: 2.4rem;
+}
+
+.u-orange--sizeInherit {
+  color: #ea6800;
+  font-size: inherit;
 }
 
 .u-textOrange {

@@ -1,6 +1,14 @@
 .p-quality {
   overflow-x: hidden;
 
+  &__largeText {
+    font-size: 3rem;
+    letter-spacing: 0.68rem;
+    color: #000000;
+    font-weight: 500;
+
+  }
+
   &__nav {
     width: 70%;
     min-width: 900px;
@@ -133,6 +141,41 @@
       }
     }
 
+    &__overviewNum {
+      width: 7rem;
+    }
+
+    &__overviewStrong {
+      font-size: 1.9rem;
+      letter-spacing: 0.2rem;
+      font-weight: 700;
+      padding-top: 1%;
+
+      @include mq(tab) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        font-weight: 700;
+        padding-top: 1%;
+      }
+    }
+
+    &__overviewDescription {
+      font-size: 1.6rem;
+      letter-spacing: 2.8px;
+      line-height: 25px;
+      color: black;
+      margin-top: 1.8rem;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+        color: black;
+        margin-top: 1.8rem;
+        margin-bottom: 3rem;
+      }
+    }
+
     &__overviewMedia {
       width: 55%;
 
@@ -153,6 +196,1310 @@
       @include mq(tab) {
         width: 100%;
         padding-left: 0;
+      }
+    }
+
+    &__overviewText {
+      font-size: 1.6rem;
+      letter-spacing: 0.3px;
+      line-height: 3.1rem;
+      margin-top: 2.7rem;
+      width: 94%;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+        margin-bottom: 3rem;
+      }
+
+      @include mq(sp) {
+        font-size: 2rem;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__inner--wide {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+
+    @include mq(tab) {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    @include mq(sp) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  &__inner--narrow {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+
+    @include mq(sp) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  &__sectionHeading {
+    background-color: $beige4;
+    height: auto;
+    font-size: 2.3rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+
+    .u-textOrange {
+      font-size: 2.3rem;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+    }
+  }
+
+  &__zeh {
+    &__standard {
+      font-size: 3.2rem;
+      color: $pureBlack;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 12.8rem;
+
+      .u-textOrange {
+        color: $red;
+        font-size: 4rem;
+      }
+    }
+
+    &__standardHeading {
+      font-size: 3.2rem;
+      letter-spacing: 0.2rem;
+    }
+
+    &__standardHeadingEm {
+      font-size: 5rem;
+      letter-spacing: 0.68rem;
+      font-weight: 700;
+      color: $orange;
+    }
+
+    &__standardBody {
+      display: flex;
+      justify-content: space-between;
+      gap: 5%;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__faq {
+      padding-left: 2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 53%;
+
+      @include mq(tab) {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    &__faqQuestion {
+      font-size: 1.8rem;
+      line-height: 31px;
+      letter-spacing: 1.8px;
+      font-weight: 700;
+
+      .u-textOrange {
+        font-size: 3.2rem;
+        font-weight: bold;
+        line-height: 31px;
+        letter-spacing: 1.8px;
+      }
+    }
+
+    &__faqAnswer {
+      line-height: 3.1rem;
+      font-size: 1.6rem;
+      letter-spacing: 0.2rem;
+      margin-top: 2.9rem;
+      text-align: left;
+
+      @include mq(tab) {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .marker {
+        line-height: 3.1rem;
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+        margin-top: 2.9rem;
+        text-align: left;
+        font-weight: bold;
+
+        @include mq(tab) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__points {
+      width: 46%;
+      min-width: 476px;
+      height: auto;
+      background-color: $beige4;
+      padding: 0.8rem 3rem 2.8rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2.2rem;
+      margin-top: 1rem;
+      border: 1px solid $red;
+
+      @include mq(tab) {
+        width: 100%;
+        max-width: 500px;
+        min-width: 0;
+        margin: 10% auto 5%;
+        padding: 3rem 3rem 4rem;
+      }
+
+      @include mq(sp) {
+        padding: 3rem 2rem 4rem;
+      }
+    }
+
+    &__pointsHeading {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      letter-spacing: 2.8px;
+      margin-top: 1rem;
+    }
+
+    &__pointsList {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__pointsItem {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      width: 19.6rem;
+      height: 6.2rem;
+      border-radius: 5rem;
+      box-shadow: 1px 3px 1px rgb(217 82 16 / 50%);
+
+      @include mq(tab) {
+        width: 45%;
+        height: auto;
+        padding: 1.5% 3% 2.5%;
+      }
+    }
+
+    &__pointsMedia {
+      width: 4.2rem;
+
+      @include mq(tab) {
+        width: 30%;
+      }
+    }
+
+    &__pointsImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__pointsItemBody {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-left: 1rem;
+    }
+
+    &__pointsItemTitle {
+      font-size: 1.5rem;
+      color: $red;
+      line-height: 2.5rem;
+      margin: 0;
+      font-weight: bold;
+
+      @include mq(tab) {
+        font-size: 15px;
+        line-height: 2;
+      }
+    }
+
+    &__pointsItemText {
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      color: $pureBlack;
+      text-align: left;
+
+      @include mq(tab) {
+        font-size: 13px;
+        line-height: 1.3;
+      }
+
+      @include mq(sp) {
+        font-size: 11px;
+      }
+    }
+  }
+
+  &__award {
+    &__winner {
+      display: flex;
+      flex-direction: column;
+      gap: 4.1rem;
+      padding-bottom: 4.3rem;
+    }
+
+    &__winnerHeading {
+      background-color: $beige4;
+      height: auto;
+      font-size: 2.3rem;
+      padding-top: 1.2rem;
+      letter-spacing: 0.1rem;
+      padding-bottom: 1.2rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    &__winnerBody {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3.5rem;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__winnerMedia {
+      width: 47%;
+
+      @include mq(tab) {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    &__winnerImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__winnerText {
+      width: 52%;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+
+      @include mq(tab) {
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+      }
+    }
+
+    &__ranking {
+      display: flex;
+      flex-direction: column;
+      gap: 9.1rem;
+    }
+
+    &__rankingBody {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 7%;
+      padding-bottom: 9rem;
+      border-bottom: 1px solid gray;
+
+      @include mq(tab) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    &__rankingText {
+      width: 48.5%;
+      min-width: 450px;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+
+      @include mq(tab) {
+        width: 100%;
+        min-width: 0;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+      }
+    }
+
+    &__rankingMedia {
+      width: 30%;
+
+      @include mq(tab) {
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+
+    &__rankingImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__seismic {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10rem;
+
+    &__grade {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      align-items: center;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__gradeMedia {
+      width: 29%;
+      min-width: 300px;
+
+      @include mq(tab) {
+        width: 60%;
+        min-width: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &__gradeImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__gradePanel {
+      display: flex;
+      flex-direction: column;
+      padding: 2.6rem 1.7rem 3.1rem 3.2rem;
+      width: 52%;
+      min-width: 500px;
+      border: 1px solid $red;
+
+      @include mq(tab) {
+        width: 80%;
+        min-width: 0;
+        margin: 5% auto 0;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+        padding: 5%;
+      }
+    }
+
+    &__gradeRow {
+      display: flex;
+      align-items: center;
+      gap: 3.6rem;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      letter-spacing: 1.8px;
+
+      @include mq(tab) {
+        justify-content: center;
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+      }
+
+      @include mq(sp) {
+        gap: 2rem;
+      }
+    }
+
+    &__gradeBadge {
+      flex-direction: column;
+      width: 14.5rem;
+      height: 14.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $yellow;
+      border: 4px solid $yellow;
+      background-color: #5b5b5b;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    &__gradeBadgeTitle {
+      font-size: 2rem;
+      letter-spacing: 0.4px;
+      line-height: 3.79rem;
+      color: $yellow;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &__gradeBadgeText {
+      color: $yellow;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    &__gradeDetail {
+      font-weight: 700;
+    }
+
+    &__gradeValue {
+      font-size: 4.8rem;
+      font-weight: 800;
+      line-height: 1.3;
+      display: inline;
+    }
+
+    &__gradeNote {
+      font-size: 1.5rem;
+      line-height: 2.7rem;
+      letter-spacing: 0.4px;
+      font-weight: bold;
+      margin-top: 0.5rem;
+
+      @include mq(tab) {
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 1.6;
+      }
+    }
+
+    &__woodframe {
+      display: flex;
+      gap: 5%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 7.9rem;
+      margin-bottom: 4rem;
+      position: relative;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__woodframeMedia {
+      width: 55%;
+
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__woodframeImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__woodframeText {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 2.8px;
+      width: 40%;
+
+      @include mq(tab) {
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+        padding-top: 5%;
+      }
+    }
+
+    &__mersystem {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mersystemIntro {
+      display: flex;
+      gap: 5%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 7.9rem;
+      margin-bottom: 4rem;
+      position: relative;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__mersystemText {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      letter-spacing: 2.8px;
+      width: 40%;
+
+      @include mq(tab) {
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+        padding-top: 5%;
+      }
+    }
+
+    &__mersystemMedia {
+      width: 55%;
+
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__mersystemImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__mersystemLink {
+      padding-right: 7.6rem;
+      margin-left: auto;
+
+      @include mq(tab) {
+        padding-right: 0;
+      }
+
+      a {
+        color: #0195ff;
+      }
+    }
+
+    &__mersystemEffects {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 8rem;
+
+      @include mq(tab) {
+        width: 100%;
+        padding: 5% 10% 10%;
+      }
+
+      @include mq(sp) {
+        padding: 5% 5% 10%;
+      }
+    }
+
+    &__mersystemEffectsList {
+      width: 80%;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+
+      @include mq(tab) {
+        width: 100%;
+      }
+    }
+
+    &__mersystemEffectsItem {
+      &:nth-of-type(3) {
+        padding-bottom: 8rem;
+      }
+    }
+
+
+
+
+
+    &__mersystemEffectHead {
+      display: flex;
+      align-items: center;
+      gap: 3%;
+      padding-top: 8%;
+    }
+
+    &__mersystemEffectBadge {
+      background-color: #00a4ea;
+      color: $white;
+      font-weight: bold;
+      font-size: 1.7rem;
+      line-height: 1.3;
+      padding: 1.5%;
+      letter-spacing: 0.08rem;
+      text-align: center;
+      border-radius: 5px;
+      margin: 0;
+
+      @include mq(tab) {
+        font-size: 1.7rem;
+      }
+
+      @include mq(sp) {
+        font-size: 1.7rem;
+      }
+    }
+
+    &__mersystemEffectLead {
+      font-size: 2.5rem;
+      line-height: 2rem;
+      letter-spacing: 0.15rem;
+      font-weight: bold;
+      margin: 0;
+
+      @include mq(tab) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        line-height: 1.4;
+      }
+    }
+
+    &__mersystemEffectText {
+      font-size: 1.7rem;
+      line-height: 2;
+      letter-spacing: 0.08rem;
+      padding-top: 5%;
+      margin: 0;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+      }
+    }
+
+
+
+    &__mersystemEffectImg {
+      width: 100%;
+      padding-top: 5%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__thermal {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10rem;
+
+    &__chart {
+      margin-top: 5.6rem;
+      padding-bottom: 3rem;
+
+      @include mq(tab) {
+        width: 100%;
+        padding: 0 5%;
+      }
+
+      @include mq(sp) {
+        padding: 0;
+      }
+    }
+
+    &__chartImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__grade {
+      display: flex;
+      justify-content: center;
+      gap: 5rem;
+      align-items: center;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__gradeMedia {
+      width: 29%;
+      min-width: 300px;
+
+      @include mq(tab) {
+        width: 60%;
+        min-width: 0;
+        margin: 0 auto;
+      }
+    }
+
+    &__gradeImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__gradePanel {
+      display: flex;
+      flex-direction: column;
+      padding: 2.6rem 1.7rem 3.1rem 3.2rem;
+      width: 52%;
+      min-width: 500px;
+      border: 1px solid $red;
+
+      @include mq(tab) {
+        width: 80%;
+        min-width: 0;
+        margin: 5% auto 0;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+        padding: 5%;
+      }
+    }
+
+    &__gradeRow {
+      display: flex;
+      align-items: center;
+      gap: 3.6rem;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      letter-spacing: 1.8px;
+
+      @include mq(tab) {
+        justify-content: center;
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+      }
+
+      @include mq(sp) {
+        gap: 2rem;
+      }
+    }
+
+    &__gradeBadge {
+      flex-direction: column;
+      width: 14.5rem;
+      height: 14.5rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $yellow;
+      border: 4px solid $yellow;
+      background-color: #5b5b5b;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    &__gradeBadgeTitle {
+      font-size: 2rem;
+      letter-spacing: 0.4px;
+      line-height: 3.79rem;
+      color: $yellow;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &__gradeBadgeText {
+      color: $yellow;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    &__gradeDetail {
+      font-weight: 700;
+      font-size: 1.6rem;
+
+      @include mq(tab) {
+        font-size: 15px;
+        letter-spacing: 0.4px;
+        line-height: 1.8;
+      }
+    }
+
+    &__gradeValue {
+      font-size: 4.8rem;
+      font-weight: 800;
+      line-height: 1.3;
+      display: inline;
+    }
+
+    &__benefits {
+      width: 70%;
+      min-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: $beige4;
+      border-radius: 1rem;
+      padding: 3.4rem 6.4rem 5.5rem;
+      justify-content: center;
+      align-items: center;
+
+      @include mq(tab) {
+        width: 90%;
+        min-width: 500px;
+        padding: 3.4rem 3rem 5.5rem;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+
+    &__benefitsHeading {
+      font-size: 2rem;
+      margin-bottom: 5.3rem;
+      text-align: center;
+
+      @include mq(tab) {
+        margin-top: 5%;
+      }
+    }
+
+    &__benefitsList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.9rem;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      @include mq(tab) {
+        gap: 2rem;
+        justify-content: space-around;
+      }
+    }
+
+    &__benefitsItem {
+      background-color: $white;
+      border-radius: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 2px rgb(237 106 16 / 50%);
+      width: 27rem;
+      height: 9rem;
+
+      @include mq(tab) {
+        width: 45%;
+        height: 9rem;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+    }
+
+    &__benefitsNumber {
+      color: $orange;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    &__benefitsLabel {
+      border-top: 1px solid $pureBlack;
+      font-size: 1.8rem;
+
+      @include mq(tab) {
+        border-top: 0;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__airtight {
+    margin-top: 12.5rem;
+    position: relative;
+
+    &__panel {
+      display: flex;
+      gap: 5%;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8rem;
+      padding-bottom: 10rem;
+
+      @include mq(tab) {
+        flex-direction: column;
+        padding: 0 10% 5%;
+      }
+
+      @include mq(sp) {
+        padding: 0 5% 5%;
+      }
+    }
+
+    &__panelMedia {
+      width: 55%;
+
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__panelImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__panelBody {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 2.2rem;
+      align-items: center;
+
+      @include mq(tab) {
+        width: 100%;
+        padding-top: 5%;
+      }
+    }
+
+    &__panelLead {
+      font-weight: 700;
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      margin: 0;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+      }
+    }
+
+    &__panelText {
+      font-size: 1.6rem;
+      line-height: 3.1rem;
+      margin: 0;
+
+      @include mq(tab) {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+      }
+    }
+
+    &__gallery {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 3%;
+      padding-bottom: 7%;
+
+      &--bordered {
+        border-bottom: 1px solid rgb(189 189 189);
+      }
+    }
+
+    &__galleryItem {
+      width: 33%;
+    }
+
+    &__galleryImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__ventilation {
+    display: flex;
+    flex-direction: column;
+
+    &__overview {
+      margin-bottom: 0;
+    }
+
+    &__benefitsContainer {
+      display: flex;
+      flex-direction: column;
+      background-color: $beige4;
+      border-radius: 1rem;
+      padding: 3.4rem 6.4rem 5.5rem;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      @include mq(tab) {
+        padding: 3.4rem 3rem 5.5rem;
+      }
+    }
+
+    &__benefitsHeading {
+      font-size: 2rem;
+      margin-bottom: 5.3rem;
+      text-align: center;
+    }
+
+    &__benefitsList {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.9rem;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      @include mq(tab) {
+        gap: 2rem;
+        justify-content: space-around;
+      }
+    }
+
+    &__benefitsItem {
+      background-color: $white;
+      border-radius: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 5px 2px rgb(237 106 16 / 50%);
+      width: 27rem;
+      height: 9rem;
+
+      @include mq(tab) {
+        width: 45%;
+        height: 9rem;
+        flex-direction: row;
+        gap: 0.5rem;
+      }
+
+      &--center {
+        margin: auto;
+      }
+    }
+
+    &__benefitsTopItem {
+      width: 100%;
+    }
+
+    &__benefitsNumber {
+      color: $orange;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    &__benefitsLabel {
+      border-top: 1px solid $pureBlack;
+      font-size: 1.8rem;
+
+      @include mq(tab) {
+        border-top: 0;
+      }
+    }
+
+    &__airflow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5%;
+
+      &--spacedTop {
+        padding-top: 5%;
+      }
+
+      &--stacked {
+        padding-bottom: 5%;
+        padding-top: 3%;
+      }
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+    }
+
+    &__airflowMedia {
+      width: 50%;
+
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__airflowImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__airflowBody {
+      width: 50%;
+
+      @include mq(tab) {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        width: 100%;
+      }
+    }
+
+    &__airflowTitle {
+      font-size: 2.3rem;
+      letter-spacing: 0.2rem;
+      color: $orange;
+      font-weight: bold;
+      margin: 0;
+
+      @include mq(tab) {
+        font-size: 18px;
+        letter-spacing: 0.8px;
+        padding-top: 3%;
+      }
+    }
+
+    &__airflowText {
+      padding-top: 5%;
+      font-size: 1.8rem;
+      line-height: 1.7;
+      letter-spacing: 0.15rem;
+      margin: 0;
+
+      @include mq(tab) {
+        padding-top: 3%;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+      }
+    }
+
+    &__diagram {
+      padding-left: 25%;
+      padding-right: 25%;
+      width: 100%;
+
+      @include mq(tab) {
+        padding-left: 15%;
+        padding-right: 15%;
+      }
+
+      @include mq(sp) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      &--spaced {
+        padding-top: 3%;
+      }
+    }
+
+    &__diagramImg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__compare {
+      display: flex;
+      justify-content: space-between;
+      gap: 5%;
+      padding-bottom: 5%;
+      padding-top: 5%;
+
+      @include mq(tab) {
+        flex-direction: column;
+      }
+
+      &--spaced {
+        padding-bottom: 15%;
+      }
+    }
+
+    &__compareItem {
+      width: 48%;
+      margin-bottom: 5%;
+
+      &:nth-of-type(2) {
+        margin-bottom: 0;
+      }
+
+      @include mq(tab) {
+        width: 100%;
+      }
+    }
+
+    &__compareImg {
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
+      display: block;
+
+      &--cold {
+        background-color: #c5f3f6;
+      }
+
+      &--hot {
+        background-color: #f7e0d0;
       }
     }
   }

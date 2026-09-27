@@ -62,4 +62,15 @@
       padding-right: 5%;
     }
   }
+
+  &--innerNarrow {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+
+    @include mq(sp) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
 }

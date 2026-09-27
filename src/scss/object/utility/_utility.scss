@@ -5,47 +5,48 @@
 }
 
 .u-none__pc {
+
   // display: noneだけを付与するために、.u-none__pcではmin-widthを使う
   &--xxl {
-    @media screen and (width >= 1401px) {
+    @media screen and (width >=1401px) {
       display: none !important;
     }
   }
 
   &--xl {
-    @media screen and (width >= 1201px) {
+    @media screen and (width >=1201px) {
       display: none;
     }
   }
 
   // レガシーCSS由来（旧 .sp_tab: PCで非表示）
   &--tab {
-    @media screen and (width >= 1051px) {
+    @media screen and (width >=1051px) {
       display: none;
     }
   }
 
   &--lg {
-    @media screen and (width >= 1026px) {
+    @media screen and (width >=1026px) {
       display: none;
     }
   }
 
   &--md {
-    @media screen and (width >= 769px) {
+    @media screen and (width >=769px) {
       display: none;
     }
   }
 
   // レガシーCSS由来（旧 .sp: PC/Tabで非表示）
   &--sp {
-    @media screen and (width >= 599px) {
+    @media screen and (width >=599px) {
       display: none;
     }
   }
 
   &--sm {
-    @media screen and (width >= 521px) {
+    @media screen and (width >=521px) {
       display: none;
     }
   }
@@ -360,6 +361,11 @@
   color: $orange;
   font-weight: bold;
   font-size: 2.4rem;
+}
+
+.u-orange--sizeInherit {
+  color: $orange;
+  font-size: inherit;
 }
 
 // 色・太字のみ。font-size は親に持たせる（* リセット対策で inherit 必須）
