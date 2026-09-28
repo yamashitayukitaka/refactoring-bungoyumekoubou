@@ -30,54 +30,47 @@ get_header();
         </p>
       </div>
     </div>
-    <?php $president = get_field('recruit-president'); ?>
-    <?php if ($president && (!empty($president['img']) || !empty($president['txt']))) : ?>
-      <div class="recruit__message">
-        <div class="recruit__message__photo sp">
-          <?php if (!empty($president['img'])) : ?>
-            <figure class="recruit__message__imgWrap u-mb40">
-              <img src="<?php echo esc_url($president['img']); ?>" class="recruit__message__img">
-            </figure>
-          <?php endif; ?>
-          <dl>
-            <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
-            <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
-          </dl>
-        </div>
-        <div class="recruit__message__desc">
-          <div class="recruit__message__txt">
-            <p class="c-title--orangeLine"><span class="marker">豊後の地で、<br>
-                共に夢を実現する仲間へ</span></p>
-            <br><br>
-          </div>
-          <?php if (!empty($president['txt'])) : ?>
-            <p class="recruit__message__subtxt">
-              <?php echo wp_kses_post($president['txt']); ?>
-            </p>
-          <?php endif; ?>
-        </div>
-        <div class="recruit__message__photo pc_tab">
-          <?php if (!empty($president['img'])) : ?>
-            <figure class="recruit__message__imgWrap u-mb40">
-              <img src="<?php echo esc_url($president['img']); ?>" class="recruit__message__img">
-            </figure>
-          <?php endif; ?>
-          <dl>
-            <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
-            <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
-          </dl>
-        </div>
+    <div class="recruit__message">
+      <div class="recruit__message__photo sp">
+        <figure class="recruit__message__imgWrap u-mb40">
+          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="recruit__message__img" alt="">
+        </figure>
+        <dl>
+          <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
+          <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
+        </dl>
       </div>
-    <?php endif; ?>
+      <div class="recruit__message__desc">
+        <div class="recruit__message__txt">
+          <p class="c-title--orangeLine"><span class="marker">豊後の地で、<br>
+              共に夢を実現する仲間へ</span></p>
+          <br><br>
+        </div>
+        <p class="recruit__message__subtxt">
+          私たちの会社名「豊後夢工房」には、大分（豊後）の地に暮らす皆さまの夢を形にするという強い思いが込められています。豊後の地に、夢をお届けする工房。それが私たち「豊後夢工房」です。「工房」とは、職人が心を込めて作品を作り上げる場所。その名の通り、私たちは一人ひとりのお客様の個性を大切にし、夢を叶える住まいを丁寧に作り上げることを使命としています。<br>
+          <br>
+          家づくりは、お客様のこれからの人生において「ゆめ」であり、「終の棲家」として長期的に携わる仕事です。この大切な仕事を通じて、私たちはお客様の夢を実現し、豊かな暮らしを提供したいと考えています。<br>
+          <br>
+          そのために、私たちが求めるのは「情熱」「愛情」「スピード」を体現し、行動できる人材です。情熱を持って仕事に取り組み、愛情を込めてお客様の夢を形にし、迅速に対応できるスキルを持つ仲間を求めています。<br>
+          <br>
+          あなたの情熱と愛情、そしてスピードをもって、私たちと一緒に豊後の地で、共に夢を作り上げていきませんか。豊後夢工房で、共に成長し、共に夢を実現しましょう。<br>
+          <br>
+          皆さまのご応募を心よりお待ちしております。
+        </p>
+      </div>
+      <div class="recruit__message__photo pc_tab">
+        <figure class="recruit__message__imgWrap u-mb40">
+          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="recruit__message__img" alt="">
+        </figure>
+        <dl>
+          <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
+          <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
+        </dl>
+      </div>
+    </div>
   </section>
 
-  <?php get_template_part('template-parts/staff-loop'); ?>
-
-  <div class="u-center u-mb150">
-    <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--outline">
-      一覧を見る
-    </a>
-  </div>
+  
 
   <section class="l-content--middle u-mb200">
     <div class="c-title__head">
@@ -91,48 +84,46 @@ get_header();
       </div>
     </div>
     <?php
-    $qas = get_field('answers');
-    if ($qas) :
+    $recruit_corporate_standards = [
+      [
+        'question' => '企業理念',
+        'answer' => '生活を立て続けること',
+      ],
+      [
+        'question' => 'ミッション',
+        'answer' => '「お客様の笑顔が見える住まい」を創り続ける',
+      ],
+      [
+        'question' => 'ビジョン',
+        'answer' => 'お客様の子供たちや友人の方々から「豊後夢工房」で家が建てたいと言われるような地域密着の会社を目指していく',
+      ],
+      [
+        'question' => 'バリュー',
+        'answer' => '商品を提供する社員も明るく楽しく仕事が出来る環境づくりを行い褒め認め合うteamを形成していく',
+      ],
+    ];
     ?>
-      <ul class="c-accordion c-accordion--full">
-        <?php foreach ($qas as $i => $qa) :
-          if (empty($qa['question']) || empty($qa['answer'])) {
-            continue;
-          }
-        ?>
-          <li class="c-accordion__item">
-            <button type="button" class="c-accordion__trigger js-accordion">
-              <span class="c-accordion__number">
-                <?php echo sprintf('%02d', ($i + 1)); ?>
-              </span>
-              <?php echo esc_html($qa['question']); ?>
-            </button>
-            <div class="c-accordion__panel">
-              <p class="c-accordion__body">
-                <?php echo wp_kses_post($qa['answer']); ?>
-              </p>
-            </div>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-    <?php endif; ?>
+    <ul class="c-accordion c-accordion--full">
+      <?php foreach ($recruit_corporate_standards as $i => $qa) : ?>
+        <li class="c-accordion__item">
+          <button type="button" class="c-accordion__trigger js-accordion">
+            <span class="c-accordion__number">
+              <?php echo esc_html(sprintf('%02d', $i + 1)); ?>
+            </span>
+            <?php echo esc_html($qa['question']); ?>
+          </button>
+          <div class="c-accordion__panel">
+            <p class="c-accordion__body">
+              <?php echo esc_html($qa['answer']); ?>
+            </p>
+          </div>
+        </li>
+      <?php endforeach; ?>
+    </ul>
   </section>
 
   <!-- 会社沿革 -->
   <section class="u-pt50 u-mb100">
-    <!-- <div class="l_content_middle_70">
-      <div class="c-title__head">
-        <h3 class="c-title--sectionLine">
-          HISTORY
-        </h3>
-        <div>
-          <p class="c-title--orangeLine u-mb50">
-            <span class="u-orange">夢工房</span>の沿革
-          </p>
-        </div>
-      </div>
-    </div> -->
-
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         HISTORY
@@ -379,51 +370,86 @@ get_header();
   <section class="l-content--middle u-mb90">
     <div class="recruit__interview">
       <?php
-      $interview_group = get_field('recruit-interview');
-      if ($interview_group && !empty($interview_group['recruit-interview-content'])) :
-        foreach ($interview_group['recruit-interview-content'] as $interview) :
-          if (empty($interview['r-interview-content-tit']) && empty($interview['r-interview-content-user'])) {
-            continue;
-          }
+      $recruit_interviews = [
+        [
+          'title' => '01.入社を決めたきっかけは？',
+          'users' => [
+            [
+              'img' => 'uploads/2025/04/エグゼクティブな人物アイコン.jpeg',
+              'text' => '誘われて入社を決めました。自分を高められると思いトライして正解でした。',
+            ],
+            [
+              'img' => 'uploads/2025/04/メガネをかけた男性のアイコン素材.jpeg',
+              'text' => '手に職をつけたくて現場監督にチャレンジしてみました。わからないことだらけでしたが、先輩の監督が同行して指導していただいたおかげで、独り立ちまでしっかりサポートしてもらいました。',
+            ],
+          ],
+        ],
+        [
+          'title' => '02.会社のアピールポイントを教えてください',
+          'users' => [
+            [
+              'img' => 'uploads/2025/04/キャリアウーマンのアイコン3.jpeg',
+              'text' => 'スタッフ間の仲がよく、笑いながら仕事を遂行できる環境です！',
+            ],
+            [
+              'img' => 'uploads/2025/04/エグゼクティブな人物アイコン.jpeg',
+              'text' => 'フレンドリーでコミュニケーションが活発な職場環境です。皆の意見が尊重され、やりがいを感じながら業務に取り組めます。',
+            ],
+          ],
+        ],
+        [
+          'title' => '03.仕事のモチベーションは何ですか',
+          'users' => [
+            [
+              'img' => 'uploads/2025/04/メガネをかけた男性のアイコン素材.jpeg',
+              'text' => 'お客様との商談の中で、「○○さんで契約します」と言っていただける瞬間です。メーカーとしてではなく、私自身の人格や人柄を評価して選んでもらえることで、自分の成長を実感し、さらにやる気が湧いてきます。',
+            ],
+            [
+              'img' => 'uploads/2025/04/キャリアウーマンのアイコン3.jpeg',
+              'text' => '間取りや内装についてなど、お客様と一緒にこれをやりたいあれをやりたいなど打ち合わせをしたことが、形となり完成した時にモチベーションが最大限に高まります。',
+            ],
+          ],
+        ],
+        [
+          'title' => '04.今までで一番楽しかった、またはやりがいのあった仕事を教えてください',
+          'users' => [
+            [
+              'img' => 'uploads/2025/04/メガネをかけた男性のアイコン素材.jpeg',
+              'text' => '入居後のお客様の家に遊びに行く際、子供たちの成長や新たにお子様が増えていると幸せな「ゆめ」づくりに貢献できたんだと実感します。',
+            ],
+            [
+              'img' => 'uploads/2025/04/エグゼクティブな人物アイコン.jpeg',
+              'text' => 'お引き渡しの際お礼のお手紙や感謝のお言葉をたくさんいただき、自分の宝物になっています。ご契約からお引き渡し、そしてアフターメンテナンス訪問時にいつも感謝していただけるので、実は毎回お伺いするのが楽しみです。',
+            ],
+          ],
+        ],
+      ];
       ?>
-          <div class="c-title__head">
-            <h3 class="c-title--sectionLine">
-              INTERVIEW
-            </h3>
-            <div>
-              <?php if (!empty($interview['r-interview-content-tit'])) : ?>
-                <p class="c-title--orangeLine u-mb30">
-                  <?php echo wp_kses_post($interview['r-interview-content-tit']); ?>
-                </p>
-              <?php endif; ?>
-            </div>
+      <?php foreach ($recruit_interviews as $interview) : ?>
+        <div class="c-title__head">
+          <h3 class="c-title--sectionLine">
+            INTERVIEW
+          </h3>
+          <div>
+            <p class="c-title--orangeLine u-mb30">
+              <?php echo esc_html($interview['title']); ?>
+            </p>
           </div>
-          <?php if (!empty($interview['r-interview-content-user'])) : ?>
-            <div class="recruit__interview__user__wrap">
-              <?php foreach ($interview['r-interview-content-user'] as $user) :
-                if (empty($user['r-content-user-img']) && empty($user['r-content-user-txt'])) {
-                  continue;
-                }
-              ?>
-                <div class="recruit__interview__user  u-mb100">
-                  <?php if (!empty($user['r-content-user-img'])) : ?>
-                    <figure class=" recruit__interview__imgWrap">
-                      <img src="<?php echo esc_url($user['r-content-user-img']); ?>" class="recruit__interview__img">
-                    </figure>
-                  <?php endif; ?>
-                  <?php if (!empty($user['r-content-user-txt'])) : ?>
-                    <p class="recruit__interview__usertxt">
-                      <?php echo wp_kses_post($user['r-content-user-txt']) ?>
-                    </p>
-                  <?php endif; ?>
-                </div>
-              <?php endforeach; ?>
+        </div>
+        <div class="recruit__interview__user__wrap">
+          <?php foreach ($interview['users'] as $user) : ?>
+            <div class="recruit__interview__user u-mb100">
+              <figure class="recruit__interview__imgWrap">
+                <img src="<?php echo esc_url(content_url($user['img'])); ?>" class="recruit__interview__img" alt="">
+              </figure>
+              <p class="recruit__interview__usertxt">
+                <?php echo esc_html($user['text']); ?>
+              </p>
             </div>
-          <?php endif; ?>
-      <?php
-        endforeach;
-      endif;
-      ?>
+          <?php endforeach; ?>
+        </div>
+      <?php endforeach; ?>
+    </div>
   </section>
 
   <section class="l-content--middle u-mb100 recruit__recruit">
@@ -481,15 +507,14 @@ get_header();
     </figure>
   </section>
 
-  <?php $tel_number = get_field('recruite-tel-number'); ?>
   <div class="l-content--middle recruit__contact__form u-mb100">
     <p class="recruit__contact__desc">
       わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
       またはお電話にてお気軽にご連絡ください。
     </p>
-    <a href="tel:<?php echo $tel_number ? esc_attr($tel_number) : '0975941481'; ?>" class="recruit__contact__info">
+    <a href="tel:0975941481" class="recruit__contact__info">
       <span class="recruit__contact__info__txt">応募はこちら</span>
-      <p class=recruit__contact__info__tel>TEL.　<span class="recruit__contact__info__tel__number"><?php echo $tel_number ? esc_html($tel_number) : '097-594-1481'; ?></span>
+      <p class="recruit__contact__info__tel">TEL.　<span class="recruit__contact__info__tel__number">097-594-1481</span>
       </p>
     </a>
   </div>
