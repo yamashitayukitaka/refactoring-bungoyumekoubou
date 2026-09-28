@@ -1,59 +1,4 @@
-@media screen and (min-width:1051px) {.recruit__message{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  }.recruit__message__desc{
-    letter-spacing:0.04rem;
-    font-weight:600;
-    color:#000000;
-    width:67.2222222222%;
-  }.recruit__message__txt{
-    font-size:2.4rem;
-    line-height:1.4;
-    letter-spacing:4.4;
-  }.recruit__message__subtxt{
-    font-size:1.6rem;
-    line-height:1.4;
-  }.recruit__message__photo{
-    width:28.3333333333%;
-  }.recruit__message__imgWrap{
-    aspect-ratio:255/340;
-  }.recruit__message__bold{
-    font-size:1.8rem;
-    font-weight:bold;
-    color:#000000;
-    letter-spacing:0.04rem;
-    line-height:1.7777777778;
-    text-align:right;
-  }.recruit__interview__user{
-    display:flex;
-    gap:5rem;
-    justify-content:space-between;
-  }.recruit__interview__user:nth-child(even){
-    flex-direction:row-reverse;
-  }.recruit__interview__usertxt{
-    border-radius:1rem;
-    background-color:#faf7f2;
-    padding:3rem 3.5rem;
-  }.recruit__interview__img{
-    width:18rem;
-    height:18rem;
-  }.recruit__recruit{
-    position:relative;
-  }.recruit__recruit__topImg{
-    position:absolute;
-    display:flex;
-    left:0;
-    top:2rem;
-  }.recruit__recruit__bottomImg{
-    position:absolute;
-    display:flex;
-    right:0;
-    bottom:-10rem;
-  }.recruit__recruit__img{
-    width:13rem;
-    height:8rem;
-  }.recruit__contact__desc{
+@media screen and (min-width:1051px) {.recruit__contact__desc{
     font-size:2rem;
     text-align:center;
   }.recruit__contact__info{
@@ -531,62 +476,7 @@
   }.house__details{
     margin-top:5rem;
     align-self:flex-end;
-  }}@media only screen and (min-width:599px) and (max-width:1050px) {.recruit__message{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  }.recruit__message__desc{
-    letter-spacing:0.04rem;
-    font-weight:600;
-    color:#000000;
-    width:67.2222222222%;
-  }.recruit__message__txt{
-    font-size:2.4rem;
-    line-height:1.4;
-    letter-spacing:4.4;
-  }.recruit__message__subtxt{
-    font-size:1.6rem;
-    line-height:1.4;
-  }.recruit__message__photo{
-    width:28.3333333333%;
-  }.recruit__message__imgWrap{
-    aspect-ratio:255/340;
-  }.recruit__message__bold{
-    font-size:1.8rem;
-    font-weight:bold;
-    color:#000000;
-    letter-spacing:0.04rem;
-    line-height:1.7777777778;
-    text-align:right;
-  }.recruit__interview__user{
-    display:flex;
-    gap:5rem;
-    justify-content:space-between;
-  }.recruit__interview__user:nth-child(even){
-    flex-direction:row-reverse;
-  }.recruit__interview__usertxt{
-    border-radius:1rem;
-    background-color:#faf7f2;
-    padding:3rem 3.5rem;
-  }.recruit__interview__img{
-    width:18rem;
-    height:18rem;
-  }.recruit__recruit{
-    position:relative;
-  }.recruit__recruit__topImg{
-    position:absolute;
-    display:flex;
-    left:0;
-    top:2rem;
-  }.recruit__recruit__bottomImg{
-    position:absolute;
-    display:flex;
-    right:0;
-    bottom:-10rem;
-  }.recruit__recruit__img{
-    width:13rem;
-    height:8rem;
-  }.recruit__contact__desc{
+  }}@media only screen and (min-width:599px) and (max-width:1050px) {.recruit__contact__desc{
     font-size:2rem;
     text-align:center;
   }.recruit__contact__info{
@@ -1066,62 +956,7 @@
   }.house__details{
     margin-top:5rem;
     align-self:flex-end;
-  }}@media screen and (max-width:599px) {.recruit__message{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  }.recruit__message__desc{
-    letter-spacing:0.04rem;
-    font-weight:600;
-    color:#000000;
-    width:67.2222222222%;
-  }.recruit__message__txt{
-    font-size:2.4rem;
-    line-height:1.4;
-    letter-spacing:4.4;
-  }.recruit__message__subtxt{
-    font-size:1.6rem;
-    line-height:1.4;
-  }.recruit__message__photo{
-    width:28.3333333333%;
-  }.recruit__message__imgWrap{
-    aspect-ratio:255/340;
-  }.recruit__message__bold{
-    font-size:1.8rem;
-    font-weight:bold;
-    color:#000000;
-    letter-spacing:0.04rem;
-    line-height:1.7777777778;
-    text-align:right;
-  }.recruit__interview__user{
-    display:flex;
-    gap:5rem;
-    justify-content:space-between;
-  }.recruit__interview__user:nth-child(even){
-    flex-direction:row-reverse;
-  }.recruit__interview__usertxt{
-    border-radius:1rem;
-    background-color:#faf7f2;
-    padding:3rem 3.5rem;
-  }.recruit__interview__img{
-    width:18rem;
-    height:18rem;
-  }.recruit__recruit{
-    position:relative;
-  }.recruit__recruit__topImg{
-    position:absolute;
-    display:flex;
-    left:0;
-    top:2rem;
-  }.recruit__recruit__bottomImg{
-    position:absolute;
-    display:flex;
-    right:0;
-    bottom:-10rem;
-  }.recruit__recruit__img{
-    width:13rem;
-    height:8rem;
-  }.recruit__contact__desc{
+  }}@media screen and (max-width:599px) {.recruit__contact__desc{
     font-size:2rem;
     text-align:center;
   }.recruit__contact__info{

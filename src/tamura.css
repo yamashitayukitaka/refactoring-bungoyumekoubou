@@ -168,17 +168,6 @@
     font-weight: 500;
     width: 100%;
     padding-top: 5%;
-  }.recruit__message{
-    display: block;
-  }.recruit__message__photo{
-    width: 50%;
-    margin: auto;
-  }.recruit__message__desc{
-    width: 100%;
-    padding-top: 5%;
-  }.recruit__message__subtxt{
-    font-size: 2rem;
-    line-height: 1.8;
   }.p-about__message__txt{
     font-size: 1.8rem;
     letter-spacing: 0.1rem;

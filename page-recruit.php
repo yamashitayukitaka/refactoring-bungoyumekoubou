@@ -30,23 +30,23 @@ get_header();
         </p>
       </div>
     </div>
-    <div class="recruit__message">
-      <div class="recruit__message__photo sp">
-        <figure class="recruit__message__imgWrap u-mb40">
-          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="recruit__message__img" alt="">
+    <div class="p-recruit__message">
+      <div class="p-recruit__message__photo u-none__pc--sp">
+        <figure class="p-recruit__message__figure u-mb40">
+          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="p-recruit__message__img" alt="">
         </figure>
-        <dl>
-          <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
-          <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
+        <dl class="p-recruit__message__meta">
+          <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
+          <dd class="p-recruit__message__metaLine">代表取締役社長 永井 賢次</dd>
         </dl>
       </div>
-      <div class="recruit__message__desc">
-        <div class="recruit__message__txt">
+      <div class="p-recruit__message__content">
+        <div class="p-recruit__message__lead">
           <p class="c-title--orangeLine"><span class="marker">豊後の地で、<br>
               共に夢を実現する仲間へ</span></p>
           <br><br>
         </div>
-        <p class="recruit__message__subtxt">
+        <p class="p-recruit__message__text">
           私たちの会社名「豊後夢工房」には、大分（豊後）の地に暮らす皆さまの夢を形にするという強い思いが込められています。豊後の地に、夢をお届けする工房。それが私たち「豊後夢工房」です。「工房」とは、職人が心を込めて作品を作り上げる場所。その名の通り、私たちは一人ひとりのお客様の個性を大切にし、夢を叶える住まいを丁寧に作り上げることを使命としています。<br>
           <br>
           家づくりは、お客様のこれからの人生において「ゆめ」であり、「終の棲家」として長期的に携わる仕事です。この大切な仕事を通じて、私たちはお客様の夢を実現し、豊かな暮らしを提供したいと考えています。<br>
@@ -58,13 +58,13 @@ get_header();
           皆さまのご応募を心よりお待ちしております。
         </p>
       </div>
-      <div class="recruit__message__photo pc_tab">
-        <figure class="recruit__message__imgWrap u-mb40">
-          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="recruit__message__img" alt="">
+      <div class="p-recruit__message__photo u-none__mobile--sp">
+        <figure class="p-recruit__message__figure u-mb40">
+          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="p-recruit__message__img" alt="">
         </figure>
-        <dl>
-          <dt class="recruit__message__bold">株式会社 豊後夢工房</dt>
-          <dd class="recruit__message__bold">代表取締役社長 永井 賢次</dd>
+        <dl class="p-recruit__message__meta">
+          <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
+          <dd class="p-recruit__message__metaLine">代表取締役社長 永井 賢次</dd>
         </dl>
       </div>
     </div>
@@ -368,7 +368,7 @@ get_header();
   </section>
 
   <section class="l-content--middle u-mb90">
-    <div class="recruit__interview">
+    <div class="p-recruit__interview">
       <?php
       $recruit_interviews = [
         [
@@ -436,13 +436,13 @@ get_header();
             </p>
           </div>
         </div>
-        <div class="recruit__interview__user__wrap">
+        <div class="p-recruit__interview__list">
           <?php foreach ($interview['users'] as $user) : ?>
-            <div class="recruit__interview__user u-mb100">
-              <figure class="recruit__interview__imgWrap">
-                <img src="<?php echo esc_url(content_url($user['img'])); ?>" class="recruit__interview__img" alt="">
+            <div class="p-recruit__interview__item u-mb100">
+              <figure class="p-recruit__interview__figure">
+                <img src="<?php echo esc_url(content_url($user['img'])); ?>" class="p-recruit__interview__img" alt="">
               </figure>
-              <p class="recruit__interview__usertxt">
+              <p class="p-recruit__interview__text">
                 <?php echo esc_html($user['text']); ?>
               </p>
             </div>
@@ -452,9 +452,9 @@ get_header();
     </div>
   </section>
 
-  <section class="l-content--middle u-mb100 recruit__recruit">
-    <figure class=" recruit__recruit__topImg">
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="recruit__recruit__img">
+  <section class="l-content--middle u-mb100 p-recruit__requirements">
+    <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
+      <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="p-recruit__requirements__decorationImg" alt="">
     </figure>
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
@@ -479,20 +479,20 @@ get_header();
     }
     ?>
     <?php if ($hasApp) : ?>
-      <table class="c-table__about">
-        <tbody class="c-table__about__tbody">
+      <table class="c-table c-table--narrow">
+        <tbody>
           <?php foreach ($table as $row) :
             if (empty($row['recruit-app-title']) && empty($row['recruit-app-content'])) {
               continue;
             }
           ?>
-            <tr class="c-table__about__tr">
-              <th class="c-table__about__th">
+            <tr class="c-table__tr">
+              <th class="c-table__th">
                 <?php if (!empty($row['recruit-app-title'])) : ?>
                   <?php echo esc_html($row['recruit-app-title']); ?>
                 <?php endif; ?>
               </th>
-              <td class="c-table__about__td">
+              <td class="c-table__td">
                 <?php if (!empty($row['recruit-app-content'])) : ?>
                   <?php echo wp_kses_post($row['recruit-app-content']); ?>
                 <?php endif; ?>
@@ -502,19 +502,19 @@ get_header();
         </tbody>
       </table>
     <?php endif; ?>
-    <figure class=" recruit__recruit__bottomImg">
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="recruit__recruit__img">
+    <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
+      <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="p-recruit__requirements__decorationImg" alt="">
     </figure>
   </section>
 
-  <div class="l-content--middle recruit__contact__form u-mb100">
-    <p class="recruit__contact__desc">
+  <div class="l-content--middle p-recruit__contact u-mb100">
+    <p class="p-recruit__contact__desc">
       わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
       またはお電話にてお気軽にご連絡ください。
     </p>
-    <a href="tel:0975941481" class="recruit__contact__info">
-      <span class="recruit__contact__info__txt">応募はこちら</span>
-      <p class="recruit__contact__info__tel">TEL.　<span class="recruit__contact__info__tel__number">097-594-1481</span>
+    <a href="tel:0975941481" class="p-recruit__contact__link">
+      <span class="p-recruit__contact__linkLabel">応募はこちら</span>
+      <p class="p-recruit__contact__tel">TEL.　<span class="p-recruit__contact__telNumber">097-594-1481</span>
       </p>
     </a>
   </div>
