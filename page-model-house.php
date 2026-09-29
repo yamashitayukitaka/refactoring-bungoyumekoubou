@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) exit;
 get_header();
 ?>
 <main>
-  <div class="c-pageMv u-mb100">
+<div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title">
         MODEL HOUSE
@@ -33,10 +33,6 @@ get_header();
   </section>
 
   <section class="TOS-housing service_model_wrap u-mb100">
-    <?php
-    $models = get_field('model-sample');
-    $model = ($models && !empty($models[0])) ? $models[0] : null;
-    ?>
     <figure class="title__left-ribbon">
       <img src="<?php echo esc_url(IMG_URL . '/common/left-ribbon.webp'); ?>">
     </figure>
@@ -55,23 +51,28 @@ get_header();
             スタイリッシュなデザイン</span></p>
       </div>
     </div>
-    <?php if ($model && (!empty($model['img_1']) || !empty($model['img_2']) || !empty($model['desc']))) : ?>
-      <?php if (!empty($model['img_1'])) : ?>
-        <figure class="dream_studio">
-          <img src="<?php echo esc_url($model['img_1']); ?>">
-        </figure>
-      <?php endif; ?>
-      <?php if (!empty($model['img_2'])) : ?>
-        <figure class="dream_design">
-          <img src="<?php echo esc_url($model['img_2']); ?>">
-        </figure>
-      <?php endif; ?>
-      <?php if (!empty($model['desc'])) : ?>
-        <div class="TOS-housing__text u-mb100">
-          <?php echo wp_kses_post($model['desc']); ?>
-        </div>
-      <?php endif; ?>
-    <?php endif; ?>
+    <figure class="dream_studio">
+      <img src="<?php echo esc_url(IMG_URL . '/model-house/tos-studio.png'); ?>" alt="">
+    </figure>
+    <figure class="dream_design">
+      <img src="<?php echo esc_url(IMG_URL . '/model-house/tos.png'); ?>" alt="">
+    </figure>
+    <div class="TOS-housing__text u-mb100">
+      <?php echo wp_kses_post(
+        '建物の中心に「中庭」を配置し、<br>'
+        . '「深い軒」を取り入れたデザインで、<br>'
+        . '日差しを巧みにコントロール。<br>'
+        . '<br>'
+        . '水平ラインを強調することで、<br>'
+        . 'スタイリッシュで視線を惹きつける<br>'
+        . '美しい外観に仕上げました。<br>'
+        . '<br>'
+        . '<br>'
+        . '洗練されたデザインと<br>'
+        . '快適な居住空間を<br>'
+        . '兼ね備えた理想的な住まいです。'
+      ); ?>
+    </div>
     <div class="service_model_gallery">
       <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
     </div>
@@ -86,10 +87,6 @@ get_header();
   </section>
 
   <section class="TOS-housing service_model_wrap u-mb100">
-    <?php
-    $models = get_field('model-sample');
-    $model = ($models && !empty($models[1])) ? $models[1] : null;
-    ?>
     <figure class="title__right-ribbon">
       <img src="<?php echo esc_url(IMG_URL . '/common/right-ribbon.webp'); ?>">
     </figure>
@@ -111,23 +108,30 @@ get_header();
             ヨーロピアンな家</span></p>
       </div>
     </div>
-    <?php if ($model && (!empty($model['img_1']) || !empty($model['img_2']) || !empty($model['desc']))) : ?>
-      <?php if (!empty($model['img_1'])) : ?>
-        <figure class="dream_studio_shelly">
-          <img src="<?php echo esc_url($model['img_1']); ?>">
-        </figure>
-      <?php endif; ?>
-      <?php if (!empty($model['img_2'])) : ?>
-        <figure class="dream_design">
-          <img src="<?php echo esc_url($model['img_2']); ?>">
-        </figure>
-      <?php endif; ?>
-      <?php if (!empty($model['desc'])) : ?>
-        <div class="TOS-housing__text">
-          <?php echo wp_kses_post($model['desc']); ?>
-        </div>
-      <?php endif; ?>
-    <?php endif; ?>
+    <figure class="dream_studio_shelly">
+      <img src="<?php echo esc_url(IMG_URL . '/model-house/shelly-studio.png'); ?>" alt="">
+    </figure>
+    <figure class="dream_design">
+      <img src="<?php echo esc_url(IMG_URL . '/model-house/shelly.png'); ?>" alt="">
+    </figure>
+    <div class="TOS-housing__text">
+      <?php echo wp_kses_post(
+        'ヨーロッパの街並みに溶け込むようなデザイン。<br>'
+        . ' 一つひとつの素材に込められた深い叡智。<br>'
+        . ' シンプルでありながら緻密に計算された空間こそ、<br>'
+        . ' 理想の暮らしが宿る場所です。<br>'
+        . '<br>'
+        . 'シェリーハウスは、ヨーロッパの豊かな暮らしをお手本に、 <br>'
+        . '<br>'
+        . 'その本質を追求して誕生しました。<br>'
+        . ' 日本の従来の建築文化では成し得なかった、 <br>'
+        . '安心と寛ぎを追い求めた<br>'
+        . '「心を満たす邸宅」。<br>'
+        . '<br>'
+        . ' そのこだわりと想いが、<br>'
+        . '他とは一線を画す存在感を放ちます。'
+      ); ?>
+    </div>
 
     <span class="house__details">
       <a class="link__btn" href="https://sankaido.com/shelly-house/" target="_blank">Shelly Houseについて</a>
@@ -189,11 +193,6 @@ get_header();
 
 
   <section class="TOS-housing service_model_wrap u-mb100">
-    <?php
-    $models = get_field('model-sample');
-    $model = ($models && !empty($models[2])) ? $models[2] : null;
-    ?>
-
     <figure class="title__left-ribbon">
       <img src="<?php echo esc_url(IMG_URL . '/common/left-ribbon.webp'); ?>">
     </figure>
@@ -218,23 +217,26 @@ get_header();
       </div>
     </div>
 
-    <?php if ($model && (!empty($model['img_1']) || !empty($model['img_2']) || !empty($model['desc']))) : ?>
-      <?php if (!empty($model['img_1'])) : ?>
-        <figure class="dream_studio_shelly">
-          <img src="<?php echo esc_url($model['img_1']); ?>">
-        </figure>
-      <?php endif; ?>
-      <?php if (!empty($model['img_2'])) : ?>
-        <figure class="dream_design">
-          <img src="<?php echo esc_url($model['img_2']); ?>">
-        </figure>
-      <?php endif; ?>
-      <?php if (!empty($model['desc'])) : ?>
-        <div class="TOS-housing__text">
-          <?php echo wp_kses_post($model['desc']); ?>
-        </div>
-      <?php endif; ?>
-    <?php endif; ?>
+    <figure class="dream_studio_shelly">
+      <img src="<?php echo esc_url(IMG_URL . '/model-house/iroha-studio.png'); ?>" alt="">
+    </figure>
+    <figure class="dream_design">
+      <img src="<?php echo esc_url(IMG_URL . '/model-house/iroha.png'); ?>" alt="">
+    </figure>
+    <div class="TOS-housing__text">
+      <?php echo wp_kses_post(
+        '家づくりで不安に思う方が一番多いのがお金のこと。<br>'
+        . '構造や申請にかかわる専門的なお金のことはよくわからないことだらけ。いろいろ選ぶうちにどんどん予算が膨らみ結局どれか諦めないといけない…なんてことも。 「いろはいえ」なら家づくりに必要なすべてが含まれてワンプライスだから予算オーバーの心配はなく、安心して家づくりができます！<br>'
+        . '<br>'
+        . '「住まいの基本、すべてが入った家」<br>'
+        . '「はじめての家づくり」、わからないことがたくさん。<br>'
+        . 'どんな家にしよう。どんな暮らしをしよう。夢がいっぱい。<br>'
+        . 'でもやっぱり、お金のことも心配…。<br>'
+        . '「IROHA.IE」なら安心の定額制（付帯工事・カーテン・照明込み）で家づくりが実現します。<br>'
+        . 'ルールの中でなら間取りは「完全自由設計」設備や建具など<br>'
+        . '標準仕様の範囲でセレクトすれば価格は変わらずワンプライスだから安心して家づくりができます。'
+      ); ?>
+    </div>
 
     <span class="house__details">
       <a class="link__btn" href="<?php echo esc_url(home_url('irohaie')); ?>" target="_blank">いろは家について</a>
