@@ -1,4 +1,6 @@
 .p-afterSupport {
+  overflow-x: hidden;
+
   &__nav {
     width: 70%;
     min-width: 900px;
@@ -115,5 +117,390 @@
         line-height: 1.5;
       }
     }
+  }
+
+  &__section {
+    margin-top: 12.5rem;
+    position: relative;
+
+    &--bordered {
+      padding-bottom: 11.2rem;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    &--last {
+      padding-bottom: 20rem;
+    }
+  }
+
+  &__sectionTitle {
+    font-size: 3rem;
+    letter-spacing: 0.68rem;
+    color: $pureBlack;
+    font-weight: 500;
+
+    .marker {
+      font-size: inherit;
+      letter-spacing: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  &__overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+
+    @include mq(tab) {
+      flex-direction: column;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    @include mq(sp) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__overviewBody {
+    width: 45%;
+    padding-left: 2rem;
+
+    @include mq(tab) {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  &__overviewNum {
+    width: 7rem;
+  }
+
+  &__overviewLead {
+    font-size: 1.9rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    padding-top: 1%;
+
+    span {
+      font-size: inherit;
+      letter-spacing: inherit;
+      font-weight: inherit;
+      color: #ea6800;
+    }
+
+    @include mq(tab) {
+      font-size: 18px;
+      letter-spacing: 0.8px;
+    }
+
+    @include mq(sp) {
+      font-size: 18px;
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__overviewText {
+    font-size: 1.6rem;
+    letter-spacing: 0.3px;
+    line-height: 3.1rem;
+    margin-top: 2.7rem;
+    width: 94%;
+
+    @include mq(tab) {
+      width: 100%;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+    }
+
+    @include mq(sp) {
+      font-size: 2rem;
+      letter-spacing: 0.4px;
+      line-height: 1.8;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__overviewMedia {
+    width: 53%;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @include mq(tab) {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      padding-top: 5%;
+    }
+  }
+
+  &__wideFigure {
+    width: 92rem;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @include mq(tab) {
+      width: 80%;
+      margin-top: 5%;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      margin-top: 5%;
+    }
+  }
+
+  &__more {
+    display: block;
+    text-align: right;
+    padding-right: 10%;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.6rem;
+
+    span {
+      color: #0195ff;
+    }
+
+    @include mq(sp) {
+      padding-right: 3%;
+    }
+  }
+
+  &__note {
+    margin: 4rem;
+
+    @include mq(sp) {
+      margin: 4rem 0;
+      font-size: 2rem;
+    }
+  }
+
+  &__points {
+    background-color: $beige4;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    @include mq(tab) {
+      margin-top: 5%;
+    }
+
+    @include mq(sp) {
+      margin-top: 5%;
+    }
+  }
+
+  &__pointsHeading {
+    font-size: 1.6rem;
+    line-height: 25px;
+    letter-spacing: 2.8px;
+
+    span {
+      font-size: 2rem;
+      line-height: 25px;
+      letter-spacing: 2.8px;
+      color: #ea6800;
+      font-weight: 700;
+    }
+  }
+
+  &__pointsList {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__pointsItem {
+    width: 40%;
+
+    @include mq(sp) {
+      width: 47%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__devicesHeading {
+    text-align: center;
+    background-color: $beige4;
+    padding: 1.5rem;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+
+  &__devices {
+    margin: 0 auto;
+    width: 70%;
+    min-width: 900px;
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  &__devicesLead {
+    background-color: $white;
+    font-size: 1.6rem;
+    letter-spacing: 3.8px;
+    line-height: 25px;
+    text-align: center;
+
+    span {
+      font-size: inherit;
+      letter-spacing: inherit;
+      line-height: inherit;
+      font-weight: 700;
+      color: $red;
+    }
+
+    @include mq(sp) {
+      padding: 0 2%;
+      font-size: 2rem;
+      letter-spacing: 1px;
+
+      span {
+        font-size: 2rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  &__devicesList {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+    margin-top: 5.6rem;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+
+    @include mq(tab) {
+      flex-wrap: wrap;
+    }
+
+    @include mq(sp) {
+      flex-wrap: wrap;
+      padding: 0 3%;
+    }
+  }
+
+  &__devicesItem {
+    width: 20%;
+
+    @include mq(tab) {
+      width: 30%;
+    }
+
+    @include mq(sp) {
+      width: 70%;
+    }
+  }
+
+  &__devicesItemMedia {
+    width: 70%;
+    height: auto;
+    border: 1px solid $red;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 auto 20px;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @include mq(sp) {
+      width: 50%;
+    }
+  }
+
+  &__devicesItemTitle {
+    font-size: 1.4rem;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+    font-weight: bold;
+    margin-left: 8px;
+
+    @include mq(sp) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__devicesItemBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -5px;
+  }
+
+  &__devicesItemList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 1.3rem;
+      line-height: 28px;
+      letter-spacing: 2.8px;
+
+      &::before {
+        content: "・";
+      }
+
+      @include mq(sp) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__cta {
+    display: grid;
+    place-content: center;
+    padding-top: 3%;
+    margin-top: 2rem;
   }
 }
