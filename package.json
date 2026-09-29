@@ -10,6 +10,7 @@
     "vite": "node build-vite.mjs --watch",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "lint:html": "markuplint \"**/*.php\"",
     "lint:scss": "stylelint \"src/scss/**/*.scss\"",
     "lint:scss:fix": "stylelint \"src/scss/**/*.scss\" --fix"
   },
