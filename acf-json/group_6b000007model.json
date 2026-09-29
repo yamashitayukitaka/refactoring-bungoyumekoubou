@@ -3,48 +3,6 @@
   "title": "モデルハウス",
   "fields": [
     {
-      "key": "field_6b000007mv",
-      "label": "メインビジュアル",
-      "name": "mv-model-img",
-      "type": "image",
-      "return_format": "url",
-      "preview_size": "medium"
-    },
-    {
-      "key": "field_6b000007models",
-      "label": "モデルハウス",
-      "name": "model-sample",
-      "type": "repeater",
-      "layout": "block",
-      "sub_fields": [
-        {
-          "key": "field_6b000007mi1",
-          "label": "画像1",
-          "name": "img_1",
-          "type": "image",
-          "return_format": "url",
-          "preview_size": "medium"
-        },
-        {
-          "key": "field_6b000007mi2",
-          "label": "画像2",
-          "name": "img_2",
-          "type": "image",
-          "return_format": "url",
-          "preview_size": "medium"
-        },
-        {
-          "key": "field_6b000007md",
-          "label": "説明",
-          "name": "desc",
-          "type": "wysiwyg",
-          "tabs": "all",
-          "toolbar": "full",
-          "media_upload": 1
-        }
-      ]
-    },
-    {
       "key": "field_6b000007a",
       "label": "ギャラリーA",
       "name": "a-imgs",

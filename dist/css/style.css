@@ -9255,6 +9255,165 @@ a:hover {
   border-color: #fff;
 }
 
+.p-modelHouse {
+  overflow-x: hidden;
+}
+.p-modelHouse__overview {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #faf7f2;
+  border-radius: 3rem;
+  padding: 12rem 8rem;
+  margin: 0 auto;
+  width: 70%;
+  min-width: 900px;
+}
+@media screen and (max-width: 1050px) {
+  .p-modelHouse__overview {
+    width: 90%;
+    min-width: 500px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-modelHouse__overview {
+    width: 100%;
+    min-width: 350px;
+    margin-top: 15%;
+    padding: 10% 5%;
+    border-radius: 0;
+  }
+}
+.p-modelHouse__overview__ribbon {
+  position: absolute;
+  top: 0;
+}
+.p-modelHouse__overview__ribbon--left {
+  left: 0;
+}
+.p-modelHouse__overview__ribbon--right {
+  right: 0;
+}
+@media screen and (max-width: 599px) {
+  .p-modelHouse__overview__ribbon {
+    width: 40%;
+  }
+}
+.p-modelHouse__overview__heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-modelHouse__overview__heading {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-modelHouse__overview__heading {
+    text-align: center;
+  }
+}
+.p-modelHouse__overview__lead {
+  font-size: 2.8rem;
+  letter-spacing: 0.68rem;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline;
+  z-index: 99;
+}
+@media screen and (max-width: 1050px) {
+  .p-modelHouse__overview__lead {
+    display: block;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-modelHouse__overview__lead {
+    text-align: center;
+  }
+}
+.p-modelHouse__overview__name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-top: 0.2rem solid #000;
+  border-bottom: 0.2rem solid #000;
+  padding: 1rem 4rem;
+}
+.p-modelHouse__overview__name span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  line-height: 1;
+}
+@media screen and (max-width: 1050px) {
+  .p-modelHouse__overview__name {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto 5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-modelHouse__overview__name {
+    display: block;
+  }
+}
+.p-modelHouse__overview__logo {
+  width: 65%;
+  margin: 4rem auto 0;
+}
+.p-modelHouse__overview__logo--compact {
+  width: 50%;
+  margin-top: 6rem;
+}
+.p-modelHouse__overview__media {
+  padding: 7% 0 5% 0;
+}
+.p-modelHouse__overview__text {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2rem 0 0;
+}
+.p-modelHouse__overview__gallery {
+  margin: 0 auto;
+  width: 100%;
+}
+.p-modelHouse__overview__gallery .l-content--middle {
+  margin: 0 auto;
+  width: 100%;
+}
+.p-modelHouse__overview__action {
+  margin-top: 5rem;
+  align-self: flex-end;
+}
+.p-modelHouse__overview__link {
+  text-decoration: none;
+  color: #fff;
+  background-color: #ea6800;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 48px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 4rem;
+  position: relative;
+  border-radius: 24px;
+  border: 1px solid #ea6800;
+}
+.p-modelHouse__overview__link:hover {
+  color: #ea6800;
+  background: #fff;
+}
+@media screen and (max-width: 599px) {
+  .p-modelHouse__overview__link {
+    white-space: nowrap;
+  }
+}
+
 .c-navigation {
   display: flex;
   justify-content: flex-end;
