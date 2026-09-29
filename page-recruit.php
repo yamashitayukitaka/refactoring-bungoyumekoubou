@@ -123,7 +123,7 @@ get_header();
   </section>
 
   <!-- 会社沿革 -->
-  <section class="u-pt50 u-mb100">
+  <section class="p-recruit__history">
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         HISTORY
@@ -375,11 +375,11 @@ get_header();
           'title' => '01.入社を決めたきっかけは？',
           'users' => [
             [
-              'img' => 'uploads/2025/04/エグゼクティブな人物アイコン.jpeg',
+              'img' => '/recruit/interview-executive.jpeg',
               'text' => '誘われて入社を決めました。自分を高められると思いトライして正解でした。',
             ],
             [
-              'img' => 'uploads/2025/04/メガネをかけた男性のアイコン素材.jpeg',
+              'img' => '/recruit/interview-man-glasses.jpeg',
               'text' => '手に職をつけたくて現場監督にチャレンジしてみました。わからないことだらけでしたが、先輩の監督が同行して指導していただいたおかげで、独り立ちまでしっかりサポートしてもらいました。',
             ],
           ],
@@ -388,11 +388,11 @@ get_header();
           'title' => '02.会社のアピールポイントを教えてください',
           'users' => [
             [
-              'img' => 'uploads/2025/04/キャリアウーマンのアイコン3.jpeg',
+              'img' => '/recruit/interview-career-woman.jpeg',
               'text' => 'スタッフ間の仲がよく、笑いながら仕事を遂行できる環境です！',
             ],
             [
-              'img' => 'uploads/2025/04/エグゼクティブな人物アイコン.jpeg',
+              'img' => '/recruit/interview-executive.jpeg',
               'text' => 'フレンドリーでコミュニケーションが活発な職場環境です。皆の意見が尊重され、やりがいを感じながら業務に取り組めます。',
             ],
           ],
@@ -401,11 +401,11 @@ get_header();
           'title' => '03.仕事のモチベーションは何ですか',
           'users' => [
             [
-              'img' => 'uploads/2025/04/メガネをかけた男性のアイコン素材.jpeg',
+              'img' => '/recruit/interview-man-glasses.jpeg',
               'text' => 'お客様との商談の中で、「○○さんで契約します」と言っていただける瞬間です。メーカーとしてではなく、私自身の人格や人柄を評価して選んでもらえることで、自分の成長を実感し、さらにやる気が湧いてきます。',
             ],
             [
-              'img' => 'uploads/2025/04/キャリアウーマンのアイコン3.jpeg',
+              'img' => '/recruit/interview-career-woman.jpeg',
               'text' => '間取りや内装についてなど、お客様と一緒にこれをやりたいあれをやりたいなど打ち合わせをしたことが、形となり完成した時にモチベーションが最大限に高まります。',
             ],
           ],
@@ -414,11 +414,11 @@ get_header();
           'title' => '04.今までで一番楽しかった、またはやりがいのあった仕事を教えてください',
           'users' => [
             [
-              'img' => 'uploads/2025/04/メガネをかけた男性のアイコン素材.jpeg',
+              'img' => '/recruit/interview-man-glasses.jpeg',
               'text' => '入居後のお客様の家に遊びに行く際、子供たちの成長や新たにお子様が増えていると幸せな「ゆめ」づくりに貢献できたんだと実感します。',
             ],
             [
-              'img' => 'uploads/2025/04/エグゼクティブな人物アイコン.jpeg',
+              'img' => '/recruit/interview-executive.jpeg',
               'text' => 'お引き渡しの際お礼のお手紙や感謝のお言葉をたくさんいただき、自分の宝物になっています。ご契約からお引き渡し、そしてアフターメンテナンス訪問時にいつも感謝していただけるので、実は毎回お伺いするのが楽しみです。',
             ],
           ],
@@ -440,7 +440,7 @@ get_header();
           <?php foreach ($interview['users'] as $user) : ?>
             <div class="p-recruit__interview__item u-mb100">
               <figure class="p-recruit__interview__figure">
-                <img src="<?php echo esc_url(content_url($user['img'])); ?>" class="p-recruit__interview__img" alt="">
+                <img src="<?php echo esc_url(IMG_URL . $user['img']); ?>" class="p-recruit__interview__img" alt="">
               </figure>
               <p class="p-recruit__interview__text">
                 <?php echo esc_html($user['text']); ?>
@@ -501,39 +501,45 @@ get_header();
           <?php endforeach; ?>
         </tbody>
       </table>
+    <?php else : ?>
+      <p class="p-recruit__requirements__empty">
+        現在、募集はしておりません。
+      </p>
     <?php endif; ?>
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
       <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="p-recruit__requirements__decorationImg" alt="">
     </figure>
   </section>
 
-  <div class="l-content--middle p-recruit__contact u-mb100">
-    <p class="p-recruit__contact__desc">
-      わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
-      またはお電話にてお気軽にご連絡ください。
-    </p>
-    <a href="tel:0975941481" class="p-recruit__contact__link">
-      <span class="p-recruit__contact__linkLabel">応募はこちら</span>
-      <p class="p-recruit__contact__tel">TEL.　<span class="p-recruit__contact__telNumber">097-594-1481</span>
+  <?php if ($hasApp) : ?>
+    <div class="l-content--middle p-recruit__contact u-mb100">
+      <p class="p-recruit__contact__desc">
+        わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
+        またはお電話にてお気軽にご連絡ください。
       </p>
-    </a>
-  </div>
-
-  <section class="l-content">
-    <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
-        APPLICATION
-      </h3>
-      <div>
-        <p class="c-title--orangeLine u-mb50">
-          <span class="marker">応募する</span>
+      <a href="tel:0975941481" class="p-recruit__contact__link">
+        <span class="p-recruit__contact__linkLabel">応募はこちら</span>
+        <p class="p-recruit__contact__tel">TEL.　<span class="p-recruit__contact__telNumber">097-594-1481</span>
         </p>
+      </a>
+    </div>
+
+    <section class="l-content">
+      <div class="c-title__head">
+        <h3 class="c-title--sectionLine">
+          APPLICATION
+        </h3>
+        <div>
+          <p class="c-title--orangeLine u-mb50">
+            <span class="marker">応募する</span>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="c-form__wrap">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
-    </div>
-  </section>
+      <div class="c-form__wrap">
+        <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+      </div>
+    </section>
+  <?php endif; ?>
 
   <?php get_template_part('template-parts/common-link'); ?>
 </main>

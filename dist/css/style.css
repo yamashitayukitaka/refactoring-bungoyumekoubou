@@ -6972,6 +6972,12 @@ a:hover {
   width: 13rem;
   height: 8rem;
 }
+.p-recruit__requirements__empty {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-align: center;
+  font-weight: 600;
+}
 .p-recruit__contact__desc {
   font-size: 2rem;
   text-align: center;
@@ -6993,6 +6999,10 @@ a:hover {
 }
 .p-recruit__contact__telNumber {
   font-size: 4rem;
+}
+.p-recruit__history {
+  margin-bottom: 10rem;
+  padding-top: 5rem;
 }
 
 .p-property__dl {

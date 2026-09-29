@@ -110,6 +110,13 @@
       width: 13rem;
       height: 8rem;
     }
+
+    &__empty {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      text-align: center;
+      font-weight: 600;
+    }
   }
 
   &__contact {
@@ -138,5 +145,10 @@
     &__telNumber {
       font-size: 4rem;
     }
+  }
+
+  &__history {
+    margin-bottom: 10rem;
+    padding-top: 5rem;
   }
 }
