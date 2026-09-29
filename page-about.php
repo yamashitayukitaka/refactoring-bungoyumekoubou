@@ -70,50 +70,50 @@ get_header();
         <p class="c-title--orangeLine u-mb50"><span class="marker">会社概要</span></p>
       </div>
     </div>
-    <table class="c-table__about">
-      <tbody class="c-table__about__tbody">
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">会社名</th>
-          <td class="c-table__about__td">株式会社 豊後夢工房</td>
+    <table class="c-table c-table--narrow">
+      <tbody>
+        <tr class="c-table__tr">
+          <th class="c-table__th">会社名</th>
+          <td class="c-table__td">株式会社 豊後夢工房</td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">所在地</th>
-          <td class="c-table__about__td">〒870-0245 <br>
+        <tr class="c-table__tr">
+          <th class="c-table__th">所在地</th>
+          <td class="c-table__td">〒870-0245 <br>
             大分県大分市大在北4丁目7番31号
           </td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">代表者</th>
-          <td class="c-table__about__td">代表取締役社長 永井 賢次 </td>
+        <tr class="c-table__tr">
+          <th class="c-table__th">代表者</th>
+          <td class="c-table__td">代表取締役社長 永井 賢次 </td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">お問い合わせ先</th>
-          <td class="c-table__about__td">TEL.097-594-1481 <br>
+        <tr class="c-table__tr">
+          <th class="c-table__th">お問い合わせ先</th>
+          <td class="c-table__td">TEL.097-594-1481 <br>
             FAX.097-594-1439 <br>
             専用フォームからのお問い合わせ
           </td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">定休日</th>
-          <td class="c-table__about__td">火曜日・水曜日・祝日<br>
+        <tr class="c-table__tr">
+          <th class="c-table__th">定休日</th>
+          <td class="c-table__td">火曜日・水曜日・祝日<br>
             ※展示場は営業しております</td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">創業</th>
-          <td class="c-table__about__td">平成10年（1998）9月7日</td>
+        <tr class="c-table__tr">
+          <th class="c-table__th">創業</th>
+          <td class="c-table__td">平成10年（1998）9月7日</td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">資本金</th>
-          <td class="c-table__about__td">2,500万円 </td>
+        <tr class="c-table__tr">
+          <th class="c-table__th">資本金</th>
+          <td class="c-table__td">2,500万円 </td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">取引銀行</th>
-          <td class="c-table__about__td">大分信用金庫高城支店／豊和銀行大在支店／大分銀行大在支店
+        <tr class="c-table__tr">
+          <th class="c-table__th">取引銀行</th>
+          <td class="c-table__td">大分信用金庫高城支店／豊和銀行大在支店／大分銀行大在支店
           </td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">事業内容</th>
-          <td class="c-table__about__td">
+        <tr class="c-table__tr">
+          <th class="c-table__th">事業内容</th>
+          <td class="c-table__td">
             建築工事<br>
             土木工事<br>
             リフォーム工事<br>
@@ -131,38 +131,17 @@ get_header();
             損害保険代理業</td>
           </td>
         </tr>
-        <!--
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">建設業登録</th>
-          <td class="c-table__about__td">
-            建築工事
-            土木工事<br>
-            リフォーム工事<br>
-            電気工事<br>
-            水道工事<br>
-            通信工事<br>
-            建築工事<br>
-            土木工事の企画・設計<br>
-            住宅販売<br>
-            分譲販売及び不動産の販売<br>
-            賃貸・仲介斡旋<br>
-            資産運用プランニング業務<br>
-            住宅ローン事務代行業務<br>
-            地質調査<br>
-            損害保険代理業</td>
+        <tr class="c-table__tr">
+          <th class="c-table__th">建設業登録</th>
+          <td class="c-table__td">大分県知事登録（般-2）12417号</td>
         </tr>
-        -->
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">建設業登録</th>
-          <td class="c-table__about__td">大分県知事登録（般-2）12417号</td>
+        <tr class="c-table__tr">
+          <th class="c-table__th">宅建業登録</th>
+          <td class="c-table__td">大分県知事（5）第2655号</td>
         </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">宅建業登録</th>
-          <td class="c-table__about__td">大分県知事（5）第2655号</td>
-        </tr>
-        <tr class="c-table__about__tr">
-          <th class="c-table__about__th">設計事務所登録</th>
-          <td class="c-table__about__td">一級建築士事務所 大分県知事 第21P-13776号
+        <tr class="c-table__tr">
+          <th class="c-table__th">設計事務所登録</th>
+          <td class="c-table__td">一級建築士事務所 大分県知事 第21P-13776号
           </td>
         </tr>
       </tbody>

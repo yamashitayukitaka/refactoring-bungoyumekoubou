@@ -1,0 +1,154 @@
+.p-recruit {
+  &__message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(sp) {
+      display: block;
+    }
+
+    &__photo {
+      width: 28.3333333333%;
+
+      @include mq(sp) {
+        width: 50%;
+        margin: auto;
+      }
+    }
+
+    &__figure {
+      aspect-ratio: 255/340;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    &__metaLine {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $pureBlack;
+      letter-spacing: 0.04rem;
+      line-height: calc(32 / 18);
+      text-align: right;
+    }
+
+    &__content {
+      letter-spacing: 0.04rem;
+      font-weight: 600;
+      color: $pureBlack;
+      width: 67.2222222222%;
+
+      @include mq(sp) {
+        width: 100%;
+        padding-top: 5%;
+      }
+    }
+
+    &__lead {
+      font-size: 2.4rem;
+      line-height: 1.4;
+      letter-spacing: 0.044rem;
+    }
+
+    &__text {
+      font-size: 1.6rem;
+      line-height: 1.4;
+
+      @include mq(sp) {
+        font-size: 2rem;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  &__interview {
+    &__item {
+      display: flex;
+      gap: 5rem;
+      justify-content: space-between;
+
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &__text {
+      border-radius: 1rem;
+      background-color: #faf7f2;
+      padding: 3rem 3.5rem;
+    }
+
+    &__img {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+
+  &__requirements {
+    position: relative;
+
+    &__decoration {
+      position: absolute;
+      display: flex;
+
+      &--top {
+        left: 0;
+        top: 2rem;
+      }
+
+      &--bottom {
+        right: 0;
+        bottom: -10rem;
+      }
+    }
+
+    &__decorationImg {
+      width: 13rem;
+      height: 8rem;
+    }
+
+    &__empty {
+      font-size: 1.6rem;
+      line-height: 1.8;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  &__contact {
+    &__desc {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    &__link {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2.5rem;
+      border: 1px solid #c1c1c1;
+      margin-top: 2rem;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &__linkLabel {
+      font-size: 2rem;
+    }
+
+    &__telNumber {
+      font-size: 4rem;
+    }
+  }
+
+  &__history {
+    margin-bottom: 10rem;
+    padding-top: 5rem;
+  }
+}

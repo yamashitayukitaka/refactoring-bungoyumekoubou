@@ -173,7 +173,7 @@ get_header();
       <?php endwhile; ?>
     <?php endif; ?>
 
-    <table class="u-mb140 c-table">
+    <table class="u-mb140 c-table c-table--wide">
       <tr class="c-table__tr">
         <th class="c-table__th">開催日</th>
         <td class="c-table__td">

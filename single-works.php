@@ -44,7 +44,7 @@ get_header();
     <div class = "l-content--middle u-mb100">
       <?php $table = get_field('works-table'); ?>
       <?php if($table && (!empty($table['plan-of-feature']) || !empty($table['area']))):?>
-        <table class = "c-table">
+        <table class="c-table c-table--wide">
           <?php if (!empty($table['plan-of-feature'])):?>
           <tr class = "c-table__tr">
             <th class = "c-table__th">間取りの特徴</th>
