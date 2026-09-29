@@ -1,0 +1,166 @@
+.p-modelHouse {
+  overflow-x: hidden;
+
+  &__overview {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: $beige4;
+    border-radius: 3rem;
+    padding: 12rem 8rem;
+    margin: 0 auto;
+    width: 70%;
+    min-width: 900px;
+
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 350px;
+      margin-top: 15%;
+      padding: 10% 5%;
+      border-radius: 0;
+    }
+
+    &__ribbon {
+      position: absolute;
+      top: 0;
+
+      &--left {
+        left: 0;
+      }
+
+      &--right {
+        right: 0;
+      }
+
+      @include mq(sp) {
+        width: 40%;
+      }
+    }
+
+    &__heading {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3rem;
+
+      @include mq(tab) {
+        display: block;
+        margin: 0 auto;
+      }
+
+      @include mq(sp) {
+        text-align: center;
+      }
+    }
+
+    &__lead {
+      font-size: 2.8rem;
+      letter-spacing: 0.68rem;
+      color: $pureBlack;
+      font-weight: 700;
+      line-height: 1.5;
+      position: relative;
+      display: inline;
+      z-index: 99;
+
+      @include mq(tab) {
+        display: block;
+      }
+
+      @include mq(sp) {
+        text-align: center;
+      }
+    }
+
+    &__name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      border-top: 0.2rem solid $pureBlack;
+      border-bottom: 0.2rem solid $pureBlack;
+      padding: 1rem 4rem;
+
+      span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $pureBlack;
+        line-height: 1;
+      }
+
+      @include mq(tab) {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto 5%;
+      }
+
+      @include mq(sp) {
+        display: block;
+      }
+    }
+
+    &__logo {
+      width: 65%;
+      margin: 4rem auto 0;
+
+      &--compact {
+        width: 50%;
+        margin-top: 6rem;
+      }
+    }
+
+    &__media {
+      padding: 7% 0 5% 0;
+    }
+
+    &__text {
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 2rem 0 0;
+    }
+
+    &__gallery {
+      margin: 0 auto;
+      width: 100%;
+
+      .l-content--middle {
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    &__action {
+      margin-top: 5rem;
+      align-self: flex-end;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $white;
+      background-color: $orange;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 48px;
+      text-align: center;
+      transition: 0.5s;
+      padding: 0 4rem;
+      position: relative;
+      border-radius: 24px;
+      border: 1px solid $orange;
+
+      &:hover {
+        color: $orange;
+        background: $white;
+      }
+
+      @include mq(sp) {
+        white-space: nowrap;
+      }
+    }
+  }
+}
