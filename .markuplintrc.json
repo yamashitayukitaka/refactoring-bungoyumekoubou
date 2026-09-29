@@ -1,0 +1,6 @@
+{
+  "parser": {
+    ".php$": "@markuplint/php-parser"
+  },
+  "rules": {}
+}
