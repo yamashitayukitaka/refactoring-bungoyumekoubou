@@ -1,0 +1,119 @@
+.p-afterSupport {
+  &__nav {
+    width: 70%;
+    min-width: 900px;
+    height: auto;
+    background-color: $beige4;
+    border-radius: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    padding: 3.2rem 8rem 4.5rem;
+
+    @include mq(tab) {
+      width: 90%;
+      min-width: 500px;
+      padding: 3.2rem 6rem 4.5rem;
+    }
+
+    @include mq(sp) {
+      width: 100%;
+      min-width: 0;
+      padding: 5% 2% 7%;
+    }
+
+    &__heading {
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-align: center;
+      color: $pureBlack;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 4.4rem;
+      gap: 6rem 4rem;
+      list-style: none;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+
+      @include mq(tab) {
+        gap: 4rem;
+      }
+
+      @include mq(sp) {
+        gap: 2rem;
+      }
+    }
+
+    &__item {
+      width: 45%;
+
+      @include mq(sp) {
+        width: 45%;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      height: 100%;
+    }
+
+    &__card {
+      border: 1px solid $red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      padding: 1rem;
+
+      @include mq(sp) {
+        justify-content: flex-start;
+        height: 100%;
+      }
+    }
+
+    &__number {
+      width: 14rem;
+      border-bottom: 1px solid $pureBlack;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      text-align: center;
+      padding-bottom: 0.5rem;
+
+      @include mq(tab) {
+        width: 12rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      @include mq(sp) {
+        width: 8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+    }
+
+    &__numberImg {
+      width: 65%;
+    }
+
+    &__label {
+      color: $pureBlack;
+      font-size: 2rem;
+      line-height: 31.9px;
+      text-align: center;
+      padding-top: 0.5rem;
+
+      @include mq(sp) {
+        line-height: 1.5;
+      }
+    }
+  }
+}

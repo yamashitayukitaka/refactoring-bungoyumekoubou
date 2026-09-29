@@ -8243,6 +8243,125 @@ a:hover {
   background-color: #fff;
 }
 
+.p-afterSupport__nav {
+  width: 70%;
+  min-width: 900px;
+  height: auto;
+  background-color: #faf7f2;
+  border-radius: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  padding: 3.2rem 8rem 4.5rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-afterSupport__nav {
+    width: 90%;
+    min-width: 500px;
+    padding: 3.2rem 6rem 4.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-afterSupport__nav {
+    width: 100%;
+    min-width: 0;
+    padding: 5% 2% 7%;
+  }
+}
+.p-afterSupport__nav__heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+.p-afterSupport__nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4.4rem;
+  gap: 6rem 4rem;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+@media screen and (max-width: 1050px) {
+  .p-afterSupport__nav__list {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-afterSupport__nav__list {
+    gap: 2rem;
+  }
+}
+.p-afterSupport__nav__item {
+  width: 45%;
+}
+@media screen and (max-width: 599px) {
+  .p-afterSupport__nav__item {
+    width: 45%;
+  }
+}
+.p-afterSupport__nav__link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  height: 100%;
+}
+.p-afterSupport__nav__card {
+  border: 1px solid #ed6a10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+}
+@media screen and (max-width: 599px) {
+  .p-afterSupport__nav__card {
+    justify-content: flex-start;
+    height: 100%;
+  }
+}
+.p-afterSupport__nav__number {
+  width: 14rem;
+  border-bottom: 1px solid #000;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+@media screen and (max-width: 1050px) {
+  .p-afterSupport__nav__number {
+    width: 12rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-afterSupport__nav__number {
+    width: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.p-afterSupport__nav__numberImg {
+  width: 65%;
+}
+.p-afterSupport__nav__label {
+  color: #000;
+  font-size: 2rem;
+  line-height: 31.9px;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+@media screen and (max-width: 599px) {
+  .p-afterSupport__nav__label {
+    line-height: 1.5;
+  }
+}
+
 .p-concept {
   overflow-x: hidden;
 }

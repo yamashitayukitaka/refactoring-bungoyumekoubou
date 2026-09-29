@@ -3,7 +3,7 @@
 if (!defined('ABSPATH')) exit;
 get_header();
 ?>
-<main>
+<main class="p-afterSupport">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title">
@@ -33,99 +33,83 @@ get_header();
   </section>
 
   <!-- メニュー -->
-  <section class="commitment__top_content ">
-    <div class="support__top_title">
-      <span class="font_orange">豊後夢工房</span>の安心保証メニュー
+  <nav class="p-afterSupport__nav noto-sans-jp" aria-label="安心の保証メニュー">
+    <div class="p-afterSupport__nav__heading">
+      <span class="u-textOrange">豊後夢工房</span>の安心保証メニュー
     </div>
-    <div class="quality__top_list noto-sans-jp">
-      <a href="#support1" class="go_to_link">
-        <div class="support__top_button">
-          <div class="support__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+    <ul class="p-afterSupport__nav__list">
+      <li class="p-afterSupport__nav__item">
+        <a href="#support1" class="p-afterSupport__nav__link">
+          <div class="p-afterSupport__nav__card">
+            <div class="p-afterSupport__nav__number">
+              <img class="p-afterSupport__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-afterSupport__nav__label">安心の長期住宅保証</p>
+            </div>
           </div>
-          <div class="">
-            <p class="support__top_button_text">
-              <span class="font_orange"></span>安心の長期住宅保証
-            </p>
+        </a>
+      </li>
+      <li class="p-afterSupport__nav__item">
+        <a href="#support2" class="p-afterSupport__nav__link">
+          <div class="p-afterSupport__nav__card">
+            <div class="p-afterSupport__nav__number">
+              <img class="p-afterSupport__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-afterSupport__nav__label">地盤保証システム</p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#support2" class="go_to_link">
-        <div class="support__top_button">
-          <div class="support__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
+        </a>
+      </li>
+      <li class="p-afterSupport__nav__item">
+        <a href="#support3" class="p-afterSupport__nav__link">
+          <div class="p-afterSupport__nav__card">
+            <div class="p-afterSupport__nav__number">
+              <img class="p-afterSupport__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-afterSupport__nav__label">設備機器保証</p>
+            </div>
           </div>
-          <div class="">
-            <p class="support__top_button_text">
-              地盤保証システム
-            </p>
+        </a>
+      </li>
+      <li class="p-afterSupport__nav__item">
+        <a href="#support4" class="p-afterSupport__nav__link">
+          <div class="p-afterSupport__nav__card">
+            <div class="p-afterSupport__nav__number">
+              <img class="p-afterSupport__nav__numberImg" src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
+            </div>
+            <div>
+              <p class="p-afterSupport__nav__label">定期巡回訪問</p>
+            </div>
           </div>
-        </div>
-      </a>
-      <a href="#support3" class="go_to_link">
-        <div class="support__top_button">
-          <div class="support__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
-          </div>
-          <div class="">
-            <p class="support__top_button_text">
-              設備機器保証
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#support4" class="go_to_link">
-        <div class="support__top_button">
-          <div class="support__top_button_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
-          </div>
-          <div class="">
-            <p class="support__top_button_text">
-              定期巡回訪問
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <section class="l_content_middle_80 support1 noto-sans-jp" id="support1">
-    <?php
-    $guarantees = get_field('support_guarantee');
-    $guarantee = ($guarantees && !empty($guarantees[0])) ? $guarantees[0] : null;
-    if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
-    ?>
-      <div class="support__content">
-        <div class="support__content_text">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
-          </div>
-          <?php if (!empty($guarantee['title'])) : ?>
-            <p class="c_title_orangeLine_t"><span class="marker">
-                <?php echo esc_html($guarantee['title']); ?></span>
-            </p>
-          <?php endif; ?>
-          <p class="common_meta_content">
-            建物保証<span>20年</span>、最長<span>60年</span>まで延長可能
-          </p>
-          <?php if (!empty($guarantee['img'])) : ?>
-            <div class="support__content_img sp_tab">
-              <img src="<?php echo esc_url($guarantee['img']); ?>">
-            </div>
-          <?php endif; ?>
-          <?php if (!empty($guarantee['txt'])) : ?>
-            <div class="commitment__security1_content_maintext">
-              <?php echo wp_kses_post($guarantee['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class="support__content">
+      <div class="support__content_text">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number1.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($guarantee['img'])) : ?>
-          <div class="support__content_img pc">
-            <img src="<?php echo esc_url($guarantee['img']); ?>">
-          </div>
-        <?php endif; ?>
+        <p class="c_title_orangeLine_t"><span class="marker">安心の長期住宅保証</span></p>
+        <p class="common_meta_content">
+          建物保証<span>20年</span>、最長<span>60年</span>まで延長可能
+        </p>
+        <div class="support__content_img sp_tab">
+          <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-1.png'); ?>" alt="">
+        </div>
+        <div class="commitment__security1_content_maintext">
+          <?php echo wp_kses_post('家の構造的な部分をプロによる定期点検で20年、最長60年まで保証します。<br>大きな不安、急な出費に迅速に対応できる豊後夢工房の長期住宅保証は安心、安全、豊かな暮らしをサポートし続けます。'); ?>
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="support__content_img pc">
+        <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-1.png'); ?>" alt="">
+      </div>
+    </div>
     <div class="support__content_otherimg">
       <img src="<?php echo esc_url(IMG_URL . '/maintenance/maintenance_7.webp'); ?>">
     </div>
@@ -138,89 +122,58 @@ get_header();
     </a>
   </section>
   <section class="l_content_middle_80 support1 noto-sans-jp" id="support2">
-    <?php
-    $guarantees = get_field('support_guarantee');
-    $guarantee = ($guarantees && !empty($guarantees[1])) ? $guarantees[1] : null;
-    if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
-    ?>
-      <div class="support__content">
-        <div class="support__content_text">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
-          </div>
-          <?php if (!empty($guarantee['title'])) : ?>
-            <p class="c_title_orangeLine_t">
-              <span class="marker">
-                <?php echo esc_html($guarantee['title']); ?></span>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($guarantee['img'])) : ?>
-            <div class="support__content_img sp_tab">
-              <img src="<?php echo esc_url($guarantee['img']); ?>">
-            </div>
-          <?php endif; ?>
-          <?php if (!empty($guarantee['txt'])) : ?>
-            <div class="commitment__security1_content_maintext">
-              <?php echo wp_kses_post($guarantee['txt']); ?>
-            </div>
-          <?php endif; ?>
+    <div class="support__content">
+      <div class="support__content_text">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number2.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($guarantee['img'])) : ?>
-          <div class="support__content_img pc">
-            <img src="<?php echo esc_url($guarantee['img']); ?>">
-          </div>
-        <?php endif; ?>
-
+        <p class="c_title_orangeLine_t">
+          <span class="marker">地盤保証システム</span>
+        </p>
+        <div class="support__content_img sp_tab">
+          <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-2.jpg'); ?>" alt="">
+        </div>
+        <div class="commitment__security1_content_maintext">
+          <?php echo wp_kses_post('豊後夢工房では、指定専門機関による地盤検査を実施し、問題があれば地盤改良工事を行うなど対策を万全にしていますが、万が一、建物が不同沈下などにより損壊した場合、豊後夢工房が建物と地盤の修復工事をお約束する制度です。保証期間はお引き渡しから20年間保証が付きます。'); ?>
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="support__content_img pc">
+        <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-2.jpg'); ?>" alt="">
+      </div>
+    </div>
   </section>
 
   <section class=" support1 noto-sans-jp" id="support3">
     <div class="l_content_middle_80">
-      <?php
-      $guarantees = get_field('support_guarantee');
-      $guarantee = ($guarantees && !empty($guarantees[2])) ? $guarantees[2] : null;
-      if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
-      ?>
-        <div class="support__content">
-          <div class="support__content_text">
-            <div class="support__content_number">
-              <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+      <div class="support__content">
+        <div class="support__content_text">
+          <div class="support__content_number">
+            <img src="<?php echo esc_url(IMG_URL . '/number/number3.webp'); ?>" alt="">
+          </div>
+          <p class="c_title_orangeLine_t">
+            <span class="marker">設備機器保証</span>
+          </p>
+          <p class="common_meta_content">
+            10年の設備機器保証付き。暮らしに欠かせないものだからこそ<br>急なトラブルにも迅速に対応します。
+          </p>
+          <div class="support__content_img sp_tab">
+            <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-3.png'); ?>" alt="">
+          </div>
+          <div class="support__threesecurity">
+            <div class="support__threesecurity_ttl">
+              <span>3つ</span>の安心ポイント
             </div>
-            <?php if (!empty($guarantee['title'])) : ?>
-              <p class="c_title_orangeLine_t">
-                <span class="marker">
-                  <?php echo esc_html($guarantee['title']); ?></span>
-              </p>
-            <?php endif; ?>
-            <?php if (!empty($guarantee['txt'])) : ?>
-              <div class="commitment__security1_content_maintext">
-                <?php echo wp_kses_post($guarantee['txt']); ?>
-              </div>
-            <?php endif; ?>
-            <?php if (!empty($guarantee['img'])) : ?>
-              <div class="support__content_img sp_tab">
-                <img src="<?php echo esc_url($guarantee['img']); ?>">
-              </div>
-            <?php endif; ?>
-            <div class="support__threesecurity">
-              <div class="support__threesecurity_ttl">
-                <span>3つ</span>の安心ポイント
-              </div>
-              <div class="support__security_items">
-                <img src="<?php echo esc_url(IMG_URL . '/after/jhs1.webp'); ?>">
-                <img src="<?php echo esc_url(IMG_URL . '/after/jhs2.webp'); ?>">
-                <img src="<?php echo esc_url(IMG_URL . '/after/jhs3.webp'); ?>">
-              </div>
+            <div class="support__security_items">
+              <img src="<?php echo esc_url(IMG_URL . '/after/jhs1.webp'); ?>" alt="">
+              <img src="<?php echo esc_url(IMG_URL . '/after/jhs2.webp'); ?>" alt="">
+              <img src="<?php echo esc_url(IMG_URL . '/after/jhs3.webp'); ?>" alt="">
             </div>
           </div>
-          <?php if (!empty($guarantee['img'])) : ?>
-            <div class="support__content_img pc">
-              <img src="<?php echo esc_url($guarantee['img']); ?>">
-            </div>
-          <?php endif; ?>
         </div>
-      <?php endif; ?>
+        <div class="support__content_img pc">
+          <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-3.png'); ?>" alt="">
+        </div>
+      </div>
       <p class="support3__text">
         通常1～2年程度の保証しかない、トイレやキッチンなどの住宅設備機器も延長して10年間に渡り保証します。
         <br>
@@ -307,46 +260,28 @@ get_header();
   </section>
 
   <section class="l_content_middle_80 support4 noto-sans-jp" id="support4">
-    <?php
-    $guarantees = get_field('support_guarantee');
-    $guarantee = ($guarantees && !empty($guarantees[3])) ? $guarantees[3] : null;
-    if ($guarantee && (!empty($guarantee['title']) || !empty($guarantee['txt']) || !empty($guarantee['img']))) :
-    ?>
-      <div class="support__content">
-        <div class="support__content_text">
-          <div class="support__content_number">
-            <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
-          </div>
-          <?php if (!empty($guarantee['title'])) : ?>
-            <p class="c_title_orangeLine_t">
-              <span class="marker">
-                <?php echo esc_html($guarantee['title']); ?></span>
-            </p>
-          <?php endif; ?>
-          <?php if (!empty($guarantee['img'])) : ?>
-            <div class="support__content_img sp_tab">
-              <img src="<?php echo esc_url($guarantee['img']); ?>">
-            </div>
-          <?php endif; ?>
-          <!-- <p class="common_meta_content">
-          定期的な点検が<br />永い安心と快適をつくる
-        </p> -->
-          <?php if (!empty($guarantee['txt'])) : ?>
-            <div class="commitment__security1_content_maintext">
-              <?php echo wp_kses_post($guarantee['txt']); ?>
-            </div>
-          <?php endif; ?>
-          <div class="content_center top_p_3">
-            <a class="link__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターメンテナンスへ</a>
-          </div>
+    <div class="support__content">
+      <div class="support__content_text">
+        <div class="support__content_number">
+          <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
         </div>
-        <?php if (!empty($guarantee['img'])) : ?>
-          <div class="support__content_img pc">
-            <img src="<?php echo esc_url($guarantee['img']); ?>">
-          </div>
-        <?php endif; ?>
+        <p class="c_title_orangeLine_t">
+          <span class="marker">定期点検</span>
+        </p>
+        <div class="support__content_img sp_tab">
+          <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-4.jpg'); ?>" alt="">
+        </div>
+        <div class="commitment__security1_content_maintext">
+          <?php echo wp_kses_post('ご入居されてからのお客様の暮らしをサポートしてくために、ご入居から3ヶ月・1年・2年・5年・10年・20年のタイミングで定期点検に訪問させていただきます。専門スタッフにより、外壁、基礎、内装、床などを確認させていただき、不具合点がないか聞きとりの上、点検を行い、必要なメンテナンスについてのアドバイスをさせていただきます。'); ?>
+        </div>
+        <div class="content_center top_p_3">
+          <a class="link__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターメンテナンスへ</a>
+        </div>
       </div>
-    <?php endif; ?>
+      <div class="support__content_img pc">
+        <img src="<?php echo esc_url(IMG_URL . '/after/guarantee-4.jpg'); ?>" alt="">
+      </div>
+    </div>
   </section>
 
   <?php get_template_part('template-parts/common'); ?>

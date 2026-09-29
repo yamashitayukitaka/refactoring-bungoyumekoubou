@@ -9,38 +9,6 @@
       "type": "image",
       "return_format": "url",
       "preview_size": "medium"
-    },
-    {
-      "key": "field_6b000003guarantee",
-      "label": "保証項目",
-      "name": "support_guarantee",
-      "type": "repeater",
-      "layout": "block",
-      "sub_fields": [
-        {
-          "key": "field_6b000003gt",
-          "label": "タイトル",
-          "name": "title",
-          "type": "text"
-        },
-        {
-          "key": "field_6b000003gx",
-          "label": "本文",
-          "name": "txt",
-          "type": "wysiwyg",
-          "tabs": "all",
-          "toolbar": "full",
-          "media_upload": 1
-        },
-        {
-          "key": "field_6b000003gi",
-          "label": "画像",
-          "name": "img",
-          "type": "image",
-          "return_format": "url",
-          "preview_size": "medium"
-        }
-      ]
     }
   ],
   "location": [
