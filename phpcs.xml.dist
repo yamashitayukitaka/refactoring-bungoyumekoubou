@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ruleset name="wazeka">
+  <description>テーマの PHP を PSR-12 で検査する</description>
+  <file>.</file>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>dist/*</exclude-pattern>
+  <rule ref="PSR12">
+    <exclude name="Generic.Files.LineLength"/>
+    <exclude name="Generic.Files.LineEndings"/>
+    <exclude name="PSR1.Files.SideEffects"/>
+  </rule>
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="2"/>
+    </properties>
+  </rule>
+</ruleset>

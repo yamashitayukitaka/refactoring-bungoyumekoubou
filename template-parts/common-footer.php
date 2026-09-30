@@ -15,21 +15,22 @@
 <?php
   $event = array(
   'post_type' => 'xo_event',
-  'posts_per_page' =>3,
+  'posts_per_page' => 3,
   'order' => 'DESC',
-  'orderby'=>'date',
-);?>
+  'orderby' => 'date',
+  );?>
 <?php $eventLoop = new WP_Query($event);?>
-<?php if ($eventLoop->have_posts()): ?>
+<?php if ($eventLoop->have_posts()) : ?>
   <ul class = "c-cardList u-mb50">
-    <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
+    <?php while ($eventLoop->have_posts()) :
+      $eventLoop->the_post();?>
       <?php get_template_part('template-parts/event-loop'); ?>
     <?php endwhile;
-    endif;
+endif;
     wp_reset_postdata();?>
   </ul>
   <div class = "u-center">
-    <a href = "<?php echo esc_url (home_url('xo_event') ); ?>" class = "c-button--outline">イベント一覧へ</a>
+    <a href = "<?php echo esc_url(home_url('xo_event')); ?>" class = "c-button--outline">イベント一覧へ</a>
   </div>
 </section>
 <section class = "l-content u-mb100">
@@ -47,20 +48,21 @@
     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
     $property = array(
     'post_type' => 'property',
-    'posts_per_page' =>3,
-    'paged'=>$paged,
+    'posts_per_page' => 3,
+    'paged' => $paged,
     'order' => 'DESC',
-    'orderby'=>'date',
-  );?>
+    'orderby' => 'date',
+    );?>
   <?php $propertyLoop = new WP_Query($property);?>
-  <?php if ($propertyLoop->have_posts()): ?>
+  <?php if ($propertyLoop->have_posts()) : ?>
     <ul class = "c-cardList">
-      <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post();?>
+      <?php while ($propertyLoop->have_posts()) :
+        $propertyLoop->the_post();?>
         <?php get_template_part('template-parts/property-loop'); ?>
       <?php endwhile;?>
     </ul>
     <div class = "u-center">
-      <a href = "<?php echo esc_url (home_url('property') ); ?>" class = "c-button--outline">土地・物件情報一覧へ</a>
+      <a href = "<?php echo esc_url(home_url('property')); ?>" class = "c-button--outline">土地・物件情報一覧へ</a>
     </div>
   <?php endif;
   wp_reset_postdata();?>

@@ -1,6 +1,8 @@
 <?php
 // Template Name: privacypolicy
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main>

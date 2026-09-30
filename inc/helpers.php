@@ -1,4 +1,5 @@
 <?php
+
 if (!defined('ABSPATH')) {
   exit;
 }
@@ -26,8 +27,8 @@ add_filter('excerpt_length', 'custom_excerpt_length');
 function wazeka_kses_iframe($html)
 {
   return wp_kses(
-    $html,
-    array(
+      $html,
+      array(
       'iframe' => array(
         'src' => true,
         'width' => true,
@@ -40,15 +41,16 @@ function wazeka_kses_iframe($html)
         'frameborder' => true,
         'class' => true,
       ),
-    )
+      )
   );
 }
 
-function taxonomy_orderby_description( $orderby, $args ) {
+function taxonomy_orderby_description($orderby, $args)
+{
 
-  if ( $args['orderby'] == 'description' ) {
+  if ($args['orderby'] == 'description') {
       $orderby = 'tt.description';
   }
   return $orderby;
 }
-add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+add_filter('get_terms_orderby', 'taxonomy_orderby_description', 10, 2);

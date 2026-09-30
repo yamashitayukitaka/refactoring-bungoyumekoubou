@@ -1,8 +1,10 @@
-<?php 
-if ( ! defined( 'ABSPATH' ) ) exit;
+<?php
+if (! defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
-<?php 
+<?php
   $taxonomy = 'property-category';
   $posyType = 'property';
   $tag = 'property-area';
@@ -13,42 +15,44 @@ get_header();
     土地・物件情報
   </h2>
 
-  <?php $terms = get_terms($taxonomy, 
-    [
-    'hide_empty' => false,
-    'parent' =>0,
-    'orderby'=>'id',
-    'order'=>'DESC',
-    ]
+  <?php $terms = get_terms(
+      $taxonomy,
+      [
+      'hide_empty' => false,
+      'parent' => 0,
+      'orderby' => 'id',
+      'order' => 'DESC',
+      ]
   );?>
  
   <ul class = "c-term__list">
     
     <li class = "c-term__list__item u-current">
-      <a href = "<?php echo esc_url (get_post_type_archive_link('property')); ?>">
+      <a href = "<?php echo esc_url(get_post_type_archive_link('property')); ?>">
         すべて
       </a>
     </li>
   
-    <?php if ($terms && !is_wp_error($terms)): ?>
-    <?php foreach($terms as $term):?>
+    <?php if ($terms && !is_wp_error($terms)) : ?>
+      <?php foreach ($terms as $term) :?>
       <li class = "c-term__list__item">
-        <a href = "<?php echo esc_url (get_term_link($term)); ?>">
+        <a href = "<?php echo esc_url(get_term_link($term)); ?>">
           <?php echo esc_html($term->name); ?>
         </a>
       </li>
-    <?php endforeach;?>
+      <?php endforeach;?>
     <?php endif; ?>
   </ul>
 
-  <?php $areaTags = get_terms($tag, 
-        [
+  <?php $areaTags = get_terms(
+      $tag,
+      [
         'hide_empty' => false,
-        'parent' =>0,
-        'orderby'=>'id',
-        'order'=>'ASC',
+        'parent' => 0,
+        'orderby' => 'id',
+        'order' => 'ASC',
         ]
-      );?>
+  );?>
 
     <ul class = "c-tag__list l-content--large">
 
@@ -58,15 +62,15 @@ get_header();
       </li>
       
       
-      <?php if ($areaTags && !is_wp_error($areaTags)): ?>
-      <?php foreach($areaTags as $areaTag):?>
-        <?php $areaSlug = $areaTag->slug ;?>
+      <?php if ($areaTags && !is_wp_error($areaTags)) : ?>
+        <?php foreach ($areaTags as $areaTag) :?>
+          <?php $areaSlug = $areaTag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(get_term_link($areaSlug,$tag)); ?>" class = "js-tab c-tag__list__link">
+          <a href = "<?php echo esc_url(get_term_link($areaSlug, $tag)); ?>" class = "js-tab c-tag__list__link">
             <?php echo esc_html($areaTag->name); ?>
           </a>
         </li>
-      <?php endforeach;?>
+        <?php endforeach;?>
       <?php endif; ?>
     </ul>
 
@@ -76,21 +80,22 @@ get_header();
       $property = array(
       'post_type' => 'property',
       'posts_per_page' => 7,
-      'paged'=>$paged,
+      'paged' => $paged,
       'orderby' => 'menu_order',
       'order' => 'ASC',
-    );?>
+      );?>
     <?php $propertyLoop = new WP_Query($property);?>
-    <?php if ($propertyLoop->have_posts()): ?>
+    <?php if ($propertyLoop->have_posts()) : ?>
       <ul class = "c-cardList c-cardList--lead">
-        <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post();?>
+        <?php while ($propertyLoop->have_posts()) :
+          $propertyLoop->the_post();?>
           <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($propertyLoop->max_num_pages > 1):?>
+    <?php if ($propertyLoop->max_num_pages > 1) :?>
       <div class = "u-mb50">
         <?php wazeka_query_pagination($propertyLoop); ?>
       </div>

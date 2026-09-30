@@ -1,5 +1,7 @@
 <?php
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-top">
@@ -195,7 +197,8 @@ get_header();
     <?php $worksLoop = new WP_Query($works); ?>
     <?php if ($worksLoop->have_posts()) : ?>
       <ul class="c-cardList c-cardList--lead u-mb50">
-        <?php while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
+        <?php while ($worksLoop->have_posts()) :
+          $worksLoop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile; ?>
       </ul>
@@ -216,7 +219,8 @@ get_header();
     <?php $staffLoop = new WP_Query($args); ?>
     <ul class="p-top__staff__list js-staffSlider">
       <?php if ($staffLoop->have_posts()) : ?>
-        <?php while ($staffLoop->have_posts()) : $staffLoop->the_post(); ?>
+        <?php while ($staffLoop->have_posts()) :
+          $staffLoop->the_post(); ?>
           <li class="p-top__staff__item">
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field('staff-img'); ?>
@@ -225,7 +229,7 @@ get_header();
               <?php endif; ?>
             </a>
           </li>
-      <?php endwhile;
+        <?php endwhile;
       endif;
       wp_reset_postdata(); ?>
     </ul>
@@ -257,7 +261,8 @@ get_header();
     <?php $staffLoop = new WP_Query($args); ?>
     <ul class="p-top__staff__list js-staffSlider--reverse" dir="rtl">
       <?php if ($staffLoop->have_posts()) : ?>
-        <?php while ($staffLoop->have_posts()) : $staffLoop->the_post(); ?>
+        <?php while ($staffLoop->have_posts()) :
+          $staffLoop->the_post(); ?>
           <li class="p-top__staff__item">
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field('staff-img'); ?>
@@ -266,7 +271,7 @@ get_header();
               <?php endif; ?>
             </a>
           </li>
-      <?php endwhile;
+        <?php endwhile;
       endif;
       wp_reset_postdata(); ?>
     </ul>
@@ -294,7 +299,8 @@ get_header();
     <?php $propertyLoop = new WP_Query($property); ?>
     <?php if ($propertyLoop->have_posts()) : ?>
       <ul class="c-cardList c-cardList--lead">
-        <?php while ($propertyLoop->have_posts()) : $propertyLoop->the_post(); ?>
+        <?php while ($propertyLoop->have_posts()) :
+          $propertyLoop->the_post(); ?>
           <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile; ?>
       </ul>

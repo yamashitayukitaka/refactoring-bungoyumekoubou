@@ -1,5 +1,7 @@
 <?php
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <?php $postType = 'staff'; ?>
@@ -25,8 +27,8 @@ get_header();
   ]);
   ?>
   <?php if ($terms && !is_wp_error($terms)) : ?>
-  <?php foreach ($terms as $term) : ?>
-    <?php $slug = $term->slug; ?>
+    <?php foreach ($terms as $term) : ?>
+      <?php $slug = $term->slug; ?>
     <section>
       <h3 class="c-title--section u-mb30">
         <?php echo esc_html($term->name); ?>
@@ -49,7 +51,8 @@ get_header();
         $staffLoop = new WP_Query($staff);
         ?>
         <?php if ($staffLoop->have_posts()) : ?>
-          <?php while ($staffLoop->have_posts()) : $staffLoop->the_post(); ?>
+          <?php while ($staffLoop->have_posts()) :
+            $staffLoop->the_post(); ?>
             <li class="p-staff__list__item">
               <a href="<?php the_permalink(); ?>">
                 <figure class="p-staff__img__wrap">
@@ -68,7 +71,7 @@ get_header();
         wp_reset_postdata(); ?>
         </div>
     </section>
-  <?php endforeach; ?>
+    <?php endforeach; ?>
   <?php endif; ?>
 
   <?php get_template_part('template-parts/common'); ?>

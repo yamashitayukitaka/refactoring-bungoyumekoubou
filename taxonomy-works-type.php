@@ -1,8 +1,10 @@
-<?php 
-if ( ! defined( 'ABSPATH' ) ) exit;
+<?php
+if (! defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
-  <?php 
+  <?php
     $taxonomy = 'works-type';
     $mainQueryTerm = get_queried_object();
     $mainQueryTermName = $mainQueryTerm -> name;
@@ -16,54 +18,57 @@ get_header();
     施工事例
   </h2>
 
-   <?php $terms = get_terms($taxonomy, 
-      [
-      'hide_empty' => false,
-      'parent' =>0,
-      'orderby'=>'id',
-      'order'=>'DESC',
-      ]
-    );?>
+   <?php $terms = get_terms(
+       $taxonomy,
+       [
+       'hide_empty' => false,
+       'parent' => 0,
+       'orderby' => 'id',
+       'order' => 'DESC',
+       ]
+   );?>
   
     <ul class = "c-term__list">
       <li class = "c-term__list__item">
-        <a href = "<?php echo esc_url (get_post_type_archive_link('works')); ?>">
+        <a href = "<?php echo esc_url(get_post_type_archive_link('works')); ?>">
           すべて
         </a>
       </li>
-      <?php if ($terms && !is_wp_error($terms)): ?>
-      <?php foreach($terms as $term):?>
-        <?php $termName = $term -> name;?>
-        <li class = "c-term__list__item <?php if($mainQueryTermName === $termName):?> u-current <?php endif; ?>">
-          <a href = "<?php echo esc_url (get_term_link($term)); ?>">
+      <?php if ($terms && !is_wp_error($terms)) : ?>
+        <?php foreach ($terms as $term) :?>
+          <?php $termName = $term -> name;?>
+        <li class = "c-term__list__item <?php if ($mainQueryTermName === $termName) :
+          ?> u-current <?php
+                                        endif; ?>">
+          <a href = "<?php echo esc_url(get_term_link($term)); ?>">
             <?php echo esc_html($term->name); ?>
           </a>
         </li>
-      <?php endforeach;?>
+        <?php endforeach;?>
       <?php endif; ?>
     </ul>
     
-    <?php $worksTags = get_terms($tag, 
+    <?php $worksTags = get_terms(
+        $tag,
         [
         'hide_empty' => false,
-        'parent' =>0,
-        'orderby'=>'id',
-        'order'=>'ASC',
+        'parent' => 0,
+        'orderby' => 'id',
+        'order' => 'ASC',
         ]
-      );?>
+    );?>
 
-    <?php if($worksTags && !is_wp_error($worksTags)):?>
-
+    <?php if ($worksTags && !is_wp_error($worksTags)) :?>
       <ul class = "c-tag__list l-content--large">
         
         <li class = "c-tag__list__item">
           <a href = "<?php echo esc_url(home_url('works-type/' . $mainQueryTermSlug)); ?>" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
         </li>
         
-        <?php foreach($worksTags as $worksTag):?>
+        <?php foreach ($worksTags as $worksTag) :?>
           <?php $worksSlug = $worksTag->slug ;?>
           <li class = "c-tag__list__item">
-            <a href = "<?php echo esc_url(add_query_arg('works_type', $mainQueryTermSlug, get_term_link($worksSlug,$tag))); ?>" class = "js-tab c-tag__list__link">
+            <a href = "<?php echo esc_url(add_query_arg('works_type', $mainQueryTermSlug, get_term_link($worksSlug, $tag))); ?>" class = "js-tab c-tag__list__link">
               <?php echo esc_html($worksTag->name); ?>
             </a>
           </li>
@@ -77,8 +82,8 @@ get_header();
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       $works = array(
       'post_type' => 'works',
-      'posts_per_page' =>6,
-      'paged'=>$paged,
+      'posts_per_page' => 6,
+      'paged' => $paged,
       'orderby' => 'menu_order',
       'order' => 'ASC',
       'tax_query' => array(
@@ -88,19 +93,20 @@ get_header();
         'terms' => $mainQueryTermSlug,
         ),
       ),
-    );?>
+      );?>
       
     <?php $worksLoop = new WP_Query($works);?>
-    <?php if ($worksLoop->have_posts()): ?>
+    <?php if ($worksLoop->have_posts()) : ?>
       <ul class = "c-cardList js-allswitch">
-        <?php while ($worksLoop->have_posts()) : $worksLoop->the_post();?>
+        <?php while ($worksLoop->have_posts()) :
+          $worksLoop->the_post();?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($worksLoop->max_num_pages > 1):?>
+    <?php if ($worksLoop->max_num_pages > 1) :?>
       <div class = "u-mb50">
         <?php wazeka_query_pagination($worksLoop); ?>
       </div>

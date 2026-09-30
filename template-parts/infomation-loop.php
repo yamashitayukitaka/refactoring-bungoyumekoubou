@@ -10,7 +10,7 @@ if ($infomations) {
   }
 }
 ?>
-<?php if($hasInfomation):?>
+<?php if ($hasInfomation) :?>
 <section class = "p-property__infomation u-mb100">
   <div class = "l-content">
     <h3 class = "c-title--sectionEn">
@@ -20,7 +20,7 @@ if ($infomations) {
       周辺情報
     </p>
     <ul class = "p-property__infomation__list u-mb50">
-        <?php for ($i = 0; $i < count($infomations); $i++): ?>
+        <?php for ($i = 0; $i < count($infomations); $i++) : ?>
           <?php $infomation = $infomations[$i]; ?>
           <?php if (!empty($infomation['img']) || !empty($infomation['txt']) || !empty($infomation['value'])) : ?>
           <li class = "p-property__infomation__item">
@@ -42,7 +42,7 @@ if ($infomations) {
     </ul>
     
     
-      <?php for ($i = 0; $i < count($infomations); $i++): ?>
+      <?php for ($i = 0; $i < count($infomations); $i++) : ?>
         <?php $infomation = $infomations[$i]; ?>
         <?php if (!empty($infomation['txt']) || !empty($infomation['value'])) : ?>
         <dl class = "p-property__infomation__dl">
@@ -54,7 +54,7 @@ if ($infomations) {
           <?php endif; ?>
         </dl>
         <?php endif; ?>
-        <?php endfor; ?>
+      <?php endfor; ?>
   </div>
 </section>
 <?php endif; ?>

@@ -15,15 +15,16 @@
       $works = array(
       'post_type' => 'works',
       'posts_per_page' => 3,
-      'paged'=>$paged,
+      'paged' => $paged,
       'order' => 'DESC',
-      'orderby'=>'date',
-    );?>
+      'orderby' => 'date',
+      );?>
 
     <?php $worksLoop = new WP_Query($works);?>
-    <?php if ($worksLoop->have_posts()): ?>
+    <?php if ($worksLoop->have_posts()) : ?>
       <ul class = "c-cardList js-allswitch">
-        <?php while ($worksLoop->have_posts()) : $worksLoop->the_post();?>
+        <?php while ($worksLoop->have_posts()) :
+          $worksLoop->the_post();?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>
       </ul>
@@ -31,7 +32,7 @@
     wp_reset_postdata();?>
 
   <div class = "u-center">
-    <a href = "<?php echo esc_url (home_url('works') ); ?>" class = "c-button--outline">施工事例一覧へ</a>
+    <a href = "<?php echo esc_url(home_url('works')); ?>" class = "c-button--outline">施工事例一覧へ</a>
   </div>
 
 </section>
@@ -61,20 +62,21 @@
 <?php
   $event = array(
   'post_type' => 'xo_event',
-  'posts_per_page' =>3,
+  'posts_per_page' => 3,
   'order' => 'DESC',
-  'orderby'=>'date',
-);?>
+  'orderby' => 'date',
+  );?>
 <?php $eventLoop = new WP_Query($event);?>
-<?php if ($eventLoop->have_posts()): ?>
+<?php if ($eventLoop->have_posts()) : ?>
   <ul class = "c-cardList u-mb50">
-    <?php while ($eventLoop->have_posts()) : $eventLoop->the_post();?>
+    <?php while ($eventLoop->have_posts()) :
+      $eventLoop->the_post();?>
       <?php get_template_part('template-parts/event-loop'); ?>
     <?php endwhile;
-    endif;
+endif;
     wp_reset_postdata();?>
   </ul>
   <div class = "u-center">
-    <a href = "<?php echo esc_url (home_url('xo_event') ); ?>" class = "c-button--outline">イベント一覧へ</a>
+    <a href = "<?php echo esc_url(home_url('xo_event')); ?>" class = "c-button--outline">イベント一覧へ</a>
   </div>
 </section>

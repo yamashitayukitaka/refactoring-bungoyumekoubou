@@ -1,6 +1,8 @@
 <?php
 // Template Name: faq
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-faq">
@@ -38,14 +40,14 @@ get_header();
   <?php
   $qas = get_field('faq_questions_answers');
   if ($qas) :
-  ?>
+    ?>
     <section class="p-faq__list">
       <ul class="c-accordion">
         <?php foreach ($qas as $i => $qa) :
           if (empty($qa['question']) || empty($qa['answer'])) {
             continue;
           }
-        ?>
+          ?>
           <li class="c-accordion__item">
             <button type="button" class="c-accordion__trigger js-accordion">
               <span class="c-accordion__number">

@@ -1,5 +1,7 @@
-<?php 
-if ( ! defined( 'ABSPATH' ) ) exit;
+<?php
+if (! defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 
@@ -14,7 +16,7 @@ get_header();
       <br><span class = "u-orange--mv">スタッフたち</span>
     </h2>
   </div>
-  <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url (get_template_directory_uri() ); ?>/dist/img/common/page.webp');"></figure>
+  <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/page.webp');"></figure>
 </div>
 <section class = "l-content p-staff__production">
   <div class = "p-staff__production__content">
@@ -26,10 +28,10 @@ get_header();
         <?php endif; ?>
       </figure>
 
-      <?php if ($terms && !is_wp_error($terms)): ?>
-      <?php foreach($terms as $term):?>
+      <?php if ($terms && !is_wp_error($terms)) : ?>
+        <?php foreach ($terms as $term) :?>
         <div class = "c-id"><?php echo esc_html($term->name); ?></div>
-      <?php endforeach;?>
+        <?php endforeach;?>
       <?php endif; ?>
 
       <dl class = "u-flex">
@@ -41,7 +43,7 @@ get_header();
       </dl>
 
       <?php $lisence = get_field('lisence'); ?>
-      <?php if($lisence): ?>
+      <?php if ($lisence) : ?>
         <dl class = "u-flex">
           <dt class = "p-staff__production__dt">資格&nbsp;&nbsp;</dt>
           <dd class = "p-staff__production__dt"><?php echo esc_html($lisence); ?></dd>
@@ -50,7 +52,7 @@ get_header();
     </div>
 
     <?php $self_introduction_img = get_field('self-introduction-img'); ?>
-    <?php if($self_introduction_img): ?>
+    <?php if ($self_introduction_img) : ?>
       <figure class = "p-staff__production__desc">
         <img src="<?php echo esc_url($self_introduction_img); ?>" alt="自己紹介画像" class ="p-staff__production__descImg">
       </figure>
@@ -63,29 +65,29 @@ get_header();
 </section>
 
 <?php $myBest = get_field('my-best'); ?>
-<?php if($myBest && (!empty($myBest['my-best-ttl']) || !empty($myBest['my-best-1']) || !empty($myBest['my-best-2']) || !empty($myBest['my-best-3']))):?>
+<?php if ($myBest && (!empty($myBest['my-best-ttl']) || !empty($myBest['my-best-1']) || !empty($myBest['my-best-2']) || !empty($myBest['my-best-3']))) :?>
   <section class = "p-staff__myBest">
     <div class = "p-staff__myBest__ttlWrap">
       <p class = "p-staff__myBest__txt">あなたのマイベスト3を教えて</p>
       <h3 class = "p-staff__myBest__ttl">MyBest&nbsp;<span class = "u-orange--mv">3</span></h3>
-      <?php if (!empty($myBest['my-best-ttl'])):?>
+      <?php if (!empty($myBest['my-best-ttl'])) :?>
       <p class = "p-staff__myBest__txt"><?php echo esc_html($myBest['my-best-ttl']);?></p>
       <?php endif; ?>
     </div>
     <ul class = "p-staff__myBest__list">
-      <?php if (!empty($myBest['my-best-1'])):?>
+      <?php if (!empty($myBest['my-best-1'])) :?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">1</span></h4>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-1']);?></p>
       </li>
       <?php endif; ?>
-      <?php if (!empty($myBest['my-best-2'])):?>
+      <?php if (!empty($myBest['my-best-2'])) :?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">2</span></h4>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-2']);?></p>
       </li>
       <?php endif; ?>
-      <?php if (!empty($myBest['my-best-3'])):?>
+      <?php if (!empty($myBest['my-best-3'])) :?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">3</span></h4>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-3']);?></p>
@@ -106,27 +108,27 @@ if ($questions) {
   }
 }
 ?>
-<?php if ($hasQuestion): ?>
+<?php if ($hasQuestion) : ?>
 <section class = "p-staff__question l-content--middle">
-      <?php foreach ( $questions as $question ) :?>
+      <?php foreach ($questions as $question) :?>
         <?php if (empty($question['question-ttl']) && empty($question['question-img']) && empty($question['question-answer'])) {
           continue;
         } ?>
         <div class = "p-staff__question__content">
           <div class = "p-staff__question__ttlWrap">
             <p>
-              <?php if (!empty($question['question-ttl'])):?>
+              <?php if (!empty($question['question-ttl'])) :?>
               <span class = "marker p-staff__question__ttl--another"><?php echo esc_html($question['question-ttl']);?></span>
               <?php endif; ?>
             </p>
           </div>
           <div class = "p-staff__question__right">
-            <?php if (!empty($question['question-img'])):?>
+            <?php if (!empty($question['question-img'])) :?>
               <figure class = "p-staff__question__imgWrap">
                 <img src = "<?php echo esc_url($question['question-img']);?>"class = "p-staff__question__img" alt = "質問画像">
               </figure>
             <?php endif; ?>
-            <?php if (!empty($question['question-answer'])):?>
+            <?php if (!empty($question['question-answer'])) :?>
             <p class = "p-staff__question__txt">
               <?php echo wp_kses_post($question['question-answer']);?>
             </p>
@@ -158,8 +160,9 @@ if ($questions) {
     'post__not_in' => array($post_id),
     );?>
     <?php $staffLoop = new WP_Query($args);?>
-    <?php if ($staffLoop ->have_posts()): ?>
-      <?php while ($staffLoop ->have_posts()) : $staffLoop ->the_post();?>
+    <?php if ($staffLoop ->have_posts()) : ?>
+      <?php while ($staffLoop ->have_posts()) :
+        $staffLoop ->the_post();?>
         <li class ="c-cardList__item">
           <a href = "<?php the_permalink(); ?>">
             <figure class = "c-cardList__imgWrap">
@@ -168,17 +171,19 @@ if ($questions) {
               <img src="<?php echo esc_url($staff_img); ?>" alt="スタッフイメージ" class ="p-staff__img">
               <?php endif; ?>
             </figure>
-            <?php $Tags = get_the_terms(get_the_ID(),'department',
+            <?php $Tags = get_the_terms(
+                get_the_ID(),
+                'department',
                 [
                   'hide_empty' => false,
-                  'parent' =>0,
-                  'orderby'=>'id',
-                  'order'=>'ASC',
+                  'parent' => 0,
+                  'orderby' => 'id',
+                  'order' => 'ASC',
                 ]
             );?>
 
-            <?php if($Tags && !is_wp_error($Tags)):?>
-              <?php foreach($Tags as $Tag):?>
+            <?php if ($Tags && !is_wp_error($Tags)) :?>
+              <?php foreach ($Tags as $Tag) :?>
                 <span class = "c-id"><?php echo esc_html($Tag->name); ?></span>
                 <p><?php the_title(); ?></p>
               <?php endforeach;?>

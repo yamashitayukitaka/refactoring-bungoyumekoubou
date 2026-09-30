@@ -1,5 +1,7 @@
 <?php
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main>
@@ -21,7 +23,8 @@ get_header();
   <section class="l-content--middle u-mb100">
     <?php if (have_posts()) : ?>
       <?php if (is_singular()) : ?>
-        <?php while (have_posts()) : the_post(); ?>
+        <?php while (have_posts()) :
+          the_post(); ?>
           <?php if (has_post_thumbnail()) : ?>
             <figure class="c-thumbnail u-mb50">
               <?php the_post_thumbnail(); ?>
@@ -31,7 +34,8 @@ get_header();
         <?php endwhile; ?>
       <?php else : ?>
         <ul class="p-blog__list u-flex l-content">
-          <?php while (have_posts()) : the_post(); ?>
+          <?php while (have_posts()) :
+            the_post(); ?>
             <li class="p-blog__list__item">
               <a href="<?php echo esc_url(get_permalink()); ?>">
                 <?php if (has_post_thumbnail()) : ?>

@@ -1,5 +1,7 @@
-<?php 
-if ( ! defined( 'ABSPATH' ) ) exit;
+<?php
+if (! defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 
@@ -22,9 +24,9 @@ get_header();
       </figure>
     <?php endif; ?>
 
-    <?php if(have_posts() ): ?>
+    <?php if (have_posts()) : ?>
       <?php
-      while(have_posts() ):
+      while (have_posts()) :
         the_post();
         ?>
 
@@ -33,23 +35,24 @@ get_header();
       <?php endwhile; ?>
     <?php endif; ?>
 
-    <?php if( have_rows('contents') ): ?>
-      <?php while ( have_rows('contents') ) : the_row(); ?>
-        <?php if( get_row_layout() == 'img-column' ): ?>
+    <?php if (have_rows('contents')) : ?>
+      <?php while (have_rows('contents')) :
+        the_row(); ?>
+        <?php if (get_row_layout() == 'img-column') : ?>
           <?php $img = get_sub_field('img'); ?>
           <?php if ($img) : ?>
           <div class = "p-flex__one__imgWrap u-mb50">
             <img src = "<?php echo esc_url($img);?>">
           </div>
           <?php endif; ?>
-        <?php elseif( get_row_layout() == 'ttl-column' ): ?>
+        <?php elseif (get_row_layout() == 'ttl-column') : ?>
           <?php $ttl = get_sub_field('ttl'); ?>
           <?php if ($ttl) : ?>
           <h4 class = "c-title--middle u-mb50">
             <?php echo esc_html($ttl); ?>
           </h4>
           <?php endif; ?>
-        <?php elseif( get_row_layout() == 'txt-column' ): ?>
+        <?php elseif (get_row_layout() == 'txt-column') : ?>
           <?php $txt = get_sub_field('txt'); ?>
           <?php if ($txt) : ?>
           <p class = "u-mb50">

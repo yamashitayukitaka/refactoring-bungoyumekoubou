@@ -1,6 +1,8 @@
 <?php
 // Template Name: recruit
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main>
@@ -485,7 +487,7 @@ get_header();
             if (empty($row['recruit-app-title']) && empty($row['recruit-app-content'])) {
               continue;
             }
-          ?>
+            ?>
             <tr class="c-table__tr">
               <th class="c-table__th">
                 <?php if (!empty($row['recruit-app-title'])) : ?>

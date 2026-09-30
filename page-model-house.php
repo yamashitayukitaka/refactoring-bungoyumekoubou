@@ -1,6 +1,8 @@
 <?php
 // Template Name: model-house
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-modelHouse">
@@ -130,7 +132,6 @@ get_header();
     }
     ?>
     <?php if ($hasGalleryB) : ?>
-
       <section class="p-modelHouse__overview__gallery u-mb100">
         <h3 class="c-title--sectionEn">
           GALLERY
@@ -224,7 +225,6 @@ get_header();
     }
     ?>
     <?php if ($hasGalleryC) : ?>
-
       <section class="p-modelHouse__overview__gallery u-mb100">
         <h3 class="c-title--sectionEn">
           GALLERY
@@ -306,10 +306,11 @@ get_header();
     <?php $eventLoop = new WP_Query($event); ?>
     <?php if ($eventLoop->have_posts()) : ?>
       <ul class="c-cardList u-mb50">
-        <?php while ($eventLoop->have_posts()) : $eventLoop->the_post(); ?>
+        <?php while ($eventLoop->have_posts()) :
+          $eventLoop->the_post(); ?>
           <?php get_template_part('template-parts/event-loop'); ?>
-      <?php endwhile;
-      endif;
+        <?php endwhile;
+    endif;
       wp_reset_postdata(); ?>
       </ul>
       <div class="u-center">

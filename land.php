@@ -3,7 +3,9 @@
 // Template Name: 土地情報
 // Template Post Type: property
 
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 
@@ -39,7 +41,6 @@ get_header();
 
     <?php $topInfo = get_field('top-info'); ?>
     <?php if ($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']) || !empty($topInfo['copy']) || !empty($topInfo['price']))) : ?>
-
     <div class="p-property__dl__flex">
       <div class="p-property__dl__wrap">
 
@@ -57,17 +58,17 @@ get_header();
         <?php endif; ?>
       </div>
     </div>
-    <?php if (!empty($topInfo['copy'])) : ?>
+      <?php if (!empty($topInfo['copy'])) : ?>
       <p class="p-property__copy u-center u-mb50">
         <?php echo esc_html($topInfo['copy']); ?>
       </p>
-    <?php endif; ?>
+      <?php endif; ?>
 
-    <?php if (!empty($topInfo['price'])) : ?>
+      <?php if (!empty($topInfo['price'])) : ?>
       <div class="p-property__price">
         <span class="p-property__price__num"><?php echo esc_html($topInfo['price']); ?></span><span class="p-property__price__unit"></span>
       </div>
-    <?php endif; ?>
+      <?php endif; ?>
     <?php endif; ?>
 
   </section>

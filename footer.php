@@ -96,7 +96,7 @@
 
 
       <?php
-      if ( ! ( is_singular('xo_event') || is_post_type_archive('xo_event') ) ) {?>
+      if (! ( is_singular('xo_event') || is_post_type_archive('xo_event') )) {?>
         <a href="#" class="l-footer__goTop__link js-goToTop">ページトップへもどる</a>
       <?php }?>
 
@@ -172,12 +172,12 @@
       </section>
     </footer>
     <?php wp_footer(); ?>
-    <?php if(is_front_page() ): ?>
+    <?php if (is_front_page()) : ?>
       <!-- WINKMARK LP INDEX 2 start-->
       <script type="text/javascript" src="https://bungoyumekoubou.winksys.jp/event/event_top_js.php"></script>
       <!-- WINKMARK LP INDEX 2 end-->
     <?php endif; ?>
-    <?php if(is_post_type_archive(array('xo_event')) ): ?>
+    <?php if (is_post_type_archive(array('xo_event'))) : ?>
       <!-- WINKMARK LP INDEX 2 start-->
       <script type="text/javascript" src="https://bungoyumekoubou.winksys.jp/event/eventpage_js.php"></script>
       <!-- WINKMARK LP INDEX 2 end-->
