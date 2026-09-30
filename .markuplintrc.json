@@ -1,0 +1,10 @@
+{
+  "parser": {
+    ".php$": "@markuplint/php-parser"
+  },
+  "rules": {
+    "heading-levels": true,
+    "id-duplication": true,
+    "class-naming": "/^[a-z][a-zA-Z0-9]*(-[a-zA-Z0-9]+)*(__[a-zA-Z0-9]+)*(--[a-zA-Z0-9]+)*$/"
+  }
+}
