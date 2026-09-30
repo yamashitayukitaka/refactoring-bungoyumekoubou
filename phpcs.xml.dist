@@ -7,5 +7,11 @@
   <exclude-pattern>dist/*</exclude-pattern>
   <rule ref="PSR12">
     <exclude name="Generic.Files.LineLength"/>
+    <exclude name="Generic.Files.LineEndings"/>
+  </rule>
+  <rule ref="Generic.WhiteSpace.ScopeIndent">
+    <properties>
+      <property name="indent" value="2"/>
+    </properties>
   </rule>
 </ruleset>
