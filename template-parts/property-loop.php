@@ -5,60 +5,64 @@
     </figure>
     <div class = "c-cardList__txtWrap">
 
-      <?php $terms = get_the_terms(get_the_ID(),'property-category',
-        [
+      <?php $terms = get_the_terms(
+          get_the_ID(),
+          'property-category',
+          [
           'hide_empty' => false,
-          'parent' =>0,
-          'orderby'=>'id',
-          'order'=>'ASC',
-        ]
+          'parent' => 0,
+          'orderby' => 'id',
+          'order' => 'ASC',
+          ]
       );?>
 
       <?php $property_category = get_field('property-category'); ?>
-      <?php if($property_category && $terms && !is_wp_error($terms)): ?>
-        <?php foreach($terms as $term):?>
+      <?php if ($property_category && $terms && !is_wp_error($terms)) : ?>
+        <?php foreach ($terms as $term) :?>
           <span class = "c-id u-mb8"><?php echo esc_html($term->name); ?></span>
         <?php endforeach;?>
       <?php endif; ?>
 
-      <?php $tags = get_the_terms(get_the_ID(),'property-area',
-        [
+      <?php $tags = get_the_terms(
+          get_the_ID(),
+          'property-area',
+          [
           'hide_empty' => false,
-          'parent' =>0,
-          'orderby'=>'id',
-          'order'=>'ASC',
-        ]
+          'parent' => 0,
+          'orderby' => 'id',
+          'order' => 'ASC',
+          ]
       );?>
 
       <?php $property_area = get_field('property-area'); ?>
-      <?php if($property_area && $tags && !is_wp_error($tags)): ?>
-        <?php foreach($tags as $tag):?>
+      <?php if ($property_area && $tags && !is_wp_error($tags)) : ?>
+        <?php foreach ($tags as $tag) :?>
           <div><span class = "c-cardList__tag"><?php echo esc_html($tag->name); ?></span></div>
         <?php endforeach;?>
       <?php endif; ?>
       <p class = "c-cardList__ttl">
         <?php the_title(); ?>
       </p>
-      <?php 
+      <?php
         $topInfo = get_field('top-info');
-        if($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']))):
-      ?>
-        <?php if (!empty($topInfo['area'])): ?>
+      if ($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']))) :
+        ?>
+        <?php if (!empty($topInfo['area'])) : ?>
         <p class = "c-cardList__txt">土地面積：<?php echo esc_html($topInfo['area']);?></p>
         <?php endif; ?>
-        <?php if (!empty($topInfo['school'])): ?>
+        <?php if (!empty($topInfo['school'])) : ?>
         <p class = "c-cardList__txt">校区：<?php echo esc_html($topInfo['school']);?></p>
         <?php endif; ?>
       <?php endif; ?>
 
-      <?php 
+      <?php
         $topInfoUsed = get_field('top-info-used');
-        if($topInfoUsed && (!empty($topInfoUsed['floor']) || !empty($topInfoUsed['school']))):
-      ?>
-        <?php if (!empty($topInfoUsed['floor'])): ?>
+      if ($topInfoUsed && (!empty($topInfoUsed['floor']) || !empty($topInfoUsed['school']))) :
+        ?>
+        <?php if (!empty($topInfoUsed['floor'])) : ?>
         <p class = "c-cardList__txt">間取り：<?php echo esc_html($topInfoUsed['floor']);?></p>
         <?php endif; ?>
-        <?php if (!empty($topInfoUsed['school'])): ?>
+        <?php if (!empty($topInfoUsed['school'])) : ?>
         <p class = "c-cardList__txt">校区：<?php echo esc_html($topInfoUsed['school']);?></p>
         <?php endif; ?>
       <?php endif; ?>

@@ -1,6 +1,8 @@
 <?php
 // Template Name: rireve
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-rireve">
@@ -525,7 +527,8 @@ get_header();
       <p class="c-title--large">RIREVEの施工事例をみる</p>
       <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
       <ul class="c-cardList u-mb100">
-        <?php while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
+        <?php while ($worksLoop->have_posts()) :
+          $worksLoop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile; ?>
       </ul>
@@ -534,7 +537,7 @@ get_header();
         <a class="c-button--outline" href="<?php echo esc_url(home_url('/')); ?>works-type/rireve">一覧を見る</a>
       </div>
     </section>
-  <?php
+    <?php
   endif;
   wp_reset_postdata();
   ?>

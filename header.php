@@ -81,7 +81,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KR6HSXJ5" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-	
+    
   <header id="js-measure" class="l-header">
 
     <div class="l-header__content">
@@ -132,7 +132,7 @@
           </nav>
         </div>
 
-        <?php if ( is_singular('xo_event') ) :?>
+        <?php if (is_singular('xo_event')) :?>
           <style>
             @media all and (max-width: 1200px) {
               .c-navigation--cta{

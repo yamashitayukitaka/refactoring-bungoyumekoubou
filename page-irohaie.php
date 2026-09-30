@@ -1,6 +1,8 @@
 <?php
 // Template Name: irohaie
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-irohaie">
@@ -301,7 +303,7 @@ get_header();
             if (empty($quality['img']) && empty($quality['title']) && empty($quality['txt'])) {
               continue;
             }
-          ?>
+            ?>
             <div class="p-irohaie__quality__item">
               <?php if (!empty($quality['img'])) : ?>
                 <div class="p-irohaie__quality__media">
@@ -320,7 +322,7 @@ get_header();
                 <?php endif; ?>
               </div>
             </div>
-          <?php
+            <?php
           endforeach;
           ?>
         </div>
@@ -365,9 +367,10 @@ get_header();
 
     <ul class="c-cardList u-mb100">
       <?php if ($worksLoop->have_posts()) :
-        while ($worksLoop->have_posts()) : $worksLoop->the_post(); ?>
+        while ($worksLoop->have_posts()) :
+          $worksLoop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
-      <?php endwhile;
+        <?php endwhile;
       endif;
       wp_reset_postdata(); ?>
     </ul>

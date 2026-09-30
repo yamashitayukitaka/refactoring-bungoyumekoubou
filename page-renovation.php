@@ -1,6 +1,8 @@
 <?php
 // Template Name: renovation
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-renovation">

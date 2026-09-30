@@ -1,5 +1,7 @@
 <?php
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class = "js-searchEnd">
@@ -16,22 +18,22 @@ get_header();
     <?php $event_type = get_field('event-type'); ?>
     <?php if ($event_type) : ?>
       <?php $eventTypes = get_the_terms(
-        get_the_ID(),
-        'event-type',
-        [
+          get_the_ID(),
+          'event-type',
+          [
           'hide_empty' => false,
           'parent' => 0,
           'orderby' => 'id',
           'order' => 'ASC',
-        ]
+          ]
       ); ?>
       <?php if ($eventTypes && !is_wp_error($eventTypes)) : ?>
-      <?php foreach ($eventTypes as $eventType) : ?>
+        <?php foreach ($eventTypes as $eventType) : ?>
         <div class="c-id__wrap--top">
           <span class="c-id"><?php echo esc_html($eventType->name); ?></span>
           <span class = "c-id--end">終了</span>
         </div>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
       <?php endif; ?>
     <?php endif; ?>
 
@@ -101,11 +103,13 @@ get_header();
     </p>
     <?php endif; ?>
     <?php if (have_rows('flex')) : ?>
-      <?php while (have_rows('flex')) : the_row(); ?>
+      <?php while (have_rows('flex')) :
+        the_row(); ?>
         <?php if (get_row_layout() == 'two-column') : ?>
           <div class="p-flex__two u-mb50">
             <?php if (have_rows('contents-1')) : ?>
-              <?php while (have_rows('contents-1')) : the_row(); ?>
+              <?php while (have_rows('contents-1')) :
+                the_row(); ?>
                 <div class="p-flex__two__content">
                   <?php $img = get_sub_field('img'); ?>
                   <?php $ttl = get_sub_field('ttl'); ?>
@@ -126,7 +130,8 @@ get_header();
             <?php endif; ?>
 
             <?php if (have_rows('contents-2')) : ?>
-              <?php while (have_rows('contents-2')) : the_row(); ?>
+              <?php while (have_rows('contents-2')) :
+                the_row(); ?>
                 <div class="p-flex__two__content">
                   <?php $img = get_sub_field('img'); ?>
                   <?php $ttl = get_sub_field('ttl'); ?>
@@ -149,7 +154,8 @@ get_header();
         <?php elseif (get_row_layout() == 'one-column') : ?>
           <div class="p-flex__one u-mb50">
             <?php if (have_rows('contents')) : ?>
-              <?php while (have_rows('contents')) : the_row(); ?>
+              <?php while (have_rows('contents')) :
+                the_row(); ?>
                 <div>
                   <?php $img = get_sub_field('img'); ?>
                   <?php $ttl = get_sub_field('ttl'); ?>
@@ -186,7 +192,6 @@ get_header();
               <p class="p-event__always">&nbsp;&nbsp;<?php echo esc_html('常時開催中'); ?></p>
             <?php endif; ?>
           <?php else : ?>
-
             <time class="js-DateOfPicture">
               <?php echo do_shortcode('[xo_event_field field="start_date"]'); ?>
             </time>

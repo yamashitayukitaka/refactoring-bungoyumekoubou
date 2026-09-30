@@ -1,6 +1,8 @@
 <?php
 // Template Name: design
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH')) {
+  exit;
+}
 get_header();
 ?>
 <main class="p-design">
@@ -108,7 +110,7 @@ get_header();
       $designs = get_field('designs');
       $design = ($designs && !empty($designs[0])) ? $designs[0] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']) || !empty($design['point_img_two']) || !empty($design['point_txt_two']))) :
-      ?>
+        ?>
         <div class="p-design__point__hero">
           <?php if (!empty($design['img'])) : ?>
             <div class="p-design__point__media p-design__point__media--right">
@@ -192,7 +194,7 @@ get_header();
       $designs = get_field('designs');
       $design = ($designs && !empty($designs[1])) ? $designs[1] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']))) :
-      ?>
+        ?>
         <div class="p-design__point__hero">
           <?php if (!empty($design['img'])) : ?>
             <div class="p-design__point__media">
@@ -251,7 +253,7 @@ get_header();
       $designs = get_field('designs');
       $design = ($designs && !empty($designs[2])) ? $designs[2] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']) || !empty($design['point_img_two']) || !empty($design['point_txt_two']))) :
-      ?>
+        ?>
         <div class="p-design__point__hero">
           <?php if (!empty($design['img'])) : ?>
             <div class="p-design__point__media p-design__point__media--right">
@@ -342,7 +344,7 @@ get_header();
       $designs = get_field('designs');
       $design = ($designs && !empty($designs[3])) ? $designs[3] : null;
       if ($design && (!empty($design['img']) || !empty($design['txt']) || !empty($design['point_img_one']) || !empty($design['point_txt_one']))) :
-      ?>
+        ?>
         <div class="p-design__point__hero">
           <?php if (!empty($design['img'])) : ?>
             <div class="p-design__point__media">

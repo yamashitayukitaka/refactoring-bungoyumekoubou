@@ -179,27 +179,35 @@
       if (empty($store['address']) && empty($store['postal_code']) && empty($store['building']) && empty($store['phone']) && empty($store['map']) && empty($store['detail'])) {
         continue;
       }
-    ?>
+      ?>
       <div class="p-location__content">
         <div class="p-location__inner l_content_large_t">
           <ul class="js-commonSlick p-location__list pc_tab">
             <?php if (!empty($store['detail'])) : ?>
-            <?php foreach ($store['detail'] as $item) : ?>
-              <?php if (!empty($item['detail_img'])) : ?>
+              <?php foreach ($store['detail'] as $item) : ?>
+                <?php if (!empty($item['detail_img'])) : ?>
                 <li class="p_location__list__item_t ">
                   <img src="<?php echo esc_url($item['detail_img']); ?>" class="p-location__list__img">
                 </li>
-              <?php endif; ?>
-            <?php endforeach; ?>
+                <?php endif; ?>
+              <?php endforeach; ?>
             <?php endif; ?>
           </ul>
 
           <div class="location_item_first_info">
             <div class="location_item_first_info_txt">
-              <?php if (!empty($store['address'])) : ?><span class="location_detail_info"><?php echo esc_html($store['address']); ?></span><?php endif; ?>
-              <?php if (!empty($store['postal_code'])) : ?><span class="location_detail_info"><?php echo esc_html($store['postal_code']); ?></span><?php endif; ?>
-              <?php if (!empty($store['building'])) : ?><span class="location_detail_info"><?php echo esc_html($store['building']); ?></span><?php endif; ?>
-              <?php if (!empty($store['phone'])) : ?><span class="location_detail_info"><?php echo esc_html($store['phone']); ?></span><?php endif; ?>
+              <?php if (!empty($store['address'])) :
+                ?><span class="location_detail_info"><?php echo esc_html($store['address']); ?></span><?php
+              endif; ?>
+              <?php if (!empty($store['postal_code'])) :
+                ?><span class="location_detail_info"><?php echo esc_html($store['postal_code']); ?></span><?php
+              endif; ?>
+              <?php if (!empty($store['building'])) :
+                ?><span class="location_detail_info"><?php echo esc_html($store['building']); ?></span><?php
+              endif; ?>
+              <?php if (!empty($store['phone'])) :
+                ?><span class="location_detail_info"><?php echo esc_html($store['phone']); ?></span><?php
+              endif; ?>
             </div>
             <?php if (!empty($store['map'])) : ?>
             <div class="location_item_first_map">
@@ -213,13 +221,13 @@
 
           <ul class="js-commonSlick p-location__list sp">
             <?php if (!empty($store['detail'])) : ?>
-            <?php foreach ($store['detail'] as $item) : ?>
-              <?php if (!empty($item['detail_img'])) : ?>
+              <?php foreach ($store['detail'] as $item) : ?>
+                <?php if (!empty($item['detail_img'])) : ?>
                 <li class="p_location__list__item_t ">
                   <img src="<?php echo esc_url($item['detail_img']); ?>" class="p-location__list__img">
                 </li>
-              <?php endif; ?>
-            <?php endforeach; ?>
+                <?php endif; ?>
+              <?php endforeach; ?>
             <?php endif; ?>
           </ul>
 
@@ -229,13 +237,13 @@
         <ul class="p-location__thumb__list l-content--large">
           <?php $count = 0; ?>
           <?php if (!empty($store['detail'])) : ?>
-          <?php foreach ($store['detail'] as $item) : ?>
-            <?php if (!empty($item['detail_img'])) : ?>
+            <?php foreach ($store['detail'] as $item) : ?>
+              <?php if (!empty($item['detail_img'])) : ?>
               <li class="p-location__thumb__item" data-slide="<?php echo esc_html($count++); ?>">
                 <img src="<?php echo esc_url($item['detail_img']); ?>" class="p-location__thumb__img">
               </li>
-            <?php endif; ?>
-          <?php endforeach; ?>
+              <?php endif; ?>
+            <?php endforeach; ?>
           <?php endif; ?>
         </ul>
 
