@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ruleset name="wazeka">
+  <description>テーマの PHP を PSR-12 で検査する</description>
+  <file>.</file>
+  <exclude-pattern>vendor/*</exclude-pattern>
+  <exclude-pattern>node_modules/*</exclude-pattern>
+  <exclude-pattern>dist/*</exclude-pattern>
+  <rule ref="PSR12"/>
+</ruleset>
