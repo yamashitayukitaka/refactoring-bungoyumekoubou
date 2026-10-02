@@ -5,7 +5,6 @@ if (!defined('ABSPATH')) {
 get_header();
 ?>
 <main class="p-top">
-  <!-- <div class="c-pageMv c_pageMv_t p-newYear__TemporaryChange__mb"> -->
   <div class="c-pageMv c_pageMv_t">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title">
@@ -17,7 +16,7 @@ get_header();
         <br>freedom in your future
       </p>
     </div>
-    <!-- <ul class="p-top__mv__appealList p-newYear__TemporaryChange"> -->
+  
     <ul class="p-top__mv__appealList">
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
@@ -49,18 +48,6 @@ get_header();
         <li class="c-pageMv__visual__item"></li>
       <?php endfor; ?>
     </ul>
-    <!-- <section class = "p-newYear">
-      <p class = "p-newYear__txt l-content--ratio">平素は格別のご愛顧を賜り、厚くお礼申し上げます。
-        <br>誠に勝手ながら、下記期間を年末年始休業期間とさせていただきます。
-        <br>【年末年始休業期間】
-        <br>2024年12月28日（土）～2025年1月3日（金）
-        <br>上記期間中に来場をご希望の方は、お問い合わせくださいますようお願いいたします。
-        <br>新年は1月4日（月）より営業開始となります。
-        <br>※TOSハウジングメッセ展示場は1月4日（月）12時よりOPENとなります。
-        <br>
-        <br>お客様にご満足いただけるサービスの提供をめざし、社員一同より一層努力して参りますので、何卒よろしくお願い申し上げます。
-      </p>
-    </section> -->
   </div>
 
   
@@ -159,7 +146,9 @@ get_header();
     </section>
   </a>
 
-  <?php get_template_part('template-parts/studio-part'); ?>
+  <div class="p-common">
+    <?php get_template_part('template-parts/bungo-yume-studio'); ?>
+  </div>
 
   <a href="<?php echo esc_url(home_url('catalog')); ?>">
     <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top01.webp');">

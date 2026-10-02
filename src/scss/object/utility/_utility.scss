@@ -15,39 +15,39 @@
 
   &--xl {
     @media screen and (width >=1201px) {
-      display: none;
+      display: none !important;
     }
   }
 
   // レガシーCSS由来（旧 .sp_tab: PCで非表示）
   &--tab {
     @media screen and (width >=1051px) {
-      display: none;
+      display: none !important;
     }
   }
 
   &--lg {
     @media screen and (width >=1026px) {
-      display: none;
+      display: none !important;
     }
   }
 
   &--md {
     @media screen and (width >=769px) {
-      display: none;
+      display: none !important;
     }
   }
 
   // レガシーCSS由来（旧 .sp: PC/Tabで非表示）
   &--sp {
     @media screen and (width >=599px) {
-      display: none;
+      display: none !important;
     }
   }
 
   &--sm {
     @media screen and (width >=521px) {
-      display: none;
+      display: none !important;
     }
   }
 }
