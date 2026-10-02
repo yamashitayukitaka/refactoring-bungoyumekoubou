@@ -86,7 +86,7 @@ function wazeka_scripts()
     );
   }
 
-  // location（js-commonSlick）は template-parts/common.php 経由。TOP/heig/rireve は commonSlick.js 内の他スライダー用
+  // LOCATION（js-commonSlick）: template-parts/common.php を読む固定ページ
   $wazeka_common_slick_pages = array(
     'about',
     'after-support',
@@ -95,12 +95,10 @@ function wazeka_scripts()
     'design',
     'faq',
     'flow',
-    'heig',
     'maintenance',
     'model-house',
     'quality',
     'renovation',
-    'rireve',
   );
 
   if (
