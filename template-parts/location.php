@@ -1,4 +1,4 @@
-<div class="p-location">
+<section class="p-location">
   <div class="c-title__head">
     <h3 class="c-title--sectionLine">
       LOCATION
@@ -91,4 +91,4 @@
 
     <?php endforeach; ?>
   <?php endif; ?>
-</div>
+</section>
