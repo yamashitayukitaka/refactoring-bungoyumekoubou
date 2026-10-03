@@ -259,14 +259,14 @@ get_header();
     </ul>
   </section>
 
-  <div class="l-content--middle recruit__contact__form u-mb100">
-    <p class="recruit__contact__desc">
+  <div class="l-content--middle c-contact u-mb100">
+    <p class="c-contact__desc">
       わたしたちと一緒にゆめをつくりませんか？お問合せは以下のお問合せフォーム<br>
       またはお電話にてお気軽にご連絡ください。
     </p>
-    <a href="tel:0975941481" class="recruit__contact__info">
-      <span class="recruit__contact__info__txt">応募はこちら</span>
-      <p class="recruit__contact__info__tel">TEL.　<span class="recruit__contact__info__tel__number">097-594-1481</span>
+    <a href="tel:0975941481" class="c-contact__link">
+      <span class="c-contact__linkLabel">応募はこちら</span>
+      <p class="c-contact__tel">TEL.　<span class="c-contact__telNumber">097-594-1481</span>
       </p>
     </a>
   </div>

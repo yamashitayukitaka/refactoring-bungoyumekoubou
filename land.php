@@ -227,15 +227,15 @@ get_header();
 
   <?php get_template_part('template-parts/infomation-loop'); ?>
 
-  <div class="l-content--middle recruit__contact__form u-mb100">
-    <p class="recruit__contact__desc">
+  <div class="l-content--middle c-contact u-mb100">
+    <p class="c-contact__desc">
       理想の土地や物件を見つける第一歩はこちらから。私たち豊後夢工房にお任せください。
       <br>各土地・物件情報についての詳細は、以下のお問い合わせフォーム
       <br>またはお電話にてお気軽にご連絡ください。
     </p>
-    <a href="tel:0975941481" class="recruit__contact__info">
-      <span class="recruit__contact__info__txt">お問い合わせはこちら</span>
-      <p class=recruit__contact__info__tel>TEL.　<span class="recruit__contact__info__tel__number">097-594-1481</span>
+    <a href="tel:0975941481" class="c-contact__link">
+      <span class="c-contact__linkLabel">お問い合わせはこちら</span>
+      <p class="c-contact__tel">TEL.　<span class="c-contact__telNumber">097-594-1481</span>
       </p>
     </a>
   </div>

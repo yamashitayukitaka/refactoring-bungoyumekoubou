@@ -1,0 +1,27 @@
+.c-contact {
+  &__desc {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__linkLabel {
+    font-size: 2rem;
+  }
+
+  &__telNumber {
+    font-size: 4rem;
+  }
+}

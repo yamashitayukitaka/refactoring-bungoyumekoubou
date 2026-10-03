@@ -161,6 +161,7 @@ OK:  .p-top__mainvisual__subtitle          ← 子__孫で止める
 - レガシークラスは残さず、該当する `p-*` / `c-*` の BEM にスタイルを移してから HTML から削除する。
 - タグ直スタイル・`!important` は持ち込まない。
 - 他ページ共有のレガシーは、削除前に影響範囲を確認する。
+- **除外:** `page-recruit.php` の `<section class="p-recruit__history">` 内（沿革タイムライン・`pres-timeline` 等・`test.css` 依存）はレガシー整理の対象外。Block は `p-recruit__history` として扱い、内側の旧 class を BEM 化する作業は行わない。
 
 ### Modifier の付け方
 - Modifier は単体で使わず、必ず対象の Block / Element とセットで付与する。
