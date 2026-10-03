@@ -152,6 +152,10 @@
       position: relative;
       border-radius: 2.4rem;
 
+      @include mq(sp) {
+        line-height: 36px;
+      }
+
       &::before {
         content: '';
         display: block;
@@ -165,6 +169,15 @@
         top: 50%;
         right: 24px;
         margin-top: -6px;
+
+        @include mq(sp) {
+          width: 8px;
+          height: 8px;
+          border-right: solid 1.5px $pureBlack;
+          border-bottom: solid 1.5px $pureBlack;
+          top: 56%;
+          margin-top: -6px;
+        }
       }
 
       &:hover {
