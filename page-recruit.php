@@ -514,14 +514,14 @@ get_header();
   </section>
 
   <?php if ($hasApp) : ?>
-    <div class="l-content--middle p-recruit__contact u-mb100">
-      <p class="p-recruit__contact__desc">
+    <div class="l-content--middle c-contact u-mb100">
+      <p class="c-contact__desc">
         わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
         またはお電話にてお気軽にご連絡ください。
       </p>
-      <a href="tel:0975941481" class="p-recruit__contact__link">
-        <span class="p-recruit__contact__linkLabel">応募はこちら</span>
-        <p class="p-recruit__contact__tel">TEL.　<span class="p-recruit__contact__telNumber">097-594-1481</span>
+      <a href="tel:0975941481" class="c-contact__link">
+        <span class="c-contact__linkLabel">応募はこちら</span>
+        <p class="c-contact__tel">TEL.　<span class="c-contact__telNumber">097-594-1481</span>
         </p>
       </a>
     </div>
