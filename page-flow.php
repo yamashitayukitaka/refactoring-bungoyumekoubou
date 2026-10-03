@@ -143,7 +143,7 @@ get_header();
                 <?php echo wp_kses_post($step['text']); ?>
               </div>
               <?php if (!empty($step['cta'])) : ?>
-                <a class="p-flow__steps__link form__btn" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサービスについて</a>
+                <a class="p-flow__steps__link c-button--outlineArrow" href="<?php echo esc_url(home_url('/maintenance/')); ?>">アフターサービスについて</a>
               <?php endif; ?>
             </div>
             <div class="p-flow__steps__media">
