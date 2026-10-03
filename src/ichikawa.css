@@ -167,34 +167,6 @@
   }.c-pageMv__heading__subTitle span{
     color:#ea6800;
     font-size:2.5rem;
-  }.location__content{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-top:6rem;
-    background-color:#faf7f2;
-    width:100%!important;
-    margin:auto;
-  }.location_item_first_map{
-    margin-top:1rem;
-  }.location_item_first_info{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    width:52%;
-    padding-left:5px;
-    justify-content:space-between;
-  }.location_item_first_info_txt{
-    display:flex;
-    flex-direction:column;
-    border-left:4px solid #ed6a10;
-  }.location_detail_info{
-    line-height:1.5;
-    font-size:1.6rem;
-    font-weight:bold;
-    color:black;
-    margin-left:2rem;
   }.go_wrapper{
     margin-top:3%;
     display:flex;
@@ -210,17 +182,6 @@
   }.active:after{
     content:"−";
     color:white;
-  }.single-swiper{
-    padding-top:5%!important;
-    padding-bottom:5%!important;
-  }.single-swiper .swiper-main .swiper-slide{
-    width:100%!important;
-  }.single-swiper .swiper-thumbs .swiper-slide{
-    width:33%;
-  }.single-swiper .swiper-slide{
-    padding:0!important;
-  }.location-map{
-    height:26rem!important;
   }}@media only screen and (min-width:599px) and (max-width:1050px) {.recruit__contact__desc{
     font-size:2rem;
     text-align:center;
@@ -389,34 +350,6 @@
   }.c-pageMv__heading__subTitle span{
     color:#ea6800;
     font-size:2.5rem;
-  }.location__content{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-top:6rem;
-    background-color:#faf7f2;
-    width:100%!important;
-    margin:auto;
-  }.location_item_first_map{
-    margin-top:1rem;
-  }.location_item_first_info{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    width:52%;
-    padding-left:5px;
-    justify-content:space-between;
-  }.location_item_first_info_txt{
-    display:flex;
-    flex-direction:column;
-    border-left:4px solid #ed6a10;
-  }.location_detail_info{
-    line-height:1.5;
-    font-size:1.8rem;
-    font-weight:bold;
-    color:black;
-    margin-left:2rem;
   }.go_wrapper{
     margin-top:3%;
     display:flex;
@@ -432,17 +365,6 @@
   }.active:after{
     content:"−";
     color:white;
-  }.single-swiper{
-    padding-top:5%!important;
-    padding-bottom:5%!important;
-  }.single-swiper .swiper-main .swiper-slide{
-    width:100%!important;
-  }.single-swiper .swiper-thumbs .swiper-slide{
-    width:33%;
-  }.single-swiper .swiper-slide{
-    padding:0!important;
-  }.location-map{
-    height:19rem!important;
   }}@media screen and (max-width:599px) {.recruit__contact__desc{
     font-size:2rem;
     text-align:center;
@@ -612,34 +534,6 @@
   }.c-pageMv__heading__subTitle span{
     color:#ea6800;
     font-size:2.5rem;
-  }.location__content{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    margin-top:6rem;
-    background-color:#faf7f2;
-    width:100%;
-    margin:auto;
-  }.location_item_first_map{
-    margin-top:1rem;
-  }.location_item_first_info{
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    width:90%;
-    margin:0 auto;
-    justify-content:space-between;
-  }.location_item_first_info_txt{
-    display:flex;
-    flex-direction:column;
-    border-left:4px solid #ed6a10;
-  }.location_detail_info{
-    line-height:1.5;
-    font-size:1.8rem;
-    font-weight:bold;
-    color:black;
-    margin-left:2rem;
   }.go_wrapper{
     margin-top:3%;
     display:flex;
@@ -655,17 +549,4 @@
   }.active:after{
     content:"−";
     color:white;
-  }.single-swiper{
-    padding-top:5%!important;
-    padding-bottom:5%!important;
-    padding-left:5%!important;
-    padding-right:5%!important;
-  }.single-swiper .swiper-main .swiper-slide{
-    width:100%!important;
-  }.single-swiper .swiper-thumbs .swiper-slide{
-    width:33%;
-  }.single-swiper .swiper-slide{
-    padding:0!important;
-  }.location-map{
-    height:19rem!important;
   }}

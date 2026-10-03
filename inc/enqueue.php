@@ -86,7 +86,27 @@ function wazeka_scripts()
     );
   }
 
-  if (is_front_page() || is_page(array('heig', 'rireve')) || is_post_type_archive('staff') || is_singular('staff')) {
+  // LOCATION（js-commonSlick）: template-parts/common.php を読む固定ページ
+  $wazeka_common_slick_pages = array(
+    'about',
+    'after-support',
+    'concept',
+    'cost',
+    'design',
+    'faq',
+    'flow',
+    'maintenance',
+    'model-house',
+    'quality',
+    'renovation',
+  );
+
+  if (
+      is_front_page()
+      || is_page($wazeka_common_slick_pages)
+      || is_post_type_archive('staff')
+      || is_singular('staff')
+  ) {
     wp_enqueue_script(
         'wazeka-common-slick',
         $js . '/commonSlick.js',

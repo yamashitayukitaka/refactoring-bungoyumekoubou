@@ -1,19 +1,194 @@
 .p-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: $beige4;
+  width: 100%;
+
+
+
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  @include mq(sp) {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
   &__content {
     margin-bottom: 10rem;
+
+    @include mq(sp) {
+      margin-bottom: 8%;
+    }
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2.5rem;
+    margin-right: auto;
+    margin-bottom: 1%;
+    margin-left: auto;
+    width: 90vw;
+    min-width: 350px;
+
+    @media screen and (min-width: 599px) and (max-width: 1050px) {
+      width: 80vw;
+      min-width: 500px;
+    }
+
+    @media screen and (min-width: 1051px) {
+      width: 60vw;
+      min-width: 900px;
+    }
+
+    @include mq(sp) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__list {
     width: 45%;
 
+    @include mq(sp) {
+      width: 90%;
+      margin: 3% auto 0;
+    }
+
+    &__item {
+      aspect-ratio: 1 / 1;
+
+      @include mq(sp) {
+        aspect-ratio: 1.6 / 1;
+      }
+    }
+
     &__img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    padding-left: 5px;
+    justify-content: space-between;
+
+    @include mq(sp) {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      border-left: 4px solid $red;
+    }
+
+    &__listItem {
+      line-height: 1.5;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $pureBlack;
+      margin-left: 2rem;
+
+      @media screen and (min-width: 599px) and (max-width: 1050px) {
+        font-size: 1.8rem;
+      }
+
+      @include mq(sp) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__map {
+      margin-top: 1rem;
+    }
+
+    &__mapEmbed {
+      height: 26rem !important;
+
+      @media screen and (min-width: 599px) and (max-width: 1050px) {
+        height: 19rem !important;
+      }
+
+      @include mq(sp) {
+        height: 19rem !important;
+      }
+    }
+
+    &__contact {
+      margin-top: 3%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 4px;
+      font-size: 1.5rem;
+    }
+
+    &__contactLink {
+      text-decoration: none;
+      color: $pureBlack;
+      font-weight: bold;
+      padding: 0 5rem;
+      background-color: $white;
+      border: solid 1px $gray2;
+      line-height: 5.2rem;
+      display: inline-block;
+      text-align: center;
+      transition: 0.5s;
+      position: relative;
+      border-radius: 2.4rem;
+
+      @include mq(sp) {
+        line-height: 36px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-right: solid 3px $pureBlack;
+        border-bottom: solid 3px $pureBlack;
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: 0.3s;
+        top: 50%;
+        right: 24px;
+        margin-top: -6px;
+
+        @include mq(sp) {
+          width: 8px;
+          height: 8px;
+          border-right: solid 1.5px $pureBlack;
+          border-bottom: solid 1.5px $pureBlack;
+          top: 56%;
+          margin-top: -6px;
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $orange;
+        border-color: $orange;
+
+        &::before {
+          border-color: $white;
+        }
+      }
     }
   }
 
@@ -25,12 +200,27 @@
     &__list {
       display: flex;
       justify-content: space-between;
+      margin-right: auto;
+      margin-left: auto;
+
+      @media screen and (min-width: 1051px) {
+        width: 60vw;
+        min-width: 900px;
+      }
+
+      @media screen and (min-width: 599px) and (max-width: 1050px) {
+        width: 80vw;
+        min-width: 500px;
+      }
+
+      @include mq(sp) {
+        width: 90%;
+      }
     }
 
     &__item {
-      width: calc(299 / 1100 * 100%);
+      width: 32%;
       aspect-ratio: 299/129;
-      border-radius: 10px;
       overflow: hidden;
     }
 
