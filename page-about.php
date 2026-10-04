@@ -50,8 +50,8 @@ get_header();
       <?php endif; ?>
     </div>
     <dl>
-      <dt class="p-about__message__bold ">株式会社 豊後夢工房</dt>
-      <dd class="p-about__message__bold ">代表取締役社長<span class="rireve_txt">　永井 賢次</span></dd>
+      <dt class="p-about__message__bold">株式会社 豊後夢工房</dt>
+      <dd class="p-about__message__bold">代表取締役社長<span class="p-about__message__name">　永井 賢次</span></dd>
     </dl>
   </section>
 

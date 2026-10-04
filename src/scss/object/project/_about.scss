@@ -25,6 +25,14 @@
       line-height: calc(32 / 18);
       text-align: right;
     }
+
+    &__name {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: $pureBlack;
+      letter-spacing: 0.09rem;
+    }
   }
 
   &__staff {

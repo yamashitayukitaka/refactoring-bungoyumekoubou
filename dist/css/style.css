@@ -1880,6 +1880,13 @@ a:hover {
   line-height: 1.7777777778;
   text-align: right;
 }
+.p-about__message__name {
+  font-family: "Noto Serif JP", serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 0.09rem;
+}
 .p-about__staff__list {
   position: relative;
   display: flex;
