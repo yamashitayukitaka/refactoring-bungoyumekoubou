@@ -284,6 +284,30 @@
       place-content: center;
       padding-top: 3%;
     }
+
+    &__cardLink {
+      text-decoration: none;
+      color: $white;
+      background-color: $orange;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 48px;
+      text-align: center;
+      transition: 0.5s;
+      padding: 0 4rem;
+      position: relative;
+      border-radius: 24px;
+      border: 1px solid $orange;
+
+      @include mq(sp) {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        color: $orange;
+        background: $white;
+      }
+    }
   }
 
   &__section {
