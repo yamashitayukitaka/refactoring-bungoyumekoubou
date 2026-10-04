@@ -1,22 +1,4 @@
 @media screen and (min-width:1051px) {
-  .link__btn {
-    text-decoration: none;
-    color: white;
-    background-color: #ea6800;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 48px;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 4rem;
-    position: relative;
-    border-radius: 24px;
-    border: 1px solid #ea6800;
-  }
-  .link__btn:hover {
-    color: #ea6800;
-    background: white;
-  }
   .c-pageMv__heading__subTitle {
     font-size: 2.5rem;
   }
@@ -27,24 +9,6 @@
 }
 
 @media only screen and (min-width: 599px) and (max-width: 1050px) {
-  .link__btn {
-    text-decoration: none;
-    color: white;
-    background-color: #ea6800;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 48px;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 4rem;
-    position: relative;
-    border-radius: 24px;
-    border: 1px solid #ea6800;
-  }
-  .link__btn:hover {
-    color: #ea6800;
-    background: white;
-  }
   .c-pageMv__heading__subTitle {
     font-size: 2.5rem;
   }
@@ -55,25 +19,6 @@
 }
 
 @media screen and (max-width: 599px) {
-  .link__btn {
-    white-space: nowrap;
-    text-decoration: none;
-    color: white;
-    background-color: #ea6800;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 48px;
-    text-align: center;
-    transition: 0.5s;
-    padding: 0 4rem;
-    position: relative;
-    border-radius: 24px;
-    border: 1px solid #ea6800;
-  }
-  .link__btn:hover {
-    color: #ea6800;
-    background: white;
-  }
   .c-pageMv__heading__subTitle {
     font-size: 2.5rem;
   }

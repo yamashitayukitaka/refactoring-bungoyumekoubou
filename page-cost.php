@@ -279,7 +279,7 @@ get_header();
                 お客様のご要望に合った土地探しをサポートします。私たちは、専門の不動産スタッフが責任を持って土地探しを行います。営業スタッフではなく、専門家が豊富な経験と情報をもとに、最適な土地を見つけます。
               </p>
               <div class="p-cost__points__cardAction">
-                <a class="link__btn" href="<?php echo esc_url(home_url('/property/')); ?>">土地・物件情報へ</a>
+                <a class="p-cost__points__cardLink" href="<?php echo esc_url(home_url('/property/')); ?>">土地・物件情報へ</a>
               </div>
             </div>
           </div>
