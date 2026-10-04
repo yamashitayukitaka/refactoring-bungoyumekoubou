@@ -9821,6 +9821,14 @@ a:hover {
   bottom: -0.5rem;
 }
 
+.p-privacyPolicy__title {
+  font-size: 3.5rem;
+}
+.p-privacyPolicy__subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .c-navigation {
   display: flex;
   justify-content: flex-end;
@@ -9994,6 +10002,63 @@ a:hover {
   justify-content: center !important;
   align-items: center;
   font-size: 2.2rem;
+}
+.c-button--outlineArrow {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0 5rem;
+  background-color: #fff;
+  border: solid 1px #bbb;
+  line-height: 52px;
+  display: inline-block;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  border-radius: 24px;
+}
+.c-button--outlineArrow::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-right: solid 3px #000;
+  border-bottom: solid 3px #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  transition: 0.3s;
+  top: 50%;
+  right: 24px;
+  margin-top: -6px;
+}
+@media screen and (max-width: 1050px) {
+  .c-button--outlineArrow {
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .c-button--outlineArrow {
+    line-height: 36px;
+  }
+  .c-button--outlineArrow::before {
+    width: 8px;
+    height: 8px;
+    border-right-width: 1.5px;
+    border-bottom-width: 1.5px;
+    top: 56%;
+  }
+}
+.c-button--outlineArrow:hover {
+  color: #fff;
+  background: #ea6800;
+  border: solid 1px #ea6800;
+}
+.c-button--outlineArrow:hover::before {
+  border-color: #fff;
+}
+.c-button__outlineArrowWrap {
+  display: flex;
+  justify-content: center;
 }
 
 .c-accordion {

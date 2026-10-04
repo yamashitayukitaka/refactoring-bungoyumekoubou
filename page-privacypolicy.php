@@ -7,13 +7,13 @@ get_header();
 ?>
 <main>
   <div class="l-content u-pt100 u-mb100">
-    <h1 class="u-bold u-mb100 privacy-h1">個人情報保護方針</h1>
-    <h2 class="u-bold privacy-h2">個人情報の取り扱いについて</h2>
+    <h1 class="u-bold u-mb100 p-privacyPolicy__title">個人情報保護方針</h1>
+    <h2 class="u-bold p-privacyPolicy__subtitle">個人情報の取り扱いについて</h2>
     <p class="u-mb50">
       株式会社豊後夢工房（以下「当社」といいます。）は、個人情報の管理を適切に行うことが企業活動の基本であり、社会的責務と考えております。弊社では、個人情報の取り扱いについて関係法令等を遵守し、以下の方針に基づき本サイトにおいて個人情報の適切な管理・保護に努めます。
     </p>
 
-    <h2 class="u-bold privacy-h2">個人情報の管理について</h2>
+    <h2 class="u-bold p-privacyPolicy__subtitle">個人情報の管理について</h2>
     <p>当社は、工事事業、機器・建材等の販売・設置・修理等の業務にあたりお客様の個人情報を取得いたします。
       また、個人情報を正確かつ最新の状態に保ち、不正アクセス・紛失・破壊・改ざん・漏洩または再提供（ご本人の承諾がある場合を除きます。）などのないように管理し、正当な理由のある場合を除き、当社もしくは当社から委託を受けた第三者に開示・提供等は致しません。
     </p>
@@ -23,7 +23,7 @@ get_header();
     </p>
 
 
-    <h2 class="u-bold privacy-h2">個人情報の利用目的</h2>
+    <h2 class="u-bold p-privacyPolicy__subtitle">個人情報の利用目的</h2>
     <p>当社は、当社が保有する全ての個人情報は、次の目的の範囲内で利用するものとし、これらの個人情報は下記の目的に利用させていただきます。
     </p>
     <br>
@@ -39,7 +39,7 @@ get_header();
     <p> ・当社へのご意見・ご要望等に関し、確認、検討、対応又は解決するた </p>
     <p class="u-mb50"> ・お問合せに備えて保管するため</p>
 
-    <h2 class="u-bold privacy-h2">個人情報の第三者への提供について</h2>
+    <h2 class="u-bold p-privacyPolicy__subtitle">個人情報の第三者への提供について</h2>
     <p>当社は、個人情報をご本人の承諾を得ずに第三者に提供致しません。</p>
     <br>
     <p>
@@ -52,7 +52,7 @@ get_header();
     <p>・共同して利用する個人情報の項目 氏名、住所、電話番号、メールアドレス</p>
     <p class="u-mb50">・個人情報の管理責任者の氏名</p>
 
-    <h2 class="u-bold privacy-h2">個人情報に関するご相談窓口及び手続について</h2>
+    <h2 class="u-bold p-privacyPolicy__subtitle">個人情報に関するご相談窓口及び手続について</h2>
 
     <p> 当社が保有する個人情報について、<br>
       利用目的の通知を希望する場合<br>
@@ -76,13 +76,13 @@ get_header();
     <br>
     <p class="u-mb50">なお、ご本人からの通信・郵便料金等及び各種証明書等の確認書類の入手に係る費用についてはご本人のご負担にてお願い致します。</p>
 
-    <h2 class="u-bold privacy-h2">個人情報取扱方針の変更について</h2>
+    <h2 class="u-bold p-privacyPolicy__subtitle">個人情報取扱方針の変更について</h2>
     <p>本「個人情報の取扱について」に示す方針は、予告なく変更する場合があります。</p>
     <p>当社の個人情報の取扱方針については、当社ホームページ上に登録する最新の方針をご確認下さいますようお願い申し上げます。</p>
   </div>
 
-  <div class="form__btn__wrapper">
-    <a class="form__btn" href="<?php echo esc_url(home_url('/')); ?>">TOPへ</a>
+  <div class="c-button__outlineArrowWrap u-mb100">
+    <a class="c-button--outlineArrow" href="<?php echo esc_url(home_url('/')); ?>">TOPへ</a>
   </div>
 </main>
 
