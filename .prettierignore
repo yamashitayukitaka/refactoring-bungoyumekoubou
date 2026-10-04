@@ -1,7 +1,6 @@
 node_modules
 dist
 package-lock.json
-src/ichikawa.css
 src/tamura.css
 src/test.css
 acf-json

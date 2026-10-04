@@ -37,7 +37,6 @@ SCSS を編集するときは、次を実行します。
 
 次の CSS は旧担当のレガシーで、FLOCSS の対象外です。全ページで読み込んでいます。
 
-- `src/ichikawa.css`
 - `src/tamura.css`
 - `src/test.css`（会社概要・採用ページのみ）
 
