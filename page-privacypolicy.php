@@ -81,7 +81,7 @@ get_header();
     <p>当社の個人情報の取扱方針については、当社ホームページ上に登録する最新の方針をご確認下さいますようお願い申し上げます。</p>
   </div>
 
-  <div class="c-button__outlineArrowWrap">
+  <div class="c-button__outlineArrowWrap u-mb100">
     <a class="c-button--outlineArrow" href="<?php echo esc_url(home_url('/')); ?>">TOPへ</a>
   </div>
 </main>
