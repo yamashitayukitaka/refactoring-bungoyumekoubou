@@ -45,14 +45,6 @@
     width: 107%;
   }
 
-  .c_pageMv_t {
-    height: 90vh !important;
-    max-height: 600px !important;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
-
   .top__desc__imgWrap2 {
     display: none;
   }
@@ -99,14 +91,6 @@
     top: 11%;
     background-size: contain;
     background-repeat: no-repeat;
-  }
-
-  .c_pageMv_t {
-    height: 90vh !important;
-    max-height: 600px !important;
-    width: 100%;
-    position: relative;
-    z-index: 1;
   }
 
   .c-lineUp__media {
@@ -158,14 +142,6 @@
 
   .p-top__desc__txt span {
     font-size: 2rem;
-  }
-
-  .c_pageMv_t {
-    height: 90vh !important;
-    max-height: 600px !important;
-    width: 100%;
-    position: relative;
-    z-index: 1;
   }
 
   .c-lineUp__media {
@@ -324,10 +300,6 @@
     aspect-ratio: 16/10 !important;
   }
 
-  .c-pageMv__visual {
-    background-position: center;
-  }
-
   .p-about__staff__list::after {
     background: #faf7f2;
   }
@@ -346,14 +318,18 @@
     width: 100%;
   }
 
+  .c-pageMv__visual {
+    background-position: center;
+  }
+
   .c-pageMv__heading {
     padding: 3% 3% 3% 10%;
     min-width: 40%;
   }
 
-  .c-pageMv {
-    height: 60vh;
-    min-height: 400px;
+  .c-pageMv__heading__subTitle {
+    color: #ed6a10;
+    font-size: 2.5rem;
   }
 
   .c_title_orangeLine_t {
@@ -387,11 +363,6 @@
     letter-spacing: 0.09rem;
   }
 
-  .c-pageMv__heading__subTitle {
-    color: #ed6a10;
-    font-size: 2.5rem;
-  }
-
   .p-about__message__txt {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
@@ -410,12 +381,6 @@
     line-height: 1.8;
   }
 
-  .c_pageMv_t {
-    width: 100%;
-    height: calc(var(--windowHeight) - var(--headerHeight));
-    position: relative;
-    z-index: 1;
-  }
 }
 
 @media only screen and (min-width:599px) and (max-width:1050px) {
@@ -423,10 +388,6 @@
     font-family: "Noto Serif JP", serif !important;
   }
 
-  .c-pageMv__visual {
-    background-position: center;
-  }
-
   .p-about__staff__list::after {
     background: #faf7f2;
   }
@@ -445,16 +406,18 @@
     width: 100%;
   }
 
+  .c-pageMv__visual {
+    background-position: center;
+  }
+
   .c-pageMv__heading {
     padding: 3% 3% 3% 10%;
     min-width: 40%;
   }
 
-  .c-pageMv {
-    height: 60vh;
-    min-height: 400px;
-    width: 100vw;
-    overflow: hidden;
+  .c-pageMv__heading__subTitle {
+    color: #ed6a10;
+    font-size: 2.5rem;
   }
 
   .c_title_orangeLine_t {
@@ -488,11 +451,6 @@
     letter-spacing: 0.09rem;
   }
 
-  .c-pageMv__heading__subTitle {
-    color: #ed6a10;
-    font-size: 2.5rem;
-  }
-
   .p-about__message__txt {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
@@ -511,21 +469,11 @@
     line-height: 1.8;
   }
 
-  .c_pageMv_t {
-    width: 100%;
-    height: calc(var(--windowHeight) - var(--headerHeight));
-    position: relative;
-    z-index: 1;
-  }
 }
 
 @media screen and (max-width:599px) {
   .rireve_txt {
     font-family: "Noto Serif JP", serif !important;
-  }
-
-  .c-pageMv__visual {
-    background-position: center;
   }
 
   .p-about__staff__list::after {
@@ -546,16 +494,19 @@
     width: 100%;
   }
 
+  .c-pageMv__visual {
+    background-position: center;
+    width: 100%;
+  }
+
   .c-pageMv__heading {
     padding: 8% 8% 8% 10%;
     min-width: 40%;
   }
 
-  .c-pageMv {
-    height: 50vh;
-    min-height: 300px;
-    width: 100vw;
-    overflow: hidden;
+  .c-pageMv__heading__subTitle {
+    color: #ed6a10;
+    font-size: 2.5rem;
   }
 
   .c_title_orangeLine_t {
@@ -589,11 +540,6 @@
     letter-spacing: 0.09rem;
   }
 
-  .c-pageMv__heading__subTitle {
-    color: #ed6a10;
-    font-size: 2.5rem;
-  }
-
   .p-about__message__txt {
     font-size: 1.7rem;
     letter-spacing: 0.1rem;
@@ -612,10 +558,4 @@
     line-height: 1.8;
   }
 
-  .c_pageMv_t {
-    width: 100%;
-    height: calc(var(--windowHeight) - var(--headerHeight));
-    position: relative;
-    z-index: 1;
-  }
 }

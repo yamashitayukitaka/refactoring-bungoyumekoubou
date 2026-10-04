@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 get_header();
 ?>
 <main class="p-top">
-  <div class="c-pageMv c_pageMv_t">
+  <div class="c-pageMv c-pageMv--top">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title">
         住まいに<span class="u-orange--mv">夢</span>を、
