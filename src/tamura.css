@@ -226,10 +226,6 @@
     margin: 0 10%;
   }
 
-  .c-pageMv__visual {
-    width: 100%;
-  }
-
   .p-staff__question__ttl--another {
     display: inline;
   }
@@ -318,10 +314,6 @@
     width: 100%;
   }
 
-  .c-pageMv__visual {
-    background-position: center;
-  }
-
   .c-pageMv__heading {
     padding: 3% 3% 3% 10%;
     min-width: 40%;
@@ -406,10 +398,6 @@
     width: 100%;
   }
 
-  .c-pageMv__visual {
-    background-position: center;
-  }
-
   .c-pageMv__heading {
     padding: 3% 3% 3% 10%;
     min-width: 40%;
@@ -491,11 +479,6 @@
   .l_content_middle_70 {
     padding-left: 5%;
     padding-right: 5%;
-    width: 100%;
-  }
-
-  .c-pageMv__visual {
-    background-position: center;
     width: 100%;
   }
 

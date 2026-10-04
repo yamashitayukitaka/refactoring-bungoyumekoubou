@@ -18,7 +18,7 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
 
     &--top {
       width: 100%;
@@ -26,6 +26,9 @@
       padding: 0;
       list-style: none;
       background-repeat: no-repeat;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
 
       >.c-pageMv__visual__item:nth-of-type(1),
       .slick-slide:nth-of-type(1) .c-pageMv__visual__item {
