@@ -45,12 +45,6 @@
     display: none;
   }
 
-  .p-top__mv__appealItem img {
-    width: 30%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .c-lineUp__media {
     aspect-ratio: 16/10;
   }
@@ -93,12 +87,6 @@
     aspect-ratio: 16/10;
   }
 
-  .p-top__mv__appealItem img {
-    width: 30%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .top__desc__imgWrap2 {
     display: none;
   }
@@ -127,11 +115,6 @@
     bottom: 6%;
   }
 
-  .p-top__mv__appealItem {
-    width: 13rem;
-    height: 13rem;
-  }
-
   .p-top__desc__txt {
     font-size: 2rem;
   }
@@ -142,12 +125,6 @@
 
   .c-lineUp__media {
     aspect-ratio: 16/10;
-  }
-
-  .p-top__mv__appealItem img {
-    width: 30%;
-    text-align: center;
-    margin: 0 auto;
   }
 
   .c_title__wrap_sectionLine_t {

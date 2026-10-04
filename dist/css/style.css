@@ -1449,6 +1449,9 @@ a:hover {
     height: 13rem;
   }
 }
+.p-top__mv__appealItemImg {
+  width: 30%;
+}
 .p-top__mv__appealTtl {
   font-size: 2rem;
   font-weight: bold;

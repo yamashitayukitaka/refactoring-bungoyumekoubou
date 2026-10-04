@@ -19,7 +19,7 @@ get_header();
   
     <ul class="p-top__mv__appealList">
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">断熱性能</p>
         <p class="p-top__mv__appealTxt">
           UA値
@@ -27,7 +27,7 @@ get_header();
         </p>
       </li>
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">気密性能</p>
         <p class="p-top__mv__appealTxt">
           C値
@@ -35,7 +35,7 @@ get_header();
         </p>
       </li>
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">耐震性能</p>
         <p class="p-top__mv__appealTxt">
           標準仕様
