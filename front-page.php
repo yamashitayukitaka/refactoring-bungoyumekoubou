@@ -223,10 +223,7 @@ get_header();
     <p class="p-top__staff__subTtl">
       ゆめ空間づくりスタッフ
     </p>
-    <div class="u-center yume_staff_p">
-      <div class="p-top__staff__imgWrap3">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/tenten.webp'" alt="">
-      </div>
+    <div class="p-top__staff__copyWrap">
       <p class="p-top__staff__copy">
         あなたの<span class="p-top__staff__copy--orange">「ゆめ」</span>
         <br>いっしょにつくります。

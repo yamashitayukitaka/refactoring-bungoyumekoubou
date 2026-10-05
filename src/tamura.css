@@ -41,14 +41,6 @@
     aspect-ratio: 16/10;
   }
 
-  .c_title__wrap_sectionLine_t {
-    font-size: 3rem !important;
-  }
-
-  .yume_staff_p {
-    position: relative;
-  }
-
   .c-title--section {
     height: 9rem;
   }
@@ -59,19 +51,10 @@
     box-shadow: 1px 5px 5px 0px rgb(189 184 184/50%);
   }
 
-  .top_p_3 {
-    padding-top: 3%;
-  }
-
   .l_content_middle_70 {
     padding-left: 15%;
     padding-right: 15%;
     width: 100%;
-  }
-
-  .content_center {
-    display: grid;
-    place-content: center;
   }
 
 }
@@ -81,19 +64,10 @@
     box-shadow: 1px 5px 5px 0px rgb(189 184 184/50%);
   }
 
-  .top_p_3 {
-    padding-top: 3%;
-  }
-
   .l_content_middle_70 {
     padding-left: 15%;
     padding-right: 15%;
     width: 100%;
-  }
-
-  .content_center {
-    display: grid;
-    place-content: center;
   }
 
 }
@@ -103,19 +77,10 @@
     box-shadow: 1px 5px 5px 0px rgb(189 184 184/50%);
   }
 
-  .top_p_3 {
-    padding-top: 3%;
-  }
-
   .l_content_middle_70 {
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
-  }
-
-  .content_center {
-    display: grid;
-    place-content: center;
   }
 
 }

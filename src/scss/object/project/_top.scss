@@ -227,20 +227,6 @@
   }
 
   &__staff {
-    &__imgWrap3 {
-      display: none;
-
-      @include mq(sp) {
-        display: block;
-        width: 12%;
-        height: auto;
-        position: absolute;
-        right: 17%;
-        top: -28%;
-        max-width: 35px;
-      }
-    }
-
     &__list {
       &:nth-of-type(1) {
         margin-bottom: 4.5rem;
@@ -271,6 +257,28 @@
       font-weight: normal;
       margin-bottom: 1.4rem;
       text-align: center;
+    }
+
+    &__copyWrap {
+      text-align: center;
+
+      @include mq(sp) {
+        position: relative;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 12%;
+          max-width: 35px;
+          aspect-ratio: 1;
+          position: absolute;
+          right: 17%;
+          top: -28%;
+          background-image: url('../img/top_slider/tenten.webp');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
     }
 
     &__copy {

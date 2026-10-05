@@ -1653,20 +1653,6 @@ a:hover {
     display: none;
   }
 }
-.p-top__staff__imgWrap3 {
-  display: none;
-}
-@media screen and (max-width: 599px) {
-  .p-top__staff__imgWrap3 {
-    display: block;
-    width: 12%;
-    height: auto;
-    position: absolute;
-    right: 17%;
-    top: -28%;
-    max-width: 35px;
-  }
-}
 .p-top__staff__list:nth-of-type(1) {
   margin-bottom: 4.5rem;
 }
@@ -1692,6 +1678,27 @@ a:hover {
   font-weight: normal;
   margin-bottom: 1.4rem;
   text-align: center;
+}
+.p-top__staff__copyWrap {
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .p-top__staff__copyWrap {
+    position: relative;
+  }
+  .p-top__staff__copyWrap::before {
+    content: "";
+    display: block;
+    width: 12%;
+    max-width: 35px;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 17%;
+    top: -28%;
+    background-image: url("../img/top_slider/tenten.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .p-top__staff__copy {
   font-size: 3.6rem;
