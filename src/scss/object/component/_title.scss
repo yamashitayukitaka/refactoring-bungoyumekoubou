@@ -21,6 +21,10 @@
     height: 12.4rem;
     width: 100%;
     background: $beige;
+
+    @include mq(sp) {
+      height: 9rem;
+    }
   }
 
   &--middle {
