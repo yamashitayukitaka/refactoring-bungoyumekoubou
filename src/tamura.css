@@ -19,16 +19,6 @@
     display: none !important;
   }
 
-  .p-top__staff__copy::before {
-    background: url(../dist/img/top/staff01.webp);
-    width: 42%;
-  }
-
-  .p-top__staff__copy::after {
-    background: url(../dist/img/top/staff02.webp);
-    width: 107%;
-  }
-
   .c-lineUp__media {
     aspect-ratio: 16/10;
   }

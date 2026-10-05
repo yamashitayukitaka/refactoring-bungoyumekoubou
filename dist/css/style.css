@@ -1687,13 +1687,19 @@ a:hover {
 .p-top__staff__copy::after {
   display: block;
   content: "";
-  background: url("../dist/img/top/staff02.png");
+  background: url("../img/top/staff02.webp");
   background-size: 100% 100%;
   position: absolute;
   right: -95.1690821256%;
   bottom: 0;
-  width: 39.4rem;
+  width: 107%;
   aspect-ratio: 394/181;
+}
+@media screen and (max-width: 1050px) {
+  .p-top__staff__copy::after {
+    width: 30rem;
+    right: -60%;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-top__staff__copy::after {
@@ -1703,13 +1709,20 @@ a:hover {
 .p-top__staff__copy::before {
   display: block;
   content: "";
-  background: url("../dist/img/top/staff01.png");
+  background: url("../img/top/staff01.webp");
   background-size: 100% 100%;
   position: absolute;
   left: -60.8695652174%;
   bottom: 0;
-  width: 15.5rem;
+  width: 42%;
   aspect-ratio: 155/184;
+}
+@media screen and (max-width: 1050px) {
+  .p-top__staff__copy::before {
+    width: 12rem;
+    background-image: url("../img/top/staff01.png");
+    left: -50%;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-top__staff__copy::before {

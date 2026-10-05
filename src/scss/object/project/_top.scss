@@ -274,13 +274,18 @@
       &::after {
         display: block;
         content: '';
-        background: url('../dist/img/top/staff02.png');
+        background: url('../img/top/staff02.webp');
         background-size: 100% 100%;
         position: absolute;
         right: calc(-1 * (394 / 414) * 100%);
         bottom: 0;
-        width: 39.4rem;
+        width: 107%;
         aspect-ratio: 394/181;
+
+        @include mq(tab) {
+          width: 30rem;
+          right: -60%;
+        }
 
         @include mq {
           display: none;
@@ -290,13 +295,19 @@
       &::before {
         display: block;
         content: '';
-        background: url('../dist/img/top/staff01.png');
+        background: url('../img/top/staff01.webp');
         background-size: 100% 100%;
         position: absolute;
         left: calc(-1 * ((97 + 155) / 414) * 100%);
         bottom: 0;
-        width: 15.5rem;
+        width: 42%;
         aspect-ratio: 155/184;
+
+        @include mq(tab) {
+          width: 12rem;
+          background-image: url('../img/top/staff01.png');
+          left: -50%;
+        }
 
         @include mq {
           display: none;
