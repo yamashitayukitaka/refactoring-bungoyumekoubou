@@ -56,6 +56,11 @@
         flex-direction: column;
         margin-bottom: 2rem;
       }
+
+      @include mq(sp) {
+        width: 100%;
+        align-items: center;
+      }
     }
 
     &__copy {

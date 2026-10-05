@@ -789,6 +789,12 @@ a:hover {
     margin-bottom: 2rem;
   }
 }
+@media screen and (max-width: 599px) {
+  .l-footer__map__copyWrap {
+    width: 100%;
+    align-items: center;
+  }
+}
 .l-footer__map__copy {
   font-size: 3.1rem;
   font-weight: bold;
