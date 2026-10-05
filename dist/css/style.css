@@ -6772,6 +6772,12 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 599px) {
+  .p-staff__list {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
 .p-staff__list__item {
   width: 30.9%;
   margin-left: 3.65%;
@@ -6779,6 +6785,12 @@ a:hover {
 }
 .p-staff__list__item:nth-of-type(3n + 1) {
   margin-left: 0;
+}
+@media screen and (max-width: 599px) {
+  .p-staff__list__item {
+    width: 48%;
+    margin-left: 0;
+  }
 }
 .p-staff__img {
   height: 100%;
@@ -6788,12 +6800,22 @@ a:hover {
   aspect-ratio: 309/192;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 599px) {
+  .p-staff__img__wrap {
+    margin-bottom: 2rem;
+  }
+}
 .p-staff__name {
   font-size: 1.5rem;
   line-height: 1.6666666667;
   letter-spacing: 0.12rem;
   text-align: center;
   font-weight: bold;
+}
+@media screen and (max-width: 599px) {
+  .p-staff__name {
+    font-size: 2rem;
+  }
 }
 .p-staff__production {
   margin-bottom: 5.3rem;
@@ -6804,8 +6826,18 @@ a:hover {
   align-items: center;
   margin-bottom: 3.5rem;
 }
+@media screen and (max-width: 599px) {
+  .p-staff__production__content {
+    display: block;
+  }
+}
 .p-staff__production__profile {
   width: 43.8181818182%;
+}
+@media screen and (max-width: 599px) {
+  .p-staff__production__profile {
+    width: 100%;
+  }
 }
 .p-staff__production__imgWrap {
   width: 100%;
@@ -6813,8 +6845,13 @@ a:hover {
   margin-bottom: 2rem;
 }
 .p-staff__production__desc {
-  width: 37.4545454545%;
-  aspect-ratio: 412/242;
+  width: 50%;
+  aspect-ratio: 16/10;
+}
+@media screen and (max-width: 599px) {
+  .p-staff__production__desc {
+    width: 100%;
+  }
 }
 .p-staff__production__descImg {
   height: 100%;
@@ -6843,6 +6880,11 @@ a:hover {
   align-items: center;
   margin-bottom: 12rem;
 }
+@media screen and (max-width: 599px) {
+  .p-staff__myBest {
+    display: block;
+  }
+}
 .p-staff__myBest__ttlWrap {
   background: #f7f0e7;
   width: 41.1%;
@@ -6850,10 +6892,23 @@ a:hover {
   padding-left: 13%;
   padding-right: 3.7%;
 }
+@media screen and (max-width: 599px) {
+  .p-staff__myBest__ttlWrap {
+    width: 100%;
+    padding: 3rem 5% 3rem 10%;
+  }
+}
 .p-staff__myBest__list {
   width: 63.9%;
   padding-right: 15%;
   margin-left: 5rem;
+}
+@media screen and (max-width: 599px) {
+  .p-staff__myBest__list {
+    width: 100%;
+    margin: 0 10%;
+    padding-right: 0;
+  }
 }
 .p-staff__myBest__item {
   border-bottom: 1px dotted #242424;
@@ -6924,6 +6979,11 @@ a:hover {
   line-height: 1.4166666667;
   letter-spacing: 0.04rem;
   display: inline-block;
+}
+@media screen and (max-width: 599px) {
+  .p-staff__question__ttl--another {
+    display: inline;
+  }
 }
 .p-staff__question__txt {
   font-size: 1.6rem;
