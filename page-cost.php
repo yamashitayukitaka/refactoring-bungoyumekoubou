@@ -27,7 +27,7 @@ get_header();
       <h3 class="c-title--sectionLine u-mb40">コストへのこだわり</h3>
       <p class="c-title--orangeLine">
         <span class="marker">
-          大手他社よりも<br class="sp"><span class="u-orange">ワンランク上</span>の<span class="u-orange">設備</span>、<br>
+          大手他社よりも<br class="u-none__pc--sp"><span class="u-orange">ワンランク上</span>の<span class="u-orange">設備</span>、<br>
           <span class="u-orange">プランニング</span>、<span class="u-orange">デザ</span><span class="u-orange">イン</span>、<br>
           <span class="u-orange">高品質</span>を<span class="u-orange">低コスト</span>で提供します。
         </span>
@@ -80,7 +80,7 @@ get_header();
             </div>
             <div>
               <p class="p-cost__nav__label">
-                <span class="p-cost__nav__emphasis">大手他社</span>にはできない<br class="pc_tab">
+                <span class="p-cost__nav__emphasis">大手他社</span>にはできない<br class="u-none__mobile--sp">
                 <span class="p-cost__nav__emphasis">丁寧な</span>プランニング
               </p>
             </div>
@@ -132,7 +132,7 @@ get_header();
       </div>
 
       <p class="p-cost__section__subtitle">
-        <span class="u-orange">経済的</span>な暮らしをサポートする<br class="sp"><span class="u-orange">3</span>つのポイント
+        <span class="u-orange">経済的</span>な暮らしをサポートする<br class="u-none__pc--sp"><span class="u-orange">3</span>つのポイント
       </p>
       <?php
       $economy_points = [
@@ -196,7 +196,7 @@ get_header();
       </div>
 
       <p class="p-cost__section__subtitle">
-        <span class="u-orange">豊後夢工房</span>の標準設備<br class="sp"><span class="u-orange">3</span>つのポイント
+        <span class="u-orange">豊後夢工房</span>の標準設備<br class="u-none__pc--sp"><span class="u-orange">3</span>つのポイント
       </p>
       <?php
       $facility_points = [
@@ -233,7 +233,7 @@ get_header();
         <?php endforeach; ?>
       </ul>
       <p class="p-cost__facility__description">
-        家づくりで気になる、快適性能や省エネ設備、 <br class="sp">耐震設備が全てセットに含まれているので、<br>
+        家づくりで気になる、快適性能や省エネ設備、 <br class="u-none__pc--sp">耐震設備が全てセットに含まれているので、<br>
         追加費用が掛かりにくいのが特徴です。
       </p>
 

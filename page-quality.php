@@ -26,7 +26,7 @@ get_header();
       <h3 class="c-title--sectionLine u-mb40">品質へのこだわり</h3>
       <p class="c-title--orangeLine">
         <span class="marker">
-          <span class="u-orange">高品質な住まい</span>を<br class="sp">ご提供するための<br>
+          <span class="u-orange">高品質な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
           <span class="u-orange">5つ</span>のこだわり
         </span>
       </p>

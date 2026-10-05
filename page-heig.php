@@ -272,10 +272,10 @@ get_header();
         </div>
         <div class="p-heig__specification__gridItem">
           <img class="p-heig__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_28.webp' ?>" alt="">
-          <p class="p-heig__specification__gridText sp"><span class="p-heig__subMarker">
+          <p class="p-heig__specification__gridText u-none__pc--sp"><span class="p-heig__subMarker">
               家丸ごと浄水ANOA(アノア)
             </span></p>
-          <p class="p-heig__specification__gridText pc_tab"><span class="p-heig__subMarker">
+          <p class="p-heig__specification__gridText u-none__mobile--sp"><span class="p-heig__subMarker">
               暮らしの水をまるごとキレイに<br>
               家丸ごと浄水ANOA(アノア)
             </span></p>
