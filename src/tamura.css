@@ -7,10 +7,6 @@
     display: none !important;
   }
 
-  .c-lineUp__media {
-    aspect-ratio: 16/10;
-  }
-
 }
 
 @media only screen and (min-width:599px) and (max-width:1050px) {
@@ -20,10 +16,6 @@
 
   .sp {
     display: none !important;
-  }
-
-  .c-lineUp__media {
-    aspect-ratio: 16/10;
   }
 
 }
@@ -37,7 +29,4 @@
     display: none !important;
   }
 
-  .c-lineUp__media {
-    aspect-ratio: 16/10;
-  }
 }
