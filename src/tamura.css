@@ -210,31 +210,6 @@
     left: 10.333333%;
   }
 
-  .p-about__message {
-    display: block;
-  }
-
-  .p-about__message__imgWrap {
-    width: 50%;
-    margin: auto;
-  }
-
-  .p-about__message__txt {
-    font-size: 2rem;
-    letter-spacing: 0.15rem;
-    line-height: 1.9;
-    font-weight: 500;
-    width: 100%;
-    padding-top: 5%;
-  }
-
-  .p-about__message__txt {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    width: 100% !important;
-  }
-
   .p-staff__list__item {
     width: 48% !important;
     margin-left: 0;
@@ -265,10 +240,6 @@
     aspect-ratio: 16/10 !important;
   }
 
-  .p-about__staff__list::after {
-    background: #faf7f2;
-  }
-
   .img_shadow {
     box-shadow: 1px 5px 5px 0px rgb(189 184 184/50%);
   }
@@ -315,33 +286,11 @@
   .content_center {
     display: grid;
     place-content: center;
-  }
-
-  .p-about__message__txt {
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    width: 60%;
-  }
-
-  .p-about__message__imgWrap {
-    width: 35%;
-  }
-
-  .p-about__message__bold {
-    font-size: 1.9rem;
-    font-weight: 400;
-    letter-spacing: 0.07rem;
-    line-height: 1.8;
   }
 
 }
 
 @media only screen and (min-width:599px) and (max-width:1050px) {
-  .p-about__staff__list::after {
-    background: #faf7f2;
-  }
-
   .img_shadow {
     box-shadow: 1px 5px 5px 0px rgb(189 184 184/50%);
   }
@@ -390,31 +339,9 @@
     place-content: center;
   }
 
-  .p-about__message__txt {
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    width: 60%;
-  }
-
-  .p-about__message__imgWrap {
-    width: 35%;
-  }
-
-  .p-about__message__bold {
-    font-size: 1.9rem;
-    font-weight: 400;
-    letter-spacing: 0.07rem;
-    line-height: 1.8;
-  }
-
 }
 
 @media screen and (max-width:599px) {
-  .p-about__staff__list::after {
-    background: #faf7f2;
-  }
-
   .img_shadow {
     box-shadow: 1px 5px 5px 0px rgb(189 184 184/50%);
   }
@@ -461,24 +388,6 @@
   .content_center {
     display: grid;
     place-content: center;
-  }
-
-  .p-about__message__txt {
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    width: 60%;
-  }
-
-  .p-about__message__imgWrap {
-    width: 35%;
-  }
-
-  .p-about__message__bold {
-    font-size: 1.9rem;
-    font-weight: 400;
-    letter-spacing: 0.07rem;
-    line-height: 1.8;
   }
 
 }
