@@ -53,11 +53,6 @@
     display: none;
   }
 
-  .p-catalog__mv__logo {
-    width: 31%;
-    top: 4.377049%;
-    left: 15.333333%;
-  }
 }
 
 @media only screen and (min-width:599px) and (max-width:1050px) {
@@ -95,11 +90,6 @@
     display: none;
   }
 
-  .p-catalog__mv__logo {
-    width: 43%;
-    top: 13.377049%;
-    left: 15.333333%;
-  }
 }
 
 @media screen and (max-width:599px) {
@@ -157,13 +147,6 @@
   .l-footer__map__copyWrap {
     width: 100%;
     align-items: center;
-  }
-
-  .p-catalog__mv__logo {
-    width: 70%;
-    max-width: 35rem;
-    top: 21.377049%;
-    left: 10.333333%;
   }
 
   .c-title--section {

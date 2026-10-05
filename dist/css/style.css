@@ -7530,16 +7530,26 @@ a:hover {
 }
 .p-catalog__mv__logo {
   display: block;
-  width: 20%;
+  width: 31%;
   aspect-ratio: 481/356;
   position: absolute;
   z-index: 99;
-  top: 17.3770491803%;
-  left: 8.3333333333%;
+  top: 4.377049%;
+  left: 15.333333%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1050px) {
   .p-catalog__mv__logo {
-    width: 25rem;
+    width: 43%;
+    top: 13.377049%;
+    left: 15.333333%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-catalog__mv__logo {
+    width: 70%;
+    max-width: 35rem;
+    top: 21.377049%;
+    left: 10.333333%;
   }
 }
 .p-catalog__desc__txt {
