@@ -22,7 +22,7 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="l_content_middle_70 u-mb100">
+  <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         MESSAGE
@@ -35,23 +35,16 @@ get_header();
       </div>
     </div>
     <div class="p-about__message">
-      <?php $president = get_field('president'); ?>
-      <?php if ($president && (!empty($president['img']) || !empty($president['txt']))) : ?>
-        <?php if (!empty($president['img'])) : ?>
-          <figure class="p-about__message__imgWrap">
-            <img src="<?php echo esc_url($president['img']); ?>" class="p-about__message__img">
-          </figure>
-        <?php endif; ?>
-        <?php if (!empty($president['txt'])) : ?>
-          <p class="p-about__message__txt">
-            <?php echo esc_html($president['txt']); ?>
-          </p>
-        <?php endif; ?>
-      <?php endif; ?>
+      <figure class="p-about__message__imgWrap">
+        <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="p-about__message__img" alt="代表取締役社長 永井 賢次">
+      </figure>
+      <p class="p-about__message__txt">
+        豊後夢工房が考える本当によい家とは、そこに暮らす人の心と体を癒やし、家族との絆を育み、子育てをサポートする住まいだと考えます。 高品質で高性能、ランニングコストが低い家も今では当たり前。私たちはその全てを実現する家づくりを目指しています。 例えば、最新の太陽光発電システムと高気密・高断熱の設計によって、月々の住宅ローン返済がアパートの家賃よりも安くなる家を提供。 大手メーカーにも負けない開発力と技術力で、心と家計にゆとりをもたらす住まいを実現します。 豊後夢工房なら、自由設計のメリットを最大限に活かし、あなたの予算やライフスタイル、将来のプランにぴったりな理想の家を提供できます。心地よさと家族の絆を大切にする住まいを、わたしたちと一緒に実現しましょう。
+      </p>
     </div>
     <dl>
-      <dt class="p-about__message__bold ">株式会社 豊後夢工房</dt>
-      <dd class="p-about__message__bold ">代表取締役社長<span class="rireve_txt">　永井 賢次</span></dd>
+      <dt class="p-about__message__bold">株式会社 豊後夢工房</dt>
+      <dd class="p-about__message__bold">代表取締役社長<span class="p-about__message__name">　永井 賢次</span></dd>
     </dl>
   </section>
 
@@ -63,7 +56,7 @@ get_header();
     </a>
   </div>
 
-  <section class="l_content_middle_70 u-mb100">
+  <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         OUTLINE
@@ -150,19 +143,6 @@ get_header();
     </table>
   </section>
   <section class="u-pt50 u-mb100">
-    <!-- <div class="l_content_middle_70">
-      <div class="c-title__head">
-        <h3 class="c-title--sectionLine">
-          HISTORY
-        </h3>
-        <div>
-          <p class="c-title--orangeLine u-mb50">
-            <span class="u-orange">夢工房</span>の沿革
-          </p>
-        </div>
-      </div>
-    </div> -->
-
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         HISTORY
@@ -418,31 +398,42 @@ get_header();
       </div>
     </div>
     <?php
-    $qas = get_field('answers');
-    if ($qas) :
-      ?>
-      <ul class="c-accordion c-accordion--full">
-        <?php foreach ($qas as $i => $qa) :
-          if (empty($qa['question']) || empty($qa['answer'])) {
-            continue;
-          }
-          ?>
-          <li class="c-accordion__item">
-            <button type="button" class="c-accordion__trigger js-accordion">
-              <span class="c-accordion__number">
-                <?php echo sprintf('%02d', ($i + 1)); ?>
-              </span>
-              <?php echo esc_html($qa['question']); ?>
-            </button>
-            <div class="c-accordion__panel">
-              <p class="c-accordion__body">
-                <?php echo wp_kses_post($qa['answer']); ?>
-              </p>
-            </div>
-          </li>
-        <?php endforeach; ?>
-      </ul>
-    <?php endif; ?>
+    $about_corporate_standards = [
+      [
+        'question' => '企業理念',
+        'answer' => '生活を立て続けること',
+      ],
+      [
+        'question' => 'ミッション',
+        'answer' => '「お客様の笑顔が見える住まい」を創り続ける',
+      ],
+      [
+        'question' => 'ビジョン',
+        'answer' => 'お客様の子供たちや友人の方々から「豊後夢工房」で家が建てたいと言われるような地域密着の会社を目指していく',
+      ],
+      [
+        'question' => 'バリュー',
+        'answer' => '商品を提供する社員も明るく楽しく仕事が出来る環境づくりを行い褒め認め合うteamを形成していく',
+      ],
+    ];
+    ?>
+    <ul class="c-accordion c-accordion--full">
+      <?php foreach ($about_corporate_standards as $i => $qa) : ?>
+        <li class="c-accordion__item">
+          <button type="button" class="c-accordion__trigger js-accordion">
+            <span class="c-accordion__number">
+              <?php echo esc_html(sprintf('%02d', $i + 1)); ?>
+            </span>
+            <?php echo esc_html($qa['question']); ?>
+          </button>
+          <div class="c-accordion__panel">
+            <p class="c-accordion__body">
+              <?php echo esc_html($qa['answer']); ?>
+            </p>
+          </div>
+        </li>
+      <?php endforeach; ?>
+    </ul>
   </section>
 
 

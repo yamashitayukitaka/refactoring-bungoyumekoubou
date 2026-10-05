@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 get_header();
 ?>
 <main class="p-top">
-  <div class="c-pageMv c_pageMv_t">
+  <div class="c-pageMv c-pageMv--top">
     <div class="c-pageMv__heading">
       <h2 class="c-pageMv__heading__title">
         住まいに<span class="u-orange--mv">夢</span>を、
@@ -19,7 +19,7 @@ get_header();
   
     <ul class="p-top__mv__appealList">
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">断熱性能</p>
         <p class="p-top__mv__appealTxt">
           UA値
@@ -27,7 +27,7 @@ get_header();
         </p>
       </li>
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">気密性能</p>
         <p class="p-top__mv__appealTxt">
           C値
@@ -35,7 +35,7 @@ get_header();
         </p>
       </li>
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/top001.webp');">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/star3.webp" alt="">
         <p class="p-top__mv__appealTtl">耐震性能</p>
         <p class="p-top__mv__appealTxt">
           標準仕様
@@ -43,7 +43,7 @@ get_header();
         </p>
       </li>
     </ul>
-    <ul id="js-topSlider" class="c-pageMv__visual c-pageMv__visual--top">
+    <ul id="js-topSlider" class="c-pageMv__visual--top">
       <?php for ($i = 0; $i < 6; $i++) : ?>
         <li class="c-pageMv__visual__item"></li>
       <?php endfor; ?>
@@ -54,21 +54,16 @@ get_header();
 
   <section class="p-top__desc">
     <div class="l-content--xl p-top__desc__content">
-      <span class="p-top__desc__imgWrap" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/family_img.webp');"></span>
-      <div class="top__desc__imgWrap2">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/penchi.webp'" alt="">
-      </div>
       <p class="p-top__desc__copy">
         あなたの<span class="u-orange--mv">「ゆめ」</span>
         <br>いっしょにつくります
       </p>
       <p class="p-top__desc__txt">
-        豊後夢工房が考える本当に良い「家」とは、<br class="sp">毎日がちょっと特別になる場所。
-        <br>家族と過ごす時間がもっと愛おしくなり、<br class="sp">心と体がほっと安らぐ住まいです。
+        豊後夢工房が考える本当に良い「家」とは、<br class="u-none__pc--sp">毎日がちょっと特別になる場所。
+        <br>家族と過ごす時間がもっと愛おしくなり、<br class="u-none__pc--sp">心と体がほっと安らぐ住まいです。
         <br>私たち豊後夢工房は、あなたとご家族が笑顔で快適に過ごせる
         <br><span class="u-orange--sm">「快適ゆめ空間」</span>をご提供する施工会社です。
       </p>
-      <span class="p-top__desc__imgWrap--right" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/support-right.webp');"></span>
     </div>
   </section>
 
@@ -228,10 +223,7 @@ get_header();
     <p class="p-top__staff__subTtl">
       ゆめ空間づくりスタッフ
     </p>
-    <div class="u-center yume_staff_p">
-      <div class="top__desc__imgWrap3">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/tenten.webp'" alt="">
-      </div>
+    <div class="p-top__staff__copyWrap">
       <p class="p-top__staff__copy">
         あなたの<span class="p-top__staff__copy--orange">「ゆめ」</span>
         <br>いっしょにつくります。

@@ -1,12 +1,15 @@
 .c-pageMv {
   width: 100%;
-  height: calc(var(--windowHeight) - var(--headerHeight));
+  height: 60vh;
   position: relative;
   z-index: 1;
-  overflow: initial !important;
 
-  @include mq {
-    height: 500px;
+  @include mq(sp) {
+    height: 50vh;
+  }
+
+  &--top {
+    height: 600px !important;
   }
 
   &__visual {
@@ -15,7 +18,7 @@
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
 
     &--top {
       width: 100%;
@@ -23,33 +26,36 @@
       padding: 0;
       list-style: none;
       background-repeat: no-repeat;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
 
-      > .c-pageMv__visual__item:nth-of-type(1),
+      >.c-pageMv__visual__item:nth-of-type(1),
       .slick-slide:nth-of-type(1) .c-pageMv__visual__item {
         background-image: url('../img/top_slider/top1.webp');
       }
 
-      > .c-pageMv__visual__item:nth-of-type(2),
+      >.c-pageMv__visual__item:nth-of-type(2),
       .slick-slide:nth-of-type(2) .c-pageMv__visual__item {
         background-image: url('../img/top_slider/top9.webp');
       }
 
-      > .c-pageMv__visual__item:nth-of-type(3),
+      >.c-pageMv__visual__item:nth-of-type(3),
       .slick-slide:nth-of-type(3) .c-pageMv__visual__item {
         background-image: url('../img/top_slider/top4.webp');
       }
 
-      > .c-pageMv__visual__item:nth-of-type(4),
+      >.c-pageMv__visual__item:nth-of-type(4),
       .slick-slide:nth-of-type(4) .c-pageMv__visual__item {
         background-image: url('../img/top_slider/top5.webp');
       }
 
-      > .c-pageMv__visual__item:nth-of-type(5),
+      >.c-pageMv__visual__item:nth-of-type(5),
       .slick-slide:nth-of-type(5) .c-pageMv__visual__item {
         background-image: url('../img/top_slider/top6.webp');
       }
 
-      > .c-pageMv__visual__item:nth-of-type(6),
+      >.c-pageMv__visual__item:nth-of-type(6),
       .slick-slide:nth-of-type(6) .c-pageMv__visual__item {
         background-image: url('../img/top_slider/top8.webp');
       }
@@ -71,9 +77,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5% 5% 5% 10%;
-    min-width: 45%;
+    padding: 3% 3% 3% 10%;
+    min-width: 40%;
     z-index: 9;
+
+    @include mq(sp) {
+      padding: 8% 8% 8% 10%;
+    }
 
     &::before {
       content: '';
@@ -111,7 +121,7 @@
     }
 
     &__subTitle {
-      color: $pureBlack;
+      color: $red;
       font-size: 2.5rem;
       line-height: calc(52 / 20);
       letter-spacing: 0.18rem;
@@ -122,4 +132,3 @@
     }
   }
 }
-

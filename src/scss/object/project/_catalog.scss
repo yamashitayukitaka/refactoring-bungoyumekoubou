@@ -8,17 +8,24 @@
 
     &__logo {
       display: block;
-
-      // width: calc(481/1200*100%);
-      width: 20%;
+      width: 31%;
       aspect-ratio: 481/356;
       position: absolute;
       z-index: 99;
-      top: calc(106 / 610 * 100%);
-      left: calc(100 / 1200 * 100%);
+      top: 4.377049%;
+      left: 15.333333%;
 
-      @include mq {
-        width: 25rem;
+      @include mq(tab) {
+        width: 43%;
+        top: 13.377049%;
+        left: 15.333333%;
+      }
+
+      @include mq(sp) {
+        width: 70%;
+        max-width: 35rem;
+        top: 21.377049%;
+        left: 10.333333%;
       }
     }
   }

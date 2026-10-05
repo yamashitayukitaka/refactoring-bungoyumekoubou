@@ -10,5 +10,9 @@
   &__googleMapWrap {
     width: 100%;
     aspect-ratio: 877/493;
+
+    iframe {
+      width: 100%;
+    }
   }
 }
