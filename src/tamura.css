@@ -45,30 +45,3 @@
     height: 9rem;
   }
 }
-
-@media screen and (min-width:1051px) {
-  .l_content_middle_70 {
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 100%;
-  }
-
-}
-
-@media only screen and (min-width:599px) and (max-width:1050px) {
-  .l_content_middle_70 {
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width:599px) {
-  .l_content_middle_70 {
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 100%;
-  }
-
-}

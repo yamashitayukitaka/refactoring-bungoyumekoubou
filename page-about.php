@@ -22,7 +22,7 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="l_content_middle_70 u-mb100">
+  <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         MESSAGE
@@ -56,7 +56,7 @@ get_header();
     </a>
   </div>
 
-  <section class="l_content_middle_70 u-mb100">
+  <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
         OUTLINE

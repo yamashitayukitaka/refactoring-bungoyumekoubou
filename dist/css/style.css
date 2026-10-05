@@ -10581,7 +10581,6 @@ a:hover {
   width: 75%;
   border-bottom: solid 1px #eee !important;
   padding: 2.5rem 0 2.5rem 3rem;
-  font-weight: bold;
   font-size: 1.6rem;
 }
 
@@ -11444,26 +11443,6 @@ a:hover {
 
 .u-bold {
   font-weight: bold;
-}
-
-#u-loading {
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  position: fixed;
-  z-index: 99999999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-}
-
-.u-spinner {
-  display: inline-block;
-  width: 25rem;
-  animation: spin 2s linear 1;
-  text-align: center;
 }
 
 .u-center {
