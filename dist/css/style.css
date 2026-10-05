@@ -1586,6 +1586,14 @@ a:hover {
   position: relative;
   z-index: 9999;
 }
+@media screen and (max-width: 599px) {
+  .p-top__desc__txt {
+    font-size: 2rem;
+  }
+  .p-top__desc__txt span {
+    font-size: 2rem;
+  }
+}
 .p-top__introduction {
   background-size: cover;
   background-position: top center;

@@ -49,14 +49,6 @@
     display: none !important;
   }
 
-  .p-top__desc__txt {
-    font-size: 2rem;
-  }
-
-  .p-top__desc__txt span {
-    font-size: 2rem;
-  }
-
   .c-lineUp__media {
     aspect-ratio: 16/10;
   }

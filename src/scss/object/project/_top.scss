@@ -159,6 +159,14 @@
       font-weight: bold;
       position: relative;
       z-index: 9999;
+
+      @include mq(sp) {
+        font-size: 2rem;
+
+        span {
+          font-size: 2rem;
+        }
+      }
     }
 
   }
