@@ -186,16 +186,6 @@
     width: 100%;
   }
 
-  .c-pageMv__heading {
-    padding: 3% 3% 3% 10%;
-    min-width: 40%;
-  }
-
-  .c-pageMv__heading__subTitle {
-    color: #ed6a10;
-    font-size: 2.5rem;
-  }
-
   .c_title_orangeLine_t {
     font-size: 3rem;
     letter-spacing: 0.68rem;
@@ -237,16 +227,6 @@
     width: 100%;
   }
 
-  .c-pageMv__heading {
-    padding: 3% 3% 3% 10%;
-    min-width: 40%;
-  }
-
-  .c-pageMv__heading__subTitle {
-    color: #ed6a10;
-    font-size: 2.5rem;
-  }
-
   .c_title_orangeLine_t {
     font-size: 3rem;
     letter-spacing: 0.68rem;
@@ -286,16 +266,6 @@
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
-  }
-
-  .c-pageMv__heading {
-    padding: 8% 8% 8% 10%;
-    min-width: 40%;
-  }
-
-  .c-pageMv__heading__subTitle {
-    color: #ed6a10;
-    font-size: 2.5rem;
   }
 
   .c_title_orangeLine_t {

@@ -10881,9 +10881,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5% 5% 5% 10%;
-  min-width: 45%;
+  padding: 3% 3% 3% 10%;
+  min-width: 40%;
   z-index: 9;
+}
+@media screen and (max-width: 599px) {
+  .c-pageMv__heading {
+    padding: 8% 8% 8% 10%;
+  }
 }
 .c-pageMv__heading::before {
   content: "";
@@ -10918,7 +10923,7 @@ a:hover {
   font-weight: bold;
 }
 .c-pageMv__heading__subTitle {
-  color: #000;
+  color: #ed6a10;
   font-size: 2.5rem;
   line-height: 2.6;
   letter-spacing: 0.18rem;
