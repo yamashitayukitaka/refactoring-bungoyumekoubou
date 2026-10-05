@@ -418,7 +418,7 @@ get_header();
           <img src="<?php echo esc_url(IMG_URL . '/number/number4.webp'); ?>" alt="">
         </div>
         <div>
-          <p class="c_title_orangeLine_t"><span class="marker">
+          <p class="p-quality__largeText"><span class="marker">
               高気密</span>
           </p>
         </div>
@@ -467,7 +467,7 @@ get_header();
             <img src="<?php echo esc_url(IMG_URL . '/number/number5.webp'); ?>" alt="">
           </div>
           <div>
-            <p class="c_title_orangeLine_t"><span class="marker">24時間換気システム</span></p>
+            <p class="p-quality__largeText"><span class="marker">24時間換気システム</span></p>
           </div>
           <p class="p-quality__feature__overviewStrong">
             徹底的な気密施工

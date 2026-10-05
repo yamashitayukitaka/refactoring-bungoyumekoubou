@@ -98,25 +98,6 @@
     width: 100%;
   }
 
-  .c_title_orangeLine_t {
-    font-size: 3rem;
-    letter-spacing: 0.68rem;
-    color: #000000;
-    font-weight: 500;
-  }
-
-  .c_title_orangeLine_t span {
-    font-size: 3rem;
-    letter-spacing: 0.68rem;
-    font-weight: 500;
-  }
-
-  .c_title_orangeLine_t span.big {
-    font-size: 5rem !important;
-    letter-spacing: 0.68rem !important;
-    font-weight: 700 !important;
-  }
-
   .content_center {
     display: grid;
     place-content: center;
@@ -139,25 +120,6 @@
     width: 100%;
   }
 
-  .c_title_orangeLine_t {
-    font-size: 3rem;
-    letter-spacing: 0.68rem;
-    color: #000000;
-    font-weight: 500;
-  }
-
-  .c_title_orangeLine_t span {
-    font-size: 3rem;
-    letter-spacing: 0.68rem;
-    font-weight: 500;
-  }
-
-  .c_title_orangeLine_t span.big {
-    font-size: 5rem !important;
-    letter-spacing: 0.68rem !important;
-    font-weight: 700 !important;
-  }
-
   .content_center {
     display: grid;
     place-content: center;
@@ -178,25 +140,6 @@
     padding-left: 5%;
     padding-right: 5%;
     width: 100%;
-  }
-
-  .c_title_orangeLine_t {
-    font-size: 3rem;
-    letter-spacing: 0.68rem;
-    color: #000000;
-    font-weight: 500;
-  }
-
-  .c_title_orangeLine_t span {
-    font-size: 3rem;
-    letter-spacing: 0.68rem;
-    font-weight: 500;
-  }
-
-  .c_title_orangeLine_t span.big {
-    font-size: 5rem !important;
-    letter-spacing: 0.68rem !important;
-    font-weight: 700 !important;
   }
 
   .content_center {
