@@ -1433,6 +1433,11 @@ a:hover {
   bottom: -4.5rem;
   z-index: 9999;
 }
+@media screen and (max-width: 599px) {
+  .p-top__mv__appealList {
+    bottom: 6%;
+  }
+}
 .p-top__mv__appealItem {
   width: 14.5rem;
   height: 14.5rem;
