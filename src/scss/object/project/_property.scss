@@ -254,4 +254,12 @@
       line-height: calc(21 / 14);
     }
   }
+
+  &__iframe {
+    &__wrap {
+      iframe {
+        width: 100%;
+      }
+    }
+  }
 }

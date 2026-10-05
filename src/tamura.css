@@ -1,15 +1,3 @@
-.p-flex__one__imgWrap img {
-  height: auto !important;
-}
-
-.p-property__iframe__wrap iframe {
-  width: 100%;
-}
-
-.p-event__googleMapWrap iframe {
-  width: 100%;
-}
-
 @media screen and (min-width:1051px) {
   .sp_tab {
     display: none !important;

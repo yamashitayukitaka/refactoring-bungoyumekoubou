@@ -1909,6 +1909,9 @@ a:hover {
   width: 100%;
   aspect-ratio: 877/493;
 }
+.p-event__googleMapWrap iframe {
+  width: 100%;
+}
 
 .p-flex__two {
   display: flex;
@@ -1933,7 +1936,7 @@ a:hover {
   aspect-ratio: 900/562;
 }
 .p-flex__one__imgWrap img {
-  height: 100%;
+  height: auto !important;
 }
 
 .p-about__message {
@@ -7372,6 +7375,9 @@ a:hover {
   font-size: 1.4rem;
   color: #000;
   line-height: 1.5;
+}
+.p-property__iframe__wrap iframe {
+  width: 100%;
 }
 
 .p-location {
