@@ -11518,4 +11518,8 @@ a:hover {
   white-space: nowrap;
 }
 
+.img_shadow {
+  box-shadow: 1px 5px 5px 0 rgba(189, 184, 184, 0.5);
+}
+
 /*# sourceMappingURL=style.css.map */

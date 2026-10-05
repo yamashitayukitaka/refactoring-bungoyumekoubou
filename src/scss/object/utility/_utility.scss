@@ -318,25 +318,7 @@
   font-weight: bold;
 }
 
-#u-loading {
-  width: 100vw;
-  height: 100vh;
-  background: #fff;
-  position: fixed;
-  z-index: 99999999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-}
 
-.u-spinner {
-  display: inline-block;
-  width: 25rem;
-  animation: spin 2s linear 1;
-  text-align: center;
-}
 
 .u-center {
   display: block;
@@ -389,4 +371,9 @@
 
 .u-nowrap {
   white-space: nowrap;
+}
+
+// 旧 tamura .img_shadow（PC / タブ / SP で同一）
+.img_shadow {
+  box-shadow: 1px 5px 5px 0 rgb(189 184 184 / 50%);
 }
