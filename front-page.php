@@ -54,10 +54,6 @@ get_header();
 
   <section class="p-top__desc">
     <div class="l-content--xl p-top__desc__content">
-      <span class="p-top__desc__imgWrap" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/family_img.webp');"></span>
-      <div class="top__desc__imgWrap2">
-        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/penchi.webp'" alt="">
-      </div>
       <p class="p-top__desc__copy">
         あなたの<span class="u-orange--mv">「ゆめ」</span>
         <br>いっしょにつくります
@@ -68,7 +64,6 @@ get_header();
         <br>私たち豊後夢工房は、あなたとご家族が笑顔で快適に過ごせる
         <br><span class="u-orange--sm">「快適ゆめ空間」</span>をご提供する施工会社です。
       </p>
-      <span class="p-top__desc__imgWrap--right" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/support-right.webp');"></span>
     </div>
   </section>
 
@@ -229,7 +224,7 @@ get_header();
       ゆめ空間づくりスタッフ
     </p>
     <div class="u-center yume_staff_p">
-      <div class="top__desc__imgWrap3">
+      <div class="p-top__staff__imgWrap3">
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top_slider/tenten.webp'" alt="">
       </div>
       <p class="p-top__staff__copy">

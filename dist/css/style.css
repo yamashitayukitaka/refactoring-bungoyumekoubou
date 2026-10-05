@@ -1475,12 +1475,93 @@ a:hover {
 }
 .p-top__desc {
   background: #faf7f2;
-  margin-bottom: 10rem;
 }
 .p-top__desc__content {
   position: relative;
   padding-top: 10rem;
   padding-bottom: 11.8rem;
+}
+.p-top__desc__content::before {
+  content: "";
+  display: block;
+  width: 31%;
+  aspect-ratio: 372/290;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  background-image: url("../img/top/family_img.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+@media screen and (max-width: 1200px) {
+  .p-top__desc__content::before {
+    bottom: 8rem;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .p-top__desc__content::before {
+    width: 27%;
+    top: 8%;
+    bottom: auto;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-top__desc__content::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-top__desc__content::before {
+    display: block;
+    width: 18%;
+    aspect-ratio: 214/235;
+    left: auto;
+    right: 2%;
+    top: 9%;
+    bottom: auto;
+    background-image: url("../img/top_slider/penchi.webp");
+  }
+}
+.p-top__desc__content::after {
+  content: "";
+  display: block;
+  width: 31.5%;
+  aspect-ratio: 400/300;
+  position: absolute;
+  right: -3.8%;
+  bottom: 9%;
+  background-image: url("../img/top/top_desc01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 1;
+}
+@media screen and (max-width: 1200px) {
+  .p-top__desc__content::after {
+    bottom: 8rem;
+    width: 34.5%;
+    right: -6.5%;
+    background-image: url("../img/top/top_desc01_sp.png");
+  }
+}
+@media screen and (max-width: 1050px) {
+  .p-top__desc__content::after {
+    width: 28.5%;
+    top: 11%;
+    bottom: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .p-top__desc__content::after {
+    width: 31%;
+    right: -5.5%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-top__desc__content::after {
+    display: none;
+  }
 }
 .p-top__desc__copy {
   font-size: 3.6rem;
@@ -1499,51 +1580,6 @@ a:hover {
   font-weight: bold;
   position: relative;
   z-index: 9999;
-}
-.p-top__desc__imgWrap {
-  display: block;
-  width: 31%;
-  height: 290px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: top center;
-}
-@media screen and (max-width: 768px) {
-  .p-top__desc__imgWrap {
-    display: none;
-  }
-}
-.p-top__desc__imgWrap--right {
-  display: block;
-  width: 27.75%;
-  height: 290px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: top center;
-  z-index: 9999;
-}
-@media screen and (max-width: 768px) {
-  .p-top__desc__imgWrap--right {
-    display: none;
-  }
-}
-.p-top__desc__imgWrap--right::after {
-  position: absolute;
-  content: "";
-  display: block;
-  background: url("../dist/img/top/house.png");
-  height: 10rem;
-  background-size: contain;
-  width: 51.951951952%;
-  aspect-ratio: 173/132;
-  background-repeat: no-repeat;
-  top: 0;
-  right: -25%;
-  z-index: 1;
 }
 .p-top__introduction {
   background-size: cover;
@@ -1596,6 +1632,20 @@ a:hover {
 @media screen and (max-width: 768px) {
   .p-top__introduction__imgWrap--house {
     display: none;
+  }
+}
+.p-top__staff__imgWrap3 {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  .p-top__staff__imgWrap3 {
+    display: block;
+    width: 12%;
+    height: auto;
+    position: absolute;
+    right: 17%;
+    top: -28%;
+    max-width: 35px;
   }
 }
 .p-top__staff__list:nth-of-type(1) {

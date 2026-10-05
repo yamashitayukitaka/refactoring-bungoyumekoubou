@@ -19,18 +19,6 @@
     display: none !important;
   }
 
-  .p-top__desc__imgWrap {
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 5%;
-  }
-
-  .p-top__desc__imgWrap--right {
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 8%;
-  }
-
   .p-top__staff__copy::before {
     background: url(../dist/img/top/staff01.webp);
     width: 42%;
@@ -41,16 +29,8 @@
     width: 107%;
   }
 
-  .top__desc__imgWrap2 {
-    display: none;
-  }
-
   .c-lineUp__media {
     aspect-ratio: 16/10;
-  }
-
-  .top__desc__imgWrap3 {
-    display: none;
   }
 
 }
@@ -64,30 +44,8 @@
     display: none !important;
   }
 
-  .p-top__desc__imgWrap {
-    width: 27%;
-    top: 8%;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .p-top__desc__imgWrap--right {
-    width: 25%;
-    top: 11%;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
   .c-lineUp__media {
     aspect-ratio: 16/10;
-  }
-
-  .top__desc__imgWrap2 {
-    display: none;
-  }
-
-  .top__desc__imgWrap3 {
-    display: none;
   }
 
 }
@@ -121,27 +79,8 @@
     font-size: 3rem !important;
   }
 
-  .top__desc__imgWrap2 {
-    display: block;
-    width: 18%;
-    height: auto;
-    position: absolute;
-    right: 2%;
-    top: 9%;
-  }
-
   .yume_staff_p {
     position: relative;
-  }
-
-  .top__desc__imgWrap3 {
-    display: block;
-    width: 12%;
-    height: auto;
-    position: absolute;
-    right: 17%;
-    top: -28%;
-    max-width: 35px;
   }
 
   .l-footer__map__copyWrap {
