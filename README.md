@@ -92,7 +92,6 @@ wazeka/
 │   │   ├── common.js  # 全ページ（modules を import）
 │   │   ├── modules/
 │   │   └── pages/     # ページ別エントリ → dist/js/*.js
-│   └── test.css       # レガシー（会社概要・採用のみ enqueue）
 ├── template-parts/
 ├── style.css          # WordPress テーマヘッダーのみ
 ├── composer.json      # PHPCS（require-dev）
@@ -108,12 +107,6 @@ wazeka/
 - 出力: `dist/css/style.css`（`inc/enqueue.php` で全ページ読み込み）
 - ブレークポイントは `foundation` の mixin（`mq(sp)` / `mq(tab)` など）を使う
 - 表示切替は `object/utility/_utility.scss` の `u-none__pc` / `u-none__mobile`（例: `u-none__pc--sp`, `u-none__mobile--tab`）
-
-### レガシー CSS
-
-| ファイル | 読み込み |
-| --- | --- |
-| `src/test.css` | 固定ページ「会社概要」「採用」のみ（`inc/enqueue.php`） |
 
 ## JavaScript
 
