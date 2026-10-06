@@ -46,16 +46,6 @@ function wazeka_scripts()
     );
   }
 
-  if (is_page(array('about', 'recruit'))) {
-    wp_enqueue_script(
-        'wazeka-timeline',
-        $js . '/test.js',
-        array('jquery'),
-        '1.0.0',
-        true
-    );
-  }
-
   if (is_front_page()) {
     wp_enqueue_script(
         'wazeka-staff-slider',
@@ -80,7 +70,7 @@ function wazeka_scripts()
     wp_enqueue_script(
         'wazeka-recruit',
         $js . '/recruit.js',
-        array(),
+        array('jquery'),
         '1.0.0',
         true
     );
