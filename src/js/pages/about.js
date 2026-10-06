@@ -1,5 +1,6 @@
 // 会社概要のエントリ。modules/ から import する
 import '../modules/accordion.js';
+import '../legacy/pres-timeline.js';
 
 const staffImg = document.querySelector('.js-staffImg');
 

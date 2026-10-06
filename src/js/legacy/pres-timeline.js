@@ -1,5 +1,5 @@
-(function($){ 
-"use strict";
+const $ = window.jQuery;
+
 class PRESTimeline {
   constructor(target, color) {
     // this.__process_stylesheet(document.styleSheets[0]);
@@ -270,27 +270,26 @@ class PRESTimeline {
     this._adjustCardContainer();
   }
 }
-// ## document load ##
-$(document).ready(function () {
-  let colorcode = {
-    period1: "#EA6800",
-    period2: "#f59c56",
-    period3: "#ffbe8c",
-    period4: "#EA6800",
-    period5: "#f59c56",
-    period6: "#ffbe8c",
-    period7: "#EA6800",
-    period8: "#f59c56",
-    period9: "#ffbe8c",
-    period10: "#EA6800",
-    period11: "#f59c56",
-    period12: "#ffbe8c",
-    period13: "#EA6800",
-    period14: "#f59c56",
-    period15: "#ffbe8c",
-    period16: "#EA6800"
-  };
-  let timeline = new PRESTimeline($("#this-timeline"), colorcode);
-});
 
-})(jQuery);
+const periodColors = {
+  period1: '#EA6800',
+  period2: '#f59c56',
+  period3: '#ffbe8c',
+  period4: '#EA6800',
+  period5: '#f59c56',
+  period6: '#ffbe8c',
+  period7: '#EA6800',
+  period8: '#f59c56',
+  period9: '#ffbe8c',
+  period10: '#EA6800',
+  period11: '#f59c56',
+  period12: '#ffbe8c',
+  period13: '#EA6800',
+  period14: '#f59c56',
+  period15: '#ffbe8c',
+  period16: '#EA6800',
+};
+
+if ($ && document.getElementById('this-timeline')) {
+  new PRESTimeline($('#this-timeline'), periodColors);
+}

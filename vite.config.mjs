@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite';
-import { readdirSync } from 'node:fs';
+import { existsSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-export function getEntries() {
-  const entries = {
-    common: resolve(import.meta.dirname, 'src/js/common.js'),
-  };
-  const pagesDir = resolve(import.meta.dirname, 'src/js/pages');
-  const files = readdirSync(pagesDir);
+function addJsEntries(entries, dir) {
+  if (!existsSync(dir)) {
+    return;
+  }
+
+  const files = readdirSync(dir);
 
   for (let i = 0; i < files.length; i++) {
     const file = files[i];
@@ -17,8 +17,16 @@ export function getEntries() {
     }
 
     const name = file.slice(0, -3);
-    entries[name] = resolve(pagesDir, file);
+    entries[name] = resolve(dir, file);
   }
+}
+
+export function getEntries() {
+  const entries = {
+    common: resolve(import.meta.dirname, 'src/js/common.js'),
+  };
+
+  addJsEntries(entries, resolve(import.meta.dirname, 'src/js/pages'));
 
   return entries;
 }
