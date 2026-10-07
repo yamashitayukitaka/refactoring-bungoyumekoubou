@@ -29,16 +29,6 @@ function wazeka_scripts()
     );
   }
 
-  if (is_singular('works') || is_page_template(array('used.php', 'land.php', 'rental.php')) || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))) {
-    wp_enqueue_script(
-        'wazeka-has-thumb-slider',
-        $js . '/hasThumbSlider.js',
-        array('jquery', 'slick-carousel'),
-        '1.0.0',
-        true
-    );
-  }
-
   if (is_front_page()) {
     wp_enqueue_script(
         'wazeka-staff-slider',
@@ -79,8 +69,8 @@ function wazeka_scripts()
     );
   }
 
-  // LOCATION（js-commonSlick）: template-parts/common.php を読む固定ページ
-  $wazeka_common_slick_pages = array(
+  // js-commonSlick（LOCATION）: template-parts/common.php / js-hasThumbSlider（ギャラリー）
+  $wazeka_location_pages = array(
     'about',
     'after-support',
     'concept',
@@ -95,14 +85,17 @@ function wazeka_scripts()
   );
 
   if (
-      is_front_page()
-      || is_page($wazeka_common_slick_pages)
+      is_singular('works')
+      || is_page_template(array('used.php', 'land.php', 'rental.php'))
+      || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))
+      || is_front_page()
+      || is_page($wazeka_location_pages)
       || is_post_type_archive('staff')
       || is_singular('staff')
   ) {
     wp_enqueue_script(
-        'wazeka-common-slick',
-        $js . '/commonSlick.js',
+        'wazeka-thumb-slider',
+        $js . '/thumb-slider.js',
         array('jquery', 'slick-carousel'),
         '1.0.0',
         true
@@ -122,9 +115,8 @@ function wazeka_scripts()
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0');
 
   if (
-      wp_script_is('wazeka-has-thumb-slider', 'enqueued')
+      wp_script_is('wazeka-thumb-slider', 'enqueued')
       || wp_script_is('wazeka-staff-slider', 'enqueued')
-      || wp_script_is('wazeka-common-slick', 'enqueued')
       || wp_script_is('wazeka-mv-slider', 'enqueued')
       || wp_script_is('wazeka-after-loop', 'enqueued')
   ) {
