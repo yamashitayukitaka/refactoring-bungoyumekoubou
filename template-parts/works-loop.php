@@ -1,25 +1,10 @@
 <li class = "c-cardList__item">
   <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
-    <?php $sliders = get_field('works-slider-list'); ?>
-    <?php
-    $hasSliderImg = false;
-    if ($sliders) {
-      foreach ($sliders as $row) {
-        if (!empty($row['works-slider-img'])) {
-          $hasSliderImg = true;
-          break;
-        }
-      }
-    }
-    ?>
-    <?php if ($hasSliderImg) :?>
-      <ul class = "c-cardList__slider__list">
-        <?php foreach ($sliders as $slider) :?>
-          <?php if (!empty($slider['works-slider-img'])) : ?>
-          <li class = "c-cardList__slider__item"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" class = "c-cardList__slider__img"></li>
-          <?php endif; ?>
-        <?php endforeach;?>
-      </ul>
+    <?php $thumb = get_field('works-thumb'); ?>
+    <?php if (!empty($thumb)) : ?>
+    <figure class = "c-cardList__imgWrap">
+      <img src = "<?php echo esc_url($thumb); ?>" alt = "<?php echo esc_attr(get_the_title()); ?>">
+    </figure>
     <?php endif; ?>
     <div class = "c-cardList__txtWrap">
       <?php $worksTypes = get_the_terms(
