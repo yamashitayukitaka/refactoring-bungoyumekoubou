@@ -119,16 +119,6 @@ function wazeka_scripts()
     );
   }
 
-  if (is_singular('xo_event')) {
-    wp_enqueue_script(
-        'wazeka-booking',
-        $js . '/booking-package.js',
-        array('jquery'),
-        '1.0.0',
-        true
-    );
-  }
-
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0');
 
   if (
