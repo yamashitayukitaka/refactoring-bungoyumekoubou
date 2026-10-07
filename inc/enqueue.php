@@ -19,13 +19,6 @@ function wazeka_scripts()
       '1.0.0',
       true
   );
-  wp_enqueue_script(
-      'wazeka-main',
-      $js . '/main.js',
-      array('jquery'),
-      '1.0.0',
-      true
-  );
   if (is_page('about') || is_singular('staff')) {
     wp_enqueue_script(
         'wazeka-page',
@@ -36,20 +29,20 @@ function wazeka_scripts()
     );
   }
 
-  if (is_singular('works') || is_page_template(array('used.php', 'land.php', 'rental.php')) || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))) {
+  if (is_front_page()) {
     wp_enqueue_script(
-        'wazeka-has-thumb-slider',
-        $js . '/hasThumbSlider.js',
+        'wazeka-staff-slider',
+        $js . '/staff-slider.js',
         array('jquery', 'slick-carousel'),
         '1.0.0',
         true
     );
   }
 
-  if (is_front_page()) {
+  if (is_front_page() || is_page(array('heig', 'rireve'))) {
     wp_enqueue_script(
-        'wazeka-staff-slider',
-        $js . '/staffSlider.js',
+        'wazeka-mv-slider',
+        $js . '/mv-slider.js',
         array('jquery', 'slick-carousel'),
         '1.0.0',
         true
@@ -76,8 +69,8 @@ function wazeka_scripts()
     );
   }
 
-  // LOCATION（js-commonSlick）: template-parts/common.php を読む固定ページ
-  $wazeka_common_slick_pages = array(
+  // js-commonSlick（LOCATION）: template-parts/common.php / js-hasThumbSlider（ギャラリー）
+  $wazeka_location_pages = array(
     'about',
     'after-support',
     'concept',
@@ -92,35 +85,18 @@ function wazeka_scripts()
   );
 
   if (
-      is_front_page()
-      || is_page($wazeka_common_slick_pages)
+      is_singular('works')
+      || is_page_template(array('used.php', 'land.php', 'rental.php'))
+      || is_page(array('heig', 'rireve', 'irohaie', 'model-house'))
+      || is_front_page()
+      || is_page($wazeka_location_pages)
       || is_post_type_archive('staff')
       || is_singular('staff')
   ) {
     wp_enqueue_script(
-        'wazeka-common-slick',
-        $js . '/commonSlick.js',
+        'wazeka-thumb-slider',
+        $js . '/thumb-slider.js',
         array('jquery', 'slick-carousel'),
-        '1.0.0',
-        true
-    );
-  }
-
-  if (is_front_page() || is_post_type_archive('works') || is_tax(array('works-type', 'works-tag')) || is_singular(array('works', 'staff', 'xo_event')) || is_page(array('heig', 'rireve', 'irohaie', 'recruit'))) {
-    wp_enqueue_script(
-        'wazeka-after-loop',
-        $js . '/afterWordpressLoop.js',
-        array('jquery', 'slick-carousel'),
-        '1.0.0',
-        true
-    );
-  }
-
-  if (is_singular('xo_event')) {
-    wp_enqueue_script(
-        'wazeka-booking',
-        $js . '/booking-package.js',
-        array('jquery'),
         '1.0.0',
         true
     );
@@ -129,10 +105,9 @@ function wazeka_scripts()
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0');
 
   if (
-      wp_script_is('wazeka-has-thumb-slider', 'enqueued')
+      wp_script_is('wazeka-thumb-slider', 'enqueued')
       || wp_script_is('wazeka-staff-slider', 'enqueued')
-      || wp_script_is('wazeka-common-slick', 'enqueued')
-      || wp_script_is('wazeka-after-loop', 'enqueued')
+      || wp_script_is('wazeka-mv-slider', 'enqueued')
   ) {
     wp_enqueue_style('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css', array(), '1.9.0');
     wp_enqueue_style('slick-carousel-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css', array(), '1.9.0');

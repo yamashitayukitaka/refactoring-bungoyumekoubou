@@ -6,46 +6,105 @@
             "key": "field_6b000011type",
             "label": "施工種別",
             "name": "works-type",
+            "aria-label": "",
             "type": "taxonomy",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "taxonomy": "works-type",
             "field_type": "checkbox",
-            "return_format": "id"
+            "return_format": "id",
+            "multiple": 0,
+            "allow_null": 0,
+            "add_term": 1,
+            "load_terms": 0,
+            "save_terms": 0
         },
         {
-            "key": "field_6b000011slider",
-            "label": "ギャラリー",
-            "name": "works-slider-list",
-            "type": "repeater",
-            "layout": "table",
-            "sub_fields": [
-                {
-                    "key": "field_6b000011si",
-                    "label": "画像",
-                    "name": "works-slider-img",
-                    "type": "image",
-                    "return_format": "url",
-                    "preview_size": "medium"
-                }
-            ]
+            "key": "field_6ac5fbf9e0641",
+            "label": "サムネイル画像",
+            "name": "works-thumb",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_6b000011area",
             "label": "面積",
             "name": "works-area",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_6b000011as",
                     "label": "敷地面積",
                     "name": "site",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
                     "key": "field_6b000011af",
                     "label": "延床面積",
                     "name": "total-floor",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         },
@@ -53,20 +112,57 @@
             "key": "field_6b000011table",
             "label": "基本情報",
             "name": "works-table",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_6b000011tp",
                     "label": "間取りの特徴",
                     "name": "plan-of-feature",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
                     "key": "field_6b000011ta",
                     "label": "建築エリア",
                     "name": "area",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         },
@@ -74,20 +170,57 @@
             "key": "field_6b000011outline",
             "label": "概要",
             "name": "outline",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_6b000011ot",
                     "label": "タイトル",
                     "name": "ttl",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
                     "key": "field_6b000011ox",
                     "label": "本文",
                     "name": "txt",
-                    "type": "textarea"
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "new_lines": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "rows": ""
                 }
             ]
         },
@@ -95,16 +228,49 @@
             "key": "field_6b000011aimgs",
             "label": "ギャラリー",
             "name": "a-imgs",
+            "aria-label": "",
             "type": "repeater",
+            "instructions": "詳細ページのサムネ連動スライダー（hasThumbSlider）用。一覧カードは「ギャラリー（一覧）」を使用。",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "行を追加",
+            "rows_per_page": 20,
             "sub_fields": [
                 {
                     "key": "field_6b000011ai",
                     "label": "画像",
                     "name": "img",
+                    "aria-label": "",
                     "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "return_format": "url",
-                    "preview_size": "medium"
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": "",
+                    "parent_repeater": "field_6b000011aimgs"
                 }
             ]
         },
@@ -112,37 +278,102 @@
             "key": "field_6b000011voice",
             "label": "お客様の声",
             "name": "voice",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_6b000011vi",
                     "label": "画像",
                     "name": "img",
+                    "aria-label": "",
                     "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "return_format": "url",
-                    "preview_size": "medium"
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": ""
                 },
                 {
                     "key": "field_6b000011vx",
                     "label": "本文",
                     "name": "txt",
+                    "aria-label": "",
                     "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 1
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
                 },
                 {
                     "key": "field_6b000011va",
                     "label": "住所",
                     "name": "address",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 },
                 {
                     "key": "field_6b000011vn",
                     "label": "名前",
                     "name": "name",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         },
@@ -150,25 +381,62 @@
             "key": "field_6b000011qs",
             "label": "Q&A",
             "name": "qs",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_6b000011qsi",
                     "label": "画像",
                     "name": "img",
+                    "aria-label": "",
                     "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "return_format": "url",
-                    "preview_size": "medium"
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": ""
                 },
                 {
                     "key": "field_6b000011qsx",
                     "label": "本文",
                     "name": "txt",
+                    "aria-label": "",
                     "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 1
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
                 }
             ]
         },
@@ -176,251 +444,183 @@
             "key": "field_6b000011design",
             "label": "デザイン",
             "name": "flex-design",
-            "type": "flexible_content",
-            "button_label": "レイアウトを追加",
-            "layouts": {
-                "layout_6b000011d2col": {
-                    "key": "layout_6b000011d2col",
-                    "name": "two-column",
-                    "label": "2カラム",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6b000011df1",
-                            "label": "コンテンツ1",
-                            "name": "contents-1",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000011df1i",
-                                    "label": "画像",
-                                    "name": "img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000011df1t",
-                                    "label": "タイトル",
-                                    "name": "ttl",
-                                    "type": "text"
-                                },
-                                {
-                                    "key": "field_6b000011df1x",
-                                    "label": "本文",
-                                    "name": "txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        },
-                        {
-                            "key": "field_6b000011df2",
-                            "label": "コンテンツ2",
-                            "name": "contents-2",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000011df2i",
-                                    "label": "画像",
-                                    "name": "img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000011df2t",
-                                    "label": "タイトル",
-                                    "name": "ttl",
-                                    "type": "text"
-                                },
-                                {
-                                    "key": "field_6b000011df2x",
-                                    "label": "本文",
-                                    "name": "txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "button_label": "行を追加",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_6b000011di",
+                    "label": "画像",
+                    "name": "img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": "",
+                    "parent_repeater": "field_6b000011design"
                 },
-                "layout_6b000011d1col": {
-                    "key": "layout_6b000011d1col",
-                    "name": "one-column",
-                    "label": "1カラム",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6b000011dfc",
-                            "label": "コンテンツ",
-                            "name": "contents",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000011dfci",
-                                    "label": "画像",
-                                    "name": "img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000011dfct",
-                                    "label": "タイトル",
-                                    "name": "ttl",
-                                    "type": "text"
-                                },
-                                {
-                                    "key": "field_6b000011dfcx",
-                                    "label": "本文",
-                                    "name": "txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
+                {
+                    "key": "field_6b000011dt",
+                    "label": "タイトル",
+                    "name": "ttl",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6b000011design"
+                },
+                {
+                    "key": "field_6b000011dx",
+                    "label": "本文",
+                    "name": "txt",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0,
+                    "parent_repeater": "field_6b000011design"
                 }
-            }
+            ]
         },
         {
             "key": "field_6b000011fac",
             "label": "設備",
             "name": "flex-facilities",
-            "type": "flexible_content",
-            "button_label": "レイアウトを追加",
-            "layouts": {
-                "layout_6b000011f2col": {
-                    "key": "layout_6b000011f2col",
-                    "name": "two-column",
-                    "label": "2カラム",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6b000011ff1",
-                            "label": "コンテンツ1",
-                            "name": "contents-1",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000011ff1i",
-                                    "label": "画像",
-                                    "name": "img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000011ff1t",
-                                    "label": "タイトル",
-                                    "name": "ttl",
-                                    "type": "text"
-                                },
-                                {
-                                    "key": "field_6b000011ff1x",
-                                    "label": "本文",
-                                    "name": "txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        },
-                        {
-                            "key": "field_6b000011ff2",
-                            "label": "コンテンツ2",
-                            "name": "contents-2",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000011ff2i",
-                                    "label": "画像",
-                                    "name": "img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000011ff2t",
-                                    "label": "タイトル",
-                                    "name": "ttl",
-                                    "type": "text"
-                                },
-                                {
-                                    "key": "field_6b000011ff2x",
-                                    "label": "本文",
-                                    "name": "txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "button_label": "行を追加",
+            "collapsed": "",
+            "sub_fields": [
+                {
+                    "key": "field_6b000011fi",
+                    "label": "画像",
+                    "name": "img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": "",
+                    "parent_repeater": "field_6b000011fac"
                 },
-                "layout_6b000011f1col": {
-                    "key": "layout_6b000011f1col",
-                    "name": "one-column",
-                    "label": "1カラム",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6b000011ffc",
-                            "label": "コンテンツ",
-                            "name": "contents",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000011ffci",
-                                    "label": "画像",
-                                    "name": "img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000011ffct",
-                                    "label": "タイトル",
-                                    "name": "ttl",
-                                    "type": "text"
-                                },
-                                {
-                                    "key": "field_6b000011ffcx",
-                                    "label": "本文",
-                                    "name": "txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
+                {
+                    "key": "field_6b000011ft",
+                    "label": "タイトル",
+                    "name": "ttl",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6b000011fac"
+                },
+                {
+                    "key": "field_6b000011fx",
+                    "label": "本文",
+                    "name": "txt",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0,
+                    "parent_repeater": "field_6b000011fac"
                 }
-            }
+            ]
         }
     ],
     "location": [
@@ -439,5 +639,7 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
-    "show_in_rest": 0
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1791360084
 }

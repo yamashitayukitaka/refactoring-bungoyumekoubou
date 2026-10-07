@@ -953,9 +953,7 @@ a:hover {
   z-index: 999;
 }
 
-#js-topSlider:not(.slick-initialized) > *:not(:first-child),
-.service_slider:not(.slick-initialized) > *:not(:first-child),
-.js-worksSlider:not(.slick-initialized) > *:not(:first-child),
+.js-mvSlider:not(.slick-initialized) > *:not(:first-child),
 .js-commonSlick:not(.slick-initialized) > *:not(:first-child),
 .js-hasThumbSlider:not(.slick-initialized) > *:not(:first-child),
 .js-staffSlider:not(.slick-initialized) > *:not(:first-child),

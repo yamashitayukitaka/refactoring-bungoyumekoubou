@@ -1,5 +1,4 @@
-const $ = window.jQuery;
-
+(function ($) {
 class PRESTimeline {
   constructor(target, color) {
     // this.__process_stylesheet(document.styleSheets[0]);
@@ -290,6 +289,7 @@ const periodColors = {
   period16: '#EA6800',
 };
 
-if ($ && document.getElementById('this-timeline')) {
+if (document.getElementById('this-timeline')) {
   new PRESTimeline($('#this-timeline'), periodColors);
 }
+})(jQuery);

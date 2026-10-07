@@ -17,7 +17,7 @@ get_header();
       </div>
     </div>
     <p class="p-heig__mv__lead">自由自在なプランで、暮らしを豊かに。</p>
-    <div class="p-heig__mv__slider service_slider">
+    <div class="p-heig__mv__slider js-mvSlider">
       <div class="p-heig__mv__slide">
         <img class="p-heig__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/top_img1.webp' ?>" alt="">
       </div>

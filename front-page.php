@@ -43,7 +43,7 @@ get_header();
         </p>
       </li>
     </ul>
-    <ul id="js-topSlider" class="c-pageMv__visual--top">
+    <ul class="c-pageMv__visual--top js-mvSlider">
       <?php for ($i = 0; $i < 6; $i++) : ?>
         <li class="c-pageMv__visual__item"></li>
       <?php endfor; ?>
