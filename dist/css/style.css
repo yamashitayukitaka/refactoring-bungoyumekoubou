@@ -954,7 +954,6 @@ a:hover {
 }
 
 .js-mvSlider:not(.slick-initialized) > *:not(:first-child),
-.js-worksSlider:not(.slick-initialized) > *:not(:first-child),
 .js-commonSlick:not(.slick-initialized) > *:not(:first-child),
 .js-hasThumbSlider:not(.slick-initialized) > *:not(:first-child),
 .js-staffSlider:not(.slick-initialized) > *:not(:first-child),

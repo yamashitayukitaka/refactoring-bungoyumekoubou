@@ -13,7 +13,7 @@
     }
     ?>
     <?php if ($hasSliderImg) :?>
-      <ul class = "js-worksSlider c-cardList__slider__list">
+      <ul class = "c-cardList__slider__list">
         <?php foreach ($sliders as $slider) :?>
           <?php if (!empty($slider['works-slider-img'])) : ?>
           <li class = "c-cardList__slider__item"><img src = "<?php echo esc_url($slider['works-slider-img']); ?>" class = "c-cardList__slider__img"></li>

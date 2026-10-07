@@ -102,23 +102,12 @@ function wazeka_scripts()
     );
   }
 
-  if (is_front_page() || is_post_type_archive('works') || is_tax(array('works-type', 'works-tag')) || is_singular(array('works', 'staff', 'xo_event')) || is_page(array('heig', 'rireve', 'irohaie', 'recruit'))) {
-    wp_enqueue_script(
-        'wazeka-after-loop',
-        $js . '/afterWordpressLoop.js',
-        array('jquery', 'slick-carousel'),
-        '1.0.0',
-        true
-    );
-  }
-
   wp_enqueue_style('custom-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0');
 
   if (
       wp_script_is('wazeka-thumb-slider', 'enqueued')
       || wp_script_is('wazeka-staff-slider', 'enqueued')
       || wp_script_is('wazeka-mv-slider', 'enqueued')
-      || wp_script_is('wazeka-after-loop', 'enqueued')
   ) {
     wp_enqueue_style('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css', array(), '1.9.0');
     wp_enqueue_style('slick-carousel-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css', array(), '1.9.0');
