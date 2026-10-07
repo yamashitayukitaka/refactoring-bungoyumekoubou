@@ -49,6 +49,16 @@ function wazeka_scripts()
     );
   }
 
+  if (is_front_page() || is_page(array('heig', 'rireve'))) {
+    wp_enqueue_script(
+        'wazeka-mv-slider',
+        $js . '/mv-slider.js',
+        array('jquery', 'slick-carousel'),
+        '1.0.0',
+        true
+    );
+  }
+
   if (is_page('faq')) {
     wp_enqueue_script(
         'wazeka-faq',
@@ -125,6 +135,7 @@ function wazeka_scripts()
       wp_script_is('wazeka-has-thumb-slider', 'enqueued')
       || wp_script_is('wazeka-staff-slider', 'enqueued')
       || wp_script_is('wazeka-common-slick', 'enqueued')
+      || wp_script_is('wazeka-mv-slider', 'enqueued')
       || wp_script_is('wazeka-after-loop', 'enqueued')
   ) {
     wp_enqueue_style('slick-carousel', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css', array(), '1.9.0');

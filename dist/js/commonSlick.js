@@ -25,25 +25,5 @@
       var slideIndex = $(this).data('slide');
       $slider.slick('slickGoTo', slideIndex);
     });
-
-    $('#js-topSlider').slick({
-      fade: true,
-      autoplay: true,
-      speed: 1500,
-      autoplaySpeed: 4000,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      arrows: false,
-    });
-
-    $('.service_slider').slick({
-      fade: true,
-      autoplay: true,
-      speed: 1500,
-      autoplaySpeed: 4000,
-      pauseOnFocus: false,
-      pauseOnHover: false,
-      arrows: false,
-    });
   });
 })(jQuery);

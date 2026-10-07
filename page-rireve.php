@@ -18,7 +18,7 @@ get_header();
     </div>
     <p class="p-rireve__mv__lead">夏涼しく冬暖かい、快適な住み心地を<br>
       可能にする次世代省エネ住宅。</p>
-    <div class="p-rireve__mv__slider service_slider">
+    <div class="p-rireve__mv__slider js-mvSlider">
       <div class="p-rireve__mv__slide">
         <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img3.webp' ?>" alt="">
       </div>
