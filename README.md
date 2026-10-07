@@ -119,7 +119,7 @@ wazeka/
 
 ### その他
 
-`dist/js/` には Slick 連携などのレガシースクリプト（`main.js`, `commonSlick.js` など）があり、`inc/enqueue.php` でページ条件ごとに読み込みます。ソースが `src/js` に無いファイルは、Vite ビルドでは更新されません。
+`dist/js/` には Slick 連携などのレガシースクリプト（`commonSlick.js` など）があり、`inc/enqueue.php` でページ条件ごとに読み込みます。`src/js/legacy/` には旧実装の参照用ソース（例: `xo-event-calendar.js`）を置くが、enqueue・Vite ビルドの対象外。ソースが `src/js` の `common` / `pages` に無い `dist/js` ファイルは、Vite ビルドでは更新されません。
 
 Slick の CSS は CDN から条件付きで enqueue されます。
 

@@ -19,13 +19,6 @@ function wazeka_scripts()
       '1.0.0',
       true
   );
-  wp_enqueue_script(
-      'wazeka-main',
-      $js . '/main.js',
-      array('jquery'),
-      '1.0.0',
-      true
-  );
   if (is_page('about') || is_singular('staff')) {
     wp_enqueue_script(
         'wazeka-page',
