@@ -1,4 +1,4 @@
-// 参照用レガシー（旧 main.js）。enqueue・Vite ビルド対象外。
+// 参照用（src/js/_deprecated）。旧 main.js。enqueue・Vite ビルド対象外。
 (function ($) {
 $('.other-month').remove();
 $('.p-xo-event__list__item').hide();

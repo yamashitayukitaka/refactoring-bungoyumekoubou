@@ -1,4 +1,4 @@
-// 参照用レガシー（Booking Package プラグイン連携）。enqueue・Vite ビルド対象外。
+// 参照用（src/js/_deprecated）。Booking Package プラグイン連携。enqueue・Vite ビルド対象外。
 (function ($) {
   $('.selectable_time_slot > div ').prepend('.selectable_service_slot');
   $('#js-move').click(function () {
