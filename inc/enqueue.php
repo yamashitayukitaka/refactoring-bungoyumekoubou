@@ -32,7 +32,7 @@ function wazeka_scripts()
   if (is_front_page()) {
     wp_enqueue_script(
         'wazeka-staff-slider',
-        $js . '/staffSlider.js',
+        $js . '/staff-slider.js',
         array('jquery', 'slick-carousel'),
         '1.0.0',
         true
