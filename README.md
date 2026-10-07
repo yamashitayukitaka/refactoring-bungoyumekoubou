@@ -119,7 +119,7 @@ wazeka/
 
 ### その他
 
-`dist/js/` には Slick 連携などのレガシースクリプト（`staffSlider.js`, `afterWordpressLoop.js` など）があり、`inc/enqueue.php` でページ条件ごとに読み込みます。サムネ連動スライダー（`js-commonSlick` / `js-hasThumbSlider`）は `src/js/legacy/thumb-slider.js` を `thumb-slider.js` からビルド。`src/js/_deprecated/` の `xo-event-calendar.js` や `booking-package.js` は参照用で enqueue・ビルド対象外。ソースが `src/js` の `common` / `pages` に無い `dist/js` ファイルは、Vite ビルドでは更新されません。
+`dist/js/` には Slick 連携などのレガシースクリプト（`staffSlider.js`, `afterWordpressLoop.js` など）があり、`inc/enqueue.php` でページ条件ごとに読み込みます。サムネ連動スライダー（`js-commonSlick` / `js-hasThumbSlider`）は `src/js/legacy/thumb-slider.js` を `thumb-slider.js` からビルド。`src/js/_deprecated/` の `xo-event-calendar.js` や `booking-package.js` は参照用で enqueue・ビルド対象外（Vite エントリは `common` と `pages` のみ）。ソースが `src/js` の `common` / `pages` に無い `dist/js` ファイルは、Vite ビルドでは更新されません。
 
 Slick の CSS は CDN から条件付きで enqueue されます。
 
