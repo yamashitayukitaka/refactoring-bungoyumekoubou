@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="wazeka">
-  <description>テーマの PHP を WordPress Coding Standards で検査する（インデントはスペース2）</description>
+  <description>テーマの PHP を WordPress Coding Standards で検査する（インデントはスペース2。tab-width も2 — composer run lint:php / fix:php の --tab-width=2 必須）</description>
   <file>.</file>
   <exclude-pattern>vendor/*</exclude-pattern>
   <exclude-pattern>node_modules/*</exclude-pattern>
@@ -8,8 +8,6 @@
   <exclude-pattern>*.js</exclude-pattern>
 
   <arg name="extensions" value="php"/>
-  <!-- WordPress-Core の既定は tab-width=4。スペース2と揃える。 -->
-  <arg name="tab-width" value="2"/>
 
   <config name="minimum_supported_wp_version" value="6.0"/>
 
