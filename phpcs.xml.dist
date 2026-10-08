@@ -1,18 +1,40 @@
 <?xml version="1.0"?>
 <ruleset name="wazeka">
-  <description>テーマの PHP を PSR-12 で検査する</description>
+  <description>テーマの PHP を WordPress Coding Standards で検査する（インデントはスペース2）</description>
   <file>.</file>
   <exclude-pattern>vendor/*</exclude-pattern>
   <exclude-pattern>node_modules/*</exclude-pattern>
   <exclude-pattern>dist/*</exclude-pattern>
-  <rule ref="PSR12">
+
+  <config name="minimum_supported_wp_version" value="6.0"/>
+
+  <rule ref="WordPress">
     <exclude name="Generic.Files.LineLength"/>
     <exclude name="Generic.Files.LineEndings"/>
-    <exclude name="PSR1.Files.SideEffects"/>
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
   </rule>
+
   <rule ref="Generic.WhiteSpace.ScopeIndent">
     <properties>
       <property name="indent" value="2"/>
+      <property name="tabIndent" value="false"/>
+    </properties>
+  </rule>
+
+  <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+    <properties>
+      <property name="prefixes" type="array">
+        <element value="wazeka"/>
+      </property>
+    </properties>
+  </rule>
+
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="wazeka"/>
+      </property>
     </properties>
   </rule>
 </ruleset>
