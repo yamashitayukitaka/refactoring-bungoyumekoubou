@@ -13,6 +13,8 @@
     <exclude name="Generic.Files.LineEndings"/>
     <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
     <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    <!-- 短配列 [] を許可。 -->
+    <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
   </rule>
 
   <rule ref="Generic.WhiteSpace.ScopeIndent">
