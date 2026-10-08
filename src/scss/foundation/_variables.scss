@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 // Color
 $white: #fff;
 $beige: #f7f0e7;
@@ -28,12 +30,7 @@ $black: #242424;
 $pureBlack: #000;
 $red: #ed6a10;
 
-// Font
-// $yuGothic: YuGothic, "Yu Gothic", sans-serif;
-// $yuMincho: YuMincho, "Yu Mincho", serif;
-// $montserrat: "Montserrat", sans-serif;
-// $inter:"Inter", sans-serif;
-// $roboto:"Roboto", sans-serif;
+
 $yuGothic: 'Noto Sans JP', sans-serif;
 $yuMincho: 'Noto Sans JP', sans-serif;
 $inter: 'Noto Sans JP', sans-serif;
@@ -55,7 +52,7 @@ $breakpoints: (
   ) !default;
 
 @mixin mq($breakpoint: md) {
-  @media #{map-get($breakpoints, $breakpoint)} {
+  @media #{map.get($breakpoints, $breakpoint)} {
     @content;
   }
 }
