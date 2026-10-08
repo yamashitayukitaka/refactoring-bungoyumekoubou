@@ -5,7 +5,9 @@
   <exclude-pattern>vendor/*</exclude-pattern>
   <exclude-pattern>node_modules/*</exclude-pattern>
   <exclude-pattern>dist/*</exclude-pattern>
+  <exclude-pattern>*.js</exclude-pattern>
 
+  <arg name="extensions" value="php"/>
   <!-- WordPress-Core の既定は tab-width=4。スペース2と揃える。 -->
   <arg name="tab-width" value="2"/>
 
