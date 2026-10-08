@@ -6,6 +6,9 @@
   <exclude-pattern>node_modules/*</exclude-pattern>
   <exclude-pattern>dist/*</exclude-pattern>
 
+  <!-- WordPress-Core の既定は tab-width=4。スペース2と揃える。 -->
+  <arg name="tab-width" value="2"/>
+
   <config name="minimum_supported_wp_version" value="6.0"/>
 
   <rule ref="WordPress">
@@ -17,9 +20,22 @@
     <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
   </rule>
 
+  <!-- WordPress-Core の ScopeIndent（indent=4・タブ）を上書きする。 -->
   <rule ref="Generic.WhiteSpace.ScopeIndent">
     <properties>
+      <property name="exact" value="true"/>
       <property name="indent" value="2"/>
+      <property name="tabIndent" value="false"/>
+      <property name="ignoreIndentationTokens" type="array">
+        <element value="T_HEREDOC"/>
+        <element value="T_NOWDOC"/>
+        <element value="T_INLINE_HTML"/>
+      </property>
+    </properties>
+  </rule>
+
+  <rule ref="WordPress.Arrays.ArrayIndentation">
+    <properties>
       <property name="tabIndent" value="false"/>
     </properties>
   </rule>
