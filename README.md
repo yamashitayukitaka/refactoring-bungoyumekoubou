@@ -103,7 +103,7 @@ wazeka/
 ## スタイル（SCSS）
 
 - エントリ: `src/scss/style.scss`
-- レイヤー: `foundation` / `layout` / `vendor` / `object/component` / `object/project` / `object/utility`
+- レイヤー: `foundation` / `layout` / `vendor` / `object/component` / `object/project`（`parts` → `pages`） / `object/utility`
 - 出力: `dist/css/style.css`（`inc/enqueue.php` で全ページ読み込み）
 - ブレークポイントは `foundation` の mixin（`mq(sp)` / `mq(tab)` など）を使う
 - 表示切替は `object/utility/_utility.scss` の `u-none__pc` / `u-none__mobile`（例: `u-none__pc--sp`, `u-none__mobile--tab`）
