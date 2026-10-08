@@ -1,3 +1,6 @@
+// リファクタリング前の旧実装。参照用（src/scss/deprecated）。XO Event Calendar 用。style.scss からは読み込まない。
+@use '../foundation/variables' as *;
+
 .xo-event-calendar {
   width: calc(472 / 544 * 100%);
   overflow: initial !important;
@@ -7,7 +10,7 @@
   }
 }
 
-.xo-event-calendar table.xo-month > thead th.sunday {
+.xo-event-calendar table.xo-month>thead th.sunday {
   background: #ffa5a5;
   color: #fff !important;
 }
@@ -16,7 +19,7 @@
   border: none !important;
 }
 
-.xo-event-calendar table.xo-month > thead th {
+.xo-event-calendar table.xo-month>thead th {
   background: #e1dedb;
   padding: 12px 0 15px !important;
   font-size: 11px !important;
@@ -24,7 +27,7 @@
   text-align: center;
 }
 
-.xo-event-calendar table.xo-month > thead th.saturday {
+.xo-event-calendar table.xo-month>thead th.saturday {
   background: #a0b2ff;
   color: #fff;
 }
@@ -146,7 +149,7 @@
   height: 50px;
 }
 
-.xo-event-calendar table.xo-month > thead th {
+.xo-event-calendar table.xo-month>thead th {
   vertical-align: middle;
 }
 
