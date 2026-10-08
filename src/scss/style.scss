@@ -57,7 +57,5 @@
 @use 'object/project/model-house';
 @use 'object/project/bungo-yume-studio';
 @use 'object/project/privacy-policy';
-@import 'foundation/variables';
-
 // utility
-@import 'object/utility/utility';
+@use 'object/utility/utility';
