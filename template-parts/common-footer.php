@@ -19,11 +19,11 @@
   'order' => 'DESC',
   'orderby' => 'date',
   );?>
-<?php $eventLoop = new WP_Query($event);?>
-<?php if ($eventLoop->have_posts()) : ?>
+<?php $event_loop = new WP_Query($event);?>
+<?php if ($event_loop->have_posts()) : ?>
   <ul class = "c-cardList u-mb50">
-    <?php while ($eventLoop->have_posts()) :
-      $eventLoop->the_post();?>
+    <?php while ($event_loop->have_posts()) :
+      $event_loop->the_post();?>
       <?php get_template_part('template-parts/event-loop'); ?>
     <?php endwhile;
 endif;
@@ -53,11 +53,11 @@ endif;
     'order' => 'DESC',
     'orderby' => 'date',
     );?>
-  <?php $propertyLoop = new WP_Query($property);?>
-  <?php if ($propertyLoop->have_posts()) : ?>
+  <?php $property_loop = new WP_Query($property);?>
+  <?php if ($property_loop->have_posts()) : ?>
     <ul class = "c-cardList">
-      <?php while ($propertyLoop->have_posts()) :
-        $propertyLoop->the_post();?>
+      <?php while ($property_loop->have_posts()) :
+        $property_loop->the_post();?>
         <?php get_template_part('template-parts/property-loop'); ?>
       <?php endwhile;?>
     </ul>

@@ -6,7 +6,7 @@ get_header();
 ?>
 <?php
   $taxonomy = 'works-type';
-  $postType = 'works';
+  $post_type = 'works';
   $tag = 'works-tag';
 ?>
 
@@ -44,7 +44,7 @@ get_header();
   </ul>
 
  
-    <?php $worksTags = get_terms(
+    <?php $works_tags = get_terms(
         $tag,
         [
         'hide_empty' => false,
@@ -54,18 +54,18 @@ get_header();
         ]
     );?>
 
-    <?php if ($worksTags && !is_wp_error($worksTags)) :?>
+    <?php if ($works_tags && !is_wp_error($works_tags)) :?>
       <ul class = "c-tag__list l-content--large">
         
         <li class = "c-tag__list__item">
           <a href = "#" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
         </li>
         
-        <?php foreach ($worksTags as $worksTag) :?>
-          <?php $worksSlug = $worksTag->slug ;?>
+        <?php foreach ($works_tags as $works_tag) :?>
+          <?php $works_slug = $works_tag->slug ;?>
           <li class = "c-tag__list__item">
-            <a href = "<?php echo esc_url(get_term_link($worksSlug, $tag)); ?>" class = "js-tab c-tag__list__link">
-              <?php echo esc_html($worksTag->name); ?>
+            <a href = "<?php echo esc_url(get_term_link($works_slug, $tag)); ?>" class = "js-tab c-tag__list__link">
+              <?php echo esc_html($works_tag->name); ?>
             </a>
           </li>
         <?php endforeach;?>
@@ -83,20 +83,20 @@ get_header();
       'orderby' => 'menu_order',
       'order' => 'ASC',
       );?>
-    <?php $worksLoop = new WP_Query($works);?>
-    <?php if ($worksLoop->have_posts()) : ?>
+    <?php $works_loop = new WP_Query($works);?>
+    <?php if ($works_loop->have_posts()) : ?>
       <ul class = "c-cardList c-cardList--lead js-allswitch">
-        <?php while ($worksLoop->have_posts()) :
-          $worksLoop->the_post();?>
+        <?php while ($works_loop->have_posts()) :
+          $works_loop->the_post();?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($worksLoop->max_num_pages > 1) :?>
+    <?php if ($works_loop->max_num_pages > 1) :?>
       <div class = "u-mb50">
-        <?php wazeka_query_pagination($worksLoop); ?>
+        <?php wazeka_query_pagination($works_loop); ?>
       </div>
     <?php endif; ?>
     

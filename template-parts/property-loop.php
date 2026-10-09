@@ -44,26 +44,26 @@
         <?php the_title(); ?>
       </p>
       <?php
-        $topInfo = get_field('top-info');
-      if ($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']))) :
+        $top_info = get_field('top-info');
+      if ($top_info && (!empty($top_info['area']) || !empty($top_info['school']))) :
         ?>
-        <?php if (!empty($topInfo['area'])) : ?>
-        <p class = "c-cardList__txt">土地面積：<?php echo esc_html($topInfo['area']);?></p>
+        <?php if (!empty($top_info['area'])) : ?>
+        <p class = "c-cardList__txt">土地面積：<?php echo esc_html($top_info['area']);?></p>
         <?php endif; ?>
-        <?php if (!empty($topInfo['school'])) : ?>
-        <p class = "c-cardList__txt">校区：<?php echo esc_html($topInfo['school']);?></p>
+        <?php if (!empty($top_info['school'])) : ?>
+        <p class = "c-cardList__txt">校区：<?php echo esc_html($top_info['school']);?></p>
         <?php endif; ?>
       <?php endif; ?>
 
       <?php
-        $topInfoUsed = get_field('top-info-used');
-      if ($topInfoUsed && (!empty($topInfoUsed['floor']) || !empty($topInfoUsed['school']))) :
+        $top_info_used = get_field('top-info-used');
+      if ($top_info_used && (!empty($top_info_used['floor']) || !empty($top_info_used['school']))) :
         ?>
-        <?php if (!empty($topInfoUsed['floor'])) : ?>
-        <p class = "c-cardList__txt">間取り：<?php echo esc_html($topInfoUsed['floor']);?></p>
+        <?php if (!empty($top_info_used['floor'])) : ?>
+        <p class = "c-cardList__txt">間取り：<?php echo esc_html($top_info_used['floor']);?></p>
         <?php endif; ?>
-        <?php if (!empty($topInfoUsed['school'])) : ?>
-        <p class = "c-cardList__txt">校区：<?php echo esc_html($topInfoUsed['school']);?></p>
+        <?php if (!empty($top_info_used['school'])) : ?>
+        <p class = "c-cardList__txt">校区：<?php echo esc_html($top_info_used['school']);?></p>
         <?php endif; ?>
       <?php endif; ?>
 

@@ -64,33 +64,33 @@ get_header();
   </p>
 </section>
 
-<?php $myBest = get_field('my-best'); ?>
-<?php if ($myBest && (!empty($myBest['my-best-ttl']) || !empty($myBest['my-best-1']) || !empty($myBest['my-best-2']) || !empty($myBest['my-best-3']))) :?>
+<?php $my_best = get_field('my-best'); ?>
+<?php if ($my_best && (!empty($my_best['my-best-ttl']) || !empty($my_best['my-best-1']) || !empty($my_best['my-best-2']) || !empty($my_best['my-best-3']))) :?>
   <section class = "p-staff__myBest">
     <div class = "p-staff__myBest__ttlWrap">
       <p class = "p-staff__myBest__txt">あなたのマイベスト3を教えて</p>
       <h3 class = "p-staff__myBest__ttl">MyBest&nbsp;<span class = "u-orange--mv">3</span></h3>
-      <?php if (!empty($myBest['my-best-ttl'])) :?>
-      <p class = "p-staff__myBest__txt"><?php echo esc_html($myBest['my-best-ttl']);?></p>
+      <?php if (!empty($my_best['my-best-ttl'])) :?>
+      <p class = "p-staff__myBest__txt"><?php echo esc_html($my_best['my-best-ttl']);?></p>
       <?php endif; ?>
     </div>
     <ul class = "p-staff__myBest__list">
-      <?php if (!empty($myBest['my-best-1'])) :?>
+      <?php if (!empty($my_best['my-best-1'])) :?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">1</span></h4>
-        <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-1']);?></p>
+        <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($my_best['my-best-1']);?></p>
       </li>
       <?php endif; ?>
-      <?php if (!empty($myBest['my-best-2'])) :?>
+      <?php if (!empty($my_best['my-best-2'])) :?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">2</span></h4>
-        <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-2']);?></p>
+        <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($my_best['my-best-2']);?></p>
       </li>
       <?php endif; ?>
-      <?php if (!empty($myBest['my-best-3'])) :?>
+      <?php if (!empty($my_best['my-best-3'])) :?>
       <li class = "p-staff__myBest__item">
         <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">3</span></h4>
-        <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($myBest['my-best-3']);?></p>
+        <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html($my_best['my-best-3']);?></p>
       </li>
       <?php endif; ?>
     </ul>
@@ -98,17 +98,17 @@ get_header();
 <?php endif; ?>
 <?php $questions = get_field('question'); ?>
 <?php
-$hasQuestion = false;
+$has_question = false;
 if ($questions) {
   foreach ($questions as $question) {
     if (!empty($question['question-ttl']) || !empty($question['question-img']) || !empty($question['question-answer'])) {
-      $hasQuestion = true;
+      $has_question = true;
       break;
     }
   }
 }
 ?>
-<?php if ($hasQuestion) : ?>
+<?php if ($has_question) : ?>
 <section class = "p-staff__question l-content--middle">
       <?php foreach ($questions as $question) :?>
         <?php if (empty($question['question-ttl']) && empty($question['question-img']) && empty($question['question-answer'])) {
@@ -159,10 +159,10 @@ if ($questions) {
     'order' => 'ASC',
     'post__not_in' => array($post_id),
     );?>
-    <?php $staffLoop = new WP_Query($args);?>
-    <?php if ($staffLoop ->have_posts()) : ?>
-      <?php while ($staffLoop ->have_posts()) :
-        $staffLoop ->the_post();?>
+    <?php $staff_loop = new WP_Query($args);?>
+    <?php if ($staff_loop ->have_posts()) : ?>
+      <?php while ($staff_loop ->have_posts()) :
+        $staff_loop ->the_post();?>
         <li class ="c-cardList__item">
           <a href = "<?php the_permalink(); ?>">
             <figure class = "c-cardList__imgWrap">

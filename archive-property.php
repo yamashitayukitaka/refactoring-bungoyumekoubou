@@ -6,7 +6,7 @@ get_header();
 ?>
 <?php
   $taxonomy = 'property-category';
-  $posyType = 'property';
+  $post_type_slug = 'property';
   $tag = 'property-area';
 ?>
 
@@ -44,7 +44,7 @@ get_header();
     <?php endif; ?>
   </ul>
 
-  <?php $areaTags = get_terms(
+  <?php $area_tags = get_terms(
       $tag,
       [
         'hide_empty' => false,
@@ -62,12 +62,12 @@ get_header();
       </li>
       
       
-      <?php if ($areaTags && !is_wp_error($areaTags)) : ?>
-        <?php foreach ($areaTags as $areaTag) :?>
-          <?php $areaSlug = $areaTag->slug ;?>
+      <?php if ($area_tags && !is_wp_error($area_tags)) : ?>
+        <?php foreach ($area_tags as $area_tag) :?>
+          <?php $area_slug = $area_tag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(get_term_link($areaSlug, $tag)); ?>" class = "js-tab c-tag__list__link">
-            <?php echo esc_html($areaTag->name); ?>
+          <a href = "<?php echo esc_url(get_term_link($area_slug, $tag)); ?>" class = "js-tab c-tag__list__link">
+            <?php echo esc_html($area_tag->name); ?>
           </a>
         </li>
         <?php endforeach;?>
@@ -84,20 +84,20 @@ get_header();
       'orderby' => 'menu_order',
       'order' => 'ASC',
       );?>
-    <?php $propertyLoop = new WP_Query($property);?>
-    <?php if ($propertyLoop->have_posts()) : ?>
+    <?php $property_loop = new WP_Query($property);?>
+    <?php if ($property_loop->have_posts()) : ?>
       <ul class = "c-cardList c-cardList--lead">
-        <?php while ($propertyLoop->have_posts()) :
-          $propertyLoop->the_post();?>
+        <?php while ($property_loop->have_posts()) :
+          $property_loop->the_post();?>
           <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($propertyLoop->max_num_pages > 1) :?>
+    <?php if ($property_loop->max_num_pages > 1) :?>
       <div class = "u-mb50">
-        <?php wazeka_query_pagination($propertyLoop); ?>
+        <?php wazeka_query_pagination($property_loop); ?>
       </div>
     <?php endif; ?>
     

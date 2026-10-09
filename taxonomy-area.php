@@ -7,9 +7,9 @@ get_header();
 
   <?php
     $taxonomy = 'area';
-    $mainQueryTerm = get_queried_object();
-    $mainQueryTermName = $mainQueryTerm -> name;
-    $mainQueryTermSlug = $mainQueryTerm -> slug;
+    $main_query_term = get_queried_object();
+    $main_query_term_name = $main_query_term -> name;
+    $main_query_term_slug = $main_query_term -> slug;
     $tag = 'event-type';
   ?>
 <main>
@@ -36,8 +36,8 @@ get_header();
     </li>
     <?php if ($terms && !is_wp_error($terms)) : ?>
       <?php foreach ($terms as $term) :?>
-        <?php $termName = $term -> name;?>
-      <li class = "c-term__list__item <?php if ($mainQueryTermName === $termName) :
+        <?php $term_name = $term -> name;?>
+      <li class = "c-term__list__item <?php if ($main_query_term_name === $term_name) :
         ?> u-current <?php
                                       endif; ?>">
         <a href = "<?php echo esc_url(get_term_link($term)); ?>">
@@ -48,7 +48,7 @@ get_header();
     <?php endif; ?>
   </ul>
 
-  <?php $eventTags = get_terms(
+  <?php $event_tags = get_terms(
       $tag,
       [
       'hide_empty' => false,
@@ -61,15 +61,15 @@ get_header();
     <ul class = "c-tag__list">
       
       <li class = "c-tag__list__item">
-        <a href = "<?php echo esc_url(home_url('area/' . $mainQueryTermSlug)); ?>" class = "js-all c-tag__list__link u-currentTab">すべて</a>
+        <a href = "<?php echo esc_url(home_url('area/' . $main_query_term_slug)); ?>" class = "js-all c-tag__list__link u-currentTab">すべて</a>
       </li>
       
-      <?php if ($eventTags && !is_wp_error($eventTags)) : ?>
-        <?php foreach ($eventTags as $eventTag) :?>
-          <?php $eventSlug = $eventTag->slug ;?>
+      <?php if ($event_tags && !is_wp_error($event_tags)) : ?>
+        <?php foreach ($event_tags as $event_tag) :?>
+          <?php $event_slug = $event_tag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(add_query_arg('event_area', $mainQueryTermSlug, get_term_link($eventSlug, $tag))); ?>" class = "js-tab c-tag__list__link">
-            <?php echo esc_html($eventTag->name); ?>
+          <a href = "<?php echo esc_url(add_query_arg('event_area', $main_query_term_slug, get_term_link($event_slug, $tag))); ?>" class = "js-tab c-tag__list__link">
+            <?php echo esc_html($event_tag->name); ?>
           </a>
         </li>
         <?php endforeach;?>
@@ -90,25 +90,25 @@ get_header();
           array(
               'taxonomy' => $taxonomy,
               'field' => 'slug',
-              'terms' => $mainQueryTermSlug ,
+              'terms' => $main_query_term_slug ,
             ),
           ),
         );
       ?>
-      <?php $eventLoop = new WP_Query($event);?>
-        <?php if ($eventLoop->have_posts()) : ?>
+      <?php $event_loop = new WP_Query($event);?>
+        <?php if ($event_loop->have_posts()) : ?>
           <ul class = "c-cardList">
-            <?php while ($eventLoop->have_posts()) :
-              $eventLoop->the_post();?>
+            <?php while ($event_loop->have_posts()) :
+              $event_loop->the_post();?>
               <?php get_template_part('template-parts/event-loop'); ?>
             <?php endwhile;?>
           </ul>
         <?php endif;
         wp_reset_postdata();?>
         
-        <?php if ($eventLoop->max_num_pages > 1) :?>
+        <?php if ($event_loop->max_num_pages > 1) :?>
           <div class = "u-mb50">
-            <?php wazeka_query_pagination($eventLoop); ?>
+            <?php wazeka_query_pagination($event_loop); ?>
           </div>
         <?php endif; ?>
 

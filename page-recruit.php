@@ -227,17 +227,17 @@ get_header();
     </div>
     <?php $table = get_field('recruit-app'); ?>
     <?php
-    $hasApp = false;
+    $has_app = false;
     if ($table) {
       foreach ($table as $row) {
         if (!empty($row['recruit-app-title']) || !empty($row['recruit-app-content'])) {
-          $hasApp = true;
+          $has_app = true;
           break;
         }
       }
     }
     ?>
-    <?php if ($hasApp) : ?>
+    <?php if ($has_app) : ?>
       <table class="c-table c-table--narrow">
         <tbody>
           <?php foreach ($table as $row) :
@@ -270,7 +270,7 @@ get_header();
     </figure>
   </section>
 
-  <?php if ($hasApp) : ?>
+  <?php if ($has_app) : ?>
     <div class="l-content--middle c-contact u-mb100">
       <p class="c-contact__desc">
         わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>

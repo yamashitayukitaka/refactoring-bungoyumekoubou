@@ -39,35 +39,35 @@ get_header();
       <?php endforeach;?>
     <?php endif; ?>
 
-    <?php $topInfoUsed = get_field('top-info-used'); ?>
-    <?php if ($topInfoUsed && (!empty($topInfoUsed['floor']) || !empty($topInfoUsed['school']) || !empty($topInfoUsed['top-copy']) || !empty($topInfoUsed['price']))) :?>
+    <?php $top_info_used = get_field('top-info-used'); ?>
+    <?php if ($top_info_used && (!empty($top_info_used['floor']) || !empty($top_info_used['school']) || !empty($top_info_used['top-copy']) || !empty($top_info_used['price']))) :?>
       <div class = "p-property__dl__flex">
         <div class = "p-property__dl__wrap">
 
-          <?php if (!empty($topInfoUsed['floor'])) :?>
+          <?php if (!empty($top_info_used['floor'])) :?>
             <dl class = "p-property__dl">
               <dt class = "p-property__dl__txt">間取り</dt>
-              <dd class = "p-property__dl__txt"><?php echo esc_html($topInfoUsed['floor']);?></dd>
+              <dd class = "p-property__dl__txt"><?php echo esc_html($top_info_used['floor']);?></dd>
             </dl>
           <?php endif; ?>
           
-          <?php if (!empty($topInfoUsed['school'])) :?>
+          <?php if (!empty($top_info_used['school'])) :?>
             <dl class = "p-property__dl">
               <dt class = "p-property__dl__txt">校区</dt>
-              <dd class = "p-property__dl__txt"><?php echo esc_html($topInfoUsed['school']);?></dd>
+              <dd class = "p-property__dl__txt"><?php echo esc_html($top_info_used['school']);?></dd>
             </dl>
           <?php endif; ?>
 
         </div>
       </div>
 
-      <?php if (!empty($topInfoUsed['top-copy'])) :?>
-        <p class = "p-property__copy u-center u-mb50"><?php echo esc_html($topInfoUsed['top-copy']);?></p>
+      <?php if (!empty($top_info_used['top-copy'])) :?>
+        <p class = "p-property__copy u-center u-mb50"><?php echo esc_html($top_info_used['top-copy']);?></p>
       <?php endif; ?>
 
-      <?php if (!empty($topInfoUsed['price'])) :?>
+      <?php if (!empty($top_info_used['price'])) :?>
         <p class = "p-property__price">
-          <span class = "p-property__price__num"><?php echo esc_html($topInfoUsed['price']);?></span><span class = "p-property__price__unit"></span><span class = "p-property__price__tax"></span>
+          <span class = "p-property__price__num"><?php echo esc_html($top_info_used['price']);?></span><span class = "p-property__price__unit"></span><span class = "p-property__price__tax"></span>
         </p>
       <?php endif; ?>
 

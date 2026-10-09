@@ -13,17 +13,17 @@
   <?php $stores = get_field('store_informations', 'option'); ?>
 
   <?php
-  $hasStore = false;
+  $has_store = false;
   if ($stores) {
     foreach ($stores as $row) {
       if (!empty($row['address']) || !empty($row['postal_code']) || !empty($row['building']) || !empty($row['phone']) || !empty($row['map']) || !empty($row['detail'])) {
-        $hasStore = true;
+        $has_store = true;
         break;
       }
     }
   }
   ?>
-  <?php if ($hasStore) : ?>
+  <?php if ($has_store) : ?>
     <?php foreach ($stores as $store) :
       if (empty($store['address']) && empty($store['postal_code']) && empty($store['building']) && empty($store['phone']) && empty($store['map']) && empty($store['detail'])) {
         continue;

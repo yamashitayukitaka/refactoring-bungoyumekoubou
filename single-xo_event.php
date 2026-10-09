@@ -17,7 +17,7 @@ get_header();
 
     <?php $event_type = get_field('event-type'); ?>
     <?php if ($event_type) : ?>
-      <?php $eventTypes = get_the_terms(
+      <?php $event_types = get_the_terms(
           get_the_ID(),
           'event-type',
           [
@@ -27,10 +27,10 @@ get_header();
           'order' => 'ASC',
           ]
       ); ?>
-      <?php if ($eventTypes && !is_wp_error($eventTypes)) : ?>
-        <?php foreach ($eventTypes as $eventType) : ?>
+      <?php if ($event_types && !is_wp_error($event_types)) : ?>
+        <?php foreach ($event_types as $event_type) : ?>
         <div class="c-id__wrap--top">
-          <span class="c-id"><?php echo esc_html($eventType->name); ?></span>
+          <span class="c-id"><?php echo esc_html($event_type->name); ?></span>
           <span class = "c-id--end">終了</span>
         </div>
         <?php endforeach; ?>
@@ -249,8 +249,8 @@ get_header();
     </section>
     <?php endif; ?>
 
-    <?php $googleMap = get_field('googleMap'); ?>
-    <?php if ($googleMap) : ?>
+    <?php $google_map = get_field('googleMap'); ?>
+    <?php if ($google_map) : ?>
       <section class="l-content--middle u-mb100">
         <h2 class="c-title--sectionEn">
           ACCESS MAP
@@ -259,7 +259,7 @@ get_header();
           会場について
         </p>
         <div class="p-event__googleMapWrap">
-          <?php echo wazeka_kses_iframe($googleMap); ?>
+          <?php echo wazeka_kses_iframe($google_map); ?>
         </div>
       </section>
     <?php endif; ?>

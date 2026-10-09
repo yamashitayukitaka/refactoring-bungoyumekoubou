@@ -6,7 +6,7 @@ get_header();
 ?>
 <?php
   $taxonomy = 'area';
-  $postType = 'xo_event';
+  $post_type_slug = 'xo_event';
   $tag = 'event-type'
 ?>
 <main>
@@ -48,7 +48,7 @@ get_header();
       <?php endif; ?>
     </ul>
 
-    <?php $eventTags = get_terms(
+    <?php $event_tags = get_terms(
         $tag,
         [
         'hide_empty' => false,
@@ -64,12 +64,12 @@ get_header();
           <a href = "#" class = "u-currentTab c-tag__list__link">すべて</a>
         </li>
       
-      <?php if ($eventTags && !is_wp_error($eventTags)) : ?>
-        <?php foreach ($eventTags as $eventTag) :?>
-          <?php $eventSlug = $eventTag->slug ;?>
+      <?php if ($event_tags && !is_wp_error($event_tags)) : ?>
+        <?php foreach ($event_tags as $event_tag) :?>
+          <?php $event_slug = $event_tag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(get_term_link($eventSlug, $tag)); ?>" class = "js-tab c-tag__list__link">
-            <?php echo esc_html($eventTag->name); ?>
+          <a href = "<?php echo esc_url(get_term_link($event_slug, $tag)); ?>" class = "js-tab c-tag__list__link">
+            <?php echo esc_html($event_tag->name); ?>
           </a>
         </li>
         <?php endforeach;?>
@@ -86,19 +86,19 @@ get_header();
       'orderby' => 'menu_order',
       'order' => 'ASC',
       );?>
-    <?php $eventLoop = new WP_Query($event);?>
-    <?php if ($eventLoop->have_posts()) : ?>
+    <?php $event_loop = new WP_Query($event);?>
+    <?php if ($event_loop->have_posts()) : ?>
       <ul class = "c-cardList c-cardList--lead js-prepend">
-        <?php while ($eventLoop->have_posts()) :
-          $eventLoop->the_post();?>
+        <?php while ($event_loop->have_posts()) :
+          $event_loop->the_post();?>
           <?php get_template_part('template-parts/event-loop'); ?>
         <?php endwhile;
     endif;
         wp_reset_postdata();?>
       </ul>
     
-    <?php if ($eventLoop->max_num_pages > 1) :?>
-      <?php wazeka_query_pagination($eventLoop); ?>
+    <?php if ($event_loop->max_num_pages > 1) :?>
+      <?php wazeka_query_pagination($event_loop); ?>
     <?php endif; ?>
       
     </section>

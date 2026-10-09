@@ -39,34 +39,34 @@ get_header();
       <?php endforeach; ?>
     <?php endif; ?>
 
-    <?php $topInfo = get_field('top-info'); ?>
-    <?php if ($topInfo && (!empty($topInfo['area']) || !empty($topInfo['school']) || !empty($topInfo['copy']) || !empty($topInfo['price']))) : ?>
+    <?php $top_info = get_field('top-info'); ?>
+    <?php if ($top_info && (!empty($top_info['area']) || !empty($top_info['school']) || !empty($top_info['copy']) || !empty($top_info['price']))) : ?>
     <div class="p-property__dl__flex">
       <div class="p-property__dl__wrap">
 
-        <?php if (!empty($topInfo['area'])) : ?>
+        <?php if (!empty($top_info['area'])) : ?>
           <dl class="p-property__dl">
             <dt class="p-property__dl__txt">土地面積:</dt>
-            <dd class="p-property__dl__txt"><?php echo esc_html($topInfo['area']); ?></dd>
+            <dd class="p-property__dl__txt"><?php echo esc_html($top_info['area']); ?></dd>
           </dl>
         <?php endif; ?>
-        <?php if (!empty($topInfo['school'])) : ?>
+        <?php if (!empty($top_info['school'])) : ?>
           <dl class="p-property__dl">
             <dt class="p-property__dl__txt">校区:</dt>
-            <dd class="p-property__dl__txt"><?php echo esc_html($topInfo['school']); ?></dd>
+            <dd class="p-property__dl__txt"><?php echo esc_html($top_info['school']); ?></dd>
           </dl>
         <?php endif; ?>
       </div>
     </div>
-      <?php if (!empty($topInfo['copy'])) : ?>
+      <?php if (!empty($top_info['copy'])) : ?>
       <p class="p-property__copy u-center u-mb50">
-        <?php echo esc_html($topInfo['copy']); ?>
+        <?php echo esc_html($top_info['copy']); ?>
       </p>
       <?php endif; ?>
 
-      <?php if (!empty($topInfo['price'])) : ?>
+      <?php if (!empty($top_info['price'])) : ?>
       <div class="p-property__price">
-        <span class="p-property__price__num"><?php echo esc_html($topInfo['price']); ?></span><span class="p-property__price__unit"></span>
+        <span class="p-property__price__num"><?php echo esc_html($top_info['price']); ?></span><span class="p-property__price__unit"></span>
       </div>
       <?php endif; ?>
     <?php endif; ?>

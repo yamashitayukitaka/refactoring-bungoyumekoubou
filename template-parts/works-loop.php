@@ -7,7 +7,7 @@
     </figure>
     <?php endif; ?>
     <div class = "c-cardList__txtWrap">
-      <?php $worksTypes = get_the_terms(
+      <?php $works_types = get_the_terms(
           get_the_ID(),
           'works-type',
           [
@@ -18,9 +18,9 @@
           ]
       );?>
 
-      <?php if ($worksTypes && !is_wp_error($worksTypes)) :?>
-        <?php foreach ($worksTypes as $worksType) :?>
-          <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>
+      <?php if ($works_types && !is_wp_error($works_types)) :?>
+        <?php foreach ($works_types as $works_type) :?>
+          <span class = "c-id u-mb15"><?php echo esc_html($works_type->name); ?></span>
         <?php endforeach;?>
         
         <p class = "c-cardList__ttl">
@@ -28,7 +28,7 @@
         </p>
       <?php endif; ?>
 
-      <?php $worksTags = get_the_terms(
+      <?php $works_tags = get_the_terms(
           get_the_ID(),
           'works-tag',
           [
@@ -39,9 +39,9 @@
           ]
       );?>
 
-      <?php if ($worksTags && !is_wp_error($worksTags)) :?>
-        <?php foreach ($worksTags as $worksTag) :?>
-          <span class = "c-tag__txt">#<?php echo esc_html($worksTag->name); ?></span>
+      <?php if ($works_tags && !is_wp_error($works_tags)) :?>
+        <?php foreach ($works_tags as $works_tag) :?>
+          <span class = "c-tag__txt">#<?php echo esc_html($works_tag->name); ?></span>
         <?php endforeach;?>
       <?php endif; ?>
       <?php $area = get_field('works-area'); ?>

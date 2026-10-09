@@ -14,11 +14,11 @@
     'post_type' => 'staff',
     'posts_per_page' => 20,
   ); ?>
-  <?php $staffLoop = new WP_Query($staff); ?>
-  <?php if ($staffLoop->have_posts()) : ?>
+  <?php $staff_loop = new WP_Query($staff); ?>
+  <?php if ($staff_loop->have_posts()) : ?>
     <ul class="p-about__staff__list">
-      <?php while ($staffLoop->have_posts()) :
-        $staffLoop->the_post(); ?>
+      <?php while ($staff_loop->have_posts()) :
+        $staff_loop->the_post(); ?>
         <li class="p-about__staff__listItem">
           <a href = "<?php the_permalink(); ?>">
             <?php $staff_img = get_field('staff-img'); ?>

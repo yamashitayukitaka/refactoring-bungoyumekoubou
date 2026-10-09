@@ -519,16 +519,16 @@ get_header();
       ),
     ),
   );
-  $worksLoop = new WP_Query($args);
+  $works_loop = new WP_Query($args);
   ?>
 
-  <?php if ($worksLoop->have_posts()) : ?>
+  <?php if ($works_loop->have_posts()) : ?>
     <section class="l-content">
       <p class="c-title--large">RIREVEの施工事例をみる</p>
       <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
       <ul class="c-cardList u-mb100">
-        <?php while ($worksLoop->have_posts()) :
-          $worksLoop->the_post(); ?>
+        <?php while ($works_loop->have_posts()) :
+          $works_loop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile; ?>
       </ul>

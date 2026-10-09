@@ -23,7 +23,7 @@ get_header();
    
       <?php
       if (is_month()) {
-        $blogLoop = $wp_query;
+        $blog_loop = $wp_query;
       } else {
         $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
         $args = array(
@@ -33,13 +33,13 @@ get_header();
             'order' => 'DESC',
             'orderby' => 'post_date',
         );
-        $blogLoop = new WP_Query($args);
+        $blog_loop = new WP_Query($args);
       }
       ?>
       
-        <?php if ($blogLoop->have_posts()) : ?>
-          <?php while ($blogLoop->have_posts()) :
-            $blogLoop->the_post();?>
+        <?php if ($blog_loop->have_posts()) : ?>
+          <?php while ($blog_loop->have_posts()) :
+            $blog_loop->the_post();?>
           <li class = "p-blog__list__item">
             <a href = "<?php the_permalink(); ?>">
               <figure class = "p-blog__list__img">
@@ -57,9 +57,9 @@ get_header();
         wp_reset_postdata();?>
     </ul>
 
-    <?php if ($blogLoop->max_num_pages > 1) :?>
+    <?php if ($blog_loop->max_num_pages > 1) :?>
       <div class = "u-mb50">
-        <?php wazeka_query_pagination($blogLoop); ?>
+        <?php wazeka_query_pagination($blog_loop); ?>
       </div>
     <?php endif; ?>
 
@@ -75,10 +75,10 @@ get_header();
           'orderby' => 'date',
           'order' => 'DESC',
           );?>
-          <?php $blogLoop = new WP_Query($args);?>
-          <?php if ($blogLoop->have_posts()) : ?>
-            <?php while ($blogLoop->have_posts()) :
-              $blogLoop->the_post();?>
+          <?php $blog_loop = new WP_Query($args);?>
+          <?php if ($blog_loop->have_posts()) : ?>
+            <?php while ($blog_loop->have_posts()) :
+              $blog_loop->the_post();?>
           <a href = "<?php the_permalink(); ?>">
               <?php the_title(); ?>
           </a>

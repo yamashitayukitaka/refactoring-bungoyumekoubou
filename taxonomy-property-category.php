@@ -7,9 +7,9 @@ get_header();
 
 <?php
     $taxonomy = 'property-category';
-    $mainQueryTerm = get_queried_object();
-    $mainQueryTermName = $mainQueryTerm -> name;
-    $mainQueryTermSlug = $mainQueryTerm -> slug;
+    $main_query_term = get_queried_object();
+    $main_query_term_name = $main_query_term -> name;
+    $main_query_term_slug = $main_query_term -> slug;
     $tag = 'property-area';
 ?>
 
@@ -37,8 +37,8 @@ get_header();
       </li>
       <?php if ($terms && !is_wp_error($terms)) : ?>
         <?php foreach ($terms as $term) :?>
-          <?php $termName = $term -> name;?>
-        <li class = "c-term__list__item <?php if ($mainQueryTermName === $termName) :
+          <?php $term_name = $term -> name;?>
+        <li class = "c-term__list__item <?php if ($main_query_term_name === $term_name) :
           ?> u-current <?php
                                         endif; ?>">
           <a href = "<?php echo esc_url(get_term_link($term)); ?>">
@@ -49,7 +49,7 @@ get_header();
       <?php endif; ?>
     </ul>
 
-    <?php $propertyTags = get_terms(
+    <?php $property_tags = get_terms(
         $tag,
         [
         'hide_empty' => false,
@@ -62,15 +62,15 @@ get_header();
     <ul class = "c-tag__list l-content--large">
       
       <li class = "c-tag__list__item">
-        <a href = "<?php echo esc_url(home_url('property-category/' . $mainQueryTermSlug)); ?>" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
+        <a href = "<?php echo esc_url(home_url('property-category/' . $main_query_term_slug)); ?>" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
       </li>
       
-      <?php if ($propertyTags && !is_wp_error($propertyTags)) : ?>
-        <?php foreach ($propertyTags as $propertyTag) :?>
-          <?php $propertySlug = $propertyTag->slug ;?>
+      <?php if ($property_tags && !is_wp_error($property_tags)) : ?>
+        <?php foreach ($property_tags as $property_tag) :?>
+          <?php $property_slug = $property_tag->slug ;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(add_query_arg('property_category', $mainQueryTermSlug, get_term_link($propertySlug, $tag))); ?>" class = "js-tab c-tag__list__link">
-            <?php echo esc_html($propertyTag->name); ?>
+          <a href = "<?php echo esc_url(add_query_arg('property_category', $main_query_term_slug, get_term_link($property_slug, $tag))); ?>" class = "js-tab c-tag__list__link">
+            <?php echo esc_html($property_tag->name); ?>
           </a>
         </li>
         <?php endforeach;?>
@@ -90,25 +90,25 @@ get_header();
       array(
         'taxonomy' => $taxonomy,
         'field' => 'slug',
-        'terms' => $mainQueryTermSlug,
+        'terms' => $main_query_term_slug,
         ),
       ),
       );?>
 
-    <?php $myOuery = new WP_Query($args);?>
-    <?php if ($myOuery->have_posts()) : ?>
+    <?php $my_query = new WP_Query($args);?>
+    <?php if ($my_query->have_posts()) : ?>
       <ul class = "c-cardList js-allswitch">
-        <?php while ($myOuery->have_posts()) :
-          $myOuery->the_post();?>
+        <?php while ($my_query->have_posts()) :
+          $my_query->the_post();?>
           <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($myOuery->max_num_pages > 1) :?>
+    <?php if ($my_query->max_num_pages > 1) :?>
       <div class = "u-mb50">
-        <?php wazeka_query_pagination($myOuery); ?>
+        <?php wazeka_query_pagination($my_query); ?>
       </div>
     <?php endif; ?>
     

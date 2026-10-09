@@ -16,14 +16,14 @@
           'orderby' => 'menu_order',
           'order' => 'ASC',
           );?>
-        <?php $eventLoop = new WP_Query($args);?>
-        <?php if ($eventLoop->have_posts()) : ?>
+        <?php $event_loop = new WP_Query($args);?>
+        <?php if ($event_loop->have_posts()) : ?>
           <time class = "p-xo-event__time"></time>
 
           <div class = "p-xo-event__list__overflow">
 
-            <?php while ($eventLoop->have_posts()) :
-              $eventLoop->the_post();?>
+            <?php while ($event_loop->have_posts()) :
+              $event_loop->the_post();?>
               <li class = "p-xo-event__list__item">
                 <a href = "<?php the_permalink(); ?>" class = "p-xo-event__list__link">
                   <time class = "p-xo-event__list__startDate">
@@ -43,7 +43,7 @@
                       <?php the_title(); ?>
                     </p>
                     
-                      <?php $eventTypes = get_the_terms(
+                      <?php $event_types = get_the_terms(
                           get_the_ID(),
                           'event-type',
                           [
@@ -55,10 +55,10 @@
                       );?>
 
                     <?php $event_type = get_field('event-type'); ?>
-                    <?php if ($event_type && $eventTypes && !is_wp_error($eventTypes)) : ?>
+                    <?php if ($event_type && $event_types && !is_wp_error($event_types)) : ?>
                       <div class = "c-id__wrap">
-                        <?php foreach ($eventTypes as $eventType) :?>
-                          <span class = "c-id u-mb15"><?php echo esc_html($eventType->name); ?></span>
+                        <?php foreach ($event_types as $event_type) :?>
+                          <span class = "c-id u-mb15"><?php echo esc_html($event_type->name); ?></span>
                           <span class = "c-id--end">終了</span>
                         <?php endforeach;?>
                       </div>

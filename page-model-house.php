@@ -119,19 +119,19 @@ get_header();
       <a class="p-modelHouse__overview__link" href="https://sankaido.com/shelly-house/" target="_blank">Shelly Houseについて</a>
     </span>
 
-    <?php $hasThumbsliders = get_field('b-img'); ?>
+    <?php $has_thumbsliders = get_field('b-img'); ?>
     <?php
-    $hasGalleryB = false;
-    if ($hasThumbsliders) {
-      foreach ($hasThumbsliders as $row) {
+    $has_gallery_b = false;
+    if ($has_thumbsliders) {
+      foreach ($has_thumbsliders as $row) {
         if (!empty($row['img'])) {
-          $hasGalleryB = true;
+          $has_gallery_b = true;
           break;
         }
       }
     }
     ?>
-    <?php if ($hasGalleryB) : ?>
+    <?php if ($has_gallery_b) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
         <h3 class="c-title--sectionEn">
           GALLERY
@@ -140,20 +140,20 @@ get_header();
           ギャラリー
         </p>
         <div class="p-modelHouse__overview__gallery">
-          <?php if ($hasThumbsliders) : ?>
+          <?php if ($has_thumbsliders) : ?>
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
-              <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-                <?php if (!empty($hasThumbslider['img'])) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
+                <?php if (!empty($has_thumbslider['img'])) : ?>
+                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
             <ul class="c-hasThumbSlider__thumbnail__list">
               <?php $count = 0; ?>
-              <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-                <?php if (!empty($hasThumbslider['img'])) : ?>
+              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
+                <?php if (!empty($has_thumbslider['img'])) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
-                    <img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+                    <img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -212,19 +212,19 @@ get_header();
       <a class="p-modelHouse__overview__link" href="<?php echo esc_url(home_url('irohaie')); ?>" target="_blank">いろは家について</a>
     </span>
 
-    <?php $hasThumbsliders = get_field('c-img'); ?>
+    <?php $has_thumbsliders = get_field('c-img'); ?>
     <?php
-    $hasGalleryC = false;
-    if ($hasThumbsliders) {
-      foreach ($hasThumbsliders as $row) {
+    $has_gallery_c = false;
+    if ($has_thumbsliders) {
+      foreach ($has_thumbsliders as $row) {
         if (!empty($row['img'])) {
-          $hasGalleryC = true;
+          $has_gallery_c = true;
           break;
         }
       }
     }
     ?>
-    <?php if ($hasGalleryC) : ?>
+    <?php if ($has_gallery_c) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
         <h3 class="c-title--sectionEn">
           GALLERY
@@ -233,20 +233,20 @@ get_header();
           ギャラリー
         </p>
         <div class="p-modelHouse__overview__gallery">
-          <?php if ($hasThumbsliders) : ?>
+          <?php if ($has_thumbsliders) : ?>
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
-              <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-                <?php if (!empty($hasThumbslider['img'])) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
+                <?php if (!empty($has_thumbslider['img'])) : ?>
+                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
             <ul class="c-hasThumbSlider__thumbnail__list">
               <?php $count = 0; ?>
-              <?php foreach ($hasThumbsliders as $hasThumbslider) : ?>
-                <?php if (!empty($hasThumbslider['img'])) : ?>
+              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
+                <?php if (!empty($has_thumbslider['img'])) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
-                    <img src="<?php echo esc_url($hasThumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+                    <img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -303,11 +303,11 @@ get_header();
       'order' => 'DESC',
       'orderby' => 'date',
     ); ?>
-    <?php $eventLoop = new WP_Query($event); ?>
-    <?php if ($eventLoop->have_posts()) : ?>
+    <?php $event_loop = new WP_Query($event); ?>
+    <?php if ($event_loop->have_posts()) : ?>
       <ul class="c-cardList u-mb50">
-        <?php while ($eventLoop->have_posts()) :
-          $eventLoop->the_post(); ?>
+        <?php while ($event_loop->have_posts()) :
+          $event_loop->the_post(); ?>
           <?php get_template_part('template-parts/event-loop'); ?>
         <?php endwhile;
     endif;

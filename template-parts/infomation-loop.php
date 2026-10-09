@@ -1,16 +1,16 @@
 <?php $infomations = get_field('infomation');?>
 <?php
-$hasInfomation = false;
+$has_infomation = false;
 if ($infomations) {
   foreach ($infomations as $row) {
     if (!empty($row['img']) || !empty($row['txt']) || !empty($row['value'])) {
-      $hasInfomation = true;
+      $has_infomation = true;
       break;
     }
   }
 }
 ?>
-<?php if ($hasInfomation) :?>
+<?php if ($has_infomation) :?>
 <section class = "p-property__infomation u-mb100">
   <div class = "l-content">
     <h3 class = "c-title--sectionEn">

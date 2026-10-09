@@ -286,17 +286,17 @@ get_header();
       </div>
       <?php
       $qualities = get_field('satisfying_quality');
-      $hasQuality = false;
+      $has_quality = false;
       if ($qualities) {
         foreach ($qualities as $row) {
           if (!empty($row['img']) || !empty($row['title']) || !empty($row['txt'])) {
-            $hasQuality = true;
+            $has_quality = true;
             break;
           }
         }
       }
       ?>
-      <?php if ($hasQuality) : ?>
+      <?php if ($has_quality) : ?>
         <div class="p-irohaie__quality">
           <?php
           foreach ($qualities as $i => $quality) :
@@ -362,13 +362,13 @@ get_header();
         ),
       ),
     );
-    $worksLoop = new WP_Query($args);
+    $works_loop = new WP_Query($args);
     ?>
 
     <ul class="c-cardList u-mb100">
-      <?php if ($worksLoop->have_posts()) :
-        while ($worksLoop->have_posts()) :
-          $worksLoop->the_post(); ?>
+      <?php if ($works_loop->have_posts()) :
+        while ($works_loop->have_posts()) :
+          $works_loop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile;
       endif;

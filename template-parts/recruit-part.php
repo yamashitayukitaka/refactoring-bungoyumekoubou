@@ -8,11 +8,11 @@
       'orderby' => 'date',
       'order' => 'ASC'
       );?>
-    <?php $staffLoop = new WP_Query($staff);?>
-      <?php if ($staffLoop->have_posts()) : ?>
+    <?php $staff_loop = new WP_Query($staff);?>
+      <?php if ($staff_loop->have_posts()) : ?>
       <ul class = "p-about__recruitStaff__list">
-        <?php while ($staffLoop->have_posts()) :
-          $staffLoop->the_post();?>
+        <?php while ($staff_loop->have_posts()) :
+          $staff_loop->the_post();?>
           <li class = "p-about__recruitStaff__listItem js-staffImg">
             
               <?php $staff_img = get_field('staff-img'); ?>
@@ -45,11 +45,11 @@
       'orderby' => 'date',
       'order' => 'DESC'
       );?>
-    <?php $staffLoop2 = new WP_Query($staff2);?>
-      <?php if ($staffLoop2->have_posts()) : ?>
+    <?php $staff_loop2 = new WP_Query($staff2);?>
+      <?php if ($staff_loop2->have_posts()) : ?>
       <ul class = "p-about__recruitStaff__list">
-        <?php while ($staffLoop2->have_posts()) :
-          $staffLoop2->the_post();?>
+        <?php while ($staff_loop2->have_posts()) :
+          $staff_loop2->the_post();?>
           <li class = "p-about__recruitStaff__listItem js-staffImg">
             
               <?php $staff_img = get_field('staff-img'); ?>

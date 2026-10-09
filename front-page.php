@@ -178,11 +178,11 @@ get_header();
       'orderby' => 'menu_order',
       'order' => 'ASC',
     ); ?>
-    <?php $worksLoop = new WP_Query($works); ?>
-    <?php if ($worksLoop->have_posts()) : ?>
+    <?php $works_loop = new WP_Query($works); ?>
+    <?php if ($works_loop->have_posts()) : ?>
       <ul class="c-cardList c-cardList--lead u-mb50">
-        <?php while ($worksLoop->have_posts()) :
-          $worksLoop->the_post(); ?>
+        <?php while ($works_loop->have_posts()) :
+          $works_loop->the_post(); ?>
           <?php get_template_part('template-parts/works-loop'); ?>
         <?php endwhile; ?>
       </ul>
@@ -200,11 +200,11 @@ get_header();
       'order' => 'DESC',
       'orderby' => 'date',
     ); ?>
-    <?php $staffLoop = new WP_Query($args); ?>
+    <?php $staff_loop = new WP_Query($args); ?>
     <ul class="p-top__staff__list js-staffSlider">
-      <?php if ($staffLoop->have_posts()) : ?>
-        <?php while ($staffLoop->have_posts()) :
-          $staffLoop->the_post(); ?>
+      <?php if ($staff_loop->have_posts()) : ?>
+        <?php while ($staff_loop->have_posts()) :
+          $staff_loop->the_post(); ?>
           <li class="p-top__staff__item">
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field('staff-img'); ?>
@@ -239,11 +239,11 @@ get_header();
       'order' => 'ASC',
       'orderby' => 'date',
     ); ?>
-    <?php $staffLoop = new WP_Query($args); ?>
+    <?php $staff_loop = new WP_Query($args); ?>
     <ul class="p-top__staff__list js-staffSlider--reverse" dir="rtl">
-      <?php if ($staffLoop->have_posts()) : ?>
-        <?php while ($staffLoop->have_posts()) :
-          $staffLoop->the_post(); ?>
+      <?php if ($staff_loop->have_posts()) : ?>
+        <?php while ($staff_loop->have_posts()) :
+          $staff_loop->the_post(); ?>
           <li class="p-top__staff__item">
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field('staff-img'); ?>
@@ -277,11 +277,11 @@ get_header();
       'orderby' => 'menu_order',
       'order' => 'ASC',
     ); ?>
-    <?php $propertyLoop = new WP_Query($property); ?>
-    <?php if ($propertyLoop->have_posts()) : ?>
+    <?php $property_loop = new WP_Query($property); ?>
+    <?php if ($property_loop->have_posts()) : ?>
       <ul class="c-cardList c-cardList--lead">
-        <?php while ($propertyLoop->have_posts()) :
-          $propertyLoop->the_post(); ?>
+        <?php while ($property_loop->have_posts()) :
+          $property_loop->the_post(); ?>
           <?php get_template_part('template-parts/property-loop'); ?>
         <?php endwhile; ?>
       </ul>

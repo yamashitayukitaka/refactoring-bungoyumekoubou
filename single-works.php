@@ -8,7 +8,7 @@ get_header();
   <section>
     <div class = "l-content--large u-mb50">
       <h2 class = "c-title--large u-mb20"><?php the_title(); ?></h2>
-      <?php $worksTypes = get_the_terms(
+      <?php $works_types = get_the_terms(
           get_the_ID(),
           'works-type',
           [
@@ -20,10 +20,10 @@ get_header();
       );?>
 
       <?php $works_type = get_field('works-type'); ?>
-      <?php if ($works_type && $worksTypes && !is_wp_error($worksTypes)) : ?>
+      <?php if ($works_type && $works_types && !is_wp_error($works_types)) : ?>
         <div class = "c-id__wrap--top">
-          <?php foreach ($worksTypes as $worksType) :?>
-            <span class = "c-id u-mb15"><?php echo esc_html($worksType->name); ?></span>
+          <?php foreach ($works_types as $works_type) :?>
+            <span class = "c-id u-mb15"><?php echo esc_html($works_type->name); ?></span>
           <?php endforeach;?>
         </div>
       <?php endif; ?>

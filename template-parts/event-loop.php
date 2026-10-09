@@ -4,7 +4,7 @@
       <?php the_post_thumbnail();?>
     </figure>
     <div class = "c-cardList__txtWrap">
-      <?php $eventTypes = get_the_terms(
+      <?php $event_types = get_the_terms(
           get_the_ID(),
           'event-type',
           [
@@ -16,9 +16,9 @@
       );?>
 
       <?php $event_type = get_field('event-type'); ?>
-      <?php if ($event_type && $eventTypes && !is_wp_error($eventTypes)) : ?>
-        <?php foreach ($eventTypes as $eventType) :?>
-          <span class = "c-id u-mb15"><?php echo esc_html($eventType->name); ?></span>
+      <?php if ($event_type && $event_types && !is_wp_error($event_types)) : ?>
+        <?php foreach ($event_types as $event_type) :?>
+          <span class = "c-id u-mb15"><?php echo esc_html($event_type->name); ?></span>
         <?php endforeach;?>
         <span class = "c-id--end">終了</span>
       <?php endif; ?>
