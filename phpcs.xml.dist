@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="wazeka">
-  <description>テーマの PHP を WordPress Coding Standards で検査する（インデントはスペース2。tab-width も2 — composer run lint:php / fix:php の --tab-width=2 必須）</description>
+  <description>テーマの PHP を WordPress Coding Standards で検査する（インデント検査・自動修正は無効。lint/fix は composer run lint:php / fix:php）</description>
   <file>.</file>
   <exclude-pattern>vendor/*</exclude-pattern>
   <exclude-pattern>node_modules/*</exclude-pattern>
@@ -18,26 +18,27 @@
     <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
     <!-- 短配列 [] を許可。 -->
     <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+    <!-- 行頭インデント・配列段の検査と phpcbf による自動整形は無効。 -->
+    <exclude name="Generic.WhiteSpace.ScopeIndent"/>
+    <exclude name="WordPress.Arrays.ArrayIndentation"/>
+    <!-- 列揃え（= 前の余分スペース）を許可するためスニフ自体を無効。 -->
+    <exclude name="Universal.WhiteSpace.PrecisionAlignment"/>
   </rule>
 
-  <!-- WordPress-Core の ScopeIndent（indent=4・タブ）を上書きする。 -->
-  <rule ref="Generic.WhiteSpace.ScopeIndent">
-    <properties>
-      <property name="exact" value="true"/>
-      <property name="indent" value="2"/>
-      <property name="tabIndent" value="false"/>
-      <property name="ignoreIndentationTokens" type="array">
-        <element value="T_HEREDOC"/>
-        <element value="T_NOWDOC"/>
-        <element value="T_INLINE_HTML"/>
-      </property>
-    </properties>
-  </rule>
-
-  <rule ref="WordPress.Arrays.ArrayIndentation">
-    <properties>
-      <property name="tabIndent" value="false"/>
-    </properties>
+  <!-- 埋め込み PHP の改行・段（[x] 多い）もテンプレでは無効。 -->
+  <rule ref="Squiz.PHP.EmbeddedPhp">
+    <exclude-pattern>template-parts/*</exclude-pattern>
+    <exclude-pattern>taxonomy-*.php</exclude-pattern>
+    <exclude-pattern>archive-*.php</exclude-pattern>
+    <exclude-pattern>single*.php</exclude-pattern>
+    <exclude-pattern>page-*.php</exclude-pattern>
+    <exclude-pattern>front-page.php</exclude-pattern>
+    <exclude-pattern>land.php</exclude-pattern>
+    <exclude-pattern>rental.php</exclude-pattern>
+    <exclude-pattern>used.php</exclude-pattern>
+    <exclude-pattern>header.php</exclude-pattern>
+    <exclude-pattern>footer.php</exclude-pattern>
+    <exclude-pattern>index.php</exclude-pattern>
   </rule>
 
   <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
