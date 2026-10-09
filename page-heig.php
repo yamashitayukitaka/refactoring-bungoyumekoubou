@@ -1,6 +1,6 @@
 <?php
 // Template Name: heig
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -136,7 +136,7 @@ get_header();
     </div>
   </div>
 
-  <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
+  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
 
   <!-- HEIGの標準仕様 -->
   <div class="p-heig__specification">
@@ -440,41 +440,41 @@ get_header();
       </div>
     </div>
     <div class="c-form__wrap">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+      <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
 
   <?php
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $args = array(
-    'post_type' => 'works',
+  $paged      = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+  $args       = array(
+    'post_type'      => 'works',
     'posts_per_page' => 3,
-    'order' => 'DESC',
-    'paged' => $paged,
-    'tax_query' => array(
+    'order'          => 'DESC',
+    'paged'          => $paged,
+    'tax_query'      => array(
       array(
         'taxonomy' => 'works-type',
-        'terms' => array('heig'),
-        'field' => 'slug'
+        'terms'    => array( 'heig' ),
+        'field'    => 'slug',
       ),
     ),
   );
-  $works_loop = new WP_Query($args);
+  $works_loop = new WP_Query( $args );
   ?>
 
-  <?php if ($works_loop->have_posts()) : ?>
+  <?php if ( $works_loop->have_posts() ) : ?>
     <section class="l-content">
       <p class="c-title--large">HEIGの施工事例をみる</p>
       <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
       <ul class="c-cardList u-mb100">
-        <?php while ($works_loop->have_posts()) :
+        <?php while ( $works_loop->have_posts() ) :
           $works_loop->the_post(); ?>
-          <?php get_template_part('template-parts/works-loop'); ?>
+          <?php get_template_part( 'template-parts/works-loop' ); ?>
         <?php endwhile; ?>
       </ul>
 
       <div class="u-center u-mb150">
-        <a class="c-button--outline" href="<?php echo esc_url(home_url('/')); ?>works-type/heig">一覧を見る</a>
+        <a class="c-button--outline" href="<?php echo esc_url( home_url( '/' ) ); ?>works-type/heig">一覧を見る</a>
       </div>
     </section>
     <?php
@@ -497,22 +497,22 @@ get_header();
 
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url(home_url('heig')); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group01.webp"></figure>
+          <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group01.webp"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url(home_url('rireve')); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group02.webp"></figure>
+          <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group02.webp"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url(home_url('irohaie')); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group03.webp"></figure>
+          <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group03.webp"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>

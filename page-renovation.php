@@ -1,6 +1,6 @@
 <?php
 // Template Name: renovation
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -15,9 +15,9 @@ get_header();
         RENOVATION
       </p>
     </div>
-    <?php $mv = get_field('mv-renovation-img'); ?>
-    <?php if ($mv) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'mv-renovation-img' ); ?>
+    <?php if ( $mv ) : ?>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -37,7 +37,7 @@ get_header();
   <section class="p-renovation__about">
     <div class="p-renovation__about__hero">
       <div class="p-renovation__about__media p-renovation__about__media--right">
-        <img class="p-renovation__about__mediaImg" src="<?php echo esc_url(IMG_URL . '/renovation/about.png'); ?>" alt="">
+        <img class="p-renovation__about__mediaImg" src="<?php echo esc_url( IMG_URL . '/renovation/about.png' ); ?>" alt="">
       </div>
       <div class="p-renovation__about__panel p-renovation__about__panel--left">
         <div class="p-renovation__about__titleWrap">
@@ -61,11 +61,11 @@ get_header();
           <div class="p-renovation__compare__primary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url(IMG_URL . '/renovation/beforeafter_case01_after_01.png'); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( IMG_URL . '/renovation/beforeafter_case01_after_01.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url(IMG_URL . '/renovation/beforeafter_case01_before.png'); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( IMG_URL . '/renovation/beforeafter_case01_before.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -73,7 +73,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url(IMG_URL . '/renovation/beforeafter_case01_after_02.png'); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( IMG_URL . '/renovation/beforeafter_case01_after_02.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after p-renovation__compare__badge--sub">AFTER</span>
               </div>
             </div>
@@ -83,11 +83,11 @@ get_header();
           <div class="p-renovation__compare__secondary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain p-renovation__compare__afterMain--offset">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url(IMG_URL . '/renovation/beforeafter_case02_after_01.png'); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( IMG_URL . '/renovation/beforeafter_case02_after_01.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb p-renovation__compare__beforeThumb--offset">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url(IMG_URL . '/renovation/beforeafter_case02_before.png'); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( IMG_URL . '/renovation/beforeafter_case02_before.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -95,7 +95,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide p-renovation__compare__afterWide--offset">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url(IMG_URL . '/renovation/beforeafter_case02_after_02.png'); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( IMG_URL . '/renovation/beforeafter_case02_after_02.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
             </div>
@@ -137,13 +137,13 @@ get_header();
       ];
       ?>
       <ul class="p-renovation__details__list">
-        <?php foreach ($detail_items as $item) : ?>
+        <?php foreach ( $detail_items as $item ) : ?>
           <li class="p-renovation__details__item">
             <div class="p-renovation__details__media">
-              <img class="p-renovation__details__mediaImg" src="<?php echo esc_url($item['img']); ?>" alt="">
+              <img class="p-renovation__details__mediaImg" src="<?php echo esc_url( $item['img'] ); ?>" alt="">
             </div>
             <div class="p-renovation__details__label">
-              <?php echo esc_html($item['label']); ?>
+              <?php echo esc_html( $item['label'] ); ?>
             </div>
           </li>
         <?php endforeach; ?>
@@ -156,7 +156,7 @@ get_header();
       お問合わせから<span class="u-orange">リフォーム</span>までの流れ
     </h3>
     <?php
-    $process_steps = [
+    $process_steps      = [
       [
         'title' => 'お問合わせ',
         'text'  => 'まずはお電話<a href="tel:097-594-1481">097-594-1481</a>か下記フォームよりお気軽にお問合わせください。',
@@ -174,35 +174,35 @@ get_header();
         'img'   => IMG_URL . '/renovation/process_03.png',
       ],
     ];
-    $process_last_index = count($process_steps) - 1;
+    $process_last_index = count( $process_steps ) - 1;
     ?>
     <ul class="p-renovation__process__list">
-      <?php foreach ($process_steps as $i => $step) : ?>
+      <?php foreach ( $process_steps as $i => $step ) : ?>
         <li class="p-renovation__process__item">
-          <div class="p-renovation__inner<?php echo ($i < $process_last_index) ? ' p-renovation__process__step' : ''; ?>">
+          <div class="p-renovation__inner<?php echo ( $i < $process_last_index ) ? ' p-renovation__process__step' : ''; ?>">
             <div class="p-renovation__process__row">
               <div class="p-renovation__process__media u-none__pc--tab">
-                <img class="p-renovation__process__mediaImg" src="<?php echo esc_url($step['img']); ?>" alt="">
+                <img class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="">
               </div>
               <div class="p-renovation__process__panel">
                 <p class="c-title--orangeLine p-renovation__process__title"><span class="marker">
-                    <span class="u-orange"><?php echo esc_html(sprintf('%02d. ', $i + 1)); ?></span><?php echo esc_html($step['title']); ?></span>
+                    <span class="u-orange"><?php echo esc_html( sprintf( '%02d. ', $i + 1 ) ); ?></span><?php echo esc_html( $step['title'] ); ?></span>
                 </p>
                 <p class="p-renovation__process__text">
-                  <?php echo wp_kses_post($step['text']); ?>
+                  <?php echo wp_kses_post( $step['text'] ); ?>
                 </p>
-                <?php if (!empty($step['cta'])) : ?>
+                <?php if ( ! empty( $step['cta'] ) ) : ?>
                   <span class="p-renovation__process__cta">
                     <a class="c-button--orange" href="#contact">お問合わせする</a>
                   </span>
                 <?php endif; ?>
               </div>
               <div class="p-renovation__process__media u-none__mobile--tab">
-                <img class="p-renovation__process__mediaImg" src="<?php echo esc_url($step['img']); ?>" alt="">
+                <img class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="">
               </div>
             </div>
           </div>
-          <?php if ($i < $process_last_index) : ?>
+          <?php if ( $i < $process_last_index ) : ?>
             <div class="p-renovation__process__arrow" aria-hidden="true"></div>
           <?php endif; ?>
         </li>
@@ -218,11 +218,11 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url(IMG_URL . '/renovation/feature_01.png'); ?>" alt="">
+            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url( IMG_URL . '/renovation/feature_01.png' ); ?>" alt="">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
-              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url(IMG_URL . '/common/point1.webp'); ?>" alt="">
+              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url( IMG_URL . '/common/point1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
@@ -239,11 +239,11 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url(IMG_URL . '/renovation/feature_02.png'); ?>" alt="">
+            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url( IMG_URL . '/renovation/feature_02.png' ); ?>" alt="">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
-              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url(IMG_URL . '/common/point2.webp'); ?>" alt="">
+              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url( IMG_URL . '/common/point2.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
@@ -283,11 +283,11 @@ get_header();
       </div>
     </div>
     <div class="c-form__wrap">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+      <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
 
-  <?php get_template_part('template-parts/common'); ?>
+  <?php get_template_part( 'template-parts/common' ); ?>
 
 
 </main>

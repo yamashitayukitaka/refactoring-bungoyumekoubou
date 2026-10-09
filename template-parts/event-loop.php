@@ -4,61 +4,61 @@
       <?php the_post_thumbnail();?>
     </figure>
     <div class = "c-cardList__txtWrap">
-      <?php $event_types = get_the_terms(
-          get_the_ID(),
-          'event-type',
-          [
+    <?php $event_types = get_the_terms(
+        get_the_ID(),
+        'event-type',
+        [
           'hide_empty' => false,
-          'parent' => 0,
-          'orderby' => 'date',
-          'order' => 'DESC',
+          'parent'     => 0,
+          'orderby'    => 'date',
+          'order'      => 'DESC',
           ]
-      );?>
+    );?>
 
-      <?php $event_type = get_field('event-type'); ?>
-      <?php if ($event_type && $event_types && !is_wp_error($event_types)) : ?>
-        <?php foreach ($event_types as $event_type) :?>
-          <span class = "c-id u-mb15"><?php echo esc_html($event_type->name); ?></span>
+      <?php $event_type = get_field( 'event-type' ); ?>
+      <?php if ( $event_type && $event_types && ! is_wp_error( $event_types ) ) : ?>
+        <?php foreach ( $event_types as $event_type ) :?>
+          <span class = "c-id u-mb15"><?php echo esc_html( $event_type->name ); ?></span>
         <?php endforeach;?>
         <span class = "c-id--end">終了</span>
       <?php endif; ?>
 
       <?php
-        $start_date = do_shortcode('[xo_event_field field="start_date"]');
-        $end_date = do_shortcode('[xo_event_field field="end_date"]');
+        $start_date = do_shortcode( '[xo_event_field field="start_date"]' );
+        $end_date   = do_shortcode( '[xo_event_field field="end_date"]' );
       ?>
       
-      <?php if (!empty($start_date) && !empty($end_date)) :?>
+      <?php if ( ! empty( $start_date ) && ! empty( $end_date ) ) :?>
         <dl class = "u-flex u-mb15 c-cardList__dl">
           <dt class = "c-cardList__txt">開催日&nbsp;:&nbsp;</dt>
           <dd class = "c-cardList__txt">
             <?php
-              $always = get_field('always');
-            if ($always) :
-              $post_id = get_the_ID();
-              $always_value = get_post_meta($post_id, 'always', true);
-              if ($always_value === '1') : ?>
-                <p class = "p-event__always js-always">&nbsp;&nbsp;<?php echo esc_html('常時開催中'); ?></p>
+              $always = get_field( 'always' );
+            if ( $always ) :
+              $post_id      = get_the_ID();
+              $always_value = get_post_meta( $post_id, 'always', true );
+              if ( $always_value === '1' ) : ?>
+                <p class = "p-event__always js-always">&nbsp;&nbsp;<?php echo esc_html( '常時開催中' ); ?></p>
               <?php endif; ?>
-            <?php else :?>
+            <?php else : ?>
               <time class = "js-DateOfPicture c-cardList__txt">
-                <?php echo do_shortcode('[xo_event_field field="start_date"]'); ?>
+                <?php echo do_shortcode( '[xo_event_field field="start_date"]' ); ?>
               </time>
                 ～
               <time class = "js-DateOfPicture js-end c-cardList__txt">
-                <?php echo do_shortcode('[xo_event_field field="end_date"]'); ?>
+                <?php echo do_shortcode( '[xo_event_field field="end_date"]' ); ?>
               </time>
             <?php endif; ?>
           </dd>
         </dl>
       <?php endif; ?>
 
-      <?php $event_place = get_field('event-place'); ?>
-      <?php if ($event_place) : ?>
+      <?php $event_place = get_field( 'event-place' ); ?>
+      <?php if ( $event_place ) : ?>
         <dl class = "u-flex u-mb15">
           <dt class = "c-cardList__txt u-nowrap">開催場所&nbsp;:&nbsp;</dt>
           <dd class = "c-cardList__txt">
-            <?php echo esc_html($event_place); ?>
+            <?php echo esc_html( $event_place ); ?>
           </dd>
         </dl>
       <?php endif; ?>

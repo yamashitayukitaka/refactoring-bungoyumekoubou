@@ -17,18 +17,18 @@
         <span class="p-bungoYumeStudio__list__emphasis">私たち</span>の思い<br>
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url(IMG_URL . '/top/bungo_ladder.webp'); ?>" alt="">
+        <img src="<?php echo esc_url( IMG_URL . '/top/bungo_ladder.webp' ); ?>" alt="">
       </div>
       <nav aria-label="PHILOSOPHY 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/concept')); ?>">豊後夢工房の思い</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/concept' ) ); ?>">豊後夢工房の思い</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/staff')); ?>">ゆめ空間づくりスタッフ</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/staff' ) ); ?>">ゆめ空間づくりスタッフ</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/about')); ?>">会社概要</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/about' ) ); ?>">会社概要</a>
           </li>
         </ul>
       </nav>
@@ -42,18 +42,18 @@
         こだわり
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url(IMG_URL . '/top/bungo_sp.webp'); ?>" alt="">
+        <img src="<?php echo esc_url( IMG_URL . '/top/bungo_sp.webp' ); ?>" alt="">
       </div>
       <nav aria-label="SERVICE 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/quality')); ?>">品質へのこだわり</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/quality' ) ); ?>">品質へのこだわり</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/cost')); ?>">コストへのこだわり</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/cost' ) ); ?>">コストへのこだわり</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/design')); ?>">デザインへのこだわり</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/design' ) ); ?>">デザインへのこだわり</a>
           </li>
         </ul>
       </nav>
@@ -67,18 +67,18 @@
         <span class="p-bungoYumeStudio__list__emphasis">サポート</span>
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url(IMG_URL . '/top/bungo_pen.webp'); ?>" alt="">
+        <img src="<?php echo esc_url( IMG_URL . '/top/bungo_pen.webp' ); ?>" alt="">
       </div>
       <nav aria-label="SUPPORT 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/after-support')); ?>">安心の保証制度</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/after-support' ) ); ?>">安心の保証制度</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/flow')); ?>">いえづくりのステップ</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/flow' ) ); ?>">いえづくりのステップ</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/faq')); ?>">よくあるご質問</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/faq' ) ); ?>">よくあるご質問</a>
           </li>
         </ul>
       </nav>
@@ -91,15 +91,15 @@
         メンテナンス
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url(IMG_URL . '/top/bungo_drill.webp'); ?>" alt="">
+        <img src="<?php echo esc_url( IMG_URL . '/top/bungo_drill.webp' ); ?>" alt="">
       </div>
       <nav aria-label="maintenance 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/maintenance')); ?>">アフターメンテナンス</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/maintenance' ) ); ?>">アフターメンテナンス</a>
           </li>
           <li class="p-bungoYumeStudio__list__navItem">
-            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url(home_url('/renovation')); ?>">ゆめ再生リフォーム</a>
+            <a class="p-bungoYumeStudio__list__navLink" href="<?php echo esc_url( home_url( '/renovation' ) ); ?>">ゆめ再生リフォーム</a>
           </li>
         </ul>
       </nav>

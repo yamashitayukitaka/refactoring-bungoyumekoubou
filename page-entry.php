@@ -1,6 +1,6 @@
 <?php
 // Template Name: entry
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -12,7 +12,7 @@ get_header();
   </p>
   <div class = "p-top__contact__wrap">
     <div class = "p-top__contact__wrapInner">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]');?>
+      <?php echo do_shortcode( '[mwform_formkey key="1820"]' );?>
     </div>
   </div>
 </section>

@@ -12,9 +12,9 @@ get_header();
         CONTACT
       </p>
     </div>
-    <?php $mv = get_field('main-visual'); ?>
-    <?php if ($mv) : ?>
-    <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'main-visual' ); ?>
+    <?php if ( $mv ) : ?>
+    <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
   <section class="l-content">
@@ -29,7 +29,7 @@ get_header();
       </div>
     </div>
     <div class="c-form__wrap">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+      <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
 </main>

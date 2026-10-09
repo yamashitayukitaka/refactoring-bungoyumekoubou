@@ -1,6 +1,6 @@
 <?php
 // Template Name: faq
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -15,9 +15,9 @@ get_header();
         Q & A
       </p>
     </div>
-    <?php $mv = get_field('mv-faq-img'); ?>
-    <?php if ($mv) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'mv-faq-img' ); ?>
+    <?php if ( $mv ) : ?>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -38,26 +38,26 @@ get_header();
   </p>
 
   <?php
-  $qas = get_field('faq_questions_answers');
-  if ($qas) :
+  $qas = get_field( 'faq_questions_answers' );
+  if ( $qas ) :
     ?>
     <section class="p-faq__list">
       <ul class="c-accordion">
-        <?php foreach ($qas as $i => $qa) :
-          if (empty($qa['question']) || empty($qa['answer'])) {
+        <?php foreach ( $qas as $i => $qa ) :
+          if ( empty( $qa['question'] ) || empty( $qa['answer'] ) ) {
             continue;
           }
           ?>
           <li class="c-accordion__item">
             <button type="button" class="c-accordion__trigger js-accordion">
               <span class="c-accordion__number">
-                <?php echo sprintf('%02d', ($i + 1)); ?>
+                <?php printf( '%02d', ( $i + 1 ) ); ?>
               </span>
-              <?php echo esc_html($qa['question']); ?>
+              <?php echo esc_html( $qa['question'] ); ?>
             </button>
             <div class="c-accordion__panel">
               <p class="c-accordion__body">
-                <?php echo wp_kses_post($qa['answer']); ?>
+                <?php echo wp_kses_post( $qa['answer'] ); ?>
               </p>
             </div>
           </li>
@@ -66,7 +66,7 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <?php get_template_part('template-parts/common'); ?>
+  <?php get_template_part( 'template-parts/common' ); ?>
 
 </main>
 <?php get_footer(); ?>

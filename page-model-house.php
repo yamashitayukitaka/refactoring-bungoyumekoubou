@@ -1,6 +1,6 @@
 <?php
 // Template Name: model-house
-if (!defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -15,9 +15,9 @@ get_header();
         モデルハウス
       </p>
     </div>
-    <?php $mv = get_field('mv-model-img'); ?>
-    <?php if ($mv) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'mv-model-img' ); ?>
+    <?php if ( $mv ) : ?>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -36,7 +36,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img src="<?php echo esc_url(IMG_URL . '/common/left-ribbon.webp'); ?>">
+      <img src="<?php echo esc_url( IMG_URL . '/common/left-ribbon.webp' ); ?>">
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">中庭と深い軒の織りなす<br>
@@ -46,10 +46,10 @@ get_header();
           スタイリッシュなデザイン</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo">
-      <img src="<?php echo esc_url(IMG_URL . '/model-house/tos-studio.png'); ?>" alt="">
+      <img src="<?php echo esc_url( IMG_URL . '/model-house/tos-studio.png' ); ?>" alt="">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img src="<?php echo esc_url(IMG_URL . '/model-house/tos.png'); ?>" alt="">
+      <img src="<?php echo esc_url( IMG_URL . '/model-house/tos.png' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__text u-mb100">
       建物の中心に「中庭」を配置し、<br>
@@ -66,7 +66,7 @@ get_header();
       兼ね備えた理想的な住まいです。
     </div>
     <div class="p-modelHouse__overview__gallery">
-      <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
+      <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
     </div>
 
 
@@ -80,7 +80,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
-      <img src="<?php echo esc_url(IMG_URL . '/common/right-ribbon.webp'); ?>">
+      <img src="<?php echo esc_url( IMG_URL . '/common/right-ribbon.webp' ); ?>">
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">大人カワイイ<br>
@@ -93,10 +93,10 @@ get_header();
           ヨーロピアンな家</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img src="<?php echo esc_url(IMG_URL . '/model-house/shelly-studio.png'); ?>" alt="">
+      <img src="<?php echo esc_url( IMG_URL . '/model-house/shelly-studio.png' ); ?>" alt="">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img src="<?php echo esc_url(IMG_URL . '/model-house/shelly.png'); ?>" alt="">
+      <img src="<?php echo esc_url( IMG_URL . '/model-house/shelly.png' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__text">
       ヨーロッパの街並みに溶け込むようなデザイン。<br>
@@ -119,19 +119,19 @@ get_header();
       <a class="p-modelHouse__overview__link" href="https://sankaido.com/shelly-house/" target="_blank">Shelly Houseについて</a>
     </span>
 
-    <?php $has_thumbsliders = get_field('b-img'); ?>
+    <?php $has_thumbsliders = get_field( 'b-img' ); ?>
     <?php
     $has_gallery_b = false;
-    if ($has_thumbsliders) {
-      foreach ($has_thumbsliders as $row) {
-        if (!empty($row['img'])) {
+    if ( $has_thumbsliders ) {
+      foreach ( $has_thumbsliders as $row ) {
+        if ( ! empty( $row['img'] ) ) {
           $has_gallery_b = true;
           break;
         }
       }
     }
     ?>
-    <?php if ($has_gallery_b) : ?>
+    <?php if ( $has_gallery_b ) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
         <h3 class="c-title--sectionEn">
           GALLERY
@@ -140,20 +140,20 @@ get_header();
           ギャラリー
         </p>
         <div class="p-modelHouse__overview__gallery">
-          <?php if ($has_thumbsliders) : ?>
+          <?php if ( $has_thumbsliders ) : ?>
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
-              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
-                <?php if (!empty($has_thumbslider['img'])) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
+                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
+                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
             <ul class="c-hasThumbSlider__thumbnail__list">
               <?php $count = 0; ?>
-              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
-                <?php if (!empty($has_thumbslider['img'])) : ?>
-                  <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
-                    <img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
+                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
+                  <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
+                    <img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -175,7 +175,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img src="<?php echo esc_url(IMG_URL . '/common/left-ribbon.webp'); ?>">
+      <img src="<?php echo esc_url( IMG_URL . '/common/left-ribbon.webp' ); ?>">
     </figure>
 
     <div class="p-modelHouse__overview__heading">
@@ -190,10 +190,10 @@ get_header();
     </div>
 
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img src="<?php echo esc_url(IMG_URL . '/model-house/iroha-studio.png'); ?>" alt="">
+      <img src="<?php echo esc_url( IMG_URL . '/model-house/iroha-studio.png' ); ?>" alt="">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img src="<?php echo esc_url(IMG_URL . '/model-house/iroha.png'); ?>" alt="">
+      <img src="<?php echo esc_url( IMG_URL . '/model-house/iroha.png' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__text">
       家づくりで不安に思う方が一番多いのがお金のこと。<br>
@@ -209,22 +209,22 @@ get_header();
     </div>
 
     <span class="p-modelHouse__overview__action">
-      <a class="p-modelHouse__overview__link" href="<?php echo esc_url(home_url('irohaie')); ?>" target="_blank">いろは家について</a>
+      <a class="p-modelHouse__overview__link" href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>" target="_blank">いろは家について</a>
     </span>
 
-    <?php $has_thumbsliders = get_field('c-img'); ?>
+    <?php $has_thumbsliders = get_field( 'c-img' ); ?>
     <?php
     $has_gallery_c = false;
-    if ($has_thumbsliders) {
-      foreach ($has_thumbsliders as $row) {
-        if (!empty($row['img'])) {
+    if ( $has_thumbsliders ) {
+      foreach ( $has_thumbsliders as $row ) {
+        if ( ! empty( $row['img'] ) ) {
           $has_gallery_c = true;
           break;
         }
       }
     }
     ?>
-    <?php if ($has_gallery_c) : ?>
+    <?php if ( $has_gallery_c ) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
         <h3 class="c-title--sectionEn">
           GALLERY
@@ -233,20 +233,20 @@ get_header();
           ギャラリー
         </p>
         <div class="p-modelHouse__overview__gallery">
-          <?php if ($has_thumbsliders) : ?>
+          <?php if ( $has_thumbsliders ) : ?>
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
-              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
-                <?php if (!empty($has_thumbslider['img'])) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
+                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
+                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
             <ul class="c-hasThumbSlider__thumbnail__list">
               <?php $count = 0; ?>
-              <?php foreach ($has_thumbsliders as $has_thumbslider) : ?>
-                <?php if (!empty($has_thumbslider['img'])) : ?>
-                  <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html($count++); ?>">
-                    <img src="<?php echo esc_url($has_thumbslider['img']); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
+                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
+                  <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
+                    <img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -281,7 +281,7 @@ get_header();
       </div>
     </div>
     <div class="c-form__wrap">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+      <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
 
@@ -298,28 +298,28 @@ get_header();
     </div>
     <?php
     $event = array(
-      'post_type' => 'xo_event',
+      'post_type'      => 'xo_event',
       'posts_per_page' => 3,
-      'order' => 'DESC',
-      'orderby' => 'date',
+      'order'          => 'DESC',
+      'orderby'        => 'date',
     ); ?>
-    <?php $event_loop = new WP_Query($event); ?>
-    <?php if ($event_loop->have_posts()) : ?>
+    <?php $event_loop = new WP_Query( $event ); ?>
+    <?php if ( $event_loop->have_posts() ) : ?>
       <ul class="c-cardList u-mb50">
-        <?php while ($event_loop->have_posts()) :
+        <?php while ( $event_loop->have_posts() ) :
           $event_loop->the_post(); ?>
-          <?php get_template_part('template-parts/event-loop'); ?>
+          <?php get_template_part( 'template-parts/event-loop' ); ?>
         <?php endwhile;
     endif;
       wp_reset_postdata(); ?>
       </ul>
       <div class="u-center">
-        <a href="<?php echo esc_url(home_url('xo_event')); ?>" class="c-button--outline">イベント一覧へ</a>
+        <a href="<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class="c-button--outline">イベント一覧へ</a>
       </div>
   </section>
 
 
-  <?php get_template_part('template-parts/common'); ?>
+  <?php get_template_part( 'template-parts/common' ); ?>
 
 
 </main>
