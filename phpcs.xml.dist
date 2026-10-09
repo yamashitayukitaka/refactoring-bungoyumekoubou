@@ -47,6 +47,8 @@
         <element value="wazeka"/>
       </property>
     </properties>
+    <!-- テンプレ等の関数外変数（$img など）への wazeka_ 強制はしない。関数・定数・クラスは引き続き検査。 -->
+    <exclude name="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound"/>
   </rule>
 
   <rule ref="WordPress.WP.I18n">
