@@ -51,7 +51,7 @@ get_header();
         <a href="#cost1" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( IMG_URL . '/number/number1.webp' ); ?>" alt="">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -66,7 +66,7 @@ get_header();
         <a href="#cost2" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( IMG_URL . '/number/number2.webp' ); ?>" alt="">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number2.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -81,7 +81,7 @@ get_header();
         <a href="#cost3" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( IMG_URL . '/number/number3.webp' ); ?>" alt="">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number3.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -96,7 +96,7 @@ get_header();
         <a href="#cost4" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( IMG_URL . '/number/number4.webp' ); ?>" alt="">
+              <img class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number4.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -116,11 +116,11 @@ get_header();
     <section class="p-cost__economy" id="cost1">
       <div class="p-cost__economy__container">
         <div class="p-cost__points__media p-cost__points__media--right">
-          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_1.png' ); ?>" alt="">
+          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_1.png' ); ?>" alt="">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--left">
           <div class="p-cost__points__badge">
-            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( IMG_URL . '/common/point1.webp' ); ?>" alt="">
+            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point1.webp' ); ?>" alt="">
           </div>
           <div>
             <p class="c-title--orangeLine p-cost__points__headline">
@@ -164,10 +164,10 @@ get_header();
       <ul class="p-cost__economy__list">
         <?php foreach ( $economy_points as $point ) : ?>
           <li class="p-cost__economy__item">
-            <img class="p-cost__economy__itemImg" src="<?php echo esc_url( IMG_URL . $point['img'] ); ?>" alt="コストへのこだわり">
+            <img class="p-cost__economy__itemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['img'] ); ?>" alt="コストへのこだわり">
             <div class="p-cost__economy__itemLabel">
               <div class="p-cost__economy__itemLabelIcon">
-                <img class="p-cost__economy__itemLabelImg" src="<?php echo esc_url( IMG_URL . $point['number'] ); ?>" alt="">
+                <img class="p-cost__economy__itemLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['number'] ); ?>" alt="">
               </div>
               <div class="p-cost__economy__itemLabelText">
                 <?php echo esc_html( $point['label'] ); ?>
@@ -182,11 +182,11 @@ get_header();
     <section class="p-cost__facility" id="cost2">
       <div class="p-cost__facility__container">
         <div class="p-cost__points__media">
-          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_5.png' ); ?>" alt="">
+          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_5.png' ); ?>" alt="">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--right">
           <div class="p-cost__points__badge">
-            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( IMG_URL . '/common/point2.webp' ); ?>" alt="">
+            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point2.webp' ); ?>" alt="">
           </div>
           <div>
             <p class="c-title--orangeLine u-mb10 p-cost__points__headline">
@@ -225,10 +225,10 @@ get_header();
       <ul class="p-cost__facility__list">
         <?php foreach ( $facility_points as $point ) : ?>
           <li class="p-cost__facility__item">
-            <img class="p-cost__facility__itemImg" src="<?php echo esc_url( IMG_URL . $point['img'] ); ?>" alt="コストへのこだわり">
+            <img class="p-cost__facility__itemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['img'] ); ?>" alt="コストへのこだわり">
             <div class="p-cost__facility__itemLabel">
               <div class="p-cost__facility__itemLabelIcon">
-                <img class="p-cost__facility__itemLabelImg" src="<?php echo esc_url( IMG_URL . $point['number'] ); ?>" alt="">
+                <img class="p-cost__facility__itemLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['number'] ); ?>" alt="">
               </div>
               <div class="p-cost__facility__itemLabelText">
                 <?php echo esc_html( $point['label'] ); ?>
@@ -251,11 +251,11 @@ get_header();
     <section class="p-cost__support" id="cost3">
       <div class="p-cost__support__container">
         <div class="p-cost__points__media p-cost__points__media--right">
-          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_9.png' ); ?>" alt="">
+          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_9.png' ); ?>" alt="">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--left">
           <div class="p-cost__points__badge">
-            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( IMG_URL . '/common/point3.webp' ); ?>" alt="">
+            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point3.webp' ); ?>" alt="">
           </div>
           <div>
             <p class="c-title--orangeLine p-cost__points__headline">
@@ -274,7 +274,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapEnd">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia">
-              <img class="p-cost__points__cardImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_10.webp' ); ?>" alt="">
+              <img class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_10.webp' ); ?>" alt="">
             </div>
             <div class="p-cost__points__cardBody">
               <p class="p-cost__points__cardTitle">
@@ -292,7 +292,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapStart">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia u-none__pc--tab">
-              <img class="p-cost__points__cardImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_11.webp' ); ?>" alt="">
+              <img class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_11.webp' ); ?>" alt="">
             </div>
             <div class="p-cost__points__cardBody">
               <p class="p-cost__points__cardTitle">
@@ -303,7 +303,7 @@ get_header();
               </p>
             </div>
             <div class="p-cost__points__cardMedia u-none__mobile--tab">
-              <img class="p-cost__points__cardImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_11.webp' ); ?>" alt="">
+              <img class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_11.webp' ); ?>" alt="">
             </div>
           </div>
         </li>
@@ -315,11 +315,11 @@ get_header();
     <section class="p-cost__plan" id="cost4">
       <div class="p-cost__plan__container">
         <div class="p-cost__points__media">
-          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_12.png' ); ?>" alt="">
+          <img class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_12.png' ); ?>" alt="">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--right">
           <div class="p-cost__points__badge">
-            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( IMG_URL . '/common/point4.webp' ); ?>" alt="">
+            <img class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point4.webp' ); ?>" alt="">
           </div>
           <div>
             <p class="c-title--orangeLine p-cost__points__headline">
@@ -338,7 +338,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapEnd">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia">
-              <img class="p-cost__points__cardImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_13.webp' ); ?>" alt="">
+              <img class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_13.webp' ); ?>" alt="">
             </div>
             <div class="p-cost__points__cardBody">
               <p class="p-cost__points__cardTitle">
@@ -353,7 +353,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapStart p-cost__points__card--sectionEnd">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia u-none__pc--tab">
-              <img class="p-cost__points__cardImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_14.webp' ); ?>" alt="">
+              <img class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_14.webp' ); ?>" alt="">
             </div>
             <div class="p-cost__points__cardBody">
               <p class="p-cost__points__cardTitle">
@@ -366,7 +366,7 @@ get_header();
               </p>
             </div>
             <div class="p-cost__points__cardMedia u-none__mobile--tab">
-              <img class="p-cost__points__cardImg" src="<?php echo esc_url( IMG_URL . '/cost/cost_14.webp' ); ?>" alt="">
+              <img class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/cost/cost_14.webp' ); ?>" alt="">
             </div>
           </div>
         </li>

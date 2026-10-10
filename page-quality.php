@@ -79,7 +79,7 @@ get_header();
               <div class="p-quality__nav__number">
                 <img
                   class="p-quality__nav__numberImg"
-                  src="<?php echo esc_url( IMG_URL . '/number/number' . $nav_item['number'] . '.webp' ); ?>"
+                  src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number' . $nav_item['number'] . '.webp' ); ?>"
                   alt=""
                 >
               </div>
@@ -97,7 +97,7 @@ get_header();
     <div class="l-content--inner p-quality__feature__overview">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img src="<?php echo esc_url( IMG_URL . '/number/number1.webp' ); ?>" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number1.webp' ); ?>" alt="">
         </div>
         <div>
           <p class="p-quality__largeText">
@@ -138,7 +138,7 @@ get_header();
           <ul class="p-quality__zeh__pointsList">
             <li class="p-quality__zeh__pointsItem">
               <div class="p-quality__zeh__pointsMedia">
-                <img class="p-quality__zeh__pointsImg" src="<?php echo esc_url( IMG_URL . '/performance/zeh_2.webp' ); ?>" alt="ZEH">
+                <img class="p-quality__zeh__pointsImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/zeh_2.webp' ); ?>" alt="ZEH">
               </div>
               <div class="p-quality__zeh__pointsItemBody">
                 <p class="p-quality__zeh__pointsItemTitle">省エネ</p>
@@ -148,7 +148,7 @@ get_header();
             </li>
             <li class="p-quality__zeh__pointsItem">
               <div class="p-quality__zeh__pointsMedia">
-                <img class="p-quality__zeh__pointsImg" src="<?php echo esc_url( IMG_URL . '/performance/zeh_3.webp' ); ?>" alt="ZEH">
+                <img class="p-quality__zeh__pointsImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/zeh_3.webp' ); ?>" alt="ZEH">
               </div>
               <div class="p-quality__zeh__pointsItemBody">
                 <p class="p-quality__zeh__pointsItemTitle">創エネ</p>
@@ -157,7 +157,7 @@ get_header();
             </li>
             <li class="p-quality__zeh__pointsItem">
               <div class="p-quality__zeh__pointsMedia">
-                <img class="p-quality__zeh__pointsImg" src="<?php echo esc_url( IMG_URL . '/performance/zeh_1.webp' ); ?>" alt="ZEH">
+                <img class="p-quality__zeh__pointsImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/zeh_1.webp' ); ?>" alt="ZEH">
               </div>
               <div class="p-quality__zeh__pointsItemBody">
                 <p class="p-quality__zeh__pointsItemTitle">高断熱</p>
@@ -178,7 +178,7 @@ get_header();
       </p>
       <div class="p-quality__award__winnerBody l-content--innerNarrow">
         <div class="p-quality__award__winnerMedia">
-          <img class="p-quality__award__winnerImg" src="<?php echo esc_url( IMG_URL . '/performance/winner2020.webp' ); ?>" alt="">
+          <img class="p-quality__award__winnerImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/winner2020.webp' ); ?>" alt="">
         </div>
         <p class="p-quality__award__winnerText">
           一般財団法人日本地域開発センターが主催する優れた省エネルギー住宅を表彰する制度「ハウス･オブ･ザ･イヤー･イン･エナジー2020」において、豊後夢工房の「Rireve」が「優秀賞」を受賞。豊後夢工房ではZEH住宅が標準仕様です。
@@ -200,7 +200,7 @@ get_header();
           <span class="u-font__bold">各モデルハウスにて豊後夢工房の住まいをご体感いただくことが出来ます。お気軽にお立ち寄りいただき、未来基準のエコ住宅をお確かめください。</span>
         </p>
         <div class="p-quality__award__rankingMedia">
-          <img class="p-quality__award__rankingImg" src="<?php echo esc_url( IMG_URL . '/performance/smarthouse.webp' ); ?>" alt="">
+          <img class="p-quality__award__rankingImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/smarthouse.webp' ); ?>" alt="">
         </div>
       </div>
     </div>
@@ -210,7 +210,7 @@ get_header();
     <div class="p-quality__feature__overview u-mb80 l-content--inner">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img src="<?php echo esc_url( IMG_URL . '/number/number2.webp' ); ?>" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number2.webp' ); ?>" alt="">
         </div>
         <div>
           <p class="p-quality__largeText"><span class="marker">高耐震</span></p>
@@ -228,7 +228,7 @@ get_header();
     </div>
     <div class="p-quality__seismic__grade mt-6 u-mb100 l-content--inner">
       <div class="p-quality__seismic__gradeMedia">
-        <img class="p-quality__seismic__gradeImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_8.webp' ); ?>" alt="">
+        <img class="p-quality__seismic__gradeImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_8.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__seismic__gradePanel">
         <div class="p-quality__seismic__gradeRow">
@@ -302,7 +302,7 @@ get_header();
             <p class="p-quality__seismic__mersystemEffectText">建物に伝わる地震のエネルギー(加速度)を約40%から48%吸収することができます。吸収することにより建物の変位と揺れを早く抑え、建物への負担を軽減します。</p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( IMG_URL . '/performance/performance_12.webp' ); ?>" alt="">
+            <img class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_12.webp' ); ?>" alt="">
           </div>
         </li>
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -319,7 +319,7 @@ get_header();
             <p class="p-quality__seismic__mersystemEffectText">シングルチューブ構造を採用したオイルダンパーのMER　SYSTEMは、揺れ始めから効果を発揮します。小さな揺れでもダメージが蓄積されると、釘やビスの緩みが生じ耐力壁を損傷してしまいます。当初の建物の耐震性を守ることが制震の役割です。またあえて抵抗力を制御することで耐震躯体を傷めない特性になっています。</p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( IMG_URL . '/performance/performance_13.webp' ); ?>" alt="">
+            <img class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_13.webp' ); ?>" alt="">
           </div>
         </li>
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -338,7 +338,7 @@ get_header();
             </p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( IMG_URL . '/performance/performance_14.webp' ); ?>" alt="">
+            <img class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_14.webp' ); ?>" alt="">
           </div>
         </li>
       </ul>
@@ -349,7 +349,7 @@ get_header();
     <div class="l-content--inner p-quality__feature__overview u-mb80">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img src="<?php echo esc_url( IMG_URL . '/number/number3.webp' ); ?>" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number3.webp' ); ?>" alt="">
         </div>
         <div>
           <p class="p-quality__largeText"><span class="marker">高断熱</span></p>
@@ -369,11 +369,11 @@ get_header();
       <span class="u-textOrange">豊後夢工房</span>の<span class="u-textOrange">高断熱仕様</span>
     </p>
     <div class="p-quality__thermal__chart l-content--innerNarrow p-quality__thermal__chart--spaced">
-      <img class="p-quality__thermal__chartImg" src="<?php echo esc_url( IMG_URL . '/performance/performance_20.webp' ); ?>" alt="">
+      <img class="p-quality__thermal__chartImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_20.webp' ); ?>" alt="">
     </div>
     <div class="p-quality__thermal__grade l-content--innerNarrow mt-6 u-mb80">
       <div class="p-quality__thermal__gradeMedia">
-        <img class="p-quality__thermal__gradeImg" src="<?php echo esc_url( IMG_URL . '/performance/performance_19.webp' ); ?>" alt="">
+        <img class="p-quality__thermal__gradeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_19.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__thermal__gradePanel">
         <div class="p-quality__thermal__gradeRow">
@@ -420,7 +420,7 @@ get_header();
     <div class="l-content--inner p-quality__feature__overview u-mb80">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img src="<?php echo esc_url( IMG_URL . '/number/number4.webp' ); ?>" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number4.webp' ); ?>" alt="">
         </div>
         <div>
           <p class="p-quality__largeText"><span class="marker">
@@ -443,7 +443,7 @@ get_header();
     </p>
     <div class="p-quality__airtight__panel p-quality__inner--wide">
       <div class="p-quality__airtight__panelMedia">
-        <img class="p-quality__airtight__panelImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_29.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__panelImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_29.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__airtight__panelBody">
         <p class="p-quality__airtight__panelLead">C値の測定は建具、断熱施工後、気密工事終了後のタイミングで専門の「気密測定試験機」を使用し、行います。</p>
@@ -453,13 +453,13 @@ get_header();
     </div>
     <div class="p-quality__airtight__gallery  p-quality__inner--wide p-quality__airtight__gallery--bordered">
       <div class="p-quality__airtight__galleryItem">
-        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_32.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_32.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__airtight__galleryItem">
-        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_30.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_30.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__airtight__galleryItem">
-        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_31.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_31.webp' ); ?>" alt="">
       </div>
     </div>
   </section>
@@ -469,7 +469,7 @@ get_header();
       <div class="p-quality__feature__overview u-mb80">
         <div class="p-quality__feature__overviewTxtWrap">
           <div class="p-quality__feature__overviewNum">
-            <img src="<?php echo esc_url( IMG_URL . '/number/number5.webp' ); ?>" alt="">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number5.webp' ); ?>" alt="">
           </div>
           <div>
             <p class="p-quality__largeText"><span class="marker">24時間換気システム</span></p>
@@ -515,7 +515,7 @@ get_header();
     <div class="l-content--inner">
       <div class="p-quality__ventilation__airflow p-quality__ventilation__airflow--spacedTop">
         <div class="p-quality__ventilation__airflowMedia">
-          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_24.webp' ); ?>" alt="品質のこだわり">
+          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_24.webp' ); ?>" alt="品質のこだわり">
         </div>
         <div class="p-quality__ventilation__airflowBody">
           <p class="p-quality__ventilation__airflowTitle">熱回収率93％24時間換気システム</p>
@@ -524,14 +524,14 @@ get_header();
       </div>
       <div class="p-quality__ventilation__airflow p-quality__ventilation__airflow--stacked">
         <div class="p-quality__ventilation__airflowMedia u-none__pc--tab">
-          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
+          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
         </div>
         <div class="p-quality__ventilation__airflowBody">
           <p class="p-quality__ventilation__airflowTitle">ウイルス対策特殊フィルター</p>
           <p class="p-quality__ventilation__airflowText">家に空気を取り込む給気口に特殊フィルターで覆い、外からの汚染物質をしっかりガードします。花粉を99.8％PM2.5物質を98％カットしてきれいな空気だけを室内へ取り込みます。</p>
         </div>
         <div class="p-quality__ventilation__airflowMedia u-none__mobile--tab">
-          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( IMG_URL . '/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
+          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
         </div>
       </div>
     </div>
@@ -539,14 +539,14 @@ get_header();
       <span class="u-textOrange">熱交換素子</span>と<span class="u-textOrange">快適温度</span>のイメージ
     </p>
     <div class="p-quality__ventilation__diagram  p-quality__ventilation__diagram--spaced">
-      <img class="p-quality__ventilation__diagramImg" src="<?php echo esc_url( IMG_URL . '/performance/performance_28.webp' ); ?>" alt="">
+      <img class="p-quality__ventilation__diagramImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_28.webp' ); ?>" alt="">
     </div>
     <div class="p-quality__ventilation__compare l-content--innerNarrow p-quality__ventilation__compare--spaced">
       <div class="p-quality__ventilation__compareItem">
-        <img class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--cold" src="<?php echo esc_url( IMG_URL . '/performance/performance_26.webp' ); ?>" alt="">
+        <img class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--cold" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_26.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__ventilation__compareItem">
-        <img class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--hot" src="<?php echo esc_url( IMG_URL . '/performance/performance_27.webp' ); ?>" alt="">
+        <img class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--hot" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/performance/performance_27.webp' ); ?>" alt="">
       </div>
     </div>
   </section>

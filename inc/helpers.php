@@ -9,8 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
-define( 'IMG_URL', get_template_directory_uri() . '/dist/img' );
-
 /**
  * 一覧ページの見出しから「アーカイブ:」という文字を取り除く.
  *
