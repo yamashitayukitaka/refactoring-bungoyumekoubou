@@ -1,4 +1,10 @@
 <?php
+/**
+ * Property post type archive template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

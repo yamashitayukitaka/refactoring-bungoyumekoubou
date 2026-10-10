@@ -1,5 +1,10 @@
 <?php
-// Template Name: rireve
+/**
+ * Template Name: rireve
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

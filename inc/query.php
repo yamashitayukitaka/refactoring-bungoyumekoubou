@@ -1,4 +1,9 @@
 <?php
+/**
+ * Query variable modifications.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

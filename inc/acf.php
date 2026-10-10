@@ -1,4 +1,9 @@
 <?php
+/**
+ * Advanced Custom Fields configuration.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

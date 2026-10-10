@@ -1,5 +1,10 @@
 <?php
-// Template Name: flow
+/**
+ * Template Name: flow
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

@@ -1,3 +1,11 @@
+<?php
+/**
+ * The header for our theme.
+ *
+ * @package Wazeka
+ */
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 

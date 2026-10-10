@@ -1,5 +1,10 @@
 <?php
-// Template Name: after-support
+/**
+ * Template Name: after-support
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

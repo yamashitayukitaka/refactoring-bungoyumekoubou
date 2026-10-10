@@ -1,3 +1,11 @@
+<?php
+/**
+ * Common footer event section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class = "l-content u-mb100 u-pt100">
   
   <div class = "u-center u-mb10">

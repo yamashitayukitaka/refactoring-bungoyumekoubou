@@ -1,3 +1,11 @@
+<?php
+/**
+ * Works card loop item part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <li class = "c-cardList__item">
   <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
     <?php $thumb = get_field( 'works-thumb' ); ?>

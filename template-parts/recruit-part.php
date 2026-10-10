@@ -1,3 +1,11 @@
+<?php
+/**
+ * Recruitment section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <a href = "<?php echo esc_url( home_url( 'recruit' ) ); ?>">
 <section class = "p-about__recruit u-mb100">
   <div class = "p-about__recruit__content">

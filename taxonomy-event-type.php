@@ -1,4 +1,10 @@
 <?php
+/**
+ * Event type taxonomy archive template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

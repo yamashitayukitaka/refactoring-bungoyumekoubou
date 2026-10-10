@@ -1,5 +1,10 @@
 <?php
-// Template Name: concept
+/**
+ * Template Name: concept
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

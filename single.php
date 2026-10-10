@@ -1,4 +1,10 @@
 <?php
+/**
+ * Single post template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

@@ -1,4 +1,9 @@
 <?php
+/**
+ * Custom post types and taxonomies.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

@@ -1,4 +1,10 @@
 <?php
+/**
+ * Single event template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

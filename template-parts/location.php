@@ -1,3 +1,11 @@
+<?php
+/**
+ * Store location section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class="p-location">
   <div class="c-title__head">
     <h3 class="c-title--sectionLine">

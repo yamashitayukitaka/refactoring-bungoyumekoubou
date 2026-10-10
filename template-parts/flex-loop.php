@@ -1,4 +1,11 @@
-<?php if ( get_row_layout() == 'two-column' ) : ?>
+<?php
+/**
+ * Flexible content layout loop part.
+ *
+ * @package Wazeka
+ */
+
+if ( get_row_layout() == 'two-column' ) : ?>
   <div class="p-flex__two u-mb50">
     <?php if ( have_rows( 'contents-1' ) ) : ?>
       <?php while ( have_rows( 'contents-1' ) ) :

@@ -1,5 +1,10 @@
 <?php
-// Template Name: recruit
+/**
+ * Template Name: recruit
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

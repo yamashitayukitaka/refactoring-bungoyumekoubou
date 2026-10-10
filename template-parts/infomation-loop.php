@@ -1,4 +1,11 @@
-<?php $infomations = get_field( 'infomation' );?>
+<?php
+/**
+ * Information loop part.
+ *
+ * @package Wazeka
+ */
+
+$infomations = get_field( 'infomation' );?>
 <?php
 $has_infomation = false;
 if ( $infomations ) {

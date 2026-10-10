@@ -1,5 +1,10 @@
 <?php
-// Template Name: contact
+/**
+ * Template Name: contact
+ *
+ * @package Wazeka
+ */
+
 get_header();
 ?>
 <main>

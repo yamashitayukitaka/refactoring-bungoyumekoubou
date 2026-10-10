@@ -1,5 +1,10 @@
 <?php
-// Template Name: heig
+/**
+ * Template Name: heig
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

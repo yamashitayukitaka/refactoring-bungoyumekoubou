@@ -1,5 +1,10 @@
 <?php
-// Template Name: privacypolicy
+/**
+ * Template Name: privacypolicy
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

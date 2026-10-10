@@ -1,3 +1,11 @@
+<?php
+/**
+ * Bungo Yume Studio section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class="p-bungoYumeStudio u-mb100">
   <div class="c-title__head">
     <h3 class="c-title--sectionLine">

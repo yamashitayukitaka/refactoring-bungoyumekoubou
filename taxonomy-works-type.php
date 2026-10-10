@@ -1,4 +1,10 @@
 <?php
+/**
+ * Works type taxonomy archive template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

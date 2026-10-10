@@ -1,7 +1,10 @@
 <?php
-
-// Template Name: 土地情報
-// Template Post Type: property
+/**
+ * Template Name: 土地情報
+ * Template Post Type: property
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

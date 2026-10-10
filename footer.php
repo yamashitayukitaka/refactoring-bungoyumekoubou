@@ -1,3 +1,11 @@
+<?php
+/**
+ * The footer for our theme.
+ *
+ * @package Wazeka
+ */
+
+?>
     <footer class="l-footer">
       <section class="l-footer__contact">
         <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/contact.webp' ); ?>');">

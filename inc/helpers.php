@@ -1,4 +1,9 @@
 <?php
+/**
+ * Theme helper functions.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

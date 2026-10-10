@@ -1,5 +1,10 @@
 <?php
-// Template Name: irohaie
+/**
+ * Template Name: irohaie
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

@@ -1,5 +1,10 @@
 <?php
-// Template Name: quality
+/**
+ * Template Name: quality
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

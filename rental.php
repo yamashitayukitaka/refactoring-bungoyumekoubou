@@ -1,7 +1,10 @@
 <?php
-
-// Template Name:賃貸物件
-// Template Post Type: property
+/**
+ * Template Name: 賃貸物件
+ * Template Post Type: property
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

@@ -1,4 +1,11 @@
-<?php $has_thumbsliders = get_field( 'a-imgs' ); ?>
+<?php
+/**
+ * Thumbnail slider loop part.
+ *
+ * @package Wazeka
+ */
+
+$has_thumbsliders = get_field( 'a-imgs' ); ?>
 <?php
 $has_gallery = false;
 if ( $has_thumbsliders ) {

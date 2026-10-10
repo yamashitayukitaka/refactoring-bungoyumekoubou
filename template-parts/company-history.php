@@ -1,3 +1,11 @@
+<?php
+/**
+ * Company history timeline part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class="u-pt50 u-mb100">
   <div class="c-title__head">
     <h3 class="c-title--sectionLine">

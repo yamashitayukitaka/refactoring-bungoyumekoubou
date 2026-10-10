@@ -1,4 +1,10 @@
 <?php
+/**
+ * Single staff member template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

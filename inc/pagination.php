@@ -1,4 +1,9 @@
 <?php
+/**
+ * Pagination helpers.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

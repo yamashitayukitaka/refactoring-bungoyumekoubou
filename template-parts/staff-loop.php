@@ -1,3 +1,11 @@
+<?php
+/**
+ * Staff listing section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class="u-mb100">
   <div class="c-title__head">
     <h3 class="c-title--sectionLine">

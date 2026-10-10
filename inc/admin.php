@@ -1,4 +1,9 @@
 <?php
+/**
+ * Admin area customizations.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

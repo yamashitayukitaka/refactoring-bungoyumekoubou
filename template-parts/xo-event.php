@@ -1,3 +1,11 @@
+<?php
+/**
+ * Event calendar and list part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class = "l-content u-mb100">
   <div class = "p-xo-event__search__wrap">
     <p class = "p-xo-event__search">カレンダーから探す</p>

@@ -1,5 +1,10 @@
 <?php
-// Template Name: catalog
+/**
+ * Template Name: catalog
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

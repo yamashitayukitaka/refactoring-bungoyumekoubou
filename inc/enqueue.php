@@ -1,4 +1,9 @@
 <?php
+/**
+ * Enqueue scripts and styles.
+ *
+ * @package Wazeka
+ */
 
 if ( ! defined( 'ABSPATH' ) ) {
   exit;

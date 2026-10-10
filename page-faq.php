@@ -1,5 +1,10 @@
 <?php
-// Template Name: faq
+/**
+ * Template Name: faq
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }

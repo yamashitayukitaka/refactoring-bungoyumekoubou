@@ -1,4 +1,10 @@
 <?php
+/**
+ * Events archive template.
+ *
+ * @package Wazeka
+ */
+
 if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
