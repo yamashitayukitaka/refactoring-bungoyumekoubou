@@ -395,21 +395,21 @@ get_header();
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group01.webp" alt=""></figure>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt=""></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group02.webp" alt=""></figure>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt=""></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group03.webp" alt=""></figure>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt=""></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>

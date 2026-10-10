@@ -1,6 +1,6 @@
     <footer class="l-footer">
       <section class="l-footer__contact">
-        <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/common/contact.webp');">
+        <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/contact.webp' ); ?>');">
           <h3 class="c-title--sectionEnWhite u-mb20">CONTACT</h3>
           <ul class="l-footer__contact__list l-content--xl">
             <li class="l-footer__contact__card">
@@ -57,7 +57,7 @@
         <div class="l-footer__map__copyWrap">
           <div class="l-footer__logo">
             <a href="<?php echo esc_url( home_url( '' ) ); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/logo.webp" alt="サイトタイトル" />
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="サイトタイトル" />
             </a>
           </div>
           <p class="l-footer__map__copy">

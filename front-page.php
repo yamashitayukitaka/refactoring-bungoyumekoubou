@@ -18,24 +18,24 @@ get_header();
     </div>
   
     <ul class="p-top__mv__appealList">
-      <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/top001.webp');">
-        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top_slider/star3.webp" alt="">
+      <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top001.webp' ); ?>');">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
         <p class="p-top__mv__appealTtl">断熱性能</p>
         <p class="p-top__mv__appealTxt">
           UA値
           <br>0.36以下
         </p>
       </li>
-      <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/top001.webp');">
-        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top_slider/star3.webp" alt="">
+      <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top001.webp' ); ?>');">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
         <p class="p-top__mv__appealTtl">気密性能</p>
         <p class="p-top__mv__appealTxt">
           C値
           <br>0.3以下
         </p>
       </li>
-      <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/top001.webp');">
-        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top_slider/star3.webp" alt="">
+      <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top001.webp' ); ?>');">
+        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
         <p class="p-top__mv__appealTtl">耐震性能</p>
         <p class="p-top__mv__appealTxt">
           標準仕様
@@ -82,21 +82,21 @@ get_header();
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group01.webp"></figure>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group02.webp"></figure>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/Group03.webp"></figure>
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>
@@ -127,7 +127,7 @@ get_header();
   </section>
 
   <a href="<?php echo esc_url( home_url( 'model-house' ) ); ?>">
-    <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/top01.webp');">
+    <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
       <div class="p-top__introduction__ttlWrap">
         <h3>
           <span class="marker c-title--sectionEn">MODEL_HOUSE</span>
@@ -137,7 +137,7 @@ get_header();
           <br>ぜひ一度ご来場いただき体験してみてください。
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap--house"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/dream_studio_1.webp"></figure>
+      <figure class="p-top__introduction__imgWrap--house"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>"></figure>
     </section>
   </a>
 
@@ -146,7 +146,7 @@ get_header();
   </div>
 
   <a href="<?php echo esc_url( home_url( 'catalog' ) ); ?>">
-    <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/top01.webp');">
+    <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
       <div class="p-top__introduction__ttlWrap">
         <h3>
           <span class="marker c-title--sectionEn">CATALOG</span>
@@ -156,7 +156,7 @@ get_header();
           <br>無料資料請求はこちらから
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/top/top_catalog.webp"></figure>
+      <figure class="p-top__introduction__imgWrap"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>"></figure>
     </section>
   </a>
 

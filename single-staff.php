@@ -16,7 +16,7 @@ get_header();
       <br><span class = "u-orange--mv">スタッフたち</span>
     </h2>
   </div>
-  <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/common/page.webp');"></figure>
+  <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>');"></figure>
 </div>
 <section class = "l-content p-staff__production">
   <div class = "p-staff__production__content">
