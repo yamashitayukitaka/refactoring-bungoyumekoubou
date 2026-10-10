@@ -5,7 +5,7 @@
  * @package Wazeka
  */
 
-if ( get_row_layout() == 'two-column' ) : ?>
+if ( get_row_layout() === 'two-column' ) : ?>
   <div class="p-flex__two u-mb50">
     <?php if ( have_rows( 'contents-1' ) ) : ?>
       <?php while ( have_rows( 'contents-1' ) ) :
@@ -51,7 +51,7 @@ if ( get_row_layout() == 'two-column' ) : ?>
       <?php endwhile; ?>
     <?php endif; ?>
   </div>
-<?php elseif ( get_row_layout() == 'one-column' ) : ?>
+<?php elseif ( get_row_layout() === 'one-column' ) : ?>
   <div class="p-flex__one u-mb50">
     <?php if ( have_rows( 'contents' ) ) : ?>
       <?php while ( have_rows( 'contents' ) ) :

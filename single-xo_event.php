@@ -111,7 +111,7 @@ get_header();
     <?php if ( have_rows( 'flex' ) ) : ?>
       <?php while ( have_rows( 'flex' ) ) :
         the_row(); ?>
-        <?php if ( get_row_layout() == 'two-column' ) : ?>
+        <?php if ( get_row_layout() === 'two-column' ) : ?>
           <div class="p-flex__two u-mb50">
             <?php if ( have_rows( 'contents-1' ) ) : ?>
               <?php while ( have_rows( 'contents-1' ) ) :
@@ -157,7 +157,7 @@ get_header();
               <?php endwhile; ?>
             <?php endif; ?>
           </div>
-        <?php elseif ( get_row_layout() == 'one-column' ) : ?>
+        <?php elseif ( get_row_layout() === 'one-column' ) : ?>
           <div class="p-flex__one u-mb50">
             <?php if ( have_rows( 'contents' ) ) : ?>
               <?php while ( have_rows( 'contents' ) ) :

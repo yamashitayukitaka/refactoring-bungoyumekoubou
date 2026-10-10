@@ -44,21 +44,21 @@ get_header();
     <?php if ( have_rows( 'contents' ) ) : ?>
       <?php while ( have_rows( 'contents' ) ) :
         the_row(); ?>
-        <?php if ( get_row_layout() == 'img-column' ) : ?>
+        <?php if ( get_row_layout() === 'img-column' ) : ?>
           <?php $img = get_sub_field( 'img' ); ?>
           <?php if ( $img ) : ?>
           <div class = "p-flex__one__imgWrap u-mb50">
             <img src = "<?php echo esc_url( $img );?>">
           </div>
           <?php endif; ?>
-        <?php elseif ( get_row_layout() == 'ttl-column' ) : ?>
+        <?php elseif ( get_row_layout() === 'ttl-column' ) : ?>
           <?php $ttl = get_sub_field( 'ttl' ); ?>
           <?php if ( $ttl ) : ?>
           <h4 class = "c-title--middle u-mb50">
             <?php echo esc_html( $ttl ); ?>
           </h4>
           <?php endif; ?>
-        <?php elseif ( get_row_layout() == 'txt-column' ) : ?>
+        <?php elseif ( get_row_layout() === 'txt-column' ) : ?>
           <?php $txt = get_sub_field( 'txt' ); ?>
           <?php if ( $txt ) : ?>
           <p class = "u-mb50">
