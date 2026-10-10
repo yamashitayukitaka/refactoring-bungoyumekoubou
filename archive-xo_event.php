@@ -22,8 +22,8 @@ get_header();
 <!-- WINKMARK LP INDEX 1 end-->
 
 <?php $terms = get_terms(
-    $local_taxonomy,
     [
+      'taxonomy'   => $local_taxonomy,
       'hide_empty' => false,
       'parent'     => 0,
       'orderby'    => 'id',
@@ -49,8 +49,8 @@ get_header();
     </ul>
 
     <?php $event_tags = get_terms(
-        $local_tag,
         [
+        'taxonomy'   => $local_tag,
         'hide_empty' => false,
         'parent'     => 0,
         'orderby'    => 'id',

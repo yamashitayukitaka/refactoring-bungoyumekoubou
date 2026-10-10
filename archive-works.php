@@ -17,8 +17,8 @@ get_header();
   </h2>
 
 <?php $terms = get_terms(
-    $local_taxonomy,
     [
+      'taxonomy'   => $local_taxonomy,
       'hide_empty' => false,
       'parent'     => 0,
       'orderby'    => 'id',
@@ -45,8 +45,8 @@ get_header();
 
  
     <?php $works_tags = get_terms(
-        $local_tag,
         [
+        'taxonomy'   => $local_tag,
         'hide_empty' => false,
         'parent'     => 0,
         'orderby'    => 'id',

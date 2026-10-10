@@ -20,8 +20,8 @@ get_header();
   $local_post_type = 'staff';
   $local_taxonomy  = 'department';
 $terms             = get_terms(
-    $local_taxonomy,
     [
+    'taxonomy'   => $local_taxonomy,
     'hide_empty' => false,
     'parent'     => 0,
     'orderby'    => 'description',
