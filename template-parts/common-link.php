@@ -11,11 +11,11 @@
   </div>
 
   <?php
-      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
       $works = array(
       'post_type'      => 'works',
       'posts_per_page' => 3,
-      'paged'          => $paged,
+      'paged'          => $local_paged,
       'order'          => 'DESC',
       'orderby'        => 'date',
       );?>

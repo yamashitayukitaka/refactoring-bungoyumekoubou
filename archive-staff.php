@@ -4,8 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 get_header();
 ?>
-<?php $post_type = 'staff'; ?>
-<?php $taxonomy = 'department'; ?>
+<?php $local_post_type = 'staff'; ?>
+<?php $local_taxonomy = 'department'; ?>
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
@@ -17,10 +17,10 @@ get_header();
     <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/dist/img/common/page.webp');"></figure>
   </div>
   <?php
-  $post_type = 'staff';
-  $taxonomy  = 'department';
+  $local_post_type = 'staff';
+  $local_taxonomy  = 'department';
 $terms       = get_terms(
-    $taxonomy,
+    $local_taxonomy,
     [
     'hide_empty' => false,
     'parent'     => 0,
@@ -30,22 +30,22 @@ $terms       = get_terms(
 );
   ?>
   <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
-    <?php foreach ( $terms as $term ) : ?>
-      <?php $slug = $term->slug; ?>
+    <?php foreach ( $terms as $local_term ) : ?>
+      <?php $slug = $local_term->slug; ?>
     <section>
       <h3 class="c-title--section u-mb30">
-        <?php echo esc_html( $term->name ); ?>
+        <?php echo esc_html( $local_term->name ); ?>
       </h3>
       <ul class="p-staff__list l-content">
         <?php
         $staff      = [
-          'post_type'      => $post_type,
+          'post_type'      => $local_post_type,
           'posts_per_page' => -1,
           'orderby'        => 'menu_order',
           'order'          => 'ASC',
           'tax_query'      => [
             [
-              'taxonomy' => $taxonomy,
+              'taxonomy' => $local_taxonomy,
               'field'    => 'slug',
               'terms'    => $slug,
             ],

@@ -9,8 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<?php $post_id = get_the_ID();?>
-<?php $terms = wp_get_post_terms( $post_id, 'property-area' );?>
+<?php $local_post_id = get_the_ID();?>
+<?php $terms = wp_get_post_terms( $local_post_id, 'property-area' );?>
 
 <main>
   <h2 class = "c-title--section u-mb50">
@@ -27,9 +27,9 @@ get_header();
   <section class = "l-content--middle u-mb100">
     <?php $property_area = get_field( 'property-area' ); ?>
     <?php if ( $property_area && $terms && ! is_wp_error( $terms ) ) : ?>
-      <?php foreach ( $terms as $term ) :?>
+      <?php foreach ( $terms as $local_term ) :?>
         <div class = "c-id__wrap--top u-mb50">
-          <span class = "c-id"><?php echo esc_html( $term->name ); ?></span>
+          <span class = "c-id"><?php echo esc_html( $local_term->name ); ?></span>
         </div>
       <?php endforeach;?>
     <?php endif; ?>

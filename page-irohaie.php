@@ -348,12 +348,12 @@ get_header();
     <p class="c-title--large">いろはいえの施工事例をみる</p>
     <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
     <?php
-    $paged      = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $local_paged      = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $args       = array(
       'post_type'      => 'works',
       'posts_per_page' => 3,
       'order'          => 'DESC',
-      'paged'          => $paged,
+      'paged'          => $local_paged,
       'tax_query'      => array(
         array(
           'taxonomy' => 'works-type',

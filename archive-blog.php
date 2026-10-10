@@ -12,11 +12,11 @@ get_header();
   
   <ul class = "p-blog__list u-flex l-content">
       <?php
-        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+        $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
         $blogs = array(
         'post_type'      => 'blog',
         'posts_per_page' => 6,
-        'paged'          => $paged,
+        'paged'          => $local_paged,
         'order'          => 'DESC',
         'orderby'        => 'post_date',
         );?>
@@ -25,11 +25,11 @@ get_header();
       if ( is_month() ) {
         $blog_loop = $wp_query;
       } else {
-        $paged     = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+        $local_paged     = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
         $args      = array(
             'post_type'      => 'blog',
             'posts_per_page' => 6,
-            'paged'          => $paged,
+            'paged'          => $local_paged,
             'order'          => 'DESC',
             'orderby'        => 'post_date',
         );

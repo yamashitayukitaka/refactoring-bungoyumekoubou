@@ -505,12 +505,12 @@ get_header();
   </section>
 
   <?php
-  $paged      = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+  $local_paged      = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
   $args       = array(
     'post_type'      => 'works',
     'posts_per_page' => 3,
     'order'          => 'DESC',
-    'paged'          => $paged,
+    'paged'          => $local_paged,
     'tax_query'      => array(
       array(
         'taxonomy' => 'works-type',

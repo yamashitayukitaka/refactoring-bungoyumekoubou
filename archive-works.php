@@ -5,9 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <?php
-  $taxonomy  = 'works-type';
-  $post_type = 'works';
-  $tag       = 'works-tag';
+  $local_taxonomy  = 'works-type';
+  $local_post_type = 'works';
+  $local_tag       = 'works-tag';
 ?>
 
 <main>
@@ -17,7 +17,7 @@ get_header();
   </h2>
 
 <?php $terms = get_terms(
-    $taxonomy,
+    $local_taxonomy,
     [
       'hide_empty' => false,
       'parent'     => 0,
@@ -33,10 +33,10 @@ get_header();
       </a>
     </li>
     <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
-      <?php foreach ( $terms as $term ) :?>
+      <?php foreach ( $terms as $local_term ) :?>
       <li class = "c-term__list__item">
-        <a href = "<?php echo esc_url( get_term_link( $term ) ); ?>">
-          <?php echo esc_html( $term->name ); ?>
+        <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+          <?php echo esc_html( $local_term->name ); ?>
         </a>
       </li>
       <?php endforeach;?>
@@ -45,7 +45,7 @@ get_header();
 
  
     <?php $works_tags = get_terms(
-        $tag,
+        $local_tag,
         [
         'hide_empty' => false,
         'parent'     => 0,
@@ -64,7 +64,7 @@ get_header();
         <?php foreach ( $works_tags as $works_tag ) :?>
           <?php $works_slug = $works_tag->slug;?>
           <li class = "c-tag__list__item">
-            <a href = "<?php echo esc_url( get_term_link( $works_slug, $tag ) ); ?>" class = "js-tab c-tag__list__link">
+            <a href = "<?php echo esc_url( get_term_link( $works_slug, $local_tag ) ); ?>" class = "js-tab c-tag__list__link">
               <?php echo esc_html( $works_tag->name ); ?>
             </a>
           </li>
@@ -75,11 +75,11 @@ get_header();
     
     <section class = "l-content">
     <?php
-      $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
       $works = array(
       'post_type'      => 'works',
       'posts_per_page' => 7,
-      'paged'          => $paged,
+      'paged'          => $local_paged,
       'orderby'        => 'menu_order',
       'order'          => 'ASC',
       );?>

@@ -45,11 +45,11 @@ endif;
     </p>
   </div>
   <?php
-    $paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $local_paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $property = array(
     'post_type'      => 'property',
     'posts_per_page' => 3,
-    'paged'          => $paged,
+    'paged'          => $local_paged,
     'order'          => 'DESC',
     'orderby'        => 'date',
     );?>

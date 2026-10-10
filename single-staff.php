@@ -5,8 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 
-<?php $post_id = get_the_ID();?>
-<?php $terms = wp_get_post_terms( $post_id, 'department' ); ?>
+<?php $local_post_id = get_the_ID();?>
+<?php $terms = wp_get_post_terms( $local_post_id, 'department' ); ?>
 
 <main>
 <div class = "c-pageMv u-mb100">
@@ -29,8 +29,8 @@ get_header();
       </figure>
 
       <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
-        <?php foreach ( $terms as $term ) :?>
-        <div class = "c-id"><?php echo esc_html( $term->name ); ?></div>
+        <?php foreach ( $terms as $local_term ) :?>
+        <div class = "c-id"><?php echo esc_html( $local_term->name ); ?></div>
         <?php endforeach;?>
       <?php endif; ?>
 
@@ -157,7 +157,7 @@ if ( $questions ) {
     'post_type'      => 'staff',
     'posts_per_page' => 3,
     'order'          => 'ASC',
-    'post__not_in'   => array( $post_id ),
+    'post__not_in'   => array( $local_post_id ),
     );?>
     <?php $staff_loop = new WP_Query( $args );?>
     <?php if ( $staff_loop->have_posts() ) : ?>

@@ -6,8 +6,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header(); ?>
 
 <?php
-  $taxonomy             = 'area';
-  $tag                  = 'event-type';
+  $local_taxonomy             = 'area';
+  $local_tag                  = 'event-type';
   $main_query_term      = get_queried_object();
   $main_query_term_name = $main_query_term->name;
   $main_query_term_slug = $main_query_term->slug;
@@ -15,19 +15,19 @@ get_header(); ?>
 
 <?php
 $loot_slug = sanitize_title( (string) get_query_var( 'event_area' ) );
-$paged     = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+$local_paged     = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 if ( $loot_slug ) {
     $event = array(
         'post_type'      => 'xo_event',
         'posts_per_page' => 6,
-        'paged'          => $paged,
+        'paged'          => $local_paged,
         'orderby'        => 'menu_order',
         'order'          => 'ASC',
         'tax_query'      => array(
             'relation' => 'AND',
             array(
-                'taxonomy' => $tag,
+                'taxonomy' => $local_tag,
                 'field'    => 'slug',
                 'terms'    => $main_query_term_slug,
             ),
@@ -42,12 +42,12 @@ if ( $loot_slug ) {
     $event = array(
         'post_type'      => 'xo_event',
         'posts_per_page' => 6,
-        'paged'          => $paged,
+        'paged'          => $local_paged,
         'orderby'        => 'menu_order',
         'order'          => 'ASC',
         'tax_query'      => array(
             array(
-                'taxonomy' => $tag,
+                'taxonomy' => $local_tag,
                 'field'    => 'slug',
                 'terms'    => $main_query_term_slug,
             ),
@@ -62,7 +62,7 @@ if ( $loot_slug ) {
 </h2>
 
 <?php $terms = get_terms(
-    $taxonomy,
+    $local_taxonomy,
     [
     'hide_empty' => false,
     'parent'     => 0,
@@ -79,13 +79,13 @@ if ( $loot_slug ) {
           </a>
         </li>
         <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
-          <?php foreach ( $terms as $term ) :?>
-            <?php $term_slug = $term->slug;?>
+          <?php foreach ( $terms as $local_term ) :?>
+            <?php $term_slug = $local_term->slug;?>
             <li class = "c-term__list__item <?php if ( $loot_slug === $term_slug ) :
               ?>u-current<?php
                                             endif; ?>">
-              <a href = "<?php echo esc_url( get_term_link( $term ) ); ?>">
-                <?php echo esc_html( $term->name ); ?>
+              <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+                <?php echo esc_html( $local_term->name ); ?>
               </a>
             </li>
           <?php endforeach;?>
@@ -100,11 +100,11 @@ if ( $loot_slug ) {
           </a>
         </li>
         <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
-          <?php foreach ( $terms as $term ) :?>
-            <?php $term_slug = $term->slug;?>
+          <?php foreach ( $terms as $local_term ) :?>
+            <?php $term_slug = $local_term->slug;?>
             <li class = "c-term__list__item">
-              <a href = "<?php echo esc_url( get_term_link( $term ) ); ?>">
-                <?php echo esc_html( $term->name ); ?>
+              <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+                <?php echo esc_html( $local_term->name ); ?>
               </a>
             </li>
           <?php endforeach;?>
@@ -115,7 +115,7 @@ if ( $loot_slug ) {
   
 
 <?php $event_tags = get_terms(
-    $tag,
+    $local_tag,
     [
       'hide_empty' => false,
       'parent'     => 0,
@@ -142,7 +142,7 @@ if ( $loot_slug ) {
         <?php foreach ( $event_tags as $event_tag ) :?>
           <?php $event_slug = $event_tag->slug;?>
           <li class = "c-tag__list__item">
-            <a href = "<?php echo esc_url( $loot_slug ? add_query_arg( 'event_area', $loot_slug, get_term_link( $event_slug, $tag ) ) : get_term_link( $event_slug, $tag ) ); ?>" class = "js-tab c-tag__list__link <?php if ( $event_slug === $main_query_term_slug ) :
+            <a href = "<?php echo esc_url( $loot_slug ? add_query_arg( 'event_area', $loot_slug, get_term_link( $event_slug, $local_tag ) ) : get_term_link( $event_slug, $local_tag ) ); ?>" class = "js-tab c-tag__list__link <?php if ( $event_slug === $main_query_term_slug ) :
               ?>u-currentTab<?php
                        endif; ?>">
               <?php echo esc_html( $event_tag->name ); ?>

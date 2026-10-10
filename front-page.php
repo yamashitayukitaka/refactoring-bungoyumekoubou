@@ -171,7 +171,7 @@ get_header();
         <span class="marker">施工事例＆お客様の声</span>
       </p>
     </div>
-    <?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    <?php $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $works       = array(
       'post_type'      => 'works',
       'posts_per_page' => 4,
@@ -269,11 +269,11 @@ get_header();
       </p>
     </div>
     <?php
-    $paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $local_paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
     $property = array(
       'post_type'      => 'property',
       'posts_per_page' => 4,
-      'paged'          => $paged,
+      'paged'          => $local_paged,
       'orderby'        => 'menu_order',
       'order'          => 'ASC',
     ); ?>
