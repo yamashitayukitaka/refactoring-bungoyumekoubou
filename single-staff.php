@@ -177,7 +177,7 @@ if ( $questions ) {
               <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class ="p-staff__img">
               <?php endif; ?>
             </figure>
-            <?php $Tags = get_the_terms(
+            <?php $tags = get_the_terms(
                 get_the_ID(),
                 'department',
                 [
@@ -188,9 +188,9 @@ if ( $questions ) {
                 ]
             );?>
 
-            <?php if ( $Tags && ! is_wp_error( $Tags ) ) :?>
-              <?php foreach ( $Tags as $Tag ) :?>
-                <span class = "c-id"><?php echo esc_html( $Tag->name ); ?></span>
+            <?php if ( $tags && ! is_wp_error( $tags ) ) :?>
+              <?php foreach ( $tags as $local_tag ) :?>
+                <span class = "c-id"><?php echo esc_html( $local_tag->name ); ?></span>
                 <p><?php the_title(); ?></p>
               <?php endforeach;?>
             <?php endif; ?>
