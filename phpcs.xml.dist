@@ -23,6 +23,8 @@
     <exclude name="WordPress.Arrays.ArrayIndentation"/>
     <!-- 列揃え（= 前の余分スペース）を許可するためスニフ自体を無効。 -->
     <exclude name="Universal.WhiteSpace.PrecisionAlignment"/>
+    <!-- 一覧用 tax_query はテーマの通常パターンのため SlowDBQuery の WARNING を出さない。 -->
+    <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query"/>
   </rule>
 
   <!-- 埋め込み PHP の改行・段（[x] 多い）もテンプレでは無効。 -->
