@@ -22,13 +22,13 @@ add_action(
 );
 }
 
-function remove_default_post_type() {
+function wazeka_remove_default_post_type() {
   remove_menu_page( 'edit.php' );
 }
-add_action( 'admin_menu', 'remove_default_post_type' );
+add_action( 'admin_menu', 'wazeka_remove_default_post_type' );
 
-function remove_admin_bar_new_post() {
+function wazeka_remove_admin_bar_new_post() {
   global $wp_admin_bar;
   $wp_admin_bar->remove_node( 'new-post' );
 }
-add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_new_post' );
+add_action( 'wp_before_admin_bar_render', 'wazeka_remove_admin_bar_new_post' );

@@ -11,20 +11,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'IMG_URL', get_template_directory_uri() . '/dist/img' );
 
-function remove_archive_prefix( $title ) {
+function wazeka_remove_archive_prefix( $title ) {
   return preg_replace( '/^アーカイブ: /', '', $title );
 }
-add_filter( 'get_the_archive_title', 'remove_archive_prefix' );
+add_filter( 'get_the_archive_title', 'wazeka_remove_archive_prefix' );
 
-function remove_archive_span_tag( $title ) {
+function wazeka_remove_archive_span_tag( $title ) {
   return strip_tags( $title );
 }
-add_filter( 'get_the_archive_title', 'remove_archive_span_tag' );
+add_filter( 'get_the_archive_title', 'wazeka_remove_archive_span_tag' );
 
-function custom_excerpt_length( $length ) {
+function wazeka_custom_excerpt_length( $length ) {
   return 20;
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length' );
+add_filter( 'excerpt_length', 'wazeka_custom_excerpt_length' );
 
 function wazeka_kses_iframe( $html ) {
 return wp_kses(
@@ -46,11 +46,11 @@ return wp_kses(
 );
 }
 
-function taxonomy_orderby_description( $orderby, $args ) {
+function wazeka_taxonomy_orderby_description( $orderby, $args ) {
 
-  if ( $args['orderby'] == 'description' ) {
+  if ( isset( $args['orderby'] ) && 'description' === $args['orderby'] ) {
       $orderby = 'tt.description';
   }
   return $orderby;
 }
-add_filter( 'get_terms_orderby', 'taxonomy_orderby_description', 10, 2 );
+add_filter( 'get_terms_orderby', 'wazeka_taxonomy_orderby_description', 10, 2 );
