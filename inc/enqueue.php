@@ -1,6 +1,6 @@
 <?php
 /**
- * Enqueue scripts and styles.
+ * ページごとに読み込む CSS と JavaScript を指定する.
  *
  * @package Wazeka
  */
@@ -9,6 +9,11 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
+/**
+ * 表示中のページに合わせて、テーマの JS と CSS を WordPress に読み込ませる.
+ *
+ * @return void
+ */
 function wazeka_scripts() {
 
   wp_enqueue_script( 'jquery' );

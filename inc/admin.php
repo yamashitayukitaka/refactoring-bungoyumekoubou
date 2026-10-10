@@ -1,6 +1,6 @@
 <?php
 /**
- * Admin area customizations.
+ * 管理画面の見た目やメニューを調整する.
  *
  * @package Wazeka
  */
@@ -22,11 +22,21 @@ add_action(
 );
 }
 
+/**
+ * 管理画面の左メニューから「投稿」を非表示にする.
+ *
+ * @return void
+ */
 function wazeka_remove_default_post_type() {
   remove_menu_page( 'edit.php' );
 }
 add_action( 'admin_menu', 'wazeka_remove_default_post_type' );
 
+/**
+ * 画面上部の管理バーから「新規投稿」を非表示にする.
+ *
+ * @return void
+ */
 function wazeka_remove_admin_bar_new_post() {
   global $wp_admin_bar;
   $wp_admin_bar->remove_node( 'new-post' );

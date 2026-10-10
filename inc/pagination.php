@@ -1,6 +1,6 @@
 <?php
 /**
- * Pagination helpers.
+ * 一覧のページ送りリンクを表示する.
  *
  * @package Wazeka
  */
@@ -9,6 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
+/**
+ * 施工事例などの一覧で、2 ページ目以降へ進むリンクを HTML で出力する.
+ *
+ * @param WP_Query $query 一覧の記事を取ってきたクエリオブジェクト.
+ * @return void
+ */
 function wazeka_query_pagination( $query ) {
   if ( ! $query instanceof WP_Query || $query->max_num_pages <= 1 ) {
     return;

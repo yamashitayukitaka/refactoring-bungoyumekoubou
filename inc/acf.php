@@ -1,6 +1,6 @@
 <?php
 /**
- * Advanced Custom Fields configuration.
+ * カスタムフィールド（ACF）のオプション画面を追加する.
  *
  * @package Wazeka
  */

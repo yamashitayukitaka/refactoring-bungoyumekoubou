@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom post types and taxonomies.
+ * 施工事例・スタッフなどの投稿タイプと分類を登録する.
  *
  * @package Wazeka
  */
@@ -9,6 +9,11 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
+/**
+ * 施工事例・物件・ブログ・スタッフの投稿タイプを WordPress に登録する.
+ *
+ * @return void
+ */
 function wazeka_register_post_types() {
   $post_types = array(
     'works'    => array(
@@ -63,6 +68,11 @@ function wazeka_register_post_types() {
 }
 add_action( 'init', 'wazeka_register_post_types' );
 
+/**
+ * 施工種別・物件エリアなど、投稿に付ける分類（タクソノミー）を登録する.
+ *
+ * @return void
+ */
 function wazeka_register_taxonomies() {
   $taxonomies = array(
     'works-type'        => array(
