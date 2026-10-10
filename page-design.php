@@ -49,7 +49,7 @@ get_header();
         <a href="#design1" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number1.webp' ); ?>" alt="">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -64,7 +64,7 @@ get_header();
         <a href="#design2" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number2.webp' ); ?>" alt="">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -79,7 +79,7 @@ get_header();
         <a href="#design3" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number3.webp' ); ?>" alt="">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -94,7 +94,7 @@ get_header();
         <a href="#design4" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/number/number4.webp' ); ?>" alt="">
+              <img class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -148,7 +148,7 @@ get_header();
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
               <div class="p-design__detail__pointLabel">
-                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point1.webp' ); ?>" alt="">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
               </div>
               <p class="p-design__detail__subtit">
                 <span class="u-textOrange">家事らく</span>動線
@@ -170,7 +170,7 @@ get_header();
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--beforeMedia">
               <div class="p-design__detail__pointLabel">
-                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point2.webp' ); ?>" alt="">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
               </div>
               <p class="p-design__detail__subtit">
                 <span class="u-textOrange">子育て</span>動線
@@ -233,7 +233,7 @@ get_header();
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
               <div class="p-design__detail__pointLabel">
-                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point1.webp' ); ?>" alt="">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
               </div>
               <p class="p-design__detail__subtit">
                 <span class="u-textOrange">こんなお家がいいな</span>を<br>
@@ -291,7 +291,7 @@ get_header();
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
               <div class="p-design__detail__pointLabel">
-                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point1.webp' ); ?>" alt="">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
               </div>
               <div>
                 <p class="p-design__detail__subtit">
@@ -316,7 +316,7 @@ get_header();
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--beforeMedia">
               <div class="p-design__detail__pointLabel">
-                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point2.webp' ); ?>" alt="">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
               </div>
               <p class="p-design__detail__subtit">
                 <span class="u-textOrange">エネルギー効率</span>を<br>
@@ -383,7 +383,7 @@ get_header();
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
               <div class="p-design__detail__pointLabel">
-                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point1.webp' ); ?>" alt="">
+                <img class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
               </div>
               <div>
                 <p class="u-mb10 p-design__detail__subtit">

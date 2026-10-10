@@ -42,7 +42,7 @@ get_header();
   <section class="p-renovation__about">
     <div class="p-renovation__about__hero">
       <div class="p-renovation__about__media p-renovation__about__media--right">
-        <img class="p-renovation__about__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/about.png' ); ?>" alt="">
+        <img class="p-renovation__about__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/about.png' ); ?>" alt="">
       </div>
       <div class="p-renovation__about__panel p-renovation__about__panel--left">
         <div class="p-renovation__about__titleWrap">
@@ -66,11 +66,11 @@ get_header();
           <div class="p-renovation__compare__primary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/beforeafter_case01_after_01.png' ); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_01.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/beforeafter_case01_before.png' ); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_before.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -78,7 +78,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/beforeafter_case01_after_02.png' ); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_02.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after p-renovation__compare__badge--sub">AFTER</span>
               </div>
             </div>
@@ -88,11 +88,11 @@ get_header();
           <div class="p-renovation__compare__secondary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain p-renovation__compare__afterMain--offset">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/beforeafter_case02_after_01.png' ); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_01.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb p-renovation__compare__beforeThumb--offset">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/beforeafter_case02_before.png' ); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_before.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -100,7 +100,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide p-renovation__compare__afterWide--offset">
-                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/beforeafter_case02_after_02.png' ); ?>" alt="">
+                <img class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_02.png' ); ?>" alt="">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
             </div>
@@ -117,27 +117,27 @@ get_header();
       $detail_items = [
         [
           'label' => '水回り交換',
-          'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/detail_01.png',
+          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_01.png',
         ],
         [
           'label' => '増・改築',
-          'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/detail_02.png',
+          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_02.png',
         ],
         [
           'label' => '外構工事',
-          'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/detail_03.png',
+          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_03.png',
         ],
         [
           'label' => 'シロアリ対策工事',
-          'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/detail_04.png',
+          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_04.png',
         ],
         [
           'label' => '耐震補強',
-          'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/detail_05.png',
+          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_05.png',
         ],
         [
           'label' => '断熱強化',
-          'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/detail_06.png',
+          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_06.png',
         ],
       ];
       ?>
@@ -165,18 +165,18 @@ get_header();
       [
         'title' => 'お問合わせ',
         'text'  => 'まずはお電話<a href="tel:097-594-1481">097-594-1481</a>か下記フォームよりお気軽にお問合わせください。',
-        'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/process_01.png',
+        'img'   => get_template_directory_uri() . '/dist/img/renovation/process_01.png',
         'cta'   => true,
       ],
       [
         'title' => '現地訪問と調査',
         'text'  => 'お問合わせ後、1級施工管理技師と営業担当が現地を訪問し、詳細な聞き取りと現地調査を行います。内容によっては一級建築士が同行します。',
-        'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/process_02.png',
+        'img'   => get_template_directory_uri() . '/dist/img/renovation/process_02.png',
       ],
       [
         'title' => 'お見積り',
         'text'  => '現地調査の結果に基づき、お見積りを作成いたします。内容を確認していただき、ご納得していただいてから、ゆめリフォームのスタートです！',
-        'img'   => get_template_directory_uri() . '/dist/img' . '/renovation/process_03.png',
+        'img'   => get_template_directory_uri() . '/dist/img/renovation/process_03.png',
       ],
     ];
     $process_last_index = count( $process_steps ) - 1;
@@ -223,11 +223,11 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/feature_01.png' ); ?>" alt="">
+            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_01.png' ); ?>" alt="">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
-              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point1.webp' ); ?>" alt="">
+              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
@@ -244,11 +244,11 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/renovation/feature_02.png' ); ?>" alt="">
+            <img class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_02.png' ); ?>" alt="">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
-              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/common/point2.webp' ); ?>" alt="">
+              <img class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">

@@ -40,7 +40,7 @@ get_header();
     <div class="p-recruit__message">
       <div class="p-recruit__message__photo u-none__pc--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -67,7 +67,7 @@ get_header();
       </div>
       <div class="p-recruit__message__photo u-none__mobile--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . '/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
