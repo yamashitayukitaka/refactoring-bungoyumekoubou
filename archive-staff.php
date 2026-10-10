@@ -19,7 +19,7 @@ get_header();
   <?php
   $local_post_type = 'staff';
   $local_taxonomy  = 'department';
-$terms       = get_terms(
+$terms             = get_terms(
     $local_taxonomy,
     [
     'hide_empty' => false,

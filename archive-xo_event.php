@@ -5,7 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <?php
-  $local_taxonomy       = 'area';
+  $local_taxonomy  = 'area';
   $local_post_type = 'xo_event';
   $local_tag       = 'event-type';
 ?>
@@ -79,7 +79,7 @@ get_header();
   <section class = "l-content u-mb100">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $event = array(
+      $event       = array(
       'post_type'      => $local_post_type,
       'posts_per_page' => 7,
       'paged'          => $local_paged,

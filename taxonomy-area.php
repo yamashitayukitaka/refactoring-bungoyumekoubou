@@ -6,11 +6,11 @@ get_header();
 ?>
 
   <?php
-    $local_taxonomy             = 'area';
+    $local_taxonomy       = 'area';
     $main_query_term      = get_queried_object();
     $main_query_term_name = $main_query_term->name;
     $main_query_term_slug = $main_query_term->slug;
-    $local_tag                  = 'event-type';
+    $local_tag            = 'event-type';
   ?>
 <main>
 
@@ -80,7 +80,7 @@ get_header();
    
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $event = array(
+      $event       = array(
         'post_type'      => 'xo_event',
         'posts_per_page' => 6,
         'paged'          => $local_paged,

@@ -45,8 +45,8 @@ endif;
     </p>
   </div>
   <?php
-    $local_paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $property = array(
+    $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $property    = array(
     'post_type'      => 'property',
     'posts_per_page' => 3,
     'paged'          => $local_paged,

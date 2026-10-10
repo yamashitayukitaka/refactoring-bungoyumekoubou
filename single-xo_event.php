@@ -42,8 +42,8 @@ get_header();
       <?php
       $always = get_field( 'always' );
       if ( $always ) :
-        $local_post_id      = get_the_ID();
-        $always_value = get_post_meta( $local_post_id, 'always', true );
+        $local_post_id = get_the_ID();
+        $always_value  = get_post_meta( $local_post_id, 'always', true );
         if ( $always_value === '1' ) : ?>
           <dd class="p-event__always">&nbsp;&nbsp;<?php echo esc_html( '常時開催中' ); ?></dd>
         <?php endif; ?>
@@ -186,8 +186,8 @@ get_header();
           <?php
           $always = get_field( 'always' );
           if ( $always ) :
-            $local_post_id      = get_the_ID();
-            $always_value = get_post_meta( $local_post_id, 'always', true );
+            $local_post_id = get_the_ID();
+            $always_value  = get_post_meta( $local_post_id, 'always', true );
             if ( $always_value === '1' ) : ?>
               <p class="p-event__always">&nbsp;&nbsp;<?php echo esc_html( '常時開催中' ); ?></p>
             <?php endif; ?>

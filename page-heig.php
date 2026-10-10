@@ -445,8 +445,8 @@ get_header();
   </section>
 
   <?php
-  $local_paged      = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-  $args       = array(
+  $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+  $args        = array(
     'post_type'      => 'works',
     'posts_per_page' => 3,
     'order'          => 'DESC',
@@ -459,7 +459,7 @@ get_header();
       ),
     ),
   );
-  $works_loop = new WP_Query( $args );
+  $works_loop  = new WP_Query( $args );
   ?>
 
   <?php if ( $works_loop->have_posts() ) : ?>

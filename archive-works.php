@@ -76,7 +76,7 @@ get_header();
     <section class = "l-content">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $works = array(
+      $works       = array(
       'post_type'      => 'works',
       'posts_per_page' => 7,
       'paged'          => $local_paged,

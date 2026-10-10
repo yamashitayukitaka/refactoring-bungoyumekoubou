@@ -172,7 +172,7 @@ get_header();
       </p>
     </div>
     <?php $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $works       = array(
+    $works             = array(
       'post_type'      => 'works',
       'posts_per_page' => 4,
       'orderby'        => 'menu_order',
@@ -269,8 +269,8 @@ get_header();
       </p>
     </div>
     <?php
-    $local_paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-    $property = array(
+    $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $property    = array(
       'post_type'      => 'property',
       'posts_per_page' => 4,
       'paged'          => $local_paged,

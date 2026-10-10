@@ -7,16 +7,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header(); ?>
 
 <?php
-    $local_taxonomy             = 'property-category';
+    $local_taxonomy       = 'property-category';
     $main_query_term      = get_queried_object();
     $main_query_term_name = $main_query_term->name;
     $main_query_term_slug = $main_query_term->slug;
-    $local_tag                  = 'property-area';
+    $local_tag            = 'property-area';
 ?>
 
 <?php
-$loot_slug = sanitize_title( (string) get_query_var( 'property_category' ) );
-$local_paged     = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+$loot_slug   = sanitize_title( (string) get_query_var( 'property_category' ) );
+$local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 if ( $loot_slug ) {
   $args = array(

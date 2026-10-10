@@ -5,11 +5,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
   <?php
-    $local_taxonomy             = 'works-type';
+    $local_taxonomy       = 'works-type';
     $main_query_term      = get_queried_object();
     $main_query_term_name = $main_query_term->name;
     $main_query_term_slug = $main_query_term->slug;
-    $local_tag                  = 'works-tag';
+    $local_tag            = 'works-tag';
   ?>
 
 <main>
@@ -80,7 +80,7 @@ get_header();
   <section class = "l-content">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $works = array(
+      $works       = array(
       'post_type'      => 'works',
       'posts_per_page' => 6,
       'paged'          => $local_paged,

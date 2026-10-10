@@ -5,9 +5,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <?php
-  $local_taxonomy       = 'property-category';
+  $local_taxonomy  = 'property-category';
   $local_post_type = 'property';
-  $local_tag            = 'property-area';
+  $local_tag       = 'property-area';
 ?>
 
 <main>
@@ -76,8 +76,8 @@ get_header();
 
     <section class = "l-content">
     <?php
-      $local_paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $property = array(
+      $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      $property    = array(
       'post_type'      => $local_post_type,
       'posts_per_page' => 7,
       'paged'          => $local_paged,

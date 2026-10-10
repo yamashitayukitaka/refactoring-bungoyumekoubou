@@ -12,7 +12,7 @@
 
   <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $works = array(
+      $works       = array(
       'post_type'      => 'works',
       'posts_per_page' => 3,
       'paged'          => $local_paged,

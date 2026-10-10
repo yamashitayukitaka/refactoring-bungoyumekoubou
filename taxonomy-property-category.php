@@ -6,11 +6,11 @@ get_header();
 ?>
 
 <?php
-    $local_taxonomy             = 'property-category';
+    $local_taxonomy       = 'property-category';
     $main_query_term      = get_queried_object();
     $main_query_term_name = $main_query_term->name;
     $main_query_term_slug = $main_query_term->slug;
-    $local_tag                  = 'property-area';
+    $local_tag            = 'property-area';
 ?>
 
 <main>
@@ -80,7 +80,7 @@ get_header();
   <section class = "l-content">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $args  = array(
+      $args        = array(
       'post_type'      => 'property',
       'posts_per_page' => 6,
       'paged'          => $local_paged,
