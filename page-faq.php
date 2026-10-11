@@ -56,7 +56,7 @@ get_header();
           <li class="c-accordion__item">
             <button type="button" class="c-accordion__trigger js-accordion">
               <span class="c-accordion__number">
-                <?php printf( '%02d', ( $i + 1 ) ); ?>
+                <?php echo esc_html( sprintf( '%02d', $i + 1 ) ); ?>
               </span>
               <?php echo esc_html( $qa['question'] ); ?>
             </button>

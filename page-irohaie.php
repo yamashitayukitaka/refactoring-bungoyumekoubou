@@ -318,7 +318,7 @@ get_header();
               <div class="p-irohaie__quality__body">
                 <?php if ( ! empty( $quality['title'] ) ) : ?>
                   <h3 class="p-irohaie__quality__title">
-                    <span class="p-irohaie__quality__num"><?php echo sprintf( '%02d', ( $i + 1 ) ) . '.'; ?></span>
+                    <span class="p-irohaie__quality__num"><?php echo esc_html( sprintf( '%02d', $i + 1 ) . '.' ); ?></span>
                     <?php echo esc_html( $quality['title'] ); ?>
                   </h3>
                 <?php endif; ?>
