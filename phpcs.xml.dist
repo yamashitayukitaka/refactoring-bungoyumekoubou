@@ -55,6 +55,14 @@
     <exclude name="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound"/>
   </rule>
 
+  <rule ref="WordPress.Security.EscapeOutput">
+    <properties>
+      <property name="customEscapingFunctions" type="array">
+        <element value="wazeka_kses_iframe"/>
+      </property>
+    </properties>
+  </rule>
+
   <rule ref="WordPress.WP.I18n">
     <properties>
       <property name="text_domain" type="array">
