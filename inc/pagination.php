@@ -33,5 +33,5 @@ $links = paginate_links(
   if ( $links === null || $links === '' ) {
     return;
   }
-  echo '<nav class="c-pagination">' . $links . '</nav>';
+  echo '<nav class="c-pagination">' . wp_kses_post( $links ) . '</nav>';
 }
