@@ -29,6 +29,8 @@
     <exclude name="WordPress.PHP.YodaConditions"/>
     <!-- インラインコメントの末尾句点は日本語コメントと相性が悪いため要求しない。 -->
     <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+    <!-- 外部 CDN・WINK 等はバージョン不明のため wp_enqueue_* の $ver に null を許可する。 -->
+    <exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
   </rule>
 
   <!-- 埋め込み PHP の改行・段（[x] 多い）もテンプレでは無効。 -->
