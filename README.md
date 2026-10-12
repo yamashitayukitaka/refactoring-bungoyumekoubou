@@ -45,7 +45,7 @@ npm run build-vite
 | `npm run vite` | 上記を `--watch` で監視 |
 | `npm run format` | Prettier で整形 |
 | `npm run format:check` | Prettier のチェックのみ |
-| `npm run lint:html` | Markuplint（`**/*.php`） |
+| `npm run lint:html` | Markuplint（テーマの PHP。`vendor` は対象外） |
 | `npm run lint:scss` | Stylelint（`src/scss/**/*.scss`） |
 | `npm run lint:scss:fix` | Stylelint の自動修正 |
 
