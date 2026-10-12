@@ -1,0 +1,47 @@
+name: lint:html
+
+on:
+  pull_request:
+    paths:
+      - '**.php'
+      - '.markuplintrc.json'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/lint-html.yml'
+
+concurrency:
+  group: lint-html-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Markuplint (changed PHP files only)
+        run: |
+          mapfile -t files < <(
+            git diff --name-only --diff-filter=ACMR \
+              "${{ github.event.pull_request.base.sha }}" "${{ github.sha }}" \
+              | grep -E '\.php$' || true
+          )
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No changed PHP files in this PR; skipping markuplint."
+            exit 0
+          fi
+          printf 'Linting %s file(s):\n' "${#files[@]}"
+          printf '  - %s\n' "${files[@]}"
+          npx markuplint "${files[@]}"
