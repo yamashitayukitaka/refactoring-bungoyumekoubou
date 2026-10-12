@@ -147,6 +147,27 @@ wp_enqueue_style(
     );
   }
 
+  // WINKMARK LP INDEX 2: イベント一覧を #wink_event_list に差し込む JS.
+  if ( is_front_page() ) {
+    wp_enqueue_script(
+        'wazeka-wink-event-top',
+        'https://bungoyumekoubou.winksys.jp/event/event_top_js.php',
+        array(),
+        null,
+        true
+    );
+  }
+
+  if ( is_post_type_archive( 'xo_event' ) ) {
+    wp_enqueue_script(
+        'wazeka-wink-event-archive',
+        'https://bungoyumekoubou.winksys.jp/event/eventpage_js.php',
+        array(),
+        null,
+        true
+    );
+  }
+
   if (
       wp_script_is( 'wazeka-thumb-slider', 'enqueued' )
       || wp_script_is( 'wazeka-staff-slider', 'enqueued' )

@@ -180,16 +180,6 @@
       </section>
     </footer>
     <?php wp_footer(); ?>
-    <?php if ( is_front_page() ) : ?>
-      <!-- WINKMARK LP INDEX 2 start-->
-      <script type="text/javascript" src="https://bungoyumekoubou.winksys.jp/event/event_top_js.php"></script>
-      <!-- WINKMARK LP INDEX 2 end-->
-    <?php endif; ?>
-    <?php if ( is_post_type_archive( array( 'xo_event' ) ) ) : ?>
-      <!-- WINKMARK LP INDEX 2 start-->
-      <script type="text/javascript" src="https://bungoyumekoubou.winksys.jp/event/eventpage_js.php"></script>
-      <!-- WINKMARK LP INDEX 2 end-->
-    <?php endif; ?>
     </body>
 
     </html>
