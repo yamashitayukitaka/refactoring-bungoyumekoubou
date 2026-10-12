@@ -75,6 +75,8 @@ composer run lint:php     # 検査（composer.json の scripts）
 vendor/bin/phpcs
 ```
 
+PR では GitHub Actions（`.github/workflows/lint-php.yml`）が **変更された PHP ファイルのみ** PHPCS（WPCS）を実行する。
+
 `composer.json` の `require-dev` は `squizlabs/php_codesniffer` のみです。自動修正は含めていないため、指摘は手で直します。
 
 ## ディレクトリ構成（開発で触るもの）

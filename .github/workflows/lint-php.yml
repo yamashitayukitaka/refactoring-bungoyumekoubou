@@ -1,0 +1,48 @@
+name: lint:php
+
+on:
+  pull_request:
+    paths:
+      - '**.php'
+      - 'phpcs.xml.dist'
+      - 'composer.json'
+      - 'composer.lock'
+      - '.github/workflows/lint-php.yml'
+
+concurrency:
+  group: lint-php-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-php:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer:v2
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: PHPCS (changed PHP files only)
+        run: |
+          mapfile -t files < <(
+            git diff --name-only --diff-filter=ACMR \
+              "${{ github.event.pull_request.base.sha }}" "${{ github.sha }}" \
+              | grep -E '\.php$' || true
+          )
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No changed PHP files in this PR; skipping PHPCS."
+            exit 0
+          fi
+          printf 'Linting %s file(s):\n' "${#files[@]}"
+          printf '  - %s\n' "${files[@]}"
+          vendor/bin/phpcs --tab-width=2 "${files[@]}"
