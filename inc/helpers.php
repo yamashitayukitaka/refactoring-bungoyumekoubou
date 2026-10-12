@@ -34,10 +34,9 @@ add_filter( 'get_the_archive_title', 'wazeka_remove_archive_span_tag' );
 /**
  * 記事一覧などに出す抜粋文の長さを 20 文字にそろえる.
  *
- * @param int $length WordPress 側のデフォルトの長さ（このテーマでは使わない）.
  * @return int 抜粋に使う文字数.
  */
-function wazeka_custom_excerpt_length( $length ) {
+function wazeka_custom_excerpt_length() {
   return 20;
 }
 add_filter( 'excerpt_length', 'wazeka_custom_excerpt_length' );
