@@ -13,6 +13,11 @@
       "rules": {
         "heading-levels": false
       }
+    },
+    "footer.php": {
+      "rules": {
+        "heading-levels": false
+      }
     }
   }
 }
