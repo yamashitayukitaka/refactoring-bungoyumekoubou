@@ -1,8 +1,16 @@
 {
     "require-dev": {
-        "squizlabs/php_codesniffer": "^4.0"
+        "squizlabs/php_codesniffer": "3.13.6",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.2",
+        "wp-coding-standards/wpcs": "3.4.1"
     },
     "scripts": {
-        "lint:php": "phpcs"
+        "lint:php": "phpcs --tab-width=2",
+        "fix:php": "phpcbf --tab-width=2"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }

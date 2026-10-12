@@ -1,10 +1,18 @@
+<?php
+/**
+ * The footer for our theme.
+ *
+ * @package Wazeka
+ */
+
+?>
     <footer class="l-footer">
       <section class="l-footer__contact">
-        <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/common/contact.webp');">
+        <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/contact.webp' ); ?>');">
           <h3 class="c-title--sectionEnWhite u-mb20">CONTACT</h3>
           <ul class="l-footer__contact__list l-content--xl">
             <li class="l-footer__contact__card">
-              <a href="<?php echo esc_url(home_url('model-house')); ?>" class="l-footer__contact__link ">
+              <a href="<?php echo esc_url( home_url( 'model-house' ) ); ?>" class="l-footer__contact__link ">
                 <h3 class="l-footer__contact__listTtl">モデルハウス</h3>
                 <p class="l-footer__contact__desc">
                   お近くの展示場をご覧いただけます。
@@ -14,7 +22,7 @@
               </a>
             </li>
             <li class="l-footer__contact__card">
-              <a href="<?php echo esc_url(home_url('property')); ?>" class="l-footer__contact__link">
+              <a href="<?php echo esc_url( home_url( 'property' ) ); ?>" class="l-footer__contact__link">
                 <h3 class="l-footer__contact__listTtl">建売・分譲地</h3>
                 <p class="l-footer__contact__desc">
                   物件情報の多さが当社の強みです。
@@ -24,7 +32,7 @@
               </a>
             </li>
             <li class="l-footer__contact__card">
-              <a href="<?php echo esc_url(home_url('catalog')); ?>" class="l-footer__contact__link">
+              <a href="<?php echo esc_url( home_url( 'catalog' ) ); ?>" class="l-footer__contact__link">
                 <h3 class="l-footer__contact__listTtl">資料請求</h3>
                 <p class="l-footer__contact__desc">
                   豊後夢工房の家づくりに関する資料を
@@ -34,7 +42,7 @@
               </a>
             </li>
             <li class="l-footer__contact__card">
-              <a href="<?php echo esc_url(home_url('xo_event')); ?>" class="l-footer__contact__link">
+              <a href="<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class="l-footer__contact__link">
                 <h3 class="l-footer__contact__listTtl">イベント</h3>
                 <p class="l-footer__contact__desc">
                   家づくり、暮らし、勉強会など
@@ -56,8 +64,8 @@
       <section class="l-content--large">
         <div class="l-footer__map__copyWrap">
           <div class="l-footer__logo">
-            <a href="<?php echo esc_url(home_url('')); ?>">
-              <img src="<?php echo get_template_directory_uri(); ?>/dist/img/common/logo.webp" alt="サイトタイトル" />
+            <a href="<?php echo esc_url( home_url( '' ) ); ?>">
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="サイトタイトル" />
             </a>
           </div>
           <p class="l-footer__map__copy">
@@ -96,7 +104,7 @@
 
 
       <?php
-      if (! ( is_singular('xo_event') || is_post_type_archive('xo_event') )) {?>
+      if ( ! ( is_singular( 'xo_event' ) || is_post_type_archive( 'xo_event' ) ) ) {?>
         <a href="#" class="l-footer__goTop__link js-goToTop">ページトップへもどる</a>
       <?php }?>
 
@@ -109,17 +117,17 @@
                   <li>
                     <h3 class="c-navigation__inner__ttl">豊後夢工房の家づくり</h3>
                     <ul>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('concept')); ?>" class="c-navigation__inner__link">ーわたしたちの思い</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('staff')); ?>" class="c-navigation__inner__link">ーゆめ空間づくりスタッフ</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('about')); ?>" class="c-navigation__inner__link">ー会社概要</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'concept' ) ); ?>" class="c-navigation__inner__link">ーわたしたちの思い</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'staff' ) ); ?>" class="c-navigation__inner__link">ーゆめ空間づくりスタッフ</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="c-navigation__inner__link">ー会社概要</a></li>
                     </ul>
                   </li>
                   <li>
                     <h3 class="c-navigation__inner__ttl">快適ゆめ空間をつくる<br>3つのこだわり</h3>
                     <ul>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('quality')); ?>" class="c-navigation__inner__link">ー品質へのこだわり</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('cost')); ?>" class="c-navigation__inner__link">ーコストへのこだわり</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('design')); ?>" class="c-navigation__inner__link">ーデザインへのこだわり</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'quality' ) ); ?>" class="c-navigation__inner__link">ー品質へのこだわり</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'cost' ) ); ?>" class="c-navigation__inner__link">ーコストへのこだわり</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'design' ) ); ?>" class="c-navigation__inner__link">ーデザインへのこだわり</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -129,16 +137,16 @@
                   <li>
                     <h3 class="c-navigation__inner__ttl">夢づくりサポート</h3>
                     <ul>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('after-support')); ?>" class="c-navigation__inner__link">ー安心の保証制度</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('flow')); ?>" class="c-navigation__inner__link">ー家づくりのながれ</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('faq')); ?>" class="c-navigation__inner__link">ーよくあるご質問</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'after-support' ) ); ?>" class="c-navigation__inner__link">ー安心の保証制度</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'flow' ) ); ?>" class="c-navigation__inner__link">ー家づくりのながれ</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'faq' ) ); ?>" class="c-navigation__inner__link">ーよくあるご質問</a></li>
                     </ul>
                   </li>
                   <li>
                     <h3 class="c-navigation__inner__ttl">住まいのアフターメンテナンス</h3>
                     <ul>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('maintenance')); ?>" class="c-navigation__inner__link">ーアフターメンテナンス</a></li>
-                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url(home_url('renovation')); ?>" class="c-navigation__inner__link">ーゆめリフォーム</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'maintenance' ) ); ?>" class="c-navigation__inner__link">ーアフターメンテナンス</a></li>
+                      <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'renovation' ) ); ?>" class="c-navigation__inner__link">ーゆめリフォーム</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -146,23 +154,23 @@
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
                   <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>xo_event" class="c-navigation__list__link--footer">イベント情報</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>xo_event" class="c-navigation__list__link--footer">イベント情報</a>
                   </li>
                   <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>works" class="c-navigation__list__link--footer">施工事例＆お客様の声</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>works" class="c-navigation__list__link--footer">施工事例＆お客様の声</a>
                   </li>
                   <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>property" class="c-navigation__list__link--footer">土地・物件情報</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>property" class="c-navigation__list__link--footer">土地・物件情報</a>
                   </li>
                 </ul>
               </li>
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
                   <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>model-house" class="c-navigation__list__link--footer">モデルハウス</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>model-house" class="c-navigation__list__link--footer">モデルハウス</a>
                   </li>
                   <li>
-                    <a href="<?php echo esc_url(home_url('/')); ?>contact" class="c-navigation__list__link--footer">来場予約</a>
+                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>contact" class="c-navigation__list__link--footer">来場予約</a>
                   </li>
                 </ul>
               </li>
@@ -172,16 +180,6 @@
       </section>
     </footer>
     <?php wp_footer(); ?>
-    <?php if (is_front_page()) : ?>
-      <!-- WINKMARK LP INDEX 2 start-->
-      <script type="text/javascript" src="https://bungoyumekoubou.winksys.jp/event/event_top_js.php"></script>
-      <!-- WINKMARK LP INDEX 2 end-->
-    <?php endif; ?>
-    <?php if (is_post_type_archive(array('xo_event'))) : ?>
-      <!-- WINKMARK LP INDEX 2 start-->
-      <script type="text/javascript" src="https://bungoyumekoubou.winksys.jp/event/eventpage_js.php"></script>
-      <!-- WINKMARK LP INDEX 2 end-->
-    <?php endif; ?>
     </body>
 
     </html>

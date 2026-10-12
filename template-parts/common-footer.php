@@ -1,3 +1,11 @@
+<?php
+/**
+ * Common footer event section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class = "l-content u-mb100 u-pt100">
   
   <div class = "u-center u-mb10">
@@ -14,23 +22,23 @@
 
 <?php
   $event = array(
-  'post_type' => 'xo_event',
+  'post_type'      => 'xo_event',
   'posts_per_page' => 3,
-  'order' => 'DESC',
-  'orderby' => 'date',
+  'order'          => 'DESC',
+  'orderby'        => 'date',
   );?>
-<?php $eventLoop = new WP_Query($event);?>
-<?php if ($eventLoop->have_posts()) : ?>
+<?php $event_loop = new WP_Query( $event );?>
+<?php if ( $event_loop->have_posts() ) : ?>
   <ul class = "c-cardList u-mb50">
-    <?php while ($eventLoop->have_posts()) :
-      $eventLoop->the_post();?>
-      <?php get_template_part('template-parts/event-loop'); ?>
+    <?php while ( $event_loop->have_posts() ) :
+      $event_loop->the_post();?>
+      <?php get_template_part( 'template-parts/event-loop' ); ?>
     <?php endwhile;
 endif;
     wp_reset_postdata();?>
   </ul>
   <div class = "u-center">
-    <a href = "<?php echo esc_url(home_url('xo_event')); ?>" class = "c-button--outline">イベント一覧へ</a>
+    <a href = "<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class = "c-button--outline">イベント一覧へ</a>
   </div>
 </section>
 <section class = "l-content u-mb100">
@@ -45,24 +53,24 @@ endif;
     </p>
   </div>
   <?php
-    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-    $property = array(
-    'post_type' => 'property',
+    $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+    $property    = array(
+    'post_type'      => 'property',
     'posts_per_page' => 3,
-    'paged' => $paged,
-    'order' => 'DESC',
-    'orderby' => 'date',
+    'paged'          => $local_paged,
+    'order'          => 'DESC',
+    'orderby'        => 'date',
     );?>
-  <?php $propertyLoop = new WP_Query($property);?>
-  <?php if ($propertyLoop->have_posts()) : ?>
+  <?php $property_loop = new WP_Query( $property );?>
+  <?php if ( $property_loop->have_posts() ) : ?>
     <ul class = "c-cardList">
-      <?php while ($propertyLoop->have_posts()) :
-        $propertyLoop->the_post();?>
-        <?php get_template_part('template-parts/property-loop'); ?>
+      <?php while ( $property_loop->have_posts() ) :
+        $property_loop->the_post();?>
+        <?php get_template_part( 'template-parts/property-loop' ); ?>
       <?php endwhile;?>
     </ul>
     <div class = "u-center">
-      <a href = "<?php echo esc_url(home_url('property')); ?>" class = "c-button--outline">土地・物件情報一覧へ</a>
+      <a href = "<?php echo esc_url( home_url( 'property' ) ); ?>" class = "c-button--outline">土地・物件情報一覧へ</a>
     </div>
   <?php endif;
   wp_reset_postdata();?>

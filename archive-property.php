@@ -1,13 +1,19 @@
 <?php
-if (! defined('ABSPATH')) {
+/**
+ * Property post type archive template.
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
 ?>
 <?php
-  $taxonomy = 'property-category';
-  $posyType = 'property';
-  $tag = 'property-area';
+  $local_taxonomy  = 'property-category';
+  $local_post_type = 'property';
+  $local_tag       = 'property-area';
 ?>
 
 <main>
@@ -15,44 +21,44 @@ get_header();
     土地・物件情報
   </h2>
 
-  <?php $terms = get_terms(
-      $taxonomy,
-      [
+<?php $terms = get_terms(
+    [
+      'taxonomy'   => $local_taxonomy,
       'hide_empty' => false,
-      'parent' => 0,
-      'orderby' => 'id',
-      'order' => 'DESC',
+      'parent'     => 0,
+      'orderby'    => 'id',
+      'order'      => 'DESC',
       ]
-  );?>
+);?>
  
   <ul class = "c-term__list">
     
     <li class = "c-term__list__item u-current">
-      <a href = "<?php echo esc_url(get_post_type_archive_link('property')); ?>">
+      <a href = "<?php echo esc_url( get_post_type_archive_link( $local_post_type ) ); ?>">
         すべて
       </a>
     </li>
   
-    <?php if ($terms && !is_wp_error($terms)) : ?>
-      <?php foreach ($terms as $term) :?>
+    <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
+      <?php foreach ( $terms as $local_term ) :?>
       <li class = "c-term__list__item">
-        <a href = "<?php echo esc_url(get_term_link($term)); ?>">
-          <?php echo esc_html($term->name); ?>
+        <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+          <?php echo esc_html( $local_term->name ); ?>
         </a>
       </li>
       <?php endforeach;?>
     <?php endif; ?>
   </ul>
 
-  <?php $areaTags = get_terms(
-      $tag,
-      [
+<?php $area_tags = get_terms(
+    [
+        'taxonomy'   => $local_tag,
         'hide_empty' => false,
-        'parent' => 0,
-        'orderby' => 'id',
-        'order' => 'ASC',
+        'parent'     => 0,
+        'orderby'    => 'id',
+        'order'      => 'ASC',
         ]
-  );?>
+);?>
 
     <ul class = "c-tag__list l-content--large">
 
@@ -62,12 +68,12 @@ get_header();
       </li>
       
       
-      <?php if ($areaTags && !is_wp_error($areaTags)) : ?>
-        <?php foreach ($areaTags as $areaTag) :?>
-          <?php $areaSlug = $areaTag->slug ;?>
+      <?php if ( $area_tags && ! is_wp_error( $area_tags ) ) : ?>
+        <?php foreach ( $area_tags as $area_tag ) :?>
+          <?php $area_slug = $area_tag->slug;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(get_term_link($areaSlug, $tag)); ?>" class = "js-tab c-tag__list__link">
-            <?php echo esc_html($areaTag->name); ?>
+          <a href = "<?php echo esc_url( get_term_link( $area_slug, $local_tag ) ); ?>" class = "js-tab c-tag__list__link">
+            <?php echo esc_html( $area_tag->name ); ?>
           </a>
         </li>
         <?php endforeach;?>
@@ -76,28 +82,28 @@ get_header();
 
     <section class = "l-content">
     <?php
-      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-      $property = array(
-      'post_type' => 'property',
+      $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      $property    = array(
+      'post_type'      => $local_post_type,
       'posts_per_page' => 7,
-      'paged' => $paged,
-      'orderby' => 'menu_order',
-      'order' => 'ASC',
+      'paged'          => $local_paged,
+      'orderby'        => 'menu_order',
+      'order'          => 'ASC',
       );?>
-    <?php $propertyLoop = new WP_Query($property);?>
-    <?php if ($propertyLoop->have_posts()) : ?>
+    <?php $property_loop = new WP_Query( $property );?>
+    <?php if ( $property_loop->have_posts() ) : ?>
       <ul class = "c-cardList c-cardList--lead">
-        <?php while ($propertyLoop->have_posts()) :
-          $propertyLoop->the_post();?>
-          <?php get_template_part('template-parts/property-loop'); ?>
+        <?php while ( $property_loop->have_posts() ) :
+          $property_loop->the_post();?>
+          <?php get_template_part( 'template-parts/property-loop' ); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
-    <?php if ($propertyLoop->max_num_pages > 1) :?>
+    <?php if ( $property_loop->max_num_pages > 1 ) :?>
       <div class = "u-mb50">
-        <?php wazeka_query_pagination($propertyLoop); ?>
+        <?php wazeka_query_pagination( $property_loop ); ?>
       </div>
     <?php endif; ?>
     

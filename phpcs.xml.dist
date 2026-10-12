@@ -1,18 +1,79 @@
 <?xml version="1.0"?>
 <ruleset name="wazeka">
-  <description>テーマの PHP を PSR-12 で検査する</description>
+  <description>テーマの PHP を WordPress Coding Standards で検査する（インデント検査・自動修正は無効。lint/fix は composer run lint:php / fix:php）</description>
   <file>.</file>
   <exclude-pattern>vendor/*</exclude-pattern>
   <exclude-pattern>node_modules/*</exclude-pattern>
   <exclude-pattern>dist/*</exclude-pattern>
-  <rule ref="PSR12">
+  <exclude-pattern>*.js</exclude-pattern>
+
+  <arg name="extensions" value="php"/>
+
+  <config name="minimum_supported_wp_version" value="6.0"/>
+
+  <rule ref="WordPress">
     <exclude name="Generic.Files.LineLength"/>
     <exclude name="Generic.Files.LineEndings"/>
-    <exclude name="PSR1.Files.SideEffects"/>
+    <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
+    <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
+    <!-- 短配列 [] を許可。 -->
+    <exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+    <!-- 行頭インデント・配列段の検査と phpcbf による自動整形は無効。 -->
+    <exclude name="Generic.WhiteSpace.ScopeIndent"/>
+    <exclude name="WordPress.Arrays.ArrayIndentation"/>
+    <!-- 列揃え（= 前の余分スペース）を許可するためスニフ自体を無効。 -->
+    <exclude name="Universal.WhiteSpace.PrecisionAlignment"/>
+    <!-- 一覧用 tax_query はテーマの通常パターンのため SlowDBQuery の WARNING を出さない。 -->
+    <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query"/>
+    <!-- 比較は可読性優先（変数を左）のため Yoda 条件は要求しない。 -->
+    <exclude name="WordPress.PHP.YodaConditions"/>
+    <!-- インラインコメントの末尾句点は日本語コメントと相性が悪いため要求しない。 -->
+    <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
+    <!-- 外部 CDN・WINK 等はバージョン不明のため wp_enqueue_* の $ver に null を許可する。 -->
+    <exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
+    <!-- CRLF/LF 混在は Windows 開発で起きやすいため Internal の WARNING を出さない。 -->
+    <exclude name="Internal.LineEndings.Mixed"/>
   </rule>
-  <rule ref="Generic.WhiteSpace.ScopeIndent">
+
+  <!-- 埋め込み PHP の改行・段（[x] 多い）もテンプレでは無効。 -->
+  <rule ref="Squiz.PHP.EmbeddedPhp">
+    <exclude-pattern>template-parts/*</exclude-pattern>
+    <exclude-pattern>taxonomy-*.php</exclude-pattern>
+    <exclude-pattern>archive-*.php</exclude-pattern>
+    <exclude-pattern>single*.php</exclude-pattern>
+    <exclude-pattern>page-*.php</exclude-pattern>
+    <exclude-pattern>front-page.php</exclude-pattern>
+    <exclude-pattern>land.php</exclude-pattern>
+    <exclude-pattern>rental.php</exclude-pattern>
+    <exclude-pattern>used.php</exclude-pattern>
+    <exclude-pattern>header.php</exclude-pattern>
+    <exclude-pattern>footer.php</exclude-pattern>
+    <exclude-pattern>index.php</exclude-pattern>
+  </rule>
+
+  <rule ref="WordPress.NamingConventions.PrefixAllGlobals">
     <properties>
-      <property name="indent" value="2"/>
+      <property name="prefixes" type="array">
+        <element value="wazeka"/>
+      </property>
+    </properties>
+    <!-- テンプレ等の関数外変数（$img など）への wazeka_ 強制はしない。関数・定数・クラスは引き続き検査。 -->
+    <exclude name="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound"/>
+  </rule>
+
+  <rule ref="WordPress.Security.EscapeOutput">
+    <properties>
+      <property name="customEscapingFunctions" type="array">
+        <element value="wazeka_kses_iframe"/>
+      </property>
+    </properties>
+  </rule>
+
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="wazeka"/>
+      </property>
     </properties>
   </rule>
 </ruleset>

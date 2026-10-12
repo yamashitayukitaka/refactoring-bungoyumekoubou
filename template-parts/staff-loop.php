@@ -1,3 +1,11 @@
+<?php
+/**
+ * Staff listing section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class="u-mb100">
   <div class="c-title__head">
     <h3 class="c-title--sectionLine">
@@ -11,19 +19,19 @@
   </div>
   <?php
   $staff = array(
-    'post_type' => 'staff',
+    'post_type'      => 'staff',
     'posts_per_page' => 20,
   ); ?>
-  <?php $staffLoop = new WP_Query($staff); ?>
-  <?php if ($staffLoop->have_posts()) : ?>
+  <?php $staff_loop = new WP_Query( $staff ); ?>
+  <?php if ( $staff_loop->have_posts() ) : ?>
     <ul class="p-about__staff__list">
-      <?php while ($staffLoop->have_posts()) :
-        $staffLoop->the_post(); ?>
+      <?php while ( $staff_loop->have_posts() ) :
+        $staff_loop->the_post(); ?>
         <li class="p-about__staff__listItem">
           <a href = "<?php the_permalink(); ?>">
-            <?php $staff_img = get_field('staff-img'); ?>
-            <?php if ($staff_img) : ?>
-            <img src="<?php echo esc_url($staff_img); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
+            <?php $staff_img = get_field( 'staff-img' ); ?>
+            <?php if ( $staff_img ) : ?>
+            <img src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
             <?php endif; ?>
           </a>
         </li>

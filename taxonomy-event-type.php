@@ -1,55 +1,61 @@
 <?php
-if (! defined('ABSPATH')) {
+/**
+ * Event type taxonomy archive template.
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
 get_header(); ?>
 
 <?php
-  $taxonomy = 'area';
-  $tag = 'event-type';
-  $mainQueryTerm = get_queried_object();
-  $mainQueryTermName = $mainQueryTerm -> name;
-  $mainQueryTermSlug = $mainQueryTerm -> slug;
+  $local_taxonomy       = 'area';
+  $local_tag            = 'event-type';
+  $main_query_term      = get_queried_object();
+  $main_query_term_name = $main_query_term->name;
+  $main_query_term_slug = $main_query_term->slug;
 ?>
 
 <?php
-$lootSlug = sanitize_title((string) get_query_var('event_area'));
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$loot_slug   = sanitize_title( (string) get_query_var( 'event_area' ) );
+$local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-if ($lootSlug) {
+if ( $loot_slug ) {
     $event = array(
-        'post_type' => 'xo_event',
+        'post_type'      => 'xo_event',
         'posts_per_page' => 6,
-        'paged' => $paged,
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'tax_query' => array(
+        'paged'          => $local_paged,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+        'tax_query'      => array(
             'relation' => 'AND',
             array(
-                'taxonomy' => $tag,
-                'field' => 'slug',
-                'terms' => $mainQueryTermSlug,
+                'taxonomy' => $local_tag,
+                'field'    => 'slug',
+                'terms'    => $main_query_term_slug,
             ),
             array(
                 'taxonomy' => 'area',
-                'field' => 'slug',
-                'terms' => $lootSlug,
+                'field'    => 'slug',
+                'terms'    => $loot_slug,
             ),
         ),
     );
 } else {
     $event = array(
-        'post_type' => 'xo_event',
+        'post_type'      => 'xo_event',
         'posts_per_page' => 6,
-        'paged' => $paged,
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'tax_query' => array(
+        'paged'          => $local_paged,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+        'tax_query'      => array(
             array(
-                'taxonomy' => $tag,
-                'field' => 'slug',
-                'terms' => $mainQueryTermSlug,
+                'taxonomy' => $local_tag,
+                'field'    => 'slug',
+                'terms'    => $main_query_term_slug,
             ),
         ),
     );
@@ -62,49 +68,49 @@ if ($lootSlug) {
 </h2>
 
 <?php $terms = get_terms(
-    $taxonomy,
     [
+    'taxonomy'   => $local_taxonomy,
     'hide_empty' => false,
-    'parent' => 0,
-    'orderby' => 'id',
-    'order' => 'DESC',
+    'parent'     => 0,
+    'orderby'    => 'id',
+    'order'      => 'DESC',
     ]
 );?>
 
-  <?php if ($lootSlug) : ?>
+  <?php if ( $loot_slug ) : ?>
       <ul class = "c-term__list">
         <li class = "c-term__list__item">
-          <a href = "<?php echo esc_url(get_post_type_archive_link('xo_event')); ?>">
+          <a href = "<?php echo esc_url( get_post_type_archive_link( 'xo_event' ) ); ?>">
             すべて
           </a>
         </li>
-        <?php if ($terms && !is_wp_error($terms)) : ?>
-          <?php foreach ($terms as $term) :?>
-            <?php $termSlug = $term -> slug;?>
-            <li class = "c-term__list__item <?php if ($lootSlug === $termSlug) :
+        <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
+          <?php foreach ( $terms as $local_term ) :?>
+            <?php $term_slug = $local_term->slug;?>
+            <li class = "c-term__list__item <?php if ( $loot_slug === $term_slug ) :
               ?>u-current<?php
                                             endif; ?>">
-              <a href = "<?php echo esc_url(get_term_link($term)); ?>">
-                <?php echo esc_html($term->name); ?>
+              <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+                <?php echo esc_html( $local_term->name ); ?>
               </a>
             </li>
           <?php endforeach;?>
         <?php endif; ?>
       </ul>
 
-  <?php else :?>
+  <?php else : ?>
       <ul class = "c-term__list">
         <li class = "c-term__list__item u-current">
-          <a href = "<?php echo esc_url(get_post_type_archive_link('xo_event')); ?>">
+          <a href = "<?php echo esc_url( get_post_type_archive_link( 'xo_event' ) ); ?>">
             すべて
           </a>
         </li>
-        <?php if ($terms && !is_wp_error($terms)) : ?>
-          <?php foreach ($terms as $term) :?>
-            <?php $termSlug = $term -> slug;?>
+        <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
+          <?php foreach ( $terms as $local_term ) :?>
+            <?php $term_slug = $local_term->slug;?>
             <li class = "c-term__list__item">
-              <a href = "<?php echo esc_url(get_term_link($term)); ?>">
-                <?php echo esc_html($term->name); ?>
+              <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+                <?php echo esc_html( $local_term->name ); ?>
               </a>
             </li>
           <?php endforeach;?>
@@ -114,38 +120,38 @@ if ($lootSlug) {
   <?php endif; ?>
   
 
-  <?php $eventTags = get_terms(
-      $tag,
-      [
+<?php $event_tags = get_terms(
+    [
+      'taxonomy'   => $local_tag,
       'hide_empty' => false,
-      'parent' => 0,
-      'orderby' => 'id',
-      'order' => 'DESC',
+      'parent'     => 0,
+      'orderby'    => 'id',
+      'order'      => 'DESC',
       ]
-  );?>
+);?>
 
 
   
     <ul class = "c-tag__list l-content--large">
       
-    <?php if ($lootSlug) :?>
+    <?php if ( $loot_slug ) :?>
       <li class = "c-tag__list__item">
-        <a href = "<?php echo esc_url(home_url('area/' . $lootSlug)); ?>" class = "js-allTab c-tag__list__link">すべて</a>
+        <a href = "<?php echo esc_url( home_url( 'area/' . $loot_slug ) ); ?>" class = "js-allTab c-tag__list__link">すべて</a>
       </li>
-    <?php else :?>
+    <?php else : ?>
       <li class = "c-tag__list__item">
-        <a href = "<?php echo esc_url(home_url('xo_event/')); ?>" class = "js-allTab c-tag__list__link">すべて</a>
+        <a href = "<?php echo esc_url( home_url( 'xo_event/' ) ); ?>" class = "js-allTab c-tag__list__link">すべて</a>
       </li>
     <?php endif; ?>
       
-      <?php if ($eventTags && !is_wp_error($eventTags)) : ?>
-        <?php foreach ($eventTags as $eventTag) :?>
-          <?php $eventSlug = $eventTag->slug ;?>
+      <?php if ( $event_tags && ! is_wp_error( $event_tags ) ) : ?>
+        <?php foreach ( $event_tags as $event_tag ) :?>
+          <?php $event_slug = $event_tag->slug;?>
           <li class = "c-tag__list__item">
-            <a href = "<?php echo esc_url($lootSlug ? add_query_arg('event_area', $lootSlug, get_term_link($eventSlug, $tag)) : get_term_link($eventSlug, $tag)); ?>" class = "js-tab c-tag__list__link <?php if ($eventSlug === $mainQueryTermSlug) :
+            <a href = "<?php echo esc_url( $loot_slug ? add_query_arg( 'event_area', $loot_slug, get_term_link( $event_slug, $local_tag ) ) : get_term_link( $event_slug, $local_tag ) ); ?>" class = "js-tab c-tag__list__link <?php if ( $event_slug === $main_query_term_slug ) :
               ?>u-currentTab<?php
                        endif; ?>">
-              <?php echo esc_html($eventTag->name); ?>
+              <?php echo esc_html( $event_tag->name ); ?>
             </a>
           </li>
         <?php endforeach;?>
@@ -157,24 +163,24 @@ if ($lootSlug) {
     
 
   <section class = "l-content">
-    <?php $eventLoop = new WP_Query($event);?>
-      <?php if ($eventLoop->have_posts()) : ?>
+    <?php $event_loop = new WP_Query( $event );?>
+      <?php if ( $event_loop->have_posts() ) : ?>
         <ul class = "c-cardList js-allswitch">
-          <?php while ($eventLoop->have_posts()) :
-            $eventLoop->the_post();?>
-            <?php get_template_part('template-parts/event-loop'); ?>
+          <?php while ( $event_loop->have_posts() ) :
+            $event_loop->the_post();?>
+            <?php get_template_part( 'template-parts/event-loop' ); ?>
           <?php endwhile;?>
         </ul>
       <?php endif;
       wp_reset_postdata();?>
 
-    <?php if ($eventLoop->max_num_pages > 1) :?>
+    <?php if ( $event_loop->max_num_pages > 1 ) :?>
       <div class = "u-mb50">
-        <?php wazeka_query_pagination($eventLoop); ?>
+        <?php wazeka_query_pagination( $event_loop ); ?>
       </div>
     <?php endif; ?>
 
   </section>
-  <?php get_template_part('template-parts/xo-event'); ?>
+  <?php get_template_part( 'template-parts/xo-event' ); ?>
 </main>
 <?php get_footer(); ?>

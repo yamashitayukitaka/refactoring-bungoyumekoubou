@@ -1,56 +1,61 @@
 <?php
+/**
+ * Works tag taxonomy archive template.
+ *
+ * @package Wazeka
+ */
 
-if (! defined('ABSPATH')) {
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
 get_header(); ?>
 
 <?php
-  $taxonomy = 'works-type';
-  $tag = 'works-tag';
-  $mainQueryTerm = get_queried_object();
-  $mainQueryTermName = $mainQueryTerm -> name;
-  $mainQueryTermSlug = $mainQueryTerm -> slug;
+  $local_taxonomy       = 'works-type';
+  $local_tag            = 'works-tag';
+  $main_query_term      = get_queried_object();
+  $main_query_term_name = $main_query_term->name;
+  $main_query_term_slug = $main_query_term->slug;
 ?>
 
 <?php
-$lootSlug = sanitize_title((string) get_query_var('works_type'));
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$loot_slug   = sanitize_title( (string) get_query_var( 'works_type' ) );
+$local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-if ($lootSlug) {
+if ( $loot_slug ) {
     $works = array(
-        'post_type' => 'works',
+        'post_type'      => 'works',
         'posts_per_page' => 6,
-        'paged' => $paged,
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'tax_query' => array(
+        'paged'          => $local_paged,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+        'tax_query'      => array(
             'relation' => 'AND',
             array(
-                'taxonomy' => $tag,
-                'field' => 'slug',
-                'terms' => $mainQueryTermSlug,
+                'taxonomy' => $local_tag,
+                'field'    => 'slug',
+                'terms'    => $main_query_term_slug,
             ),
             array(
                 'taxonomy' => 'works-type',
-                'field' => 'slug',
-                'terms' => $lootSlug,
+                'field'    => 'slug',
+                'terms'    => $loot_slug,
             ),
         ),
     );
 } else {
     $works = array(
-        'post_type' => 'works',
+        'post_type'      => 'works',
         'posts_per_page' => 6,
-        'paged' => $paged,
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'tax_query' => array(
+        'paged'          => $local_paged,
+        'orderby'        => 'menu_order',
+        'order'          => 'ASC',
+        'tax_query'      => array(
             array(
-                'taxonomy' => $tag,
-                'field' => 'slug',
-                'terms' => $mainQueryTermSlug,
+                'taxonomy' => $local_tag,
+                'field'    => 'slug',
+                'terms'    => $main_query_term_slug,
             ),
         ),
     );
@@ -63,49 +68,49 @@ if ($lootSlug) {
 </h2>
 
 <?php $terms = get_terms(
-    $taxonomy,
     [
+    'taxonomy'   => $local_taxonomy,
     'hide_empty' => false,
-    'parent' => 0,
-    'orderby' => 'id',
-    'order' => 'DESC',
+    'parent'     => 0,
+    'orderby'    => 'id',
+    'order'      => 'DESC',
     ]
 );?>
 
-<?php if ($lootSlug) : ?>
+<?php if ( $loot_slug ) : ?>
   <ul class = "c-term__list">
     <li class = "c-term__list__item">
-      <a href = "<?php echo esc_url(get_post_type_archive_link('works')); ?>">
+      <a href = "<?php echo esc_url( get_post_type_archive_link( 'works' ) ); ?>">
         すべて
       </a>
     </li>
-    <?php if ($terms && !is_wp_error($terms)) : ?>
-      <?php foreach ($terms as $term) :?>
-        <?php $termSlug = $term -> slug;?>
-        <li class = "c-term__list__item <?php if ($lootSlug === $termSlug) :
+    <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
+      <?php foreach ( $terms as $local_term ) :?>
+        <?php $term_slug = $local_term->slug;?>
+        <li class = "c-term__list__item <?php if ( $loot_slug === $term_slug ) :
           ?>u-current<?php
                                         endif; ?>">
-          <a href = "<?php echo esc_url(get_term_link($term)); ?>">
-            <?php echo esc_html($term->name); ?>
+          <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+            <?php echo esc_html( $local_term->name ); ?>
           </a>
         </li>
       <?php endforeach;?>
     <?php endif; ?>
   </ul>
 
-<?php else :?>
+<?php else : ?>
   <ul class = "c-term__list">
     <li class = "c-term__list__item u-current">
-      <a href = "<?php echo esc_url(get_post_type_archive_link('works')); ?>">
+      <a href = "<?php echo esc_url( get_post_type_archive_link( 'works' ) ); ?>">
         すべて
       </a>
     </li>
-    <?php if ($terms && !is_wp_error($terms)) : ?>
-      <?php foreach ($terms as $term) :?>
-        <?php $termSlug = $term -> slug;?>
+    <?php if ( $terms && ! is_wp_error( $terms ) ) : ?>
+      <?php foreach ( $terms as $local_term ) :?>
+        <?php $term_slug = $local_term->slug;?>
         <li class = "c-term__list__item">
-          <a href = "<?php echo esc_url(get_term_link($term)); ?>">
-            <?php echo esc_html($term->name); ?>
+          <a href = "<?php echo esc_url( get_term_link( $local_term ) ); ?>">
+            <?php echo esc_html( $local_term->name ); ?>
           </a>
         </li>
       <?php endforeach;?>
@@ -116,36 +121,36 @@ if ($lootSlug) {
 
 
 
-  <?php $worksTags = get_terms(
-      $tag,
-      [
+<?php $works_tags = get_terms(
+    [
+      'taxonomy'   => $local_tag,
       'hide_empty' => false,
-      'parent' => 0,
-      'orderby' => 'id',
-      'order' => 'ASC',
+      'parent'     => 0,
+      'orderby'    => 'id',
+      'order'      => 'ASC',
       ]
-  );?>
+);?>
 
-  <?php if ($worksTags && !is_wp_error($worksTags)) :?>
+  <?php if ( $works_tags && ! is_wp_error( $works_tags ) ) :?>
     <ul class = "c-tag__list l-content--large">
       
-      <?php if ($lootSlug) :?>
+      <?php if ( $loot_slug ) :?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(home_url('works-type/' . $lootSlug)); ?>" class = "js-allTab c-tag__list__link">すべて</a>
+          <a href = "<?php echo esc_url( home_url( 'works-type/' . $loot_slug ) ); ?>" class = "js-allTab c-tag__list__link">すべて</a>
         </li>
       <?php else : ?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url(home_url('works/')); ?>" class = "js-allTab c-tag__list__link">すべて</a>
+          <a href = "<?php echo esc_url( home_url( 'works/' ) ); ?>" class = "js-allTab c-tag__list__link">すべて</a>
         </li>
       <?php endif; ?>
       
-      <?php foreach ($worksTags as $worksTag) :?>
-        <?php $worksSlug = $worksTag->slug ;?>
+      <?php foreach ( $works_tags as $works_tag ) :?>
+        <?php $works_slug = $works_tag->slug;?>
         <li class = "c-tag__list__item">
-          <a href = "<?php echo esc_url($lootSlug ? add_query_arg('works_type', $lootSlug, get_term_link($worksSlug, $tag)) : get_term_link($worksSlug, $tag)); ?>" class = "js-tab c-tag__list__link <?php if ($worksSlug === $mainQueryTermSlug) :
+          <a href = "<?php echo esc_url( $loot_slug ? add_query_arg( 'works_type', $loot_slug, get_term_link( $works_slug, $local_tag ) ) : get_term_link( $works_slug, $local_tag ) ); ?>" class = "js-tab c-tag__list__link <?php if ( $works_slug === $main_query_term_slug ) :
             ?>u-currentTab<?php
                      endif; ?>">
-            <?php echo esc_html($worksTag->name); ?>
+            <?php echo esc_html( $works_tag->name ); ?>
           </a>
         </li>
       <?php endforeach;?>
@@ -154,20 +159,20 @@ if ($lootSlug) {
   <?php endif; ?>
 
   <section class = "l-content">
-    <?php $worksLoop = new WP_Query($works);?>
-      <?php if ($worksLoop->have_posts()) : ?>
+    <?php $works_loop = new WP_Query( $works );?>
+      <?php if ( $works_loop->have_posts() ) : ?>
         <ul class = "c-cardList js-allswitch">
-          <?php while ($worksLoop->have_posts()) :
-            $worksLoop->the_post();?>
-            <?php get_template_part('template-parts/works-loop'); ?>
+          <?php while ( $works_loop->have_posts() ) :
+            $works_loop->the_post();?>
+            <?php get_template_part( 'template-parts/works-loop' ); ?>
           <?php endwhile;?>
         </ul>
       <?php endif;
       wp_reset_postdata();?>
     
-      <?php if ($worksLoop->max_num_pages > 1) :?>
+      <?php if ( $works_loop->max_num_pages > 1 ) :?>
         <div class = "u-mb50">
-          <?php wazeka_query_pagination($worksLoop); ?>
+          <?php wazeka_query_pagination( $works_loop ); ?>
         </div>
       <?php endif; ?>
   </section>

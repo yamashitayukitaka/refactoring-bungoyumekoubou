@@ -1,6 +1,11 @@
 <?php
-// Template Name: about
-if (!defined('ABSPATH')) {
+/**
+ * Template Name: about
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -16,9 +21,9 @@ get_header();
         ABOUT US
       </p>
     </div>
-    <?php $mv = get_field('mv-page'); ?>
-    <?php if ($mv) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'mv-page' ); ?>
+    <?php if ( $mv ) : ?>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -36,7 +41,7 @@ get_header();
     </div>
     <div class="p-about__message">
       <figure class="p-about__message__imgWrap">
-        <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="p-about__message__img" alt="代表取締役社長 永井 賢次">
+        <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-about__message__img" alt="代表取締役社長 永井 賢次">
       </figure>
       <p class="p-about__message__txt">
         豊後夢工房が考える本当によい家とは、そこに暮らす人の心と体を癒やし、家族との絆を育み、子育てをサポートする住まいだと考えます。 高品質で高性能、ランニングコストが低い家も今では当たり前。私たちはその全てを実現する家づくりを目指しています。 例えば、最新の太陽光発電システムと高気密・高断熱の設計によって、月々の住宅ローン返済がアパートの家賃よりも安くなる家を提供。 大手メーカーにも負けない開発力と技術力で、心と家計にゆとりをもたらす住まいを実現します。 豊後夢工房なら、自由設計のメリットを最大限に活かし、あなたの予算やライフスタイル、将来のプランにぴったりな理想の家を提供できます。心地よさと家族の絆を大切にする住まいを、わたしたちと一緒に実現しましょう。
@@ -48,10 +53,10 @@ get_header();
     </dl>
   </section>
 
-  <?php get_template_part('template-parts/staff-loop'); ?>
+  <?php get_template_part( 'template-parts/staff-loop' ); ?>
 
   <div class="u-center u-mb150">
-    <a href="<?php echo esc_url(home_url('staff')); ?>" class="c-button--outline">
+    <a href="<?php echo esc_url( home_url( 'staff' ) ); ?>" class="c-button--outline">
       一覧を見る
     </a>
   </div>
@@ -142,7 +147,7 @@ get_header();
       </tbody>
     </table>
   </section>
-  <?php get_template_part('template-parts/company', 'history'); ?>
+  <?php get_template_part( 'template-parts/company', 'history' ); ?>
 
   <section class="l-content--middle u-mb200">
     <div class="c-title__head">
@@ -159,34 +164,34 @@ get_header();
     $about_corporate_standards = [
       [
         'question' => '企業理念',
-        'answer' => '生活を立て続けること',
+        'answer'   => '生活を立て続けること',
       ],
       [
         'question' => 'ミッション',
-        'answer' => '「お客様の笑顔が見える住まい」を創り続ける',
+        'answer'   => '「お客様の笑顔が見える住まい」を創り続ける',
       ],
       [
         'question' => 'ビジョン',
-        'answer' => 'お客様の子供たちや友人の方々から「豊後夢工房」で家が建てたいと言われるような地域密着の会社を目指していく',
+        'answer'   => 'お客様の子供たちや友人の方々から「豊後夢工房」で家が建てたいと言われるような地域密着の会社を目指していく',
       ],
       [
         'question' => 'バリュー',
-        'answer' => '商品を提供する社員も明るく楽しく仕事が出来る環境づくりを行い褒め認め合うteamを形成していく',
+        'answer'   => '商品を提供する社員も明るく楽しく仕事が出来る環境づくりを行い褒め認め合うteamを形成していく',
       ],
     ];
     ?>
     <ul class="c-accordion c-accordion--full">
-      <?php foreach ($about_corporate_standards as $i => $qa) : ?>
+      <?php foreach ( $about_corporate_standards as $i => $qa ) : ?>
         <li class="c-accordion__item">
           <button type="button" class="c-accordion__trigger js-accordion">
             <span class="c-accordion__number">
-              <?php echo esc_html(sprintf('%02d', $i + 1)); ?>
+              <?php echo esc_html( sprintf( '%02d', $i + 1 ) ); ?>
             </span>
-            <?php echo esc_html($qa['question']); ?>
+            <?php echo esc_html( $qa['question'] ); ?>
           </button>
           <div class="c-accordion__panel">
             <p class="c-accordion__body">
-              <?php echo esc_html($qa['answer']); ?>
+              <?php echo esc_html( $qa['answer'] ); ?>
             </p>
           </div>
         </li>
@@ -196,11 +201,11 @@ get_header();
 
 
 
-  <?php get_template_part('template-parts/recruit-part'); ?>
+  <?php get_template_part( 'template-parts/recruit-part' ); ?>
 
-  <?php get_template_part('template-parts/common'); ?>
+  <?php get_template_part( 'template-parts/common' ); ?>
 
-  <?php get_template_part('template-parts/common-footer'); ?>
+  <?php get_template_part( 'template-parts/common-footer' ); ?>
 
 </main>
 

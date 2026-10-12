@@ -1,6 +1,11 @@
 <?php
-// Template Name: concept
-if (!defined('ABSPATH')) {
+/**
+ * Template Name: concept
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -20,9 +25,9 @@ get_header();
         freedom in your future
       </p>
     </div>
-    <?php $mv = get_field('mv-concept-img'); ?>
-    <?php if ($mv) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'mv-concept-img' ); ?>
+    <?php if ( $mv ) : ?>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -30,10 +35,10 @@ get_header();
     <div class="p-concept__intro__inner">
       <div class="p-concept__intro__photos">
         <div class="p-concept__intro__photo">
-          <img class="p-concept__intro__img" src="<?php echo IMG_URL; ?>/top/top-des1.webp" alt="">
+          <img class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="">
         </div>
         <div class="p-concept__intro__family">
-          <img class="p-concept__intro__img" src="<?php echo IMG_URL; ?>/illustration/family_img.webp" alt="">
+          <img class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
         </div>
       </div>
       <div class="p-concept__intro__text">
@@ -66,7 +71,7 @@ get_header();
     <ul class="p-concept__policy__list">
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img class="p-concept__policy__img" src="<?php echo IMG_URL; ?>/concept/concept1.png" alt="">
+          <img class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="">
         </div>
         <div class="p-concept__policy__panel">
 
@@ -84,13 +89,13 @@ get_header();
             決まった枠にとらわれず、自由に暮らしをデザインするところからスタートです。
           </div>
           <div class="p-concept__policy__action">
-            <a class="p-concept__policy__link" href="<?php echo home_url('/design/'); ?>">デザインのこだわりを見る</a>
+            <a class="p-concept__policy__link" href="<?php echo esc_url( home_url( '/design/' ) ); ?>">デザインのこだわりを見る</a>
           </div>
         </div>
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img class="p-concept__policy__img" src="<?php echo IMG_URL; ?>/concept/concept2.png" alt="">
+          <img class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 02</h3>
@@ -107,13 +112,13 @@ get_header();
             夢工房ならではの価格で、コストを抑えながらもワンランク上のスマートな家づくりを実現します。
           </div>
           <div class="p-concept__policy__action">
-            <a class="p-concept__policy__link" href="<?php echo home_url('/cost/'); ?>">コストへのこだわりを見る</a>
+            <a class="p-concept__policy__link" href="<?php echo esc_url( home_url( '/cost/' ) ); ?>">コストへのこだわりを見る</a>
           </div>
         </div>
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img class="p-concept__policy__img" src="<?php echo IMG_URL; ?>/concept/concept3.png" alt="">
+          <img class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 03</h3>
@@ -128,7 +133,7 @@ get_header();
             私たちはデザインの良さだけを追求する家は作りません。自由なデザインを、安心して暮らせる住み心地の面からも考え、いつも住まい手のことを考え家を建てています。最新の技術と経験を生かし、未来基準の高性能住宅を提供します。
           </div>
           <div class="p-concept__policy__action">
-            <a class="p-concept__policy__link" href="<?php echo home_url('/quality/'); ?>">性能のこだわりを見る</a>
+            <a class="p-concept__policy__link" href="<?php echo esc_url( home_url( '/quality/' ) ); ?>">性能のこだわりを見る</a>
           </div>
         </div>
       </li>
@@ -195,11 +200,11 @@ get_header();
         家づくりのプロ集団としての品質を高めるために、各部署との連携は不可欠です。特にチームワークを重視する豊後夢工房では、お客様に最高のサービスを提供するための社内環境づくりに注力しています。社内ネットワークを活用し、家づくりのデータを全社員が共有し、全体会議を開いて問題点や改善点を話し合うことで、各部署の壁を越えて自由にアイディアを出し合えるオープンな体制を整えています。情報を共有し合い、お客様のニーズに応える感度を高めながら、創造的なデザイン力を提案します。
       </p>
       <div class="p-concept__team__action">
-        <a class="p-concept__team__link" href="<?php echo home_url('/staff/'); ?>">ゆめづくりスタッフ一覧へ</a>
+        <a class="p-concept__team__link" href="<?php echo esc_url( home_url( '/staff/' ) ); ?>">ゆめづくりスタッフ一覧へ</a>
       </div>
     </div>
   </section>
 
-  <?php get_template_part('template-parts/common'); ?>
+  <?php get_template_part( 'template-parts/common' ); ?>
 </main>
 <?php get_footer(); ?>

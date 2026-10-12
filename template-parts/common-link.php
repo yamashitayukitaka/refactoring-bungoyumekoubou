@@ -1,3 +1,11 @@
+<?php
+/**
+ * Common works and voice section part.
+ *
+ * @package Wazeka
+ */
+
+?>
 <section class = "l-content u-mb100 u-pt100">
   <div class = "u-center u-mb10">
     <h3 class = "c-title--sectionLine">
@@ -11,28 +19,28 @@
   </div>
 
   <?php
-      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-      $works = array(
-      'post_type' => 'works',
+      $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+      $works       = array(
+      'post_type'      => 'works',
       'posts_per_page' => 3,
-      'paged' => $paged,
-      'order' => 'DESC',
-      'orderby' => 'date',
+      'paged'          => $local_paged,
+      'order'          => 'DESC',
+      'orderby'        => 'date',
       );?>
 
-    <?php $worksLoop = new WP_Query($works);?>
-    <?php if ($worksLoop->have_posts()) : ?>
+    <?php $works_loop = new WP_Query( $works );?>
+    <?php if ( $works_loop->have_posts() ) : ?>
       <ul class = "c-cardList js-allswitch">
-        <?php while ($worksLoop->have_posts()) :
-          $worksLoop->the_post();?>
-          <?php get_template_part('template-parts/works-loop'); ?>
+        <?php while ( $works_loop->have_posts() ) :
+          $works_loop->the_post();?>
+          <?php get_template_part( 'template-parts/works-loop' ); ?>
         <?php endwhile;?>
       </ul>
     <?php endif;
     wp_reset_postdata();?>
 
   <div class = "u-center">
-    <a href = "<?php echo esc_url(home_url('works')); ?>" class = "c-button--outline">施工事例一覧へ</a>
+    <a href = "<?php echo esc_url( home_url( 'works' ) ); ?>" class = "c-button--outline">施工事例一覧へ</a>
   </div>
 
 </section>
@@ -61,22 +69,22 @@
 
 <?php
   $event = array(
-  'post_type' => 'xo_event',
+  'post_type'      => 'xo_event',
   'posts_per_page' => 3,
-  'order' => 'DESC',
-  'orderby' => 'date',
+  'order'          => 'DESC',
+  'orderby'        => 'date',
   );?>
-<?php $eventLoop = new WP_Query($event);?>
-<?php if ($eventLoop->have_posts()) : ?>
+<?php $event_loop = new WP_Query( $event );?>
+<?php if ( $event_loop->have_posts() ) : ?>
   <ul class = "c-cardList u-mb50">
-    <?php while ($eventLoop->have_posts()) :
-      $eventLoop->the_post();?>
-      <?php get_template_part('template-parts/event-loop'); ?>
+    <?php while ( $event_loop->have_posts() ) :
+      $event_loop->the_post();?>
+      <?php get_template_part( 'template-parts/event-loop' ); ?>
     <?php endwhile;
 endif;
     wp_reset_postdata();?>
   </ul>
   <div class = "u-center">
-    <a href = "<?php echo esc_url(home_url('xo_event')); ?>" class = "c-button--outline">イベント一覧へ</a>
+    <a href = "<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class = "c-button--outline">イベント一覧へ</a>
   </div>
 </section>

@@ -1,6 +1,11 @@
 <?php
-// Template Name: recruit
-if (!defined('ABSPATH')) {
+/**
+ * Template Name: recruit
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -15,9 +20,9 @@ get_header();
         RECRUIT
       </p>
     </div>
-    <?php $mv = get_field('mv-recruit-img'); ?>
-    <?php if ($mv) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url($mv); ?>');"></figure>
+    <?php $mv = get_field( 'mv-recruit-img' ); ?>
+    <?php if ( $mv ) : ?>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -35,7 +40,7 @@ get_header();
     <div class="p-recruit__message">
       <div class="p-recruit__message__photo u-none__pc--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="p-recruit__message__img" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -62,7 +67,7 @@ get_header();
       </div>
       <div class="p-recruit__message__photo u-none__mobile--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url(IMG_URL . '/recruit/president.png'); ?>" class="p-recruit__message__img" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -89,34 +94,34 @@ get_header();
     $recruit_corporate_standards = [
       [
         'question' => '企業理念',
-        'answer' => '生活を立て続けること',
+        'answer'   => '生活を立て続けること',
       ],
       [
         'question' => 'ミッション',
-        'answer' => '「お客様の笑顔が見える住まい」を創り続ける',
+        'answer'   => '「お客様の笑顔が見える住まい」を創り続ける',
       ],
       [
         'question' => 'ビジョン',
-        'answer' => 'お客様の子供たちや友人の方々から「豊後夢工房」で家が建てたいと言われるような地域密着の会社を目指していく',
+        'answer'   => 'お客様の子供たちや友人の方々から「豊後夢工房」で家が建てたいと言われるような地域密着の会社を目指していく',
       ],
       [
         'question' => 'バリュー',
-        'answer' => '商品を提供する社員も明るく楽しく仕事が出来る環境づくりを行い褒め認め合うteamを形成していく',
+        'answer'   => '商品を提供する社員も明るく楽しく仕事が出来る環境づくりを行い褒め認め合うteamを形成していく',
       ],
     ];
     ?>
     <ul class="c-accordion c-accordion--full">
-      <?php foreach ($recruit_corporate_standards as $i => $qa) : ?>
+      <?php foreach ( $recruit_corporate_standards as $i => $qa ) : ?>
         <li class="c-accordion__item">
           <button type="button" class="c-accordion__trigger js-accordion">
             <span class="c-accordion__number">
-              <?php echo esc_html(sprintf('%02d', $i + 1)); ?>
+              <?php echo esc_html( sprintf( '%02d', $i + 1 ) ); ?>
             </span>
-            <?php echo esc_html($qa['question']); ?>
+            <?php echo esc_html( $qa['question'] ); ?>
           </button>
           <div class="c-accordion__panel">
             <p class="c-accordion__body">
-              <?php echo esc_html($qa['answer']); ?>
+              <?php echo esc_html( $qa['answer'] ); ?>
             </p>
           </div>
         </li>
@@ -124,7 +129,7 @@ get_header();
     </ul>
   </section>
 
-  <?php get_template_part('template-parts/company', 'history'); ?>
+  <?php get_template_part( 'template-parts/company', 'history' ); ?>
 
   <section class="l-content--middle u-mb90">
     <div class="p-recruit__interview">
@@ -134,11 +139,11 @@ get_header();
           'title' => '01.入社を決めたきっかけは？',
           'users' => [
             [
-              'img' => '/recruit/interview-executive.jpeg',
+              'img'  => '/recruit/interview-executive.jpeg',
               'text' => '誘われて入社を決めました。自分を高められると思いトライして正解でした。',
             ],
             [
-              'img' => '/recruit/interview-man-glasses.jpeg',
+              'img'  => '/recruit/interview-man-glasses.jpeg',
               'text' => '手に職をつけたくて現場監督にチャレンジしてみました。わからないことだらけでしたが、先輩の監督が同行して指導していただいたおかげで、独り立ちまでしっかりサポートしてもらいました。',
             ],
           ],
@@ -147,11 +152,11 @@ get_header();
           'title' => '02.会社のアピールポイントを教えてください',
           'users' => [
             [
-              'img' => '/recruit/interview-career-woman.jpeg',
+              'img'  => '/recruit/interview-career-woman.jpeg',
               'text' => 'スタッフ間の仲がよく、笑いながら仕事を遂行できる環境です！',
             ],
             [
-              'img' => '/recruit/interview-executive.jpeg',
+              'img'  => '/recruit/interview-executive.jpeg',
               'text' => 'フレンドリーでコミュニケーションが活発な職場環境です。皆の意見が尊重され、やりがいを感じながら業務に取り組めます。',
             ],
           ],
@@ -160,11 +165,11 @@ get_header();
           'title' => '03.仕事のモチベーションは何ですか',
           'users' => [
             [
-              'img' => '/recruit/interview-man-glasses.jpeg',
+              'img'  => '/recruit/interview-man-glasses.jpeg',
               'text' => 'お客様との商談の中で、「○○さんで契約します」と言っていただける瞬間です。メーカーとしてではなく、私自身の人格や人柄を評価して選んでもらえることで、自分の成長を実感し、さらにやる気が湧いてきます。',
             ],
             [
-              'img' => '/recruit/interview-career-woman.jpeg',
+              'img'  => '/recruit/interview-career-woman.jpeg',
               'text' => '間取りや内装についてなど、お客様と一緒にこれをやりたいあれをやりたいなど打ち合わせをしたことが、形となり完成した時にモチベーションが最大限に高まります。',
             ],
           ],
@@ -173,36 +178,36 @@ get_header();
           'title' => '04.今までで一番楽しかった、またはやりがいのあった仕事を教えてください',
           'users' => [
             [
-              'img' => '/recruit/interview-man-glasses.jpeg',
+              'img'  => '/recruit/interview-man-glasses.jpeg',
               'text' => '入居後のお客様の家に遊びに行く際、子供たちの成長や新たにお子様が増えていると幸せな「ゆめ」づくりに貢献できたんだと実感します。',
             ],
             [
-              'img' => '/recruit/interview-executive.jpeg',
+              'img'  => '/recruit/interview-executive.jpeg',
               'text' => 'お引き渡しの際お礼のお手紙や感謝のお言葉をたくさんいただき、自分の宝物になっています。ご契約からお引き渡し、そしてアフターメンテナンス訪問時にいつも感謝していただけるので、実は毎回お伺いするのが楽しみです。',
             ],
           ],
         ],
       ];
       ?>
-      <?php foreach ($recruit_interviews as $interview) : ?>
+      <?php foreach ( $recruit_interviews as $interview ) : ?>
         <div class="c-title__head">
           <h3 class="c-title--sectionLine">
             INTERVIEW
           </h3>
           <div>
             <p class="c-title--orangeLine u-mb30">
-              <?php echo esc_html($interview['title']); ?>
+              <?php echo esc_html( $interview['title'] ); ?>
             </p>
           </div>
         </div>
         <div class="p-recruit__interview__list">
-          <?php foreach ($interview['users'] as $user) : ?>
+          <?php foreach ( $interview['users'] as $user ) : ?>
             <div class="p-recruit__interview__item u-mb100">
               <figure class="p-recruit__interview__figure">
-                <img src="<?php echo esc_url(IMG_URL . $user['img']); ?>" class="p-recruit__interview__img" alt="">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $user['img'] ); ?>" class="p-recruit__interview__img" alt="">
               </figure>
               <p class="p-recruit__interview__text">
-                <?php echo esc_html($user['text']); ?>
+                <?php echo esc_html( $user['text'] ); ?>
               </p>
             </div>
           <?php endforeach; ?>
@@ -213,7 +218,7 @@ get_header();
 
   <section class="l-content--middle u-mb100 p-recruit__requirements">
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="p-recruit__requirements__decorationImg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="">
     </figure>
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
@@ -225,35 +230,35 @@ get_header();
         </p>
       </div>
     </div>
-    <?php $table = get_field('recruit-app'); ?>
+    <?php $table = get_field( 'recruit-app' ); ?>
     <?php
-    $hasApp = false;
-    if ($table) {
-      foreach ($table as $row) {
-        if (!empty($row['recruit-app-title']) || !empty($row['recruit-app-content'])) {
-          $hasApp = true;
+    $has_app = false;
+    if ( $table ) {
+      foreach ( $table as $row ) {
+        if ( ! empty( $row['recruit-app-title'] ) || ! empty( $row['recruit-app-content'] ) ) {
+          $has_app = true;
           break;
         }
       }
     }
     ?>
-    <?php if ($hasApp) : ?>
+    <?php if ( $has_app ) : ?>
       <table class="c-table c-table--narrow">
         <tbody>
-          <?php foreach ($table as $row) :
-            if (empty($row['recruit-app-title']) && empty($row['recruit-app-content'])) {
+          <?php foreach ( $table as $row ) :
+            if ( empty( $row['recruit-app-title'] ) && empty( $row['recruit-app-content'] ) ) {
               continue;
             }
             ?>
             <tr class="c-table__tr">
               <th class="c-table__th">
-                <?php if (!empty($row['recruit-app-title'])) : ?>
-                  <?php echo esc_html($row['recruit-app-title']); ?>
+                <?php if ( ! empty( $row['recruit-app-title'] ) ) : ?>
+                  <?php echo esc_html( $row['recruit-app-title'] ); ?>
                 <?php endif; ?>
               </th>
               <td class="c-table__td">
-                <?php if (!empty($row['recruit-app-content'])) : ?>
-                  <?php echo wp_kses_post($row['recruit-app-content']); ?>
+                <?php if ( ! empty( $row['recruit-app-content'] ) ) : ?>
+                  <?php echo wp_kses_post( $row['recruit-app-content'] ); ?>
                 <?php endif; ?>
               </td>
             </tr>
@@ -266,11 +271,11 @@ get_header();
       </p>
     <?php endif; ?>
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
-      <img src="<?php echo esc_url(get_template_directory_uri() . '/dist/img/recruit/tree.webp'); ?>" class="p-recruit__requirements__decorationImg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="">
     </figure>
   </section>
 
-  <?php if ($hasApp) : ?>
+  <?php if ( $has_app ) : ?>
     <div class="l-content--middle c-contact u-mb100">
       <p class="c-contact__desc">
         わたしたちと一緒にゆめをつくりませんか？ご応募は以下の応募フォーム<br>
@@ -295,11 +300,11 @@ get_header();
         </div>
       </div>
       <div class="c-form__wrap">
-        <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+        <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
       </div>
     </section>
   <?php endif; ?>
 
-  <?php get_template_part('template-parts/common-link'); ?>
+  <?php get_template_part( 'template-parts/common-link' ); ?>
 </main>
 <?php get_footer(); ?>

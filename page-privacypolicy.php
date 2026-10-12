@@ -1,6 +1,11 @@
 <?php
-// Template Name: privacypolicy
-if (!defined('ABSPATH')) {
+/**
+ * Template Name: privacypolicy
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -82,7 +87,7 @@ get_header();
   </div>
 
   <div class="c-button__outlineArrowWrap u-mb100">
-    <a class="c-button--outlineArrow" href="<?php echo esc_url(home_url('/')); ?>">TOPへ</a>
+    <a class="c-button--outlineArrow" href="<?php echo esc_url( home_url( '/' ) ); ?>">TOPへ</a>
   </div>
 </main>
 

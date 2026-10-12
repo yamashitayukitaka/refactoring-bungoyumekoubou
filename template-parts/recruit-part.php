@@ -1,23 +1,31 @@
-<a href = "<?php echo esc_url(home_url('recruit')); ?>">
+<?php
+/**
+ * Recruitment section part.
+ *
+ * @package Wazeka
+ */
+
+?>
+<a href = "<?php echo esc_url( home_url( 'recruit' ) ); ?>">
 <section class = "p-about__recruit u-mb100">
   <div class = "p-about__recruit__content">
     <?php
       $staff = array(
-      'post_type' => 'staff',
+      'post_type'      => 'staff',
       'posts_per_page' => 6,
-      'orderby' => 'date',
-      'order' => 'ASC'
+      'orderby'        => 'date',
+      'order'          => 'ASC',
       );?>
-    <?php $staffLoop = new WP_Query($staff);?>
-      <?php if ($staffLoop->have_posts()) : ?>
+    <?php $staff_loop = new WP_Query( $staff );?>
+      <?php if ( $staff_loop->have_posts() ) : ?>
       <ul class = "p-about__recruitStaff__list">
-        <?php while ($staffLoop->have_posts()) :
-          $staffLoop->the_post();?>
+        <?php while ( $staff_loop->have_posts() ) :
+          $staff_loop->the_post();?>
           <li class = "p-about__recruitStaff__listItem js-staffImg">
             
-              <?php $staff_img = get_field('staff-img'); ?>
-              <?php if ($staff_img) : ?>
-              <img src = "<?php echo esc_url($staff_img); ?>" class = "p-about__staff__listImg" alt= "スタッフ画像">
+              <?php $staff_img = get_field( 'staff-img' ); ?>
+              <?php if ( $staff_img ) : ?>
+              <img src = "<?php echo esc_url( $staff_img ); ?>" class = "p-about__staff__listImg" alt= "スタッフ画像">
               <?php endif; ?>
             
           </li>
@@ -40,21 +48,21 @@
 
     <?php
       $staff2 = array(
-      'post_type' => 'staff',
+      'post_type'      => 'staff',
       'posts_per_page' => 6,
-      'orderby' => 'date',
-      'order' => 'DESC'
+      'orderby'        => 'date',
+      'order'          => 'DESC',
       );?>
-    <?php $staffLoop2 = new WP_Query($staff2);?>
-      <?php if ($staffLoop2->have_posts()) : ?>
+    <?php $staff_loop2 = new WP_Query( $staff2 );?>
+      <?php if ( $staff_loop2->have_posts() ) : ?>
       <ul class = "p-about__recruitStaff__list">
-        <?php while ($staffLoop2->have_posts()) :
-          $staffLoop2->the_post();?>
+        <?php while ( $staff_loop2->have_posts() ) :
+          $staff_loop2->the_post();?>
           <li class = "p-about__recruitStaff__listItem js-staffImg">
             
-              <?php $staff_img = get_field('staff-img'); ?>
-              <?php if ($staff_img) : ?>
-              <img src = "<?php echo esc_url($staff_img); ?>" class = "p-about__staff__listImg" alt= "スタッフ画像">
+              <?php $staff_img = get_field( 'staff-img' ); ?>
+              <?php if ( $staff_img ) : ?>
+              <img src = "<?php echo esc_url( $staff_img ); ?>" class = "p-about__staff__listImg" alt= "スタッフ画像">
               <?php endif; ?>
             
           </li>

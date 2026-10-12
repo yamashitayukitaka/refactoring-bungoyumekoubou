@@ -1,6 +1,11 @@
 <?php
-// Template Name: rireve
-if (!defined('ABSPATH')) {
+/**
+ * Template Name: rireve
+ *
+ * @package Wazeka
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 get_header();
@@ -10,7 +15,7 @@ get_header();
   <div class="p-rireve__mv">
     <div class="p-rireve__mv__titleBox">
       <div class="p-rireve__mv__logo">
-        <img class="p-rireve__mv__logoImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_title_black.webp' ?>" alt="">
+        <img class="p-rireve__mv__logoImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_title_black.webp' ); ?>" alt="">
       </div>
       <div>
         <h1 class="p-rireve__mv__title">リレーヴ自由設計</h1>
@@ -20,22 +25,22 @@ get_header();
       可能にする次世代省エネ住宅。</p>
     <div class="p-rireve__mv__slider js-mvSlider">
       <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img3.webp' ?>" alt="">
+        <img class="p-rireve__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img3.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img1.webp' ?>" alt="">
+        <img class="p-rireve__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img1.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img2.webp' ?>" alt="">
+        <img class="p-rireve__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img2.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img4.webp' ?>" alt="">
+        <img class="p-rireve__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img4.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img5.webp' ?>" alt="">
+        <img class="p-rireve__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img5.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/top_img6.webp' ?>" alt="">
+        <img class="p-rireve__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img6.webp' ); ?>" alt="">
       </div>
     </div>
     <div class="p-rireve__mv__bg"></div>
@@ -53,26 +58,26 @@ get_header();
       </p>
     </div>
     <div class="p-rireve__intro__media">
-      <img class="p-rireve__intro__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_1.webp' ?>" alt="">
+      <img class="p-rireve__intro__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_1.webp' ); ?>" alt="">
     </div>
   </div>
 
   <div class="p-rireve__appeal">
     <div class="p-rireve__appeal__row">
       <div class="p-rireve__appeal__media u-none__mobile--tab">
-        <img class="p-rireve__appeal__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_2.webp' ?>" alt="">
+        <img class="p-rireve__appeal__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_2.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__appeal__copy--right">
         <p class="p-rireve__appeal__title">エアコン1台で家全体が快適<br>
           次世代型省エネ住宅</p>
         <div class="p-rireve__appeal__media u-none__pc--sp">
-          <img class="p-rireve__appeal__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_2.webp' ?>" alt="">
+          <img class="p-rireve__appeal__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_2.webp' ); ?>" alt="">
         </div>
         <p class="p-rireve__appeal__text">リレーヴは、ZEH（ゼロエネルギー住宅）基準をさらに超える高性能住宅。 リレーヴは、夏は涼しく、冬は暖かい理想の住まいを実現する次世代型省エネ住宅です。高気密・高断熱設計により、平家であればエアコン一台でも家じゅう快適に過ごすことが可能です。省エネルギー性能が高く、低コストで快適な生活を実現します。
         </p>
       </div>
       <div class="p-rireve__appeal__media u-none__pc--tab u-none__mobile--sp">
-        <img class="p-rireve__appeal__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_2.webp' ?>" alt="">
+        <img class="p-rireve__appeal__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_2.webp' ); ?>" alt="">
       </div>
     </div>
     <div class="p-rireve__appeal__row p-rireve__appeal__row--reverse">
@@ -80,27 +85,27 @@ get_header();
         <p class="p-rireve__appeal__title">夏涼しく冬暖かい、<br>
           省エネ住宅のトップブランド</p>
         <div class="p-rireve__appeal__media p-rireve__appeal__media--award u-none__pc--sp">
-          <img class="p-rireve__appeal__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_3.webp' ?>" alt="">
+          <img class="p-rireve__appeal__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_3.webp' ); ?>" alt="">
         </div>
         <p class="p-rireve__appeal__text"> 豊後夢工房といえば、夏涼しく冬暖かい、快適な住み心地を可能にする次世代省エネ住宅リレーヴ。この高い性能が評価され、日本の優れた省エネルギー住宅に贈られる「ハウス・オブ・ザ・イヤー・イン・エナジー」に選ばれました。
         </p>
       </div>
       <div class="p-rireve__appeal__media p-rireve__appeal__media--award u-none__mobile--sp">
-        <img class="p-rireve__appeal__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_3.webp' ?>" alt="">
+        <img class="p-rireve__appeal__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_3.webp' ); ?>" alt="">
       </div>
     </div>
   </div>
 
-  <?php get_template_part('template-parts/hasThumbSlider-loop'); ?>
+  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
 
   <div>
     <div class="p-rireve__feature">
       <div class="p-rireve__feature__badge">
-        <img class="p-rireve__feature__badgeImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_4.webp' ?>" alt="">
+        <img class="p-rireve__feature__badgeImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_4.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__feature__label">10年以上の実績を誇る</p>
       <div class="p-rireve__feature__plate">
-        <img class="p-rireve__feature__plateImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_6.webp' ?>" alt="">
+        <img class="p-rireve__feature__plateImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_6.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__feature__headline">
         <p class="p-rireve__feature__lead">夏は涼しく、冬は暖かい。<br class="u-none__pc--sp">四季を通して快適で省エネを実現。</p>
@@ -114,18 +119,18 @@ get_header();
             「ダブル断熱」。
           </p>
           <div class="p-rireve__feature__media--inline u-none__pc--sp">
-            <img class="p-rireve__feature__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_7.webp' ?>" alt="">
+            <img class="p-rireve__feature__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_7.webp' ); ?>" alt="">
           </div>
           <p class="p-rireve__feature__copyText">住宅の断熱は「外断熱」と「内断熱」に分けられますが、そのどちらにも一長一短があります。<br>
             「リレーヴ」では、その両方の良い部分を活かし、外側と内側から断熱する文字通りの「ダブル断熱」です。夏涼しく冬暖かい居住空間をつくる圧倒的な快適性能を発揮し、冷暖房費の削減も可能にします。</p>
         </div>
         <div class="p-rireve__feature__media u-none__mobile--sp">
-          <img class="p-rireve__feature__img" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_7.webp' ?>" alt="">
+          <img class="p-rireve__feature__img" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_7.webp' ); ?>" alt="">
         </div>
       </div>
 
       <div class="p-rireve__feature__diagram">
-        <img class="p-rireve__feature__diagramImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_8.webp' ?>" alt="">
+        <img class="p-rireve__feature__diagramImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_8.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__feature__caption">
         ダブル断熱のイメージ</p>
@@ -134,11 +139,11 @@ get_header();
 
   <div class="p-rireve__feature p-rireve__feature--offset">
     <div class="p-rireve__feature__badge">
-      <img class="p-rireve__feature__badgeImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_5.webp' ?>" alt="">
+      <img class="p-rireve__feature__badgeImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_5.webp' ); ?>" alt="">
     </div>
     <p class="p-rireve__feature__label">10年以上の実績を誇る</p>
     <div class="p-rireve__feature__plate">
-      <img class="p-rireve__feature__plateImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_6.webp' ?>" alt="">
+      <img class="p-rireve__feature__plateImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_6.webp' ); ?>" alt="">
     </div>
     <div class="p-rireve__feature__headline">
       <p class="p-rireve__feature__lead">断熱性能最高レベルの窓が標準装備</p>
@@ -146,7 +151,7 @@ get_header();
     </div>
     <div class="p-rireve__feature__split">
       <div class="p-rireve__feature__splitMedia">
-        <img class="p-rireve__feature__splitImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_9.webp' ?>" alt="">
+        <img class="p-rireve__feature__splitImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_9.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__feature__splitCopy">
         <div class="p-rireve__effect__titleBox">
@@ -166,7 +171,7 @@ get_header();
                 冷房効果を高めます。</div>
             </div>
             <div class="p-rireve__effect__img">
-              <img class="p-rireve__effect__photo" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_10.webp' ?>" alt="">
+              <img class="p-rireve__effect__photo" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_10.webp' ); ?>" alt="">
             </div>
           </div>
           <div class="p-rireve__effect__item">
@@ -176,7 +181,7 @@ get_header();
                 逃しません。<br class="u-none__pc--sp"><br class="u-none__pc--sp"></div>
             </div>
             <div class="p-rireve__effect__img">
-              <img class="p-rireve__effect__photo" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_11.webp' ?>" alt="">
+              <img class="p-rireve__effect__photo" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_11.webp' ); ?>" alt="">
             </div>
           </div>
         </div>
@@ -194,10 +199,10 @@ get_header();
         <p class="p-rireve__effect__desc">トリプルガラス樹脂サッシは断熱性能が高いため、冬の寒い日にも室内の表面湿度は低くなりにくく結露を抑制します。結露はお掃除が大変なだけではなく、カビやダニの発生源ともなってしまいます。</p>
         <div class="p-rireve__effect__grid p-rireve__effect__grid--stack">
           <div class="p-rireve__effect__item">
-            <img class="p-rireve__effect__mediaImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_12.webp' ?>" alt="">
+            <img class="p-rireve__effect__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_12.webp' ); ?>" alt="">
           </div>
           <div class="p-rireve__effect__item">
-            <img class="p-rireve__effect__mediaImg p-rireve__effect__mediaImg--spaced" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_13.webp' ?>" alt="">
+            <img class="p-rireve__effect__mediaImg p-rireve__effect__mediaImg--spaced" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_13.webp' ); ?>" alt="">
           </div>
         </div>
       </div>
@@ -211,16 +216,16 @@ get_header();
     <!-- スタンダード1 -->
     <div class="p-rireve__specification__block">
       <div class="p-rireve__specification__icon--right">
-        <img class="p-rireve__specification__iconImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
+        <img class="p-rireve__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__label--left">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_14.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_14.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__heading">美しさが暮らしを彩る、<br class="">洗練されたデザイン住宅</p>
 
       <div class="p-rireve__specification__row">
         <div class="p-rireve__specification__media--left">
-          <img class="p-rireve__specification__mediaImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_16.webp' ?>" alt="">
+          <img class="p-rireve__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_16.webp' ); ?>" alt="">
         </div>
         <div class="p-rireve__specification__copy--right">
           <p class="p-rireve__specification__copyTitle">上質なデザインが魅せる、<br>
@@ -231,7 +236,7 @@ get_header();
 
       <div class="p-rireve__specification__row p-rireve__specification__row--ptLoose">
         <div class="p-rireve__specification__media--right u-none__pc--sp">
-          <img class="p-rireve__specification__mediaImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ?>" alt="">
+          <img class="p-rireve__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ); ?>" alt="">
         </div>
         <div class="p-rireve__specification__copy--left">
           <p class="p-rireve__specification__copyTitle">美しく、そして機能的。<br>
@@ -239,7 +244,7 @@ get_header();
           <p class="p-rireve__specification__copyText">高品質な素材と巧みな設計が生み出し、見た目の美しさだけでなく、住み心地の良さも追求しています。日々の暮らしを豊かにする、理想の住まいを提供します。</p>
         </div>
         <div class="p-rireve__specification__media--right u-none__mobile--sp">
-          <img class="p-rireve__specification__mediaImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ?>" alt="">
+          <img class="p-rireve__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ); ?>" alt="">
         </div>
       </div>
     </div>
@@ -247,17 +252,17 @@ get_header();
     <!-- スタンダード2 -->
     <div class="p-rireve__specification__block">
       <div class="p-rireve__specification__icon--left">
-        <img class="p-rireve__specification__iconImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
+        <img class="p-rireve__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__label--right">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_15.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_15.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__heading">お家の中がすっきり快適<br>
         追加費用なしの大容量収納</p>
 
       <div class="p-rireve__specification__row">
         <div class="p-rireve__specification__media--left">
-          <img class="p-rireve__specification__mediaImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_18.webp' ?>" alt="">
+          <img class="p-rireve__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_18.webp' ); ?>" alt="">
         </div>
         <div class="p-rireve__specification__copy--right">
           <p class="p-rireve__specification__copyTitle">快適な暮らしの秘密は<br>
@@ -269,22 +274,22 @@ get_header();
 
       <div class="p-rireve__specification__grid--wide">
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_19.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_19.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">大容量<br>
             ウォークインクローゼット</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_20.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_20.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">大容量<br>
             シューズクローク</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_21.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_21.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">すっきり<br>
             キッチン背面収納</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_22.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_22.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">あると便利な<br>
             ランドリー収納</p>
         </div>
@@ -294,16 +299,16 @@ get_header();
     <!-- スタンダード3 -->
     <div class="p-rireve__specification__block">
       <div class="p-rireve__specification__icon--right">
-        <img class="p-rireve__specification__iconImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
+        <img class="p-rireve__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__label--left">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_16.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_16.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__heading">毎日が楽しくなる！<br class="u-none__pc--sp">家事1/2設計</p>
 
       <div class="p-rireve__specification__row">
         <div class="p-rireve__specification__media--left">
-          <img class="p-rireve__specification__mediaImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_23.webp' ?>" alt="">
+          <img class="p-rireve__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_23.webp' ); ?>" alt="">
         </div>
         <div class="p-rireve__specification__copy--right">
           <p class="p-rireve__specification__copyTitle">ウォークスルー洗面クローゼット<br>
@@ -313,13 +318,13 @@ get_header();
       </div>
       <div class="p-rireve__specification__grid--mid">
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_24.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_24.webp' ); ?>" alt="">
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_25.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_25.webp' ); ?>" alt="">
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_26.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_26.webp' ); ?>" alt="">
         </div>
       </div>
       <div class="p-rireve__specification__copyCenter">
@@ -330,12 +335,12 @@ get_header();
 
       <div class="p-rireve__specification__grid--wide">
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_27.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_27.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">
             食器洗い乾燥機・IH調理器</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_28.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_28.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText u-none__mobile--sp"> 暮らしの水をまるごとキレイに<br>
             家丸ごと浄水ANOA(アノア)
           </p>
@@ -344,7 +349,7 @@ get_header();
           </p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_29.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_29.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">お手入れ楽々自動洗浄機能付き<br class="u-none__mobile--sp">
             タンクレスシャワートイレ</p>
         </div>
@@ -354,16 +359,16 @@ get_header();
     <!-- スタンダード4 -->
     <div class="p-rireve__specification__block">
       <div class="p-rireve__specification__icon--left">
-        <img class="p-rireve__specification__iconImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
+        <img class="p-rireve__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__label--right">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_17.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_17.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__heading">節約×快適！<br>
         先進の設備で、災害時も安心。</p>
 
       <div class="p-rireve__specification__mediaCenter">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_31.gif' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_31.gif' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__copyCenter">
         <p class="p-rireve__specification__copyCenterTitle">経済的かつ快適な住まいを実現する先進の設備</p>
@@ -371,37 +376,37 @@ get_header();
       </div>
       <div class="p-rireve__specification__grid--narrow">
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_32.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_32.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">初期費用0円太陽光発電</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_33.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_33.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">オール電化・<br>
             ソーラーエコキュート</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_34.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_34.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">テスラ大容量蓄電池</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_36.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_36.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">EV車充電アダプター</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/qwan.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/qwan.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">外張り断熱キューワンボード</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_38.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_38.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">24時間換気システム<br>
             床下熱交換式+基礎断熱工法</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/rireve_dannetu.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/rireve_dannetu.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">外断熱+内断熱のW断熱</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/rireve_sassi.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/rireve_sassi.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">トリプル断熱樹脂サッシ</p>
         </div>
       </div>
@@ -410,16 +415,16 @@ get_header();
     <!-- スタンダード5 -->
     <div class="p-rireve__specification__block">
       <div class="p-rireve__specification__icon--right">
-        <img class="p-rireve__specification__iconImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ?>" alt="">
+        <img class="p-rireve__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__label--left">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_18.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_18.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__heading">未来を見据えた、家族を守る<br>
         安心と安全の家づくり</p>
 
       <div class="p-rireve__specification__mediaCenter">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_41.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_41.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__copyCenter">
         <p class="p-rireve__specification__copyCenterTitle">W地震対策と強靭な基礎</p>
@@ -428,20 +433,20 @@ get_header();
 
       <div class="p-rireve__specification__grid--wide">
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_42.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_42.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">ベタ基礎工法</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img class="p-rireve__specification__gridImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_43.webp' ?>" alt="">
+          <img class="p-rireve__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_43.webp' ); ?>" alt="">
           <p class="p-rireve__specification__gridText">防湿型防蟻シート・ターミダンシート</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_44.webp' ?>" alt="" class="p-rireve__specification__img--full">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_44.webp' ); ?>" alt="" class="p-rireve__specification__img--full">
           <p class="p-rireve__specification__gridText">壁倍率3倍の耐震構造パネルを<br>
             使った「面構造」</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_45.webp' ?>" alt="" class="p-rireve__specification__img--full">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_45.webp' ); ?>" alt="" class="p-rireve__specification__img--full">
           <p class="p-rireve__specification__gridText">制震装置MER　SYSTEM</p>
         </div>
       </div>
@@ -450,16 +455,16 @@ get_header();
     <!-- スタンダード6 -->
     <div class="p-rireve__specification__block">
       <div class="p-rireve__specification__icon--left">
-        <img class="p-rireve__specification__iconImg" src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ?>" alt="">
+        <img class="p-rireve__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__label--right">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_19.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_19.webp' ); ?>" alt="">
       </div>
       <p class="p-rireve__heading">家族の安全と健康を第一に考えた、<br class="u-none__mobile--sp">
         先進の住宅設計。</p>
 
       <div class="p-rireve__specification__mediaCenter">
-        <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/family.webp' ?>" alt="">
+        <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/family.webp' ); ?>" alt="">
       </div>
       <div class="p-rireve__specification__copyCenter">
         <p class="p-rireve__specification__copyCenterTitle">健康を守る、最新の高性能換気システム</p>
@@ -467,19 +472,19 @@ get_header();
       </div>
       <div class="p-rireve__specification__grid--wide p-rireve__specification__grid--wideFlush">
         <div class="p-rireve__specification__gridItem">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_46_2.webp' ?>" alt="" class="p-rireve__specification__img--full">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_46_2.webp' ); ?>" alt="" class="p-rireve__specification__img--full">
           <p class="p-rireve__specification__gridText">熱回収率93％24時間eco-i換気システム</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_48.webp' ?>" alt="" class="p-rireve__specification__img--full">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_48.webp' ); ?>" alt="" class="p-rireve__specification__img--full">
           <p class="p-rireve__specification__gridText">床排気システム＆除菌フィルター</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_49.webp' ?>" alt="" class="p-rireve__specification__img--full">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_49.webp' ); ?>" alt="" class="p-rireve__specification__img--full">
           <p class="p-rireve__specification__gridText">給気プラズマイオン発生装置</p>
         </div>
         <div class="p-rireve__specification__gridItem">
-          <img src="<?php echo get_stylesheet_directory_uri() . '/dist/img/heig/heig_50.webp' ?>" alt="" class="p-rireve__specification__img--full">
+          <img src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_50.webp' ); ?>" alt="" class="p-rireve__specification__img--full">
           <p class="p-rireve__specification__gridText">ウイルス対策特殊フィルター<br>
             アレルノンフィルター</p>
         </div>
@@ -500,41 +505,41 @@ get_header();
       </div>
     </div>
     <div class="c-form__wrap">
-      <?php echo do_shortcode('[mwform_formkey key="1820"]'); ?>
+      <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
 
   <?php
-  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-  $args = array(
-    'post_type' => 'works',
+  $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+  $args        = array(
+    'post_type'      => 'works',
     'posts_per_page' => 3,
-    'order' => 'DESC',
-    'paged' => $paged,
-    'tax_query' => array(
+    'order'          => 'DESC',
+    'paged'          => $local_paged,
+    'tax_query'      => array(
       array(
         'taxonomy' => 'works-type',
-        'terms' => array('rireve'),
-        'field' => 'slug'
+        'terms'    => array( 'rireve' ),
+        'field'    => 'slug',
       ),
     ),
   );
-  $worksLoop = new WP_Query($args);
+  $works_loop  = new WP_Query( $args );
   ?>
 
-  <?php if ($worksLoop->have_posts()) : ?>
+  <?php if ( $works_loop->have_posts() ) : ?>
     <section class="l-content">
       <p class="c-title--large">RIREVEの施工事例をみる</p>
       <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
       <ul class="c-cardList u-mb100">
-        <?php while ($worksLoop->have_posts()) :
-          $worksLoop->the_post(); ?>
-          <?php get_template_part('template-parts/works-loop'); ?>
+        <?php while ( $works_loop->have_posts() ) :
+          $works_loop->the_post(); ?>
+          <?php get_template_part( 'template-parts/works-loop' ); ?>
         <?php endwhile; ?>
       </ul>
 
       <div class="u-center u-mb150">
-        <a class="c-button--outline" href="<?php echo esc_url(home_url('/')); ?>works-type/rireve">一覧を見る</a>
+        <a class="c-button--outline" href="<?php echo esc_url( home_url( '/' ) ); ?>works-type/rireve">一覧を見る</a>
       </div>
     </section>
     <?php
@@ -557,22 +562,22 @@ get_header();
 
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url(home_url('heig')); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group01.webp"></figure>
+          <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url(home_url('rireve')); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group02.webp"></figure>
+          <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url(home_url('irohaie')); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url(get_template_directory_uri()); ?>/dist/img/top/Group03.webp"></figure>
+          <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
+            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>
