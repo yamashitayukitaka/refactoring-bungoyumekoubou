@@ -27,7 +27,7 @@ add_filter( 'get_the_archive_title', 'wazeka_remove_archive_prefix' );
  * @return string HTML タグのない見出し.
  */
 function wazeka_remove_archive_span_tag( $title ) {
-  return strip_tags( $title );
+  return wp_strip_all_tags( $title );
 }
 add_filter( 'get_the_archive_title', 'wazeka_remove_archive_span_tag' );
 
