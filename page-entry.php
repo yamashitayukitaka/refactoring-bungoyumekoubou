@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <section class = "p-top__contact l-content u-mb150">
-  <h3 class = "c-title--section">ENTRY</h3>
+  <h2 class = "c-title--section">ENTRY</h2>
   <p class = "c-title--sectionSub u-mb100">
     エントリーフォーム
   </p>

@@ -112,7 +112,7 @@ get_header();
         </div>
       </div>
       <div class="p-quality__feature__overviewMedia">
-        <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_1.png' ) ); ?>" class="img_shadow" alt="">
+        <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_1.png' ) ); ?>" class="u-imgShadow" alt="">
       </div>
     </div>
     <div class="p-quality__zeh__standard u-mb50 l-content--inner">
@@ -223,12 +223,12 @@ get_header();
         </div>
       </div>
       <div class="p-quality__feature__overviewMedia">
-        <img src="<?php echo esc_url( content_url( 'uploads/2025/06/画像3.jpg' ) ); ?>" class="img_shadow" alt="">
+        <img src="<?php echo esc_url( content_url( 'uploads/2025/06/画像3.jpg' ) ); ?>" class="u-imgShadow" alt="">
       </div>
     </div>
     <div class="p-quality__seismic__grade mt-6 u-mb100 l-content--inner">
       <div class="p-quality__seismic__gradeMedia">
-        <img class="p-quality__seismic__gradeImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_8.webp' ); ?>" alt="">
+        <img class="p-quality__seismic__gradeImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_8.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__seismic__gradePanel">
         <div class="p-quality__seismic__gradeRow">
@@ -256,7 +256,7 @@ get_header();
     </p>
     <div class="p-quality__seismic__woodframe p-quality__inner--wide">
       <div class="p-quality__seismic__woodframeMedia">
-        <img class="p-quality__seismic__woodframeImg img_shadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_9.png' ) ); ?>" alt="">
+        <img class="p-quality__seismic__woodframeImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_9.png' ) ); ?>" alt="">
       </div>
       <p class="p-quality__seismic__woodframeText">
         一般的な木造の家は、柱と梁（はり）で支えられています。この方法では、木材を組み合わせるために大きな穴を開けたり、細く削ったりするので、木材の強度が弱くなることがあります。<br><br>
@@ -270,13 +270,13 @@ get_header();
     <div class="p-quality__seismic__mersystem p-quality__inner--wide">
       <div class="p-quality__seismic__mersystemIntro">
         <div class="p-quality__seismic__mersystemMedia u-none__pc--tab">
-          <img class="p-quality__seismic__mersystemImg img_shadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="">
+          <img class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="">
         </div>
         <p class="p-quality__seismic__mersystemText">
           豊後夢工房で採用している「制震装置 MER SYSTEM」は、地震の揺れや加速度を大幅に抑えるシステムです。地震が起きた直後から素早くエネルギーを吸収し、建物に与える揺れを最大48％減少させます。これにより、あらゆる地震の揺れに効果を発揮し、建物への被害を大幅に軽減します。最近の大地震でも、MER SYSTEMを採用した住宅はほとんど被害がなく、多くのお客様から感謝の声をいただいています。
         </p>
         <div class="p-quality__seismic__mersystemMedia u-none__mobile--tab">
-          <img class="p-quality__seismic__mersystemImg img_shadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="">
+          <img class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="">
         </div>
       </div>
       <p class="p-quality__seismic__mersystemLink u-mb40">
@@ -362,7 +362,7 @@ get_header();
         </div>
       </div>
       <div class="p-quality__feature__overviewMedia">
-        <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_7-1.png' ) ); ?>" class="img_shadow" alt="">
+        <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_7-1.png' ) ); ?>" class="u-imgShadow" alt="">
       </div>
     </div>
     <p class="p-quality__sectionHeading mt-6">
@@ -435,7 +435,7 @@ get_header();
         </p>
       </div>
       <div class="p-quality__feature__overviewMedia">
-        <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_18.png' ) ); ?>" class="img_shadow" alt="">
+        <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_18.png' ) ); ?>" class="u-imgShadow" alt="">
       </div>
     </div>
     <p class="p-quality__sectionHeading mt-8">
@@ -443,7 +443,7 @@ get_header();
     </p>
     <div class="p-quality__airtight__panel p-quality__inner--wide">
       <div class="p-quality__airtight__panelMedia">
-        <img class="p-quality__airtight__panelImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_29.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__panelImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_29.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__airtight__panelBody">
         <p class="p-quality__airtight__panelLead">C値の測定は建具、断熱施工後、気密工事終了後のタイミングで専門の「気密測定試験機」を使用し、行います。</p>
@@ -453,13 +453,13 @@ get_header();
     </div>
     <div class="p-quality__airtight__gallery  p-quality__inner--wide p-quality__airtight__gallery--bordered">
       <div class="p-quality__airtight__galleryItem">
-        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_32.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__galleryImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_32.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__airtight__galleryItem">
-        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_30.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__galleryImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_30.webp' ); ?>" alt="">
       </div>
       <div class="p-quality__airtight__galleryItem">
-        <img class="p-quality__airtight__galleryImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_31.webp' ); ?>" alt="">
+        <img class="p-quality__airtight__galleryImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_31.webp' ); ?>" alt="">
       </div>
     </div>
   </section>
@@ -482,7 +482,7 @@ get_header();
           </p>
         </div>
         <div class="p-quality__feature__overviewMedia">
-          <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_21.png' ) ); ?>" class="img_shadow" alt="">
+          <img src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_21.png' ) ); ?>" class="u-imgShadow" alt="">
         </div>
       </div>
     </div>
@@ -515,7 +515,7 @@ get_header();
     <div class="l-content--inner">
       <div class="p-quality__ventilation__airflow p-quality__ventilation__airflow--spacedTop">
         <div class="p-quality__ventilation__airflowMedia">
-          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_24.webp' ); ?>" alt="品質のこだわり">
+          <img class="p-quality__ventilation__airflowImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_24.webp' ); ?>" alt="品質のこだわり">
         </div>
         <div class="p-quality__ventilation__airflowBody">
           <p class="p-quality__ventilation__airflowTitle">熱回収率93％24時間換気システム</p>
@@ -524,14 +524,14 @@ get_header();
       </div>
       <div class="p-quality__ventilation__airflow p-quality__ventilation__airflow--stacked">
         <div class="p-quality__ventilation__airflowMedia u-none__pc--tab">
-          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
+          <img class="p-quality__ventilation__airflowImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
         </div>
         <div class="p-quality__ventilation__airflowBody">
           <p class="p-quality__ventilation__airflowTitle">ウイルス対策特殊フィルター</p>
           <p class="p-quality__ventilation__airflowText">家に空気を取り込む給気口に特殊フィルターで覆い、外からの汚染物質をしっかりガードします。花粉を99.8％PM2.5物質を98％カットしてきれいな空気だけを室内へ取り込みます。</p>
         </div>
         <div class="p-quality__ventilation__airflowMedia u-none__mobile--tab">
-          <img class="p-quality__ventilation__airflowImg img_shadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
+          <img class="p-quality__ventilation__airflowImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="品質のこだわり">
         </div>
       </div>
     </div>

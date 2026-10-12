@@ -18,7 +18,7 @@ get_header();
         <img class="p-rireve__mv__logoImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/rireve_title_black.webp' ); ?>" alt="">
       </div>
       <div>
-        <h1 class="p-rireve__mv__title">リレーヴ自由設計</h1>
+        <h2 class="p-rireve__mv__title">リレーヴ自由設計</h2>
       </div>
     </div>
     <p class="p-rireve__mv__lead">夏涼しく冬暖かい、快適な住み心地を<br>

@@ -2,9 +2,22 @@
   "parser": {
     ".php$": "@markuplint/php-parser"
   },
+  "overrideMode": "merge",
   "rules": {
     "heading-levels": true,
     "id-duplication": true,
     "class-naming": "/^[a-z][a-zA-Z0-9]*(-[a-zA-Z0-9]+)*(__[a-zA-Z0-9]+)*(--[a-zA-Z0-9]+)*$/"
+  },
+  "overrides": {
+    "template-parts/**/*.php": {
+      "rules": {
+        "heading-levels": false
+      }
+    },
+    "footer.php": {
+      "rules": {
+        "heading-levels": false
+      }
+    }
   }
 }

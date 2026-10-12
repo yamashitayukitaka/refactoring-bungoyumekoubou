@@ -28,6 +28,19 @@ get_header();
     </div>
   </div>
 
+  <section class="p-irohaie__type">
+    <h2 class="p-irohaie__type__title">
+      <span class="p-irohaie__type__brand">いろは.いえ</span> ってどんな家？
+    </h2>
+    <div class="p-irohaie__type__scroll"></div>
+    <div class="p-irohaie__type__lead">
+      <p class="p-irohaie__type__leadText">住まいの基本、<br class="u-none__pc--sp">すべて入ったいえのこと。</p>
+      <figure class="p-irohaie__type__wave u-none__mobile--sp">
+        <img class="p-irohaie__type__waveImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/wave.webp' ); ?>" alt="">
+      </figure>
+    </div>
+  </section>
+
   <section class="p-irohaie__about">
     <div class="p-irohaie__about__title">
       <figure class="p-irohaie__about__logo">
@@ -57,19 +70,6 @@ get_header();
       </p>
       <figure class="p-irohaie__about__media u-none__mobile--sp">
         <img class="p-irohaie__about__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/iroha_about_content.webp' ); ?>" alt="">
-      </figure>
-    </div>
-  </section>
-
-  <section class="p-irohaie__type">
-    <h1 class="p-irohaie__type__title">
-      <span class="p-irohaie__type__brand">いろは.いえ</span> ってどんな家？
-    </h1>
-    <div class="p-irohaie__type__scroll"></div>
-    <div class="p-irohaie__type__lead">
-      <h2 class="p-irohaie__type__leadText">住まいの基本、<br class="u-none__pc--sp">すべて入ったいえのこと。</h2>
-      <figure class="p-irohaie__type__wave u-none__mobile--sp">
-        <img class="p-irohaie__type__waveImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/wave.webp' ); ?>" alt="">
       </figure>
     </div>
   </section>
@@ -123,14 +123,14 @@ get_header();
     <p class="c-title--orangeLine">
       ルールのなかで自由に設計できる！</p>
     <div class="p-irohaie__point__step u-mb50">
-      <h2 class="p-irohaie__point__stepTitle">STEP01</h2>
+      <h4 class="p-irohaie__point__stepTitle">STEP01</h4>
       <p class="p-irohaie__point__stepText">まずは基本となる住宅のタイプを選びましょう。</p>
       <figure>
         <img class="p-irohaie__point__stepImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_one_step_one.webp' ); ?>" alt="">
       </figure>
     </div>
     <div class="p-irohaie__point__step">
-      <h2 class="p-irohaie__point__stepTitle">STEP02</h2>
+      <h4 class="p-irohaie__point__stepTitle">STEP02</h4>
       <p class="p-irohaie__point__stepText u-mb40">
         ライフスタイルに合わせてデザイン・好みの性能・仕様が選べます。<br>
         完全自由設計だからアレンジも可能です。
@@ -220,44 +220,44 @@ get_header();
         れるので、お部屋の快適性を維持しながら24時間計画換気を実現します。<br>
       </p>
       <div class="p-irohaie__highlights">
-        <h2 class="p-irohaie__highlights__title">
+        <h3 class="p-irohaie__highlights__title">
           <span class="p-irohaie__highlights__num">4</span>つのポイント
-        </h2>
+        </h3>
         <div class="p-irohaie__highlights__list">
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
               <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_6.webp' ); ?>" alt="">
             </figure>
-            <h3 class="p-irohaie__highlights__label">
+            <h4 class="p-irohaie__highlights__label">
               高い断熱性と<br>
               気密性
-            </h3>
+            </h4>
           </div>
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
               <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_7.webp' ); ?>" alt="">
             </figure>
-            <h3 class="p-irohaie__highlights__label">
+            <h4 class="p-irohaie__highlights__label">
               人体に<br>
               やさしい
-            </h3>
+            </h4>
           </div>
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
               <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_8.webp' ); ?>" alt="">
             </figure>
-            <h3 class="p-irohaie__highlights__label">
+            <h4 class="p-irohaie__highlights__label">
               環境に<br>
               やさしい
-            </h3>
+            </h4>
           </div>
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
               <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_9.webp' ); ?>" alt="">
             </figure>
-            <h3 class="p-irohaie__highlights__label">
+            <h4 class="p-irohaie__highlights__label">
               高い防音性
-            </h3>
+            </h4>
           </div>
         </div>
       </div>
@@ -317,10 +317,10 @@ get_header();
               <?php endif; ?>
               <div class="p-irohaie__quality__body">
                 <?php if ( ! empty( $quality['title'] ) ) : ?>
-                  <h3 class="p-irohaie__quality__title">
+                  <h4 class="p-irohaie__quality__title">
                     <span class="p-irohaie__quality__num"><?php echo esc_html( sprintf( '%02d', $i + 1 ) . '.' ); ?></span>
                     <?php echo esc_html( $quality['title'] ); ?>
-                  </h3>
+                  </h4>
                 <?php endif; ?>
                 <?php if ( ! empty( $quality['txt'] ) ) : ?>
                   <p class="p-irohaie__quality__text"><?php echo wp_kses_post( $quality['txt'] ); ?></p>
