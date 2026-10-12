@@ -46,9 +46,9 @@ get_header();
   </section>
   <section class="l-content">
     <div class="c-title__head">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           CTALOG
-        </h3>
+        </h2>
         <div>
           <p class="c-title--orangeLine u-mb50">
             <span class = "marker">カタログ請求</span>

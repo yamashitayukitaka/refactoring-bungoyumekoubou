@@ -34,9 +34,9 @@ get_header();
         <img class="p-irohaie__about__logoImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_logo.webp' ); ?>" alt="">
       </figure>
       <div class="c-title__head">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           ABOUT
-        </h3>
+        </h2>
         <div>
           <p class="c-title--orangeLine">
             いろはいえとは？

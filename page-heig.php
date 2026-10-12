@@ -18,7 +18,7 @@ get_header();
         <img class="p-heig__mv__logoImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig.webp' ); ?>" alt="">
       </div>
       <div>
-        <h1 class="p-heig__mv__title">ヘイグ自由設計</h1>
+        <h2 class="p-heig__mv__title">ヘイグ自由設計</h2>
       </div>
     </div>
     <p class="p-heig__mv__lead">自由自在なプランで、暮らしを豊かに。</p>
