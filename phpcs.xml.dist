@@ -31,6 +31,8 @@
     <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
     <!-- 外部 CDN・WINK 等はバージョン不明のため wp_enqueue_* の $ver に null を許可する。 -->
     <exclude name="WordPress.WP.EnqueuedResourceParameters.MissingVersion"/>
+    <!-- CRLF/LF 混在は Windows 開発で起きやすいため Internal の WARNING を出さない。 -->
+    <exclude name="Internal.LineEndings.Mixed"/>
   </rule>
 
   <!-- 埋め込み PHP の改行・段（[x] 多い）もテンプレでは無効。 -->
