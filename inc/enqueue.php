@@ -113,6 +113,40 @@ wp_enqueue_script(
 
   wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
 
+wp_enqueue_style(
+    'wazeka-google-fonts-noto',
+    'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap',
+    array(),
+    null
+);
+wp_enqueue_style(
+    'wazeka-google-fonts-inter',
+    'https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap',
+    array(),
+    null
+);
+wp_enqueue_style(
+    'wazeka-google-fonts-noto-serif',
+    'https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap',
+    array(),
+    null
+);
+wp_enqueue_style(
+    'wazeka-google-fonts-roboto',
+    'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap',
+    array(),
+    null
+);
+
+  if ( is_front_page() || is_post_type_archive( 'xo_event' ) ) {
+    wp_enqueue_style(
+        'wazeka-wink-event-client',
+        'https://bungoyumekoubou.winksys.jp/event/css/client_top.css',
+        array(),
+        null
+    );
+  }
+
   if (
       wp_script_is( 'wazeka-thumb-slider', 'enqueued' )
       || wp_script_is( 'wazeka-staff-slider', 'enqueued' )

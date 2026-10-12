@@ -124,7 +124,6 @@ get_header();
       </p>
     </div>
     <!-- WINKMARK LP INDEX 1 start -->
-<link rel="stylesheet" href="https://bungoyumekoubou.winksys.jp/event/css/client_top.css" type="text/css">
 <div class="event-box">
     <div class="lst-event" id="wink_event_list">
     </div>
