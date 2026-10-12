@@ -27,6 +27,8 @@
     <exclude name="WordPress.DB.SlowDBQuery.slow_db_query_tax_query"/>
     <!-- 比較は可読性優先（変数を左）のため Yoda 条件は要求しない。 -->
     <exclude name="WordPress.PHP.YodaConditions"/>
+    <!-- インラインコメントの末尾句点は日本語コメントと相性が悪いため要求しない。 -->
+    <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar"/>
   </rule>
 
   <!-- 埋め込み PHP の改行・段（[x] 多い）もテンプレでは無効。 -->
