@@ -88,21 +88,21 @@ get_header();
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>"></figure>
+            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>"></figure>
+            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>"></figure>
+            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>"></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>
@@ -142,7 +142,7 @@ get_header();
           <br>ぜひ一度ご来場いただき体験してみてください。
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap--house"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>"></figure>
+      <figure class="p-top__introduction__imgWrap--house"><img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>"></figure>
     </section>
   </a>
 
@@ -161,7 +161,7 @@ get_header();
           <br>無料資料請求はこちらから
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>"></figure>
+      <figure class="p-top__introduction__imgWrap"><img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>"></figure>
     </section>
   </a>
 
@@ -214,7 +214,7 @@ get_header();
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
-              <img src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
+              <img loading="lazy" src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
               <?php endif; ?>
             </a>
           </li>
@@ -253,7 +253,7 @@ get_header();
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
-              <img src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
+              <img loading="lazy" src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
               <?php endif; ?>
             </a>
           </li>

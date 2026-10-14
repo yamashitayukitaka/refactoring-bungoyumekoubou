@@ -152,7 +152,7 @@ get_header();
               <?php endif; ?>
             </div>
             <div class="p-flow__steps__media">
-              <img class="p-flow__steps__img" src="<?php echo esc_url( $step['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-flow__steps__img" src="<?php echo esc_url( $step['img'] ); ?>" alt="">
             </div>
           </div>
         </li>

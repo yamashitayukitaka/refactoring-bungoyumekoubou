@@ -41,7 +41,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>">
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">中庭と深い軒の織りなす<br>
@@ -51,10 +51,10 @@ get_header();
           スタイリッシュなデザイン</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos-studio.png' ); ?>" alt="">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos-studio.png' ); ?>" alt="">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos.png' ); ?>" alt="">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos.png' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__text u-mb100">
       建物の中心に「中庭」を配置し、<br>
@@ -85,7 +85,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>">
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">大人カワイイ<br>
@@ -98,10 +98,10 @@ get_header();
           ヨーロピアンな家</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly-studio.png' ); ?>" alt="">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly-studio.png' ); ?>" alt="">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly.png' ); ?>" alt="">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly.png' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__text">
       ヨーロッパの街並みに溶け込むようなデザイン。<br>
@@ -149,7 +149,7 @@ get_header();
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+                  <li class="c-hasThumbSlider__list__item"><img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -158,7 +158,7 @@ get_header();
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+                    <img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -180,7 +180,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>">
     </figure>
 
     <div class="p-modelHouse__overview__heading">
@@ -195,10 +195,10 @@ get_header();
     </div>
 
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha-studio.png' ); ?>" alt="">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha-studio.png' ); ?>" alt="">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha.png' ); ?>" alt="">
+      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha.png' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__text">
       家づくりで不安に思う方が一番多いのがお金のこと。<br>
@@ -242,7 +242,7 @@ get_header();
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
+                  <li class="c-hasThumbSlider__list__item"><img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__list__img"></li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -251,7 +251,7 @@ get_header();
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
+                    <img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class="c-hasThumbSlider__thumbnail__img">
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>

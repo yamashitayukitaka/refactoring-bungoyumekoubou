@@ -32,7 +32,7 @@ if ( $infomations ) {
           <li class = "p-property__infomation__item">
             <?php if ( ! empty( $infomation['img'] ) ) : ?>
             <figure class = "p-property__infomation__imgWrap">
-              <img src = "<?php echo esc_url( $infomation['img'] );?>" class = "p-property__infomation__img">
+              <img src = "<?php echo esc_url( $infomation['img'] );?>" class = "p-property__infomation__img" loading="lazy">
             </figure>
             <?php endif; ?>
             <?php if ( ! empty( $infomation['txt'] ) ) : ?>

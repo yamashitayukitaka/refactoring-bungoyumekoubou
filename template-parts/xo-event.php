@@ -42,7 +42,7 @@
                   </time>
 
                   <figure class = "p-xo-event__list__imgWrap">
-                    <?php the_post_thumbnail();?>
+                    <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
                   </figure>
 
                   <div class = "p-xo-event__list__txtContent">

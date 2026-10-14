@@ -114,7 +114,7 @@
       <div class="cards-container">
         <section class="card-single active" period="period1">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company1.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company1.webp' ); ?>" alt="" />
             <p>
               大手ハウスメーカーの営業だった二人を中心に創業しました。<br />
               イシンホーム住宅研究会加盟
@@ -123,77 +123,77 @@
         </section>
         <section class="card-single" period="period2">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period3">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company2.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company2.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single active" period="period4">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company3.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company3.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period5">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie2.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie2.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period6">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie3.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie3.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single active" period="period7">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie4.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie4.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period8">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie12.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie12.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period9">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie11.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie11.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period10">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie7.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie7.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period11">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie8.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie8.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period12">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie6.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie6.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period13">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company4.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company4.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period14">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie10.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie10.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period15">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="" />
           </div>
         </section>
         <section class="card-single" period="period16">
           <div class="content">
-            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="" />
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="" />
           </div>
         </section>
       </div>

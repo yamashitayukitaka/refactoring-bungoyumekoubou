@@ -31,7 +31,7 @@
           <a href = "<?php the_permalink(); ?>">
             <?php $staff_img = get_field( 'staff-img' ); ?>
             <?php if ( $staff_img ) : ?>
-            <img src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像">
+            <img src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="スタッフ画像" loading="lazy">
             <?php endif; ?>
           </a>
         </li>

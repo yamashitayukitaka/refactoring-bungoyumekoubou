@@ -9,7 +9,7 @@
 <li class = "c-cardList__item">
   <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
     <figure class = "c-cardList__imgWrap">
-      <?php the_post_thumbnail();?>
+      <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
     </figure>
     <div class = "c-cardList__txtWrap">
 

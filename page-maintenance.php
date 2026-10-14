@@ -41,7 +41,7 @@ get_header();
   <section class="p-maintenance__about" id="maintenance-description">
     <div class="p-maintenance__about__row">
       <div class="p-maintenance__about__media">
-        <img class="p-maintenance__about__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_1.png' ); ?>" alt="">
+        <img loading="lazy" class="p-maintenance__about__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_1.png' ); ?>" alt="">
       </div>
       <div class="p-maintenance__about__panel">
         <p class="p-maintenance__about__title"><span class="marker">アフターメンテナンス</span></p>
@@ -78,7 +78,7 @@ get_header();
         <?php foreach ( $inspection_items as $item ) : ?>
           <li class="p-maintenance__inspection__item">
             <div class="p-maintenance__inspection__media">
-              <img class="p-maintenance__inspection__img" src="<?php echo esc_url( $item['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-maintenance__inspection__img" src="<?php echo esc_url( $item['img'] ); ?>" alt="">
             </div>
             <div class="p-maintenance__inspection__label">
               <?php echo esc_html( $item['label'] ); ?>
@@ -87,8 +87,8 @@ get_header();
         <?php endforeach; ?>
       </ul>
       <div class="p-maintenance__inspection__detail">
-        <img class="p-maintenance__inspection__chart" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_5.webp' ); ?>" alt="">
-        <img class="p-maintenance__inspection__schedule" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_6.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-maintenance__inspection__chart" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_5.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-maintenance__inspection__schedule" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_6.webp' ); ?>" alt="">
         <p class="p-maintenance__note"><?php echo wp_kses_post( 'お客様が気になっている箇所のメンテナンス、点検以外に建材や住宅設備の不具合やお客様が気になる事が発生した場合の訪問(※3)やメーカー修理の手配等も行っています。<br />お困りの際はお気軽にご連絡ください。<br />' ); ?></p>
       </div>
     </div>
@@ -100,7 +100,7 @@ get_header();
       <p class="p-maintenance__note">
         お引渡しから20年の定期巡回訪問に合わせて、長期住宅保証や設備保証も行っております。 住まわれるご家族の皆様がいつまでも快適にお暮らしいただけるよう、 安心の保証制度でご入居後も末永くサポートします。
       </p>
-      <img class="p-maintenance__warranty__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="">
+      <img loading="lazy" class="p-maintenance__warranty__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="">
       <a class="p-maintenance__warranty__link" href="<?php echo esc_url( home_url( '/after-support/' ) ); ?>">安心保証をみる</a>
     </div>
   </section>

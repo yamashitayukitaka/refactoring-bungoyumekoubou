@@ -25,7 +25,7 @@
         <span class="p-bungoYumeStudio__list__emphasis">私たち</span>の思い<br>
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_ladder.webp' ); ?>" alt="">
+        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_ladder.webp' ); ?>" alt="">
       </div>
       <nav aria-label="PHILOSOPHY 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
@@ -50,7 +50,7 @@
         こだわり
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_sp.webp' ); ?>" alt="">
+        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_sp.webp' ); ?>" alt="">
       </div>
       <nav aria-label="SERVICE 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
@@ -75,7 +75,7 @@
         <span class="p-bungoYumeStudio__list__emphasis">サポート</span>
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_pen.webp' ); ?>" alt="">
+        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_pen.webp' ); ?>" alt="">
       </div>
       <nav aria-label="SUPPORT 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
@@ -99,7 +99,7 @@
         メンテナンス
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_drill.webp' ); ?>" alt="">
+        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_drill.webp' ); ?>" alt="">
       </div>
       <nav aria-label="maintenance 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">

@@ -40,7 +40,7 @@ get_header();
     <div class="p-recruit__message">
       <div class="p-recruit__message__photo u-none__pc--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="" loading="lazy">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -67,7 +67,7 @@ get_header();
       </div>
       <div class="p-recruit__message__photo u-none__mobile--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="" loading="lazy">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -204,7 +204,7 @@ get_header();
           <?php foreach ( $interview['users'] as $user ) : ?>
             <div class="p-recruit__interview__item u-mb100">
               <figure class="p-recruit__interview__figure">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $user['img'] ); ?>" class="p-recruit__interview__img" alt="">
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $user['img'] ); ?>" class="p-recruit__interview__img" alt="" loading="lazy">
               </figure>
               <p class="p-recruit__interview__text">
                 <?php echo esc_html( $user['text'] ); ?>
@@ -218,7 +218,7 @@ get_header();
 
   <section class="l-content--middle u-mb100 p-recruit__requirements">
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
     </figure>
     <div class="c-title__head">
       <h3 class="c-title--sectionLine">
@@ -271,7 +271,7 @@ get_header();
       </p>
     <?php endif; ?>
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="">
+      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
     </figure>
   </section>
 

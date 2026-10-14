@@ -35,10 +35,10 @@ get_header();
     <div class="p-concept__intro__inner">
       <div class="p-concept__intro__photos">
         <div class="p-concept__intro__photo">
-          <img class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="">
         </div>
         <div class="p-concept__intro__family">
-          <img class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
         </div>
       </div>
       <div class="p-concept__intro__text">
@@ -71,7 +71,7 @@ get_header();
     <ul class="p-concept__policy__list">
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="">
         </div>
         <div class="p-concept__policy__panel">
 
@@ -95,7 +95,7 @@ get_header();
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 02</h3>
@@ -118,7 +118,7 @@ get_header();
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 03</h3>
