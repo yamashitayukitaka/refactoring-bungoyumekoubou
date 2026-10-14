@@ -76,13 +76,13 @@ get_header();
 
   <section class="p-irohaie__point" id="point1">
     <figure class="p-irohaie__point__badge">
-      <img class="p-irohaie__point__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+      <img loading="lazy" class="p-irohaie__point__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
     </figure>
     <p class="c-title--orangeLine">
       価格が明瞭だから予算通りの家づくりが実現!</p>
     <div class="p-irohaie__point__row">
       <figure class="p-irohaie__point__media">
-        <img class="p-irohaie__point__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_4.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-irohaie__point__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_4.webp' ); ?>" alt="">
       </figure>
       <div class="p-irohaie__point__body">
         <p class="p-irohaie__point__text">
@@ -101,7 +101,7 @@ get_header();
       </div>
     </div>
     <figure class="p-irohaie__point__wideMedia">
-      <img class="p-irohaie__point__wideMediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_5.webp' ); ?>" alt="">
+      <img loading="lazy" class="p-irohaie__point__wideMediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_5.webp' ); ?>" alt="">
     </figure>
     <div class="p-irohaie__point__summary">
       <p class="p-irohaie__point__summaryText">
@@ -111,14 +111,14 @@ get_header();
         安心して家づくりができます！<br>
       </p>
       <figure class="p-irohaie__point__summaryMedia">
-        <img class="p-irohaie__point__summaryImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/yume_img3.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-irohaie__point__summaryImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/yume_img3.webp' ); ?>" alt="">
       </figure>
     </div>
   </section>
 
   <section class="p-irohaie__point" id="point2">
     <figure class="p-irohaie__point__badge">
-      <img class="p-irohaie__point__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
+      <img loading="lazy" class="p-irohaie__point__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
     </figure>
     <p class="c-title--orangeLine">
       ルールのなかで自由に設計できる！</p>
@@ -126,7 +126,7 @@ get_header();
       <h4 class="p-irohaie__point__stepTitle">STEP01</h4>
       <p class="p-irohaie__point__stepText">まずは基本となる住宅のタイプを選びましょう。</p>
       <figure>
-        <img class="p-irohaie__point__stepImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_one_step_one.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-irohaie__point__stepImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_one_step_one.webp' ); ?>" alt="">
       </figure>
     </div>
     <div class="p-irohaie__point__step">
@@ -138,27 +138,27 @@ get_header();
       <ul class="p-irohaie__point__optionList">
         <li class="p-irohaie__point__option">
           <a href="<?php echo esc_url( 'https://irohaie.com/buy/irosmaif/' ); ?>" target="_blank">
-            <img class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img1.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img1.webp' ); ?>" alt="">
           </a>
         </li>
         <li class="p-irohaie__point__option">
           <a href="<?php echo esc_url( 'https://irohaie.com/buy/suiji/' ); ?>" target="_blank">
-            <img class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img2.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img2.webp' ); ?>" alt="">
           </a>
         </li>
         <li class="p-irohaie__point__option">
           <a href="<?php echo esc_url( 'https://irohaie.com/buy/kaji-tan/' ); ?>" target="_blank">
-            <img class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img3.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img3.webp' ); ?>" alt="">
           </a>
         </li>
         <li class="p-irohaie__point__option">
           <a href="<?php echo esc_url( 'https://irohaie.com/buy/irocrash/' ); ?>" target="_blank">
-            <img class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img4.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img4.webp' ); ?>" alt="">
           </a>
         </li>
         <li class="p-irohaie__point__option">
           <a href="<?php echo esc_url( 'https://irohaie.com/buy/life/' ); ?>" target="_blank">
-            <img class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img5.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-irohaie__point__optionImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/service_img5.webp' ); ?>" alt="">
           </a>
         </li>
       </ul>
@@ -171,7 +171,7 @@ get_header();
 
   <section class="p-irohaie__point" id="point3">
     <figure class="p-irohaie__point__badge">
-      <img class="p-irohaie__point__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point3.webp' ); ?>" alt="">
+      <img loading="lazy" class="p-irohaie__point__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point3.webp' ); ?>" alt="">
     </figure>
     <p class="c-title--orangeLine">
       最新の設備・仕様からデザインをえらべる！</p>
@@ -179,7 +179,7 @@ get_header();
       キッチン・バスルームなどの水回り、フローリングや建具などの内装材、外壁や屋根などの外装材は最新の設備と豊富なカラーの中からお好みで選んでいただきます。
     </p>
     <figure class="p-irohaie__point__spec">
-      <img class="p-irohaie__point__specImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_point.webp' ); ?>" alt="">
+      <img loading="lazy" class="p-irohaie__point__specImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_point.webp' ); ?>" alt="">
     </figure>
     <p class="p-irohaie__point__cta">
       <a class="c-button--orange" href="#irohaie">資料請求・お問い合わせ</a>
@@ -203,10 +203,10 @@ get_header();
         地震に強い家で安心して暮らせます。<br>
       </p>
       <figure class="p-irohaie__features__media p-irohaie__features__media--seismicTop">
-        <img class="p-irohaie__features__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_1.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-irohaie__features__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_1.webp' ); ?>" alt="">
       </figure>
       <figure class="p-irohaie__features__media p-irohaie__features__media--seismic">
-        <img class="p-irohaie__features__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_2.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-irohaie__features__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/point_2.webp' ); ?>" alt="">
       </figure>
     </div>
 
@@ -226,7 +226,7 @@ get_header();
         <div class="p-irohaie__highlights__list">
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
-              <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_6.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_6.webp' ); ?>" alt="">
             </figure>
             <h4 class="p-irohaie__highlights__label">
               高い断熱性と<br>
@@ -235,7 +235,7 @@ get_header();
           </div>
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
-              <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_7.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_7.webp' ); ?>" alt="">
             </figure>
             <h4 class="p-irohaie__highlights__label">
               人体に<br>
@@ -244,7 +244,7 @@ get_header();
           </div>
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
-              <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_8.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_8.webp' ); ?>" alt="">
             </figure>
             <h4 class="p-irohaie__highlights__label">
               環境に<br>
@@ -253,7 +253,7 @@ get_header();
           </div>
           <div class="p-irohaie__highlights__item">
             <figure class="p-irohaie__highlights__media">
-              <img class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_9.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-irohaie__highlights__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_9.webp' ); ?>" alt="">
             </figure>
             <h4 class="p-irohaie__highlights__label">
               高い防音性
@@ -273,14 +273,14 @@ get_header();
       </p>
       <p class="p-irohaie__features__note">「健康空気」を室温に近づけて確実に供給し、同時に室内の汚れた空気は熱交換して屋外に排出する全熱交換型換気システムです。外気を室内の温度・湿度に近づけて取り入れるので、お部屋の快適性を維持しながら24時間計画換気を実現します。</p>
       <figure class="p-irohaie__features__media p-irohaie__features__media--vent">
-        <img class="p-irohaie__features__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_10.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-irohaie__features__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_10.webp' ); ?>" alt="">
       </figure>
       <div class="p-irohaie__features__climate">
         <div class="p-irohaie__features__climateItem">
-          <img class="p-irohaie__features__climateImg p-irohaie__features__climateImg--cold" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_26.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-irohaie__features__climateImg p-irohaie__features__climateImg--cold" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_26.webp' ); ?>" alt="">
         </div>
         <div class="p-irohaie__features__climateItem">
-          <img class="p-irohaie__features__climateImg p-irohaie__features__climateImg--hot" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_27.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-irohaie__features__climateImg p-irohaie__features__climateImg--hot" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_27.webp' ); ?>" alt="">
         </div>
       </div>
     </div>
@@ -312,7 +312,7 @@ get_header();
             <div class="p-irohaie__quality__item">
               <?php if ( ! empty( $quality['img'] ) ) : ?>
                 <div class="p-irohaie__quality__media">
-                  <img class="p-irohaie__quality__img" src="<?php echo esc_url( $quality['img'] ); ?>" alt="">
+                  <img loading="lazy" class="p-irohaie__quality__img" src="<?php echo esc_url( $quality['img'] ); ?>" alt="">
                 </div>
               <?php endif; ?>
               <div class="p-irohaie__quality__body">
@@ -400,21 +400,21 @@ get_header();
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt=""></figure>
+            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt=""></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">暮らしをもっと自由に</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt=""></figure>
+            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt=""></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">次世代のZEHハウス</p>
           </a>
         </li>
         <li class="c-lineUp__item">
           <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-            <figure class="c-lineUp__media"><img class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt=""></figure>
+            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt=""></figure>
             <span class="c-lineUp__tag">自由設計</span>
             <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
           </a>

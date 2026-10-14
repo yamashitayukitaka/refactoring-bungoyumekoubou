@@ -49,7 +49,7 @@ get_header();
           <li class = "p-blog__list__item">
             <a href = "<?php the_permalink(); ?>">
               <figure class = "p-blog__list__img">
-                <?php the_post_thumbnail();?>
+                <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
               </figure>
             
               <div>

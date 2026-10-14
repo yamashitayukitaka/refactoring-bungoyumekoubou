@@ -67,7 +67,7 @@ $terms             = get_terms(
                 <figure class="p-staff__img__wrap">
                   <?php $staff_img = get_field( 'staff-img' ); ?>
                   <?php if ( $staff_img ) : ?>
-                  <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class="p-staff__img">
+                  <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class="p-staff__img" loading="lazy">
                   <?php endif; ?>
                 </figure>
                 <p class="p-staff__name">

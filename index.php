@@ -33,7 +33,7 @@ get_header();
           the_post(); ?>
           <?php if ( has_post_thumbnail() ) : ?>
             <figure class="c-thumbnail u-mb50">
-              <?php the_post_thumbnail(); ?>
+              <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
             </figure>
           <?php endif; ?>
           <?php the_content(); ?>
@@ -46,7 +46,7 @@ get_header();
               <a href="<?php echo esc_url( get_permalink() ); ?>">
                 <?php if ( has_post_thumbnail() ) : ?>
                   <figure class="p-blog__list__img">
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
                   </figure>
                 <?php endif; ?>
                 <p><?php the_title(); ?></p>

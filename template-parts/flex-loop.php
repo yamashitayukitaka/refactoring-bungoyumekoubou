@@ -16,7 +16,7 @@ if ( get_row_layout() === 'two-column' ) : ?>
           <?php $flex_ttl = get_sub_field( 'ttl' ); ?>
           <?php $flex_txt = get_sub_field( 'txt' ); ?>
           <?php if ( $flex_img ) : ?>
-            <img src="<?php echo esc_url( $flex_img ); ?>" alt="">
+            <img src="<?php echo esc_url( $flex_img ); ?>" alt="" loading="lazy">
           <?php endif; ?>
           </figure>
           <?php if ( $flex_ttl ) : ?>
@@ -38,7 +38,7 @@ if ( get_row_layout() === 'two-column' ) : ?>
           <?php $flex_ttl = get_sub_field( 'ttl' ); ?>
           <?php $flex_txt = get_sub_field( 'txt' ); ?>
           <?php if ( $flex_img ) : ?>
-            <img src="<?php echo esc_url( $flex_img ); ?>" alt="">
+            <img src="<?php echo esc_url( $flex_img ); ?>" alt="" loading="lazy">
           <?php endif; ?>
           </figure>
           <?php if ( $flex_ttl ) : ?>
@@ -62,7 +62,7 @@ if ( get_row_layout() === 'two-column' ) : ?>
           <?php $flex_ttl = get_sub_field( 'ttl' ); ?>
           <?php $flex_txt = get_sub_field( 'txt' ); ?>
           <?php if ( $flex_img ) : ?>
-            <img src="<?php echo esc_url( $flex_img ); ?>" alt="柔軟なコンテンツ画像">
+            <img src="<?php echo esc_url( $flex_img ); ?>" alt="柔軟なコンテンツ画像" loading="lazy">
           <?php endif; ?>
           </figure>
           <?php if ( $flex_ttl ) : ?>

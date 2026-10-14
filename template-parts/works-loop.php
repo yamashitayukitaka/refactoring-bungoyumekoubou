@@ -11,7 +11,7 @@
     <?php $thumb = get_field( 'works-thumb' ); ?>
     <?php if ( ! empty( $thumb ) ) : ?>
     <figure class = "c-cardList__imgWrap">
-      <img src = "<?php echo esc_url( $thumb ); ?>" alt = "<?php echo esc_attr( get_the_title() ); ?>">
+      <img src = "<?php echo esc_url( $thumb ); ?>" alt = "<?php echo esc_attr( get_the_title() ); ?>" loading="lazy">
     </figure>
     <?php endif; ?>
     <div class = "c-cardList__txtWrap">

@@ -27,9 +27,9 @@ if ( $has_thumbsliders ) {
       </p>
     
       <ul class = "js-hasThumbSlider c-hasThumbSlider__list">
-        <?php foreach ( $has_thumbsliders as $has_thumbslider ) :?>
+        <?php foreach ( $has_thumbsliders as $slide_index => $has_thumbslider ) :?>
           <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-          <li class = "c-hasThumbSlider__list__item"><img src = "<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt = "ギャラリー画像" class = "c-hasThumbSlider__list__img"></li>
+          <li class = "c-hasThumbSlider__list__item"><img src = "<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt = "ギャラリー画像" class = "c-hasThumbSlider__list__img"<?php echo $slide_index > 0 ? ' loading="lazy"' : ''; ?>></li>
           <?php endif; ?>
         <?php endforeach;?>
       </ul>
@@ -38,7 +38,7 @@ if ( $has_thumbsliders ) {
         <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
           <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
           <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-            <img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class = "c-hasThumbSlider__thumbnail__img">
+            <img src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="ギャラリー画像" class = "c-hasThumbSlider__thumbnail__img" loading="lazy">
           </li>
           <?php endif; ?>
         <?php endforeach; ?>
