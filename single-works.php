@@ -140,20 +140,19 @@ get_header();
         
 
           <div class = "p-works__voice__nameWrap l-content u-mb50">
-            <!--<div class = "p-works__voice__nameInner">-->
               <?php if ( ! empty( $voice['address'] ) ) :?>
               <p class = "p-works__voice__bold"><?php echo esc_html( $voice['address'] );?></p>
               <?php endif; ?>
               <?php if ( ! empty( $voice['name'] ) ) :?>
               <p class = "p-works__voice__bold"><?php echo esc_html( $voice['name'] );?></p>
               <?php endif; ?>
-            <!--</div>-->
+
           </div>
 
           <div class = "p-works__voice__wrap l-content">
             <?php if ( ! empty( $voice['img'] ) ) :?>
               <figure class = "p-works__voice__imgWrap">
-                <img src = "<?php echo esc_url( $voice['img'] );?>" loading="lazy" alt="<?php echo esc_attr( ( trim( ( ! empty( $voice['name'] ) ? $voice['name'] : '' ) . ( ! empty( $voice['address'] ) ? '（' . $voice['address'] . '）' : '' ) ) ?: 'お客様の声' ) . 'のイメージ' ); ?>">
+                <img src="<?php echo esc_url( $voice['img'] ); ?>" loading="lazy" alt="<?php echo esc_attr( ( trim( ( ! empty( $voice['name'] ) ? $voice['name'] : '' ) . ( ! empty( $voice['address'] ) ? '（' . $voice['address'] . '）' : '' ) ) ? trim( ( ! empty( $voice['name'] ) ? $voice['name'] : '' ) . ( ! empty( $voice['address'] ) ? '（' . $voice['address'] . '）' : '' ) ) : 'お客様の声' ) . 'のイメージ図' ); ?>">
               </figure>
             <?php endif; ?>
             
