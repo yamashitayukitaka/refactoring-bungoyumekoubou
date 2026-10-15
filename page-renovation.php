@@ -42,7 +42,7 @@ get_header();
   <section class="p-renovation__about">
     <div class="p-renovation__about__hero">
       <div class="p-renovation__about__media p-renovation__about__media--right">
-        <img loading="lazy" class="p-renovation__about__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/about.png' ); ?>" alt="">
+        <img loading="lazy" class="p-renovation__about__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/about.png' ); ?>" alt="ゆめリフォームのイメージ">
       </div>
       <div class="p-renovation__about__panel p-renovation__about__panel--left">
         <div class="p-renovation__about__titleWrap">
@@ -66,11 +66,11 @@ get_header();
           <div class="p-renovation__compare__primary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_01.png' ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_01.png' ); ?>" alt="リフォーム事例1 アフターのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_before.png' ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_before.png' ); ?>" alt="リフォーム事例1 ビフォーのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -78,7 +78,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_02.png' ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_02.png' ); ?>" alt="リフォーム事例1 アフター（別角度）のイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after p-renovation__compare__badge--sub">AFTER</span>
               </div>
             </div>
@@ -88,11 +88,11 @@ get_header();
           <div class="p-renovation__compare__secondary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain p-renovation__compare__afterMain--offset">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_01.png' ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_01.png' ); ?>" alt="リフォーム事例2 アフターのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb p-renovation__compare__beforeThumb--offset">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_before.png' ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_before.png' ); ?>" alt="リフォーム事例2 ビフォーのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -100,7 +100,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide p-renovation__compare__afterWide--offset">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_02.png' ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_02.png' ); ?>" alt="リフォーム事例2 アフター（別角度）のイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
             </div>
@@ -145,7 +145,7 @@ get_header();
         <?php foreach ( $detail_items as $item ) : ?>
           <li class="p-renovation__details__item">
             <div class="p-renovation__details__media">
-              <img loading="lazy" class="p-renovation__details__mediaImg" src="<?php echo esc_url( $item['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-renovation__details__mediaImg" src="<?php echo esc_url( $item['img'] ); ?>" alt="<?php echo esc_attr( $item['label'] . 'のイメージ' ); ?>">
             </div>
             <div class="p-renovation__details__label">
               <?php echo esc_html( $item['label'] ); ?>
@@ -187,7 +187,7 @@ get_header();
           <div class="p-renovation__inner<?php echo ( $i < $process_last_index ) ? ' p-renovation__process__step' : ''; ?>">
             <div class="p-renovation__process__row">
               <div class="p-renovation__process__media u-none__pc--tab">
-                <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
               </div>
               <div class="p-renovation__process__panel">
                 <p class="c-title--orangeLine p-renovation__process__title"><span class="marker">
@@ -203,7 +203,7 @@ get_header();
                 <?php endif; ?>
               </div>
               <div class="p-renovation__process__media u-none__mobile--tab">
-                <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="">
+                <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img loading="lazy" class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_01.png' ); ?>" alt="">
+            <img loading="lazy" class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_01.png' ); ?>" alt="リフォームの特徴1のイメージ">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
@@ -244,7 +244,7 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img loading="lazy" class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_02.png' ); ?>" alt="">
+            <img loading="lazy" class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_02.png' ); ?>" alt="リフォームの特徴2のイメージ">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">

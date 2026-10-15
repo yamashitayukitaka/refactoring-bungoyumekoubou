@@ -48,7 +48,7 @@ get_header();
           <?php $img = get_sub_field( 'img' ); ?>
           <?php if ( $img ) : ?>
           <div class = "p-flex__one__imgWrap u-mb50">
-            <img src = "<?php echo esc_url( $img );?>">
+            <img src = "<?php echo esc_url( $img );?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" loading="lazy">
           </div>
           <?php endif; ?>
         <?php elseif ( get_row_layout() === 'ttl-column' ) : ?>

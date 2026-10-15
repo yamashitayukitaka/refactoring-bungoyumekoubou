@@ -122,7 +122,7 @@ get_header();
                   <?php $txt = get_sub_field( 'txt' ); ?>
                   <figure class="p-flex__two__imgWrap u-mb10">
                     <?php if ( $img ) : ?>
-                    <img src="<?php echo esc_url( $img ); ?>" alt="イベント">
+                    <img src="<?php echo esc_url( $img ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>">
                     <?php endif; ?>
                   </figure>
                   <?php if ( $ttl ) : ?>
@@ -144,7 +144,7 @@ get_header();
                   <?php $txt = get_sub_field( 'txt' ); ?>
                   <figure class="p-flex__two__imgWrap u-mb10">
                     <?php if ( $img ) : ?>
-                    <img src="<?php echo esc_url( $img ); ?>" alt="イベント">
+                    <img src="<?php echo esc_url( $img ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>">
                     <?php endif; ?>
                   </figure>
                   <?php if ( $ttl ) : ?>
@@ -168,7 +168,7 @@ get_header();
                   <?php $txt = get_sub_field( 'txt' ); ?>
                   <figure class="p-flex__one__imgWrap u-mb10">
                     <?php if ( $img ) : ?>
-                    <img src="<?php echo esc_url( $img ); ?>" alt="イベント">
+                    <img src="<?php echo esc_url( $img ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>">
                     <?php endif; ?>
                   </figure>
                   <?php if ( $ttl ) : ?>
