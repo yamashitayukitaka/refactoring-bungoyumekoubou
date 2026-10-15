@@ -49,10 +49,26 @@ get_header();
         </p>
       </li>
     </ul>
+    <?php
+    $top_mv_slides = array(
+      'top1.webp',
+      'top9.webp',
+      'top4.webp',
+      'top5.webp',
+      'top6.webp',
+      'top8.webp',
+    );
+    ?>
     <ul class="c-pageMv__visual--top js-mvSlider">
-      <?php for ( $i = 0; $i < 6; $i++ ) : ?>
-        <li class="c-pageMv__visual__item"></li>
-      <?php endfor; ?>
+      <?php foreach ( $top_mv_slides as $slide_index => $slide_file ) : ?>
+        <li class="c-pageMv__visual__item">
+          <img
+            class="c-pageMv__visual__itemImg"
+            src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/' . $slide_file ); ?>"
+            alt="<?php echo esc_attr( '豊後夢工房の住まいイメージ' . ( $slide_index + 1 ) ); ?>"
+          >
+        </li>
+      <?php endforeach; ?>
     </ul>
   </div>
 
