@@ -51,7 +51,7 @@
                 <li class="p-location__list__item">
                   <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__list__img" alt="<?php echo esc_attr( $location_alt_base . 'の' . $photo_num . '枚目のイメージ' ); ?>">
                 </li>
-                  <?php $count++; ?>
+                  <?php ++$count; ?>
                 <?php endif; ?>
               <?php endforeach; ?>
             <?php endif; ?>
