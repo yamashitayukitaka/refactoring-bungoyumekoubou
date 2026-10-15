@@ -119,7 +119,7 @@ get_header();
         <div class="p-design__point__hero">
           <?php if ( ! empty( $design['img'] ) ) : ?>
             <div class="p-design__point__media p-design__point__media--right">
-              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="<?php echo esc_attr( '家族の暮らしに合わせた動線をつくるデザイン' ); ?>">
             </div>
           <?php endif; ?>
           <div class="p-design__point__panel p-design__point__panel--left">
@@ -143,7 +143,7 @@ get_header();
           <div class="p-design__detail__inner">
             <?php if ( ! empty( $design['point_img_one'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--left">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="<?php echo esc_attr( '家事らく動線' ); ?>">
               </div>
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
@@ -165,7 +165,7 @@ get_header();
           <div class="p-design__detail__inner">
             <?php if ( ! empty( $design['point_img_two'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="<?php echo esc_attr( '子育て動線' ); ?>">
               </div>
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--beforeMedia">
@@ -183,7 +183,7 @@ get_header();
             </div>
             <?php if ( ! empty( $design['point_img_two'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="<?php echo esc_attr( '子育て動線' ); ?>">
               </div>
             <?php endif; ?>
           </div>
@@ -203,7 +203,7 @@ get_header();
         <div class="p-design__point__hero">
           <?php if ( ! empty( $design['img'] ) ) : ?>
             <div class="p-design__point__media">
-              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="<?php echo esc_attr( '住む人らしさをデザインする' ); ?>">
             </div>
           <?php endif; ?>
           <div class="p-design__point__panel p-design__point__panel--right">
@@ -228,7 +228,7 @@ get_header();
           <div class="p-design__detail__inner">
             <?php if ( ! empty( $design['point_img_one'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--left">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="<?php echo esc_attr( 'こんなお家がいいなを楽しく共有' ); ?>">
               </div>
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
@@ -262,7 +262,7 @@ get_header();
         <div class="p-design__point__hero">
           <?php if ( ! empty( $design['img'] ) ) : ?>
             <div class="p-design__point__media p-design__point__media--right">
-              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="<?php echo esc_attr( '太陽と自然の恵みを生かすデザイン' ); ?>">
             </div>
           <?php endif; ?>
           <div class="p-design__point__panel p-design__point__panel--left">
@@ -286,7 +286,7 @@ get_header();
           <div class="p-design__detail__inner">
             <?php if ( ! empty( $design['point_img_one'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--left">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="<?php echo esc_attr( '心地よい風と自然光が家全体に行き渡る空間デザイン' ); ?>">
               </div>
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">
@@ -311,7 +311,7 @@ get_header();
           <div class="p-design__detail__inner">
             <?php if ( ! empty( $design['point_img_two'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="<?php echo esc_attr( 'エネルギー効率を最大化するデザイン' ); ?>">
               </div>
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--beforeMedia">
@@ -333,7 +333,7 @@ get_header();
             </div>
             <?php if ( ! empty( $design['point_img_two'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_two'] ); ?>" alt="<?php echo esc_attr( 'エネルギー効率を最大化するデザイン' ); ?>">
               </div>
             <?php endif; ?>
           </div>
@@ -353,7 +353,7 @@ get_header();
         <div class="p-design__point__hero">
           <?php if ( ! empty( $design['img'] ) ) : ?>
             <div class="p-design__point__media">
-              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="">
+              <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design['img'] ); ?>" alt="<?php echo esc_attr( 'メンテナンスしやすいデザイン' ); ?>">
             </div>
           <?php endif; ?>
           <div class="p-design__point__panel p-design__point__panel--right">
@@ -378,7 +378,7 @@ get_header();
           <div class="p-design__detail__inner">
             <?php if ( ! empty( $design['point_img_one'] ) ) : ?>
               <div class="p-design__detail__media p-design__detail__media--left">
-                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="">
+                <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design['point_img_one'] ); ?>" alt="<?php echo esc_attr( '故障時にもすぐに修理しやすい設計' ); ?>">
               </div>
             <?php endif; ?>
             <div class="p-design__detail__body p-design__detail__body--afterMedia">

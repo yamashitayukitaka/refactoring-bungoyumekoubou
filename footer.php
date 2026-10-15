@@ -65,7 +65,7 @@
         <div class="l-footer__map__copyWrap">
           <div class="l-footer__logo">
             <a href="<?php echo esc_url( home_url( '' ) ); ?>">
-              <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="サイトタイトル" />
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="豊後夢工房" />
             </a>
           </div>
           <p class="l-footer__map__copy">

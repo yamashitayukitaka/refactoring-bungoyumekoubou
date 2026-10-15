@@ -153,7 +153,7 @@ get_header();
           <div class = "p-works__voice__wrap l-content">
             <?php if ( ! empty( $voice['img'] ) ) :?>
               <figure class = "p-works__voice__imgWrap">
-                <img src = "<?php echo esc_url( $voice['img'] );?>" loading="lazy">
+                <img src = "<?php echo esc_url( $voice['img'] );?>" loading="lazy" alt="<?php echo esc_attr( ( trim( ( ! empty( $voice['name'] ) ? $voice['name'] : '' ) . ( ! empty( $voice['address'] ) ? '（' . $voice['address'] . '）' : '' ) ) ?: 'お客様の声' ) . 'のイメージ' ); ?>">
               </figure>
             <?php endif; ?>
             
@@ -175,7 +175,7 @@ get_header();
           <div class = "p-works__voice__wrap l-content">
             <?php if ( ! empty( $qs['img'] ) ) :?>
               <figure class = "p-works__voice__imgWrap">
-                <img src = "<?php echo esc_url( $qs['img'] );?>" loading="lazy">
+                <img src = "<?php echo esc_url( $qs['img'] );?>" loading="lazy" alt="<?php echo esc_attr( get_the_title() . 'のインタビューのイメージ' ); ?>">
               </figure>
             <?php endif; ?>
             <?php if ( ! empty( $qs['txt'] ) ) :?>

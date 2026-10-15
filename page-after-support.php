@@ -62,7 +62,7 @@ get_header();
       [
         'section_id' => 'support4',
         'number'     => 4,
-        'label'      => '定期巡回訪問',
+        'label'      => '定期点検',
       ],
     ];
     ?>
@@ -100,7 +100,7 @@ get_header();
             建物保証<span>20年</span>、最長<span>60年</span>まで延長可能
           </p>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="">
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="分譲住宅の外観のイメージ（安心の長期住宅保証）">
           </div>
           <div class="p-afterSupport__overviewText">
             家の構造的な部分をプロによる定期点検で20年、最長60年まで保証します。
@@ -108,11 +108,11 @@ get_header();
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="">
+          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="分譲住宅の外観のイメージ（安心の長期住宅保証）">
         </div>
       </div>
       <figure class="p-afterSupport__wideFigure">
-        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="">
+        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="保証と保守期間のイメージ">
       </figure>
       <a class="p-afterSupport__more" href="#support3">くわしくは <span>こちら</span></a>
     </div>
@@ -129,14 +129,14 @@ get_header();
             <span class="marker">地盤保証システム</span>
           </p>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="">
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
           </div>
           <div class="p-afterSupport__overviewText">
             豊後夢工房では、指定専門機関による地盤検査を実施し、問題があれば地盤改良工事を行うなど対策を万全にしていますが、万が一、建物が不同沈下などにより損壊した場合、豊後夢工房が建物と地盤の修復工事をお約束する制度です。保証期間はお引き渡しから20年間保証が付きます。
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="">
+          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
         </div>
       </div>
     </div>
@@ -156,7 +156,7 @@ get_header();
             10年の設備機器保証付き。暮らしに欠かせないものだからこそ急なトラブルにも迅速に対応します。
           </p>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="">
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="キッチン設備のイメージ（設備機器保証）">
           </div>
           <div class="p-afterSupport__points">
             <p class="p-afterSupport__pointsHeading">
@@ -164,18 +164,31 @@ get_header();
             </p>
             <ul class="p-afterSupport__pointsList">
               <?php
-              $support3_point_images = [ 'jhs1.webp', 'jhs2.webp', 'jhs3.webp' ];
+              $support3_point_images = [
+                [
+                  'file' => 'jhs1.webp',
+                  'alt'  => '10年間の設備機器保証のイメージ',
+                ],
+                [
+                  'file' => 'jhs2.webp',
+                  'alt'  => '24時間コールセンター対応のイメージ',
+                ],
+                [
+                  'file' => 'jhs3.webp',
+                  'alt'  => '修理代・代替費用が何度でも無料のイメージ',
+                ],
+              ];
               foreach ( $support3_point_images as $point_image ) :
                 ?>
                 <li class="p-afterSupport__pointsItem">
-                  <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/' . $point_image ); ?>" alt="">
+                  <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/' . $point_image['file'] ); ?>" alt="<?php echo esc_attr( $point_image['alt'] ); ?>">
                 </li>
               <?php endforeach; ?>
             </ul>
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="">
+          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="キッチン設備のイメージ（設備機器保証）">
         </div>
       </div>
       <p class="p-afterSupport__note">
@@ -251,7 +264,7 @@ get_header();
             <span class="marker">定期点検</span>
           </p>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="">
+            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
           </div>
           <div class="p-afterSupport__overviewText">
             ご入居されてからのお客様の暮らしをサポートしてくために、ご入居から3ヶ月・1年・2年・5年・10年・20年のタイミングで定期点検に訪問させていただきます。専門スタッフにより、外壁、基礎、内装、床などを確認させていただき、不具合点がないか聞きとりの上、点検を行い、必要なメンテナンスについてのアドバイスをさせていただきます。
@@ -261,7 +274,7 @@ get_header();
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="">
+          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@
 
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header__logo">
         <h1>
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" />
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="豊後夢工房" />
         </h1>
       </a>
 
@@ -44,7 +44,7 @@
         <div class="l-header__content__innerTop">
           <div class="l-header__info u-none__mobile--md">
             <a class="l-header__tel" href="tel:+097-594-1481">
-              <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/tel.webp' ); ?>" alt="tel" class="l-header__tel__img">
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/tel.webp' ); ?>" alt="電話ロゴ" class="l-header__tel__img">
               <span class = "l-header__tel__num u-none__mobile--xxl">097-594-1481<span>
             </a>
             <div class="l-header__time u-none__mobile--xxl">
@@ -60,8 +60,8 @@
           </div>
           <ul class="l-header__sns__list u-none__mobile--md">
             <li class="l-header__sns__YouTube"><a href = "https://www.youtube.com/@%E8%B1%8A%E5%BE%8C%E5%A4%A2%E5%B7%A5%E6%88%BF"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/youtube.webp' ); ?>" alt="youtube"></a></li>
-            <li class="l-header__sns__insta"><a href="https://www.instagram.com/bungoyumekoubou/"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/instagram.webp' ); ?>" alt="insta"></a></li>
-            <li class="l-header__sns__line"><a href="https://lin.ee/86brEGxs"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/h-line.webp' ); ?>" alt="友だち追加"></a></li>
+            <li class="l-header__sns__insta"><a href="https://www.instagram.com/bungoyumekoubou/"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/instagram.webp' ); ?>" alt="instagramロゴ"></a></li>
+            <li class="l-header__sns__line"><a href="https://lin.ee/86brEGxs"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/h-line.webp' ); ?>" alt="LINE友だち追加ロゴ"></a></li>
           </ul>
           <nav class="c-navigation c-navigation--cta">
             <ul class="c-navigation__list--cta js-navList">
@@ -460,7 +460,7 @@
 
           <li>
             <ul class="l-header__sns__list--ham u-none__pc--md">
-              <li class="l-header__sns__YouTube"><a href = "https://www.youtube.com/@%E8%B1%8A%E5%BE%8C%E5%A4%A2%E5%B7%A5%E6%88%BF"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/youtube.webp' ); ?>" alt="youtube"></a></li>
+              <li class="l-header__sns__YouTube"><a href = "https://www.youtube.com/@%E8%B1%8A%E5%BE%8C%E5%A4%A2%E5%B7%A5%E6%88%BF"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/youtube.webp' ); ?>" alt="youtubeロゴ"></a></li>
               <li class="l-header__sns__insta"><a href="https://www.instagram.com/bungoyumekoubou/"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/instagram.webp' ); ?>" alt="insta"></a></li>
               <li class="l-header__sns__line"><a href="https://lin.ee/86brEGxs"><img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/h-line.webp' ); ?>" alt="友だち追加"></a></li>
             </ul>

@@ -37,15 +37,21 @@
         continue;
       }
       ?>
+      <?php
+      $location_alt_base = ! empty( $store['building'] ) ? $store['building'] : '店舗';
+      ?>
       <div class="p-location__content">
         <div class="p-location__inner">
           <ul class="js-commonSlick p-location__list">
             <?php if ( ! empty( $store['detail'] ) ) : ?>
+              <?php $count = 0; ?>
               <?php foreach ( $store['detail'] as $item ) : ?>
                 <?php if ( ! empty( $item['detail_img'] ) ) : ?>
+                  <?php $photo_num = $count + 1; ?>
                 <li class="p-location__list__item">
-                  <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__list__img" alt="">
+                  <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__list__img" alt="<?php echo esc_attr( $location_alt_base . 'の' . $photo_num . '枚目のイメージ' ); ?>">
                 </li>
+                  <?php $count++; ?>
                 <?php endif; ?>
               <?php endforeach; ?>
             <?php endif; ?>
@@ -78,12 +84,13 @@
         </div>
 
         <ul class="p-location__thumb__list">
-          <?php $count = 0; ?>
           <?php if ( ! empty( $store['detail'] ) ) : ?>
+            <?php $count = 0; ?>
             <?php foreach ( $store['detail'] as $item ) : ?>
               <?php if ( ! empty( $item['detail_img'] ) ) : ?>
+                <?php $photo_num = $count + 1; ?>
               <li class="p-location__thumb__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__thumb__img">
+                <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__thumb__img" alt="<?php echo esc_attr( $location_alt_base . 'の' . $photo_num . '枚目のイメージ' ); ?>">
               </li>
               <?php endif; ?>
             <?php endforeach; ?>
