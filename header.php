@@ -35,9 +35,15 @@
     <div class="l-header__content">
 
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="l-header__logo">
-        <h1>
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="豊後夢工房" />
-        </h1>
+        <?php if ( is_front_page() ) : ?>
+          <h1 class="l-header__logoTitle">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="豊後夢工房" />
+          </h1>
+        <?php else : ?>
+          <div class="l-header__logoTitle">
+            <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/logo.webp' ); ?>" alt="豊後夢工房" />
+          </div>
+        <?php endif; ?>
       </a>
 
       <div class="l-header__content__innerWrap">
