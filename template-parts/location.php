@@ -22,7 +22,7 @@
 
   <?php
   $has_store = false;
-  if ( $stores ) {
+  if ( ! empty( $stores ) && is_array( $stores ) ) {
     foreach ( $stores as $row ) {
       if ( ! empty( $row['address'] ) || ! empty( $row['postal_code'] ) || ! empty( $row['building'] ) || ! empty( $row['phone'] ) || ! empty( $row['map'] ) || ! empty( $row['detail'] ) ) {
         $has_store = true;
