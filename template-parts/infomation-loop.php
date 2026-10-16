@@ -5,10 +5,10 @@
  * @package Wazeka
  */
 
-$infomations = get_field( 'infomation' );?>
+$infomations = get_field( 'infomation' ); ?>
 <?php
 $has_infomation = false;
-if ( $infomations ) {
+if ( ! empty( $infomations ) && is_array( $infomations ) ) {
   foreach ( $infomations as $row ) {
     if ( ! empty( $row['img'] ) || ! empty( $row['txt'] ) || ! empty( $row['value'] ) ) {
       $has_infomation = true;

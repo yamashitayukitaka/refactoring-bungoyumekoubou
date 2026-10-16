@@ -5,10 +5,11 @@
  * @package Wazeka
  */
 
-$has_thumbsliders = get_field( 'a-imgs' ); ?>
+$has_thumbsliders = get_field( 'a-imgs' );
+?>
 <?php
 $has_gallery = false;
-if ( $has_thumbsliders ) {
+if ( ! empty( $has_thumbsliders ) && is_array( $has_thumbsliders ) ) {
   foreach ( $has_thumbsliders as $row ) {
     if ( ! empty( $row['img'] ) ) {
       $has_gallery = true;
