@@ -1,0 +1,265 @@
+---
+description: セマンティックHTML・アクセシビリティ
+globs: "**/*.php"
+alwaysApply: false
+---
+
+# セマンティック HTML（wazeka）
+- 方針として現在のDOM構造を最優先し、HTML構造が崩れる変更は描写が崩れる為行わない
+
+## 1. ランドマーク
+
+| 要件 | 実装 |
+|---|---|
+| `<main>` はページに1つ | 各 `page-*.php` / `front-page.php` / `single-*.php` / `archive-*.php` でヘッダー・フッター外の本体を `<main>` で囲む |
+| 主要ナビは `<nav>` | グローバルメニュー、パンくず、ページネーション、ページ内アンカーナビ（例: `p-design__nav`）に `nav` + 必要なら `aria-label` |
+| `<section>` | **見出し（h2〜h6）がある「章」だけ**。背景・幅・余白だけの枠は `<div>` |
+| `<article>` | ブログ1件、施工事例・スタッフの**一覧カード1件**など、単体で意味が完結するコンテンツ |
+| `<aside>` | メインと**関連はあるが切り離しても本文が成立する**補足・余談 |
+
+見出しのない「章」にしたい場合は `<div>` を優先。どうしても `section` にするなら `h2` 等を `u-visually-hidden`（未実装なら Utility 追加）で補う。
+
+**レビューで刺さる使い方:** 一覧ページのカードを `<div>` だけで済ませず、1件＝`<article>` にできるか検討する。
+
+## 2. 見出し（h1 の役割）
+
+**下層ページの主題を h2 にしない。** ロゴが常時 h1 だと下層に h1 がなくなるのが NG。
+
+| ページ | h1 | セクション見出し |
+|---|---|---|
+| トップ（`is_front_page()`） | ロゴ（サイト主題） | 各ブロックは h2 から |
+| 下層 | **ページタイトル**（例: `c-pageMv` のタイトル） | 本文ブロックは h2 → h3 と段階的に |
+
+`header.php` のロゴは条件分岐:
+
+```php
+<?php if ( is_front_page() ) : ?>
+  <h1><img src="…" alt="サイト名" /></h1>
+<?php else : ?>
+  <img src="…" alt="サイト名" />
+<?php endif; ?>
+```
+
+下層のトップレベルタイトルは **h1**:
+
+```html
+<h1 class="c-pageMv__heading__title">デザインへのこだわり</h1>
+```
+
+- レベル飛ばし禁止（h2 の直下に h4 など）。デザインの文字サイズ用に見出しタグを飛ばさない。
+
+
+## 3. 操作系・フォーム
+
+| 用途 | タグ |
+|---|---|
+| 別 URL へ移動 | `<a href="…">` |
+| メニュー開閉・アコーディオン・モーダル・タブ切替 | `<button type="button">`（`href="#"` の `<a>` や `<div onclick>` は避ける） |
+| フォーム送信 | `<button type="submit">` |
+
+
+## 4. リスト・説明
+
+- 順序に意味がある（手順・ランキング）→ `<ol>`。それ以外の並列項目 → `<ul>`（`list-markup.mdc`）。
+- 項目名＋内容のペア（会社概要・スペック）→ `<dl>` / `<dt>` / `<dd>`。見た目だけの表で済ませない。
+
+## 5. 画像
+
+- すべての `<img>` に `alt`（装飾は `alt=""`、意味ある画像は内容を短く。冗長な「〜の画像」は避ける）。
+- **ファーストビュー（ページ MV の背景・スライダー1枚目など）には `loading="lazy"` を付けない**。それ以外のコンテンツ画像は `loading="lazy"` を付ける。
+
+### `loading="lazy"` と `width` / `height`（CLS）
+
+Lighthouse 等の **「Lazy-loaded images should have explicit dimensions」** は、lazy 自体が NG ではなく、**読み込み前に表示領域を確保できずレイアウトがずれる（CLS）** ことを指す。
+
+```html
+<!-- NG: 寸法なし → 読み込み後にガタつく -->
+<img src="sample.jpg" loading="lazy" alt="サンプル">
+
+<!-- OK: 実ファイルのピクセル寸法（縦横比）を HTML に書く -->
+<img src="sample.png" width="1200" height="800" loading="lazy" alt="サンプル">
+```
+
+| 指定 | 役割 |
+|---|---|
+| HTML `width` / `height` | **元画像の寸法・縦横比**をブラウザに伝え、読み込み前のプレースホルダ領域を確保。適当な値は不可（実ファイルと同じ比率にする） |
+| CSS（例: `max-width: 100%; height: auto;`） | **実際の表示サイズ**・レスポンシブ。親幅に合わせて縮小し、比率は維持 |
+
+**考え方:** HTML の寸法は「必ずこの px で表示」ではない。CSS で上書きすれば表示は CSS 優先（例: 1200×800 の属性でも親 600px なら 600×400 表示）。**CSS で幅・高さを一切指定していない**ときだけ、属性値がそのまま表示サイズになる。
+
+`dist/img/` の固定画像は、PNG/WebP の**実ピクセル**を調べて `width` / `height` をテンプレに書く。メディアライブラリ由来なら `wp_get_attachment_image()` などで寸法付き出力を優先する。
+
+```php
+<img
+  src="<?php echo esc_url( $image_url ); ?>"
+  width="1200"
+  height="800"
+  loading="lazy"
+  alt="<?php echo esc_attr( $image_alt ); ?>"
+>
+```
+
+既存 SCSS で `img { max-width: 100%; height: auto; }` 相当があれば HTML 寸法と併用してよい。無い要素だけ Project 側で崩れないよう確認する。
+
+## 6. `<figure>` と `<figcaption>`（図版）
+
+**定義:** 本文から参照される、**自己完結した**図表・写真・イラスト。巻末や別ページに移しても本文の文脈が壊れないもの。
+
+**強み:** 図の説明を `<figcaption>` で親子関係にすると、検索エンジン・スクリーンリーダーに「画像とキャプションが1セット」と伝わる。
+
+```html
+<figure class="p-article__figure">
+  <img src="chart.webp" alt="2024年度の売上推移グラフ" width="600" height="400" loading="lazy">
+  <figcaption class="p-article__caption">図1：2024年度の年間売上推移</figcaption>
+</figure>
+```
+
+| 使う | 使わない |
+|---|---|
+| 記事内の説明付き写真・グラフ・図解 | サイトロゴ、ボタン内の矢印アイコン |
+| キャプションがある図版 → `figcaption` を付ける | 背景装飾・UIパーツを `<figure>` で囲む |
+| `alt` は画像の内容、`figcaption` は文脈・出典・図番号 | 図版でもないのに `<figure>` をレイアウト用に使う |
+
+`<figcaption>` は**必須ではない**。キャプションがなくても、**本文の理解を助ける独立した図版**なら `<figure>` 単体で正しい。
+
+### `<figcaption>` なしで `<figure>` だけ使う例
+
+1. **2カラム（写真＋説明文）の写真側** 
+
+```html
+<div class="p-feature__body">
+  <figure class="p-feature__visual">
+    <img src="factory.webp" alt="最新設備が整った自社工場" width="600" height="400" loading="lazy">
+  </figure>
+  <div class="p-feature__desc"><p>…</p></div>
+</div>
+```
+
+2. **本文中の図解・フローチャート** — 画像内に文字が含まれ、下にキャプションを置かないデザイン。前後の `<p>` から参照される。
+
+```html
+<p>導入までの全体の流れは以下の図の通りです。</p>
+<figure class="p-entry__chart">
+  <img src="workflow-chart.svg" alt="お問い合わせから納品までの全体フロー図" width="800" height="500" loading="lazy">
+</figure>
+<p>このように、各フェーズにおいて担当が伴走します。</p>
+```
+
+
+**判断基準:** 「本文から参照される図表・写真・図解か？」→ Yes なら `figure`（`figcaption` はあれば付ける）。No（アイコン・背景あしらい）→ `div` / `span` / CSS 背景。
+
+wazeka では `p-design__point__media` や `page-maintenance` の説明横画像など、キャプションなし図版として `<figure>` 化を検討できる。デザイン上キャプションが必要なら `figcaption` を追加。
+
+### メインビジュアル（MV）— `figure` と `div` の使い分け
+
+| 範囲 | タグ | 理由 |
+|---|---|---|
+| MV **エリア全体**（見出し・リード・CTA を含む大枠） | **`<div>`**（ページ主題の見出しがあるなら `<section>` も可） | `figure` は図版用。h1・ボタンまで包むと仕様違反 |
+| **写真・スライド画像だけ**の囲み | **`<figure>`** | MV 写真は世界観を伝える主役の図版（装飾ではない） |
+
+```html
+<div class="p-topMv">
+  <div class="p-topMv__inner">
+    <div class="p-topMv__content">
+      <h1 class="p-topMv__title">想いをカタチにする家づくり</h1>
+      <p class="p-topMv__lead">…</p>
+    </div>
+    <figure class="p-topMv__visual">
+      <img src="mv-image.webp" alt="光が差し込むリビングの施工事例" width="1920" height="1080" fetchpriority="high">
+    </figure>
+  </div>
+</div>
+```
+
+
+## 7. `<aside>`（補足コンテンツ）
+
+**定義:** メインコンテンツと関連はあるが、**取り除いても本文の理解に支障がない**「余談・補足・おまけ」（欄外注釈・コラム・用語ミニ解説のイメージ）。「サイドにあるから aside」という意味ではない。
+
+| 使う | 使わない |
+|---|---|
+| 記事横のサイドバー（人気記事・カテゴリ・プロフィール） | サイト共通の **`<footer>` 全体** |
+| 本文途中の補足コラム・用語解説・ワンポイント枠 | サービス特徴・会社概要など**ページの主役コンテンツ** |
+| 記事下の関連記事・おすすめブロック | グローバルナビやメインの CTA 本体 |
+
+### 代表的なパターン
+
+**① サイドバー全体**
+
+```html
+<main class="l-main">
+  <article class="p-entry">…</article>
+</main>
+<aside class="l-sidebar" aria-label="関連情報">
+  <section class="c-widget">
+    <h2 class="c-widget__title">人気記事</h2>
+    …
+  </section>
+</aside>
+```
+
+**② 本文中のコールアウト（横並びでなくても可）**
+
+```html
+<article class="p-entry">
+  <h2>…</h2>
+  <p>…</p>
+  <aside class="p-entry__callout">
+    <h3 class="p-entry__calloutTitle">用語解説：LCPとは？</h3>
+    <p>Largest Contentful Paint の略で…</p>
+  </aside>
+  <p>続きの本文…</p>
+</article>
+```
+
+### ✅ポイント（まとめ）
+
+- 一覧の**カード1件**に `<div>` ではなく **`<article>`**
+- **図版**・**MV の写真枠**に **`<figure>`**（MV 全体は `div`、キャプションがあれば **`figcaption`**）
+- サイドバー・補足コラム・関連記事に **`<aside>`**（主コンテンツを `aside` に入れていないか）
+
+## DevTools 確認チェックリスト
+
+リリース前・PR レビューで上から確認する。
+
+### ランドマーク・アウトライン
+
+- [ ] `<main>` が1つだけか
+- [ ] グローバルナビ・パンくず・ページネーション・ページ内ナビに `<nav>` があるか
+- [ ] 見出しのない囲みが `<section>` になっていないか（あれば `<div>` 化）
+- [ ] 見出し付きの章が `<section>`、一覧カード1件などに `<article>` が使えているか
+- [ ] サイドバー・補足コラム・関連記事が `<aside>` か（フッター全体や主役コンテンツを `aside` にしていないか）
+
+### 見出し
+
+- [ ] トップ: ロゴ h1 / 下層: ページタイトル h1、ロゴは h1 以外か
+- [ ] h1 がページに1つか（下層でロゴ h1 + タイトル h2 の二重構造になっていないか）
+- [ ] 見出しレベルが飛んでいないか
+
+### 操作・フォーム
+
+- [ ] JS 操作が `<button type="button">` か（`href="#"` のアンカーで代用していないか）
+
+
+### リスト・表
+
+- [ ] 手順が `<ol>`、その他の一覧が `<ul>` か
+- [ ] 定義リストに `<dl>` が使えるか
+
+### 画像・図版
+
+- [ ] `alt` 欠落なし
+- [ ] MV 以外に lazy、MV に lazy なし
+- [ ] `loading="lazy"` の `<img>` に実ファイルと一致する `width` / `height` があるか（CLS）
+- [ ] 本文の図版は `<figure>`（キャプションありなら `figcaption` も）。装飾・ロゴ・UIアイコンを `figure` で囲んでいないか
+- [ ] MV 大枠は `<div>`（または見出し付き `section`）、写真部分だけ `<figure>`。MV 全体を `figure` で囲んでいないか
+- [ ] 見出しのない装飾枠は `<div>` ではなく誤って `<section>` になっていないか
+
+## wazeka 現状（リファクタ未達の例）
+
+- 下層 `c-pageMv__heading__title` が `<h2>`（h1 にすべき。ロゴ h1 分岐は `header.php` で対応済み）
+- 一覧カードが `<article>` 化されていない箇所あり
+- `<figure>` の多用・`<figcaption>` 未整備（装飾画像まで `figure` になっている箇所あり）
+- 見出しのない `<section>`、フッター戻る等の `href="#"` 残存
+- サイドバー・関連ブロックが `<div>` のみで `<aside>` 未使用
+- 多くの `<img>` に `width` / `height` 未指定（lazy 画像は CLS 警告の対象）
