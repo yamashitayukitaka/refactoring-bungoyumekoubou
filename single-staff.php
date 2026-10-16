@@ -17,10 +17,9 @@ get_header();
 <main>
 <div class = "c-pageMv u-mb100">
   <div class = "c-pageMv__heading">
-    <h2 class = "c-pageMv__heading__title">
-      快適ゆめ空間をつくる
+    <h1 class="c-pageMv__heading__title"> 快適ゆめ空間をつくる
       <br><span class = "u-orange--mv">スタッフたち</span>
-    </h2>
+    </h1>
   </div>
   <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>');"></figure>
 </div>
@@ -75,7 +74,7 @@ get_header();
   <section class = "p-staff__myBest">
     <div class = "p-staff__myBest__ttlWrap">
       <p class = "p-staff__myBest__txt">あなたのマイベスト3を教えて</p>
-      <h3 class = "p-staff__myBest__ttl">MyBest&nbsp;<span class = "u-orange--mv">3</span></h3>
+      <h2 class = "p-staff__myBest__ttl">MyBest&nbsp;<span class = "u-orange--mv">3</span></h2>
       <?php if ( ! empty( $my_best['my-best-ttl'] ) ) :?>
       <p class = "p-staff__myBest__txt"><?php echo esc_html( $my_best['my-best-ttl'] );?></p>
       <?php endif; ?>
@@ -83,19 +82,19 @@ get_header();
     <ul class = "p-staff__myBest__list">
       <?php if ( ! empty( $my_best['my-best-1'] ) ) :?>
       <li class = "p-staff__myBest__item">
-        <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">1</span></h4>
+        <h3 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">1</span></h3>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html( $my_best['my-best-1'] );?></p>
       </li>
       <?php endif; ?>
       <?php if ( ! empty( $my_best['my-best-2'] ) ) :?>
       <li class = "p-staff__myBest__item">
-        <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">2</span></h4>
+        <h3 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">2</span></h3>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html( $my_best['my-best-2'] );?></p>
       </li>
       <?php endif; ?>
       <?php if ( ! empty( $my_best['my-best-3'] ) ) :?>
       <li class = "p-staff__myBest__item">
-        <h4 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">3</span></h4>
+        <h3 class = "p-staff__myBest__num">Best&nbsp;<span class = "u-orange--large">3</span></h3>
         <p class = "p-staff__myBest__txt">&nbsp;&nbsp;<?php echo esc_html( $my_best['my-best-3'] );?></p>
       </li>
       <?php endif; ?>
@@ -147,9 +146,9 @@ if ( $questions ) {
 
 <section class = "l-content">
   <div class = "u-center u-mb10">
-    <h3 class = "c-title--sectionLine">
+    <h2 class = "c-title--sectionLine">
       YUME STAFF
-    </h3>
+    </h2>
   </div>
   <div class = "u-center u-mb30">
     <p class = "c-title--orangeLine">

@@ -13,9 +13,9 @@ get_header();
 <main class="p-design">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         デザインへのこだわり
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         HIGH QUALITY
       </p>
@@ -29,7 +29,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">デザインへのこだわり</h3>
+      <h2 class="c-title--sectionLine u-mb40">デザインへのこだわり</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
@@ -119,9 +119,9 @@ get_header();
           <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_1.png' ); ?>" alt="<?php echo esc_attr( '家族の暮らしに合わせた動線をつくるデザイン' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--left">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 01
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine p-design__point__headline">
               <span class="u-textOrange">家族の暮らし</span>に合わせた<br>
@@ -183,9 +183,9 @@ get_header();
           <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_4.png' ); ?>" alt="<?php echo esc_attr( '住む人らしさをデザインする' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--right">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 02
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine u-mb10 p-design__point__headline">
               <span class="u-textOrange">住む人らしさ</span>を<br>
@@ -228,9 +228,9 @@ get_header();
           <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_6.png' ); ?>" alt="<?php echo esc_attr( '太陽と自然の恵みを生かすデザイン' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--left">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 03
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine p-design__point__headline">
               <span class="u-textOrange">太陽</span>と<span class="u-textOrange">自然</span>の恵みを生かし、<br class="u-none__mobile--sp">
@@ -299,9 +299,9 @@ get_header();
           <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_9.png' ); ?>" alt="<?php echo esc_attr( 'メンテナンスしやすいデザイン' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--right">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 04
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine u-mb10 p-design__point__headline">
               <span class="u-textOrange">メンテナンス</span><br>

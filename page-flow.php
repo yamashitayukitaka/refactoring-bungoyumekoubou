@@ -13,9 +13,9 @@ get_header();
 <main class="p-flow">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         ゆめづくりの流れ
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         FLOW
       </p>
@@ -28,7 +28,7 @@ get_header();
 
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">いえづくりのながれ</h3>
+      <h2 class="c-title--sectionLine u-mb40">いえづくりのながれ</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">出会い</span>から完成<span class="u-orange">お引き渡し</span>まで<br>

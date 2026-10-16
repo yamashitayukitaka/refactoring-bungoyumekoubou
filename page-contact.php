@@ -10,9 +10,9 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         お問い合わせ
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         CONTACT
       </p>
@@ -24,9 +24,9 @@ get_header();
   </div>
   <section class="l-content">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CONTACT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">お問い合わせ</span>

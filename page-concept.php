@@ -13,9 +13,9 @@ get_header();
 <main class="p-concept">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title u-mb20">
+      <h1 class="c-pageMv__heading__title u-mb20">
         わたしたちの思い
-      </h2>
+      </h1>
       <p class="p-concept__mv__lead">
         <span class="u-textOrange">夢</span>をカタチに、<br>
         暮らしをもっと<span class="u-textOrange">豊か</span>に
@@ -61,7 +61,7 @@ get_header();
 
   <section class="p-concept__policy">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">POLICY</h3>
+      <h2 class="c-title--sectionLine">POLICY</h2>
       <p class="c-title--orangeLine u-mb50">
         <span class="marker">
           <span class="u-orange">豊後夢工房</span>が大切にしていること
@@ -75,7 +75,7 @@ get_header();
         </div>
         <div class="p-concept__policy__panel">
 
-            <h3 class="c-title--sectionLine">POLICY 01</h3>
+            <h2 class="c-title--sectionLine">POLICY 01</h2>
             <p class="c-title--orangeLine u-mb10">
               <span class="marker">
                 <span class="u-orange">自由</span>に<span class="u-orange">デザイン</span>する<br>
@@ -98,7 +98,7 @@ get_header();
           <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="コストを抑えたスマートな家づくりのイメージ">
         </div>
         <div class="p-concept__policy__panel">
-          <h3 class="c-title--sectionLine">POLICY 02</h3>
+          <h2 class="c-title--sectionLine">POLICY 02</h2>
           <p class="c-title--orangeLine u-mb10">
             <span class="marker">
               <span class="u-orange">コスト</span>を抑えた<br>
@@ -121,7 +121,7 @@ get_header();
           <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="心地よく暮らせる住まいのイメージ">
         </div>
         <div class="p-concept__policy__panel">
-          <h3 class="c-title--sectionLine">POLICY 03</h3>
+          <h2 class="c-title--sectionLine">POLICY 03</h2>
           <p class="c-title--orangeLine u-mb10">
             <span class="marker">
               <span class="u-orange">心地よく暮らせる</span><br>
@@ -144,9 +144,9 @@ get_header();
     <div class="p-concept__system__head">
       <div>
         <div class="c-title__head">
-          <h3 class="c-title--sectionLine">
+          <h2 class="c-title--sectionLine">
             SYSTEM & DESIGN
-          </h3>
+          </h2>
           <p class="c-title--orangeLine p-concept__system__title"><span class="marker">
               豊後夢工房の<span class="u-orange">組織力</span>と<span class="u-orange">デザイン力</span></span>
           </p>

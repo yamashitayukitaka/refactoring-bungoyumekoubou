@@ -8,9 +8,9 @@
 ?>
 <section class="p-bungoYumeStudio u-mb100">
   <div class="c-title__head">
-    <h3 class="c-title--sectionLine">
+    <h2 class="c-title--sectionLine">
       BUNGO_YUME_STUDIO
-    </h3>
+    </h2>
     <div>
       <p class="c-title--orangeLine u-mb50"><span class="marker">
           豊後夢工房について</span>

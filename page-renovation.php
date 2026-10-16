@@ -13,9 +13,9 @@ get_header();
 <main class="p-renovation">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         ゆめリフォーム
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         RENOVATION
       </p>
@@ -29,7 +29,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">ゆめリフォーム</h3>
+      <h2 class="c-title--sectionLine u-mb40">ゆめリフォーム</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           あなたの<span class="u-orange">大切な住まい</span>を、<br>
@@ -59,7 +59,7 @@ get_header();
   </section>
 
   <section class="p-renovation__beforeAfter">
-    <h3 class="p-renovation__sectionTitle">ビフォーアフター</h3>
+    <h2 class="p-renovation__sectionTitle">ビフォーアフター</h2>
     <div class="p-renovation__inner p-renovation__compare">
       <ul class="p-renovation__compare__list">
         <li class="p-renovation__compare__item">
@@ -111,7 +111,7 @@ get_header();
   </section>
 
   <section class="p-renovation__details">
-    <h3 class="p-renovation__sectionTitle">リフォーム内容</h3>
+    <h2 class="p-renovation__sectionTitle">リフォーム内容</h2>
     <div class="p-renovation__inner">
       <?php
       $detail_items = [
@@ -157,9 +157,9 @@ get_header();
   </section>
 
   <section class="p-renovation__process">
-    <h3 class="p-renovation__sectionTitle">
+    <h2 class="p-renovation__sectionTitle">
       お問合わせから<span class="u-orange">リフォーム</span>までの流れ
-    </h3>
+    </h2>
     <?php
     $process_steps      = [
       [
@@ -216,9 +216,9 @@ get_header();
   </section>
 
   <section class="p-renovation__features">
-    <h3 class="p-renovation__sectionTitle">
+    <h2 class="p-renovation__sectionTitle">
       <span class="u-orange">ゆめリフォーム</span>の特徴
-    </h3>
+    </h2>
     <ul class="p-renovation__features__list">
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
@@ -278,9 +278,9 @@ get_header();
 
   <section class="l-content" id="contact">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CONTACT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">お問い合わせ</span>

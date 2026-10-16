@@ -14,9 +14,9 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         会社概要
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         ABOUT US
       </p>
@@ -29,9 +29,9 @@ get_header();
 
   <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         MESSAGE
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">
@@ -63,9 +63,9 @@ get_header();
 
   <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         OUTLINE
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50"><span class="marker">会社概要</span></p>
       </div>
@@ -151,9 +151,9 @@ get_header();
 
   <section class="l-content--middle u-mb200">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CORPORATE STANDARD
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">社内標準</span>

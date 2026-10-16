@@ -13,9 +13,9 @@ get_header();
 <main class="p-quality">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         品質へのこだわり
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         HIGH QUALITY
       </p>
@@ -28,7 +28,7 @@ get_header();
 
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">品質へのこだわり</h3>
+      <h2 class="c-title--sectionLine u-mb40">品質へのこだわり</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">高品質な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
@@ -178,7 +178,7 @@ get_header();
       </p>
       <div class="p-quality__award__winnerBody l-content--innerNarrow">
         <div class="p-quality__award__winnerMedia">
-          <img loading="lazy" class="p-quality__award__winnerImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/winner2020.webp' ); ?>" alt="ハウス・オブ・ザ・イヤー・イン・エナジー2020 優秀賞のイメージ">
+          <img loading="lazy" class="p-quality__award__winnerImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/winner2020.webp' ); ?>" alt="ハウス・オブ・ザ・イヤー・イン・エナジー2020 優秀賞">
         </div>
         <p class="p-quality__award__winnerText">
           一般財団法人日本地域開発センターが主催する優れた省エネルギー住宅を表彰する制度「ハウス･オブ･ザ･イヤー･イン･エナジー2020」において、豊後夢工房の「Rireve」が「優秀賞」を受賞。豊後夢工房ではZEH住宅が標準仕様です。
@@ -200,7 +200,7 @@ get_header();
           <span class="u-font__bold">各モデルハウスにて豊後夢工房の住まいをご体感いただくことが出来ます。お気軽にお立ち寄りいただき、未来基準のエコ住宅をお確かめください。</span>
         </p>
         <div class="p-quality__award__rankingMedia">
-          <img loading="lazy" class="p-quality__award__rankingImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/smarthouse.webp' ); ?>" alt="ZEH供給ランキング大分県第2位のイメージ">
+          <img loading="lazy" class="p-quality__award__rankingImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/smarthouse.webp' ); ?>" alt="ZEH供給ランキング大分県第2位">
         </div>
       </div>
     </div>
@@ -223,12 +223,12 @@ get_header();
         </div>
       </div>
       <div class="p-quality__feature__overviewMedia">
-        <img loading="lazy" src="<?php echo esc_url( content_url( 'uploads/2025/06/画像3.jpg' ) ); ?>" class="u-imgShadow" alt="ZEHビルダー登録制度の星5つ評価のイメージ（高耐震）">
+        <img loading="lazy" src="<?php echo esc_url( content_url( 'uploads/2025/06/画像3.jpg' ) ); ?>" class="u-imgShadow" alt="ZEHビルダー登録制度の星5つ評価（高耐震）">
       </div>
     </div>
     <div class="p-quality__seismic__grade mt-6 u-mb100 l-content--inner">
       <div class="p-quality__seismic__gradeMedia">
-        <img loading="lazy" class="p-quality__seismic__gradeImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_8.webp' ); ?>" alt="耐震等級3の耐震性能のイメージ図">
+        <img loading="lazy" class="p-quality__seismic__gradeImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_8.webp' ); ?>" alt="耐震等級3の耐震性能">
       </div>
       <div class="p-quality__seismic__gradePanel">
         <div class="p-quality__seismic__gradeRow">
@@ -256,7 +256,7 @@ get_header();
     </p>
     <div class="p-quality__seismic__woodframe p-quality__inner--wide">
       <div class="p-quality__seismic__woodframeMedia">
-        <img loading="lazy" class="p-quality__seismic__woodframeImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_9.png' ) ); ?>" alt="木造軸組工法とドリフトピン工法のイメージ">
+        <img loading="lazy" class="p-quality__seismic__woodframeImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_9.png' ) ); ?>" alt="木造軸組工法とドリフトピン工法">
       </div>
       <p class="p-quality__seismic__woodframeText">
         一般的な木造の家は、柱と梁（はり）で支えられています。この方法では、木材を組み合わせるために大きな穴を開けたり、細く削ったりするので、木材の強度が弱くなることがあります。<br><br>
@@ -270,13 +270,13 @@ get_header();
     <div class="p-quality__seismic__mersystem p-quality__inner--wide">
       <div class="p-quality__seismic__mersystemIntro">
         <div class="p-quality__seismic__mersystemMedia u-none__pc--tab">
-          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEMのイメージ">
+          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEM">
         </div>
         <p class="p-quality__seismic__mersystemText">
           豊後夢工房で採用している「制震装置 MER SYSTEM」は、地震の揺れや加速度を大幅に抑えるシステムです。地震が起きた直後から素早くエネルギーを吸収し、建物に与える揺れを最大48％減少させます。これにより、あらゆる地震の揺れに効果を発揮し、建物への被害を大幅に軽減します。最近の大地震でも、MER SYSTEMを採用した住宅はほとんど被害がなく、多くのお客様から感謝の声をいただいています。
         </p>
         <div class="p-quality__seismic__mersystemMedia u-none__mobile--tab">
-          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEMのイメージ">
+          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEM">
         </div>
       </div>
       <p class="p-quality__seismic__mersystemLink u-mb40">
@@ -302,7 +302,7 @@ get_header();
             <p class="p-quality__seismic__mersystemEffectText">建物に伝わる地震のエネルギー(加速度)を約40%から48%吸収することができます。吸収することにより建物の変位と揺れを早く抑え、建物への負担を軽減します。</p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_12.webp' ); ?>" alt="地震エネルギーを最大48％吸収のイメージ図">
+            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_12.webp' ); ?>" alt="地震エネルギーを最大48％吸収">
           </div>
         </li>
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -319,7 +319,7 @@ get_header();
             <p class="p-quality__seismic__mersystemEffectText">シングルチューブ構造を採用したオイルダンパーのMER　SYSTEMは、揺れ始めから効果を発揮します。小さな揺れでもダメージが蓄積されると、釘やビスの緩みが生じ耐力壁を損傷してしまいます。当初の建物の耐震性を守ることが制震の役割です。またあえて抵抗力を制御することで耐震躯体を傷めない特性になっています。</p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_13.webp' ); ?>" alt="揺れ始めから瞬時に減衰のイメージ図">
+            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_13.webp' ); ?>" alt="揺れ始めから瞬時に減衰">
           </div>
         </li>
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -338,7 +338,7 @@ get_header();
             </p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_14.webp' ); ?>" alt="地震のあらゆる周期に対応のイメージ図">
+            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_14.webp' ); ?>" alt="地震のあらゆる周期に対応">
           </div>
         </li>
       </ul>
@@ -369,11 +369,11 @@ get_header();
       <span class="u-textOrange">豊後夢工房</span>の<span class="u-textOrange">高断熱仕様</span>
     </p>
     <div class="p-quality__thermal__chart l-content--innerNarrow p-quality__thermal__chart--spaced">
-      <img loading="lazy" class="p-quality__thermal__chartImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_20.webp' ); ?>" alt="豊後夢工房の高断熱仕様のイメージ図">
+      <img loading="lazy" class="p-quality__thermal__chartImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_20.webp' ); ?>" alt="豊後夢工房の高断熱仕様">
     </div>
     <div class="p-quality__thermal__grade l-content--innerNarrow mt-6 u-mb80">
       <div class="p-quality__thermal__gradeMedia">
-        <img loading="lazy" class="p-quality__thermal__gradeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_19.webp' ); ?>" alt="断熱性能 UA値0.36以下のイメージ">
+        <img loading="lazy" class="p-quality__thermal__gradeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_19.webp' ); ?>" alt="断熱性能 UA値0.36以下">
       </div>
       <div class="p-quality__thermal__gradePanel">
         <div class="p-quality__thermal__gradeRow">
@@ -443,7 +443,7 @@ get_header();
     </p>
     <div class="p-quality__airtight__panel p-quality__inner--wide">
       <div class="p-quality__airtight__panelMedia">
-        <img loading="lazy" class="p-quality__airtight__panelImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_29.webp' ); ?>" alt="高気密住宅の気密測定のイメージ">
+        <img loading="lazy" class="p-quality__airtight__panelImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_29.webp' ); ?>" alt="高気密住宅の気密測定">
       </div>
       <div class="p-quality__airtight__panelBody">
         <p class="p-quality__airtight__panelLead">C値の測定は建具、断熱施工後、気密工事終了後のタイミングで専門の「気密測定試験機」を使用し、行います。</p>

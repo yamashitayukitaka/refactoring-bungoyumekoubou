@@ -13,9 +13,9 @@ get_header();
 <main class="p-modelHouse">
 <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         MODEL HOUSE
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         モデルハウス
       </p>
@@ -29,7 +29,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">モデルハウス</h3>
+      <h2 class="c-title--sectionLine u-mb40">モデルハウス</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">見て</span>、<span class="u-orange">触れて</span>、<span class="u-orange">感じる</span>。<br>
@@ -138,9 +138,9 @@ get_header();
     ?>
     <?php if ( $has_gallery_b ) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
-        <h3 class="c-title--sectionEn">
+        <h2 class="c-title--sectionEn">
           GALLERY
-        </h3>
+        </h2>
         <p class="c-title--sectionSub u-mb50">
           ギャラリー
         </p>
@@ -231,9 +231,9 @@ get_header();
     ?>
     <?php if ( $has_gallery_c ) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
-        <h3 class="c-title--sectionEn">
+        <h2 class="c-title--sectionEn">
           GALLERY
-        </h3>
+        </h2>
         <p class="c-title--sectionSub u-mb50">
           ギャラリー
         </p>
@@ -276,9 +276,9 @@ get_header();
 
   <section class="l-content" id="contact">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CONTACT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">お問い合わせ</span>
@@ -292,9 +292,9 @@ get_header();
 
   <section class="l-content u-mb100">
     <div class="u-center u-mb10">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         EVENT
-      </h3>
+      </h2>
     </div>
     <div class="u-center u-mb30">
       <p class="c-title--orangeLine">

@@ -13,9 +13,9 @@ get_header();
 <main class="p-afterSupport">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         安心の保証制度
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         GUARANTEE
       </p>
@@ -28,7 +28,7 @@ get_header();
 
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">安心の保証制度</h3>
+      <h2 class="c-title--sectionLine u-mb40">安心の保証制度</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           あなたの<span class="u-orange">大切</span>な<span class="u-orange">おうち</span>を<br>
@@ -198,7 +198,7 @@ get_header();
       </p>
     </div>
 
-    <h3 class="p-afterSupport__devicesHeading">対象保障機器</h3>
+    <h2 class="p-afterSupport__devicesHeading">対象保障機器</h2>
 
     <div class="p-afterSupport__devices">
       <p class="p-afterSupport__devicesLead">

@@ -13,9 +13,9 @@ get_header();
 <main class="p-faq">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         よくあるご質問
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         Q & A
       </p>
@@ -28,7 +28,7 @@ get_header();
 
   <div class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">よくあるご質問</h3>
+      <h2 class="c-title--sectionLine u-mb40">よくあるご質問</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           お客様からよくいただく<br>

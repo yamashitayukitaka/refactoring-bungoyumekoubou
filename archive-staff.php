@@ -15,10 +15,9 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
-        快適ゆめ空間をつくる
+      <h1 class="c-pageMv__heading__title"> 快適ゆめ空間をつくる
         <br><span class="u-orange--mv">スタッフたち</span>
-      </h2>
+      </h1>
     </div>
     <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>');"></figure>
   </div>
@@ -39,9 +38,9 @@ $terms             = get_terms(
     <?php foreach ( $terms as $local_term ) : ?>
       <?php $slug = $local_term->slug; ?>
     <section>
-      <h3 class="c-title--section u-mb30">
+      <h2 class="c-title--section u-mb30">
         <?php echo esc_html( $local_term->name ); ?>
-      </h3>
+      </h2>
       <ul class="p-staff__list l-content">
         <?php
         $staff      = [

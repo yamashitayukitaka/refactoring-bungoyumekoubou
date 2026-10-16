@@ -13,9 +13,9 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         コストへのこだわり
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         COST PERFORMANCE
       </p>
@@ -29,7 +29,7 @@ get_header();
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">コストへのこだわり</h3>
+      <h2 class="c-title--sectionLine u-mb40">コストへのこだわり</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           大手他社よりも<br class="u-none__pc--sp"><span class="u-orange">ワンランク上</span>の<span class="u-orange">設備</span>、<br>

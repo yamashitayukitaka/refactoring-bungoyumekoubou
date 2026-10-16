@@ -13,9 +13,9 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         採用情報
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         RECRUIT
       </p>
@@ -28,9 +28,9 @@ get_header();
 
   <section class="l-content--middle u-mb100">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         MESSAGE
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="u-orange">代表</span>メッセージ
@@ -81,9 +81,9 @@ get_header();
 
   <section class="l-content--middle u-mb200">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CORPORATE STANDARD
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">社内標準</span>
@@ -190,9 +190,9 @@ get_header();
       ];
       ?>
       <div class="c-title__head u-mb50">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           INTERVIEW
-        </h3>
+        </h2>
       </div>
       <?php foreach ( $recruit_interviews as $interview ) : ?>
         <p class="c-title--orangeLine u-mb30 u-center">
@@ -219,9 +219,9 @@ get_header();
       <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
     </figure>
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         RECRUIT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           募集要項
@@ -288,9 +288,9 @@ get_header();
 
     <section class="l-content">
       <div class="c-title__head">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           APPLICATION
-        </h3>
+        </h2>
         <div>
           <p class="c-title--orangeLine u-mb50">
             <span class="marker">応募する</span>

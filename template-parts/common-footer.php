@@ -9,9 +9,9 @@
 <section class = "l-content u-mb100 u-pt100">
   
   <div class = "u-center u-mb10">
-    <h3 class = "c-title--sectionLine">
+    <h2 class = "c-title--sectionLine">
       EVENT
-    </h3>
+    </h2>
   </div>
 
   <div class = "u-center u-mb30">
@@ -43,9 +43,9 @@ endif;
 </section>
 <section class = "l-content u-mb100">
   <div class = "u-center u-mb10">
-    <h3 class = "c-title--sectionLine">
+    <h2 class = "c-title--sectionLine">
       BUILT＆LAND
-    </h3>
+    </h2>
   </div>
   <div class = "u-center u-mb30">
     <p class = "c-title--orangeLine">
