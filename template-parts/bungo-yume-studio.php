@@ -4,13 +4,17 @@
  *
  * @package Wazeka
  */
-
 ?>
+
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
+
 <section class="p-bungoYumeStudio u-mb100">
   <div class="c-title__head">
-    <h2 class="c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionLine">
       BUNGO_YUME_STUDIO
-    </h2>
+    </<?php echo esc_attr( $heading_tag ); ?>>
     <div>
       <p class="c-title--orangeLine u-mb50"><span class="marker">
           豊後夢工房について</span>

@@ -3,14 +3,19 @@
  * Store location section part.
  *
  * @package Wazeka
+ * 
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
+
 <section class="p-location">
   <div class="c-title__head">
-    <h2 class="c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionLine">
       LOCATION
-    </h2>
+    </<?php echo esc_attr( $heading_tag ); ?>>
     <div>
       <p class="c-title--orangeLine u-mb50"><span class="marker">
           店舗情報</span>
