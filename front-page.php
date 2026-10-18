@@ -103,25 +103,31 @@ get_header();
       </div>
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt="HEIG（ヘイグ）"></figure>
-            <span class="c-lineUp__tag">自由設計</span>
-            <p class="c-lineUp__text">暮らしをもっと自由に</p>
-          </a>
+          <article class="c-lineUp__body">
+            <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt="HEIG（ヘイグ）"></figure>
+              <span class="c-lineUp__tag">自由設計</span>
+              <p class="c-lineUp__text">暮らしをもっと自由に</p>
+            </a>
+          </article>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt="リレーヴ（Rireve）"></figure>
-            <span class="c-lineUp__tag">自由設計</span>
-            <p class="c-lineUp__text">次世代のZEHハウス</p>
-          </a>
+          <article class="c-lineUp__body">
+            <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt="リレーヴ（Rireve）"></figure>
+              <span class="c-lineUp__tag">自由設計</span>
+              <p class="c-lineUp__text">次世代のZEHハウス</p>
+            </a>
+          </article>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt="いろはいえ"></figure>
-            <span class="c-lineUp__tag">自由設計</span>
-            <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
-          </a>
+          <article class="c-lineUp__body">
+            <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt="いろはいえ"></figure>
+              <span class="c-lineUp__tag">自由設計</span>
+              <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
+            </a>
+          </article>
         </li>
       </ul>
     </div>
@@ -140,11 +146,11 @@ get_header();
       </p>
     </div>
     <!-- WINKMARK LP INDEX 1 start -->
-<div class="event-box">
-    <div class="lst-event" id="wink_event_list">
+    <div class="event-box">
+      <div class="lst-event" id="wink_event_list">
+      </div>
     </div>
-</div>
-<!-- WINKMARK LP INDEX 1 end-->
+    <!-- WINKMARK LP INDEX 1 end-->
   </section>
 
   <a href="<?php echo esc_url( home_url( 'model-house' ) ); ?>">
@@ -313,10 +319,6 @@ get_header();
   <div class="u-center u-mb50">
     <a href="<?php echo esc_url( home_url( 'property' ) ); ?>" class="c-button--outline">土地・物件情報一覧へ</a>
   </div>
-
-  <!--
-  <iframe width="853" height="480" src="https://my.matterport.com/show/?m=T7Mj3PoA11z" frameborder="0" allowfullscreen="" allow="xr-spatial-tracking"></iframe>
-  -->
 
 </main>
 <?php get_footer(); ?>

@@ -7,11 +7,12 @@
 
 ?>
 <li class = "c-cardList__item js-order">
-  <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
-    <figure class = "c-cardList__imgWrap">
-      <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
-    </figure>
-    <div class = "c-cardList__txtWrap">
+  <article class = "c-cardList__body">
+    <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
+      <figure class = "c-cardList__imgWrap">
+        <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
+      </figure>
+      <div class = "c-cardList__txtWrap">
     <?php $event_types = get_the_terms(
         get_the_ID(),
         'event-type',
@@ -72,6 +73,7 @@
       <?php endif; ?>
 
       <p class = "c-cardList__ttl"><?php the_title(); ?></p>
-    </div>
-  </a>
+      </div>
+    </a>
+  </article>
 </li>

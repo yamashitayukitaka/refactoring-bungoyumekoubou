@@ -169,31 +169,33 @@ if ( $questions ) {
       <?php while ( $staff_loop->have_posts() ) :
         $staff_loop->the_post();?>
         <li class ="c-cardList__item">
-          <a href = "<?php the_permalink(); ?>">
-            <figure class = "c-cardList__imgWrap">
-              <?php $staff_img = get_field( 'staff-img' ); ?>
-              <?php if ( $staff_img ) : ?>
-              <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class ="p-staff__img" loading="lazy">
-              <?php endif; ?>
-            </figure>
-            <?php $tags = get_the_terms(
-                get_the_ID(),
-                'department',
-                [
-                  'hide_empty' => false,
-                  'parent'     => 0,
-                  'orderby'    => 'id',
-                  'order'      => 'ASC',
-                ]
-            );?>
+          <article class = "c-cardList__body">
+            <a href = "<?php the_permalink(); ?>">
+              <figure class = "c-cardList__imgWrap">
+                <?php $staff_img = get_field( 'staff-img' ); ?>
+                <?php if ( $staff_img ) : ?>
+                <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class ="p-staff__img" loading="lazy">
+                <?php endif; ?>
+              </figure>
+              <?php $tags = get_the_terms(
+                  get_the_ID(),
+                  'department',
+                  [
+                    'hide_empty' => false,
+                    'parent'     => 0,
+                    'orderby'    => 'id',
+                    'order'      => 'ASC',
+                  ]
+              );?>
 
-            <?php if ( $tags && ! is_wp_error( $tags ) ) :?>
-              <?php foreach ( $tags as $local_tag ) :?>
-                <span class = "c-id"><?php echo esc_html( $local_tag->name ); ?></span>
-                <p><?php the_title(); ?></p>
-              <?php endforeach;?>
-            <?php endif; ?>
-          </a>
+              <?php if ( $tags && ! is_wp_error( $tags ) ) :?>
+                <?php foreach ( $tags as $local_tag ) :?>
+                  <span class = "c-id"><?php echo esc_html( $local_tag->name ); ?></span>
+                  <p><?php the_title(); ?></p>
+                <?php endforeach;?>
+              <?php endif; ?>
+            </a>
+          </article>
         </li>
       <?php endwhile;
     endif;
