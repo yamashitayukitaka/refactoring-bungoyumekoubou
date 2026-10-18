@@ -45,8 +45,9 @@ get_header();
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">中庭と深い軒の織りなす<br>
-          スタイリッシュなデザイン</span></p>
-      <p class="p-modelHouse__overview__name">TOSハウジングメッセ </p>
+        スタイリッシュなデザイン</span>
+      </p>
+      <h3 class="p-modelHouse__overview__name">TOSハウジングメッセ </h3>
       <p class="p-modelHouse__overview__lead u-none__pc--tab"><span class="marker">中庭と深い軒の織りなす<br>
           スタイリッシュなデザイン</span></p>
     </div>
@@ -90,10 +91,10 @@ get_header();
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">大人カワイイ<br>
           ヨーロピアンな家</span></p>
-      <p class="p-modelHouse__overview__name">
+      <h3 class="p-modelHouse__overview__name">
         <span>シェリーハウス</span>
         Shelly House
-      </p>
+      </h3>
       <p class="p-modelHouse__overview__lead u-none__pc--tab"><span class="marker">大人カワイイ<br>
           ヨーロピアンな家</span></p>
     </div>
@@ -186,10 +187,10 @@ get_header();
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">安心の定額制で建てる<br>
           ｢完全自由設計｣の家</span></p>
-      <p class="p-modelHouse__overview__name">
+      <h2 class="p-modelHouse__overview__name">
         <span>いろは家</span>
         IROHA・IE
-      </p>
+      </h2>
       <p class="p-modelHouse__overview__lead u-none__pc--tab"><span class="marker">安心の定額制で建てる<br>
           　｢完全自由設計｣の家</span></p>
     </div>

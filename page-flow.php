@@ -44,7 +44,7 @@ get_header();
     展示場や見学会での出会いからご契約、 上棟、完成お引き渡しまでの、 家づくりのプロセスをご紹介致します。
   </p>
 
-  <section class="p-flow__steps">
+  <div class="p-flow__steps">
     <?php
     $flow_steps = [
       [
@@ -140,10 +140,10 @@ get_header();
         <li class="p-flow__steps__item">
           <div class="p-flow__steps__row">
             <div class="p-flow__steps__body">
-              <div class="p-flow__steps__title">
+              <h3 class="p-flow__steps__title">
                 <span class="p-flow__steps__num"><?php echo esc_html( sprintf( '%02d.', $i + 1 ) ); ?></span>
                 <?php echo esc_html( $step['title'] ); ?>
-              </div>
+              </h3>
               <div class="p-flow__steps__text">
                 <?php echo wp_kses_post( $step['text'] ); ?>
               </div>
@@ -158,7 +158,7 @@ get_header();
         </li>
       <?php endforeach; ?>
     </ul>
-  </section>
+  </div>
 
   <?php get_template_part( 'template-parts/common' ); ?>
 

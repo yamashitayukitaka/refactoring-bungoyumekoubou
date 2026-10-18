@@ -23,7 +23,7 @@ get_header();
   </div>
   <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>');"></figure>
 </div>
-<section class = "l-content p-staff__production">
+<div class = "l-content p-staff__production">
   <div class = "p-staff__production__content">
     <div class = "p-staff__production__profile">
       <figure class = "p-staff__production__imgWrap">
@@ -67,7 +67,7 @@ get_header();
   <p class = "p-staff__production__txt">
     <?php the_content(); ?>
   </p>
-</section>
+</div>
 
 <?php $my_best = get_field( 'my-best' ); ?>
 <?php if ( $my_best && ( ! empty( $my_best['my-best-ttl'] ) || ! empty( $my_best['my-best-1'] ) || ! empty( $my_best['my-best-2'] ) || ! empty( $my_best['my-best-3'] ) ) ) :?>
@@ -114,18 +114,18 @@ if ( $questions ) {
 }
 ?>
 <?php if ( $has_question ) : ?>
-<section class = "p-staff__question l-content--middle">
+<div class = "p-staff__question l-content--middle">
       <?php foreach ( $questions as $question ) :?>
         <?php if ( empty( $question['question-ttl'] ) && empty( $question['question-img'] ) && empty( $question['question-answer'] ) ) {
           continue;
         } ?>
         <div class = "p-staff__question__content">
           <div class = "p-staff__question__ttlWrap">
-            <p>
-              <?php if ( ! empty( $question['question-ttl'] ) ) :?>
+            <?php if ( ! empty( $question['question-ttl'] ) ) :?>
+            <h3 class = "p-staff__question__ttl">
               <span class = "marker p-staff__question__ttl--another"><?php echo esc_html( $question['question-ttl'] );?></span>
-              <?php endif; ?>
-            </p>
+            </h3>
+            <?php endif; ?>
           </div>
           <div class = "p-staff__question__right">
             <?php if ( ! empty( $question['question-img'] ) ) :?>
@@ -141,7 +141,7 @@ if ( $questions ) {
           </div>
         </div>
       <?php endforeach; ?>
-</section>
+</div>
 <?php endif; ?>
 
 <section class = "l-content">

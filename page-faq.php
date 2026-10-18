@@ -46,7 +46,7 @@ get_header();
   $qas = get_field( 'faq_questions_answers' );
   if ( $qas ) :
     ?>
-    <section class="p-faq__list">
+    <div class="p-faq__list">
       <ul class="c-accordion">
         <?php foreach ( $qas as $i => $qa ) :
           if ( empty( $qa['question'] ) || empty( $qa['answer'] ) ) {
@@ -68,7 +68,7 @@ get_header();
           </li>
         <?php endforeach; ?>
       </ul>
-    </section>
+    </div>
   <?php endif; ?>
 
   <?php get_template_part( 'template-parts/common' ); ?>

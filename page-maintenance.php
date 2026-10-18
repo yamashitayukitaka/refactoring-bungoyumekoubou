@@ -44,7 +44,7 @@ get_header();
         <img loading="lazy" class="p-maintenance__about__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_1.png' ); ?>" alt="アフターメンテナンスのイメージ">
       </div>
       <div class="p-maintenance__about__panel">
-        <p class="p-maintenance__about__title"><span class="marker">アフターメンテナンス</span></p>
+        <h3 class="p-maintenance__about__title"><span class="marker">アフターメンテナンス</span></h3>
         <div class="p-maintenance__about__text">
           <?php echo wp_kses_post( '住み始めた後も、安心して暮らせるよう、20年間に渡ってプロによる定期巡回点検訪問を行っています。<br />経験豊富なスタッフが定期的にお宅を訪問し、細かな点検とメンテナンスを実施します。快適な生活を守るお手伝いをお任せください。' ); ?>
         </div>
@@ -56,7 +56,7 @@ get_header();
   </section>
 
   <section class="p-maintenance__inspection">
-    <p class="p-maintenance__heading">点検内容</p>
+    <h4 class="p-maintenance__heading">点検内容</h4>
     <div class="p-maintenance__inspection__inner l-content--middle">
       <?php
       $inspection_items = [
@@ -95,7 +95,7 @@ get_header();
   </section>
 
   <section class="p-maintenance__warranty">
-    <p class="p-maintenance__heading">保証と保守期間</p>
+    <h4 class="p-maintenance__heading">保証と保守期間</h4>
     <div class="p-maintenance__warranty__body l-content--middle">
       <p class="p-maintenance__note">
         お引渡しから20年の定期巡回訪問に合わせて、長期住宅保証や設備保証も行っております。 住まわれるご家族の皆様がいつまでも快適にお暮らしいただけるよう、 安心の保証制度でご入居後も末永くサポートします。

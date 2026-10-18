@@ -111,7 +111,7 @@ get_header();
   </nav>
 
 
-  <section class="p-cost__points">
+  <div class="p-cost__points">
     <!-- point1 -->
     <section class="p-cost__economy" id="cost1">
       <div class="p-cost__economy__container">
@@ -123,12 +123,12 @@ get_header();
             <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
           </div>
           <div>
-            <p class="c-title--orangeLine p-cost__points__headline">
+            <h3 class="c-title--orangeLine p-cost__points__headline">
               <span class="marker">
                 <span class="u-orange">経済的な暮らし</span>を<br>
                 サポートする家づくり
               </span>
-            </p>
+            </h3>
           </div>
           <div class="p-cost__points__text u-mb25">
             豊後夢工房では、最新の太陽光発電システムを採用し、高い気密性と断熱性を備えた標準仕様の設計と熱交換式換気システムを提供しています。これにより、住んでからも光熱費を削減することができます。暮らしのスタートから経済的な生活をサポートします。
@@ -136,9 +136,9 @@ get_header();
         </div>
       </div>
 
-      <p class="p-cost__section__subtitle">
+      <h4 class="p-cost__section__subtitle">
         <span class="u-orange">経済的</span>な暮らしをサポートする<br class="u-none__pc--sp"><span class="u-orange">3</span>つのポイント
-      </p>
+      </h4>
       <?php
       $economy_points = [
         [
@@ -189,10 +189,10 @@ get_header();
             <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
           </div>
           <div>
-            <p class="c-title--orangeLine u-mb10 p-cost__points__headline">
+            <h3 class="c-title--orangeLine u-mb10 p-cost__points__headline">
               <span class="marker">
                 充実した<span class="u-orange">標準設備</span></span>
-            </p>
+            </h3>
           </div>
           <div class="p-cost__points__text u-mb25">
             標準仕様にお客様が望む設備が多く含まれているので、追加費用が少ないことを特徴としています。
@@ -200,9 +200,9 @@ get_header();
         </div>
       </div>
 
-      <p class="p-cost__section__subtitle">
+      <h4 class="p-cost__section__subtitle">
         <span class="u-orange">豊後夢工房</span>の標準設備<br class="u-none__pc--sp"><span class="u-orange">3</span>つのポイント
-      </p>
+      </h4>
       <?php
       $facility_points = [
         [
@@ -258,11 +258,11 @@ get_header();
             <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point3.webp' ); ?>" alt="">
           </div>
           <div>
-            <p class="c-title--orangeLine p-cost__points__headline">
+            <h3 class="c-title--orangeLine p-cost__points__headline">
               <span class="marker">
                 <span class="u-orange">ワンストップ</span>での<br>
                 サポート体制</span>
-            </p>
+            </h3>
           </div>
           <div class="p-cost__points__text u-mb25">
             自社土地による土地の提案から家づくりの相談、無料FP相談、ローンの手続きまで、全てのステップをワンストップでサポートしています。豊後夢工房では一括して対応するので、費用や時間を節約しながら家を建てることができます。
@@ -277,9 +277,9 @@ get_header();
               <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_10.webp' ); ?>" alt="土地探しのサポートのイメージ">
             </div>
             <div class="p-cost__points__cardBody">
-              <p class="p-cost__points__cardTitle">
+              <h4 class="p-cost__points__cardTitle">
                 <span class="u-orange">土地探しのサポート</span>
-              </p>
+              </h4>
               <p class="p-cost__points__cardText">
                 お客様のご要望に合った土地探しをサポートします。私たちは、専門の不動産スタッフが責任を持って土地探しを行います。営業スタッフではなく、専門家が豊富な経験と情報をもとに、最適な土地を見つけます。
               </p>
@@ -295,9 +295,9 @@ get_header();
               <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_11.webp' ); ?>" alt="無料FP相談のイメージ">
             </div>
             <div class="p-cost__points__cardBody">
-              <p class="p-cost__points__cardTitle">
+              <h4 class="p-cost__points__cardTitle">
                 <span class="u-orange">無料FP相談</span>
-              </p>
+              </h4>
               <p class="p-cost__points__cardText">
                 プランを考える前に、ファイナンシャルプランナー（FP）に相談できるので、お金の心配も安心です。自分の予算やライフスタイルに合わせて、無料で相談することができます。無理な営業などは一切いたしませんので、安心してご相談ください。
               </p>
@@ -322,11 +322,11 @@ get_header();
             <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point4.webp' ); ?>" alt="">
           </div>
           <div>
-            <p class="c-title--orangeLine p-cost__points__headline">
+            <h3 class="c-title--orangeLine p-cost__points__headline">
               <span class="marker">
                 <span class="u-orange">大手他社</span>にはできない<br>
                 <span class="u-orange">丁寧</span>なプランニング</span>
-            </p>
+            </h3>
           </div>
           <div class="p-cost__points__text u-mb25">
             豊後夢工房では、一人一人の暮らしに向き合う、丁寧なプランニングを大切にしております。無理のない計画で、契約後の価格変動を最小限に抑え、予想外の出費がおこりにくいように努めています。また、初めてのお客様にも安心してもらえるようわかりやすいプランニングやデザイン案を提案。イメージと違ったなどの失敗を防ぎ、お客様の負担を軽減します。
@@ -341,9 +341,9 @@ get_header();
               <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_13.webp' ); ?>" alt="無料間取り図、3Dパースを作成のイメージ">
             </div>
             <div class="p-cost__points__cardBody">
-              <p class="p-cost__points__cardTitle">
+              <h4 class="p-cost__points__cardTitle">
                 <span class="u-orange">無料間取り図、3Dパース</span>を作成
-              </p>
+              </h4>
               <p class="p-cost__points__cardText">
                 大手他社では、契約後完了後に間取り図面などを作成することが多いですが、豊後夢工房では、ご要望を教えていただければ間取り図、3Dパースも含めたプランニングも無料で作成しています。
               </p>
@@ -356,10 +356,10 @@ get_header();
               <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_14.webp' ); ?>" alt="プランニング前の土地の状況確認のイメージ">
             </div>
             <div class="p-cost__points__cardBody">
-              <p class="p-cost__points__cardTitle">
+              <h4 class="p-cost__points__cardTitle">
                 プランニング前の<span class="u-orange">土地</span>の<br>
                 <span class="u-orange">状況確認</span>もしっかりと
-              </p>
+              </h4>
               <p class="p-cost__points__cardText">
                 豊後夢工房ではプランニング前に事前に土地のや周辺環境の確認をしっかりと行います。
                 周辺道路、建物高低差などしっかり調査したうえで丁寧にプランニングを行うので、予想外のコストを抑えます。
@@ -376,7 +376,7 @@ get_header();
 
     </section>
 
-  </section>
+  </div>
 
   <?php get_template_part( 'template-parts/common' ); ?>
 

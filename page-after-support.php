@@ -95,7 +95,7 @@ get_header();
           <div class="p-afterSupport__overviewNum">
             <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
           </div>
-          <p class="p-afterSupport__sectionTitle"><span class="marker">安心の長期住宅保証</span></p>
+          <h3 class="p-afterSupport__sectionTitle"><span class="marker">安心の長期住宅保証</span></h3>
           <p class="p-afterSupport__overviewLead">
             建物保証<span>20年</span>、最長<span>60年</span>まで延長可能
           </p>
@@ -125,9 +125,9 @@ get_header();
           <div class="p-afterSupport__overviewNum">
             <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
           </div>
-          <p class="p-afterSupport__sectionTitle">
+          <h3 class="p-afterSupport__sectionTitle">
             <span class="marker">地盤保証システム</span>
-          </p>
+          </h3>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
             <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
           </div>
@@ -149,9 +149,9 @@ get_header();
           <div class="p-afterSupport__overviewNum">
             <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
           </div>
-          <p class="p-afterSupport__sectionTitle">
+          <h3 class="p-afterSupport__sectionTitle">
             <span class="marker">設備機器保証</span>
-          </p>
+          </h3>
           <p class="p-afterSupport__overviewText">
             10年の設備機器保証付き。暮らしに欠かせないものだからこそ急なトラブルにも迅速に対応します。
           </p>
@@ -198,7 +198,7 @@ get_header();
       </p>
     </div>
 
-    <h2 class="p-afterSupport__devicesHeading">対象保障機器</h2>
+    <h4 class="p-afterSupport__devicesHeading">対象保障機器</h4>
 
     <div class="p-afterSupport__devices">
       <p class="p-afterSupport__devicesLead">
@@ -260,9 +260,9 @@ get_header();
           <div class="p-afterSupport__overviewNum">
             <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
           </div>
-          <p class="p-afterSupport__sectionTitle">
+          <h3 class="p-afterSupport__sectionTitle">
             <span class="marker">定期点検</span>
-          </p>
+          </h3>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
             <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
           </div>
@@ -280,7 +280,6 @@ get_header();
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/common' ); ?>
 
 </main>
 <?php get_footer(); ?>

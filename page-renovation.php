@@ -46,9 +46,9 @@ get_header();
       </div>
       <div class="p-renovation__about__panel p-renovation__about__panel--left">
         <div class="p-renovation__about__titleWrap">
-          <p class="p-renovation__about__title">
+          <h3 class="p-renovation__about__title">
             <span class="marker">ゆめリフォーム</span>
-          </p>
+          </h3>
         </div>
         <div class="p-renovation__about__text">
           あなたの大切な住まいを、もっと素敵に、もっと快適に変えてみませんか？「ゆめリフォーム」で、古くなったお家もまるで新築のように生まれ変わります。<br>
@@ -59,7 +59,7 @@ get_header();
   </section>
 
   <section class="p-renovation__beforeAfter">
-    <h2 class="p-renovation__sectionTitle">ビフォーアフター</h2>
+    <h4 class="p-renovation__sectionTitle">ビフォーアフター</h4>
     <div class="p-renovation__inner p-renovation__compare">
       <ul class="p-renovation__compare__list">
         <li class="p-renovation__compare__item">
@@ -111,7 +111,7 @@ get_header();
   </section>
 
   <section class="p-renovation__details">
-    <h2 class="p-renovation__sectionTitle">リフォーム内容</h2>
+    <h4 class="p-renovation__sectionTitle">リフォーム内容</h4>
     <div class="p-renovation__inner">
       <?php
       $detail_items = [
@@ -157,9 +157,9 @@ get_header();
   </section>
 
   <section class="p-renovation__process">
-    <h2 class="p-renovation__sectionTitle">
+    <h4 class="p-renovation__sectionTitle">
       お問合わせから<span class="u-orange">リフォーム</span>までの流れ
-    </h2>
+    </h4>
     <?php
     $process_steps      = [
       [
@@ -190,9 +190,9 @@ get_header();
                 <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
               </div>
               <div class="p-renovation__process__panel">
-                <p class="c-title--orangeLine p-renovation__process__title"><span class="marker">
-                    <span class="u-orange"><?php echo esc_html( sprintf( '%02d. ', $i + 1 ) ); ?></span><?php echo esc_html( $step['title'] ); ?></span>
-                </p>
+                <h5 class="c-title--orangeLine p-renovation__process__title"><span class="marker">
+                  <span class="u-orange"><?php echo esc_html( sprintf( '%02d. ', $i + 1 ) ); ?></span><?php echo esc_html( $step['title'] ); ?></span>
+                </h5>
                 <p class="p-renovation__process__text">
                   <?php echo wp_kses_post( $step['text'] ); ?>
                 </p>
@@ -216,9 +216,9 @@ get_header();
   </section>
 
   <section class="p-renovation__features">
-    <h2 class="p-renovation__sectionTitle">
+    <h4 class="p-renovation__sectionTitle">
       <span class="u-orange">ゆめリフォーム</span>の特徴
-    </h2>
+    </h4>
     <ul class="p-renovation__features__list">
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
@@ -230,10 +230,10 @@ get_header();
               <img loading="lazy" class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <div>
-              <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
+              <h5 class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
                   <span class="u-orange">豊富な経験</span>と<span class="u-orange">知識</span>を<br>
                   持つスタッフが<span class="u-orange">対応</span></span>
-              </p>
+              </h5>
             </div>
             <div class="p-renovation__feature__text">
               リフォームは物件ごとに状況が異なるため、豊後夢工房では経験、知識共に豊富なスタッフが対応いたします。内容によっては一級建築士が同行、施工時の監督も1級施工管理技士が担当し、品質の高い施工をお約束します。
@@ -251,9 +251,9 @@ get_header();
               <img loading="lazy" class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
             </div>
             <div>
-              <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
+              <h5 class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
                   <span class="u-orange">安心</span>の<span class="u-orange">施工監督体制</span></span>
-              </p>
+              </h5>
             </div>
             <div class="p-renovation__feature__text">
               施工の各段階で1級施工管理技士が監督を担当し、安心してお任せいただける体制を整えています。私たちはお客様のニーズに応じた最適なリフォームを提供し、快適で安全な住まいを実現します。

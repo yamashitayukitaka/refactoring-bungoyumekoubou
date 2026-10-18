@@ -31,7 +31,7 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <section class="p-concept__intro">
+  <div class="p-concept__intro">
     <div class="p-concept__intro__inner">
       <div class="p-concept__intro__photos">
         <div class="p-concept__intro__photo">
@@ -57,7 +57,7 @@ get_header();
         あなたの住まいを、<span class="u-textOrange">楽しく</span>、もっと<span class="u-textOrange">自由</span>に。
       </div>
     </div>
-  </section>
+  </div>
 
   <section class="p-concept__policy">
     <div class="c-title__head">
@@ -75,7 +75,7 @@ get_header();
         </div>
         <div class="p-concept__policy__panel">
 
-            <h2 class="c-title--sectionLine">POLICY 01</h2>
+            <h3 class="c-title--sectionLine">POLICY 01</h3>
             <p class="c-title--orangeLine u-mb10">
               <span class="marker">
                 <span class="u-orange">自由</span>に<span class="u-orange">デザイン</span>する<br>
@@ -98,7 +98,7 @@ get_header();
           <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="コストを抑えたスマートな家づくりのイメージ">
         </div>
         <div class="p-concept__policy__panel">
-          <h2 class="c-title--sectionLine">POLICY 02</h2>
+          <h3 class="c-title--sectionLine">POLICY 02</h3>
           <p class="c-title--orangeLine u-mb10">
             <span class="marker">
               <span class="u-orange">コスト</span>を抑えた<br>
@@ -121,7 +121,7 @@ get_header();
           <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="心地よく暮らせる住まいのイメージ">
         </div>
         <div class="p-concept__policy__panel">
-          <h2 class="c-title--sectionLine">POLICY 03</h2>
+          <h3 class="c-title--sectionLine">POLICY 03</h3>
           <p class="c-title--orangeLine u-mb10">
             <span class="marker">
               <span class="u-orange">心地よく暮らせる</span><br>
