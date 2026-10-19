@@ -114,7 +114,7 @@
       <div class="cards-container">
         <section class="card-single active" period="period1">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company1.webp' ); ?>" alt="豊後夢工房創業当時の写真のイメージ" />
+            <img loading="lazy" width="1280" height="720" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company1.webp' ); ?>" alt="豊後夢工房創業当時の写真のイメージ" />
             <p>
               大手ハウスメーカーの営業だった二人を中心に創業しました。<br />
               イシンホーム住宅研究会加盟
@@ -123,77 +123,77 @@
         </section>
         <section class="card-single" period="period2">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="三蔵奉仕モデルハウスのイメージ" />
+            <img loading="lazy" width="1280" height="720" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="三蔵奉仕モデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period3">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company2.webp' ); ?>" alt="四季ZENモデルハウスのイメージ" />
+            <img loading="lazy" width="1280" height="720" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company2.webp' ); ?>" alt="四季ZENモデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single active" period="period4">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company3.webp' ); ?>" alt="スムスム展示場リモデルのイメージ" />
+            <img loading="lazy" width="1280" height="720" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company3.webp' ); ?>" alt="スムスム展示場リモデルのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period5">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie2.webp' ); ?>" alt="太陽光発電MAX住宅モデルハウスのイメージ" />
+            <img loading="lazy" width="2048" height="1365" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie2.webp' ); ?>" alt="太陽光発電MAX住宅モデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period6">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie3.webp' ); ?>" alt="杵築市ローン0円住宅モデルハウスのイメージ" />
+            <img loading="lazy" width="2048" height="1536" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie3.webp' ); ?>" alt="杵築市ローン0円住宅モデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single active" period="period7">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie4.webp' ); ?>" alt="佐伯市ローン0円住宅モデルハウスのイメージ" />
+            <img loading="lazy" width="2048" height="1536" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie4.webp' ); ?>" alt="佐伯市ローン0円住宅モデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period8">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie12.webp' ); ?>" alt="HEIG和モダンモデルハウスのイメージ" />
+            <img loading="lazy" width="2048" height="1365" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie12.webp' ); ?>" alt="HEIG和モダンモデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period9">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie11.webp' ); ?>" alt="リレーヴ販売開始のイメージ" />
+            <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie11.webp' ); ?>" alt="リレーヴ販売開始のイメージ" />
           </div>
         </section>
         <section class="card-single" period="period10">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie7.webp' ); ?>" alt="リレーヴモデルハウス1号店のイメージ" />
+            <img loading="lazy" width="1800" height="1200" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie7.webp' ); ?>" alt="リレーヴモデルハウス1号店のイメージ" />
           </div>
         </section>
         <section class="card-single" period="period11">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie8.webp' ); ?>" alt="本社移転 大在のイメージ" />
+            <img loading="lazy" width="2048" height="1365" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie8.webp' ); ?>" alt="本社移転 大在のイメージ" />
           </div>
         </section>
         <section class="card-single" period="period12">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie6.webp' ); ?>" alt="リレーヴモデルハウス2号のイメージ" />
+            <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie6.webp' ); ?>" alt="リレーヴモデルハウス2号のイメージ" />
           </div>
         </section>
         <section class="card-single" period="period13">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company4.webp' ); ?>" alt="工事件数県内1000件達成のイメージ" />
+            <img loading="lazy" width="2468" height="1830" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/company4.webp' ); ?>" alt="工事件数県内1000件達成のイメージ" />
           </div>
         </section>
         <section class="card-single" period="period14">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie10.webp' ); ?>" alt="シェリーハウスモデルハウスのイメージ" />
+            <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie10.webp' ); ?>" alt="シェリーハウスモデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period15">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="三蔵奉仕モデルハウスのイメージ" />
+            <img loading="lazy" width="1280" height="720" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="三蔵奉仕モデルハウスのイメージ" />
           </div>
         </section>
         <section class="card-single" period="period16">
           <div class="content">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="三蔵奉仕モデルハウスのイメージ" />
+            <img loading="lazy" width="1280" height="720" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/movie1.webp' ); ?>" alt="三蔵奉仕モデルハウスのイメージ" />
           </div>
         </section>
       </div>

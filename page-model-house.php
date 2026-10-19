@@ -41,7 +41,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
+      <img loading="lazy" width="323" height="101" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">中庭と深い軒の織りなす<br>
@@ -52,10 +52,10 @@ get_header();
           スタイリッシュなデザイン</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos-studio.png' ); ?>" alt="TOSハウジングメッセの外観イメージ">
+      <img loading="lazy" width="614" height="366" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos-studio.png' ); ?>" alt="TOSハウジングメッセの外観イメージ">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos.png' ); ?>" alt="TOSハウジングメッセの間取り図イメージ">
+      <img loading="lazy" width="1600" height="579" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos.png' ); ?>" alt="TOSハウジングメッセの間取り図イメージ">
     </figure>
     <div class="p-modelHouse__overview__text u-mb100">
       建物の中心に「中庭」を配置し、<br>
@@ -86,7 +86,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>" alt="">
+      <img loading="lazy" width="322" height="111" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>" alt="">
     </figure>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">大人カワイイ<br>
@@ -99,10 +99,10 @@ get_header();
           ヨーロピアンな家</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly-studio.png' ); ?>" alt="シェリーハウス外観イメージ">
+      <img loading="lazy" width="495" height="494" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly-studio.png' ); ?>" alt="シェリーハウス外観イメージ">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly.png' ); ?>" alt="シェリーハウス間取り図イメージ">
+      <img loading="lazy" width="1600" height="615" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly.png' ); ?>" alt="シェリーハウス間取り図イメージ">
     </figure>
     <div class="p-modelHouse__overview__text">
       ヨーロッパの街並みに溶け込むようなデザイン。<br>
@@ -181,7 +181,7 @@ get_header();
 
   <section class="p-modelHouse__overview u-mb100">
     <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
+      <img loading="lazy" width="323" height="101" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
     </figure>
 
     <div class="p-modelHouse__overview__heading">
@@ -196,10 +196,10 @@ get_header();
     </div>
 
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha-studio.png' ); ?>" alt="いろは家の外観イメージ">
+      <img loading="lazy" width="990" height="988" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha-studio.png' ); ?>" alt="いろは家の外観イメージ">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha.png' ); ?>" alt="いろは家の間取り図イメージ">
+      <img loading="lazy" width="1600" height="870" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha.png' ); ?>" alt="いろは家の間取り図イメージ">
     </figure>
     <div class="p-modelHouse__overview__text">
       家づくりで不安に思う方が一番多いのがお金のこと。<br>
@@ -323,10 +323,6 @@ get_header();
         <a href="<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class="c-button--outline">イベント一覧へ</a>
       </div>
   </section>
-
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
-
 </main>
 <?php get_footer(); ?>

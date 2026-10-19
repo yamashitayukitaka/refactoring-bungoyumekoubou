@@ -51,7 +51,7 @@ get_header();
         <a href="#cost1" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img loading="lazy" class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-cost__nav__numberImg" width="106" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -66,7 +66,7 @@ get_header();
         <a href="#cost2" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img loading="lazy" class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-cost__nav__numberImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -81,7 +81,7 @@ get_header();
         <a href="#cost3" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img loading="lazy" class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-cost__nav__numberImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -96,7 +96,7 @@ get_header();
         <a href="#cost4" class="p-cost__nav__link">
           <div class="p-cost__nav__card">
             <div class="p-cost__nav__number">
-              <img loading="lazy" class="p-cost__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-cost__nav__numberImg" width="119" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-cost__nav__label">
@@ -116,11 +116,11 @@ get_header();
     <section class="p-cost__economy" id="cost1">
       <div class="p-cost__economy__container">
         <div class="p-cost__points__media p-cost__points__media--right">
-          <img loading="lazy" class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_1.png' ); ?>" alt="経済的な暮らしをサポートする家づくりのイメージ">
+          <img loading="lazy" class="p-cost__points__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_1.png' ); ?>" alt="経済的な暮らしをサポートする家づくりのイメージ">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--left">
           <div class="p-cost__points__badge">
-            <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-cost__points__badgeImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
           </div>
           <div>
             <h3 class="c-title--orangeLine p-cost__points__headline">
@@ -139,54 +139,48 @@ get_header();
       <h4 class="p-cost__section__subtitle">
         <span class="u-orange">経済的</span>な暮らしをサポートする<br class="u-none__pc--sp"><span class="u-orange">3</span>つのポイント
       </h4>
-      <?php
-      $economy_points = [
-        [
-          'img'    => '/cost/cost_2.webp',
-          'number' => '/number/number1.webp',
-          'label'  => '太陽光パネル',
-          'text'   => '従来よりも25％発電力の高い最新高性能太陽光パネルを、大手他社よりも低価格で提供が可能。業界最長の40年間の保証が付いており、長期間にわたり安心してご利用いただけます。',
-        ],
-        [
-          'img'    => '/cost/cost_3.webp',
-          'number' => '/number/number2.webp',
-          'label'  => '高断熱・高気密',
-          'text'   => '断熱樹脂サッシやLow-Eガラス、基礎断熱、W断熱など、高い断熱性と気密性を備えた素材を使用しています。',
-        ],
-        [
-          'img'    => '/cost/cost_4.webp',
-          'number' => '/number/number3.webp',
-          'label'  => '高性能換気システム',
-          'text'   => '世界トップクラスの熱交換率約93％の高性能換気システムを標準で採用しています。換気システム+高気密性+高断熱性を組み合わせて、快適で経済的な生活をサポートします。',
-        ],
-      ];
-      ?>
       <ul class="p-cost__economy__list">
-        <?php foreach ( $economy_points as $point ) : ?>
-          <li class="p-cost__economy__item">
-            <img loading="lazy" class="p-cost__economy__itemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['img'] ); ?>" alt="<?php echo esc_attr( $point['label'] . 'のイメージ' ); ?>">
-            <div class="p-cost__economy__itemLabel">
-              <div class="p-cost__economy__itemLabelIcon">
-                <img loading="lazy" class="p-cost__economy__itemLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['number'] ); ?>" alt="">
-              </div>
-              <div class="p-cost__economy__itemLabelText">
-                <?php echo esc_html( $point['label'] ); ?>
-              </div>
+        <li class="p-cost__economy__item">
+          <img loading="lazy" class="p-cost__economy__itemImg" width="868" height="868" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_2.webp' ); ?>" alt="太陽光パネルのイメージ">
+          <div class="p-cost__economy__itemLabel">
+            <div class="p-cost__economy__itemLabelIcon">
+              <img loading="lazy" class="p-cost__economy__itemLabelImg" width="106" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
             </div>
-            <p class="p-cost__economy__itemDesc"><?php echo esc_html( $point['text'] ); ?></p>
-          </li>
-        <?php endforeach; ?>
+            <div class="p-cost__economy__itemLabelText">太陽光パネル</div>
+          </div>
+          <p class="p-cost__economy__itemDesc">従来よりも25％発電力の高い最新高性能太陽光パネルを、大手他社よりも低価格で提供が可能。業界最長の40年間の保証が付いており、長期間にわたり安心してご利用いただけます。</p>
+        </li>
+        <li class="p-cost__economy__item">
+          <img loading="lazy" class="p-cost__economy__itemImg" width="550" height="550" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_3.webp' ); ?>" alt="高断熱・高気密のイメージ">
+          <div class="p-cost__economy__itemLabel">
+            <div class="p-cost__economy__itemLabelIcon">
+              <img loading="lazy" class="p-cost__economy__itemLabelImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
+            </div>
+            <div class="p-cost__economy__itemLabelText">高断熱・高気密</div>
+          </div>
+          <p class="p-cost__economy__itemDesc">断熱樹脂サッシやLow-Eガラス、基礎断熱、W断熱など、高い断熱性と気密性を備えた素材を使用しています。</p>
+        </li>
+        <li class="p-cost__economy__item">
+          <img loading="lazy" class="p-cost__economy__itemImg" width="515" height="515" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_4.webp' ); ?>" alt="高性能換気システムのイメージ">
+          <div class="p-cost__economy__itemLabel">
+            <div class="p-cost__economy__itemLabelIcon">
+              <img loading="lazy" class="p-cost__economy__itemLabelImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
+            </div>
+            <div class="p-cost__economy__itemLabelText">高性能換気システム</div>
+          </div>
+          <p class="p-cost__economy__itemDesc">世界トップクラスの熱交換率約93％の高性能換気システムを標準で採用しています。換気システム+高気密性+高断熱性を組み合わせて、快適で経済的な生活をサポートします。</p>
+        </li>
       </ul>
     </section>
 
     <section class="p-cost__facility" id="cost2">
       <div class="p-cost__facility__container">
         <div class="p-cost__points__media">
-          <img loading="lazy" class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_5.png' ); ?>" alt="充実した標準設備のイメージ">
+          <img loading="lazy" class="p-cost__points__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_5.png' ); ?>" alt="充実した標準設備のイメージ">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--right">
           <div class="p-cost__points__badge">
-            <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-cost__points__badgeImg" width="126" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
           </div>
           <div>
             <h3 class="c-title--orangeLine u-mb10 p-cost__points__headline">
@@ -203,39 +197,34 @@ get_header();
       <h4 class="p-cost__section__subtitle">
         <span class="u-orange">豊後夢工房</span>の標準設備<br class="u-none__pc--sp"><span class="u-orange">3</span>つのポイント
       </h4>
-      <?php
-      $facility_points = [
-        [
-          'img'    => '/cost/cost_6.webp',
-          'number' => '/number/number1.webp',
-          'label'  => '快適',
-        ],
-        [
-          'img'    => '/cost/cost_7.webp',
-          'number' => '/number/number2.webp',
-          'label'  => '省エネ',
-        ],
-        [
-          'img'    => '/cost/cost_8.webp',
-          'number' => '/number/number3.webp',
-          'label'  => '耐震',
-        ],
-      ];
-      ?>
       <ul class="p-cost__facility__list">
-        <?php foreach ( $facility_points as $point ) : ?>
-          <li class="p-cost__facility__item">
-            <img loading="lazy" class="p-cost__facility__itemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['img'] ); ?>" alt="<?php echo esc_attr( $point['label'] . 'のイメージ' ); ?>">
-            <div class="p-cost__facility__itemLabel">
-              <div class="p-cost__facility__itemLabelIcon">
-                <img loading="lazy" class="p-cost__facility__itemLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img' . $point['number'] ); ?>" alt="">
-              </div>
-              <div class="p-cost__facility__itemLabelText">
-                <?php echo esc_html( $point['label'] ); ?>
-              </div>
+        <li class="p-cost__facility__item">
+          <img loading="lazy" class="p-cost__facility__itemImg" width="1000" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_6.webp' ); ?>" alt="快適のイメージ">
+          <div class="p-cost__facility__itemLabel">
+            <div class="p-cost__facility__itemLabelIcon">
+              <img loading="lazy" class="p-cost__facility__itemLabelImg" width="106" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
             </div>
-          </li>
-        <?php endforeach; ?>
+            <div class="p-cost__facility__itemLabelText">快適</div>
+          </div>
+        </li>
+        <li class="p-cost__facility__item">
+          <img loading="lazy" class="p-cost__facility__itemImg" width="1000" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_7.webp' ); ?>" alt="省エネのイメージ">
+          <div class="p-cost__facility__itemLabel">
+            <div class="p-cost__facility__itemLabelIcon">
+              <img loading="lazy" class="p-cost__facility__itemLabelImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
+            </div>
+            <div class="p-cost__facility__itemLabelText">省エネ</div>
+          </div>
+        </li>
+        <li class="p-cost__facility__item">
+          <img loading="lazy" class="p-cost__facility__itemImg" width="288" height="288" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_8.webp' ); ?>" alt="耐震のイメージ">
+          <div class="p-cost__facility__itemLabel">
+            <div class="p-cost__facility__itemLabelIcon">
+              <img loading="lazy" class="p-cost__facility__itemLabelImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
+            </div>
+            <div class="p-cost__facility__itemLabelText">耐震</div>
+          </div>
+        </li>
       </ul>
       <p class="p-cost__facility__description">
         家づくりで気になる、快適性能や省エネ設備、 <br class="u-none__pc--sp">耐震設備が全てセットに含まれているので、<br>
@@ -243,19 +232,14 @@ get_header();
       </p>
 
     </section>
-
-    
-
-
-    
     <section class="p-cost__support" id="cost3">
       <div class="p-cost__support__container">
         <div class="p-cost__points__media p-cost__points__media--right">
-          <img loading="lazy" class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_9.png' ); ?>" alt="ワンストップでのサポート体制のイメージ">
+          <img loading="lazy" class="p-cost__points__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_9.png' ); ?>" alt="ワンストップでのサポート体制のイメージ">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--left">
           <div class="p-cost__points__badge">
-            <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point3.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-cost__points__badgeImg" width="128" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point3.webp' ); ?>" alt="">
           </div>
           <div>
             <h3 class="c-title--orangeLine p-cost__points__headline">
@@ -274,7 +258,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapEnd">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia">
-              <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_10.webp' ); ?>" alt="土地探しのサポートのイメージ">
+              <img loading="lazy" class="p-cost__points__cardImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_10.webp' ); ?>" alt="土地探しのサポートのイメージ">
             </div>
             <div class="p-cost__points__cardBody">
               <h4 class="p-cost__points__cardTitle">
@@ -292,7 +276,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapStart">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia u-none__pc--tab">
-              <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_11.webp' ); ?>" alt="無料FP相談のイメージ">
+              <img loading="lazy" class="p-cost__points__cardImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_11.webp' ); ?>" alt="無料FP相談のイメージ">
             </div>
             <div class="p-cost__points__cardBody">
               <h4 class="p-cost__points__cardTitle">
@@ -303,23 +287,21 @@ get_header();
               </p>
             </div>
             <div class="p-cost__points__cardMedia u-none__mobile--tab">
-              <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_11.webp' ); ?>" alt="無料FP相談のイメージ">
+              <img loading="lazy" class="p-cost__points__cardImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_11.webp' ); ?>" alt="無料FP相談のイメージ">
             </div>
           </div>
         </li>
       </ul>
 
     </section>
-   
-    
     <section class="p-cost__plan" id="cost4">
       <div class="p-cost__plan__container">
         <div class="p-cost__points__media">
-          <img loading="lazy" class="p-cost__points__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_12.png' ); ?>" alt="大手他社にはできない丁寧なプランニングのイメージ">
+          <img loading="lazy" class="p-cost__points__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_12.png' ); ?>" alt="大手他社にはできない丁寧なプランニングのイメージ">
         </div>
         <div class="p-cost__points__panel p-cost__points__panel--right">
           <div class="p-cost__points__badge">
-            <img loading="lazy" class="p-cost__points__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point4.webp' ); ?>" alt="">
+            <img loading="lazy" class="p-cost__points__badgeImg" width="197" height="61" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point4.webp' ); ?>" alt="">
           </div>
           <div>
             <h3 class="c-title--orangeLine p-cost__points__headline">
@@ -338,7 +320,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapEnd">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia">
-              <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_13.webp' ); ?>" alt="無料間取り図、3Dパースを作成のイメージ">
+              <img loading="lazy" class="p-cost__points__cardImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_13.webp' ); ?>" alt="無料間取り図、3Dパースを作成のイメージ">
             </div>
             <div class="p-cost__points__cardBody">
               <h4 class="p-cost__points__cardTitle">
@@ -353,7 +335,7 @@ get_header();
         <li class="p-cost__points__card p-cost__points__card--overlapStart p-cost__points__card--sectionEnd">
           <div class="p-cost__points__cardInner">
             <div class="p-cost__points__cardMedia u-none__pc--tab">
-              <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_14.webp' ); ?>" alt="プランニング前の土地の状況確認のイメージ">
+              <img loading="lazy" class="p-cost__points__cardImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_14.webp' ); ?>" alt="プランニング前の土地の状況確認のイメージ">
             </div>
             <div class="p-cost__points__cardBody">
               <h4 class="p-cost__points__cardTitle">
@@ -366,20 +348,13 @@ get_header();
               </p>
             </div>
             <div class="p-cost__points__cardMedia u-none__mobile--tab">
-              <img loading="lazy" class="p-cost__points__cardImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_14.webp' ); ?>" alt="プランニング前の土地の状況確認のイメージ">
+              <img loading="lazy" class="p-cost__points__cardImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/cost/cost_14.webp' ); ?>" alt="プランニング前の土地の状況確認のイメージ">
             </div>
           </div>
         </li>
       </ul>
-
-
-
     </section>
-
   </div>
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
-
 </main>
 <?php get_footer(); ?>

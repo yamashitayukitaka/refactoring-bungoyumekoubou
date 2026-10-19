@@ -93,14 +93,14 @@ get_header();
       <div class="p-afterSupport__overview">
         <div class="p-afterSupport__overviewBody">
           <div class="p-afterSupport__overviewNum">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
+            <img loading="lazy" width="106" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
           </div>
           <h3 class="p-afterSupport__sectionTitle"><span class="marker">安心の長期住宅保証</span></h3>
           <p class="p-afterSupport__overviewLead">
             建物保証<span>20年</span>、最長<span>60年</span>まで延長可能
           </p>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="分譲住宅の外観のイメージ（安心の長期住宅保証）">
+            <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="分譲住宅の外観のイメージ（安心の長期住宅保証）">
           </div>
           <div class="p-afterSupport__overviewText">
             家の構造的な部分をプロによる定期点検で20年、最長60年まで保証します。
@@ -108,11 +108,11 @@ get_header();
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="分譲住宅の外観のイメージ（安心の長期住宅保証）">
+          <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-1.png' ); ?>" alt="分譲住宅の外観のイメージ（安心の長期住宅保証）">
         </div>
       </div>
       <figure class="p-afterSupport__wideFigure">
-        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="保証と保守期間のイメージ">
+        <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="保証と保守期間のイメージ">
       </figure>
       <a class="p-afterSupport__more" href="#support3">くわしくは <span>こちら</span></a>
     </div>
@@ -123,20 +123,20 @@ get_header();
       <div class="p-afterSupport__overview">
         <div class="p-afterSupport__overviewBody">
           <div class="p-afterSupport__overviewNum">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
+            <img loading="lazy" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
           </div>
           <h3 class="p-afterSupport__sectionTitle">
             <span class="marker">地盤保証システム</span>
           </h3>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
+            <img loading="lazy" width="1920" height="1440" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
           </div>
           <div class="p-afterSupport__overviewText">
             豊後夢工房では、指定専門機関による地盤検査を実施し、問題があれば地盤改良工事を行うなど対策を万全にしていますが、万が一、建物が不同沈下などにより損壊した場合、豊後夢工房が建物と地盤の修復工事をお約束する制度です。保証期間はお引き渡しから20年間保証が付きます。
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
+          <img loading="lazy" width="1920" height="1440" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-2.jpg' ); ?>" alt="地盤改良工事のイメージ（地盤保証システム）">
         </div>
       </div>
     </div>
@@ -147,7 +147,7 @@ get_header();
       <div class="p-afterSupport__overview">
         <div class="p-afterSupport__overviewBody">
           <div class="p-afterSupport__overviewNum">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
+            <img loading="lazy" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
           </div>
           <h3 class="p-afterSupport__sectionTitle">
             <span class="marker">設備機器保証</span>
@@ -156,39 +156,27 @@ get_header();
             10年の設備機器保証付き。暮らしに欠かせないものだからこそ急なトラブルにも迅速に対応します。
           </p>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="キッチン設備のイメージ（設備機器保証）">
+            <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="キッチン設備のイメージ（設備機器保証）">
           </div>
           <div class="p-afterSupport__points">
             <p class="p-afterSupport__pointsHeading">
               <span>3つ</span>の安心ポイント
             </p>
             <ul class="p-afterSupport__pointsList">
-              <?php
-              $support3_point_images = [
-                [
-                  'file' => 'jhs1.webp',
-                  'alt'  => '10年間の設備機器保証のイメージ',
-                ],
-                [
-                  'file' => 'jhs2.webp',
-                  'alt'  => '24時間コールセンター対応のイメージ',
-                ],
-                [
-                  'file' => 'jhs3.webp',
-                  'alt'  => '修理代・代替費用が何度でも無料のイメージ',
-                ],
-              ];
-              foreach ( $support3_point_images as $point_image ) :
-                ?>
-                <li class="p-afterSupport__pointsItem">
-                  <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/' . $point_image['file'] ); ?>" alt="<?php echo esc_attr( $point_image['alt'] ); ?>">
-                </li>
-              <?php endforeach; ?>
+              <li class="p-afterSupport__pointsItem">
+                <img loading="lazy" width="743" height="311" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/jhs1.webp' ); ?>" alt="10年間の設備機器保証のイメージ">
+              </li>
+              <li class="p-afterSupport__pointsItem">
+                <img loading="lazy" width="743" height="311" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/jhs2.webp' ); ?>" alt="24時間コールセンター対応のイメージ">
+              </li>
+              <li class="p-afterSupport__pointsItem">
+                <img loading="lazy" width="743" height="311" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/jhs3.webp' ); ?>" alt="修理代・代替費用が何度でも無料のイメージ">
+              </li>
             </ul>
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="キッチン設備のイメージ（設備機器保証）">
+          <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-3.png' ); ?>" alt="キッチン設備のイメージ（設備機器保証）">
         </div>
       </div>
       <p class="p-afterSupport__note">
@@ -204,51 +192,73 @@ get_header();
       <p class="p-afterSupport__devicesLead">
         対象内であれば、<span>無償</span>で何回でも<br class="u-none__pc--sp">保証限度額なしで修理可能
       </p>
-      <?php
-      $devices = [
-        [
-          'title' => 'システムキッチン',
-          'img'   => 'dream_1.webp',
-          'parts' => [ 'キッチン本体', 'コンロ（ガス・IH）', 'レンジフード', '水栓', '食洗機' ],
-        ],
-        [
-          'title' => 'システムバス',
-          'img'   => 'dream_2.webp',
-          'parts' => [ '本体（排水ボタン）', '浴室換気扇', '水栓', '表示リモコン' ],
-        ],
-        [
-          'title' => '温水洗浄トイレ',
-          'img'   => 'dream_3.webp',
-          'parts' => [ '温水洗浄機能付き便座', 'リモコン' ],
-        ],
-        [
-          'title' => '給湯器',
-          'img'   => 'dream_4.webp',
-          'parts' => [ 'ガス・石油', 'レンジフード', '本体／操作パネル' ],
-        ],
-        [
-          'title' => '洗面台',
-          'img'   => 'dream_5.webp',
-          'parts' => [ '本体（照明・くもり止め<br>ヒーター・排水ボタン）', '水栓' ],
-        ],
-      ];
-      ?>
       <ul class="p-afterSupport__devicesList">
-        <?php foreach ( $devices as $device ) : ?>
-          <li class="p-afterSupport__devicesItem">
-            <div class="p-afterSupport__devicesItemMedia">
-              <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/' . $device['img'] ); ?>" alt="">
-            </div>
-            <div class="p-afterSupport__devicesItemBody">
-              <p class="p-afterSupport__devicesItemTitle"><?php echo esc_html( $device['title'] ); ?></p>
-              <ul class="p-afterSupport__devicesItemList">
-                <?php foreach ( $device['parts'] as $part ) : ?>
-                  <li><?php echo wp_kses( $part, [ 'br' => [] ] ); ?></li>
-                <?php endforeach; ?>
-              </ul>
-            </div>
-          </li>
-        <?php endforeach; ?>
+        <li class="p-afterSupport__devicesItem">
+          <div class="p-afterSupport__devicesItemMedia">
+            <img loading="lazy" width="102" height="99" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/dream_1.webp' ); ?>" alt="">
+          </div>
+          <div class="p-afterSupport__devicesItemBody">
+            <p class="p-afterSupport__devicesItemTitle">システムキッチン</p>
+            <ul class="p-afterSupport__devicesItemList">
+              <li>キッチン本体</li>
+              <li>コンロ（ガス・IH）</li>
+              <li>レンジフード</li>
+              <li>水栓</li>
+              <li>食洗機</li>
+            </ul>
+          </div>
+        </li>
+        <li class="p-afterSupport__devicesItem">
+          <div class="p-afterSupport__devicesItemMedia">
+            <img loading="lazy" width="102" height="99" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/dream_2.webp' ); ?>" alt="">
+          </div>
+          <div class="p-afterSupport__devicesItemBody">
+            <p class="p-afterSupport__devicesItemTitle">システムバス</p>
+            <ul class="p-afterSupport__devicesItemList">
+              <li>本体（排水ボタン）</li>
+              <li>浴室換気扇</li>
+              <li>水栓</li>
+              <li>表示リモコン</li>
+            </ul>
+          </div>
+        </li>
+        <li class="p-afterSupport__devicesItem">
+          <div class="p-afterSupport__devicesItemMedia">
+            <img loading="lazy" width="102" height="99" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/dream_3.webp' ); ?>" alt="">
+          </div>
+          <div class="p-afterSupport__devicesItemBody">
+            <p class="p-afterSupport__devicesItemTitle">温水洗浄トイレ</p>
+            <ul class="p-afterSupport__devicesItemList">
+              <li>温水洗浄機能付き便座</li>
+              <li>リモコン</li>
+            </ul>
+          </div>
+        </li>
+        <li class="p-afterSupport__devicesItem">
+          <div class="p-afterSupport__devicesItemMedia">
+            <img loading="lazy" width="101" height="99" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/dream_4.webp' ); ?>" alt="">
+          </div>
+          <div class="p-afterSupport__devicesItemBody">
+            <p class="p-afterSupport__devicesItemTitle">給湯器</p>
+            <ul class="p-afterSupport__devicesItemList">
+              <li>ガス・石油</li>
+              <li>レンジフード</li>
+              <li>本体／操作パネル</li>
+            </ul>
+          </div>
+        </li>
+        <li class="p-afterSupport__devicesItem">
+          <div class="p-afterSupport__devicesItemMedia">
+            <img loading="lazy" width="102" height="99" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/dream_5.webp' ); ?>" alt="">
+          </div>
+          <div class="p-afterSupport__devicesItemBody">
+            <p class="p-afterSupport__devicesItemTitle">洗面台</p>
+            <ul class="p-afterSupport__devicesItemList">
+              <li>本体（照明・くもり止め<br>ヒーター・排水ボタン）</li>
+              <li>水栓</li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
@@ -258,13 +268,13 @@ get_header();
       <div class="p-afterSupport__overview">
         <div class="p-afterSupport__overviewBody">
           <div class="p-afterSupport__overviewNum">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
+            <img loading="lazy" width="119" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
           </div>
           <h3 class="p-afterSupport__sectionTitle">
             <span class="marker">定期点検</span>
           </h3>
           <div class="p-afterSupport__overviewMedia u-none__pc--tab">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
+            <img loading="lazy" width="1920" height="1280" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
           </div>
           <div class="p-afterSupport__overviewText">
             ご入居されてからのお客様の暮らしをサポートしてくために、ご入居から3ヶ月・1年・2年・5年・10年・20年のタイミングで定期点検に訪問させていただきます。専門スタッフにより、外壁、基礎、内装、床などを確認させていただき、不具合点がないか聞きとりの上、点検を行い、必要なメンテナンスについてのアドバイスをさせていただきます。
@@ -274,12 +284,10 @@ get_header();
           </div>
         </div>
         <div class="p-afterSupport__overviewMedia u-none__mobile--tab">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
+          <img loading="lazy" width="1920" height="1280" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/after/guarantee-4.jpg' ); ?>" alt="住宅の定期点検のイメージ">
         </div>
       </div>
     </div>
   </section>
-
-
 </main>
 <?php get_footer(); ?>

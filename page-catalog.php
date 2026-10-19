@@ -12,9 +12,9 @@ get_header();
 ?>
 <main>
   <figure class = "c-pageMv u-mb50">
-    <img src = "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top_img.webp' ); ?>" alt = "ヘッダー画像" class = "p-catalog__mv__img">
+    <img width="1280" height="854" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top_img.webp' ); ?>" alt = "ヘッダー画像" class = "p-catalog__mv__img">
     <span class = "p-catalog__mv__logo">
-      <img src = "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top.webp' ); ?>" alt = "カタログロゴ" class = "p-catalog__mv__img">
+      <img width="1328" height="1000" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top.webp' ); ?>" alt = "カタログロゴ" class = "p-catalog__mv__img">
     </span>
   </figure>
   <section class = "p-catalog__desc l-content">
@@ -24,9 +24,9 @@ get_header();
       <br>家づくりに役立つ情報が満載で、具体的なイメージを描くのに最適です。
     </p>
     <ul class = "p-catalog__desc__list">
-      <li class = "p-catalog__desc__listItem"><img src = "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list01.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
-      <li class = "p-catalog__desc__listItem"><img src = "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list02.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
-      <li class = "p-catalog__desc__listItem"><img src = "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list03.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
+      <li class = "p-catalog__desc__listItem"><img width="490" height="358" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list01.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
+      <li class = "p-catalog__desc__listItem"><img width="490" height="354" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list02.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
+      <li class = "p-catalog__desc__listItem"><img width="594" height="380" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list03.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
     </ul>
     <p class = "p-catalog__desc__listTtl">カタログの中身は...</p>
     <ul class = "p-catalog__desc__listTxt">

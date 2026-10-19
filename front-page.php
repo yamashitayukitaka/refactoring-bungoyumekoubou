@@ -25,7 +25,7 @@ get_header();
   
     <ul class="p-top__mv__appealList">
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top001.webp' ); ?>');">
-        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
+        <img class="p-top__mv__appealItemImg" width="648" height="116" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
         <p class="p-top__mv__appealTtl">断熱性能</p>
         <p class="p-top__mv__appealTxt">
           UA値
@@ -33,7 +33,7 @@ get_header();
         </p>
       </li>
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top001.webp' ); ?>');">
-        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
+        <img class="p-top__mv__appealItemImg" width="648" height="116" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
         <p class="p-top__mv__appealTtl">気密性能</p>
         <p class="p-top__mv__appealTxt">
           C値
@@ -41,7 +41,7 @@ get_header();
         </p>
       </li>
       <li class="p-top__mv__appealItem" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top001.webp' ); ?>');">
-        <img class="p-top__mv__appealItemImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
+        <img class="p-top__mv__appealItemImg" width="648" height="116" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/star3.webp' ); ?>" alt="">
         <p class="p-top__mv__appealTtl">耐震性能</p>
         <p class="p-top__mv__appealTxt">
           標準仕様
@@ -64,6 +64,8 @@ get_header();
         <li class="c-pageMv__visual__item">
           <img
             class="c-pageMv__visual__itemImg"
+            width="1600"
+            height="800"
             src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/' . $slide_file ); ?>"
             alt="<?php echo esc_attr( '豊後夢工房の住まいイメージ' . ( $slide_index + 1 ) ); ?>"
           >
@@ -105,7 +107,7 @@ get_header();
         <li class="c-lineUp__item">
           <article class="c-lineUp__body">
             <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt="HEIG（ヘイグ）"></figure>
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt="HEIG（ヘイグ）"></figure>
               <span class="c-lineUp__tag">自由設計</span>
               <p class="c-lineUp__text">暮らしをもっと自由に</p>
             </a>
@@ -114,7 +116,7 @@ get_header();
         <li class="c-lineUp__item">
           <article class="c-lineUp__body">
             <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt="リレーヴ（Rireve）"></figure>
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt="リレーヴ（Rireve）"></figure>
               <span class="c-lineUp__tag">自由設計</span>
               <p class="c-lineUp__text">次世代のZEHハウス</p>
             </a>
@@ -123,7 +125,7 @@ get_header();
         <li class="c-lineUp__item">
           <article class="c-lineUp__body">
             <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt="いろはいえ"></figure>
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt="いろはいえ"></figure>
               <span class="c-lineUp__tag">自由設計</span>
               <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
             </a>
@@ -164,7 +166,7 @@ get_header();
           <br>ぜひ一度ご来場いただき体験してみてください。
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap--house"><img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>"></figure>
+      <figure class="p-top__introduction__imgWrap--house"><img loading="lazy" width="495" height="494" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>"></figure>
     </section>
   </a>
 
@@ -183,7 +185,7 @@ get_header();
           <br>無料資料請求はこちらから
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap"><img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>"></figure>
+      <figure class="p-top__introduction__imgWrap"><img loading="lazy" width="618" height="397" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>"></figure>
     </section>
   </a>
 

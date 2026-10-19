@@ -152,15 +152,13 @@ get_header();
               <?php endif; ?>
             </div>
             <div class="p-flow__steps__media">
-              <img loading="lazy" class="p-flow__steps__img" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
+              <img loading="lazy" class="p-flow__steps__img" width="1600" height="1000" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
             </div>
           </div>
         </li>
       <?php endforeach; ?>
     </ul>
   </div>
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
 </main>
 <?php get_footer(); ?>

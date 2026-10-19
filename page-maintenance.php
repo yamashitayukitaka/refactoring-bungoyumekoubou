@@ -41,7 +41,7 @@ get_header();
   <section class="p-maintenance__about" id="maintenance-description">
     <div class="p-maintenance__about__row">
       <div class="p-maintenance__about__media">
-        <img loading="lazy" class="p-maintenance__about__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_1.png' ); ?>" alt="アフターメンテナンスのイメージ">
+        <img loading="lazy" class="p-maintenance__about__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_1.png' ); ?>" alt="アフターメンテナンスのイメージ">
       </div>
       <div class="p-maintenance__about__panel">
         <h3 class="p-maintenance__about__title"><span class="marker">アフターメンテナンス</span></h3>
@@ -58,37 +58,29 @@ get_header();
   <section class="p-maintenance__inspection">
     <h4 class="p-maintenance__heading">点検内容</h4>
     <div class="p-maintenance__inspection__inner l-content--middle">
-      <?php
-      $inspection_items = [
-        [
-          'label' => '外壁・バルコニー',
-          'img'   => get_template_directory_uri() . '/dist/img/maintenance/maintenance_2.jpg',
-        ],
-        [
-          'label' => '水回り',
-          'img'   => get_template_directory_uri() . '/dist/img/maintenance/maintenance_3.jpg',
-        ],
-        [
-          'label' => 'サッシや扉',
-          'img'   => get_template_directory_uri() . '/dist/img/maintenance/maintenance_4.jpg',
-        ],
-      ];
-      ?>
       <ul class="p-maintenance__inspection__list">
-        <?php foreach ( $inspection_items as $item ) : ?>
-          <li class="p-maintenance__inspection__item">
-            <div class="p-maintenance__inspection__media">
-              <img loading="lazy" class="p-maintenance__inspection__img" src="<?php echo esc_url( $item['img'] ); ?>" alt="<?php echo esc_attr( $item['label'] . 'のイメージ' ); ?>">
-            </div>
-            <div class="p-maintenance__inspection__label">
-              <?php echo esc_html( $item['label'] ); ?>
-            </div>
-          </li>
-        <?php endforeach; ?>
+        <li class="p-maintenance__inspection__item">
+          <div class="p-maintenance__inspection__media">
+            <img loading="lazy" class="p-maintenance__inspection__img" width="1135" height="1135" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_2.jpg' ); ?>" alt="外壁・バルコニーのイメージ">
+          </div>
+          <div class="p-maintenance__inspection__label">外壁・バルコニー</div>
+        </li>
+        <li class="p-maintenance__inspection__item">
+          <div class="p-maintenance__inspection__media">
+            <img loading="lazy" class="p-maintenance__inspection__img" width="1000" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_3.jpg' ); ?>" alt="水回りのイメージ">
+          </div>
+          <div class="p-maintenance__inspection__label">水回り</div>
+        </li>
+        <li class="p-maintenance__inspection__item">
+          <div class="p-maintenance__inspection__media">
+            <img loading="lazy" class="p-maintenance__inspection__img" width="1000" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_4.jpg' ); ?>" alt="サッシや扉のイメージ">
+          </div>
+          <div class="p-maintenance__inspection__label">サッシや扉</div>
+        </li>
       </ul>
       <div class="p-maintenance__inspection__detail">
-        <img loading="lazy" class="p-maintenance__inspection__chart" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_5.webp' ); ?>" alt="定期点検のスケジュールのイメージ図">
-        <img loading="lazy" class="p-maintenance__inspection__schedule" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_6.webp' ); ?>" alt="点検内容の一覧のイメージ図">
+        <img loading="lazy" class="p-maintenance__inspection__chart" width="1600" height="307" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_5.webp' ); ?>" alt="定期点検のスケジュールのイメージ図">
+        <img loading="lazy" class="p-maintenance__inspection__schedule" width="894" height="373" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_6.webp' ); ?>" alt="点検内容の一覧のイメージ図">
         <p class="p-maintenance__note"><?php echo wp_kses_post( 'お客様が気になっている箇所のメンテナンス、点検以外に建材や住宅設備の不具合やお客様が気になる事が発生した場合の訪問(※3)やメーカー修理の手配等も行っています。<br />お困りの際はお気軽にご連絡ください。<br />' ); ?></p>
       </div>
     </div>
@@ -100,11 +92,10 @@ get_header();
       <p class="p-maintenance__note">
         お引渡しから20年の定期巡回訪問に合わせて、長期住宅保証や設備保証も行っております。 住まわれるご家族の皆様がいつまでも快適にお暮らしいただけるよう、 安心の保証制度でご入居後も末永くサポートします。
       </p>
-      <img loading="lazy" class="p-maintenance__warranty__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="保証と保守期間のイメージ">
+      <img loading="lazy" class="p-maintenance__warranty__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/maintenance/maintenance_7.webp' ); ?>" alt="保証と保守期間のイメージ">
       <a class="p-maintenance__warranty__link" href="<?php echo esc_url( home_url( '/after-support/' ) ); ?>">安心保証をみる</a>
     </div>
   </section>
-
   <?php get_template_part( 'template-parts/common' ); ?>
 </main>
 <?php get_footer(); ?>

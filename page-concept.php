@@ -35,10 +35,10 @@ get_header();
     <div class="p-concept__intro__inner">
       <div class="p-concept__intro__photos">
         <div class="p-concept__intro__photo">
-          <img loading="lazy" class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="豊後夢工房の住まいづくりのイメージ">
+          <img loading="lazy" class="p-concept__intro__img" width="109" height="132" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="豊後夢工房の住まいづくりのイメージ">
         </div>
         <div class="p-concept__intro__family">
-          <img loading="lazy" class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__intro__img" width="657" height="462" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
         </div>
       </div>
       <div class="p-concept__intro__text">
@@ -71,7 +71,7 @@ get_header();
     <ul class="p-concept__policy__list">
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="自由にデザインするという楽しさのイメージ">
+          <img loading="lazy" class="p-concept__policy__img" width="1010" height="631" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="自由にデザインするという楽しさのイメージ">
         </div>
         <div class="p-concept__policy__panel">
 
@@ -95,7 +95,7 @@ get_header();
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="コストを抑えたスマートな家づくりのイメージ">
+          <img loading="lazy" class="p-concept__policy__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="コストを抑えたスマートな家づくりのイメージ">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 02</h3>
@@ -118,7 +118,7 @@ get_header();
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="心地よく暮らせる住まいのイメージ">
+          <img loading="lazy" class="p-concept__policy__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="心地よく暮らせる住まいのイメージ">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 03</h3>
@@ -204,7 +204,6 @@ get_header();
       </div>
     </div>
   </section>
-
   <?php get_template_part( 'template-parts/common' ); ?>
 </main>
 <?php get_footer(); ?>

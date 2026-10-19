@@ -40,7 +40,7 @@ get_header();
     <div class="p-recruit__message">
       <div class="p-recruit__message__photo u-none__pc--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
+          <img width="510" height="680" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -67,7 +67,7 @@ get_header();
       </div>
       <div class="p-recruit__message__photo u-none__mobile--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
+          <img width="510" height="680" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -216,7 +216,7 @@ get_header();
 
   <section class="l-content--middle u-mb100 p-recruit__requirements">
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
+      <img width="197" height="105" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
     </figure>
     <div class="c-title__head">
       <h2 class="c-title--sectionLine">
@@ -269,7 +269,7 @@ get_header();
       </p>
     <?php endif; ?>
     <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
+      <img width="197" height="105" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
     </figure>
   </section>
 
@@ -302,7 +302,6 @@ get_header();
       </div>
     </section>
   <?php endif; ?>
-
   <?php get_template_part( 'template-parts/common-link' ); ?>
 </main>
 <?php get_footer(); ?>
