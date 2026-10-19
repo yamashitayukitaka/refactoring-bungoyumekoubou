@@ -22,7 +22,7 @@ get_header();
     </div>
     <?php $mv = get_field( 'mv-model-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
@@ -150,7 +150,20 @@ get_header();
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__list__img"></li>
+                  <li class="c-hasThumbSlider__list__item">
+                    <?php
+                    echo wp_get_attachment_image(
+                      $has_thumbslider['img'],
+                      'full',
+                      false,
+                      array(
+                        'class'   => 'c-hasThumbSlider__list__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                      )
+                    );
+                    ?>
+                  </li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -159,7 +172,18 @@ get_header();
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__thumbnail__img">
+                    <?php
+                    echo wp_get_attachment_image(
+                      $has_thumbslider['img'],
+                      'full',
+                      false,
+                      array(
+                        'class'   => 'c-hasThumbSlider__thumbnail__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                      )
+                    );
+                    ?>
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -243,7 +267,20 @@ get_header();
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__list__img"></li>
+                  <li class="c-hasThumbSlider__list__item">
+                    <?php
+                    echo wp_get_attachment_image(
+                      $has_thumbslider['img'],
+                      'full',
+                      false,
+                      array(
+                        'class'   => 'c-hasThumbSlider__list__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                      )
+                    );
+                    ?>
+                  </li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -252,7 +289,18 @@ get_header();
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__thumbnail__img">
+                    <?php
+                    echo wp_get_attachment_image(
+                      $has_thumbslider['img'],
+                      'full',
+                      false,
+                      array(
+                        'class'   => 'c-hasThumbSlider__thumbnail__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                      )
+                    );
+                    ?>
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>

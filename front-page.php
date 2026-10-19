@@ -170,9 +170,8 @@ get_header();
     </section>
   </a>
 
-  <div class="p-common">
+ 
     <?php get_template_part( 'template-parts/bungo-yume-studio' ); ?>
-  </div>
 
   <a href="<?php echo esc_url( home_url( 'catalog' ) ); ?>">
     <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
@@ -238,7 +237,18 @@ get_header();
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
-              <img loading="lazy" src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="<?php echo esc_attr( get_the_title() ); ?>">
+              <?php
+              echo wp_get_attachment_image(
+                $staff_img,
+                'full',
+                false,
+                array(
+                  'class'   => 'p-about__staff__listImg',
+                  'alt'     => get_the_title(),
+                  'loading' => 'lazy',
+                )
+              );
+              ?>
               <?php endif; ?>
             </a>
           </li>
@@ -277,7 +287,18 @@ get_header();
             <a href="<?php the_permalink(); ?>">
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
-              <img loading="lazy" src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="<?php echo esc_attr( get_the_title() ); ?>">
+              <?php
+              echo wp_get_attachment_image(
+                $staff_img,
+                'full',
+                false,
+                array(
+                  'class'   => 'p-about__staff__listImg',
+                  'alt'     => get_the_title(),
+                  'loading' => 'lazy',
+                )
+              );
+              ?>
               <?php endif; ?>
             </a>
           </li>

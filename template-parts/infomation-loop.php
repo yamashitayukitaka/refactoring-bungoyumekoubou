@@ -32,7 +32,18 @@ if ( ! empty( $infomations ) && is_array( $infomations ) ) {
           <li class = "p-property__infomation__item">
             <?php if ( ! empty( $infomation['img'] ) ) : ?>
             <figure class = "p-property__infomation__imgWrap">
-              <img src = "<?php echo esc_url( $infomation['img'] );?>" class = "p-property__infomation__img" loading="lazy" alt="<?php echo esc_attr( ( ! empty( $infomation['txt'] ) ? $infomation['txt'] : '周辺情報' ) . 'のイメージ' ); ?>">
+              <?php
+              echo wp_get_attachment_image(
+                $infomation['img'],
+                'full',
+                false,
+                array(
+                  'class'   => 'p-property__infomation__img',
+                  'loading' => 'lazy',
+                  'alt'     => ( ! empty( $infomation['txt'] ) ? $infomation['txt'] : '周辺情報' ) . 'のイメージ',
+                )
+              );
+              ?>
             </figure>
             <?php endif; ?>
             <?php if ( ! empty( $infomation['txt'] ) ) : ?>

@@ -312,7 +312,18 @@ get_header();
             <div class="p-irohaie__quality__item">
               <?php if ( ! empty( $quality['img'] ) ) : ?>
                 <div class="p-irohaie__quality__media">
-                  <img loading="lazy" class="p-irohaie__quality__img" src="<?php echo esc_url( $quality['img'] ); ?>" alt="<?php echo esc_attr( ! empty( $quality['title'] ) ? $quality['title'] : 'いろはいえの満足品質' ); ?>">
+                  <?php
+                  echo wp_get_attachment_image(
+                    $quality['img'],
+                    'full',
+                    false,
+                    array(
+                      'class'   => 'p-irohaie__quality__img',
+                      'alt'     => ! empty( $quality['title'] ) ? $quality['title'] : 'いろはいえの満足品質',
+                      'loading' => 'lazy',
+                    )
+                  );
+                  ?>
                 </div>
               <?php endif; ?>
               <div class="p-irohaie__quality__body">

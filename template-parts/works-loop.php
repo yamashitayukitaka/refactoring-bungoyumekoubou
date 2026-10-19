@@ -12,7 +12,17 @@
       <?php $thumb = get_field( 'works-thumb' ); ?>
       <?php if ( ! empty( $thumb ) ) : ?>
       <figure class = "c-cardList__imgWrap">
-        <img src = "<?php echo esc_url( $thumb ); ?>" alt = "<?php echo esc_attr( get_the_title() ); ?>" loading="lazy">
+        <?php
+        echo wp_get_attachment_image(
+          $thumb,
+          'full',
+          false,
+          array(
+            'loading' => 'lazy',
+            'alt'     => get_the_title(),
+          )
+        );
+        ?>
       </figure>
       <?php endif; ?>
       <div class = "c-cardList__txtWrap">

@@ -29,7 +29,17 @@ get_header();
       <figure class = "p-staff__production__imgWrap">
         <?php $staff_img = get_field( 'staff-img' ); ?>
         <?php if ( $staff_img ) : ?>
-        <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class ="p-staff__img">
+        <?php
+        echo wp_get_attachment_image(
+          $staff_img,
+          'full',
+          false,
+          array(
+            'class' => 'p-staff__img',
+            'alt'   => 'スタッフイメージ',
+          )
+        );
+        ?>
         <?php endif; ?>
       </figure>
 
@@ -59,7 +69,18 @@ get_header();
     <?php $self_introduction_img = get_field( 'self-introduction-img' ); ?>
     <?php if ( $self_introduction_img ) : ?>
       <figure class = "p-staff__production__desc">
-        <img src="<?php echo esc_url( $self_introduction_img ); ?>" alt="自己紹介画像" class ="p-staff__production__descImg" loading="lazy">
+        <?php
+        echo wp_get_attachment_image(
+          $self_introduction_img,
+          'full',
+          false,
+          array(
+            'class'   => 'p-staff__production__descImg',
+            'alt'     => '自己紹介画像',
+            'loading' => 'lazy',
+          )
+        );
+        ?>
       </figure>
     <?php endif; ?>
   </div>
@@ -130,7 +151,18 @@ if ( $questions ) {
           <div class = "p-staff__question__right">
             <?php if ( ! empty( $question['question-img'] ) ) :?>
               <figure class = "p-staff__question__imgWrap">
-                <img src = "<?php echo esc_url( $question['question-img'] );?>"class = "p-staff__question__img" alt = "質問画像" loading="lazy">
+                <?php
+                echo wp_get_attachment_image(
+                  $question['question-img'],
+                  'full',
+                  false,
+                  array(
+                    'class'   => 'p-staff__question__img',
+                    'alt'     => '質問画像',
+                    'loading' => 'lazy',
+                  )
+                );
+                ?>
               </figure>
             <?php endif; ?>
             <?php if ( ! empty( $question['question-answer'] ) ) :?>
@@ -174,7 +206,18 @@ if ( $questions ) {
               <figure class = "c-cardList__imgWrap">
                 <?php $staff_img = get_field( 'staff-img' ); ?>
                 <?php if ( $staff_img ) : ?>
-                <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class ="p-staff__img" loading="lazy">
+                <?php
+                echo wp_get_attachment_image(
+                  $staff_img,
+                  'full',
+                  false,
+                  array(
+                    'class'   => 'p-staff__img',
+                    'alt'     => 'スタッフイメージ',
+                    'loading' => 'lazy',
+                  )
+                );
+                ?>
                 <?php endif; ?>
               </figure>
               <?php $tags = get_the_terms(

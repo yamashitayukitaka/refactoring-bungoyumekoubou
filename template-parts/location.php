@@ -54,7 +54,17 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
                 <?php if ( ! empty( $item['detail_img'] ) ) : ?>
                   <?php $photo_num = $count + 1; ?>
                 <li class="p-location__list__item">
-                  <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__list__img" alt="<?php echo esc_attr( $location_alt_base . 'の' . $photo_num . '枚目のイメージ' ); ?>">
+                  <?php
+                  echo wp_get_attachment_image(
+                    $item['detail_img'],
+                    'full',
+                    false,
+                    array(
+                      'class' => 'p-location__list__img',
+                      'alt'   => $location_alt_base . 'の' . $photo_num . '枚目のイメージ',
+                    )
+                  );
+                  ?>
                 </li>
                   <?php ++$count; ?>
                 <?php endif; ?>
@@ -95,7 +105,17 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
               <?php if ( ! empty( $item['detail_img'] ) ) : ?>
                 <?php $photo_num = $count + 1; ?>
               <li class="p-location__thumb__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                <img src="<?php echo esc_url( $item['detail_img'] ); ?>" class="p-location__thumb__img" alt="<?php echo esc_attr( $location_alt_base . 'の' . $photo_num . '枚目のイメージ' ); ?>">
+                <?php
+                echo wp_get_attachment_image(
+                  $item['detail_img'],
+                  'full',
+                  false,
+                  array(
+                    'class' => 'p-location__thumb__img',
+                    'alt'   => $location_alt_base . 'の' . $photo_num . '枚目のイメージ',
+                  )
+                );
+                ?>
               </li>
               <?php endif; ?>
             <?php endforeach; ?>

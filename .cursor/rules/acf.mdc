@@ -118,6 +118,28 @@ if ($qas) :
 - WYSIWYG: `wp_kses_post()`
 - 直書き HTML にリンクを含む場合も `wp_kses_post()` または該当タグのみ許可
 
+### 画像フィールド（ACF）
+
+- **返り値は「画像 ID」**（`return_format`: `id`）。Local JSON を正とする
+- テンプレートでは `<img src="...">` を手書きせず `wp_get_attachment_image()` を使う（`width` / `height` / `alt` / `srcset` / `sizes` は WP が付与）
+- MV を `background-image` にする場合は `wp_get_attachment_image_url( $image_id, 'full' )` を `esc_url()` して渡す
+
+```php
+<?php
+$image_id = get_field( 'my_image_field' );
+if ( $image_id ) :
+  echo wp_get_attachment_image(
+    $image_id,
+    'full',
+    false,
+    array(
+      'loading' => 'lazy',
+    )
+  );
+endif;
+?>
+```
+
 ## 現状マップ（固定ページ）
 
 

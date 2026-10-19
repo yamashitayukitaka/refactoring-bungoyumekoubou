@@ -66,7 +66,18 @@ $terms             = get_terms(
                 <figure class="p-staff__img__wrap">
                   <?php $staff_img = get_field( 'staff-img' ); ?>
                   <?php if ( $staff_img ) : ?>
-                  <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class="p-staff__img" loading="lazy">
+                  <?php
+                  echo wp_get_attachment_image(
+                    $staff_img,
+                    'full',
+                    false,
+                    array(
+                      'class'   => 'p-staff__img',
+                      'alt'     => 'スタッフイメージ',
+                      'loading' => 'lazy',
+                    )
+                  );
+                  ?>
                   <?php endif; ?>
                 </figure>
                 <p class="p-staff__name">

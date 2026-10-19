@@ -22,7 +22,7 @@ get_header();
     </div>
     <?php $mv = get_field( 'mv-renovation-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 

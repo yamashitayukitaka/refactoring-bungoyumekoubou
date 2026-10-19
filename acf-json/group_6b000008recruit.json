@@ -6,33 +6,87 @@
             "key": "field_6b000008mv",
             "label": "メインビジュアル",
             "name": "mv-recruit-img",
+            "aria-label": "",
             "type": "image",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "return_format": "url",
-            "preview_size": "medium"
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 0,
+            "min_height": 0,
+            "min_size": 0,
+            "max_width": 0,
+            "max_height": 0,
+            "max_size": 0,
+            "mime_types": ""
         },
         {
             "key": "field_6b000008pres",
             "label": "代表メッセージ",
             "name": "recruit-president",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
                     "key": "field_6b000008pi",
                     "label": "画像",
                     "name": "img",
+                    "aria-label": "",
                     "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "return_format": "url",
-                    "preview_size": "medium"
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": ""
                 },
                 {
                     "key": "field_6b000008pt",
                     "label": "本文",
                     "name": "txt",
+                    "aria-label": "",
                     "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 1
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
                 }
             ]
         },
@@ -40,23 +94,64 @@
             "key": "field_6b000008qa",
             "label": "採用Q&A",
             "name": "answers",
+            "aria-label": "",
             "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "table",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "button_label": "行を追加",
+            "collapsed": "",
             "sub_fields": [
                 {
                     "key": "field_6b000008qq",
                     "label": "質問",
                     "name": "question",
-                    "type": "text"
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6b000008qa"
                 },
                 {
                     "key": "field_6b000008qa2",
                     "label": "回答",
                     "name": "answer",
+                    "aria-label": "",
                     "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
                     "tabs": "all",
                     "toolbar": "full",
-                    "media_upload": 1
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0,
+                    "parent_repeater": "field_6b000008qa"
                 }
             ]
         },
@@ -64,52 +159,62 @@
             "key": "field_6b000008int",
             "label": "スタッフインタビュー",
             "name": "recruit-interview",
+            "aria-label": "",
             "type": "group",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_6b000008ic",
-                    "label": "インタビュー",
-                    "name": "recruit-interview-content",
-                    "type": "repeater",
-                    "layout": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_6b000008ict",
-                            "label": "タイトル",
-                            "name": "r-interview-content-tit",
-                            "type": "wysiwyg",
-                            "tabs": "all",
-                            "toolbar": "full",
-                            "media_upload": 1
-                        },
-                        {
-                            "key": "field_6b000008icu",
-                            "label": "ユーザー",
-                            "name": "r-interview-content-user",
-                            "type": "repeater",
-                            "layout": "block",
-                            "sub_fields": [
-                                {
-                                    "key": "field_6b000008ui",
-                                    "label": "画像",
-                                    "name": "r-content-user-img",
-                                    "type": "image",
-                                    "return_format": "url",
-                                    "preview_size": "medium"
-                                },
-                                {
-                                    "key": "field_6b000008ut",
-                                    "label": "本文",
-                                    "name": "r-content-user-txt",
-                                    "type": "wysiwyg",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1
-                                }
-                            ]
-                        }
-                    ]
+                    "key": "field_6b000008ii",
+                    "label": "画像",
+                    "name": "img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": 0,
+                    "min_height": 0,
+                    "min_size": 0,
+                    "max_width": 0,
+                    "max_height": 0,
+                    "max_size": 0,
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_6b000008it",
+                    "label": "本文",
+                    "name": "txt",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
                 }
             ]
         },
@@ -117,23 +222,64 @@
             "key": "field_6b000008app",
             "label": "募集要項",
             "name": "recruit-app",
+            "aria-label": "",
             "type": "repeater",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "layout": "table",
+            "min": 0,
+            "max": 0,
+            "rows_per_page": 20,
+            "button_label": "行を追加",
+            "collapsed": "",
             "sub_fields": [
                 {
                     "key": "field_6b000008al",
                     "label": "項目",
-                    "name": "recruit-app-title",
-                    "type": "text"
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6b000008app"
                 },
                 {
                     "key": "field_6b000008av",
                     "label": "内容",
-                    "name": "recruit-app-content",
-                    "type": "wysiwyg",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1
+                    "name": "value",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "new_lines": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "parent_repeater": "field_6b000008app"
                 }
             ]
         },
@@ -141,7 +287,21 @@
             "key": "field_6b000008tel",
             "label": "採用電話番号",
             "name": "recruite-tel-number",
-            "type": "text"
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -160,5 +320,7 @@
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": true,
-    "show_in_rest": 0
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1792434893
 }
