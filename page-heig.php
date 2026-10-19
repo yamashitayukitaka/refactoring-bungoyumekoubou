@@ -22,23 +22,52 @@ get_header();
       </div>
     </div>
     <p class="p-heig__mv__lead">自由自在なプランで、暮らしを豊かに。</p>
+    <?php
+    $heig_mv_slides = array(
+      array(
+        'file' => 'top_img1.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+      array(
+        'file' => 'top_img2.webp',
+        'w'    => 1323,
+        'h'    => 992,
+      ),
+      array(
+        'file' => 'top_img3.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+      array(
+        'file' => 'top_img4.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+      array(
+        'file' => 'top_img5.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+    );
+    ?>
     <div class="p-heig__mv__slider js-mvSlider">
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" width="5000" height="3333" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img1.webp' ); ?>" alt="HEIGの住まいイメージ1">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" width="1323" height="992" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img2.webp' ); ?>" alt="HEIGの住まいイメージ2">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" width="5000" height="3333" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img3.webp' ); ?>" alt="HEIGの住まいイメージ3">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" width="5000" height="3333" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img4.webp' ); ?>" alt="HEIGの住まいイメージ4">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" width="5000" height="3333" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img5.webp' ); ?>" alt="HEIGの住まいイメージ5">
-      </div>
-
+      <?php foreach ( $heig_mv_slides as $slide_index => $slide ) : ?>
+        <div class="p-heig__mv__slide">
+          <img
+            class="p-heig__mv__slideImg"
+            width="<?php echo (int) $slide['w']; ?>"
+            height="<?php echo (int) $slide['h']; ?>"
+            src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/' . $slide['file'] ); ?>"
+            alt="<?php echo esc_attr( 'HEIGの住まいイメージ' . ( $slide_index + 1 ) ); ?>"
+            <?php if ( 0 === $slide_index ) : ?>
+              fetchpriority="high"
+            <?php else : ?>
+              loading="lazy"
+            <?php endif; ?>
+          >
+        </div>
+      <?php endforeach; ?>
     </div>
     <div class="p-heig__mv__bg"></div>
   </div>

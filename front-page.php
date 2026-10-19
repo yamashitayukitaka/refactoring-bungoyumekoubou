@@ -68,6 +68,11 @@ get_header();
             height="800"
             src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top_slider/' . $slide_file ); ?>"
             alt="<?php echo esc_attr( '豊後夢工房の住まいイメージ' . ( $slide_index + 1 ) ); ?>"
+            <?php if ( 0 === $slide_index ) : ?>
+              fetchpriority="high"
+            <?php else : ?>
+              loading="lazy"
+            <?php endif; ?>
           >
         </li>
       <?php endforeach; ?>

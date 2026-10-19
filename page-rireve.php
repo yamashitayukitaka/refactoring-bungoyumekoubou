@@ -23,25 +23,51 @@ get_header();
     </div>
     <p class="p-rireve__mv__lead">夏涼しく冬暖かい、快適な住み心地を<br>
       可能にする次世代省エネ住宅。</p>
+    <?php
+    $rireve_mv_slides = array(
+      array(
+        'file' => 'top_img3.webp',
+        'alt'  => 'リレーヴの住まいイメージ3',
+      ),
+      array(
+        'file' => 'top_img1.webp',
+        'alt'  => 'リレーヴの住まいイメージ1',
+      ),
+      array(
+        'file' => 'top_img2.webp',
+        'alt'  => 'リレーヴの住まいイメージ2',
+      ),
+      array(
+        'file' => 'top_img4.webp',
+        'alt'  => 'リレーヴの住まいイメージ4',
+      ),
+      array(
+        'file' => 'top_img5.webp',
+        'alt'  => 'リレーヴの住まいイメージ5',
+      ),
+      array(
+        'file' => 'top_img6.webp',
+        'alt'  => 'リレーヴの住まいイメージ6',
+      ),
+    );
+    ?>
     <div class="p-rireve__mv__slider js-mvSlider">
-      <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img3.webp' ); ?>" alt="リレーヴの住まいイメージ3">
-      </div>
-      <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img1.webp' ); ?>" alt="リレーヴの住まいイメージ1">
-      </div>
-      <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img2.webp' ); ?>" alt="リレーヴの住まいイメージ2">
-      </div>
-      <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img4.webp' ); ?>" alt="リレーヴの住まいイメージ4">
-      </div>
-      <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img5.webp' ); ?>" alt="リレーヴの住まいイメージ5">
-      </div>
-      <div class="p-rireve__mv__slide">
-        <img class="p-rireve__mv__slideImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/top_img6.webp' ); ?>" alt="リレーヴの住まいイメージ6">
-      </div>
+      <?php foreach ( $rireve_mv_slides as $slide_index => $slide ) : ?>
+        <div class="p-rireve__mv__slide">
+          <img
+            class="p-rireve__mv__slideImg"
+            width="1600"
+            height="1000"
+            src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/rireve/' . $slide['file'] ); ?>"
+            alt="<?php echo esc_attr( $slide['alt'] ); ?>"
+            <?php if ( 0 === $slide_index ) : ?>
+              fetchpriority="high"
+            <?php else : ?>
+              loading="lazy"
+            <?php endif; ?>
+          >
+        </div>
+      <?php endforeach; ?>
     </div>
     <div class="p-rireve__mv__bg"></div>
   </div>
