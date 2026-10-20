@@ -108,45 +108,45 @@
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>concept" class="c-navigation__child__link">
                     わたしたちの思い
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img8.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>quality" class="c-navigation__child__link">
                     品質へのこだわり
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="800" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img6.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>cost" class="c-navigation__child__link">コストへのこだわり
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="800" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img7.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>design" class="c-navigation__child__link">デザインへのこだわり
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img9.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>staff" class="c-navigation__child__link">ゆめ空間スタッフ
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="2024" height="782" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>about" class="c-navigation__child__link">会社概要
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img1.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -157,25 +157,25 @@
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>rireve" class="c-navigation__child__link">
                     リレーヴ
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img4.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>heig" class="c-navigation__child__link">
                     ヘイグ
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/heig_img.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>irohaie" class="c-navigation__child__link">
                     いろはいえ
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/irohaie_img.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -202,25 +202,25 @@
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>after-support" class="c-navigation__child__link">
                     安心の保証制度
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="800" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img7.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>flow" class="c-navigation__child__link">
                     家づくりのながれ
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img2.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>faq" class="c-navigation__child__link">
                     よくある質問
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img5.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -232,16 +232,16 @@
               <ul class="c-navigation__child__list js-toggle">
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>maintenance" class="c-navigation__child__link">アフターメンテナンス
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
                 <li class="c-navigation__child__item">
                   <a href="<?php echo esc_url( home_url( '/' ) ); ?>renovation" class="c-navigation__child__link">ゆめリフォーム
-                    <figure class="c-navigation__child__imgWrap">
+                    <div class="c-navigation__child__imgWrap">
                       <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img3.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                    </figure>
+                    </div>
                   </a>
                 </li>
               </ul>
@@ -286,49 +286,49 @@
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>concept" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">わたしたちの思い</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img8.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>quality" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">品質へのこだわり</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="800" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img6.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>cost" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">コストへのこだわり</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="800" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img7.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>design" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">デザインへのこだわり</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img9.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>staff" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">ゆめ空間スタッフ</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="2024" height="782" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>about" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">会社概要</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img1.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -339,25 +339,25 @@
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>rireve" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">リレーヴ</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img4.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>heig" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">ヘイグ</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/heig_img.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>irohaie" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">いろはいえ</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/company/irohaie_img.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -377,25 +377,25 @@
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>after-support" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">安心の保証制度</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="800" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img7.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>flow" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">家づくりのながれ</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img2.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>faq" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">よくある質問</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img5.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
             </ul>
@@ -406,17 +406,17 @@
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>maintenance" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">アフターメンテナンス</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
               <li class="p-hamburger__child__item">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>renovation" class="p-hamburger__child__link">
                   <p class="p-hamburger__child__txt">ゆめリフォーム</p>
-                  <figure class="p-hamburger__child__imgWrap">
+                  <div class="p-hamburger__child__imgWrap">
                     <img width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/header_img3.webp' ); ?>" class="c-navigation__child__img" alt="ナビ画像">
-                  </figure>
+                  </div>
                 </a>
               </li>
             </ul>

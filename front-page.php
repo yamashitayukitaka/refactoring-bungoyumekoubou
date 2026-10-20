@@ -171,7 +171,7 @@ get_header();
           <br>ぜひ一度ご来場いただき体験してみてください。
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap--house"><img loading="lazy" width="495" height="494" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>"></figure>
+      <div class="p-top__introduction__imgWrap--house"><img loading="lazy" width="495" height="494" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>" alt=""></div>
     </section>
   </a>
 
@@ -189,7 +189,7 @@ get_header();
           <br>無料資料請求はこちらから
         </p>
       </div>
-      <figure class="p-top__introduction__imgWrap"><img loading="lazy" width="618" height="397" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>"></figure>
+      <div class="p-top__introduction__imgWrap"><img loading="lazy" width="618" height="397" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>" alt=""></div>
     </section>
   </a>
 

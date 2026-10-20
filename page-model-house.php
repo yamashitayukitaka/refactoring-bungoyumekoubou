@@ -40,9 +40,9 @@ get_header();
   </section>
 
   <section class="p-modelHouse__overview u-mb100">
-    <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
+    <div class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
       <img loading="lazy" width="323" height="101" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
-    </figure>
+    </div>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">中庭と深い軒の織りなす<br>
         スタイリッシュなデザイン</span>
@@ -85,9 +85,9 @@ get_header();
   </section>
 
   <section class="p-modelHouse__overview u-mb100">
-    <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
+    <div class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
       <img loading="lazy" width="322" height="111" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>" alt="">
-    </figure>
+    </div>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">大人カワイイ<br>
           ヨーロピアンな家</span></p>
@@ -204,9 +204,9 @@ get_header();
 
 
   <section class="p-modelHouse__overview u-mb100">
-    <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
+    <div class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
       <img loading="lazy" width="323" height="101" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
-    </figure>
+    </div>
 
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">安心の定額制で建てる<br>

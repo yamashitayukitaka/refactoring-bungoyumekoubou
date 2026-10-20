@@ -11,11 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <main>
-  <figure class = "c-pageMv u-mb50">
-    <img width="1280" height="854" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top_img.webp' ); ?>" alt = "ヘッダー画像" class = "p-catalog__mv__img">
-    <span class = "p-catalog__mv__logo">
+  <figure class="c-pageMv u-mb50">
+    <img width="1280" height="854" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top_img.webp' ); ?>" alt = "カタログの紹介イメージ写真" class = "p-catalog__mv__img">
+    <div class = "p-catalog__mv__logo">
       <img width="1328" height="1000" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/catalog_top.webp' ); ?>" alt = "カタログロゴ" class = "p-catalog__mv__img">
-    </span>
+    </div>
   </figure>
   <section class = "p-catalog__desc l-content">
     <p class = "p-catalog__desc__txt">

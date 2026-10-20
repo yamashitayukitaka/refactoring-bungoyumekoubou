@@ -12,9 +12,9 @@ get_header();
 ?>
 <main class="p-irohaie">
   <div class="p-irohaie__mv">
-    <div class="p-irohaie__mv__hero u-none__pc--sp">
+    <figure class="p-irohaie__mv__hero u-none__pc--sp">
       <img class="p-irohaie__mv__heroImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/top_img_i.webp' ); ?>" alt="いろはいえの外観イメージ">
-    </div>
+    </figure>
     <div class="p-irohaie__mv__brand">
       <div class="p-irohaie__mv__logo">
         <img class="p-irohaie__mv__logoImg" width="819" height="522" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_1.webp' ); ?>" alt="いろはいえの価格イメージ図">
@@ -23,9 +23,9 @@ get_header();
         <img class="p-irohaie__mv__familyImg" width="657" height="462" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
       </div>
     </div>
-    <div class="p-irohaie__mv__hero u-none__mobile--sp">
+    <figure class="p-irohaie__mv__hero u-none__mobile--sp">
       <img class="p-irohaie__mv__heroImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/top_img_i.webp' ); ?>" alt="いろはいえの外観イメージ">
-    </div>
+    </figure>
   </div>
 
   <section class="p-irohaie__type">
@@ -35,17 +35,17 @@ get_header();
     <div class="p-irohaie__type__scroll"></div>
     <div class="p-irohaie__type__lead">
       <p class="p-irohaie__type__leadText">住まいの基本、<br class="u-none__pc--sp">すべて入ったいえのこと。</p>
-      <figure class="p-irohaie__type__wave u-none__mobile--sp">
+      <div class="p-irohaie__type__wave u-none__mobile--sp">
         <img class="p-irohaie__type__waveImg" width="670" height="63" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/wave.webp' ); ?>" alt="">
-      </figure>
+      </div>
     </div>
   </section>
 
   <section class="p-irohaie__about">
     <div class="p-irohaie__about__title">
-      <figure class="p-irohaie__about__logo">
+      <div class="p-irohaie__about__logo">
         <img class="p-irohaie__about__logoImg" width="198" height="174" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/irohaie/irohaie_logo.webp' ); ?>" alt="いろはいえ ロゴ">
-      </figure>
+      </div>
       <div class="c-title__head">
         <h3 class="c-title--sectionLine">
           ABOUT
@@ -75,9 +75,9 @@ get_header();
   </section>
 
   <section class="p-irohaie__point" id="point1">
-    <figure class="p-irohaie__point__badge">
+    <div class="p-irohaie__point__badge">
       <img loading="lazy" class="p-irohaie__point__badgeImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
-    </figure>
+    </div>
     <p class="c-title--orangeLine">
       価格が明瞭だから予算通りの家づくりが実現!</p>
     <div class="p-irohaie__point__row">
@@ -117,9 +117,9 @@ get_header();
   </section>
 
   <section class="p-irohaie__point" id="point2">
-    <figure class="p-irohaie__point__badge">
+    <div class="p-irohaie__point__badge">
       <img loading="lazy" class="p-irohaie__point__badgeImg" width="126" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
-    </figure>
+    </div>
     <p class="c-title--orangeLine">
       ルールのなかで自由に設計できる！</p>
     <div class="p-irohaie__point__step u-mb50">
@@ -170,9 +170,9 @@ get_header();
   </section>
 
   <section class="p-irohaie__point" id="point3">
-    <figure class="p-irohaie__point__badge">
+    <div class="p-irohaie__point__badge">
       <img loading="lazy" class="p-irohaie__point__badgeImg" width="128" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point3.webp' ); ?>" alt="">
-    </figure>
+    </div>
     <p class="c-title--orangeLine">
       最新の設備・仕様からデザインをえらべる！</p>
     <p class="p-irohaie__point__lead">

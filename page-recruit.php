@@ -215,9 +215,9 @@ get_header();
   </section>
 
   <section class="l-content--middle u-mb100 p-recruit__requirements">
-    <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
+    <div class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
       <img width="197" height="105" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
-    </figure>
+    </div>
     <div class="c-title__head">
       <h2 class="c-title--sectionLine">
         RECRUIT
@@ -268,9 +268,9 @@ get_header();
         現在、募集はしておりません。
       </p>
     <?php endif; ?>
-    <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
+    <div class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
       <img width="197" height="105" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
-    </figure>
+    </div>
   </section>
 
   <?php if ( $has_app ) : ?>
