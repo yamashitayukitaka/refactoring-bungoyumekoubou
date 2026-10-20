@@ -15,7 +15,7 @@ alwaysApply: false
 | 主要ナビは `<nav>` | グローバルメニュー、パンくず、ページネーション、ページ内アンカーナビ（例: `p-design__nav`）に `nav` + 必要なら `aria-label` |
 | `<section>` | **見出し（h2〜h6）がある「章」だけ**。背景・幅・余白だけの枠は `<div>` |
 | `<article>` | ブログ1件、施工事例・スタッフの**一覧カード1件**など、単体で意味が完結するコンテンツ |
-| `<aside>` | メインと**関連はあるが切り離しても本文が成立する**補足・余談 |
+
 
 見出しのない「章」にしたい場合は `<div>` を優先。どうしても `section` にするなら `h2` 等を `u-visually-hidden`（未実装なら Utility 追加）で補う。
 
@@ -172,45 +172,6 @@ wazeka では `p-design__point__media` や `page-maintenance` の説明横画像
 ```
 
 
-## 7. `<aside>`（補足コンテンツ）
-
-**定義:** メインコンテンツと関連はあるが、**取り除いても本文の理解に支障がない**「余談・補足・おまけ」（欄外注釈・コラム・用語ミニ解説のイメージ）。「サイドにあるから aside」という意味ではない。
-
-| 使う | 使わない |
-|---|---|
-| 記事横のサイドバー（人気記事・カテゴリ・プロフィール） | サイト共通の **`<footer>` 全体** |
-| 本文途中の補足コラム・用語解説・ワンポイント枠 | サービス特徴・会社概要など**ページの主役コンテンツ** |
-| 記事下の関連記事・おすすめブロック | グローバルナビやメインの CTA 本体 |
-
-### 代表的なパターン
-
-**① サイドバー全体**
-
-```html
-<main class="l-main">
-  <article class="p-entry">…</article>
-</main>
-<aside class="l-sidebar" aria-label="関連情報">
-  <section class="c-widget">
-    <h2 class="c-widget__title">人気記事</h2>
-    …
-  </section>
-</aside>
-```
-
-**② 本文中のコールアウト（横並びでなくても可）**
-
-```html
-<article class="p-entry">
-  <h2>…</h2>
-  <p>…</p>
-  <aside class="p-entry__callout">
-    <h3 class="p-entry__calloutTitle">用語解説：LCPとは？</h3>
-    <p>Largest Contentful Paint の略で…</p>
-  </aside>
-  <p>続きの本文…</p>
-</article>
-```
 
 ### ✅ポイント（まとめ）
 
