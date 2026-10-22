@@ -16,9 +16,9 @@ get_header();
   $local_tag       = 'event-type';
 ?>
 <main>
-<h2 class = "c-title--section u-mb50">
+<h1 class = "c-title--section u-mb50">
   イベント情報
-</h2>
+</h1>
 <!-- WINKMARK LP INDEX 1 start -->
 <div class="event-box">
     <div class="lst-event" id="wink_event_list">
@@ -81,7 +81,7 @@ get_header();
       <?php endif; ?>
     </ul>
 
-  <section class = "l-content u-mb100">
+  <div class="l-content u-mb100">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
       $event       = array(
@@ -106,7 +106,7 @@ get_header();
       <?php wazeka_query_pagination( $event_loop ); ?>
     <?php endif; ?>
       
-    </section>
+    </div>
   <?php get_template_part( 'template-parts/xo-event' ); ?>
  
 </main>

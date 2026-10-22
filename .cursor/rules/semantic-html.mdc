@@ -15,7 +15,7 @@ alwaysApply: false
 | 主要ナビは `<nav>` | グローバルメニュー、パンくず、ページネーション、ページ内アンカーナビ（例: `p-design__nav`）に `nav` + 必要なら `aria-label` |
 | `<section>` | **見出し（h2〜h6）がある「章」だけ**。背景・幅・余白だけの枠は `<div>` |
 | `<article>` | ブログ1件、施工事例・スタッフの**一覧カード1件**など、単体で意味が完結するコンテンツ |
-
+| `<article>` | 明確なサイドバーのみに採用する。|
 
 見出しのない「章」にしたい場合は `<div>` を優先。どうしても `section` にするなら `h2` 等を `u-visually-hidden`（未実装なら Utility 追加）で補う。
 
@@ -216,11 +216,7 @@ wazeka では `p-design__point__media` や `page-maintenance` の説明横画像
 - [ ] MV 大枠は `<div>`（または見出し付き `section`）、写真部分だけ `<figure>`。MV 全体を `figure` で囲んでいないか
 - [ ] 見出しのない装飾枠は `<div>` ではなく誤って `<section>` になっていないか
 
-## wazeka 現状（リファクタ未達の例）
 
-- 下層 `c-pageMv__heading__title` が `<h2>`（h1 にすべき。ロゴ h1 分岐は `header.php` で対応済み）
-- 一覧カードが `<article>` 化されていない箇所あり
-- `<figure>` の多用・`<figcaption>` 未整備（装飾画像まで `figure` になっている箇所あり）
+
 - 見出しのない `<section>`、フッター戻る等の `href="#"` 残存
-- サイドバー・関連ブロックが `<div>` のみで `<aside>` 未使用
-- 多くの `<img>` に `width` / `height` 未指定（lazy 画像は CLS 警告の対象）
+

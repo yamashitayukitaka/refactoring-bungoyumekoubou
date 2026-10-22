@@ -11,6 +11,10 @@
       align-items: center;
     }
 
+    @include mq(sp) {
+      flex-direction: column;
+    }
+
     &__brand {
       width: 50%;
 

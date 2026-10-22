@@ -6,7 +6,7 @@
  */
 
 ?>
-<section class = "l-content u-mb100">
+<div class="l-content u-mb100">
   <div class = "p-xo-event__search__wrap">
     <p class = "p-xo-event__search">カレンダーから探す</p>
     <p class = "p-xo-event__search u-none__mobile--md">内容から探す</p>
@@ -82,4 +82,4 @@
         </ul>
       </div>
   </div>
-</section>
+</div>

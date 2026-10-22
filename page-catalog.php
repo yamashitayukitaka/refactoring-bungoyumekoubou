@@ -28,7 +28,7 @@ get_header();
       <li class = "p-catalog__desc__listItem"><img width="490" height="354" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list02.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
       <li class = "p-catalog__desc__listItem"><img width="594" height="380" src= "<?php echo esc_url( get_template_directory_uri() . '/dist/img/catalog/list03.webp' ); ?>" alt = "カタログ画像" class = "p-catalog__list__img" loading="lazy"></li>
     </ul>
-    <p class = "p-catalog__desc__listTtl">カタログの中身は...</p>
+    <h2 class="p-catalog__desc__listTtl">カタログの中身は...</h2>
     <ul class = "p-catalog__desc__listTxt">
       <li class = "p-catalog__desc__listTxtItem">
         ・多彩なデザイン事例:<span class ="u-normal">あなたのライフスタイルに合わせたさまざまなデザインの住まいを紹介しています。</span>
@@ -46,9 +46,9 @@ get_header();
   </section>
   <section class="l-content">
     <div class="c-title__head">
-        <h2 class="c-title--sectionLine">
-          CTALOG
-        </h2>
+        <h1 class="c-title--sectionLine">
+          CATALOG
+        </h1>
         <div>
           <p class="c-title--orangeLine u-mb50">
             <span class = "marker">カタログ請求</span>

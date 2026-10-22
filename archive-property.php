@@ -80,7 +80,7 @@ get_header();
       <?php endif; ?>
     </ul>
 
-    <section class = "l-content">
+    <div class="l-content">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
       $property    = array(
@@ -108,7 +108,7 @@ get_header();
     <?php endif; ?>
     
 
-  </section> 
+  </div> 
 </main>
 
 <?php get_footer(); ?>

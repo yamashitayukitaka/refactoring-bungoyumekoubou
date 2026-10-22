@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 ?>
 <main>
-  <h2 class="c-title--section u-mb50">
+  <h1 class="c-title--section u-mb50">
     <?php
     if ( is_404() ) {
       echo 'ページが見つかりません';
@@ -25,8 +25,8 @@ get_header();
       echo '記事一覧';
     }
     ?>
-  </h2>
-  <section class="l-content--middle u-mb100">
+  </h1>
+  <div class="l-content--middle u-mb100">
     <?php if ( have_posts() ) : ?>
       <?php if ( is_singular() ) : ?>
         <?php while ( have_posts() ) :
@@ -61,6 +61,6 @@ get_header();
     <?php else : ?>
       <p><?php echo is_404() ? 'お探しのページは見つかりませんでした。' : '表示できるコンテンツがありません。'; ?></p>
     <?php endif; ?>
-  </section>
+  </div>
 </main>
 <?php get_footer(); ?>

@@ -9,7 +9,7 @@
     <footer class="l-footer">
       <section class="l-footer__contact">
         <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/contact.webp' ); ?>');">
-          <h3 class="c-title--sectionEnWhite u-mb20">CONTACT</h3>
+          <h2 class="c-title--sectionEnWhite u-mb20">CONTACT</h2>
           <ul class="l-footer__contact__list l-content--xl">
             <li class="l-footer__contact__card">
               <a href="<?php echo esc_url( home_url( 'model-house' ) ); ?>" class="l-footer__contact__link ">
@@ -55,13 +55,13 @@
         </div>
       </section>
 
-      <section class="l-footer__desc">
+      <div class="l-footer__desc">
         <p class="l-footer__desc__txt">
           大分県で注文住宅、工務店、ハウスメーカーをお探しなら豊後夢工房へお声がけください。土地探しから家づくりの相談、
           <br>メンテナンスまで、ワンストップで住まいづくりをおまかせ。家づくりの強い味方と、いい家を一緒につくりませんか？
         </p>
-      </section>
-      <section class="l-content--large">
+      </div>
+      <div class="l-content--large">
         <div class="l-footer__map__copyWrap">
           <div class="l-footer__logo">
             <a href="<?php echo esc_url( home_url( '' ) ); ?>">
@@ -100,7 +100,7 @@
             </div>
           </li>
         </ul>
-      </section>
+      </div>
 
 
       <?php
@@ -115,7 +115,7 @@
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
                   <li>
-                    <h3 class="c-navigation__inner__ttl">豊後夢工房の家づくり</h3>
+                    <p class="c-navigation__inner__ttl">豊後夢工房の家づくり</p>
                     <ul>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'concept' ) ); ?>" class="c-navigation__inner__link">ーわたしたちの思い</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'staff' ) ); ?>" class="c-navigation__inner__link">ーゆめ空間づくりスタッフ</a></li>
@@ -123,7 +123,7 @@
                     </ul>
                   </li>
                   <li>
-                    <h3 class="c-navigation__inner__ttl">快適ゆめ空間をつくる<br>3つのこだわり</h3>
+                    <p class="c-navigation__inner__ttl">快適ゆめ空間をつくる<br>3つのこだわり</p>
                     <ul>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'quality' ) ); ?>" class="c-navigation__inner__link">ー品質へのこだわり</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'cost' ) ); ?>" class="c-navigation__inner__link">ーコストへのこだわり</a></li>
@@ -135,7 +135,7 @@
               <li class="c-navigation__inner__listWrap">
                 <ul class="c-navigation__inner__list">
                   <li>
-                    <h3 class="c-navigation__inner__ttl">夢づくりサポート</h3>
+                    <p class="c-navigation__inner__ttl">夢づくりサポート</p>
                     <ul>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'after-support' ) ); ?>" class="c-navigation__inner__link">ー安心の保証制度</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'flow' ) ); ?>" class="c-navigation__inner__link">ー家づくりのながれ</a></li>
@@ -143,7 +143,7 @@
                     </ul>
                   </li>
                   <li>
-                    <h3 class="c-navigation__inner__ttl">住まいのアフターメンテナンス</h3>
+                    <p class="c-navigation__inner__ttl">住まいのアフターメンテナンス</p>
                     <ul>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'maintenance' ) ); ?>" class="c-navigation__inner__link">ーアフターメンテナンス</a></li>
                       <li class="c-navigation__inner__item"><a href="<?php echo esc_url( home_url( 'renovation' ) ); ?>" class="c-navigation__inner__link">ーゆめリフォーム</a></li>
@@ -181,5 +181,4 @@
     </footer>
     <?php wp_footer(); ?>
     </body>
-
-    </html>
+</html>

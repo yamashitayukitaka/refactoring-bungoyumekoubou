@@ -5872,6 +5872,11 @@ a:hover {
     align-items: center;
   }
 }
+@media screen and (max-width: 599px) {
+  .p-irohaie__mv {
+    flex-direction: column;
+  }
+}
 .p-irohaie__mv__brand {
   width: 50%;
 }
@@ -11896,6 +11901,19 @@ a:hover {
 .u-currentTab {
   border-color: #ea6800 !important;
   color: #ea6800;
+}
+
+.u-inherit {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.u-block {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .u-mb0 {

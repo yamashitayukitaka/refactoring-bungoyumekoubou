@@ -13,10 +13,10 @@ get_header();
 <main class="p-top">
   <div class="c-pageMv c-pageMv--top">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <p class="c-pageMv__heading__title">
         住まいに<span class="u-orange--mv">夢</span>を、
         <br>暮らしに<span class="u-orange--mv">豊かさ</span>を。
-      </h2>
+      </p>
       <p class="c-pageMv__heading__title--small">
         Dream in your heart,
         <br>freedom in your future
@@ -81,7 +81,7 @@ get_header();
 
   
 
-  <section class="p-top__desc">
+  <div class="p-top__desc">
     <div class="l-content--xl p-top__desc__content">
       <p class="p-top__desc__copy">
         あなたの<span class="u-orange--mv">「ゆめ」</span>
@@ -94,14 +94,14 @@ get_header();
         <br><span class="u-orange--sm">「快適ゆめ空間」</span>をご提供する施工会社です。
       </p>
     </div>
-  </section>
+  </div>
 
   <section class="c-lineUp">
     <div class="l-content--large">
       <div class="u-center u-mb15">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           STYLE_LINE_UP
-        </h3>
+        </h2>
       </div>
       <div class="u-center u-mb50">
         <p class="c-title--orangeLine">
@@ -143,9 +143,9 @@ get_header();
   
   <section class="l-content u-mb100">
     <div class="u-center u-mb10">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         EVENT
-      </h3>
+      </h2>
     </div>
     <div class="u-center u-mb30">
       <p class="c-title--orangeLine">
@@ -160,44 +160,46 @@ get_header();
     <!-- WINKMARK LP INDEX 1 end-->
   </section>
 
-  <a href="<?php echo esc_url( home_url( 'model-house' ) ); ?>">
-    <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
+  <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
+    <a class="u-block" href="<?php echo esc_url( home_url( 'model-house' ) ); ?>">
       <div class="p-top__introduction__ttlWrap">
-        <h3>
-          <span class="marker c-title--sectionEn">MODEL_HOUSE</span>
-        </h3>
+        <h2 class="c-title--sectionEn">
+          <span class="marker">MODEL_HOUSE</span>
+        </h2>
         <p class="p-top__introduction__txt">
           豊後夢工房の暮らしを体験できるモデルハウス。
           <br>ぜひ一度ご来場いただき体験してみてください。
         </p>
       </div>
       <div class="p-top__introduction__imgWrap--house"><img loading="lazy" width="495" height="494" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/dream_studio_1.webp' ); ?>" alt=""></div>
-    </section>
-  </a>
+    </a>
+  </section>
+  
 
  
-    <?php get_template_part( 'template-parts/bungo-yume-studio' ); ?>
+  <?php get_template_part( 'template-parts/bungo-yume-studio' ); ?>
 
-  <a href="<?php echo esc_url( home_url( 'catalog' ) ); ?>">
-    <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
+  
+  <section class="p-top__introduction u-mb100" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top01.webp' ); ?>');">
+    <a class="u-block"  href="<?php echo esc_url( home_url( 'catalog' ) ); ?>">
       <div class="p-top__introduction__ttlWrap">
-        <h3>
-          <span class="marker c-title--sectionEn">CATALOG</span>
-        </h3>
+        <h2 class="c-title--sectionEn">
+          <span class="marker">CATALOG</span>
+        </h2>
         <p class="p-top__introduction__txt">
           理想の住まい作りをサポート。
           <br>無料資料請求はこちらから
         </p>
       </div>
       <div class="p-top__introduction__imgWrap"><img loading="lazy" width="618" height="397" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top_catalog.webp' ); ?>" alt=""></div>
-    </section>
-  </a>
+    </a>
+  </section>
 
   <section class="l-content u-mb100">
     <div class="u-center u-mb10">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         WORKS&VOICE
-      </h3>
+      </h2>
     </div>
     <div class="u-center u-mb30">
       <p class="c-title--orangeLine">
@@ -261,9 +263,9 @@ get_header();
       endif;
       wp_reset_postdata(); ?>
     </ul>
-    <h3 class="p-top__staff__ttl u-center u-mb20">
+    <h2 class="p-top__staff__ttl u-center u-mb20">
       YUME STAFF
-    </h3>
+    </h2>
     <p class="p-top__staff__subTtl">
       ゆめ空間づくりスタッフ
     </p>
@@ -314,9 +316,9 @@ get_header();
   </section>
   <section class="l-content u-mb100">
     <div class="u-center u-mb10">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         BUILT＆LAND
-      </h3>
+      </h2>
     </div>
     <div class="u-center u-mb30">
       <p class="c-title--orangeLine">
