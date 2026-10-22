@@ -6,11 +6,14 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
 <section class="u-pt50 u-mb100">
   <div class="c-title__head">
-    <h3 class="c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionLine">
       HISTORY
-    </h3>
+    </<?php echo esc_attr( $heading_tag ); ?>>
     <div>
       <p class="c-title--orangeLine u-mb50"><span class="marker">豊後夢工房の沿革</span></p>
     </div>

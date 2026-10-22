@@ -6,11 +6,14 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
 <section class = "l-content u-mb100 u-pt100">
   <div class = "u-center u-mb10">
-    <h2 class = "c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class = "c-title--sectionLine">
       WORKS＆VOICE
-    </h2>
+    </<?php echo esc_attr( $heading_tag ); ?>>
   </div>
   <div class = "u-center u-mb30">
     <p class = "c-title--orangeLine">
@@ -56,9 +59,9 @@
 <section class = "l-content u-mb100 ">
   
   <div class = "u-center u-mb10">
-    <h2 class = "c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class = "c-title--sectionLine">
       EVENT
-    </h2>
+    </<?php echo esc_attr( $heading_tag ); ?>>
   </div>
 
   <div class = "u-center u-mb30">

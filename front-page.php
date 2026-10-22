@@ -351,4 +351,4 @@ get_header();
   </div>
 
 </main>
-<?php get_footer(); ?>
+<?php get_footer( null, array( 'heading_tag' => 'h3' ) ); ?>

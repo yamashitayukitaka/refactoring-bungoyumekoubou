@@ -6,11 +6,14 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
 <section class="u-mb100">
   <div class="c-title__head">
-    <h3 class="c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionLine">
       MEMBER
-    </h3>
+    </<?php echo esc_attr( $heading_tag ); ?>>
     <div>
       <p class="c-title--orangeLine u-mb50">
         <span class="u-orange">快適ゆめ空間</span>をつくるスタッフたち

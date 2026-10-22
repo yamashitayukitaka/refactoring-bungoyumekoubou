@@ -6,10 +6,13 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
     <footer class="l-footer">
       <section class="l-footer__contact">
         <div class="l-footer__contact__content" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/contact.webp' ); ?>');">
-          <h2 class="c-title--sectionEnWhite u-mb20">CONTACT</h2>
+          <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionEnWhite u-mb20">CONTACT</<?php echo esc_attr( $heading_tag ); ?>>
           <ul class="l-footer__contact__list l-content--xl">
             <li class="l-footer__contact__card">
               <a href="<?php echo esc_url( home_url( 'model-house' ) ); ?>" class="l-footer__contact__link ">

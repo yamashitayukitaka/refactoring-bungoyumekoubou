@@ -5,6 +5,11 @@
  * @package Wazeka
  */
 
+?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
+<?php
 $has_thumbsliders = get_field( 'a-imgs' );
 ?>
 <?php
@@ -20,9 +25,9 @@ if ( ! empty( $has_thumbsliders ) && is_array( $has_thumbsliders ) ) {
 ?>
   <?php if ( $has_gallery ) :?>
     <section class = "l-content--middle u-mb100">
-      <h3 class = "c-title--sectionEn">
+      <<?php echo esc_attr( $heading_tag ); ?> class = "c-title--sectionEn">
         GALLERY
-      </h3>
+      </<?php echo esc_attr( $heading_tag ); ?>>
       <p class = "c-title--sectionSub u-mb50">
         ギャラリー
       </p>
