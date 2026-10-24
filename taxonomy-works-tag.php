@@ -63,9 +63,9 @@ if ( $loot_slug ) {
 ?>
 <main>
 
-<h2 class = "c-title--section u-mb50">
+<h1 class = "c-title--section u-mb50">
   施工事例
-</h2>
+</h1>
 
 <?php $terms = get_terms(
     [
@@ -158,7 +158,7 @@ if ( $loot_slug ) {
 
   <?php endif; ?>
 
-  <section class = "l-content">
+  <div class="l-content">
     <?php $works_loop = new WP_Query( $works );?>
       <?php if ( $works_loop->have_posts() ) : ?>
         <ul class = "c-cardList js-allswitch">
@@ -175,7 +175,7 @@ if ( $loot_slug ) {
           <?php wazeka_query_pagination( $works_loop ); ?>
         </div>
       <?php endif; ?>
-  </section>
+  </div>
 
 </main>
 

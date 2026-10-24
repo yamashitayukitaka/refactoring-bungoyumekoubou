@@ -31,7 +31,7 @@ get_header();
     <?php endif; ?>
   </section>
 
-  <section class = "l-content--middle u-mb100">
+  <div class="l-content--middle u-mb100">
 
     <?php $property_area = get_field( 'property-area' ); ?>
     <?php if ( $property_area && $terms && ! is_wp_error( $terms ) ) : ?>
@@ -75,9 +75,9 @@ get_header();
       <?php endif; ?>
 
     <?php endif; ?>
-  </section>
+  </div>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' );?>
+  <?php get_template_part( 'template-parts/hasThumbSlider-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
   
   <?php $detail = get_field( 'detail' ); ?>
   <?php if ( $detail && ( ! empty( $detail['price'] ) || ! empty( $detail['name'] ) || ! empty( $detail['traffic'] ) || ! empty( $detail['address'] ) || ! empty( $detail['floor'] ) || ! empty( $detail['totalFloor'] ) || ! empty( $detail['siteArea'] ) || ! empty( $detail['age'] ) || ! empty( $detail['elementary'] ) || ! empty( $detail['junior-high'] ) || ! empty( $detail['point'] ) || ! empty( $detail['ground'] ) || ! empty( $detail['purpose'] ) || ! empty( $detail['health'] ) || ! empty( $detail['floor-area-ratio'] ) || ! empty( $detail['urban'] ) || ! empty( $detail['contact-path'] ) || ! empty( $detail['structure'] ) || ! empty( $detail['transaction'] ) || ! empty( $detail['commission'] ) || ! empty( $detail['delivery'] ) || ! empty( $detail['facility'] ) || ! empty( $detail['remarks'] ) || ! empty( $detail['contact'] ) ) ) :?>
@@ -263,7 +263,7 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <section class = "l-content--middle u-mb100">
+  <div class="l-content--middle u-mb100">
     <?php if ( have_rows( 'flex-facilities' ) ) : ?>
       <h3 class = "c-title--sectionEn">
         FACILITIES
@@ -276,7 +276,7 @@ get_header();
         <?php get_template_part( 'template-parts/flex-loop' ); ?>
       <?php endwhile; ?>
     <?php endif; ?>
-  </section>
+  </div>
 
   <?php $local_map = get_field( 'mhtml' ); ?>
     <?php if ( $local_map ) :?>
@@ -293,7 +293,7 @@ get_header();
     </section>
     <?php endif; ?>
 
-  <?php get_template_part( 'template-parts/infomation-loop' ); ?>
+  <?php get_template_part( 'template-parts/infomation-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
 
   <section class="l-content" id = "contact">
     <div class="c-title__head">
@@ -310,7 +310,7 @@ get_header();
       <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
-  <?php get_template_part( 'template-parts/common-footer' ); ?>
+  <?php get_template_part( 'template-parts/common-footer', null, array( 'heading_tag' => 'h3' ) ); ?>
 
 </main>
 <?php get_footer(); ?>
