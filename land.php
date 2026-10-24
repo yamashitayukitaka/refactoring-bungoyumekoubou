@@ -16,13 +16,13 @@ get_header();
 <?php $terms = wp_get_post_terms( $local_post_id, 'property-area' ); ?>
 
 <main>
-  <h2 class="c-title--section u-mb50">
+  <h1 class="c-title--section u-mb50">
     土地情報
-  </h2>
+  </h1>
   <section class="l-content--middle">
-    <h3 class="p-event__ttl u-mb50">
+    <h2 class="p-event__ttl u-mb50">
       【<?php the_title(); ?>】
-    </h3>
+    </h2>
 
     <?php if ( has_post_thumbnail() ) : ?>
       <figure class="c-thumbnail">
@@ -31,7 +31,7 @@ get_header();
     <?php endif; ?>
 
   </section>
-  <section class="l-content--middle u-mb100">
+  <div class="l-content--middle u-mb100">
 
     <?php $property_area = get_field( 'property-area' ); ?>
     <?php if ( $property_area && $terms && ! is_wp_error( $terms ) ) : ?>
@@ -74,9 +74,9 @@ get_header();
       <?php endif; ?>
     <?php endif; ?>
 
-  </section>
+  </div>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
+  <?php get_template_part( 'template-parts/hasThumbSlider-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
 
   <?php $detail = get_field( 'detail' ); ?>
   <?php if ( $detail && ( ! empty( $detail['name'] ) || ! empty( $detail['address'] ) || ! empty( $detail['traffic'] ) || ! empty( $detail['price'] ) || ! empty( $detail['land-area'] ) || ! empty( $detail['elementary'] ) || ! empty( $detail['junior-high'] ) || ! empty( $detail['point'] ) || ! empty( $detail['ground'] ) || ! empty( $detail['purpose'] ) || ! empty( $detail['health'] ) || ! empty( $detail['floor-area-ratio'] ) || ! empty( $detail['urban'] ) || ! empty( $detail['contact-path'] ) || ! empty( $detail['transaction'] ) || ! empty( $detail['commission'] ) || ! empty( $detail['facility'] ) || ! empty( $detail['remarks'] ) || ! empty( $detail['contact'] ) ) ) : ?>
@@ -228,7 +228,7 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <?php get_template_part( 'template-parts/infomation-loop' ); ?>
+  <?php get_template_part( 'template-parts/infomation-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
 
   <div class="l-content--middle c-contact u-mb100">
     <p class="c-contact__desc">
@@ -258,10 +258,10 @@ get_header();
       <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
-  <?php get_template_part( 'template-parts/common-footer' ); ?>
+  <?php get_template_part( 'template-parts/common-footer', null, array( 'heading_tag' => 'h3' ) ); ?>
 
 </main>
 
 
 
-<?php get_footer(); ?>
+<?php get_footer( null, array( 'heading_tag' => 'h3' ) ); ?>

@@ -17,9 +17,9 @@ get_header();
 ?>
 
 <main>
-  <h2 class = "c-title--section u-mb50">
+  <h1 class = "c-title--section u-mb50">
     土地・物件情報
-  </h2>
+  </h1>
 
 <?php $terms = get_terms(
     [
@@ -50,19 +50,18 @@ get_header();
     <?php endif; ?>
   </ul>
 
-<?php $area_tags = get_terms(
+  <?php $area_tags = get_terms(
     [
-        'taxonomy'   => $local_tag,
-        'hide_empty' => false,
-        'parent'     => 0,
-        'orderby'    => 'id',
-        'order'      => 'ASC',
-        ]
-);?>
+      'taxonomy'   => $local_tag,
+      'hide_empty' => false,
+      'parent'     => 0,
+      'orderby'    => 'id',
+      'order'      => 'ASC',
+      ]
+  );?>
 
     <ul class = "c-tag__list l-content--large">
 
-      
       <li class = "c-tag__list__item">
         <a href = "#" class = "js-allTab c-tag__list__link u-currentTab">すべて</a>
       </li>

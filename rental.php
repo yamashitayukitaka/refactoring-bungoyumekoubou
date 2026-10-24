@@ -16,18 +16,23 @@ get_header();
 <?php $terms = wp_get_post_terms( $local_post_id, 'property-area' );?>
 
 <main>
-  <h2 class = "c-title--section u-mb50">
+  <h1 class = "c-title--section u-mb50">
     賃貸物件
-  </h2>
+  </h1>
   <section class = "l-content--middle">
-    <h3 class = "p-event__ttl u-mb50">
+    <h2 class = "p-event__ttl u-mb50">
       【<?php the_title(); ?>】
-    </h3>
+    </h2>
     <figure class = "c-thumbnail">
-      <?php the_post_thumbnail(); ?>
+      <?php 
+      the_post_thumbnail( 'full', array(
+        'loading'       => 'eager', // 初期表示なのでlazyを解除！
+        'fetchpriority' => 'high',  // 最優先でダウンロード！
+      ) ); 
+      ?>
     </figure>
   </section>
-  <section class = "l-content--middle u-mb100">
+  <div class="l-content--middle u-mb100">
     <?php $property_area = get_field( 'property-area' ); ?>
     <?php if ( $property_area && $terms && ! is_wp_error( $terms ) ) : ?>
       <?php foreach ( $terms as $local_term ) :?>
@@ -64,10 +69,10 @@ get_header();
         </p>
       <?php endif; ?>
     <?php endif; ?>
-  </section>
+  </div>
 
   
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' );?>
+  <?php get_template_part( 'template-parts/hasThumbSlider-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
  
   <?php $detail = get_field( 'detail' ); ?>
   <?php if ( $detail && ( ! empty( $detail['name'] ) || ! empty( $detail['traffic'] ) || ! empty( $detail['address'] ) || ! empty( $detail['document'] ) || ! empty( $detail['mutual'] ) || ! empty( $detail['security'] ) || ! empty( $detail['key'] ) || ! empty( $detail['renewal'] ) || ! empty( $detail['insurance'] ) || ! empty( $detail['deposit'] ) || ! empty( $detail['brokerage'] ) || ! empty( $detail['floor'] ) || ! empty( $detail['total'] ) || ! empty( $detail['site'] ) || ! empty( $detail['age'] ) || ! empty( $detail['parking'] ) || ! empty( $detail['move'] ) || ! empty( $detail['structure'] ) || ! empty( $detail['transaction'] ) || ! empty( $detail['elementary'] ) || ! empty( $detail['juniorHigh'] ) || ! empty( $detail['facility'] ) || ! empty( $detail['point'] ) || ! empty( $detail['remarks'] ) || ! empty( $detail['contact'] ) ) ) :?>
@@ -282,8 +287,8 @@ get_header();
     </div>
   </section>
   
-  <?php get_template_part( 'template-parts/common-footer' ); ?>
+  <?php get_template_part( 'template-parts/common-footer', null, array( 'heading_tag' => 'h3' ) ); ?>
 
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer( null, array( 'heading_tag' => 'h3' ) ); ?>
