@@ -33,18 +33,20 @@ get_header();
 
     <?php $area = get_field( 'works-area' ); ?>
       <?php if ( $area && ( ! empty( $area['site'] ) || ! empty( $area['total-floor'] ) ) ) :?>
-        <?php if ( ! empty( $area['site'] ) ) :?>
-          <dl class = "u-flex">
-            <dt>敷地面積&nbsp;&nbsp;</dt>
-            <dd><?php echo esc_html( $area['site'] );?></dd>
-          </dl>
-        <?php endif; ?>
-        <?php if ( ! empty( $area['total-floor'] ) ) :?> 
-          <dl class = "u-flex">
-            <dt>延床面積&nbsp;&nbsp;</dt>
-            <dd><?php echo esc_html( $area['total-floor'] );?></dd>
-          <dl>
-        <?php endif; ?>
+        <dl>
+          <?php if ( ! empty( $area['site'] ) ) :?>
+            <div class = "u-flex">
+              <dt>敷地面積&nbsp;&nbsp;</dt>
+              <dd><?php echo esc_html( $area['site'] );?></dd>
+            </div>
+          <?php endif; ?>
+          <?php if ( ! empty( $area['total-floor'] ) ) :?> 
+            <div class = "u-flex">
+              <dt>延床面積&nbsp;&nbsp;</dt>
+              <dd><?php echo esc_html( $area['total-floor'] );?></dd>
+            <div>
+          <?php endif; ?>
+        </dl>
       <?php endif; ?>
   </div>
   <div class = "l-content--middle u-mb100">
