@@ -53,12 +53,14 @@
             </a>
             <div class="l-header__time u-none__mobile--xxl">
               <dl class="l-header__dl">
-                <dt class="l-header__dt">受付時間/</dt>
-                <dd class="l-header__dd">9:00～18:00</dd>
-              </dl>
-              <dl class="l-header__dl">
-                <dt class="l-header__dt">定休日/</dt>
-                <dd class="l-header__dd">火曜日・水曜日</dd>
+                <div class="l-header__dl__row">
+                  <dt class="l-header__dt">受付時間/</dt>
+                  <dd class="l-header__dd">9:00～18:00</dd>
+                </div>
+                <div class="l-header__dl__row">
+                  <dt class="l-header__dt">定休日/</dt>
+                  <dd class="l-header__dd">火曜日・水曜日</dd>
+                </div>
               </dl>
             </div>
           </div>
@@ -438,12 +440,14 @@
               </a>
               <div class="u-flex">
                 <dl class="l-header__dl">
-                  <dt class="l-header__dt">受付時間/</dt>
-                  <dd class="l-header__dd">9:00～18:00</dd>
-                </dl>
-                <dl class="l-header__dl">
-                  <dt class="l-header__dt">定休日/</dt>
-                  <dd class="l-header__dd">火曜日・水曜日</dd>
+                  <div class="l-header__dl__row">
+                    <dt class="l-header__dt">受付時間/</dt>
+                    <dd class="l-header__dd">9:00～18:00</dd>
+                  </div>
+                  <div class="l-header__dl__row">
+                    <dt class="l-header__dt">定休日/</dt>
+                    <dd class="l-header__dd">火曜日・水曜日</dd>
+                  </div>
                 </dl>
               </div>
             </div>
