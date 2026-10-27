@@ -107,9 +107,10 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
 
 
       <?php
-      if ( ! ( is_singular( 'xo_event' ) || is_post_type_archive( 'xo_event' ) ) ) {?>
-        <a href="#" class="l-footer__goTop__link js-goToTop">ページトップへもどる</a>
-      <?php }?>
+        if ( ! ( is_singular( 'xo_event' ) || is_post_type_archive( 'xo_event' ) ) ) :
+        ?>
+          <a href="#top" class="l-footer__goTop__link js-goToTop">ページトップへもどる</a>
+        <?php endif; ?>
 
       <section class="l-footer__bottom">
         <div class="l-content--middle">

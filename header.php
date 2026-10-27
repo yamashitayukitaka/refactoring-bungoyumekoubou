@@ -29,7 +29,7 @@
 
 
 
-<body <?php body_class(); ?>>
+<body id="top" <?php body_class(); ?>>
   <header id="js-measure" class="l-header">
 
     <div class="l-header__content">
