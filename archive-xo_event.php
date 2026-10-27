@@ -81,32 +81,6 @@ get_header();
       <?php endif; ?>
     </ul>
 
-  <div class="l-content u-mb100">
-    <?php
-      $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-      $event       = array(
-      'post_type'      => $local_post_type,
-      'posts_per_page' => 7,
-      'paged'          => $local_paged,
-      'orderby'        => 'menu_order',
-      'order'          => 'ASC',
-      );?>
-    <?php $event_loop = new WP_Query( $event );?>
-    <?php if ( $event_loop->have_posts() ) : ?>
-      <ul class = "c-cardList c-cardList--lead js-prepend">
-        <?php while ( $event_loop->have_posts() ) :
-          $event_loop->the_post();?>
-          <?php get_template_part( 'template-parts/event-loop' ); ?>
-        <?php endwhile;
-    endif;
-        wp_reset_postdata();?>
-      </ul>
-    
-    <?php if ( $event_loop->max_num_pages > 1 ) :?>
-      <?php wazeka_query_pagination( $event_loop ); ?>
-    <?php endif; ?>
-      
-    </div>
   <?php get_template_part( 'template-parts/xo-event' ); ?>
  
 </main>

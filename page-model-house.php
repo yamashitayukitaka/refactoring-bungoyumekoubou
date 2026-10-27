@@ -350,24 +350,7 @@ get_header();
         <span class="marker">最新情報をお届けします</span>
       </p>
     </div>
-    <?php
-    $event = array(
-      'post_type'      => 'xo_event',
-      'posts_per_page' => 3,
-      'order'          => 'DESC',
-      'orderby'        => 'date',
-    ); ?>
-    <?php $event_loop = new WP_Query( $event ); ?>
-    <?php if ( $event_loop->have_posts() ) : ?>
-      <ul class="c-cardList u-mb50">
-        <?php while ( $event_loop->have_posts() ) :
-          $event_loop->the_post(); ?>
-          <?php get_template_part( 'template-parts/event-loop' ); ?>
-        <?php endwhile;
-    endif;
-      wp_reset_postdata(); ?>
-      </ul>
-      <div class="u-center">
+    <div class="u-center">
         <a href="<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class="c-button--outline">イベント一覧へ</a>
       </div>
   </section>
