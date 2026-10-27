@@ -48,16 +48,16 @@ get_header();
       <dl class="p-property__dl__wrap">
 
         <?php if ( ! empty( $top_info['area'] ) ) : ?>
-          <dl class="p-property__dl">
+          <div class="p-property__dl">
             <dt class="p-property__dl__txt">土地面積:</dt>
             <dd class="p-property__dl__txt"><?php echo esc_html( $top_info['area'] ); ?></dd>
-          </dl>
+        </div>
         <?php endif; ?>
         <?php if ( ! empty( $top_info['school'] ) ) : ?>
-          <dl class="p-property__dl">
+          <div class="p-property__dl">
             <dt class="p-property__dl__txt">校区:</dt>
             <dd class="p-property__dl__txt"><?php echo esc_html( $top_info['school'] ); ?></dd>
-          </dl>
+          </div>
         <?php endif; ?>
       </dl>
     </div>
