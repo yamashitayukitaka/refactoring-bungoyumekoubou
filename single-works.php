@@ -80,7 +80,7 @@ get_header();
         概要
       </p>
       <?php if ( ! empty( $outline['ttl'] ) ) :?>
-      <h4 class="c-title--middle"><?php echo esc_html( $outline['ttl'] ); ?></h4>
+      <h3 class="c-title--middle"><?php echo esc_html( $outline['ttl'] ); ?></h3>
       <?php endif; ?>
       <?php if ( ! empty( $outline['txt'] ) ) :?>
       <p class = "c-txt--middleBold"><?php echo esc_html( $outline['txt'] );?></p>
