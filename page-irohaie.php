@@ -293,59 +293,76 @@ get_header();
         ➤10の満足品質
       </div>
       <?php
-      $qualities   = get_field( 'satisfying_quality' );
-      $has_quality = false;
-      if ( $qualities ) {
-        foreach ( $qualities as $row ) {
-          if ( ! empty( $row['img'] ) || ! empty( $row['title'] ) || ! empty( $row['txt'] ) ) {
-            $has_quality = true;
-            break;
-          }
-        }
-      }
+      $img_base  = get_template_directory_uri() . '/dist/img/irohaie/';
+      $qualities = array(
+        array(
+          'title' => '地震に強い',
+          'txt'   => '「いろは.いえ」は地震に強い家づくりで、安心・安全な暮らしを提案します。',
+          'img'   => $img_base . 'quality_01.webp',
+        ),
+        array(
+          'title' => '長活き',
+          'txt'   => '人も家も「長く」活かせる家づくりを。構造から長持ちする家をつくります。',
+          'img'   => $img_base . 'quality_02.webp',
+        ),
+        array(
+          'title' => '防犯性能もバッチリ',
+          'txt'   => '家族の安全のために「防犯」は重要な性能です。',
+          'img'   => $img_base . 'quality_03.webp',
+        ),
+        array(
+          'title' => 'とっても静か',
+          'txt'   => 'ゆったり静かに過ごしてもらいたい。「いろは.いえ」は防音にも気を遣います。',
+          'img'   => $img_base . 'quality_04.webp',
+        ),
+        array(
+          'title' => '火事に負けない',
+          'txt'   => '木造住宅＋防火材料の使用で「いろは.いえ」は火に強い！',
+          'img'   => $img_base . 'quality_05.webp',
+        ),
+        array(
+          'title' => '健康に良い',
+          'txt'   => '一生「いろは.いえ」に住んでもらいたいから、「いろは.いえ」は健康にもこだわります。',
+          'img'   => $img_base . 'quality_06.webp',
+        ),
+        array(
+          'title' => 'お手入れラク',
+          'txt'   => '床も外壁もいつもキレイに。お手入れ・メンテナンスの少ない家をご提案。',
+          'img'   => $img_base . 'quality_07.webp',
+        ),
+        array(
+          'title' => '夏涼しく冬暖かい',
+          'txt'   => '「いろは.いえ」は年中過ごしやすい家で快適な生活をお届けします。',
+          'img'   => $img_base . 'quality_08.webp',
+        ),
+        array(
+          'title' => '家計に優しい',
+          'txt'   => '「いろは.いえ」の遮熱、断熱は光熱費を軽減し、おサイフにも優しい性能。',
+          'img'   => $img_base . 'quality_09.webp',
+        ),
+        array(
+          'title' => '地球に優しい',
+          'txt'   => '家族と同じように地球にも優しい「いろは.いえ」でエコライフ。',
+          'img'   => $img_base . 'quality_10.webp',
+        ),
+      );
       ?>
-      <?php if ( $has_quality ) : ?>
-        <div class="p-irohaie__quality">
-          <?php
-          foreach ( $qualities as $i => $quality ) :
-            if ( empty( $quality['img'] ) && empty( $quality['title'] ) && empty( $quality['txt'] ) ) {
-              continue;
-            }
-            ?>
-            <div class="p-irohaie__quality__item">
-              <?php if ( ! empty( $quality['img'] ) ) : ?>
-                <div class="p-irohaie__quality__media">
-                  <?php
-                echo wp_get_attachment_image(
-                    $quality['img'],
-                    'full',
-                    false,
-                    array(
-                      'class'   => 'p-irohaie__quality__img',
-                      'alt'     => ! empty( $quality['title'] ) ? $quality['title'] : 'いろはいえの満足品質',
-                      'loading' => 'lazy',
-                    )
-                );
-                  ?>
-                </div>
-              <?php endif; ?>
-              <div class="p-irohaie__quality__body">
-                <?php if ( ! empty( $quality['title'] ) ) : ?>
-                  <h4 class="p-irohaie__quality__title">
-                    <span class="p-irohaie__quality__num"><?php echo esc_html( sprintf( '%02d', $i + 1 ) . '.' ); ?></span>
-                    <?php echo esc_html( $quality['title'] ); ?>
-                  </h4>
-                <?php endif; ?>
-                <?php if ( ! empty( $quality['txt'] ) ) : ?>
-                  <p class="p-irohaie__quality__text"><?php echo wp_kses_post( $quality['txt'] ); ?></p>
-                <?php endif; ?>
-              </div>
+      <div class="p-irohaie__quality">
+        <?php foreach ( $qualities as $i => $quality ) : ?>
+          <div class="p-irohaie__quality__item">
+            <div class="p-irohaie__quality__media">
+              <img loading="lazy" class="p-irohaie__quality__img" src="<?php echo esc_url( $quality['img'] ); ?>" alt="<?php echo esc_attr( $quality['title'] ); ?>">
             </div>
-            <?php
-          endforeach;
-          ?>
-        </div>
-      <?php endif; ?>
+            <div class="p-irohaie__quality__body">
+              <h4 class="p-irohaie__quality__title">
+                <span class="p-irohaie__quality__num"><?php echo esc_html( sprintf( '%02d', $i + 1 ) . '.' ); ?></span>
+                <?php echo esc_html( $quality['title'] ); ?>
+              </h4>
+              <p class="p-irohaie__quality__text"><?php echo esc_html( $quality['txt'] ); ?></p>
+            </div>
+          </div>
+        <?php endforeach; ?>
+      </div>
     </div>
   </section>
 
