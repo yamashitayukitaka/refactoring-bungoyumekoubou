@@ -18,13 +18,13 @@ if ( get_row_layout() === 'two-column' ) : ?>
           <?php if ( $flex_img ) : ?>
             <?php
             echo wp_get_attachment_image(
-              $flex_img,
-              'full',
-              false,
-              array(
+                $flex_img,
+                'full',
+                false,
+                array(
                 'alt'     => ( $flex_ttl ? $flex_ttl : '説明画像' ) . 'のイメージ',
                 'loading' => 'lazy',
-              )
+                )
             );
             ?>
           <?php endif; ?>
@@ -50,13 +50,13 @@ if ( get_row_layout() === 'two-column' ) : ?>
           <?php if ( $flex_img ) : ?>
             <?php
             echo wp_get_attachment_image(
-              $flex_img,
-              'full',
-              false,
-              array(
+                $flex_img,
+                'full',
+                false,
+                array(
                 'alt'     => ( $flex_ttl ? $flex_ttl : '説明画像' ) . 'のイメージ',
                 'loading' => 'lazy',
-              )
+                )
             );
             ?>
           <?php endif; ?>
@@ -84,13 +84,13 @@ if ( get_row_layout() === 'two-column' ) : ?>
           <?php if ( $flex_img ) : ?>
             <?php
             echo wp_get_attachment_image(
-              $flex_img,
-              'full',
-              false,
-              array(
+                $flex_img,
+                'full',
+                false,
+                array(
                 'alt'     => ( $flex_ttl ? $flex_ttl : '説明画像' ) . 'のイメージ',
                 'loading' => 'lazy',
-              )
+                )
             );
             ?>
           <?php endif; ?>

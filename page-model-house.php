@@ -153,14 +153,14 @@ get_header();
                   <li class="c-hasThumbSlider__list__item">
                     <?php
                     echo wp_get_attachment_image(
-                      $has_thumbslider['img'],
-                      'full',
-                      false,
-                      array(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
                         'class'   => 'c-hasThumbSlider__list__img',
                         'alt'     => get_the_title() . 'のイメージ',
                         'loading' => 'lazy',
-                      )
+                        )
                     );
                     ?>
                   </li>
@@ -174,14 +174,14 @@ get_header();
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
                     <?php
                     echo wp_get_attachment_image(
-                      $has_thumbslider['img'],
-                      'full',
-                      false,
-                      array(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
                         'class'   => 'c-hasThumbSlider__thumbnail__img',
                         'alt'     => get_the_title() . 'のイメージ',
                         'loading' => 'lazy',
-                      )
+                        )
                     );
                     ?>
                   </li>
@@ -270,14 +270,14 @@ get_header();
                   <li class="c-hasThumbSlider__list__item">
                     <?php
                     echo wp_get_attachment_image(
-                      $has_thumbslider['img'],
-                      'full',
-                      false,
-                      array(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
                         'class'   => 'c-hasThumbSlider__list__img',
                         'alt'     => get_the_title() . 'のイメージ',
                         'loading' => 'lazy',
-                      )
+                        )
                     );
                     ?>
                   </li>
@@ -291,14 +291,14 @@ get_header();
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
                     <?php
                     echo wp_get_attachment_image(
-                      $has_thumbslider['img'],
-                      'full',
-                      false,
-                      array(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
                         'class'   => 'c-hasThumbSlider__thumbnail__img',
                         'alt'     => get_the_title() . 'のイメージ',
                         'loading' => 'lazy',
-                      )
+                        )
                     );
                     ?>
                   </li>

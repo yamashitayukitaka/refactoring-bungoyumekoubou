@@ -50,13 +50,13 @@ get_header();
           <div class = "p-flex__one__imgWrap u-mb50">
             <?php
             echo wp_get_attachment_image(
-              $img,
-              'full',
-              false,
-              array(
+                $img,
+                'full',
+                false,
+                array(
                 'alt'     => get_the_title() . 'のイメージ',
                 'loading' => 'lazy',
-              )
+                )
             );
             ?>
           </div>

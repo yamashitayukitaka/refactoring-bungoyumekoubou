@@ -67,7 +67,7 @@ $terms             = get_terms(
                   <?php $staff_img = get_field( 'staff-img' ); ?>
                   <?php if ( $staff_img ) : ?>
                   <?php
-                  echo wp_get_attachment_image(
+                echo wp_get_attachment_image(
                     $staff_img,
                     'full',
                     false,
@@ -76,7 +76,7 @@ $terms             = get_terms(
                       'alt'     => 'スタッフイメージ',
                       'loading' => 'lazy',
                     )
-                  );
+                );
                   ?>
                   <?php endif; ?>
                 </figure>

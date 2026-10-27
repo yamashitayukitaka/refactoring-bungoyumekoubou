@@ -3,7 +3,6 @@
  * Store location section part.
  *
  * @package Wazeka
- * 
  */
 
 ?>
@@ -55,7 +54,7 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
                   <?php $photo_num = $count + 1; ?>
                 <li class="p-location__list__item">
                   <?php
-                  echo wp_get_attachment_image(
+                echo wp_get_attachment_image(
                     $item['detail_img'],
                     'full',
                     false,
@@ -63,7 +62,7 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
                       'class' => 'p-location__list__img',
                       'alt'   => $location_alt_base . 'の' . $photo_num . '枚目のイメージ',
                     )
-                  );
+                );
                   ?>
                 </li>
                   <?php ++$count; ?>
@@ -107,13 +106,13 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
               <li class="p-location__thumb__item" data-slide="<?php echo esc_html( $count++ ); ?>">
                 <?php
                 echo wp_get_attachment_image(
-                  $item['detail_img'],
-                  'full',
-                  false,
-                  array(
+                    $item['detail_img'],
+                    'full',
+                    false,
+                    array(
                     'class' => 'p-location__thumb__img',
                     'alt'   => $location_alt_base . 'の' . $photo_num . '枚目のイメージ',
-                  )
+                    )
                 );
                 ?>
               </li>

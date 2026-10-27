@@ -22,11 +22,14 @@ get_header();
       <div class="l-content--middle u-mb100">
         <?php if ( has_post_thumbnail() ) : ?>
           <figure class="c-thumbnail u-mb50">
-          <?php 
-            the_post_thumbnail( 'full', array(
-              'loading'       => 'eager', // 初期表示なのでlazyを解除！
-              'fetchpriority' => 'high',  // 最優先でダウンロード！
-            ) ); 
+          <?php
+            the_post_thumbnail(
+                'full',
+                array(
+                'loading'       => 'eager', // 初期表示なのでlazyを解除！
+                'fetchpriority' => 'high',  // 最優先でダウンロード！
+                )
+            );
             ?>
           </figure>
         <?php endif; ?>

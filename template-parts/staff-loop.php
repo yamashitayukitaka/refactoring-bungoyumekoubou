@@ -36,14 +36,14 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
             <?php if ( $staff_img ) : ?>
             <?php
             echo wp_get_attachment_image(
-              $staff_img,
-              'full',
-              false,
-              array(
+                $staff_img,
+                'full',
+                false,
+                array(
                 'class'   => 'p-about__staff__listImg',
                 'alt'     => get_the_title() . 'のイメージ',
                 'loading' => 'lazy',
-              )
+                )
             );
             ?>
             <?php endif; ?>

@@ -316,7 +316,7 @@ get_header();
               <?php if ( ! empty( $quality['img'] ) ) : ?>
                 <div class="p-irohaie__quality__media">
                   <?php
-                  echo wp_get_attachment_image(
+                echo wp_get_attachment_image(
                     $quality['img'],
                     'full',
                     false,
@@ -325,7 +325,7 @@ get_header();
                       'alt'     => ! empty( $quality['title'] ) ? $quality['title'] : 'いろはいえの満足品質',
                       'loading' => 'lazy',
                     )
-                  );
+                );
                   ?>
                 </div>
               <?php endif; ?>

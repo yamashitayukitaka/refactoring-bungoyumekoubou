@@ -29,7 +29,7 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
               <?php
-              echo wp_get_attachment_image(
+            echo wp_get_attachment_image(
                 $staff_img,
                 'full',
                 false,
@@ -38,7 +38,7 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
                   'alt'     => 'スタッフ画像',
                   'loading' => 'lazy',
                 )
-              );
+            );
               ?>
               <?php endif; ?>
             
@@ -77,7 +77,7 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
               <?php
-              echo wp_get_attachment_image(
+            echo wp_get_attachment_image(
                 $staff_img,
                 'full',
                 false,
@@ -86,7 +86,7 @@ $heading_tag = $args['heading_tag'] ?? 'h2';
                   'alt'     => 'スタッフ画像',
                   'loading' => 'lazy',
                 )
-              );
+            );
               ?>
               <?php endif; ?>
             

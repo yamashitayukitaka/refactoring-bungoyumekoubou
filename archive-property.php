@@ -50,7 +50,7 @@ get_header();
     <?php endif; ?>
   </ul>
 
-  <?php $area_tags = get_terms(
+<?php $area_tags = get_terms(
     [
       'taxonomy'   => $local_tag,
       'hide_empty' => false,
@@ -58,7 +58,7 @@ get_header();
       'orderby'    => 'id',
       'order'      => 'ASC',
       ]
-  );?>
+);?>
 
     <ul class = "c-tag__list l-content--large">
 

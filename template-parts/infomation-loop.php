@@ -39,14 +39,14 @@ if ( ! empty( $infomations ) && is_array( $infomations ) ) {
           <figure class = "p-property__infomation__imgWrap">
             <?php
             echo wp_get_attachment_image(
-              $infomation['img'],
-              'full',
-              false,
-              array(
+                $infomation['img'],
+                'full',
+                false,
+                array(
                 'class'   => 'p-property__infomation__img',
                 'loading' => 'lazy',
                 'alt'     => ( ! empty( $infomation['txt'] ) ? $infomation['txt'] : '周辺情報' ) . 'のイメージ',
-              )
+                )
             );
             ?>
           </figure>

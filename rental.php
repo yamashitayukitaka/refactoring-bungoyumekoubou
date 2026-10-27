@@ -24,11 +24,14 @@ get_header();
       【<?php the_title(); ?>】
     </h2>
     <figure class = "c-thumbnail">
-      <?php 
-      the_post_thumbnail( 'full', array(
+      <?php
+    the_post_thumbnail(
+        'full',
+        array(
         'loading'       => 'eager', // 初期表示なのでlazyを解除！
         'fetchpriority' => 'high',  // 最優先でダウンロード！
-      ) ); 
+        )
+    );
       ?>
     </figure>
   </section>

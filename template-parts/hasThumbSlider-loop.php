@@ -57,14 +57,14 @@ if ( ! empty( $has_thumbsliders ) && is_array( $has_thumbsliders ) ) {
           <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
             <?php
             echo wp_get_attachment_image(
-              $has_thumbslider['img'],
-              'full',
-              false,
-              array(
+                $has_thumbslider['img'],
+                'full',
+                false,
+                array(
                 'class'   => 'c-hasThumbSlider__thumbnail__img',
                 'alt'     => get_the_title() . 'のイメージ（' . ( $thumb_index + 1 ) . '）',
                 'loading' => 'lazy',
-              )
+                )
             );
             ?>
           </li>

@@ -23,7 +23,7 @@ get_header();
             'order'      => 'ASC',
           ]
     );?>
-    <?php if ($works_types && ! is_wp_error( $works_types ) ) : ?>
+    <?php if ( $works_types && ! is_wp_error( $works_types ) ) : ?>
       <div class = "c-id__wrap--top">
         <?php foreach ( $works_types as $works_type ) :?>
           <span class = "c-id u-mb15"><?php echo esc_html( $works_type->name ); ?></span>
@@ -147,7 +147,7 @@ get_header();
           <?php if ( ! empty( $voice['img'] ) ) :?>
             <figure class = "p-works__voice__imgWrap">
               <?php
-              echo wp_get_attachment_image(
+            echo wp_get_attachment_image(
                 $voice['img'],
                 'full',
                 false,
@@ -155,7 +155,7 @@ get_header();
                   'loading' => 'lazy',
                   'alt'     => ( trim( ( ! empty( $voice['name'] ) ? $voice['name'] : '' ) . ( ! empty( $voice['address'] ) ? '（' . $voice['address'] . '）' : '' ) ) ? trim( ( ! empty( $voice['name'] ) ? $voice['name'] : '' ) . ( ! empty( $voice['address'] ) ? '（' . $voice['address'] . '）' : '' ) ) : 'お客様の声' ) . 'のイメージ図',
                 )
-              );
+            );
               ?>
             </figure>
           <?php endif; ?>
@@ -179,7 +179,7 @@ get_header();
           <?php if ( ! empty( $qs['img'] ) ) :?>
             <figure class = "p-works__voice__imgWrap">
               <?php
-              echo wp_get_attachment_image(
+            echo wp_get_attachment_image(
                 $qs['img'],
                 'full',
                 false,
@@ -187,7 +187,7 @@ get_header();
                   'loading' => 'lazy',
                   'alt'     => get_the_title() . 'のインタビューのイメージ',
                 )
-              );
+            );
               ?>
             </figure>
           <?php endif; ?>

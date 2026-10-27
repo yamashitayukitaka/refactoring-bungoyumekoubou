@@ -14,28 +14,28 @@
       <figure class = "c-cardList__imgWrap">
         <?php
         echo wp_get_attachment_image(
-          $thumb,
-          'full',
-          false,
-          array(
+            $thumb,
+            'full',
+            false,
+            array(
             'loading' => 'lazy',
             'alt'     => get_the_title(),
-          )
+            )
         );
         ?>
       </figure>
       <?php endif; ?>
       <div class = "c-cardList__txtWrap">
-      <?php $works_types = get_the_terms(
-          get_the_ID(),
-          'works-type',
-          [
+    <?php $works_types = get_the_terms(
+        get_the_ID(),
+        'works-type',
+        [
               'hide_empty' => false,
               'parent'     => 0,
               'orderby'    => 'id',
               'order'      => 'ASC',
             ]
-      );?>
+    );?>
 
         <?php if ( $works_types && ! is_wp_error( $works_types ) ) :?>
           <?php foreach ( $works_types as $works_type ) :?>
@@ -47,16 +47,16 @@
           </p>
         <?php endif; ?>
 
-      <?php $works_tags = get_the_terms(
-          get_the_ID(),
-          'works-tag',
-          [
+    <?php $works_tags = get_the_terms(
+        get_the_ID(),
+        'works-tag',
+        [
               'hide_empty' => false,
               'parent'     => 0,
               'orderby'    => 'id',
               'order'      => 'ASC',
             ]
-      );?>
+    );?>
 
         <?php if ( $works_tags && ! is_wp_error( $works_tags ) ) :?>
           <?php foreach ( $works_tags as $works_tag ) :?>
