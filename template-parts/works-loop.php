@@ -68,7 +68,7 @@
             <dl class = "u-flex">
               <dt>延床面積&nbsp;&nbsp;</dt>
               <dd><?php echo esc_html( $area['total-floor'] );?></dd>
-            <dl>
+            </dl>
         <?php endif; ?>
     　</div>
     </a>

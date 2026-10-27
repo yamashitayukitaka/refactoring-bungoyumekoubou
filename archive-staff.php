@@ -88,7 +88,7 @@ $terms             = get_terms(
           <?php endwhile; ?>
         <?php endif;
         wp_reset_postdata(); ?>
-        </div>
+      </ul>
     </section>
     <?php endforeach; ?>
   <?php endif; ?>

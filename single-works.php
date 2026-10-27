@@ -44,7 +44,7 @@ get_header();
             <div class = "u-flex">
               <dt>延床面積&nbsp;&nbsp;</dt>
               <dd><?php echo esc_html( $area['total-floor'] );?></dd>
-            <div>
+            </div>
           <?php endif; ?>
         </dl>
       <?php endif; ?>
