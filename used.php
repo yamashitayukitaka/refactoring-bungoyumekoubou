@@ -145,16 +145,16 @@ get_header();
         </div>
         <?php endif; ?>
         <?php if ( ! empty( $detail['junior-high'] ) ) :?>
-        <dl class = "p-property__dl__info--half">
+        <div class = "p-property__dl__info--half">
           <dt class = "p-property__dt__item--sm">中学校区</dt>
           <dd class = "p-property__dt__value--sm"><?php echo esc_html( $detail['junior-high'] );?></dd>
-        </dl>
+        </div>
         <?php endif; ?>
         <?php if ( ! empty( $detail['point'] ) ) :?>
-        <dl class = "p-property__dl__info">
+        <div class = "p-property__dl__info">
           <dt class = "p-property__dt__item--lg">POINT</dt>
           <dd class = "p-property__dt__value--lg"><?php echo wp_kses_post( $detail['point'] ); ?></dd>
-        </dl>
+        </div>
         <?php endif; ?>
       </dl>
 
