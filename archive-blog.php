@@ -69,7 +69,7 @@ get_header();
       </div>
     <?php endif; ?>
 
-    <section class = "p-blog__search l-content u-mb100">
+    <aside class="p-blog__search l-content u-mb100" aria-label="ブログサイドバー">
       <p class = "p-blog__search__ttl">
         最新記事
       </p>
@@ -109,6 +109,6 @@ get_header();
             )
         ); ?>
       </div>
-    </section> 
+    </aside>
 </main>
-<?php get_footer();?>
+<?php get_footer(); ?>

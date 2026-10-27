@@ -13,22 +13,22 @@ get_header();
 <main class="p-quality">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         品質へのこだわり
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         HIGH QUALITY
       </p>
     </div>
     <?php $mv = get_field( 'mv-quality-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">品質へのこだわり</h3>
+      <h2 class="c-title--sectionLine u-mb40">品質へのこだわり</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">高品質な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
@@ -97,12 +97,12 @@ get_header();
     <div class="l-content--inner p-quality__feature__overview">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
+          <img loading="lazy" width="106" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
         </div>
         <div>
-          <p class="p-quality__largeText">
+          <h3 class="p-quality__largeText">
             <span class="marker">ZEH(ゼッチ)</span>
-          </p>
+          </h3>
         </div>
         <p class="p-quality__feature__overviewStrong">
           ネット・ゼロ・エネルギー・ハウス
@@ -116,9 +116,9 @@ get_header();
       </div>
     </div>
     <div class="p-quality__zeh__standard u-mb50 l-content--inner">
-      <div class="p-quality__zeh__standardHeading u-mb30">
-        <p class="p-quality__largeText">豊後夢工房は<span class="p-quality__zeh__standardHeadingEm"> <br class="u-none__pc--sp">ZEH住宅<br class="u-none__pc--sp"></span>が標準です。</p>
-      </div>
+      <h4 class="p-quality__zeh__standardHeading u-mb30">
+        豊後夢工房は<span class="p-quality__zeh__standardHeadingEm"> <br class="u-none__pc--sp">ZEH住宅<br class="u-none__pc--sp"></span>が標準です。
+      </h4>
       <div class="p-quality__zeh__standardBody">
         <div class="p-quality__zeh__faq">
           <p class="p-quality__zeh__faqQuestion">
@@ -138,7 +138,7 @@ get_header();
           <ul class="p-quality__zeh__pointsList">
             <li class="p-quality__zeh__pointsItem">
               <div class="p-quality__zeh__pointsMedia">
-                <img loading="lazy" class="p-quality__zeh__pointsImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/zeh_2.webp' ); ?>" alt="">
+                <img loading="lazy" class="p-quality__zeh__pointsImg" width="45" height="41" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/zeh_2.webp' ); ?>" alt="">
               </div>
               <div class="p-quality__zeh__pointsItemBody">
                 <p class="p-quality__zeh__pointsItemTitle">省エネ</p>
@@ -148,7 +148,7 @@ get_header();
             </li>
             <li class="p-quality__zeh__pointsItem">
               <div class="p-quality__zeh__pointsMedia">
-                <img loading="lazy" class="p-quality__zeh__pointsImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/zeh_3.webp' ); ?>" alt="">
+                <img loading="lazy" class="p-quality__zeh__pointsImg" width="46" height="41" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/zeh_3.webp' ); ?>" alt="">
               </div>
               <div class="p-quality__zeh__pointsItemBody">
                 <p class="p-quality__zeh__pointsItemTitle">創エネ</p>
@@ -157,7 +157,7 @@ get_header();
             </li>
             <li class="p-quality__zeh__pointsItem">
               <div class="p-quality__zeh__pointsMedia">
-                <img loading="lazy" class="p-quality__zeh__pointsImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/zeh_1.webp' ); ?>" alt="">
+                <img loading="lazy" class="p-quality__zeh__pointsImg" width="42" height="41" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/zeh_1.webp' ); ?>" alt="">
               </div>
               <div class="p-quality__zeh__pointsItemBody">
                 <p class="p-quality__zeh__pointsItemTitle">高断熱</p>
@@ -169,38 +169,37 @@ get_header();
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="p-quality__award u-mb100">
-    <div class="p-quality__award__winner">
-      <p class="p-quality__award__winnerHeading">
-        ハウス・オブ・ザ・イヤー・イン・エナジー2020にて優秀賞を受賞
-      </p>
-      <div class="p-quality__award__winnerBody l-content--innerNarrow">
-        <div class="p-quality__award__winnerMedia">
-          <img loading="lazy" class="p-quality__award__winnerImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/winner2020.webp' ); ?>" alt="ハウス・オブ・ザ・イヤー・イン・エナジー2020 優秀賞のイメージ">
+    <div class="p-quality__award u-mb100">
+      <div class="p-quality__award__winner">
+        <h4 class="p-quality__award__winnerHeading">
+          ハウス・オブ・ザ・イヤー・イン・エナジー2020にて優秀賞を受賞
+        </h4>
+        <div class="p-quality__award__winnerBody l-content--innerNarrow">
+          <div class="p-quality__award__winnerMedia">
+            <img loading="lazy" class="p-quality__award__winnerImg" width="483" height="212" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/winner2020.webp' ); ?>" alt="ハウス・オブ・ザ・イヤー・イン・エナジー2020 優秀賞">
+          </div>
+          <p class="p-quality__award__winnerText">
+            一般財団法人日本地域開発センターが主催する優れた省エネルギー住宅を表彰する制度「ハウス･オブ･ザ･イヤー･イン･エナジー2020」において、豊後夢工房の「Rireve」が「優秀賞」を受賞。豊後夢工房ではZEH住宅が標準仕様です。
+          </p>
         </div>
-        <p class="p-quality__award__winnerText">
-          一般財団法人日本地域開発センターが主催する優れた省エネルギー住宅を表彰する制度「ハウス･オブ･ザ･イヤー･イン･エナジー2020」において、豊後夢工房の「Rireve」が「優秀賞」を受賞。豊後夢工房ではZEH住宅が標準仕様です。
-        </p>
       </div>
-    </div>
-    <div class="p-quality__award__ranking">
-      <p class="p-quality__sectionHeading">
-        地域型住宅グリーン化事業 <br class="u-none__pc--sp">ZEH供給ランキング<span class="u-textOrange">大分県第2位</span>
-      </p>
-      <div class="p-quality__award__rankingBody p-quality__inner--wide">
-        <p class="p-quality__award__rankingText">
-          ZEHに特化した業界唯一の特別編集専門誌『ZEH MASTER 2024』
-          ((株)アスクラスト『月刊スマートハウス』)の「令和5年度 地域型住宅
-          グリーン化事業 全国ZEH供給ランキング」にて豊後夢工房が<span class="u-textOrange">大分県第</span>
-          <span class="u-textOrange">2位</span>にランクイン。(※出典：令和5年度地域型住宅グリーン化事業 採
-          択結果 適用申請書より集計) <br>
-          今後も優れた省エネルギー性能と、環境負荷の低減につながる長寿命住宅への取り組みをすすめ、より多くのお客様に快適で地球にも家計にも優しいZEH住宅を推進してまいります。<br><br>
-          <span class="u-font__bold">各モデルハウスにて豊後夢工房の住まいをご体感いただくことが出来ます。お気軽にお立ち寄りいただき、未来基準のエコ住宅をお確かめください。</span>
-        </p>
-        <div class="p-quality__award__rankingMedia">
-          <img loading="lazy" class="p-quality__award__rankingImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/smarthouse.webp' ); ?>" alt="ZEH供給ランキング大分県第2位のイメージ">
+      <div class="p-quality__award__ranking">
+        <h4 class="p-quality__sectionHeading">
+          地域型住宅グリーン化事業 <br class="u-none__pc--sp">ZEH供給ランキング<span class="u-textOrange">大分県第2位</span>
+        </h4>
+        <div class="p-quality__award__rankingBody p-quality__inner--wide">
+          <p class="p-quality__award__rankingText">
+            ZEHに特化した業界唯一の特別編集専門誌『ZEH MASTER 2024』
+            ((株)アスクラスト『月刊スマートハウス』)の「令和5年度 地域型住宅
+            グリーン化事業 全国ZEH供給ランキング」にて豊後夢工房が<span class="u-textOrange">大分県第</span>
+            <span class="u-textOrange">2位</span>にランクイン。(※出典：令和5年度地域型住宅グリーン化事業 採
+            択結果 適用申請書より集計) <br>
+            今後も優れた省エネルギー性能と、環境負荷の低減につながる長寿命住宅への取り組みをすすめ、より多くのお客様に快適で地球にも家計にも優しいZEH住宅を推進してまいります。<br><br>
+            <span class="u-font__bold">各モデルハウスにて豊後夢工房の住まいをご体感いただくことが出来ます。お気軽にお立ち寄りいただき、未来基準のエコ住宅をお確かめください。</span>
+          </p>
+          <div class="p-quality__award__rankingMedia">
+            <img loading="lazy" class="p-quality__award__rankingImg" width="269" height="383" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/smarthouse.webp' ); ?>" alt="ZEH供給ランキング大分県第2位">
+          </div>
         </div>
       </div>
     </div>
@@ -210,10 +209,10 @@ get_header();
     <div class="p-quality__feature__overview u-mb80 l-content--inner">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
+          <img loading="lazy" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
         </div>
         <div>
-          <p class="p-quality__largeText"><span class="marker">高耐震</span></p>
+          <h3 class="p-quality__largeText"><span class="marker">高耐震</span></h3>
         </div>
         <p class="p-quality__feature__overviewStrong">
           ZEH：普及実績および目標
@@ -223,12 +222,12 @@ get_header();
         </div>
       </div>
       <div class="p-quality__feature__overviewMedia">
-        <img loading="lazy" src="<?php echo esc_url( content_url( 'uploads/2025/06/画像3.jpg' ) ); ?>" class="u-imgShadow" alt="ZEHビルダー登録制度の星5つ評価のイメージ（高耐震）">
+        <img loading="lazy" src="<?php echo esc_url( content_url( 'uploads/2025/06/画像3.jpg' ) ); ?>" class="u-imgShadow" alt="ZEHビルダー登録制度の星5つ評価（高耐震）">
       </div>
     </div>
     <div class="p-quality__seismic__grade mt-6 u-mb100 l-content--inner">
       <div class="p-quality__seismic__gradeMedia">
-        <img loading="lazy" class="p-quality__seismic__gradeImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_8.webp' ); ?>" alt="耐震等級3の耐震性能のイメージ図">
+        <img loading="lazy" class="p-quality__seismic__gradeImg u-imgShadow" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_8.webp' ); ?>" alt="耐震等級3の耐震性能">
       </div>
       <div class="p-quality__seismic__gradePanel">
         <div class="p-quality__seismic__gradeRow">
@@ -251,12 +250,12 @@ get_header();
         </p>
       </div>
     </div>
-    <p class="p-quality__sectionHeading mt-6">
+    <h4 class="p-quality__sectionHeading mt-6">
       <span class="u-textOrange">木造軸組工法+ドリフトピン工法</span>が、<br class="u-none__pc--sp">建物を面で支える強固な構造に
-    </p>
+    </h4>
     <div class="p-quality__seismic__woodframe p-quality__inner--wide">
       <div class="p-quality__seismic__woodframeMedia">
-        <img loading="lazy" class="p-quality__seismic__woodframeImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_9.png' ) ); ?>" alt="木造軸組工法とドリフトピン工法のイメージ">
+        <img loading="lazy" class="p-quality__seismic__woodframeImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_9.png' ) ); ?>" alt="木造軸組工法とドリフトピン工法">
       </div>
       <p class="p-quality__seismic__woodframeText">
         一般的な木造の家は、柱と梁（はり）で支えられています。この方法では、木材を組み合わせるために大きな穴を開けたり、細く削ったりするので、木材の強度が弱くなることがあります。<br><br>
@@ -264,28 +263,28 @@ get_header();
         さらに、金物を使うことで、柱と梁だけでなく、家全体を多面体で支える構造になります。これにより、地震に対してもより強い家を作ることができます。
       </p>
     </div>
-    <p class="p-quality__sectionHeading">
+    <h4 class="p-quality__sectionHeading">
       <span class="u-textOrange">制震装置</span>で大地震のエネルギーを大幅に吸収
-    </p>
+    </h4>
     <div class="p-quality__seismic__mersystem p-quality__inner--wide">
       <div class="p-quality__seismic__mersystemIntro">
         <div class="p-quality__seismic__mersystemMedia u-none__pc--tab">
-          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEMのイメージ">
+          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEM">
         </div>
         <p class="p-quality__seismic__mersystemText">
           豊後夢工房で採用している「制震装置 MER SYSTEM」は、地震の揺れや加速度を大幅に抑えるシステムです。地震が起きた直後から素早くエネルギーを吸収し、建物に与える揺れを最大48％減少させます。これにより、あらゆる地震の揺れに効果を発揮し、建物への被害を大幅に軽減します。最近の大地震でも、MER SYSTEMを採用した住宅はほとんど被害がなく、多くのお客様から感謝の声をいただいています。
         </p>
         <div class="p-quality__seismic__mersystemMedia u-none__mobile--tab">
-          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEMのイメージ">
+          <img loading="lazy" class="p-quality__seismic__mersystemImg u-imgShadow" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_10.png' ) ); ?>" alt="制震装置 MER SYSTEM">
         </div>
       </div>
       <p class="p-quality__seismic__mersystemLink u-mb40">
         くわしくは<a href="https://www.seishin-system.com/products/" target="_blank" rel="noopener noreferrer">こちら</a>
       </p>
     </div>
-    <p class="p-quality__sectionHeading mt-6">
+    <h4 class="p-quality__sectionHeading mt-6">
       <span class="u-textOrange">安心</span>と<span class="u-textOrange">安全</span>を確立する<span class="u-textOrange">3</span>つの効果
-    </p>
+    </h4>
     <div class="p-quality__seismic__mersystemEffects l-content--innerNarrow">
       <ul class="p-quality__seismic__mersystemEffectsList">
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -295,14 +294,14 @@ get_header();
                 安全<br>
                 その1
               </p>
-              <p class="p-quality__seismic__mersystemEffectLead">
+              <h5 class="p-quality__seismic__mersystemEffectLead">
                 地震エネルギーを<span class="u-textOrange">最大48％</span>吸収
-              </p>
+              </h5>
             </div>
             <p class="p-quality__seismic__mersystemEffectText">建物に伝わる地震のエネルギー(加速度)を約40%から48%吸収することができます。吸収することにより建物の変位と揺れを早く抑え、建物への負担を軽減します。</p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_12.webp' ); ?>" alt="地震エネルギーを最大48％吸収のイメージ図">
+            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" width="767" height="360" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_12.webp' ); ?>" alt="地震エネルギーを最大48％吸収">
           </div>
         </li>
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -312,14 +311,14 @@ get_header();
                 安全<br>
                 その2
               </p>
-              <p class="p-quality__seismic__mersystemEffectLead">
+              <h5 class="p-quality__seismic__mersystemEffectLead">
                 揺れ始めから瞬時に<span class="u-textOrange">減衰</span>
-              </p>
+              </h5>
             </div>
             <p class="p-quality__seismic__mersystemEffectText">シングルチューブ構造を採用したオイルダンパーのMER　SYSTEMは、揺れ始めから効果を発揮します。小さな揺れでもダメージが蓄積されると、釘やビスの緩みが生じ耐力壁を損傷してしまいます。当初の建物の耐震性を守ることが制震の役割です。またあえて抵抗力を制御することで耐震躯体を傷めない特性になっています。</p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_13.webp' ); ?>" alt="揺れ始めから瞬時に減衰のイメージ図">
+            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" width="767" height="360" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_13.webp' ); ?>" alt="揺れ始めから瞬時に減衰">
           </div>
         </li>
         <li class="p-quality__seismic__mersystemEffectsItem">
@@ -329,30 +328,29 @@ get_header();
                 安全<br>
                 その3
               </p>
-              <p class="p-quality__seismic__mersystemEffectLead">
+              <h5 class="p-quality__seismic__mersystemEffectLead">
                 地震のあらゆる<span class="u-textOrange">周期</span>に対応
-              </p>
+              </h5>
             </div>
             <p class="p-quality__seismic__mersystemEffectText">地震は震度と周期で構成されています。その周期は単周期から長周期まであります。また、震源地からの距離や地盤等の条件により、周期が変化します。MER　SYSTEMはあらゆる周期に対応し、建物の倒壊の原因である共振現象やスリップ挙動を防ぎます。<br>
               ※共振現象とは地震の周期と建物の固有周期が一致することで、揺れが増幅されることです。
             </p>
           </div>
           <div class="p-quality__seismic__mersystemEffectMedia">
-            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_14.webp' ); ?>" alt="地震のあらゆる周期に対応のイメージ図">
+            <img loading="lazy" class="p-quality__seismic__mersystemEffectImg" width="767" height="330" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_14.webp' ); ?>" alt="地震のあらゆる周期に対応">
           </div>
         </li>
       </ul>
     </div>
   </section>
-
   <section class="p-quality__thermal" id="quality3">
     <div class="l-content--inner p-quality__feature__overview u-mb80">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
+          <img loading="lazy" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
         </div>
         <div>
-          <p class="p-quality__largeText"><span class="marker">高断熱</span></p>
+          <h3 class="p-quality__largeText"><span class="marker">高断熱</span></h3>
         </div>
         <p class="p-quality__feature__overviewStrong">
           安心のW地震対策
@@ -365,15 +363,15 @@ get_header();
         <img loading="lazy" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_7-1.png' ) ); ?>" class="u-imgShadow" alt="断熱材を施工した高断熱住宅のイメージ">
       </div>
     </div>
-    <p class="p-quality__sectionHeading mt-6">
+    <h4 class="p-quality__sectionHeading mt-6">
       <span class="u-textOrange">豊後夢工房</span>の<span class="u-textOrange">高断熱仕様</span>
-    </p>
+    </h4>
     <div class="p-quality__thermal__chart l-content--innerNarrow p-quality__thermal__chart--spaced">
-      <img loading="lazy" class="p-quality__thermal__chartImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_20.webp' ); ?>" alt="豊後夢工房の高断熱仕様のイメージ図">
+      <img loading="lazy" class="p-quality__thermal__chartImg" width="1600" height="709" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_20.webp' ); ?>" alt="豊後夢工房の高断熱仕様">
     </div>
     <div class="p-quality__thermal__grade l-content--innerNarrow mt-6 u-mb80">
       <div class="p-quality__thermal__gradeMedia">
-        <img loading="lazy" class="p-quality__thermal__gradeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_19.webp' ); ?>" alt="断熱性能 UA値0.36以下のイメージ">
+        <img loading="lazy" class="p-quality__thermal__gradeImg" width="940" height="702" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_19.webp' ); ?>" alt="断熱性能 UA値0.36以下">
       </div>
       <div class="p-quality__thermal__gradePanel">
         <div class="p-quality__thermal__gradeRow">
@@ -420,12 +418,12 @@ get_header();
     <div class="l-content--inner p-quality__feature__overview u-mb80">
       <div class="p-quality__feature__overviewTxtWrap">
         <div class="p-quality__feature__overviewNum">
-          <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
+          <img loading="lazy" width="119" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
         </div>
         <div>
-          <p class="p-quality__largeText"><span class="marker">
+          <h3 class="p-quality__largeText"><span class="marker">
               高気密</span>
-          </p>
+          </h3>
         </div>
         <p class="p-quality__feature__overviewStrong">
           ZEH基準を上回る断熱性能を標準仕様
@@ -438,12 +436,12 @@ get_header();
         <img loading="lazy" src="<?php echo esc_url( content_url( 'uploads/2024/07/performance_18.png' ) ); ?>" class="u-imgShadow" alt="気密施工による高気密住宅のイメージ">
       </div>
     </div>
-    <p class="p-quality__sectionHeading mt-8">
+    <h4 class="p-quality__sectionHeading mt-8">
       <span class="u-textOrange">厳しい品質基準</span> をクリアした高気密住宅
-    </p>
+    </h4>
     <div class="p-quality__airtight__panel p-quality__inner--wide">
       <div class="p-quality__airtight__panelMedia">
-        <img loading="lazy" class="p-quality__airtight__panelImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_29.webp' ); ?>" alt="高気密住宅の気密測定のイメージ">
+        <img loading="lazy" class="p-quality__airtight__panelImg u-imgShadow" width="1536" height="1097" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_29.webp' ); ?>" alt="高気密住宅の気密測定">
       </div>
       <div class="p-quality__airtight__panelBody">
         <p class="p-quality__airtight__panelLead">C値の測定は建具、断熱施工後、気密工事終了後のタイミングで専門の「気密測定試験機」を使用し、行います。</p>
@@ -453,13 +451,13 @@ get_header();
     </div>
     <div class="p-quality__airtight__gallery  p-quality__inner--wide p-quality__airtight__gallery--bordered">
       <div class="p-quality__airtight__galleryItem">
-        <img loading="lazy" class="p-quality__airtight__galleryImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_32.webp' ); ?>" alt="気密施工のイメージ1">
+        <img loading="lazy" class="p-quality__airtight__galleryImg u-imgShadow" width="2048" height="1463" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_32.webp' ); ?>" alt="気密施工のイメージ1">
       </div>
       <div class="p-quality__airtight__galleryItem">
-        <img loading="lazy" class="p-quality__airtight__galleryImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_30.webp' ); ?>" alt="気密施工のイメージ2">
+        <img loading="lazy" class="p-quality__airtight__galleryImg u-imgShadow" width="1971" height="1408" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_30.webp' ); ?>" alt="気密施工のイメージ2">
       </div>
       <div class="p-quality__airtight__galleryItem">
-        <img loading="lazy" class="p-quality__airtight__galleryImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_31.webp' ); ?>" alt="気密施工のイメージ3">
+        <img loading="lazy" class="p-quality__airtight__galleryImg u-imgShadow" width="2048" height="1463" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_31.webp' ); ?>" alt="気密施工のイメージ3">
       </div>
     </div>
   </section>
@@ -469,10 +467,10 @@ get_header();
       <div class="p-quality__feature__overview u-mb80">
         <div class="p-quality__feature__overviewTxtWrap">
           <div class="p-quality__feature__overviewNum">
-            <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number5.webp' ); ?>" alt="">
+            <img loading="lazy" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number5.webp' ); ?>" alt="">
           </div>
           <div>
-            <p class="p-quality__largeText"><span class="marker">24時間換気システム</span></p>
+            <h3 class="p-quality__largeText"><span class="marker">24時間換気システム</span></h3>
           </div>
           <p class="p-quality__feature__overviewStrong">
             徹底的な気密施工
@@ -509,13 +507,13 @@ get_header();
         </ul>
       </div>
     </div>
-    <p class="p-quality__sectionHeading mt-8">
+    <h4 class="p-quality__sectionHeading mt-8">
       <span class="u-textOrange">世界最高クラス</span>の換気システム
-    </p>
+    </h4>
     <div class="l-content--inner">
       <div class="p-quality__ventilation__airflow p-quality__ventilation__airflow--spacedTop">
         <div class="p-quality__ventilation__airflowMedia">
-          <img loading="lazy" class="p-quality__ventilation__airflowImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_24.webp' ); ?>" alt="世界最高クラス約93％の熱交換率のイメージ図">
+          <img loading="lazy" class="p-quality__ventilation__airflowImg u-imgShadow" width="768" height="327" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_24.webp' ); ?>" alt="世界最高クラス約93％の熱交換率のイメージ図">
         </div>
         <div class="p-quality__ventilation__airflowBody">
           <p class="p-quality__ventilation__airflowTitle">熱回収率93％24時間換気システム</p>
@@ -524,36 +522,32 @@ get_header();
       </div>
       <div class="p-quality__ventilation__airflow p-quality__ventilation__airflow--stacked">
         <div class="p-quality__ventilation__airflowMedia u-none__pc--tab">
-          <img loading="lazy" class="p-quality__ventilation__airflowImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="PM2.5約98％・花粉約99.8％除去の特殊フィルターのイメージ図">
+          <img loading="lazy" class="p-quality__ventilation__airflowImg u-imgShadow" width="970" height="411" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="PM2.5約98％・花粉約99.8％除去の特殊フィルターのイメージ図">
         </div>
         <div class="p-quality__ventilation__airflowBody">
           <p class="p-quality__ventilation__airflowTitle">ウイルス対策特殊フィルター</p>
           <p class="p-quality__ventilation__airflowText">家に空気を取り込む給気口に特殊フィルターで覆い、外からの汚染物質をしっかりガードします。花粉を99.8％PM2.5物質を98％カットしてきれいな空気だけを室内へ取り込みます。</p>
         </div>
         <div class="p-quality__ventilation__airflowMedia u-none__mobile--tab">
-          <img loading="lazy" class="p-quality__ventilation__airflowImg u-imgShadow" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="PM2.5約98％・花粉約99.8％除去の特殊フィルターのイメージ図">
+          <img loading="lazy" class="p-quality__ventilation__airflowImg u-imgShadow" width="970" height="411" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_25.webp' ); ?>" alt="PM2.5約98％・花粉約99.8％除去の特殊フィルターのイメージ図">
         </div>
       </div>
     </div>
-    <p class="p-quality__sectionHeading mt-8">
+    <h4 class="p-quality__sectionHeading mt-8">
       <span class="u-textOrange">熱交換素子</span>と<span class="u-textOrange">快適温度</span>のイメージ
-    </p>
+    </h4>
     <div class="p-quality__ventilation__diagram  p-quality__ventilation__diagram--spaced">
-      <img loading="lazy" class="p-quality__ventilation__diagramImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_28.webp' ); ?>" alt="熱交換素子と快適温度のイメージ">
+      <img loading="lazy" class="p-quality__ventilation__diagramImg" width="499" height="279" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_28.webp' ); ?>" alt="熱交換素子と快適温度のイメージ">
     </div>
     <div class="p-quality__ventilation__compare l-content--innerNarrow p-quality__ventilation__compare--spaced">
       <div class="p-quality__ventilation__compareItem">
-        <img loading="lazy" class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--cold" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_26.webp' ); ?>" alt="冬の室内の快適な温度イメージ">
+        <img loading="lazy" class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--cold" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_26.webp' ); ?>" alt="冬の室内の快適な温度イメージ">
       </div>
       <div class="p-quality__ventilation__compareItem">
-        <img loading="lazy" class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--hot" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_27.webp' ); ?>" alt="夏の室内の快適な温度イメージ">
+        <img loading="lazy" class="p-quality__ventilation__compareImg p-quality__ventilation__compareImg--hot" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/performance/performance_27.webp' ); ?>" alt="夏の室内の快適な温度イメージ">
       </div>
     </div>
   </section>
-
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
-
 </main>
 <?php get_footer(); ?>

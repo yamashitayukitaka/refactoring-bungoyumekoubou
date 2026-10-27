@@ -13,23 +13,23 @@ get_header();
 <main class="p-design">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         デザインへのこだわり
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         HIGH QUALITY
       </p>
     </div>
     <?php $mv = get_field( 'mv-design-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">デザインへのこだわり</h3>
+      <h2 class="c-title--sectionLine u-mb40">デザインへのこだわり</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">快適な住まい</span>を<br class="u-none__pc--sp">ご提供するための<br>
@@ -49,7 +49,7 @@ get_header();
         <a href="#design1" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img loading="lazy" class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__nav__numberImg" width="106" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -64,7 +64,7 @@ get_header();
         <a href="#design2" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img loading="lazy" class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__nav__numberImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number2.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -79,7 +79,7 @@ get_header();
         <a href="#design3" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img loading="lazy" class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__nav__numberImg" width="118" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number3.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -94,7 +94,7 @@ get_header();
         <a href="#design4" class="p-design__nav__link">
           <div class="p-design__nav__card">
             <div class="p-design__nav__number">
-              <img loading="lazy" class="p-design__nav__numberImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__nav__numberImg" width="119" height="81" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/number/number4.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__nav__label">
@@ -116,12 +116,12 @@ get_header();
     <div class="p-design__point p-design__point--lead" id="design1">
       <div class="p-design__point__hero">
         <div class="p-design__point__media p-design__point__media--right">
-          <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_1.png' ); ?>" alt="<?php echo esc_attr( '家族の暮らしに合わせた動線をつくるデザイン' ); ?>">
+          <img loading="lazy" class="p-design__point__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_1.png' ); ?>" alt="<?php echo esc_attr( '家族の暮らしに合わせた動線をつくるデザイン' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--left">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 01
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine p-design__point__headline">
               <span class="u-textOrange">家族の暮らし</span>に合わせた<br>
@@ -136,11 +136,11 @@ get_header();
       <div class="p-design__detail">
         <div class="p-design__detail__inner">
           <div class="p-design__detail__media p-design__detail__media--left">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_2.png' ); ?>" alt="<?php echo esc_attr( '家事らく動線' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_2.png' ); ?>" alt="<?php echo esc_attr( '家事らく動線' ); ?>">
           </div>
           <div class="p-design__detail__body p-design__detail__body--afterMedia">
             <div class="p-design__detail__pointLabel">
-              <img loading="lazy" class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__detail__pointLabelImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
               <span class="u-textOrange">家事らく</span>動線
@@ -154,11 +154,11 @@ get_header();
       <div class="p-design__detail">
         <div class="p-design__detail__inner">
           <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_3.png' ); ?>" alt="<?php echo esc_attr( '子育て動線' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_3.png' ); ?>" alt="<?php echo esc_attr( '子育て動線' ); ?>">
           </div>
           <div class="p-design__detail__body p-design__detail__body--beforeMedia">
             <div class="p-design__detail__pointLabel">
-              <img loading="lazy" class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__detail__pointLabelImg" width="126" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
               <span class="u-textOrange">子育て</span>動線
@@ -168,7 +168,7 @@ get_header();
             </div>
           </div>
           <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_3.png' ); ?>" alt="<?php echo esc_attr( '子育て動線' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_3.png' ); ?>" alt="<?php echo esc_attr( '子育て動線' ); ?>">
           </div>
         </div>
       </div>
@@ -180,12 +180,12 @@ get_header();
     <div class="p-design__point" id="design2">
       <div class="p-design__point__hero">
         <div class="p-design__point__media">
-          <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_4.png' ); ?>" alt="<?php echo esc_attr( '住む人らしさをデザインする' ); ?>">
+          <img loading="lazy" class="p-design__point__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_4.png' ); ?>" alt="<?php echo esc_attr( '住む人らしさをデザインする' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--right">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 02
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine u-mb10 p-design__point__headline">
               <span class="u-textOrange">住む人らしさ</span>を<br>
@@ -201,11 +201,11 @@ get_header();
       <div class="p-design__detail p-design__detail--spaced">
         <div class="p-design__detail__inner">
           <div class="p-design__detail__media p-design__detail__media--left">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_5.png' ); ?>" alt="<?php echo esc_attr( 'こんなお家がいいなを楽しく共有' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_5.png' ); ?>" alt="<?php echo esc_attr( 'こんなお家がいいなを楽しく共有' ); ?>">
           </div>
           <div class="p-design__detail__body p-design__detail__body--afterMedia">
             <div class="p-design__detail__pointLabel">
-              <img loading="lazy" class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__detail__pointLabelImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
               <span class="u-textOrange">こんなお家がいいな</span>を<br>
@@ -225,12 +225,12 @@ get_header();
     <div class="p-design__point" id="design3">
       <div class="p-design__point__hero">
         <div class="p-design__point__media p-design__point__media--right">
-          <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_6.png' ); ?>" alt="<?php echo esc_attr( '太陽と自然の恵みを生かすデザイン' ); ?>">
+          <img loading="lazy" class="p-design__point__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_6.png' ); ?>" alt="<?php echo esc_attr( '太陽と自然の恵みを生かすデザイン' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--left">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 03
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine p-design__point__headline">
               <span class="u-textOrange">太陽</span>と<span class="u-textOrange">自然</span>の恵みを生かし、<br class="u-none__mobile--sp">
@@ -245,11 +245,11 @@ get_header();
       <div class="p-design__detail">
         <div class="p-design__detail__inner">
           <div class="p-design__detail__media p-design__detail__media--left">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_7.png' ); ?>" alt="<?php echo esc_attr( '心地よい風と自然光が家全体に行き渡る空間デザイン' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_7.png' ); ?>" alt="<?php echo esc_attr( '心地よい風と自然光が家全体に行き渡る空間デザイン' ); ?>">
           </div>
           <div class="p-design__detail__body p-design__detail__body--afterMedia">
             <div class="p-design__detail__pointLabel">
-              <img loading="lazy" class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__detail__pointLabelImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="p-design__detail__subtit">
@@ -266,11 +266,11 @@ get_header();
       <div class="p-design__detail">
         <div class="p-design__detail__inner">
           <div class="p-design__detail__media p-design__detail__media--right u-none__pc--tab">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_8.png' ); ?>" alt="<?php echo esc_attr( 'エネルギー効率を最大化するデザイン' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_8.png' ); ?>" alt="<?php echo esc_attr( 'エネルギー効率を最大化するデザイン' ); ?>">
           </div>
           <div class="p-design__detail__body p-design__detail__body--beforeMedia">
             <div class="p-design__detail__pointLabel">
-              <img loading="lazy" class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__detail__pointLabelImg" width="126" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
             </div>
             <p class="p-design__detail__subtit">
               <span class="u-textOrange">エネルギー効率</span>を<br>
@@ -284,7 +284,7 @@ get_header();
             </div>
           </div>
           <div class="p-design__detail__media p-design__detail__media--right u-none__mobile--tab">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_8.png' ); ?>" alt="<?php echo esc_attr( 'エネルギー効率を最大化するデザイン' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_8.png' ); ?>" alt="<?php echo esc_attr( 'エネルギー効率を最大化するデザイン' ); ?>">
           </div>
         </div>
       </div>
@@ -296,12 +296,12 @@ get_header();
     <div class="p-design__point p-design__point--last" id="design4">
       <div class="p-design__point__hero">
         <div class="p-design__point__media">
-          <img loading="lazy" class="p-design__point__mediaImg" src="<?php echo esc_url( $design_img . 'design_9.png' ); ?>" alt="<?php echo esc_attr( 'メンテナンスしやすいデザイン' ); ?>">
+          <img loading="lazy" class="p-design__point__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_9.png' ); ?>" alt="<?php echo esc_attr( 'メンテナンスしやすいデザイン' ); ?>">
         </div>
         <div class="p-design__point__panel p-design__point__panel--right">
-          <h3 class="c-title--sectionLine p-design__point__label">
+          <h2 class="c-title--sectionLine p-design__point__label">
             DESIGN 04
-          </h3>
+          </h2>
           <div>
             <p class="c-title--orangeLine u-mb10 p-design__point__headline">
               <span class="u-textOrange">メンテナンス</span><br>
@@ -317,11 +317,11 @@ get_header();
       <div class="p-design__detail">
         <div class="p-design__detail__inner">
           <div class="p-design__detail__media p-design__detail__media--left">
-            <img loading="lazy" class="p-design__detail__mediaImg" src="<?php echo esc_url( $design_img . 'design_10.png' ); ?>" alt="<?php echo esc_attr( '故障時にもすぐに修理しやすい設計' ); ?>">
+            <img loading="lazy" class="p-design__detail__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $design_img . 'design_10.png' ); ?>" alt="<?php echo esc_attr( '故障時にもすぐに修理しやすい設計' ); ?>">
           </div>
           <div class="p-design__detail__body p-design__detail__body--afterMedia">
             <div class="p-design__detail__pointLabel">
-              <img loading="lazy" class="p-design__detail__pointLabelImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-design__detail__pointLabelImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <div>
               <p class="u-mb10 p-design__detail__subtit">
@@ -340,9 +340,6 @@ get_header();
     </div>
 
   </section>
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
-
 </main>
 <?php get_footer(); ?>

@@ -14,24 +14,24 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         会社概要
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         ABOUT US
       </p>
     </div>
     <?php $mv = get_field( 'mv-page' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         MESSAGE
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">
@@ -41,7 +41,7 @@ get_header();
     </div>
     <div class="p-about__message">
       <figure class="p-about__message__imgWrap">
-        <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-about__message__img" alt="代表取締役社長 永井 賢次" loading="lazy">
+        <img width="510" height="680" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-about__message__img" alt="代表取締役社長 永井 賢次" loading="lazy">
       </figure>
       <p class="p-about__message__txt">
         豊後夢工房が考える本当によい家とは、そこに暮らす人の心と体を癒やし、家族との絆を育み、子育てをサポートする住まいだと考えます。 高品質で高性能、ランニングコストが低い家も今では当たり前。私たちはその全てを実現する家づくりを目指しています。 例えば、最新の太陽光発電システムと高気密・高断熱の設計によって、月々の住宅ローン返済がアパートの家賃よりも安くなる家を提供。 大手メーカーにも負けない開発力と技術力で、心と家計にゆとりをもたらす住まいを実現します。 豊後夢工房なら、自由設計のメリットを最大限に活かし、あなたの予算やライフスタイル、将来のプランにぴったりな理想の家を提供できます。心地よさと家族の絆を大切にする住まいを、わたしたちと一緒に実現しましょう。
@@ -63,9 +63,9 @@ get_header();
 
   <section class="l-content--innerNarrow u-mb100">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         OUTLINE
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50"><span class="marker">会社概要</span></p>
       </div>
@@ -151,9 +151,9 @@ get_header();
 
   <section class="l-content--middle u-mb200">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CORPORATE STANDARD
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">社内標準</span>
@@ -198,15 +198,8 @@ get_header();
       <?php endforeach; ?>
     </ul>
   </section>
-
-
-
   <?php get_template_part( 'template-parts/recruit-part' ); ?>
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
   <?php get_template_part( 'template-parts/common-footer' ); ?>
-
 </main>
-
 <?php get_footer(); ?>

@@ -140,6 +140,19 @@
   color: $orange;
 }
 
+.u-inherit {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.u-block {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .u-mb0 {
   margin-bottom: 0 !important;
 }

@@ -6,12 +6,15 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
 <section class = "l-content u-mb100 u-pt100">
   
   <div class = "u-center u-mb10">
-    <h3 class = "c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class = "c-title--sectionLine">
       EVENT
-    </h3>
+    </<?php echo esc_attr( $heading_tag ); ?>>
   </div>
 
   <div class = "u-center u-mb30">
@@ -20,32 +23,15 @@
     </p>
   </div>
 
-<?php
-  $event = array(
-  'post_type'      => 'xo_event',
-  'posts_per_page' => 3,
-  'order'          => 'DESC',
-  'orderby'        => 'date',
-  );?>
-<?php $event_loop = new WP_Query( $event );?>
-<?php if ( $event_loop->have_posts() ) : ?>
-  <ul class = "c-cardList u-mb50">
-    <?php while ( $event_loop->have_posts() ) :
-      $event_loop->the_post();?>
-      <?php get_template_part( 'template-parts/event-loop' ); ?>
-    <?php endwhile;
-endif;
-    wp_reset_postdata();?>
-  </ul>
   <div class = "u-center">
     <a href = "<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class = "c-button--outline">イベント一覧へ</a>
   </div>
 </section>
 <section class = "l-content u-mb100">
   <div class = "u-center u-mb10">
-    <h3 class = "c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class = "c-title--sectionLine">
       BUILT＆LAND
-    </h3>
+    </<?php echo esc_attr( $heading_tag ); ?>>
   </div>
   <div class = "u-center u-mb30">
     <p class = "c-title--orangeLine">

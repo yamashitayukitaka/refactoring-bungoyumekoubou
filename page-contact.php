@@ -10,23 +10,23 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         お問い合わせ
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         CONTACT
       </p>
     </div>
     <?php $mv = get_field( 'main-visual' ); ?>
     <?php if ( $mv ) : ?>
-    <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+    <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
   <section class="l-content">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CONTACT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">お問い合わせ</span>

@@ -6,6 +6,9 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
 <a href = "<?php echo esc_url( home_url( 'recruit' ) ); ?>">
 <section class = "p-about__recruit u-mb100">
   <div class = "p-about__recruit__content">
@@ -25,7 +28,18 @@
             
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
-              <img src = "<?php echo esc_url( $staff_img ); ?>" class = "p-about__staff__listImg" alt= "スタッフ画像" loading="lazy">
+              <?php
+            echo wp_get_attachment_image(
+                $staff_img,
+                'full',
+                false,
+                array(
+                  'class'   => 'p-about__staff__listImg',
+                  'alt'     => 'スタッフ画像',
+                  'loading' => 'lazy',
+                )
+            );
+              ?>
               <?php endif; ?>
             
           </li>
@@ -35,7 +49,7 @@
       </ul>
     
       <div class = "p-about__recruit__txtWrap">
-        <h3 class = "p-about__recruit__ttl">Recruit</h3>
+        <<?php echo esc_attr( $heading_tag ); ?> class = "p-about__recruit__ttl">Recruit</<?php echo esc_attr( $heading_tag ); ?>>
         <p class = "p-about__recruit__ttlSub">
           採用情報
         </p>
@@ -62,7 +76,18 @@
             
               <?php $staff_img = get_field( 'staff-img' ); ?>
               <?php if ( $staff_img ) : ?>
-              <img src = "<?php echo esc_url( $staff_img ); ?>" class = "p-about__staff__listImg" alt= "スタッフ画像" loading="lazy">
+              <?php
+            echo wp_get_attachment_image(
+                $staff_img,
+                'full',
+                false,
+                array(
+                  'class'   => 'p-about__staff__listImg',
+                  'alt'     => 'スタッフ画像',
+                  'loading' => 'lazy',
+                )
+            );
+              ?>
               <?php endif; ?>
             
           </li>

@@ -6,11 +6,16 @@
  */
 
 ?>
+
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
+
 <section class="p-bungoYumeStudio u-mb100">
   <div class="c-title__head">
-    <h3 class="c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionLine">
       BUNGO_YUME_STUDIO
-    </h3>
+    </<?php echo esc_attr( $heading_tag ); ?>>
     <div>
       <p class="c-title--orangeLine u-mb50"><span class="marker">
           豊後夢工房について</span>
@@ -25,7 +30,7 @@
         <span class="p-bungoYumeStudio__list__emphasis">私たち</span>の思い<br>
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_ladder.webp' ); ?>" alt="">
+        <img loading="lazy" width="108" height="117" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_ladder.webp' ); ?>" alt="">
       </div>
       <nav aria-label="PHILOSOPHY 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
@@ -50,7 +55,7 @@
         こだわり
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_sp.webp' ); ?>" alt="">
+        <img loading="lazy" width="148" height="141" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_sp.webp' ); ?>" alt="">
       </div>
       <nav aria-label="SERVICE 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
@@ -75,7 +80,7 @@
         <span class="p-bungoYumeStudio__list__emphasis">サポート</span>
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_pen.webp' ); ?>" alt="">
+        <img loading="lazy" width="145" height="124" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_pen.webp' ); ?>" alt="">
       </div>
       <nav aria-label="SUPPORT 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">
@@ -99,7 +104,7 @@
         メンテナンス
       </p>
       <div class="p-bungoYumeStudio__list__media">
-        <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_drill.webp' ); ?>" alt="">
+        <img loading="lazy" width="129" height="136" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/bungo_drill.webp' ); ?>" alt="">
       </div>
       <nav aria-label="maintenance 関連リンク">
         <ul class="p-bungoYumeStudio__list__nav">

@@ -6,11 +6,14 @@
  */
 
 ?>
+<?php
+$heading_tag = $args['heading_tag'] ?? 'h2';
+?>
 <section class="u-mb100">
   <div class="c-title__head">
-    <h3 class="c-title--sectionLine">
+    <<?php echo esc_attr( $heading_tag ); ?> class="c-title--sectionLine">
       MEMBER
-    </h3>
+    </<?php echo esc_attr( $heading_tag ); ?>>
     <div>
       <p class="c-title--orangeLine u-mb50">
         <span class="u-orange">快適ゆめ空間</span>をつくるスタッフたち
@@ -31,7 +34,18 @@
           <a href = "<?php the_permalink(); ?>">
             <?php $staff_img = get_field( 'staff-img' ); ?>
             <?php if ( $staff_img ) : ?>
-            <img src="<?php echo esc_url( $staff_img ); ?>" class="p-about__staff__listImg" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" loading="lazy">
+            <?php
+            echo wp_get_attachment_image(
+                $staff_img,
+                'full',
+                false,
+                array(
+                'class'   => 'p-about__staff__listImg',
+                'alt'     => get_the_title() . 'のイメージ',
+                'loading' => 'lazy',
+                )
+            );
+            ?>
             <?php endif; ?>
           </a>
         </li>

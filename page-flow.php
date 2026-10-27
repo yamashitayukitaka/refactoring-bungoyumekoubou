@@ -13,22 +13,22 @@ get_header();
 <main class="p-flow">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         ゆめづくりの流れ
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         FLOW
       </p>
     </div>
     <?php $mv = get_field( 'mv-flow-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">いえづくりのながれ</h3>
+      <h2 class="c-title--sectionLine u-mb40">いえづくりのながれ</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">出会い</span>から完成<span class="u-orange">お引き渡し</span>まで<br>
@@ -44,7 +44,7 @@ get_header();
     展示場や見学会での出会いからご契約、 上棟、完成お引き渡しまでの、 家づくりのプロセスをご紹介致します。
   </p>
 
-  <section class="p-flow__steps">
+  <div class="p-flow__steps">
     <?php
     $flow_steps = [
       [
@@ -140,10 +140,10 @@ get_header();
         <li class="p-flow__steps__item">
           <div class="p-flow__steps__row">
             <div class="p-flow__steps__body">
-              <div class="p-flow__steps__title">
+              <h3 class="p-flow__steps__title">
                 <span class="p-flow__steps__num"><?php echo esc_html( sprintf( '%02d.', $i + 1 ) ); ?></span>
                 <?php echo esc_html( $step['title'] ); ?>
-              </div>
+              </h3>
               <div class="p-flow__steps__text">
                 <?php echo wp_kses_post( $step['text'] ); ?>
               </div>
@@ -152,15 +152,13 @@ get_header();
               <?php endif; ?>
             </div>
             <div class="p-flow__steps__media">
-              <img loading="lazy" class="p-flow__steps__img" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
+              <img loading="lazy" class="p-flow__steps__img" width="1600" height="1000" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
             </div>
           </div>
         </li>
       <?php endforeach; ?>
     </ul>
-  </section>
-
+  </div>
   <?php get_template_part( 'template-parts/common' ); ?>
-
 </main>
 <?php get_footer(); ?>

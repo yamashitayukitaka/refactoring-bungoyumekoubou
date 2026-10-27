@@ -15,31 +15,60 @@ get_header();
   <div class="p-heig__mv">
     <div class="p-heig__mv__titleBox">
       <div class="p-heig__mv__logo">
-        <img class="p-heig__mv__logoImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig.webp' ); ?>" alt="HEIG（ヘイグ）ロゴ">
+        <img class="p-heig__mv__logoImg" width="266" height="125" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig.webp' ); ?>" alt="HEIG（ヘイグ）">
       </div>
       <div>
-        <h2 class="p-heig__mv__title">ヘイグ自由設計</h2>
+        <h1 class="p-heig__mv__title">ヘイグ自由設計</h1>
       </div>
     </div>
     <p class="p-heig__mv__lead">自由自在なプランで、暮らしを豊かに。</p>
-    <div class="p-heig__mv__slider js-mvSlider">
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img1.webp' ); ?>" alt="HEIGの住まいイメージ1">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img2.webp' ); ?>" alt="HEIGの住まいイメージ2">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img3.webp' ); ?>" alt="HEIGの住まいイメージ3">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img4.webp' ); ?>" alt="HEIGの住まいイメージ4">
-      </div>
-      <div class="p-heig__mv__slide">
-        <img class="p-heig__mv__slideImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/top_img5.webp' ); ?>" alt="HEIGの住まいイメージ5">
-      </div>
-
-    </div>
+    <?php
+    $heig_mv_slides = array(
+      array(
+        'file' => 'top_img1.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+      array(
+        'file' => 'top_img2.webp',
+        'w'    => 1323,
+        'h'    => 992,
+      ),
+      array(
+        'file' => 'top_img3.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+      array(
+        'file' => 'top_img4.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+      array(
+        'file' => 'top_img5.webp',
+        'w'    => 5000,
+        'h'    => 3333,
+      ),
+    );
+    ?>
+    <ul class="p-heig__mv__slider js-mvSlider">
+      <?php foreach ( $heig_mv_slides as $slide_index => $slide ) : ?>
+        <li class="p-heig__mv__slide">
+          <img
+            class="p-heig__mv__slideImg"
+            width="<?php echo (int) $slide['w']; ?>"
+            height="<?php echo (int) $slide['h']; ?>"
+            src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/' . $slide['file'] ); ?>"
+            alt="<?php echo esc_attr( 'HEIGの住まいイメージ' . ( $slide_index + 1 ) ); ?>"
+            <?php if ( 0 === $slide_index ) : ?>
+              fetchpriority="high"
+            <?php else : ?>
+              loading="lazy"
+            <?php endif; ?>
+          >
+        </li>
+      <?php endforeach; ?>
+    </ul>
     <div class="p-heig__mv__bg"></div>
   </div>
 
@@ -59,27 +88,23 @@ get_header();
         多彩な選択肢をご用意しています。
       </p>
     </div>
-    <div class="p-heig__intro__img"><img loading="lazy" class="p-heig__intro__photo" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_1.webp' ); ?>" alt="HEIGの外観のイメージ">
+    <div class="p-heig__intro__img"><img loading="lazy" class="p-heig__intro__photo" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_1.webp' ); ?>" alt="HEIGの外観のイメージ">
     </div>
   </div>
 
   <!-- HEIG(ヘイグ)にこめられた理由 -->
-  <div class="p-heig__reason">
-    <p class="p-heig__heading"><span class="p-heig__marker">HEIG(ヘイグ)に<br class="u-none__pc--sp">こめられた理由</span>
-    </p>
-
-    <div class="p-heig__reason__list">
-
+  <section class="p-heig__reason">
+    <h2 class="p-heig__heading"><span class="p-heig__marker">HEIG(ヘイグ)に<br class="u-none__pc--sp">こめられた理由</span></h2><div class="p-heig__reason__list">
       <div class="p-heig__reason__item">
         <div class="p-heig__reason__thumb">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_2.webp' ); ?>" alt="HEIGが選ばれる理由 Historyのイメージ">
+          <img loading="lazy" width="170" height="33" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_2.webp' ); ?>" alt="HEIGが選ばれる理由 Historyのイメージ">
         </div>
         <div class="p-heig__reason__letter">
-          <img loading="lazy" class="p-heig__reason__letterImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/h.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-heig__reason__letterImg" width="65" height="80" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/h.webp' ); ?>" alt="">
         </div>
         <div class="p-heig__reason__body">
           <div class="p-heig__reason__bodyMedia">
-            <img loading="lazy" class="p-heig__reason__bodyImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_6.webp' ); ?>" alt="History 歴史と実績のイメージ">
+            <img loading="lazy" class="p-heig__reason__bodyImg" width="166" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_6.webp' ); ?>" alt="History 歴史と実績のイメージ">
           </div>
           <div>
             <p class="p-heig__reason__bodyText">生活の土台となる家がしっかりとしているから夢はかなうもの。幸せな生活から逆算して家を創ります。</p>
@@ -89,14 +114,14 @@ get_header();
 
       <div class="p-heig__reason__item">
         <div class="p-heig__reason__thumb">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_3.webp' ); ?>" alt="HEIGが選ばれる理由 Experienceのイメージ">
+          <img loading="lazy" width="170" height="33" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_3.webp' ); ?>" alt="HEIGが選ばれる理由 Experienceのイメージ">
         </div>
         <div class="p-heig__reason__letter">
-          <img loading="lazy" class="p-heig__reason__letterImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/e.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-heig__reason__letterImg" width="55" height="80" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/e.webp' ); ?>" alt="">
         </div>
         <div class="p-heig__reason__body">
           <div class="p-heig__reason__bodyMedia">
-            <img loading="lazy" class="p-heig__reason__bodyImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_7.webp' ); ?>" alt="Experience 経験と技術のイメージ">
+            <img loading="lazy" class="p-heig__reason__bodyImg" width="294" height="66" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_7.webp' ); ?>" alt="Experience 経験と技術のイメージ">
           </div>
           <div>
             <p class="p-heig__reason__bodyText">省エネと経済性の両面から、住宅ローンの支払い計画まで考慮してデザインします。</p>
@@ -106,14 +131,14 @@ get_header();
 
       <div class="p-heig__reason__item">
         <div class="p-heig__reason__thumb">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_4.webp' ); ?>" alt="HEIGが選ばれる理由 Innovationのイメージ">
+          <img loading="lazy" width="170" height="33" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_4.webp' ); ?>" alt="HEIGが選ばれる理由 Innovationのイメージ">
         </div>
         <div class="p-heig__reason__letter">
-          <img loading="lazy" class="p-heig__reason__letterImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/i.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-heig__reason__letterImg" width="24" height="80" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/i.webp' ); ?>" alt="">
         </div>
         <div class="p-heig__reason__body">
           <div class="p-heig__reason__bodyMedia">
-            <img loading="lazy" class="p-heig__reason__bodyImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_8.webp' ); ?>" alt="Innovation 革新性のイメージ">
+            <img loading="lazy" class="p-heig__reason__bodyImg" width="183" height="31" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_8.webp' ); ?>" alt="Innovation 革新性のイメージ">
           </div>
           <div>
             <p class="p-heig__reason__bodyText">お客様の理想と夢をさまざまな
@@ -124,14 +149,14 @@ get_header();
 
       <div class="p-heig__reason__item">
         <div class="p-heig__reason__thumb">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_5.webp' ); ?>" alt="HEIGが選ばれる理由 Growthのイメージ">
+          <img loading="lazy" width="170" height="33" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_5.webp' ); ?>" alt="HEIGが選ばれる理由 Growthのイメージ">
         </div>
         <div class="p-heig__reason__letter">
-          <img loading="lazy" class="p-heig__reason__letterImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/g.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-heig__reason__letterImg" width="67" height="83" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/g.webp' ); ?>" alt="">
         </div>
         <div class="p-heig__reason__body">
           <div class="p-heig__reason__bodyMedia">
-            <img loading="lazy" class="p-heig__reason__bodyImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_9.webp' ); ?>" alt="Growth 成長と未来のイメージ">
+            <img loading="lazy" class="p-heig__reason__bodyImg" width="199" height="34" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_9.webp' ); ?>" alt="Growth 成長と未来のイメージ">
           </div>
           <div>
             <p class="p-heig__reason__bodyText">見た目だけではなく、健康、使いやすさ、子育てのしやすさまで含めた総合的なデザインを提案します。</p>
@@ -139,28 +164,27 @@ get_header();
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
 
   <!-- HEIGの標準仕様 -->
-  <div class="p-heig__specification">
-    <p class="p-heig__heading p-heig__heading--noSpace"><span class="p-heig__marker">HEIGの標準仕様</span>
-    </p>
+  <section class="p-heig__specification">
+    <h2 class="p-heig__heading p-heig__heading--noSpace"><span class="p-heig__marker">HEIGの標準仕様</span></h2>
     <!-- スタンダード1 -->
     <div class="p-heig__specification__block">
-      <div class="p-heig__specification__icon--right">
-        <img loading="lazy" class="p-heig__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
-      </div>
-      <div class="p-heig__specification__label--left">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_10.webp' ); ?>" alt="洗練されたデザイン住宅のイメージ">
-      </div>
-      <p class="p-heig__heading"><span class="p-heig__marker">美しさが暮らしを彩る、 <br class="u-none__pc--tab"> 洗練されたデザイン住宅</span></p>
+      <figure class="p-heig__specification__icon--right">
+        <img loading="lazy" class="p-heig__specification__iconImg" width="197" height="105" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
+      </figure>
+      <figure class="p-heig__specification__label--left">
+        <img loading="lazy" width="428" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_10.webp' ); ?>" alt="洗練されたデザイン住宅のイメージ">
+      </figure>
+      <h3 class="p-heig__heading"><span class="p-heig__marker">美しさが暮らしを彩る、 <br class="u-none__pc--tab"> 洗練されたデザイン住宅</span></h3>
 
       <div class="p-heig__specification__row">
-        <div class="p-heig__specification__media--left">
-          <img loading="lazy" class="p-heig__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_16.webp' ); ?>" alt="上質なデザインのHEIG住宅外観のイメージ">
-        </div>
+        <figure class="p-heig__specification__media--left">
+          <img loading="lazy" class="p-heig__specification__mediaImg" width="2048" height="1365" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_16.webp' ); ?>" alt="上質なデザインのHEIG住宅外観のイメージ">
+        </figure>
         <div class="p-heig__specification__copy--right">
           <p class="p-heig__specification__copyTitle">上質なデザインが魅せる、<br>
             暮らしの新しいスタンダード。</p>
@@ -170,7 +194,7 @@ get_header();
 
       <div class="p-heig__specification__row p-heig__specification__row--ptLoose">
         <div class="p-heig__specification__media--right u-none__pc--sp">
-          <img loading="lazy" class="p-heig__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ); ?>" alt="機能的で美しいHEIGの室内のイメージ">
+          <img loading="lazy" class="p-heig__specification__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ); ?>" alt="機能的で美しいHEIGの室内のイメージ">
         </div>
         <div class="p-heig__specification__copy--left">
           <p class="p-heig__specification__copyTitle">美しく、そして機能的。<br>
@@ -178,7 +202,7 @@ get_header();
           <p class="p-heig__specification__copyText">高品質な素材と巧みな設計が生み出し、見た目の美しさだけでなく、住み心地の良さも追求しています。日々の暮らしを豊かにする、理想の住まいを提供します。</p>
         </div>
         <div class="p-heig__specification__media--right u-none__mobile--sp">
-          <img loading="lazy" class="p-heig__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ); ?>" alt="機能的で美しいHEIGの室内のイメージ">
+          <img loading="lazy" class="p-heig__specification__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_17.webp' ); ?>" alt="機能的で美しいHEIGの室内のイメージ">
         </div>
       </div>
     </div>
@@ -186,18 +210,16 @@ get_header();
     <!-- スタンダード2 -->
     <div class="p-heig__specification__block">
       <div class="p-heig__specification__icon--left">
-        <img loading="lazy" class="p-heig__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-heig__specification__iconImg" width="107" height="85" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
       </div>
       <div class="p-heig__specification__label--right">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_11.webp' ); ?>" alt="大容量収納のイメージ">
+        <img loading="lazy" width="428" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_11.webp' ); ?>" alt="大容量収納のイメージ">
       </div>
-      <p class="p-heig__heading"><span class="p-heig__marker">お家の中がすっきり快適<br>
-          追加費用なしの大容量収納</span></p>
-
+      <h2 class="p-heig__heading"><span class="p-heig__marker">お家の中がすっきり快適<br>追加費用なしの大容量収納</span></h2>
       <div class="p-heig__specification__row">
-        <div class="p-heig__specification__media--left">
-          <img loading="lazy" class="p-heig__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_18.webp' ); ?>" alt="大容量収納のイメージ">
-        </div>
+        <figure class="p-heig__specification__media--left">
+          <img loading="lazy" class="p-heig__specification__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_18.webp' ); ?>" alt="大容量収納のイメージ">
+        </figure>
         <div class="p-heig__specification__copy--right">
           <p class="p-heig__specification__copyTitle">快適な暮らしの秘密は<br>
             追加料金不要の<br>
@@ -207,61 +229,65 @@ get_header();
       </div>
 
       <div class="p-heig__specification__grid--wide">
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_19.webp' ); ?>" alt="大容量ウォークインクローゼットのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">大容量<br>
-              ウォークインクローゼット</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_20.webp' ); ?>" alt="大容量シューズクロークのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">大容量<br>
-              シューズクローク</span></p>
-        </div>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_19.webp' ); ?>" alt="大容量ウォークインクローゼットのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">大容量<br>
+            ウォークインクローゼット</span>
+          </figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_20.webp' ); ?>" alt="大容量シューズクロークのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">大容量<br>
+              シューズクローク</span>
+          </figcaption>
+        </figure>
 
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_21.webp' ); ?>" alt="キッチン背面収納のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">すっきり<br>
-              キッチン背面収納</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_22.webp' ); ?>" alt="ランドリー収納のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">あると便利な<br>
-              ランドリー収納</span></p>
-        </div>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_21.webp' ); ?>" alt="キッチン背面収納のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">すっきり<br>
+              キッチン背面収納</span>
+          </figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_22.webp' ); ?>" alt="ランドリー収納のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">あると便利な<br>
+              ランドリー収納</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
 
     <!-- スタンダード3 -->
     <div class="p-heig__specification__block">
       <div class="p-heig__specification__icon--right">
-        <img loading="lazy" class="p-heig__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-heig__specification__iconImg" width="197" height="105" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
       </div>
       <div class="p-heig__specification__label--left">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_12.webp' ); ?>" alt="家事1/2設計のイメージ">
+        <img loading="lazy" width="428" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_12.webp' ); ?>" alt="家事1/2設計のイメージ">
       </div>
-      <p class="p-heig__heading"><span class="p-heig__marker">毎日が楽しくなる！家事1/2設計</span></p>
+      <h3 class="p-heig__heading"><span class="p-heig__marker">毎日が楽しくなる！家事1/2設計</span></h3>
 
       <div class="p-heig__specification__row">
-        <div class="p-heig__specification__media--left">
-          <img loading="lazy" class="p-heig__specification__mediaImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_23.webp' ); ?>" alt="ウォークスルー洗面クローゼットのイメージ">
-        </div>
+        <figure class="p-heig__specification__media--left">
+          <img loading="lazy" class="p-heig__specification__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_23.webp' ); ?>" alt="ウォークスルー洗面クローゼットのイメージ">
+        </figure>
         <div class="p-heig__specification__copy--right">
           <p class="p-heig__specification__copyTitle">ウォークスルー洗面クローゼット<br>
             「洗う、干す、しまう」が 1箇所で超ラクになる洗濯作業！</p>
           <p class="p-heig__specification__copyText">洗う・干す・しまう・着るを洗面空間で行うアイデア設計です。室内干しのデメリットである生乾きなどの湿気問題を換気システムで補完し、洗濯作業に掛かる時間を大幅に短縮します。</p>
         </div>
       </div>
-      <div class="p-heig__specification__grid--mid">
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_24.webp' ); ?>" alt="家事ラク設計のイメージ1">
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_25.webp' ); ?>" alt="家事ラク設計のイメージ2">
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_26.webp' ); ?>" alt="家事ラク設計のイメージ3">
-        </div>
-      </div>
+      <ul class="p-heig__specification__grid--mid">
+        <li class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="753" height="893" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_24.webp' ); ?>" alt="家事ラク設計のイメージ1">
+        </li>
+        <li class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="753" height="893" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_25.webp' ); ?>" alt="家事ラク設計のイメージ2">
+        </li>
+        <li class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="753" height="893" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_26.webp' ); ?>" alt="家事ラク設計のイメージ3">
+        </li>
+      </ul>
 
       <div class="p-heig__specification__copyCenter">
         <p class="p-heig__specification__copyCenterTitle">家族のゆとり時間を創る設備が満載
@@ -270,83 +296,92 @@ get_header();
       </div>
 
       <div class="p-heig__specification__grid--wide">
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_27.webp' ); ?>" alt="食器洗い乾燥機・IH調理器のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">
-              食器洗い乾燥機・IH調理器</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_28.webp' ); ?>" alt="家丸ごと浄水ANOAのイメージ">
-          <p class="p-heig__specification__gridText u-none__pc--sp"><span class="p-heig__subMarker">
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_27.webp' ); ?>" alt="食器洗い乾燥機・IH調理器のイメージ">
+          <figcaption class="p-heig__specification__gridText">
+            <span class="p-heig__subMarker">
+              食器洗い乾燥機・IH調理器
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_28.webp' ); ?>" alt="家丸ごと浄水ANOAのイメージ">
+          <figcaption class="p-heig__specification__gridText">
+            <span class="p-heig__subMarker u-none__pc--sp">
               家丸ごと浄水ANOA(アノア)
-            </span></p>
-          <p class="p-heig__specification__gridText u-none__mobile--sp"><span class="p-heig__subMarker">
+            </span>
+        
+            <span class="p-heig__subMarker u-none__mobile--sp">
               暮らしの水をまるごとキレイに<br>
               家丸ごと浄水ANOA(アノア)
-            </span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_29.webp' ); ?>" alt="タンクレスシャワートイレのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">お手入れ楽々自動洗浄機能付き<br class="u-none__mobile--sp">
-              タンクレスシャワートイレ</span></p>
-        </div>
+            </span>
+          </figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_29.webp' ); ?>" alt="タンクレスシャワートイレのイメージ">
+          <figcaption class="p-heig__specification__gridText">
+            <span class="p-heig__subMarker">お手入れ楽々自動洗浄機能付き<br class="u-none__mobile--sp">
+              タンクレスシャワートイレ
+            </span>
+          </figcaption>
+        </figure>
       </div>
     </div>
 
     <!-- スタンダード4 -->
     <div class="p-heig__specification__block">
       <div class="p-heig__specification__icon--left">
-        <img loading="lazy" class="p-heig__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-heig__specification__iconImg" width="107" height="85" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
       </div>
       <div class="p-heig__specification__label--right">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_13.webp' ); ?>" alt="節約と快適の先進設備のイメージ">
+        <img loading="lazy" width="428" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_13.webp' ); ?>" alt="節約と快適の先進設備のイメージ">
       </div>
       <p class="p-heig__heading"><span class="p-heig__marker">節約×快適！<br>
           先進の設備で、災害時も安心。</span></p>
 
       <div class="p-heig__specification__mediaCenter">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_31.gif' ); ?>" alt="先進設備のイメージ">
+        <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_31.gif' ); ?>" alt="先進設備のイメージ">
       </div>
       <div class="p-heig__specification__copyCenter">
         <p class="p-heig__specification__copyCenterTitle">経済的かつ快適な住まいを実現する先進の設備</p>
         <p class="p-heig__specification__copyCenterText">豊後夢工房の家は、経済メリットを最大化する装備が揃っています。大型10kW太陽光マキシオンパネルは、世界最高水準の400Wパネルで、40年間の製品保証付き。大容量13.5kWhのテスラパワーウォールは、温度調節機能があり、4人家族の1日分の電力をまかないます。93%の熱回収率を誇る24時間eco-i換気システムや、EV車充電アダプター、ソーラーエコキュートなども装備。断熱性を高める外反射断熱シートや基礎断熱工法などにより、光熱費を抑え、持続可能な快適生活を実現します。</p>
       </div>
       <div class="p-heig__specification__grid--narrow">
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_32.webp' ); ?>" alt="初期費用0円太陽光発電のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">初期費用0円太陽光発電</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_33.webp' ); ?>" alt="オール電化・ソーラーエコキュートのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">オール電化・<br>
-              ソーラーエコキュート</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_34.webp' ); ?>" alt="テスラ大容量蓄電池のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">テスラ大容量蓄電池</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_36.webp' ); ?>" alt="EV車充電アダプターのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">EV車充電アダプター</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_37.webp' ); ?>" alt="外反射断熱シートタイベックシルバーのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">外反射断熱シート<br>
-              タイベックシルバー</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_38.webp' ); ?>" alt="24時間換気システムと基礎断熱工法のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">24時間換気システム<br>
-              床下熱交換式+基礎断熱工法</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_39.webp' ); ?>" alt="発泡ウレタン吹付断熱のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">発泡ウレタン吹付断熱</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_40.webp' ); ?>" alt="断熱樹脂サッシのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">断熱樹脂サッシ</span></p>
-        </div>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_32.webp' ); ?>" alt="初期費用0円太陽光発電のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">初期費用0円太陽光発電</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_33.webp' ); ?>" alt="オール電化・ソーラーエコキュートのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">オール電化・<br>
+              ソーラーエコキュート</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_34.webp' ); ?>" alt="テスラ大容量蓄電池のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">テスラ大容量蓄電池</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_36.webp' ); ?>" alt="EV車充電アダプターのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">EV車充電アダプター</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_37.webp' ); ?>" alt="外反射断熱シートタイベックシルバーのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">外反射断熱シート<br>
+              タイベックシルバー</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_38.webp' ); ?>" alt="24時間換気システムと基礎断熱工法のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">24時間換気システム<br>
+              床下熱交換式+基礎断熱工法</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="530" height="530" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_39.webp' ); ?>" alt="発泡ウレタン吹付断熱のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">発泡ウレタン吹付断熱</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="615" height="615" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_40.webp' ); ?>" alt="断熱樹脂サッシのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">断熱樹脂サッシ</span></figcaption>
+        </figure>
 
       </div>
 
@@ -355,16 +390,16 @@ get_header();
     <!-- スタンダード5 -->
     <div class="p-heig__specification__block">
       <div class="p-heig__specification__icon--right">
-        <img loading="lazy" class="p-heig__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-heig__specification__iconImg" width="197" height="105" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_right.webp' ); ?>" alt="">
       </div>
       <div class="p-heig__specification__label--left">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_14.webp' ); ?>" alt="安心と安全の家づくりのイメージ">
+        <img loading="lazy" width="428" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_14.webp' ); ?>" alt="安心と安全の家づくりのイメージ">
       </div>
       <p class="p-heig__heading"><span class="p-heig__marker">未来を見据えた、家族を守る<br class="">
           安心と安全の家づくり</span></p>
 
       <div class="p-heig__specification__mediaCenter">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_41.webp' ); ?>" alt="W地震対策と強靭な基礎のイメージ">
+        <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_41.webp' ); ?>" alt="W地震対策と強靭な基礎のイメージ">
       </div>
       <div class="p-heig__specification__copyCenter">
         <p class="p-heig__specification__copyCenterTitle">W地震対策と強靭な基礎</p>
@@ -372,66 +407,66 @@ get_header();
       </div>
 
       <div class="p-heig__specification__grid--wide">
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_42.webp' ); ?>" alt="ベタ基礎工法のイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">ベタ基礎工法</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" class="p-heig__specification__gridImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_43.webp' ); ?>" alt="防湿型防蟻シート・ターミダンシートのイメージ">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">防湿型防蟻シート・ターミダンシート</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_44.webp' ); ?>" alt="面構造の耐震構造パネルのイメージ図" class="p-heig__specification__img--full">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">壁倍率3倍の耐震構造パネルを<br>
-              使った「面構造」</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_45.webp' ); ?>" alt="制震装置MER SYSTEMのイメージ図" class="p-heig__specification__img--full">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">制震装置MER　SYSTEM</span></p>
-        </div>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_42.webp' ); ?>" alt="ベタ基礎工法のイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">ベタ基礎工法</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" class="p-heig__specification__gridImg" width="800" height="448" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_43.webp' ); ?>" alt="防湿型防蟻シート・ターミダンシートのイメージ">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">防湿型防蟻シート・ターミダンシート</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_44.webp' ); ?>" alt="面構造の耐震構造パネルのイメージ図" class="p-heig__specification__img--full">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">壁倍率3倍の耐震構造パネルを<br>
+              使った「面構造」</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" width="1062" height="664" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_45.webp' ); ?>" alt="制震装置MER SYSTEMのイメージ図" class="p-heig__specification__img--full">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">制震装置MER　SYSTEM</span></figcaption>
+        </figure>
       </div>
     </div>
 
     <!-- スタンダード6 -->
     <div class="p-heig__specification__block">
       <div class="p-heig__specification__icon--left">
-        <img loading="lazy" class="p-heig__specification__iconImg" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
+        <img loading="lazy" class="p-heig__specification__iconImg" width="107" height="85" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_standard_left.webp' ); ?>" alt="">
       </div>
       <div class="p-heig__specification__label--right">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_15.webp' ); ?>" alt="家族の安全と健康のイメージ">
+        <img loading="lazy" width="428" height="72" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_15.webp' ); ?>" alt="家族の安全と健康のイメージ">
       </div>
       <p class="p-heig__heading"><span class="p-heig__marker">家族の安全と健康を第一に考えた、<br class="u-none__mobile--sp">
           先進の住宅設計。</span></p>
 
       <div class="p-heig__specification__mediaCenter">
-        <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/family.webp' ); ?>" alt="">
+        <img loading="lazy" width="1600" height="1000" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/family.webp' ); ?>" alt="">
       </div>
       <div class="p-heig__specification__copyCenter">
         <p class="p-heig__specification__copyCenterTitle">健康を守る、最新の高性能換気システム</p>
         <p class="p-heig__specification__copyCenterText">家族の健康を守るため、最新の標準装備が満載です。24時間eco-i換気システムは常に新鮮な空気を送り込み、ウイルス濃度を低減。室内の温度ムラを少なくし、一年中を通して快適な温度を保つことでヒートショックの予防をサポートします。床排気システム＆除菌フィルターはハウスダストやウイルスを除去し、給気プラズマイオン発生装置が花粉やアレルゲンを不活性化します。ウイルス対策特殊フィルターアレルノンフィルターで外部からの汚染物質を遮断し、花粉やPM2.5を大幅にカットします。</p>
       </div>
       <div class="p-heig__specification__grid--wide p-heig__specification__grid--wideFlush">
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_46_2.webp' ); ?>" alt="24時間eco-i換気システムのイメージ図" class="p-heig__specification__img--full">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">熱回収率93％24時間eco-i換気システム</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_48.webp' ); ?>" alt="床排気システムと除菌フィルターのイメージ図" class="p-heig__specification__img--full">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">床排気システム＆除菌フィルター</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_49.webp' ); ?>" alt="給気プラズマイオン発生装置のイメージ図" class="p-heig__specification__img--full">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">給気プラズマイオン発生装置</span></p>
-        </div>
-        <div class="p-heig__specification__gridItem">
-          <img loading="lazy" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_50.webp' ); ?>" alt="ウイルス対策特殊フィルターアレルノンフィルターのイメージ図" class="p-heig__specification__img--full">
-          <p class="p-heig__specification__gridText"><span class="p-heig__subMarker">ウイルス対策特殊フィルター<br>
-              アレルノンフィルター</span></p>
-        </div>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" width="1600" height="682" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_46_2.webp' ); ?>" alt="24時間eco-i換気システムのイメージ図" class="p-heig__specification__img--full">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">熱回収率93％24時間eco-i換気システム</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" width="571" height="243" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_48.webp' ); ?>" alt="床排気システムと除菌フィルターのイメージ図" class="p-heig__specification__img--full">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">床排気システム＆除菌フィルター</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" width="571" height="243" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_49.webp' ); ?>" alt="給気プラズマイオン発生装置のイメージ図" class="p-heig__specification__img--full">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">給気プラズマイオン発生装置</span></figcaption>
+        </figure>
+        <figure class="p-heig__specification__gridItem">
+          <img loading="lazy" width="768" height="326" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/dist/img/heig/heig_50.webp' ); ?>" alt="ウイルス対策特殊フィルターアレルノンフィルターのイメージ図" class="p-heig__specification__img--full">
+          <figcaption class="p-heig__specification__gridText"><span class="p-heig__subMarker">ウイルス対策特殊フィルター<br>
+              アレルノンフィルター</span></figcaption>
+        </figure>
       </div>
     </div>
 
-  </div>
+  </section>
 
   <section class="l-content">
     <div class="c-title__head">
@@ -469,7 +504,7 @@ get_header();
 
   <?php if ( $works_loop->have_posts() ) : ?>
     <section class="l-content">
-      <p class="c-title--large">HEIGの施工事例をみる</p>
+      <h2 class="c-title--large">HEIGの施工事例をみる</h2>
       <p class="c-title--orange u-mb100">施工事例・お客様の声</p>
       <ul class="c-cardList u-mb100">
         <?php while ( $works_loop->have_posts() ) :
@@ -502,32 +537,34 @@ get_header();
 
       <ul class="c-lineUp__list">
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
-            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt="HEIG（ヘイグ）"></figure>
-            <span class="c-lineUp__tag">自由設計</span>
-            <p class="c-lineUp__text">暮らしをもっと自由に</p>
-          </a>
+          <article class="c-lineUp__body">
+            <a href="<?php echo esc_url( home_url( 'heig' ) ); ?>">
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group01.webp' ); ?>" alt="HEIG（ヘイグ）"></figure>
+              <span class="c-lineUp__tag">自由設計</span>
+              <p class="c-lineUp__text">暮らしをもっと自由に</p>
+            </a>
+          </article>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
-            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt="リレーヴ（Rireve）"></figure>
-            <span class="c-lineUp__tag">自由設計</span>
-            <p class="c-lineUp__text">次世代のZEHハウス</p>
-          </a>
+          <article class="c-lineUp__body">
+            <a href="<?php echo esc_url( home_url( 'rireve' ) ); ?>">
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group02.webp' ); ?>" alt="リレーヴ（Rireve）"></figure>
+              <span class="c-lineUp__tag">自由設計</span>
+              <p class="c-lineUp__text">次世代のZEHハウス</p>
+            </a>
+          </article>
         </li>
         <li class="c-lineUp__item">
-          <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
-            <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt="いろはいえ"></figure>
-            <span class="c-lineUp__tag">自由設計</span>
-            <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
-          </a>
+          <article class="c-lineUp__body">
+            <a href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>">
+              <figure class="c-lineUp__media"><img loading="lazy" class="c-lineUp__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/Group03.webp' ); ?>" alt="いろはいえ"></figure>
+              <span class="c-lineUp__tag">自由設計</span>
+              <p class="c-lineUp__text">安心の定額制、なのに自由設計</p>
+            </a>
+          </article>
         </li>
       </ul>
     </div>
   </section>
-
-
-
-
 </main>
 <?php get_footer(); ?>

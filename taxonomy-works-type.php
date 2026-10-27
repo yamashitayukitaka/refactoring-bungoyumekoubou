@@ -20,9 +20,9 @@ get_header();
 
 <main>
 
-  <h2 class = "c-title--section u-mb50">
+  <h1 class = "c-title--section u-mb50">
     施工事例
-  </h2>
+  </h1>
 
 <?php $terms = get_terms(
     [
@@ -83,7 +83,7 @@ get_header();
 
     <?php endif;?>
 
-  <section class = "l-content">
+  <div class="l-content">
     <?php
       $local_paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
       $works       = array(
@@ -118,7 +118,7 @@ get_header();
       </div>
     <?php endif; ?>
     
-  </section>
+  </div>
    
 </main>
 

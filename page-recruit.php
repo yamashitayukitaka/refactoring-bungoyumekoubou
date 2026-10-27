@@ -13,24 +13,24 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         採用情報
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         RECRUIT
       </p>
     </div>
     <?php $mv = get_field( 'mv-recruit-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <section class="l-content--middle u-mb100">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         MESSAGE
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="u-orange">代表</span>メッセージ
@@ -40,7 +40,7 @@ get_header();
     <div class="p-recruit__message">
       <div class="p-recruit__message__photo u-none__pc--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
+          <img width="510" height="680" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -67,7 +67,7 @@ get_header();
       </div>
       <div class="p-recruit__message__photo u-none__mobile--sp">
         <figure class="p-recruit__message__figure u-mb40">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
+          <img width="510" height="680" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/president.png' ); ?>" class="p-recruit__message__img" alt="代表取締役社長 永井 賢次のイメージ" loading="lazy">
         </figure>
         <dl class="p-recruit__message__meta">
           <dt class="p-recruit__message__metaLine">株式会社 豊後夢工房</dt>
@@ -81,9 +81,9 @@ get_header();
 
   <section class="l-content--middle u-mb200">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CORPORATE STANDARD
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">社内標準</span>
@@ -190,9 +190,9 @@ get_header();
       ];
       ?>
       <div class="c-title__head u-mb50">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           INTERVIEW
-        </h3>
+        </h2>
       </div>
       <?php foreach ( $recruit_interviews as $interview ) : ?>
         <p class="c-title--orangeLine u-mb30 u-center">
@@ -215,13 +215,13 @@ get_header();
   </section>
 
   <section class="l-content--middle u-mb100 p-recruit__requirements">
-    <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
-    </figure>
+    <div class="p-recruit__requirements__decoration p-recruit__requirements__decoration--top">
+      <img width="197" height="105" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
+    </div>
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         RECRUIT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           募集要項
@@ -268,9 +268,9 @@ get_header();
         現在、募集はしておりません。
       </p>
     <?php endif; ?>
-    <figure class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
-      <img src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
-    </figure>
+    <div class="p-recruit__requirements__decoration p-recruit__requirements__decoration--bottom">
+      <img width="197" height="105" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/recruit/tree.webp' ); ?>" class="p-recruit__requirements__decorationImg" alt="" loading="lazy">
+    </div>
   </section>
 
   <?php if ( $has_app ) : ?>
@@ -288,9 +288,9 @@ get_header();
 
     <section class="l-content">
       <div class="c-title__head">
-        <h3 class="c-title--sectionLine">
+        <h2 class="c-title--sectionLine">
           APPLICATION
-        </h3>
+        </h2>
         <div>
           <p class="c-title--orangeLine u-mb50">
             <span class="marker">応募する</span>
@@ -302,7 +302,6 @@ get_header();
       </div>
     </section>
   <?php endif; ?>
-
   <?php get_template_part( 'template-parts/common-link' ); ?>
 </main>
 <?php get_footer(); ?>

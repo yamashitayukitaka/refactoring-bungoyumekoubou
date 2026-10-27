@@ -13,23 +13,23 @@ get_header();
 <main class="p-renovation">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         ゆめリフォーム
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         RENOVATION
       </p>
     </div>
     <?php $mv = get_field( 'mv-renovation-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">ゆめリフォーム</h3>
+      <h2 class="c-title--sectionLine u-mb40">ゆめリフォーム</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           あなたの<span class="u-orange">大切な住まい</span>を、<br>
@@ -42,13 +42,13 @@ get_header();
   <section class="p-renovation__about">
     <div class="p-renovation__about__hero">
       <div class="p-renovation__about__media p-renovation__about__media--right">
-        <img loading="lazy" class="p-renovation__about__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/about.png' ); ?>" alt="ゆめリフォームのイメージ">
+        <img loading="lazy" class="p-renovation__about__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/about.png' ); ?>" alt="ゆめリフォームのイメージ">
       </div>
       <div class="p-renovation__about__panel p-renovation__about__panel--left">
         <div class="p-renovation__about__titleWrap">
-          <p class="p-renovation__about__title">
+          <h3 class="p-renovation__about__title">
             <span class="marker">ゆめリフォーム</span>
-          </p>
+          </h3>
         </div>
         <div class="p-renovation__about__text">
           あなたの大切な住まいを、もっと素敵に、もっと快適に変えてみませんか？「ゆめリフォーム」で、古くなったお家もまるで新築のように生まれ変わります。<br>
@@ -59,18 +59,18 @@ get_header();
   </section>
 
   <section class="p-renovation__beforeAfter">
-    <h3 class="p-renovation__sectionTitle">ビフォーアフター</h3>
+    <h4 class="p-renovation__sectionTitle">ビフォーアフター</h4>
     <div class="p-renovation__inner p-renovation__compare">
       <ul class="p-renovation__compare__list">
         <li class="p-renovation__compare__item">
           <div class="p-renovation__compare__primary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_01.png' ); ?>" alt="リフォーム事例1 アフターのイメージ">
+                <img loading="lazy" class="p-renovation__compare__img" width="607" height="455" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_01.png' ); ?>" alt="リフォーム事例1 アフターのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_before.png' ); ?>" alt="リフォーム事例1 ビフォーのイメージ">
+                <img loading="lazy" class="p-renovation__compare__img" width="244" height="325" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_before.png' ); ?>" alt="リフォーム事例1 ビフォーのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -78,7 +78,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_02.png' ); ?>" alt="リフォーム事例1 アフター（別角度）のイメージ">
+                <img loading="lazy" class="p-renovation__compare__img" width="600" height="450" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case01_after_02.png' ); ?>" alt="リフォーム事例1 アフター（別角度）のイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after p-renovation__compare__badge--sub">AFTER</span>
               </div>
             </div>
@@ -88,11 +88,11 @@ get_header();
           <div class="p-renovation__compare__secondary">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterMain p-renovation__compare__afterMain--offset">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_01.png' ); ?>" alt="リフォーム事例2 アフターのイメージ">
+                <img loading="lazy" class="p-renovation__compare__img" width="600" height="450" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_01.png' ); ?>" alt="リフォーム事例2 アフターのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
               <div class="p-renovation__compare__beforeThumb p-renovation__compare__beforeThumb--offset">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_before.png' ); ?>" alt="リフォーム事例2 ビフォーのイメージ">
+                <img loading="lazy" class="p-renovation__compare__img" width="427" height="320" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_before.png' ); ?>" alt="リフォーム事例2 ビフォーのイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--before">BEFORE</span>
               </div>
             </div>
@@ -100,7 +100,7 @@ get_header();
           <div class="p-renovation__compare__sub">
             <div class="p-renovation__compare__row">
               <div class="p-renovation__compare__afterWide p-renovation__compare__afterWide--offset">
-                <img loading="lazy" class="p-renovation__compare__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_02.png' ); ?>" alt="リフォーム事例2 アフター（別角度）のイメージ">
+                <img loading="lazy" class="p-renovation__compare__img" width="600" height="450" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/beforeafter_case02_after_02.png' ); ?>" alt="リフォーム事例2 アフター（別角度）のイメージ">
                 <span class="p-renovation__compare__badge p-renovation__compare__badge--after">AFTER</span>
               </div>
             </div>
@@ -111,55 +111,53 @@ get_header();
   </section>
 
   <section class="p-renovation__details">
-    <h3 class="p-renovation__sectionTitle">リフォーム内容</h3>
+    <h4 class="p-renovation__sectionTitle">リフォーム内容</h4>
     <div class="p-renovation__inner">
-      <?php
-      $detail_items = [
-        [
-          'label' => '水回り交換',
-          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_01.png',
-        ],
-        [
-          'label' => '増・改築',
-          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_02.png',
-        ],
-        [
-          'label' => '外構工事',
-          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_03.png',
-        ],
-        [
-          'label' => 'シロアリ対策工事',
-          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_04.png',
-        ],
-        [
-          'label' => '耐震補強',
-          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_05.png',
-        ],
-        [
-          'label' => '断熱強化',
-          'img'   => get_template_directory_uri() . '/dist/img/renovation/detail_06.png',
-        ],
-      ];
-      ?>
       <ul class="p-renovation__details__list">
-        <?php foreach ( $detail_items as $item ) : ?>
-          <li class="p-renovation__details__item">
-            <div class="p-renovation__details__media">
-              <img loading="lazy" class="p-renovation__details__mediaImg" src="<?php echo esc_url( $item['img'] ); ?>" alt="<?php echo esc_attr( $item['label'] . 'のイメージ' ); ?>">
-            </div>
-            <div class="p-renovation__details__label">
-              <?php echo esc_html( $item['label'] ); ?>
-            </div>
-          </li>
-        <?php endforeach; ?>
+        <li class="p-renovation__details__item">
+          <div class="p-renovation__details__media">
+            <img loading="lazy" class="p-renovation__details__mediaImg" width="520" height="520" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/detail_01.png' ); ?>" alt="水回り交換のイメージ">
+          </div>
+          <div class="p-renovation__details__label">水回り交換</div>
+        </li>
+        <li class="p-renovation__details__item">
+          <div class="p-renovation__details__media">
+            <img loading="lazy" class="p-renovation__details__mediaImg" width="520" height="520" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/detail_02.png' ); ?>" alt="増・改築のイメージ">
+          </div>
+          <div class="p-renovation__details__label">増・改築</div>
+        </li>
+        <li class="p-renovation__details__item">
+          <div class="p-renovation__details__media">
+            <img loading="lazy" class="p-renovation__details__mediaImg" width="520" height="520" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/detail_03.png' ); ?>" alt="外構工事のイメージ">
+          </div>
+          <div class="p-renovation__details__label">外構工事</div>
+        </li>
+        <li class="p-renovation__details__item">
+          <div class="p-renovation__details__media">
+            <img loading="lazy" class="p-renovation__details__mediaImg" width="523" height="523" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/detail_04.png' ); ?>" alt="シロアリ対策工事のイメージ">
+          </div>
+          <div class="p-renovation__details__label">シロアリ対策工事</div>
+        </li>
+        <li class="p-renovation__details__item">
+          <div class="p-renovation__details__media">
+            <img loading="lazy" class="p-renovation__details__mediaImg" width="523" height="523" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/detail_05.png' ); ?>" alt="耐震補強のイメージ">
+          </div>
+          <div class="p-renovation__details__label">耐震補強</div>
+        </li>
+        <li class="p-renovation__details__item">
+          <div class="p-renovation__details__media">
+            <img loading="lazy" class="p-renovation__details__mediaImg" width="523" height="523" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/detail_06.png' ); ?>" alt="断熱強化のイメージ">
+          </div>
+          <div class="p-renovation__details__label">断熱強化</div>
+        </li>
       </ul>
     </div>
   </section>
 
   <section class="p-renovation__process">
-    <h3 class="p-renovation__sectionTitle">
+    <h4 class="p-renovation__sectionTitle">
       お問合わせから<span class="u-orange">リフォーム</span>までの流れ
-    </h3>
+    </h4>
     <?php
     $process_steps      = [
       [
@@ -187,12 +185,12 @@ get_header();
           <div class="p-renovation__inner<?php echo ( $i < $process_last_index ) ? ' p-renovation__process__step' : ''; ?>">
             <div class="p-renovation__process__row">
               <div class="p-renovation__process__media u-none__pc--tab">
-                <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
+                <img loading="lazy" class="p-renovation__process__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
               </div>
               <div class="p-renovation__process__panel">
-                <p class="c-title--orangeLine p-renovation__process__title"><span class="marker">
-                    <span class="u-orange"><?php echo esc_html( sprintf( '%02d. ', $i + 1 ) ); ?></span><?php echo esc_html( $step['title'] ); ?></span>
-                </p>
+                <h5 class="c-title--orangeLine p-renovation__process__title"><span class="marker">
+                  <span class="u-orange"><?php echo esc_html( sprintf( '%02d. ', $i + 1 ) ); ?></span><?php echo esc_html( $step['title'] ); ?></span>
+                </h5>
                 <p class="p-renovation__process__text">
                   <?php echo wp_kses_post( $step['text'] ); ?>
                 </p>
@@ -203,7 +201,7 @@ get_header();
                 <?php endif; ?>
               </div>
               <div class="p-renovation__process__media u-none__mobile--tab">
-                <img loading="lazy" class="p-renovation__process__mediaImg" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
+                <img loading="lazy" class="p-renovation__process__mediaImg" width="1600" height="1000" src="<?php echo esc_url( $step['img'] ); ?>" alt="<?php echo esc_attr( $step['title'] . 'のイメージ' ); ?>">
               </div>
             </div>
           </div>
@@ -216,24 +214,24 @@ get_header();
   </section>
 
   <section class="p-renovation__features">
-    <h3 class="p-renovation__sectionTitle">
+    <h4 class="p-renovation__sectionTitle">
       <span class="u-orange">ゆめリフォーム</span>の特徴
-    </h3>
+    </h4>
     <ul class="p-renovation__features__list">
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img loading="lazy" class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_01.png' ); ?>" alt="リフォームの特徴1のイメージ">
+            <img loading="lazy" class="p-renovation__feature__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_01.png' ); ?>" alt="リフォームの特徴1のイメージ">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
-              <img loading="lazy" class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-renovation__feature__badgeImg" width="122" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point1.webp' ); ?>" alt="">
             </div>
             <div>
-              <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
+              <h5 class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
                   <span class="u-orange">豊富な経験</span>と<span class="u-orange">知識</span>を<br>
                   持つスタッフが<span class="u-orange">対応</span></span>
-              </p>
+              </h5>
             </div>
             <div class="p-renovation__feature__text">
               リフォームは物件ごとに状況が異なるため、豊後夢工房では経験、知識共に豊富なスタッフが対応いたします。内容によっては一級建築士が同行、施工時の監督も1級施工管理技士が担当し、品質の高い施工をお約束します。
@@ -244,16 +242,16 @@ get_header();
       <li class="p-renovation__features__item">
         <div class="p-renovation__feature__hero">
           <div class="p-renovation__feature__media">
-            <img loading="lazy" class="p-renovation__feature__mediaImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_02.png' ); ?>" alt="リフォームの特徴2のイメージ">
+            <img loading="lazy" class="p-renovation__feature__mediaImg" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/renovation/feature_02.png' ); ?>" alt="リフォームの特徴2のイメージ">
           </div>
           <div class="p-renovation__feature__panel">
             <div class="p-renovation__feature__badge">
-              <img loading="lazy" class="p-renovation__feature__badgeImg" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
+              <img loading="lazy" class="p-renovation__feature__badgeImg" width="126" height="37" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/point2.webp' ); ?>" alt="">
             </div>
             <div>
-              <p class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
+              <h5 class="c-title--orangeLine p-renovation__feature__headline"><span class="marker">
                   <span class="u-orange">安心</span>の<span class="u-orange">施工監督体制</span></span>
-              </p>
+              </h5>
             </div>
             <div class="p-renovation__feature__text">
               施工の各段階で1級施工管理技士が監督を担当し、安心してお任せいただける体制を整えています。私たちはお客様のニーズに応じた最適なリフォームを提供し、快適で安全な住まいを実現します。
@@ -278,9 +276,9 @@ get_header();
 
   <section class="l-content" id="contact">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CONTACT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">お問い合わせ</span>
@@ -291,9 +289,6 @@ get_header();
       <?php echo do_shortcode( '[mwform_formkey key="1820"]' ); ?>
     </div>
   </section>
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
-
 </main>
 <?php get_footer(); ?>

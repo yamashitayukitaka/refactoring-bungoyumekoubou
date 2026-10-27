@@ -15,10 +15,9 @@ get_header();
 <main>
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
-        快適ゆめ空間をつくる
+      <h1 class="c-pageMv__heading__title"> 快適ゆめ空間をつくる
         <br><span class="u-orange--mv">スタッフたち</span>
-      </h2>
+      </h1>
     </div>
     <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/page.webp' ); ?>');"></figure>
   </div>
@@ -39,9 +38,9 @@ $terms             = get_terms(
     <?php foreach ( $terms as $local_term ) : ?>
       <?php $slug = $local_term->slug; ?>
     <section>
-      <h3 class="c-title--section u-mb30">
+      <h2 class="c-title--section u-mb30">
         <?php echo esc_html( $local_term->name ); ?>
-      </h3>
+      </h2>
       <ul class="p-staff__list l-content">
         <?php
         $staff      = [
@@ -67,7 +66,18 @@ $terms             = get_terms(
                 <figure class="p-staff__img__wrap">
                   <?php $staff_img = get_field( 'staff-img' ); ?>
                   <?php if ( $staff_img ) : ?>
-                  <img src="<?php echo esc_url( $staff_img ); ?>" alt="スタッフイメージ" class="p-staff__img" loading="lazy">
+                  <?php
+                echo wp_get_attachment_image(
+                    $staff_img,
+                    'full',
+                    false,
+                    array(
+                      'class'   => 'p-staff__img',
+                      'alt'     => 'スタッフイメージ',
+                      'loading' => 'lazy',
+                    )
+                );
+                  ?>
                   <?php endif; ?>
                 </figure>
                 <p class="p-staff__name">
@@ -78,7 +88,7 @@ $terms             = get_terms(
           <?php endwhile; ?>
         <?php endif;
         wp_reset_postdata(); ?>
-        </div>
+      </ul>
     </section>
     <?php endforeach; ?>
   <?php endif; ?>

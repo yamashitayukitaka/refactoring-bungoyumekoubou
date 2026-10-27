@@ -13,9 +13,9 @@ get_header();
 <main class="p-concept">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title u-mb20">
+      <h1 class="c-pageMv__heading__title u-mb20">
         わたしたちの思い
-      </h2>
+      </h1>
       <p class="p-concept__mv__lead">
         <span class="u-textOrange">夢</span>をカタチに、<br>
         暮らしをもっと<span class="u-textOrange">豊か</span>に
@@ -27,18 +27,18 @@ get_header();
     </div>
     <?php $mv = get_field( 'mv-concept-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
-  <section class="p-concept__intro">
+  <div class="p-concept__intro">
     <div class="p-concept__intro__inner">
       <div class="p-concept__intro__photos">
         <div class="p-concept__intro__photo">
-          <img loading="lazy" class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="豊後夢工房の住まいづくりのイメージ">
+          <img loading="lazy" class="p-concept__intro__img" width="109" height="132" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/top/top-des1.webp' ); ?>" alt="豊後夢工房の住まいづくりのイメージ">
         </div>
         <div class="p-concept__intro__family">
-          <img loading="lazy" class="p-concept__intro__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
+          <img loading="lazy" class="p-concept__intro__img" width="657" height="462" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/illustration/family_img.webp' ); ?>" alt="">
         </div>
       </div>
       <div class="p-concept__intro__text">
@@ -57,11 +57,11 @@ get_header();
         あなたの住まいを、<span class="u-textOrange">楽しく</span>、もっと<span class="u-textOrange">自由</span>に。
       </div>
     </div>
-  </section>
+  </div>
 
   <section class="p-concept__policy">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">POLICY</h3>
+      <h2 class="c-title--sectionLine">POLICY</h2>
       <p class="c-title--orangeLine u-mb50">
         <span class="marker">
           <span class="u-orange">豊後夢工房</span>が大切にしていること
@@ -71,7 +71,7 @@ get_header();
     <ul class="p-concept__policy__list">
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="自由にデザインするという楽しさのイメージ">
+          <img loading="lazy" class="p-concept__policy__img" width="1010" height="631" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept1.png' ); ?>" alt="自由にデザインするという楽しさのイメージ">
         </div>
         <div class="p-concept__policy__panel">
 
@@ -95,7 +95,7 @@ get_header();
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="コストを抑えたスマートな家づくりのイメージ">
+          <img loading="lazy" class="p-concept__policy__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept2.png' ); ?>" alt="コストを抑えたスマートな家づくりのイメージ">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 02</h3>
@@ -118,7 +118,7 @@ get_header();
       </li>
       <li class="p-concept__policy__item">
         <div class="p-concept__policy__media">
-          <img loading="lazy" class="p-concept__policy__img" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="心地よく暮らせる住まいのイメージ">
+          <img loading="lazy" class="p-concept__policy__img" width="1600" height="1000" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/concept/concept3.png' ); ?>" alt="心地よく暮らせる住まいのイメージ">
         </div>
         <div class="p-concept__policy__panel">
           <h3 class="c-title--sectionLine">POLICY 03</h3>
@@ -144,9 +144,9 @@ get_header();
     <div class="p-concept__system__head">
       <div>
         <div class="c-title__head">
-          <h3 class="c-title--sectionLine">
+          <h2 class="c-title--sectionLine">
             SYSTEM & DESIGN
-          </h3>
+          </h2>
           <p class="c-title--orangeLine p-concept__system__title"><span class="marker">
               豊後夢工房の<span class="u-orange">組織力</span>と<span class="u-orange">デザイン力</span></span>
           </p>
@@ -204,7 +204,6 @@ get_header();
       </div>
     </div>
   </section>
-
   <?php get_template_part( 'template-parts/common' ); ?>
 </main>
 <?php get_footer(); ?>

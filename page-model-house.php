@@ -13,23 +13,23 @@ get_header();
 <main class="p-modelHouse">
 <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         MODEL HOUSE
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         モデルハウス
       </p>
     </div>
     <?php $mv = get_field( 'mv-model-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <!-- トップタイトル概要 -->
   <section class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">モデルハウス</h3>
+      <h2 class="c-title--sectionLine u-mb40">モデルハウス</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           <span class="u-orange">見て</span>、<span class="u-orange">触れて</span>、<span class="u-orange">感じる</span>。<br>
@@ -40,21 +40,22 @@ get_header();
   </section>
 
   <section class="p-modelHouse__overview u-mb100">
-    <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
-    </figure>
+    <div class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
+      <img loading="lazy" width="323" height="101" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
+    </div>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">中庭と深い軒の織りなす<br>
-          スタイリッシュなデザイン</span></p>
-      <p class="p-modelHouse__overview__name">TOSハウジングメッセ </p>
+        スタイリッシュなデザイン</span>
+      </p>
+      <h3 class="p-modelHouse__overview__name">TOSハウジングメッセ </h3>
       <p class="p-modelHouse__overview__lead u-none__pc--tab"><span class="marker">中庭と深い軒の織りなす<br>
           スタイリッシュなデザイン</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos-studio.png' ); ?>" alt="TOSハウジングメッセの外観イメージ">
+      <img loading="lazy" width="614" height="366" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos-studio.png' ); ?>" alt="TOSハウジングメッセの外観イメージ">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos.png' ); ?>" alt="TOSハウジングメッセの間取り図イメージ">
+      <img loading="lazy" width="1600" height="579" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/tos.png' ); ?>" alt="TOSハウジングメッセの間取り図イメージ">
     </figure>
     <div class="p-modelHouse__overview__text u-mb100">
       建物の中心に「中庭」を配置し、<br>
@@ -84,24 +85,24 @@ get_header();
   </section>
 
   <section class="p-modelHouse__overview u-mb100">
-    <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>" alt="">
-    </figure>
+    <div class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--right">
+      <img loading="lazy" width="322" height="111" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/right-ribbon.webp' ); ?>" alt="">
+    </div>
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">大人カワイイ<br>
           ヨーロピアンな家</span></p>
-      <p class="p-modelHouse__overview__name">
+      <h3 class="p-modelHouse__overview__name">
         <span>シェリーハウス</span>
         Shelly House
-      </p>
+      </h3>
       <p class="p-modelHouse__overview__lead u-none__pc--tab"><span class="marker">大人カワイイ<br>
           ヨーロピアンな家</span></p>
     </div>
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly-studio.png' ); ?>" alt="シェリーハウス外観イメージ">
+      <img loading="lazy" width="495" height="494" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly-studio.png' ); ?>" alt="シェリーハウス外観イメージ">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly.png' ); ?>" alt="シェリーハウス間取り図イメージ">
+      <img loading="lazy" width="1600" height="615" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/shelly.png' ); ?>" alt="シェリーハウス間取り図イメージ">
     </figure>
     <div class="p-modelHouse__overview__text">
       ヨーロッパの街並みに溶け込むようなデザイン。<br>
@@ -138,9 +139,9 @@ get_header();
     ?>
     <?php if ( $has_gallery_b ) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
-        <h3 class="c-title--sectionEn">
+        <h2 class="c-title--sectionEn">
           GALLERY
-        </h3>
+        </h2>
         <p class="c-title--sectionSub u-mb50">
           ギャラリー
         </p>
@@ -149,7 +150,20 @@ get_header();
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__list__img"></li>
+                  <li class="c-hasThumbSlider__list__item">
+                    <?php
+                    echo wp_get_attachment_image(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
+                        'class'   => 'c-hasThumbSlider__list__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                        )
+                    );
+                    ?>
+                  </li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -158,7 +172,18 @@ get_header();
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__thumbnail__img">
+                    <?php
+                    echo wp_get_attachment_image(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
+                        'class'   => 'c-hasThumbSlider__thumbnail__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                        )
+                    );
+                    ?>
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -179,26 +204,26 @@ get_header();
 
 
   <section class="p-modelHouse__overview u-mb100">
-    <figure class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
-    </figure>
+    <div class="p-modelHouse__overview__ribbon p-modelHouse__overview__ribbon--left">
+      <img loading="lazy" width="323" height="101" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/common/left-ribbon.webp' ); ?>" alt="">
+    </div>
 
     <div class="p-modelHouse__overview__heading">
       <p class="p-modelHouse__overview__lead u-none__mobile--tab"><span class="marker">安心の定額制で建てる<br>
           ｢完全自由設計｣の家</span></p>
-      <p class="p-modelHouse__overview__name">
+      <h2 class="p-modelHouse__overview__name">
         <span>いろは家</span>
         IROHA・IE
-      </p>
+      </h2>
       <p class="p-modelHouse__overview__lead u-none__pc--tab"><span class="marker">安心の定額制で建てる<br>
           　｢完全自由設計｣の家</span></p>
     </div>
 
     <figure class="p-modelHouse__overview__logo p-modelHouse__overview__logo--compact">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha-studio.png' ); ?>" alt="いろは家の外観イメージ">
+      <img loading="lazy" width="990" height="988" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha-studio.png' ); ?>" alt="いろは家の外観イメージ">
     </figure>
     <figure class="p-modelHouse__overview__media">
-      <img loading="lazy" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha.png' ); ?>" alt="いろは家の間取り図イメージ">
+      <img loading="lazy" width="1600" height="870" src="<?php echo esc_url( get_template_directory_uri() . '/dist/img/model-house/iroha.png' ); ?>" alt="いろは家の間取り図イメージ">
     </figure>
     <div class="p-modelHouse__overview__text">
       家づくりで不安に思う方が一番多いのがお金のこと。<br>
@@ -231,9 +256,9 @@ get_header();
     ?>
     <?php if ( $has_gallery_c ) : ?>
       <section class="p-modelHouse__overview__gallery u-mb100">
-        <h3 class="c-title--sectionEn">
+        <h2 class="c-title--sectionEn">
           GALLERY
-        </h3>
+        </h2>
         <p class="c-title--sectionSub u-mb50">
           ギャラリー
         </p>
@@ -242,7 +267,20 @@ get_header();
             <ul class="js-hasThumbSlider c-hasThumbSlider__list">
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item"><img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__list__img"></li>
+                  <li class="c-hasThumbSlider__list__item">
+                    <?php
+                    echo wp_get_attachment_image(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
+                        'class'   => 'c-hasThumbSlider__list__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                        )
+                    );
+                    ?>
+                  </li>
                 <?php endif; ?>
               <?php endforeach; ?>
             </ul>
@@ -251,7 +289,18 @@ get_header();
               <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
                 <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
                   <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <img loading="lazy" src="<?php echo esc_url( $has_thumbslider['img'] ); ?>" alt="<?php echo esc_attr( get_the_title() . 'のイメージ' ); ?>" class="c-hasThumbSlider__thumbnail__img">
+                    <?php
+                    echo wp_get_attachment_image(
+                        $has_thumbslider['img'],
+                        'full',
+                        false,
+                        array(
+                        'class'   => 'c-hasThumbSlider__thumbnail__img',
+                        'alt'     => get_the_title() . 'のイメージ',
+                        'loading' => 'lazy',
+                        )
+                    );
+                    ?>
                   </li>
                 <?php endif; ?>
               <?php endforeach; ?>
@@ -276,9 +325,9 @@ get_header();
 
   <section class="l-content" id="contact">
     <div class="c-title__head">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         CONTACT
-      </h3>
+      </h2>
       <div>
         <p class="c-title--orangeLine u-mb50">
           <span class="marker">お問い合わせ</span>
@@ -292,40 +341,19 @@ get_header();
 
   <section class="l-content u-mb100">
     <div class="u-center u-mb10">
-      <h3 class="c-title--sectionLine">
+      <h2 class="c-title--sectionLine">
         EVENT
-      </h3>
+      </h2>
     </div>
     <div class="u-center u-mb30">
       <p class="c-title--orangeLine">
         <span class="marker">最新情報をお届けします</span>
       </p>
     </div>
-    <?php
-    $event = array(
-      'post_type'      => 'xo_event',
-      'posts_per_page' => 3,
-      'order'          => 'DESC',
-      'orderby'        => 'date',
-    ); ?>
-    <?php $event_loop = new WP_Query( $event ); ?>
-    <?php if ( $event_loop->have_posts() ) : ?>
-      <ul class="c-cardList u-mb50">
-        <?php while ( $event_loop->have_posts() ) :
-          $event_loop->the_post(); ?>
-          <?php get_template_part( 'template-parts/event-loop' ); ?>
-        <?php endwhile;
-    endif;
-      wp_reset_postdata(); ?>
-      </ul>
-      <div class="u-center">
+    <div class="u-center">
         <a href="<?php echo esc_url( home_url( 'xo_event' ) ); ?>" class="c-button--outline">イベント一覧へ</a>
       </div>
   </section>
-
-
   <?php get_template_part( 'template-parts/common' ); ?>
-
-
 </main>
 <?php get_footer(); ?>

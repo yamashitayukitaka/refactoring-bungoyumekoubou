@@ -63,9 +63,9 @@ if ( $loot_slug ) {
 ?>
 <main>
 
-<h2 class = "c-title--section u-mb50">
+<h1 class = "c-title--section u-mb50">
   土地・物件情報
-</h2>
+</h1>
 
 <?php $terms = get_terms(
     [
@@ -155,7 +155,7 @@ if ( $loot_slug ) {
     <?php endif; ?>
   </ul>
 
-  <section class = "l-content">
+  <div class="l-content">
     <?php $my_query = new WP_Query( $args );?>
       <?php if ( $my_query->have_posts() ) : ?>
         <ul class = "c-cardList js-allswitch">
@@ -172,7 +172,7 @@ if ( $loot_slug ) {
           <?php wazeka_query_pagination( $my_query ); ?>
         </div>
       <?php endif; ?>
-  </section>
+  </div>
 
 </main>
 

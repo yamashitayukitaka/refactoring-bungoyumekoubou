@@ -13,22 +13,22 @@ get_header();
 <main class="p-faq">
   <div class="c-pageMv u-mb100">
     <div class="c-pageMv__heading">
-      <h2 class="c-pageMv__heading__title">
+      <h1 class="c-pageMv__heading__title">
         よくあるご質問
-      </h2>
+      </h1>
       <p class="c-pageMv__heading__subTitle">
         Q & A
       </p>
     </div>
     <?php $mv = get_field( 'mv-faq-img' ); ?>
     <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( $mv ); ?>');"></figure>
+      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
     <?php endif; ?>
   </div>
 
   <div class="c-title__decoration">
     <div class="c-title__decoration__head">
-      <h3 class="c-title--sectionLine u-mb40">よくあるご質問</h3>
+      <h2 class="c-title--sectionLine u-mb40">よくあるご質問</h2>
       <p class="c-title--orangeLine">
         <span class="marker">
           お客様からよくいただく<br>
@@ -46,7 +46,7 @@ get_header();
   $qas = get_field( 'faq_questions_answers' );
   if ( $qas ) :
     ?>
-    <section class="p-faq__list">
+    <div class="p-faq__list">
       <ul class="c-accordion">
         <?php foreach ( $qas as $i => $qa ) :
           if ( empty( $qa['question'] ) || empty( $qa['answer'] ) ) {
@@ -68,7 +68,7 @@ get_header();
           </li>
         <?php endforeach; ?>
       </ul>
-    </section>
+    </div>
   <?php endif; ?>
 
   <?php get_template_part( 'template-parts/common' ); ?>

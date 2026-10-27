@@ -7,11 +7,6 @@
   transform: translateX(-(calc(50 / 1050 * 100%)));
   margin-bottom: 3rem;
 
-  &__dl {
-    display: flex;
-    align-items: center;
-  }
-
   &__item {
     width: calc(300 / 1050 * 100%);
     margin-left: calc(50 / 1050 * 100%);
