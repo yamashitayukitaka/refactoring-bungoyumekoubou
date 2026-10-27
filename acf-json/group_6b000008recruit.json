@@ -3,31 +3,6 @@
     "title": "採用情報",
     "fields": [
         {
-            "key": "field_6b000008mv",
-            "label": "メインビジュアル",
-            "name": "mv-recruit-img",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": false,
-            "conditional_logic": false,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
-            "mime_types": ""
-        },
-        {
             "key": "field_6b000008pres",
             "label": "代表メッセージ",
             "name": "recruit-president",

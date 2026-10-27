@@ -51,7 +51,7 @@ ACF は **「運用者が変えるコンテンツ」だけ** に使う。固定�
 
 
 ### 画像フィールド
-- 直書きに移行した画像は `IMG_URL . '/スラッグ/ファイル名'` に置く（例: `renovation/process_01.png`）
+- 直書きに移行した画像は `get_template_directory_uri() . '/dist/img/スラッグ/ファイル名'` に置く。下層ページの MV は `dist/img/{スラッグ}/mv01.webp` に統一
 
 ### MV（メインビジュアル）
 
