@@ -470,9 +470,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "post_template",
                 "operator": "==",
-                "value": "property"
+                "value": "rental.php"
             }
         ]
     ],
