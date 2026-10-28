@@ -77,7 +77,17 @@ get_header();
     <?php endif; ?>
   </div>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
+  <?php
+  get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'heading_tag'      => 'h3',
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+      'alt' => '中古物件のギャラリーイメージ',
+    )
+  );
+  ?>
   
   <?php $detail = get_field( 'detail' ); ?>
   <?php if ( $detail && ( ! empty( $detail['price'] ) || ! empty( $detail['name'] ) || ! empty( $detail['traffic'] ) || ! empty( $detail['address'] ) || ! empty( $detail['floor'] ) || ! empty( $detail['totalFloor'] ) || ! empty( $detail['siteArea'] ) || ! empty( $detail['age'] ) || ! empty( $detail['elementary'] ) || ! empty( $detail['junior-high'] ) || ! empty( $detail['point'] ) || ! empty( $detail['ground'] ) || ! empty( $detail['purpose'] ) || ! empty( $detail['health'] ) || ! empty( $detail['floor-area-ratio'] ) || ! empty( $detail['urban'] ) || ! empty( $detail['contact-path'] ) || ! empty( $detail['structure'] ) || ! empty( $detail['transaction'] ) || ! empty( $detail['commission'] ) || ! empty( $detail['delivery'] ) || ! empty( $detail['facility'] ) || ! empty( $detail['remarks'] ) || ! empty( $detail['contact'] ) ) ) :?>

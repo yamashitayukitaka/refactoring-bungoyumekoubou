@@ -81,6 +81,7 @@ get_header();
     array(
       'heading_tag'      => 'h3',
       'has_thumbsliders' => get_field( 'a-imgs' ),
+      'alt' => '賃貸物件のギャラリーイメージ',
     )
   );
   ?>
