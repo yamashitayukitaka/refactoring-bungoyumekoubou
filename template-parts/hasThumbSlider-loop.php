@@ -7,10 +7,9 @@
 
 ?>
 <?php
-$heading_tag = $args['heading_tag'] ?? 'h2';
-?>
-<?php
-$has_thumbsliders = get_field( 'a-imgs' );
+$args             = $args ?? array();
+$heading_tag      = $args['heading_tag'] ?? 'h2';
+$has_thumbsliders = $args['has_thumbsliders'] ?? array();
 ?>
 <?php
 $has_gallery = false;

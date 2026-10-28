@@ -166,7 +166,15 @@ get_header();
     </div>
   </section>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
+  <?php
+  get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+    )
+  );
+  ?>
 
   <!-- HEIGの標準仕様 -->
   <section class="p-heig__specification">

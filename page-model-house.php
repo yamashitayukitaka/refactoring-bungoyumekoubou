@@ -69,7 +69,15 @@ get_header();
       兼ね備えた理想的な住まいです。
     </div>
     <div class="p-modelHouse__overview__gallery">
-      <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
+      <?php
+      get_template_part(
+        'template-parts/hasThumbSlider-loop',
+        null,
+        array(
+          'has_thumbsliders' => get_field( 'a-imgs' ),
+        )
+      );
+      ?>
     </div>
 
 
@@ -122,74 +130,17 @@ get_header();
       <a class="p-modelHouse__overview__link" href="https://sankaido.com/shelly-house/" target="_blank">Shelly Houseについて</a>
     </span>
 
-    <?php $has_thumbsliders = get_field( 'b-img' ); ?>
+    <div class="p-modelHouse__overview__gallery">
     <?php
-    $has_gallery_b = false;
-    if ( $has_thumbsliders ) {
-      foreach ( $has_thumbsliders as $row ) {
-        if ( ! empty( $row['img'] ) ) {
-          $has_gallery_b = true;
-          break;
-        }
-      }
-    }
+    get_template_part(
+      'template-parts/hasThumbSlider-loop',
+      null,
+      array(
+        'has_thumbsliders' => get_field( 'b-img' ),
+      )
+    );
     ?>
-    <?php if ( $has_gallery_b ) : ?>
-      <section class="p-modelHouse__overview__gallery u-mb100">
-        <h2 class="c-title--sectionEn">
-          GALLERY
-        </h2>
-        <p class="c-title--sectionSub u-mb50">
-          ギャラリー
-        </p>
-        <div class="p-modelHouse__overview__gallery">
-          <?php if ( $has_thumbsliders ) : ?>
-            <ul class="js-hasThumbSlider c-hasThumbSlider__list">
-              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
-                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item">
-                    <?php
-                    echo wp_get_attachment_image(
-                        $has_thumbslider['img'],
-                        'full',
-                        false,
-                        array(
-                        'class'   => 'c-hasThumbSlider__list__img',
-                        'alt'     => get_the_title() . 'のイメージ',
-                        'loading' => 'lazy',
-                        )
-                    );
-                    ?>
-                  </li>
-                <?php endif; ?>
-              <?php endforeach; ?>
-            </ul>
-            <ul class="c-hasThumbSlider__thumbnail__list">
-              <?php $count = 0; ?>
-              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
-                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <?php
-                    echo wp_get_attachment_image(
-                        $has_thumbslider['img'],
-                        'full',
-                        false,
-                        array(
-                        'class'   => 'c-hasThumbSlider__thumbnail__img',
-                        'alt'     => get_the_title() . 'のイメージ',
-                        'loading' => 'lazy',
-                        )
-                    );
-                    ?>
-                  </li>
-                <?php endif; ?>
-              <?php endforeach; ?>
-            </ul>
-          <?php endif; ?>
-        </div>
-
-      </section>
-    <?php endif; ?>
+    </div>
 
     <div class="u-center u-mb100">
       <span class="p-modelHouse__overview__action">
@@ -238,75 +189,18 @@ get_header();
     <span class="p-modelHouse__overview__action">
       <a class="p-modelHouse__overview__link" href="<?php echo esc_url( home_url( 'irohaie' ) ); ?>" target="_blank">いろは家について</a>
     </span>
-
-    <?php $has_thumbsliders = get_field( 'c-img' ); ?>
+  
+    <div class="p-modelHouse__overview__gallery">
     <?php
-    $has_gallery_c = false;
-    if ( $has_thumbsliders ) {
-      foreach ( $has_thumbsliders as $row ) {
-        if ( ! empty( $row['img'] ) ) {
-          $has_gallery_c = true;
-          break;
-        }
-      }
-    }
+    get_template_part(
+      'template-parts/hasThumbSlider-loop',
+      null,
+      array(
+        'has_thumbsliders' => get_field( 'c-img' ),
+      )
+    );
     ?>
-    <?php if ( $has_gallery_c ) : ?>
-      <section class="p-modelHouse__overview__gallery u-mb100">
-        <h2 class="c-title--sectionEn">
-          GALLERY
-        </h2>
-        <p class="c-title--sectionSub u-mb50">
-          ギャラリー
-        </p>
-        <div class="p-modelHouse__overview__gallery">
-          <?php if ( $has_thumbsliders ) : ?>
-            <ul class="js-hasThumbSlider c-hasThumbSlider__list">
-              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
-                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__list__item">
-                    <?php
-                    echo wp_get_attachment_image(
-                        $has_thumbslider['img'],
-                        'full',
-                        false,
-                        array(
-                        'class'   => 'c-hasThumbSlider__list__img',
-                        'alt'     => get_the_title() . 'のイメージ',
-                        'loading' => 'lazy',
-                        )
-                    );
-                    ?>
-                  </li>
-                <?php endif; ?>
-              <?php endforeach; ?>
-            </ul>
-            <ul class="c-hasThumbSlider__thumbnail__list">
-              <?php $count = 0; ?>
-              <?php foreach ( $has_thumbsliders as $has_thumbslider ) : ?>
-                <?php if ( ! empty( $has_thumbslider['img'] ) ) : ?>
-                  <li class="c-hasThumbSlider__thumbnail__item" data-slide="<?php echo esc_html( $count++ ); ?>">
-                    <?php
-                    echo wp_get_attachment_image(
-                        $has_thumbslider['img'],
-                        'full',
-                        false,
-                        array(
-                        'class'   => 'c-hasThumbSlider__thumbnail__img',
-                        'alt'     => get_the_title() . 'のイメージ',
-                        'loading' => 'lazy',
-                        )
-                    );
-                    ?>
-                  </li>
-                <?php endif; ?>
-              <?php endforeach; ?>
-            </ul>
-          <?php endif; ?>
-        </div>
-
-      </section>
-    <?php endif; ?>
+    </div>
 
     <div class="u-center u-mb100">
       <span class="p-modelHouse__overview__action">
