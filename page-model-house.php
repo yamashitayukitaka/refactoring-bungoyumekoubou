@@ -75,6 +75,7 @@ get_header();
         null,
         array(
           'has_thumbsliders' => get_field( 'a-imgs' ),
+          'alt' => 'TOSハウジングメッセのギャラリーイメージ',
         )
       );
       ?>
@@ -137,6 +138,7 @@ get_header();
       null,
       array(
         'has_thumbsliders' => get_field( 'b-img' ),
+        'alt' => 'シェリーハウスのギャラリーイメージ',
       )
     );
     ?>
@@ -197,6 +199,7 @@ get_header();
       null,
       array(
         'has_thumbsliders' => get_field( 'c-img' ),
+        'alt' => 'いろは家のギャラリーイメージ',
       )
     );
     ?>

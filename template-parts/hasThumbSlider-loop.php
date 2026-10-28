@@ -3,6 +3,12 @@
  * Thumbnail slider loop part.
  *
  * @package Wazeka
+ *
+ * @var array $args {
+ *   @type array  $has_thumbsliders Repeater rows with an `img` sub field.
+ *   @type string $heading_tag      Heading tag for GALLERY (default h2).
+ *   @type string $alt              Alt text prefix before slide number (default: post title + のイメージ).
+ * }
  */
 
 ?>
@@ -10,6 +16,7 @@
 $args             = $args ?? array();
 $heading_tag      = $args['heading_tag'] ?? 'h2';
 $has_thumbsliders = $args['has_thumbsliders'] ?? array();
+$alt_base         = array_key_exists( 'alt', $args ) ? $args['alt'] : get_the_title() . 'のイメージ';
 ?>
 <?php
 $has_gallery = false;
@@ -38,7 +45,7 @@ if ( ! empty( $has_thumbsliders ) && is_array( $has_thumbsliders ) ) {
             <?php
             $slider_attrs = array(
               'class' => 'c-hasThumbSlider__list__img',
-              'alt'   => get_the_title() . 'のイメージ（' . ( $slide_index + 1 ) . '）',
+              'alt'   => $alt_base . '（' . ( $slide_index + 1 ) . '）',
             );
             if ( $slide_index > 0 ) {
               $slider_attrs['loading'] = 'lazy';
@@ -61,7 +68,7 @@ if ( ! empty( $has_thumbsliders ) && is_array( $has_thumbsliders ) ) {
                 false,
                 array(
                 'class'   => 'c-hasThumbSlider__thumbnail__img',
-                'alt'     => get_the_title() . 'のイメージ（' . ( $thumb_index + 1 ) . '）',
+                'alt'     => $alt_base . '（' . ( $thumb_index + 1 ) . '）',
                 'loading' => 'lazy',
                 )
             );
