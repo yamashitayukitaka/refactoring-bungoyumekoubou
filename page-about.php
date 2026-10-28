@@ -21,10 +21,7 @@ get_header();
         ABOUT US
       </p>
     </div>
-    <?php $mv = get_field( 'mv-page' ); ?>
-    <?php if ( $mv ) : ?>
-      <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $mv, 'full' ) ); ?>');"></figure>
-    <?php endif; ?>
+    <figure class="c-pageMv__visual" style="background-image: url('<?php echo esc_url( get_template_directory_uri() . '/dist/img/about/mv01.webp' ); ?>');"></figure>
   </div>
 
   <section class="l-content--innerNarrow u-mb100">

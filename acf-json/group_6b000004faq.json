@@ -3,31 +3,6 @@
     "title": "よくあるご質問",
     "fields": [
         {
-            "key": "field_6b000004mv",
-            "label": "メインビジュアル",
-            "name": "mv-faq-img",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": false,
-            "conditional_logic": false,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "url",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": 0,
-            "min_height": 0,
-            "min_size": 0,
-            "max_width": 0,
-            "max_height": 0,
-            "max_size": 0,
-            "mime_types": ""
-        },
-        {
             "key": "field_6b000004qas",
             "label": "質問と回答",
             "name": "faq_questions_answers",
