@@ -70,14 +70,14 @@ get_header();
     </div>
     <div class="p-modelHouse__overview__gallery">
       <?php
-      get_template_part(
+    get_template_part(
         'template-parts/hasThumbSlider-loop',
         null,
         array(
           'has_thumbsliders' => get_field( 'a-imgs' ),
-          'alt' => 'TOSハウジングメッセのギャラリーイメージ',
+          'alt'              => 'TOSハウジングメッセのギャラリーイメージ',
         )
-      );
+    );
       ?>
     </div>
 
@@ -134,12 +134,12 @@ get_header();
     <div class="p-modelHouse__overview__gallery">
     <?php
     get_template_part(
-      'template-parts/hasThumbSlider-loop',
-      null,
-      array(
+        'template-parts/hasThumbSlider-loop',
+        null,
+        array(
         'has_thumbsliders' => get_field( 'b-img' ),
-        'alt' => 'シェリーハウスのギャラリーイメージ',
-      )
+        'alt'              => 'シェリーハウスのギャラリーイメージ',
+        )
     );
     ?>
     </div>
@@ -195,12 +195,12 @@ get_header();
     <div class="p-modelHouse__overview__gallery">
     <?php
     get_template_part(
-      'template-parts/hasThumbSlider-loop',
-      null,
-      array(
+        'template-parts/hasThumbSlider-loop',
+        null,
+        array(
         'has_thumbsliders' => get_field( 'c-img' ),
-        'alt' => 'いろは家のギャラリーイメージ',
-      )
+        'alt'              => 'いろは家のギャラリーイメージ',
+        )
     );
     ?>
     </div>

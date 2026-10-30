@@ -77,15 +77,15 @@ get_header();
   </div>
 
   <?php
-  get_template_part(
+get_template_part(
     'template-parts/hasThumbSlider-loop',
     null,
     array(
       'heading_tag'      => 'h3',
       'has_thumbsliders' => get_field( 'a-imgs' ),
-      'alt' => '土地情報のギャラリーイメージ',
+      'alt'              => '土地情報のギャラリーイメージ',
     )
-  );
+);
   ?>
 
   <?php $detail = get_field( 'detail' ); ?>
