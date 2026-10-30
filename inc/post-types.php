@@ -22,7 +22,7 @@ function wazeka_register_post_types() {
     ),
     'property' => array(
       'label'    => '土地・物件',
-      'supports' => array( 'title', 'editor', 'thumbnail' ),
+      'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
     ),
     'blog'     => array(
       'label'    => 'ブログ',

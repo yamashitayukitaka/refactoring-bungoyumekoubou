@@ -49,6 +49,56 @@
             "save_terms": 0
         },
         {
+            "key": "field_6b000020aimgs",
+            "label": "ギャラリー",
+            "name": "a-imgs",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "詳細ページのサムネ連動スライダー（hasThumbSlider）用。",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "行を追加",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6b000020ai",
+                    "label": "画像",
+                    "name": "img",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": false,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "preview_size": "medium",
+                    "parent_repeater": "field_6b000020aimgs"
+                }
+            ]
+        },
+        {
             "key": "field_6b000020top",
             "label": "物件概要",
             "name": "top-info",
@@ -399,9 +449,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "post_template",
                 "operator": "==",
-                "value": "property"
+                "value": "land.php"
             }
         ]
     ],
@@ -414,5 +464,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1792434831
+    "modified": 1793188800
 }

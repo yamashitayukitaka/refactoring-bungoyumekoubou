@@ -74,9 +74,17 @@ get_header();
     <?php endif; ?>
   </div>
 
-  
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
- 
+  <?php
+get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'heading_tag'      => 'h3',
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+      'alt'              => '賃貸物件のギャラリーイメージ',
+    )
+);
+  ?>
   <?php $detail = get_field( 'detail' ); ?>
   <?php if ( $detail && ( ! empty( $detail['name'] ) || ! empty( $detail['traffic'] ) || ! empty( $detail['address'] ) || ! empty( $detail['document'] ) || ! empty( $detail['mutual'] ) || ! empty( $detail['security'] ) || ! empty( $detail['key'] ) || ! empty( $detail['renewal'] ) || ! empty( $detail['insurance'] ) || ! empty( $detail['deposit'] ) || ! empty( $detail['brokerage'] ) || ! empty( $detail['floor'] ) || ! empty( $detail['total'] ) || ! empty( $detail['site'] ) || ! empty( $detail['age'] ) || ! empty( $detail['parking'] ) || ! empty( $detail['move'] ) || ! empty( $detail['structure'] ) || ! empty( $detail['transaction'] ) || ! empty( $detail['elementary'] ) || ! empty( $detail['juniorHigh'] ) || ! empty( $detail['facility'] ) || ! empty( $detail['point'] ) || ! empty( $detail['remarks'] ) || ! empty( $detail['contact'] ) ) ) :?>
     <section class = "l-content--middle u-mb100">

@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_6b000007a",
-            "label": "ギャラリーA",
+            "label": "TOSハウジングメッセのギャラリー",
             "name": "a-imgs",
             "aria-label": "",
             "type": "repeater",
@@ -31,30 +31,30 @@
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
-                    "required": false,
-                    "conditional_logic": false,
+                    "required": 0,
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
-                    "preview_size": "medium",
+                    "return_format": "id",
                     "library": "all",
-                    "min_width": 0,
-                    "min_height": 0,
-                    "min_size": 0,
-                    "max_width": 0,
-                    "max_height": 0,
-                    "max_size": 0,
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
                     "mime_types": "",
+                    "preview_size": "medium",
                     "parent_repeater": "field_6b000007a"
                 }
             ]
         },
         {
             "key": "field_6b000007b",
-            "label": "ギャラリーB",
+            "label": "シェリーハウスのギャラリー",
             "name": "b-img",
             "aria-label": "",
             "type": "repeater",
@@ -81,30 +81,30 @@
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
-                    "required": false,
-                    "conditional_logic": false,
+                    "required": 0,
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
-                    "preview_size": "medium",
+                    "return_format": "id",
                     "library": "all",
-                    "min_width": 0,
-                    "min_height": 0,
-                    "min_size": 0,
-                    "max_width": 0,
-                    "max_height": 0,
-                    "max_size": 0,
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
                     "mime_types": "",
+                    "preview_size": "medium",
                     "parent_repeater": "field_6b000007b"
                 }
             ]
         },
         {
             "key": "field_6b000007c",
-            "label": "ギャラリーC",
+            "label": "いろは家のギャラリー",
             "name": "c-img",
             "aria-label": "",
             "type": "repeater",
@@ -131,23 +131,23 @@
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
-                    "required": false,
-                    "conditional_logic": false,
+                    "required": 0,
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
-                    "preview_size": "medium",
+                    "return_format": "id",
                     "library": "all",
-                    "min_width": 0,
-                    "min_height": 0,
-                    "min_size": 0,
-                    "max_width": 0,
-                    "max_height": 0,
-                    "max_size": 0,
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
                     "mime_types": "",
+                    "preview_size": "medium",
                     "parent_repeater": "field_6b000007c"
                 }
             ]
@@ -171,5 +171,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1792434756
+    "modified": 1793177552
 }

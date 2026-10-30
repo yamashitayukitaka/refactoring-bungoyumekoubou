@@ -120,7 +120,15 @@ get_header();
     </div>
   </div>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
+  <?php
+get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+    )
+);
+  ?>
 
   
   <div class="p-rireve__feature">

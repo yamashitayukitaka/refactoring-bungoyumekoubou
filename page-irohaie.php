@@ -188,7 +188,15 @@ get_header();
     </p>
   </section>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
+  <?php
+get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+    )
+);
+  ?>
 
   <section class="p-irohaie__features">
     <div class="p-irohaie__features__heading">

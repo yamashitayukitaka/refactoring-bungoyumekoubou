@@ -76,7 +76,17 @@ get_header();
 
   </div>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop', null, array( 'heading_tag' => 'h3' ) ); ?>
+  <?php
+get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'heading_tag'      => 'h3',
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+      'alt'              => '土地情報のギャラリーイメージ',
+    )
+);
+  ?>
 
   <?php $detail = get_field( 'detail' ); ?>
   <?php if ( $detail && ( ! empty( $detail['name'] ) || ! empty( $detail['address'] ) || ! empty( $detail['traffic'] ) || ! empty( $detail['price'] ) || ! empty( $detail['land-area'] ) || ! empty( $detail['elementary'] ) || ! empty( $detail['junior-high'] ) || ! empty( $detail['point'] ) || ! empty( $detail['ground'] ) || ! empty( $detail['purpose'] ) || ! empty( $detail['health'] ) || ! empty( $detail['floor-area-ratio'] ) || ! empty( $detail['urban'] ) || ! empty( $detail['contact-path'] ) || ! empty( $detail['transaction'] ) || ! empty( $detail['commission'] ) || ! empty( $detail['facility'] ) || ! empty( $detail['remarks'] ) || ! empty( $detail['contact'] ) ) ) : ?>

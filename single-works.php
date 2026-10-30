@@ -88,7 +88,15 @@ get_header();
     </section>
   <?php endif; ?>
 
-  <?php get_template_part( 'template-parts/hasThumbSlider-loop' ); ?>
+  <?php
+get_template_part(
+    'template-parts/hasThumbSlider-loop',
+    null,
+    array(
+      'has_thumbsliders' => get_field( 'a-imgs' ),
+    )
+);
+  ?>
 
   <?php if ( have_rows( 'flex-design' ) ) : ?>
     <section class = "u-bg">
