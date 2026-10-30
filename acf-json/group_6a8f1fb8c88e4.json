@@ -3,6 +3,26 @@
     "title": "店舗情報",
     "fields": [
         {
+            "key": "field_6a8f1fb9impid",
+            "label": "import_id",
+            "name": "import_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "WP-CLI JSON import unique key.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6a8f1fb9c0caa",
             "label": "店舗情報",
             "name": "store_informations",
@@ -198,5 +218,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1793134893
+    "modified": 1793323970
 }

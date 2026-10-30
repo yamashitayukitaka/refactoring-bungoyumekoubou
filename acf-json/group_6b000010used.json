@@ -3,6 +3,26 @@
     "title": "建売住宅・中古物件",
     "fields": [
         {
+            "key": "field_6b000010impid",
+            "label": "import_id",
+            "name": "import_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "WP-CLI JSON import unique key.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6b000010cat",
             "label": "物件種別",
             "name": "property-category",
@@ -646,5 +666,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1793188802
+    "modified": 1793323970
 }

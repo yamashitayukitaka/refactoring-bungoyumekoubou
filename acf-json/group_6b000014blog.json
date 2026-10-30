@@ -3,6 +3,26 @@
     "title": "ブログ詳細",
     "fields": [
         {
+            "key": "field_6b000014impid",
+            "label": "import_id",
+            "name": "import_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "WP-CLI JSON import unique key.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6b000014contents",
             "label": "記事コンテンツ",
             "name": "contents",
@@ -112,5 +132,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1792434743
+    "modified": 1793323970
 }
