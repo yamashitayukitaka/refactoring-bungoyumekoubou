@@ -35,6 +35,9 @@ return array(
   // バリデーションで許可する template ファイル名。
   'allowed_page_templates' => array( 'land.php', 'rental.php', 'used.php' ),
 
+  // acf の image にはメディア登録用ファイル名（例: hatake-nakari-3ku__gallery-001.jpg）を書く。
+  // Downloads/property-media から管理画面で一括アップロード後に import-properties.php を実行。
+
   // template → acf-json の field group ファイル。
   'acf_json_groups'        => array(
     'land.php'   => 'group_6b000020land.json',

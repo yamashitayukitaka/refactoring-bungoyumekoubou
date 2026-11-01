@@ -108,6 +108,15 @@ function wazeka_import_acf_json_parse_field_list( array $fields ) {
       continue;
     }
 
+    // image 型は URL / テーマ相対パス / attachment ID を JSON に書き、インポート側で ID に解決する。
+    if ( 'image' === $type ) {
+      $map[ $name ] = array(
+        'key'  => $key,
+        'type' => 'image',
+      );
+      continue;
+    }
+
     // 単純な1項目なら、保存用名前（key）だけを覚えます。
     $map[ $name ] = $key;
   }

@@ -25,4 +25,6 @@ return array(
 
   // 1 post type = 1 acf-json group のパターン。
   'acf_json_group'      => 'group_6b000011works.json',
+
+  // acf の image にはメディア登録用ファイル名（例: works-9__thumb.jpg）を書く。Downloads/works-media から管理画面で一括アップロード後に import。
 );

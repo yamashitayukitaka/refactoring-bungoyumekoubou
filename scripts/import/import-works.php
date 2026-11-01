@@ -5,7 +5,8 @@
  * WAZEKA_IMPORT_TYPES を works に固定してから import.php を読み込みます。
  *
  * 実行例:
- *   wp eval-file wp-content/themes/wazeka/scripts/import/import-works.php
+ *   1. Downloads/works-media を管理画面メディアに一括アップロード
+ *   2. wp eval-file wp-content/themes/wazeka/scripts/import/import-works.php
  *
  * @package Wazeka
  */

@@ -12,6 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
+require_once __DIR__ . '/ImportMedia.php';
+
 /**
  * フィールド定義から、update_field に渡す field key を取り出します。
  *
@@ -62,6 +64,14 @@ function wazeka_import_acf_validate_data( array $data, array $map, $label = 'acf
       );
       if ( null !== $tax_error ) {
         $errors[] = $tax_error;
+      }
+      continue;
+    }
+
+    if ( wazeka_import_acf_is_image_definition( $nested_field_map ) ) {
+      $image_error = wazeka_import_acf_validate_image_value( $value, $label . '.' . $field_name );
+      if ( null !== $image_error ) {
+        $errors[] = $image_error;
       }
       continue;
     }
@@ -278,14 +288,19 @@ function wazeka_import_find_or_create_term( $taxonomy, $slug, $name, $context_la
 }
 
 /**
- * field 定義に応じて JSON 値を update_field 向けに整える（taxonomy は term ID へ解決）.
+ * field 定義に応じて JSON 値を update_field 向けに整える（taxonomy / image / 入れ子）.
  *
  * @param string|array<string, mixed> $field_definition
  * @param mixed                       $value
  * @param string                      $context_label
+ * @param int                         $post_id 親 works 投稿 ID.
  * @return mixed|null 失敗時 null.
  */
-function wazeka_import_acf_prepare_field_value( $field_definition, $value, $context_label ) {
+function wazeka_import_acf_prepare_field_value( $field_definition, $value, $context_label, $post_id = 0 ) {
+  if ( is_array( $field_definition ) && ! empty( $field_definition['fields'] ) && is_array( $field_definition['fields'] ) ) {
+    return wazeka_import_acf_prepare_container_value( $field_definition, $value, $context_label, $post_id );
+  }
+
   if ( wazeka_import_acf_is_taxonomy_definition( $field_definition ) ) {
     return wazeka_import_acf_prepare_taxonomy_value(
         $value,
@@ -294,5 +309,76 @@ function wazeka_import_acf_prepare_field_value( $field_definition, $value, $cont
     );
   }
 
+  if ( wazeka_import_acf_is_image_definition( $field_definition ) ) {
+    return wazeka_import_acf_prepare_image_value( $value, $post_id, $context_label );
+  }
+
   return $value;
+}
+
+/**
+ * group / repeater の JSON を再帰的に整える。
+ *
+ * @param array<string, mixed> $field_definition
+ * @param mixed                $value
+ * @param string               $context_label
+ * @param int                  $post_id
+ * @return mixed|null
+ */
+function wazeka_import_acf_prepare_container_value( $field_definition, $value, $context_label, $post_id ) {
+  if ( ! is_array( $value ) ) {
+    return $value;
+  }
+
+  $sub_field_map = $field_definition['fields'];
+
+  if ( wazeka_import_acf_is_list_array( $value ) ) {
+    $prepared_rows = array();
+    foreach ( $value as $index => $repeater_row ) {
+      if ( ! is_array( $repeater_row ) ) {
+        continue;
+      }
+      $prepared_rows[] = wazeka_import_acf_prepare_row(
+          $repeater_row,
+          $sub_field_map,
+          $context_label . '[' . $index . ']',
+          $post_id
+      );
+    }
+    return $prepared_rows;
+  }
+
+  return wazeka_import_acf_prepare_row( $value, $sub_field_map, $context_label, $post_id );
+}
+
+/**
+ * group / repeater 1 行分の連想配列を整える。
+ *
+ * @param array<string, mixed> $row
+ * @param array<string, mixed> $sub_field_map
+ * @param string               $context_label
+ * @param int                  $post_id
+ * @return array<string, mixed>
+ */
+function wazeka_import_acf_prepare_row( array $row, array $sub_field_map, $context_label, $post_id ) {
+  $prepared = array();
+
+  foreach ( $row as $sub_name => $sub_value ) {
+    if ( ! isset( $sub_field_map[ $sub_name ] ) ) {
+      continue;
+    }
+
+    $sub_prepared = wazeka_import_acf_prepare_field_value(
+        $sub_field_map[ $sub_name ],
+        $sub_value,
+        $context_label . '.' . $sub_name,
+        $post_id
+    );
+
+    if ( null !== $sub_prepared ) {
+      $prepared[ $sub_name ] = $sub_prepared;
+    }
+  }
+
+  return $prepared;
 }

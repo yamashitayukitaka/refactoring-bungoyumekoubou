@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // JsonValidator（JSON 読込・バリデーション・field map 解決）.
+require_once __DIR__ . '/ImportMedia.php';
 require_once __DIR__ . '/validators/JsonValidator.php';
 
 /**
@@ -185,7 +186,8 @@ function wazeka_import_row( array $config, array $row ) {
       $prepared_value = wazeka_import_acf_prepare_field_value(
           $field_definition,
           $value,
-          $import_id . '.' . $field_name
+          $import_id . '.' . $field_name,
+          (int) $post_id
       );
 
       if ( null === $prepared_value ) {
