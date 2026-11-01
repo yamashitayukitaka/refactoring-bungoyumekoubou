@@ -29,21 +29,44 @@
             "aria-label": "",
             "type": "taxonomy",
             "instructions": "",
-            "required": false,
-            "conditional_logic": false,
+            "required": 0,
+            "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
             "taxonomy": "works-type",
-            "field_type": "checkbox",
-            "return_format": "id",
-            "multiple": 0,
-            "allow_null": 0,
             "add_term": 1,
-            "load_terms": 0,
-            "save_terms": 0
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "object",
+            "field_type": "select",
+            "allow_null": 0,
+            "multiple": 0
+        },
+        {
+            "key": "field_6ae6cbc2d693a",
+            "label": "市区町村名",
+            "name": "works-tag",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "works-tag",
+            "add_term": 1,
+            "save_terms": 1,
+            "load_terms": 1,
+            "return_format": "id",
+            "field_type": "select",
+            "allow_null": 0,
+            "multiple": 0
         },
         {
             "key": "field_6ac5fbf9e0641",
@@ -661,5 +684,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1793323970
+    "modified": 1793511651
 }

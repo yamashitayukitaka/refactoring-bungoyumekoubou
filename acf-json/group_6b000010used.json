@@ -37,13 +37,13 @@
                 "id": ""
             },
             "taxonomy": "property-category",
-            "field_type": "checkbox",
-            "return_format": "id",
+            "field_type": "select",
+            "return_format": "object",
             "multiple": 0,
             "allow_null": 0,
             "add_term": 1,
-            "load_terms": 0,
-            "save_terms": 0
+            "load_terms": 1,
+            "save_terms": 1
         },
         {
             "key": "field_6b000010area",
@@ -60,13 +60,13 @@
                 "id": ""
             },
             "taxonomy": "property-area",
-            "field_type": "checkbox",
-            "return_format": "id",
+            "field_type": "select",
+            "return_format": "object",
             "multiple": 0,
             "allow_null": 0,
             "add_term": 1,
-            "load_terms": 0,
-            "save_terms": 0
+            "load_terms": 1,
+            "save_terms": 1
         },
         {
             "key": "field_6b000010aimgs",
