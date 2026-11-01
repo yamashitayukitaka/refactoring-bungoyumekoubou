@@ -69,6 +69,31 @@
             "save_terms": 1
         },
         {
+            "key": "field_6b000030pthumb",
+            "label": "サムネイル画像",
+            "name": "property-thumb",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "詳細ページ上部（c-thumbnail）用。一覧カードもこの画像を使用。",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
             "key": "field_6b000030aimgs",
             "label": "ギャラリー",
             "name": "a-imgs",

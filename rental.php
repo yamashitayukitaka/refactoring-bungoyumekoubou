@@ -23,17 +23,22 @@ get_header();
     <h2 class = "p-event__ttl u-mb50">
       【<?php the_title(); ?>】
     </h2>
-    <figure class = "c-thumbnail">
-      <?php
-    the_post_thumbnail(
-        'full',
-        array(
-        'loading'       => 'eager', // 初期表示なのでlazyを解除！
-        'fetchpriority' => 'high',  // 最優先でダウンロード！
-        )
-    );
-      ?>
-    </figure>
+    <?php $property_thumb = get_field( 'property-thumb' ); ?>
+    <?php if ( ! empty( $property_thumb ) ) : ?>
+      <figure class = "c-thumbnail">
+        <?php
+        echo wp_get_attachment_image(
+            $property_thumb,
+            'full',
+            false,
+            array(
+              'fetchpriority' => 'high',
+              'alt'           => get_the_title(),
+            )
+        );
+        ?>
+      </figure>
+    <?php endif; ?>
   </section>
   <div class="l-content--middle u-mb100">
     <?php $property_area = get_field( 'property-area' ); ?>
