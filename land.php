@@ -24,9 +24,20 @@ get_header();
       【<?php the_title(); ?>】
     </h2>
 
-    <?php if ( has_post_thumbnail() ) : ?>
+    <?php $property_thumb = get_field( 'property-thumb' ); ?>
+    <?php if ( ! empty( $property_thumb ) ) : ?>
       <figure class="c-thumbnail">
-        <?php the_post_thumbnail(); ?>
+        <?php
+        echo wp_get_attachment_image(
+            $property_thumb,
+            'full',
+            false,
+            array(
+              'fetchpriority' => 'high',
+              'alt'           => get_the_title(),
+            )
+        );
+        ?>
       </figure>
     <?php endif; ?>
 

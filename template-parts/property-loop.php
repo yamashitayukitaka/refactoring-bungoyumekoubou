@@ -10,7 +10,20 @@
   <article class = "c-cardList__body">
     <a href = "<?php the_permalink(); ?>" class = "c-cardList__link">
       <figure class = "c-cardList__imgWrap">
-        <?php the_post_thumbnail( '', array( 'loading' => 'lazy' ) ); ?>
+        <?php $property_thumb = get_field( 'property-thumb' ); ?>
+        <?php if ( ! empty( $property_thumb ) ) : ?>
+          <?php
+        echo wp_get_attachment_image(
+            $property_thumb,
+            'full',
+            false,
+            array(
+                'loading' => 'lazy',
+                'alt'     => get_the_title(),
+              )
+        );
+          ?>
+        <?php endif; ?>
       </figure>
       <div class = "c-cardList__txtWrap">
 

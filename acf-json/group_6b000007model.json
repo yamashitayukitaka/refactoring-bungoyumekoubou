@@ -3,6 +3,26 @@
     "title": "モデルハウス",
     "fields": [
         {
+            "key": "field_6b000007impid",
+            "label": "import_id",
+            "name": "import_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "WP-CLI JSON import unique key.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6b000007a",
             "label": "TOSハウジングメッセのギャラリー",
             "name": "a-imgs",
@@ -171,5 +191,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1793177552
+    "modified": 1793323970
 }

@@ -1,0 +1,1177 @@
+[
+  {
+    "import_id": "property-c50d08c0aa0b",
+    "template": "land.php",
+    "post_title": "坂ノ市1丁目売土地",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-c50d08c0aa0b__gallery-001.jpg"
+        },
+        {
+          "img": "property-c50d08c0aa0b__gallery-002.jpg"
+        },
+        {
+          "img": "property-c50d08c0aa0b__gallery-003.jpg"
+        },
+        {
+          "img": "property-c50d08c0aa0b__gallery-004.jpg"
+        },
+        {
+          "img": "property-c50d08c0aa0b__gallery-005.jpg"
+        },
+        {
+          "img": "property-c50d08c0aa0b__gallery-006.jpg"
+        },
+        {
+          "img": "property-c50d08c0aa0b__gallery-007.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "2号地：209.07㎡（63.24坪）、3号地：184.99㎡（55.95坪）",
+        "school": "坂ノ市小学校、坂ノ市中学校",
+        "copy": "人気の坂ノ市中央！駅まで徒歩6分！",
+        "price": "11000000"
+      },
+      "detail": {
+        "name": "坂ノ市中央１丁目売土地",
+        "address": "大分市坂ノ市中央１丁目１１７番２（２号地）、大分市坂ノ市中央1丁目１１７番３（３号地）",
+        "traffic": "JR日豊本線「坂ノ市」駅　徒歩約６分、「坂ノ市」バス停　徒歩約３分",
+        "price": "２号地：１３,６７０,０００円、３号地：１１,０００,０００円",
+        "land-area": "２号地：２０９.０７㎡（６３.２４坪）、３号地：１８４.９９㎡（５５.９５坪）",
+        "elementary": "坂ノ市小学校",
+        "junior-high": "坂ノ市中学校",
+        "point": "スーパー、コンビニ近し　坂ノ市駅まで徒歩約６分、大分駅まで電車で２５分",
+        "ground": "宅地",
+        "purpose": "第１種住居地域",
+        "health": "６０％",
+        "floor-area-ratio": "２００％",
+        "urban": "市街化区域内",
+        "contact-path": "敷地内北側道路に接道（共有持分あり）",
+        "transaction": "売主",
+        "commission": "当方不払い",
+        "facility": "上水道引込有、合併処理浄化槽設置要",
+        "remarks": "",
+        "contact": "株式会社豊後夢工房・不動産事業部\n　　　　　TEL：097-541-1481\n　　　　　担当：鶴田"
+      },
+      "infomation": [
+        {
+          "img": "property-c50d08c0aa0b__info-001.jpg",
+          "txt": "JR日豊本線「坂ノ市」駅",
+          "value": "384ｍ　徒歩約5分"
+        },
+        {
+          "img": "property-c50d08c0aa0b__info-002.jpg",
+          "txt": "坂ノ市病院",
+          "value": "476ｍ　徒歩約7分"
+        },
+        {
+          "img": "property-c50d08c0aa0b__info-003.jpg",
+          "txt": "トライアル",
+          "value": "176ｍ　徒歩約2分"
+        },
+        {
+          "img": "property-c50d08c0aa0b__info-004.jpg",
+          "txt": "坂ノ市郵便局",
+          "value": "677ｍ　徒歩約10分"
+        }
+      ],
+      "mhtml": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668.5807048861923!2d131.74739912039095!3d33.23607455319697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354427efaf485499%3A0x331f22f2a10e10c9!2z44CSODcwLTAzMDcg5aSn5YiG55yM5aSn5YiG5biC5Z2C44OO5biC5Lit5aSu77yR5LiB55uu77yT4oiS77yS77yV!5e0!3m2!1sja!2sjp!4v1722241193004!5m2!1sja!2sjp",
+      "property-thumb": "property-c50d08c0aa0b__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-fade234d6878",
+    "template": "used.php",
+    "post_title": "売マンション/明磧",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "中古物件",
+      "a-imgs": [
+        {
+          "img": "property-fade234d6878__gallery-001.jpeg"
+        },
+        {
+          "img": "property-fade234d6878__gallery-002.jpg"
+        },
+        {
+          "img": "property-fade234d6878__gallery-003.jpg"
+        },
+        {
+          "img": "property-fade234d6878__gallery-004.jpg"
+        }
+      ],
+      "top-info-used": {
+        "floor": "4LDK",
+        "school": "宗方小学校　稙田中学校"
+      },
+      "detail": {
+        "price": "13,000,000円",
+        "name": "三和コーポ48（明磧）",
+        "traffic": "JR久大本線「南大分」駅　徒歩19分",
+        "address": "大分市大字上宗方311番"
+      },
+      "infomation": [
+        {
+          "img": "property-fade234d6878__info-001.jpeg",
+          "txt": "宗方小学校",
+          "value": "1500ｍ"
+        },
+        {
+          "img": "property-fade234d6878__info-002.jpeg",
+          "txt": "稙田中学校",
+          "value": "1900ｍ"
+        },
+        {
+          "img": "property-fade234d6878__info-003.jpeg",
+          "txt": "わさだタウン",
+          "value": "1800ｍ"
+        },
+        {
+          "img": "property-fade234d6878__info-004.jpeg",
+          "txt": "稙田市民行政センター",
+          "value": "2400ｍ"
+        },
+        {
+          "img": "property-fade234d6878__info-005.jpeg",
+          "txt": "トライアル",
+          "value": "1400m"
+        },
+        {
+          "img": "property-fade234d6878__info-006.jpeg",
+          "txt": "上宗方郵便局",
+          "value": "230ｍ"
+        },
+        {
+          "img": "property-fade234d6878__info-007.jpeg",
+          "txt": "わさだほまれこども園",
+          "value": "650ｍ"
+        },
+        {
+          "img": "property-fade234d6878__info-008.jpeg",
+          "txt": "共立病院",
+          "value": "950ｍ"
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-fade234d6878__gallery-001.jpeg"
+    }
+  },
+  {
+    "import_id": "property-28348541800a",
+    "template": "used.php",
+    "post_title": "売中古/大分市汐見",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "中古物件",
+      "a-imgs": [
+        {
+          "img": "property-28348541800a__gallery-001.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-002.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-003.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-004.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-005.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-006.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-007.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-008.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-009.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-010.jpg"
+        },
+        {
+          "img": "property-28348541800a__gallery-011.jpg"
+        }
+      ],
+      "top-info-used": {
+        "floor": "3LDK",
+        "school": "大分市立大在東小学校　大分市立大在中学校"
+      },
+      "detail": {
+        "price": "15,900,000円",
+        "name": "",
+        "traffic": "JR日豊本線「大在」駅　徒歩約24分　　「浜天満社前」バス停　徒歩約5分",
+        "address": "大分市汐見2丁目326番地"
+      },
+      "infomation": [
+        {
+          "img": "property-28348541800a__info-001.jpeg",
+          "txt": "大在東小学校",
+          "value": ""
+        },
+        {
+          "img": "property-28348541800a__info-002.jpeg",
+          "txt": "新鮮市場　大在店",
+          "value": ""
+        },
+        {
+          "img": "property-28348541800a__info-003.jpeg",
+          "txt": "コスモス　汐見店",
+          "value": ""
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-28348541800a__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-b2f172c5c069",
+    "template": "used.php",
+    "post_title": "売中古/富士見が丘東",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "中古物件",
+      "a-imgs": [
+        {
+          "img": "property-b2f172c5c069__gallery-001.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-002.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-003.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-004.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-005.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-006.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-007.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-008.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-009.jpg"
+        },
+        {
+          "img": "property-b2f172c5c069__gallery-010.jpg"
+        }
+      ],
+      "top-info-used": {
+        "floor": "４LDK＋S",
+        "school": "大分市立横瀬小学校　　大分市立稙田西中学校"
+      },
+      "detail": {
+        "price": "３９，８００,０００円",
+        "name": "",
+        "traffic": "「富士見が丘中央通り」バス停　徒歩約4分",
+        "address": "大分市富士見が丘東3丁目647番304"
+      },
+      "infomation": [
+        {
+          "img": "property-b2f172c5c069__info-001.jpeg",
+          "txt": "さくらクリニック",
+          "value": "車約2分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-002.jpeg",
+          "txt": "富士見が丘インダストリー",
+          "value": "車約2分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-003.jpeg",
+          "txt": "大分市立稙田西中学校",
+          "value": "徒歩約22分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-004.jpeg",
+          "txt": "大分市立横瀬小学校",
+          "value": "徒歩約16分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-005.jpeg",
+          "txt": "富士見が丘こども園",
+          "value": "徒歩約8分"
+        },
+        {
+          "txt": "みどりマザー牧場",
+          "value": "車約5分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-007.jpeg",
+          "txt": "富士見が丘郵便局",
+          "value": "車約2分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-008.jpeg",
+          "txt": "豊和銀行富士見が丘支店",
+          "value": "車約2分"
+        },
+        {
+          "img": "property-b2f172c5c069__info-009.jpeg",
+          "txt": "JR久大線「豊後国分」駅　車約5分",
+          "value": ""
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-b2f172c5c069__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-7cb05d1b257d",
+    "template": "used.php",
+    "post_title": "売中古/東津留",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "中古物件",
+      "a-imgs": [
+        {
+          "img": "property-7cb05d1b257d__gallery-001.jpg"
+        },
+        {
+          "img": "property-7cb05d1b257d__gallery-002.jpg"
+        },
+        {
+          "img": "property-7cb05d1b257d__gallery-003.jpg"
+        },
+        {
+          "img": "property-7cb05d1b257d__gallery-004.jpg"
+        },
+        {
+          "img": "property-7cb05d1b257d__gallery-005.jpg"
+        },
+        {
+          "img": "property-7cb05d1b257d__gallery-006.jpg"
+        },
+        {
+          "img": "property-7cb05d1b257d__gallery-007.jpg"
+        }
+      ],
+      "top-info-used": {
+        "floor": "4LDK",
+        "school": "大分市立津留小学校　　大分市立城東中学校"
+      },
+      "detail": {
+        "price": "49,800,000円",
+        "name": "津留売戸建",
+        "traffic": "日豊本線「牧」駅　車で3分",
+        "address": "大分市東津留1丁目11番25号"
+      },
+      "infomation": [
+        {
+          "img": "property-7cb05d1b257d__info-001.jpeg",
+          "txt": "津留小学校",
+          "value": ""
+        },
+        {
+          "img": "property-7cb05d1b257d__info-002.jpeg",
+          "txt": "城東中学校",
+          "value": ""
+        },
+        {
+          "img": "property-7cb05d1b257d__info-003.jpeg",
+          "txt": "健生病院",
+          "value": ""
+        },
+        {
+          "img": "property-7cb05d1b257d__info-004.jpeg",
+          "txt": "スーパーまるや",
+          "value": ""
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-7cb05d1b257d__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-aff95281587c",
+    "template": "land.php",
+    "post_title": "売土地/中津市新堀",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "中津市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-aff95281587c__gallery-001.jpg"
+        },
+        {
+          "img": "property-aff95281587c__gallery-002.jpg"
+        },
+        {
+          "img": "property-aff95281587c__gallery-003.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "293.22㎡",
+        "school": "中津市立北部小学校　　中津市立城北中学校",
+        "copy": "情緒ある街並みに新しい暮らしを。",
+        "price": "1200"
+      },
+      "detail": {
+        "name": "",
+        "address": "中津市字新堀784番3",
+        "traffic": "JR日豊本線「中津」駅　　徒歩約12分",
+        "price": "12,000,000円",
+        "land-area": "293.22㎡（88.69坪）",
+        "elementary": "中津市立北部小学校",
+        "junior-high": "中津市立城北中学校",
+        "point": "石畳、和の景観、落ち着いた街並みの美しさ",
+        "ground": "宅地",
+        "purpose": "第1種住居地域",
+        "health": "60％",
+        "floor-area-ratio": "200％",
+        "urban": "非線引き区域",
+        "contact-path": "北東の角地",
+        "transaction": "専任",
+        "commission": "3％＋6万円（別途消費税）",
+        "facility": "上下水道引込有",
+        "remarks": "22条区域、中津城周辺景観形成地区内、文化財保護法、北側都市計画道路予定あり",
+        "contact": "株式会社豊後夢工房　不動産事業部　　　鶴田　　　　TEL:097-594-1481（本社）　097-589-8300（TOS展示場）"
+      },
+      "infomation": [
+        {
+          "img": "property-aff95281587c__info-001.jpeg",
+          "txt": "中津駅",
+          "value": "850ｍ　徒歩約12分"
+        },
+        {
+          "img": "property-aff95281587c__info-002.jpeg",
+          "txt": "福沢通り郵便局",
+          "value": "500ｍ　徒歩約7分"
+        },
+        {
+          "img": "property-aff95281587c__info-003.jpeg",
+          "txt": "大分県信用組合福沢通り支店",
+          "value": "350ｍ　徒歩約7分"
+        },
+        {
+          "img": "property-aff95281587c__info-004.jpeg",
+          "txt": "中津城",
+          "value": "600ｍ　徒歩約8分"
+        },
+        {
+          "img": "property-aff95281587c__info-005.jpeg",
+          "txt": "ゆめタウン中津",
+          "value": "600ｍ　徒歩約8分"
+        },
+        {
+          "img": "property-aff95281587c__info-006.jpeg",
+          "txt": "中津市立北部小学校",
+          "value": "250ｍ　徒歩約3分"
+        },
+        {
+          "img": "property-aff95281587c__info-007.jpeg",
+          "txt": "中津市立城北中学校",
+          "value": "1000ｍ　徒歩約13分"
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-aff95281587c__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-e654dc60de63",
+    "template": "used.php",
+    "post_title": "売土地/佐賀関",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "中古物件",
+      "a-imgs": [
+        {
+          "img": "property-e654dc60de63__gallery-001.jpeg"
+        },
+        {
+          "img": "property-e654dc60de63__gallery-002.jpg"
+        },
+        {
+          "img": "property-e654dc60de63__gallery-003.jpg"
+        }
+      ],
+      "top-info-used": {
+        "top-copy": "海辺の町に移住してみませんか？",
+        "price": "2,000,000円"
+      },
+      "detail": {
+        "name": "",
+        "address": "大分市大字佐賀関1432番地の5、1432番地の7",
+        "traffic": "JR日豊本線「幸崎」駅　車で約13分",
+        "price": "2,000,000円"
+      },
+      "infomation": [
+        {
+          "img": "property-e654dc60de63__info-001.jpeg",
+          "txt": "大分銀行佐賀関支店",
+          "value": "150ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-002.jpeg",
+          "txt": "佐賀関郵便局",
+          "value": "150ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-003.jpeg",
+          "txt": "佐賀関小学校",
+          "value": "230ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-004.jpeg",
+          "txt": "佐賀関中学校",
+          "value": "1400ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-005.jpeg",
+          "txt": "佐賀関病院",
+          "value": "1100ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-006.jpeg",
+          "txt": "セキストア",
+          "value": "350ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-007.jpeg",
+          "txt": "佐賀関公民館",
+          "value": "400ｍ"
+        },
+        {
+          "img": "property-e654dc60de63__info-008.jpeg",
+          "txt": "国道九四フェリーターミナル",
+          "value": "1400ｍ"
+        }
+      ],
+      "mhtml": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d550.353450952455!2d131.87466099987222!3d33.247663977287345!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35442c78ad2d2efd%3A0x186ad433c926ada6!2z44CSODc5LTIyMDEg5aSn5YiG55yM5aSn5YiG5biC5L2Q6LOA6Zai77yR77yU77yT77yS4oiS77yV!5e0!3m2!1sja!2sjp!4v1792821338151!5m2!1sja!2sjp",
+      "property-thumb": "property-e654dc60de63__gallery-001.jpeg"
+    }
+  },
+  {
+    "import_id": "property-ff1ac1831361",
+    "template": "land.php",
+    "post_title": "売土地/南津留",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-ff1ac1831361__gallery-001.jpg"
+        },
+        {
+          "img": "property-ff1ac1831361__gallery-002.jpeg"
+        },
+        {
+          "img": "property-ff1ac1831361__gallery-003.jpg"
+        },
+        {
+          "img": "property-ff1ac1831361__gallery-004.jpg"
+        },
+        {
+          "img": "property-ff1ac1831361__gallery-005.jpg"
+        },
+        {
+          "img": "property-ff1ac1831361__gallery-006.jpg"
+        },
+        {
+          "img": "property-ff1ac1831361__gallery-007.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "182.92㎡（55.3坪）",
+        "school": "津留小学校　城東中学校",
+        "copy": "お母さんも安心　津留小学校まで徒歩2分",
+        "price": "21000000"
+      },
+      "detail": {
+        "name": "南津留売地",
+        "address": "大分市南津留284番",
+        "traffic": "JR日豊本線「牧」駅　車で約4分　　　「大分放送前」バス停　徒歩約5分",
+        "price": "1号地　21,500,000円　　2号地　21,000,000円",
+        "land-area": "1号地　約182.92㎡（約55.3坪）　　2号地　約182.92㎡（約55.3坪）",
+        "elementary": "津留小学校",
+        "junior-high": "城東中学校",
+        "point": "津留小学校まで徒歩2分の好立地！",
+        "ground": "宅地",
+        "purpose": "第2種住居専用地域",
+        "health": "60％",
+        "floor-area-ratio": "200％",
+        "urban": "市街化区域内",
+        "contact-path": "1号地　北公道、東公道の2方向に接してる　　2号地　東公道に接してる",
+        "transaction": "売主",
+        "commission": "",
+        "facility": "",
+        "remarks": "建築条件付　上記予定面積は分筆後、面積の増減が生じる場合があります。　1区画での購入希望の場合は要相談",
+        "contact": "（株）豊後夢工房　不動産事業部　　鶴田"
+      },
+      "infomation": [
+        {
+          "img": "property-ff1ac1831361__info-001.jpeg",
+          "txt": "津留小学校",
+          "value": "140ｍ　徒歩2分"
+        },
+        {
+          "img": "property-ff1ac1831361__info-002.jpeg",
+          "txt": "大分健生病院",
+          "value": "180ｍ　徒歩3分"
+        },
+        {
+          "img": "property-ff1ac1831361__info-003.jpeg",
+          "txt": "ショッピングプラザ　カサキ",
+          "value": "450ｍ　徒歩6分"
+        },
+        {
+          "img": "property-ff1ac1831361__info-004.jpeg",
+          "txt": "JR日豊本線「牧」駅",
+          "value": "1100ｍ　徒歩16分"
+        },
+        {
+          "img": "property-ff1ac1831361__info-005.jpeg",
+          "txt": "城東中学校",
+          "value": "1900ｍ　徒歩27分"
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-ff1ac1831361__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-94973887359b",
+    "template": "land.php",
+    "post_title": "売土地/大分市志生木",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-94973887359b__gallery-001.jpg"
+        },
+        {
+          "img": "property-94973887359b__gallery-002.jpg"
+        },
+        {
+          "img": "property-94973887359b__gallery-003.jpg"
+        },
+        {
+          "img": "property-94973887359b__gallery-004.jpg"
+        },
+        {
+          "img": "property-94973887359b__gallery-005.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "330.57㎡",
+        "school": "こうざき小学校",
+        "copy": "静かな住環境で田舎暮らし！　海に近く釣りに最高！",
+        "price": "3000000"
+      },
+      "detail": {
+        "name": "",
+        "address": "大分市大字志生木字寺下262番",
+        "traffic": "JR日豊本線「幸崎」駅　車で8分",
+        "price": "3,000,000円",
+        "land-area": "330.57㎡（99.99坪）",
+        "elementary": "こうざき小学校",
+        "junior-high": "こうざき中学校",
+        "point": "",
+        "ground": "宅地",
+        "purpose": "無指定",
+        "health": "－",
+        "floor-area-ratio": "－",
+        "urban": "都市計画区域外",
+        "contact-path": "基準法上道路以外の道路に接道",
+        "transaction": "媒介",
+        "commission": "154,000円（税込み）",
+        "facility": "",
+        "remarks": "",
+        "contact": "（株）豊後夢工房　不動産事業部　　　担当：鶴田　　TEL　097-594-1481"
+      },
+      "infomation": [],
+      "mhtml": "",
+      "property-thumb": "property-94973887359b__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-00accff43a34",
+    "template": "land.php",
+    "post_title": "売土地/大分市里",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-00accff43a34__gallery-001.jpg"
+        },
+        {
+          "img": "property-00accff43a34__gallery-002.jpg"
+        },
+        {
+          "img": "property-00accff43a34__gallery-003.jpg"
+        },
+        {
+          "img": "property-00accff43a34__gallery-004.jpg"
+        },
+        {
+          "img": "property-00accff43a34__gallery-005.jpg"
+        },
+        {
+          "img": "property-00accff43a34__gallery-006.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "212.00㎡（64.13坪）",
+        "school": "小佐井小学校　坂ノ市中学校",
+        "copy": "子育てにやさしい住環境",
+        "price": "7700000"
+      },
+      "detail": {
+        "name": "",
+        "address": "大分市大字里字下市2219番4、2220番、2221番1",
+        "traffic": "JR日豊本線「坂ノ市」駅　車で約6分　　　「王ノ瀬」バス停　車で約5分",
+        "price": "7,700,000円",
+        "land-area": "212.00㎡（64.13坪）",
+        "elementary": "小佐井小学校",
+        "junior-high": "坂ノ市中学校",
+        "point": "人気の小佐井小学校校区！近くには有名な亀塚古墳もあります。",
+        "ground": "畑",
+        "purpose": "第１種住居地域",
+        "health": "６０％",
+        "floor-area-ratio": "２００％",
+        "urban": "市街化区域内",
+        "contact-path": "東側道路　セットバック要",
+        "transaction": "専任媒介",
+        "commission": "3％＋6万円＋消費税",
+        "facility": "",
+        "remarks": "農地法、文化財保護法、景観法",
+        "contact": "株式会社豊後夢工房　不動産事業部　\n　　　　　　担当：鶴田　　　　097-594-1481"
+      },
+      "infomation": [
+        {
+          "img": "property-00accff43a34__info-001.jpg",
+          "txt": "小佐井郵便局",
+          "value": ""
+        },
+        {
+          "img": "property-00accff43a34__info-002.jpg",
+          "txt": "小佐井小学校",
+          "value": ""
+        },
+        {
+          "img": "property-00accff43a34__info-003.jpg",
+          "txt": "坂ノ市中学校",
+          "value": ""
+        },
+        {
+          "img": "property-00accff43a34__info-004.jpg",
+          "txt": "大分銀行坂ノ市支店",
+          "value": ""
+        },
+        {
+          "img": "property-00accff43a34__info-005.jpg",
+          "txt": "スーパー　トライアル",
+          "value": ""
+        },
+        {
+          "img": "property-00accff43a34__info-006.jpg",
+          "txt": "大分市役所　坂ノ市支所",
+          "value": ""
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-00accff43a34__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-d795ce73e6e5",
+    "template": "land.php",
+    "post_title": "売土地/星和台2丁目",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-d795ce73e6e5__gallery-001.jpg"
+        },
+        {
+          "img": "property-d795ce73e6e5__gallery-002.jpg"
+        },
+        {
+          "img": "property-d795ce73e6e5__gallery-003.jpg"
+        },
+        {
+          "img": "property-d795ce73e6e5__gallery-004.jpeg"
+        },
+        {
+          "img": "property-d795ce73e6e5__gallery-005.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "231.45㎡（70.01坪）",
+        "school": "敷戸小学校　稙田東中学校",
+        "copy": "閑静な住宅街、病院や買い物にもアクセス良好！",
+        "price": "15000000"
+      },
+      "detail": {
+        "name": "星和台売土地",
+        "address": "大分市星和台2丁目18番9",
+        "traffic": "JR豊肥線「敷戸」駅　徒歩約17分",
+        "price": "15,000,000円",
+        "land-area": "231.45㎡（70.01坪）",
+        "elementary": "敷戸小学校",
+        "junior-high": "稙田東中学校",
+        "point": "敷戸小学校まで徒歩8分",
+        "ground": "宅地",
+        "purpose": "第1種低層住居専用地域",
+        "health": "50％",
+        "floor-area-ratio": "100％",
+        "urban": "市街化区域",
+        "contact-path": "北西の角地",
+        "transaction": "専任",
+        "commission": "3％＋6万円（別途消費税）",
+        "facility": "",
+        "remarks": "古家付き　解体更地渡し！",
+        "contact": "株式会社豊後夢工房　　不動産事業部　　鶴田"
+      },
+      "infomation": [
+        {
+          "img": "property-d795ce73e6e5__info-001.jpeg",
+          "txt": "トライアル",
+          "value": "徒歩約12分"
+        },
+        {
+          "img": "property-d795ce73e6e5__info-002.jpeg",
+          "txt": "敷戸小学校",
+          "value": "徒歩約8分"
+        },
+        {
+          "img": "property-d795ce73e6e5__info-003.jpeg",
+          "txt": "JR豊肥本線「敷戸」駅",
+          "value": "車で約4分"
+        },
+        {
+          "img": "property-d795ce73e6e5__info-004.jpeg",
+          "txt": "藤島病院",
+          "value": "車で約2分"
+        },
+        {
+          "img": "property-d795ce73e6e5__info-005.jpeg",
+          "txt": "稙田東中学校",
+          "value": "徒歩約30分"
+        },
+        {
+          "img": "property-d795ce73e6e5__info-006.jpeg",
+          "txt": "アルメイダ病院",
+          "value": "車で約5分"
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-d795ce73e6e5__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-8431a5a5fde2",
+    "template": "land.php",
+    "post_title": "売土地/畑中",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "property-8431a5a5fde2__gallery-001.jpg"
+        },
+        {
+          "img": "property-8431a5a5fde2__gallery-002.jpg"
+        },
+        {
+          "img": "property-8431a5a5fde2__gallery-003.jpg"
+        },
+        {
+          "img": "property-8431a5a5fde2__gallery-004.jpg"
+        },
+        {
+          "img": "property-8431a5a5fde2__gallery-005.jpg"
+        },
+        {
+          "img": "property-8431a5a5fde2__gallery-006.jpg"
+        },
+        {
+          "img": "property-8431a5a5fde2__gallery-007.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "90.97㎡",
+        "school": "南大分小学校/南大分中学校",
+        "copy": "閑静な住宅街　子育てにやさしい町",
+        "price": "9000000"
+      },
+      "detail": {
+        "name": "",
+        "address": "大分市畑中４丁目１０７０番１",
+        "traffic": "大分駅　車で15分　　「県立病院西口」バス停　徒歩8分",
+        "price": "9,000,000円",
+        "land-area": "90.97㎡",
+        "elementary": "南大分小学校",
+        "junior-high": "南大分中学校",
+        "point": "",
+        "ground": "宅地",
+        "purpose": "第1種中高層住居専用地域",
+        "health": "60％",
+        "floor-area-ratio": "200％",
+        "urban": "市街化区域内",
+        "contact-path": "南側4ｍ公道に接道",
+        "transaction": "売主",
+        "commission": "当方不払い",
+        "facility": "",
+        "remarks": "西側道路セットバックあり　　敷地内電柱あり　　上水道引込済",
+        "contact": "株式会社豊後夢工房　不動産事業部　　鶴田　　TEL　097-594-1481"
+      },
+      "infomation": [
+        {
+          "img": "property-8431a5a5fde2__info-001.jpg",
+          "txt": "畑中郵便局",
+          "value": ""
+        },
+        {
+          "img": "property-8431a5a5fde2__info-002.jpg",
+          "txt": "大分県立病院",
+          "value": ""
+        }
+      ],
+      "mhtml": "",
+      "property-thumb": "property-8431a5a5fde2__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-dc58b614c5b4",
+    "template": "rental.php",
+    "post_title": "大分物流団地内/貸倉庫",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "賃貸物件",
+      "a-imgs": [
+        {
+          "img": "property-dc58b614c5b4__gallery-001.jpg"
+        },
+        {
+          "img": "property-dc58b614c5b4__gallery-002.jpg"
+        },
+        {
+          "img": "property-dc58b614c5b4__gallery-003.jpg"
+        },
+        {
+          "img": "property-dc58b614c5b4__gallery-004.jpg"
+        },
+        {
+          "img": "property-dc58b614c5b4__gallery-005.jpg"
+        },
+        {
+          "img": "property-dc58b614c5b4__gallery-006.jpg"
+        }
+      ],
+      "detail": {
+        "name": "富城倉庫・第２倉庫",
+        "traffic": "JR日豊本線「坂ノ市」駅　車約12分",
+        "address": "大分市大分物流業務団地2丁目7-8、7-9",
+        "document": "1,200,000円"
+      },
+      "property-thumb": "property-dc58b614c5b4__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "property-ed30f9b6a907",
+    "template": "used.php",
+    "post_title": "建売住宅/坂ノ市中央１丁目",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "建売住宅",
+      "a-imgs": [
+        {
+          "img": "property-ed30f9b6a907__gallery-001.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-002.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-003.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-004.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-005.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-006.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-007.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-008.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-009.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-010.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-011.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-012.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-013.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-014.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-015.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-016.jpg"
+        },
+        {
+          "img": "property-ed30f9b6a907__gallery-017.jpg"
+        }
+      ],
+      "top-info-used": {
+        "floor": "３LDK",
+        "school": "坂ノ市小学校/坂ノ市中学校"
+      },
+      "detail": {
+        "price": "34,000,000円",
+        "name": "IROHA.IE（イロハ.イエ）",
+        "traffic": "JR日豊本線「坂ノ市」駅　徒歩約5分　　「坂ノ市」バス停　徒歩約3分",
+        "address": "大分市坂ノ市中央１丁目１１７番１"
+      },
+      "infomation": [],
+      "mhtml": "",
+      "property-thumb": "property-ed30f9b6a907__gallery-001.jpg"
+    }
+  },
+  {
+    "import_id": "hatake-nakari-3ku",
+    "template": "land.php",
+    "post_title": "畑中分譲地（３区画）",
+    "post_status": "publish",
+    "acf": {
+      "property-area": "大分市",
+      "property-category": "土地情報",
+      "a-imgs": [
+        {
+          "img": "hatake-nakari-3ku__gallery-001.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-002.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-003.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-004.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-005.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-006.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-007.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-008.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-009.jpg"
+        },
+        {
+          "img": "hatake-nakari-3ku__gallery-010.jpg"
+        }
+      ],
+      "top-info": {
+        "area": "195.32㎡～",
+        "school": "南大分小学校、南大分中学校",
+        "copy": "価格下げました！建築条件なし！",
+        "price": "15900000"
+      },
+      "detail": {
+        "name": "畑中分譲地（３区画）",
+        "address": "大分市畑中4丁目1075番1、1102番1、1102番2外",
+        "traffic": "JR日豊本線「大分駅」　車で約15分",
+        "price": "15,900,000円（1号地）　16,250,000円（2号地）　17,100,000円（3号地）",
+        "land-area": "１号地：195.32㎡（59.08坪） 2号地：239.62㎡（72.48坪）　3号地：232.86㎡（70.44坪）",
+        "elementary": "南大分小学校",
+        "junior-high": "南大分中学校",
+        "point": "閑静な住宅街、病院・スーパー、コンビニ等アクセス良好！",
+        "ground": "宅地",
+        "purpose": "第１種中高層住居専用",
+        "health": "60％",
+        "floor-area-ratio": "200％",
+        "urban": "市街化区域内",
+        "contact-path": "4ｍ道路に接道",
+        "transaction": "売主",
+        "commission": "不払い",
+        "facility": "上下水道引込済",
+        "remarks": "2号地、3号地の敷地内に水路あり",
+        "contact": "株式会社豊後夢工房　不動産事業部\n　　　　TEL：０９７-５９４-１４８１\n　　　　　　　　担当　　鶴田"
+      },
+      "infomation": [
+        {
+          "img": "hatake-nakari-3ku__info-001.jpg",
+          "txt": "ファミリーマート",
+          "value": "379ｍ　徒歩約5分"
+        },
+        {
+          "img": "hatake-nakari-3ku__info-002.jpg",
+          "txt": "ドラッグイレブン",
+          "value": "403ｍ　徒歩約5分"
+        },
+        {
+          "img": "hatake-nakari-3ku__info-003.jpg",
+          "txt": "大分県立病院",
+          "value": "465ｍ　徒歩約6分"
+        },
+        {
+          "img": "hatake-nakari-3ku__info-004.jpg",
+          "txt": "畑中郵便局",
+          "value": "797ｍ　徒歩約10分"
+        },
+        {
+          "img": "hatake-nakari-3ku__info-005.jpg",
+          "txt": "コナズ珈琲",
+          "value": "841ｍ　徒歩約11分"
+        }
+      ],
+      "mhtml": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1146.677933241558!2d131.59373627544912!3d33.20542434335787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a205749fad9d%3A0x8c8fc92ff920aa4b!2z44CSODcwLTA4NTYg5aSn5YiG55yM5aSn5YiG5biC55WR5Lit77yU5LiB55uu77yW4oiS77yR77yZ!5e0!3m2!1sja!2sjp!4v1722240980627!5m2!1sja!2sjp",
+      "property-thumb": "hatake-nakari-3ku__gallery-001.jpg"
+    }
+  }
+]

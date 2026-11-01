@@ -3,6 +3,26 @@
     "title": "建売住宅・中古物件",
     "fields": [
         {
+            "key": "field_6b000010impid",
+            "label": "import_id",
+            "name": "import_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "WP-CLI JSON import unique key.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6b000010cat",
             "label": "物件種別",
             "name": "property-category",
@@ -17,13 +37,13 @@
                 "id": ""
             },
             "taxonomy": "property-category",
-            "field_type": "checkbox",
-            "return_format": "id",
+            "field_type": "select",
+            "return_format": "object",
             "multiple": 0,
             "allow_null": 0,
             "add_term": 1,
-            "load_terms": 0,
-            "save_terms": 0
+            "load_terms": 1,
+            "save_terms": 1
         },
         {
             "key": "field_6b000010area",
@@ -40,13 +60,38 @@
                 "id": ""
             },
             "taxonomy": "property-area",
-            "field_type": "checkbox",
-            "return_format": "id",
+            "field_type": "select",
+            "return_format": "object",
             "multiple": 0,
             "allow_null": 0,
             "add_term": 1,
-            "load_terms": 0,
-            "save_terms": 0
+            "load_terms": 1,
+            "save_terms": 1
+        },
+        {
+            "key": "field_6b000010pthumb",
+            "label": "サムネイル画像",
+            "name": "property-thumb",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "詳細ページ上部（c-thumbnail）用。一覧カードもこの画像を使用。",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_6b000010aimgs",
@@ -646,5 +691,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1793188802
+    "modified": 1793323970
 }

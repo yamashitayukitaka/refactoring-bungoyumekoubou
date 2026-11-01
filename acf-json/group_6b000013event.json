@@ -3,6 +3,26 @@
     "title": "イベント詳細",
     "fields": [
         {
+            "key": "field_6b000013impid",
+            "label": "import_id",
+            "name": "import_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "WP-CLI JSON import unique key.",
+            "required": false,
+            "conditional_logic": false,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6b000013type",
             "label": "イベント種別",
             "name": "event-type",
@@ -578,5 +598,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1792434629
+    "modified": 1793323970
 }
