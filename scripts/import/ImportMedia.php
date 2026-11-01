@@ -10,9 +10,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * field map 上の定義が ACF image 型かどうか。
+ * Field map 上の定義が ACF image 型かどうか。
  *
- * @param mixed $field_definition
+ * @param mixed $field_definition フィールド定義.
  * @return bool
  */
 function wazeka_import_acf_is_image_definition( $field_definition ) {
@@ -24,11 +24,11 @@ function wazeka_import_acf_is_image_definition( $field_definition ) {
 /**
  * JSON に書くメディアファイル名（import_id__role.ext）かどうか。
  *
- * @param string $value
+ * @param string $value ファイル名またはパス.
  * @return bool
  */
 function wazeka_import_media_is_import_filename( $value ) {
-  $value = str_replace( '\\', '/', trim( (string) $value ) );
+  $value    = str_replace( '\\', '/', trim( (string) $value ) );
   $basename = wp_basename( $value );
 
   return (bool) preg_match( '/^.+__.+\.(jpe?g|png|gif|webp)$/i', $basename );
@@ -37,8 +37,8 @@ function wazeka_import_media_is_import_filename( $value ) {
 /**
  * 画像フィールド JSON 値の形をチェックする。
  *
- * @param mixed  $value
- * @param string $label
+ * @param mixed  $value 画像フィールド値.
+ * @param string $label エラーメッセージ用ラベル.
  * @return string|null
  */
 function wazeka_import_acf_validate_image_value( $value, $label ) {
@@ -77,13 +77,13 @@ function wazeka_import_media_find_attachment_by_filename( $filename ) {
   global $wpdb;
 
   // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
-  $attachment_id = $wpdb->get_var(
-      $wpdb->prepare(
+$attachment_id = $wpdb->get_var(
+    $wpdb->prepare(
         "SELECT post_id FROM {$wpdb->postmeta} WHERE meta_key = %s AND meta_value LIKE %s ORDER BY post_id DESC LIMIT 1",
         '_wp_attached_file',
         '%' . $wpdb->esc_like( $filename )
-      )
-  );
+    )
+);
 
   if ( ! $attachment_id ) {
     return null;
@@ -100,9 +100,9 @@ function wazeka_import_media_find_attachment_by_filename( $filename ) {
 /**
  * 画像フィールド用 JSON 値を attachment ID に変換する。
  *
- * @param mixed  $value
- * @param int    $post_id 未使用（互換のため残す）.
- * @param string $context_label
+ * @param mixed  $value         画像フィールド値.
+ * @param int    $post_id       未使用（互換のため残す）.
+ * @param string $context_label ログ・警告用ラベル.
  * @return int|null
  */
 function wazeka_import_acf_prepare_image_value( $value, $post_id, $context_label ) {
@@ -127,9 +127,9 @@ function wazeka_import_acf_prepare_image_value( $value, $post_id, $context_label
     return $found;
   }
 
-  WP_CLI::warning(
+WP_CLI::warning(
     $context_label . ': メディアに「' . $filename . '」がありません。Downloads/works-media から管理画面でアップロードしてください。'
-  );
+);
 
   return null;
 }

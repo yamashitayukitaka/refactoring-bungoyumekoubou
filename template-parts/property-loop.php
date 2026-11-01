@@ -13,15 +13,15 @@
         <?php $property_thumb = get_field( 'property-thumb' ); ?>
         <?php if ( ! empty( $property_thumb ) ) : ?>
           <?php
-          echo wp_get_attachment_image(
-              $property_thumb,
-              'full',
-              false,
-              array(
+        echo wp_get_attachment_image(
+            $property_thumb,
+            'full',
+            false,
+            array(
                 'loading' => 'lazy',
                 'alt'     => get_the_title(),
               )
-          );
+        );
           ?>
         <?php endif; ?>
       </figure>

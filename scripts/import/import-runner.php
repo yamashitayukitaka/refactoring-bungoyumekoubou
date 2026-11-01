@@ -17,9 +17,9 @@ require_once __DIR__ . '/ImportMedia.php';
 require_once __DIR__ . '/validators/JsonValidator.php';
 
 /**
- * config 1種別分のインポートを実行（validate → 各 row を upsert）.
+ * Config 1種別分のインポートを実行（validate → 各 row を upsert）.
  *
- * @param array<string, mixed> $config
+ * @param array<string, mixed> $config 種別設定.
  * @return void
  */
 function wazeka_import_run( array $config ) {
@@ -74,9 +74,9 @@ function wazeka_import_run( array $config ) {
 }
 
 /**
- * json_path または json_relpath からインポート JSON のフルパスを組み立てます。
+ * Json_path または json_relpath からインポート JSON のフルパスを組み立てます。
  *
- * @param array<string, mixed> $config
+ * @param array<string, mixed> $config 種別設定.
  * @return string
  */
 function wazeka_import_resolve_json_path( array $config ) {
@@ -93,15 +93,15 @@ function wazeka_import_resolve_json_path( array $config ) {
 /**
  * JSON の1 row を post + ACF に upsert します。
  *
- * @param array<string, mixed> $config
- * @param array<string, mixed> $row
+ * @param array<string, mixed> $config 種別設定.
+ * @param array<string, mixed> $row    JSON 1 行.
  * @return array{action: string, post_id?: int}
  */
 function wazeka_import_row( array $config, array $row ) {
   $import_id = trim( (string) $row['import_id'] );
   $post_type = (string) $config['post_type'];
   // post meta のキー（_wazeka_import_id）。再インポート時の検索に使う。
-  $meta_key  = (string) ( $config['import_meta_key'] ?? '_wazeka_import_id' );
+  $meta_key = (string) ( $config['import_meta_key'] ?? '_wazeka_import_id' );
 
   // この行で使う入力項目の対応表を用意します。
   $acf_map = wazeka_import_resolve_acf_field_map( $config, $row );
@@ -183,12 +183,12 @@ function wazeka_import_row( array $config, array $row ) {
         continue;
       }
 
-      $prepared_value = wazeka_import_acf_prepare_field_value(
-          $field_definition,
-          $value,
-          $import_id . '.' . $field_name,
-          (int) $post_id
-      );
+    $prepared_value = wazeka_import_acf_prepare_field_value(
+        $field_definition,
+        $value,
+        $import_id . '.' . $field_name,
+        (int) $post_id
+    );
 
       if ( null === $prepared_value ) {
         continue;
@@ -225,40 +225,40 @@ function wazeka_import_row( array $config, array $row ) {
 }
 
 /**
- * import_id に一致する post を WP_Query + meta_query で最大2件取得します。
+ * Import_id に一致する post を WP_Query + meta_query で最大2件取得します。
  *
- * @param string $post_type
+ * @param string $post_type 投稿タイプ slug.
  * @param string $meta_key  import_meta_key（例: _wazeka_import_id）.
- * @param string $import_id
+ * @param string $import_id JSON の import_id.
  * @return int[] post ID の配列.
  */
 function wazeka_import_find_existing_posts( $post_type, $meta_key, $import_id ) {
-  $query = new WP_Query(
+  $args = array(
+    'post_type'              => $post_type,
+    'post_status'            => 'any',
+    'posts_per_page'         => 2,
+    'fields'                 => 'ids',
+    'no_found_rows'          => true,
+    'suppress_filters'       => true,
+    'update_post_meta_cache' => false,
+    'update_post_term_cache' => false,
+    // _wazeka_import_id または legacy な import_id meta の OR 条件。
+    'meta_query'             => array(
+      'relation' => 'OR',
       array(
-        'post_type'              => $post_type,
-        'post_status'            => 'any',
-        'posts_per_page'         => 2,
-        'fields'                 => 'ids',
-        'no_found_rows'          => true,
-        'suppress_filters'       => true,
-        'update_post_meta_cache' => false,
-        'update_post_term_cache' => false,
-        // _wazeka_import_id または legacy な import_id meta の OR 条件。
-        'meta_query'             => array(
-          'relation' => 'OR',
-          array(
-            'key'     => $meta_key,
-            'value'   => $import_id,
-            'compare' => '=',
-          ),
-          array(
-            'key'     => 'import_id',
-            'value'   => $import_id,
-            'compare' => '=',
-          ),
-        ),
-      )
+        'key'     => $meta_key,
+        'value'   => $import_id,
+        'compare' => '=',
+      ),
+      array(
+        'key'     => 'import_id',
+        'value'   => $import_id,
+        'compare' => '=',
+      ),
+    ),
   );
+
+  $query = new WP_Query( $args );
 
   return $query->posts;
 }

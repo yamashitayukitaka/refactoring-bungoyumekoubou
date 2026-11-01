@@ -57,11 +57,11 @@ function wazeka_import_acf_validate_data( array $data, array $map, $label = 'acf
     $nested_field_map = $map[ $field_name ];
 
     if ( wazeka_import_acf_is_taxonomy_definition( $nested_field_map ) ) {
-      $tax_error = wazeka_import_acf_validate_taxonomy_value(
-          $value,
-          (string) $nested_field_map['taxonomy'],
-          $label . '.' . $field_name
-      );
+    $tax_error = wazeka_import_acf_validate_taxonomy_value(
+        $value,
+        (string) $nested_field_map['taxonomy'],
+        $label . '.' . $field_name
+    );
       if ( null !== $tax_error ) {
         $errors[] = $tax_error;
       }
@@ -94,8 +94,8 @@ function wazeka_import_acf_validate_data( array $data, array $map, $label = 'acf
         }
         // 行の中身を sub field map で再帰バリデーション。$label に [index] を付けてエラー位置を特定しやすくする。
         $errors = array_merge(
-          $errors,
-          wazeka_import_acf_validate_data( $repeater_row, $sub_field_map, $label . '.' . $field_name . '[' . $index . ']' )
+            $errors,
+            wazeka_import_acf_validate_data( $repeater_row, $sub_field_map, $label . '.' . $field_name . '[' . $index . ']' )
         );
       }
       // repeater として処理済みなので、下の group 用分岐には入らない。
@@ -104,10 +104,10 @@ function wazeka_import_acf_validate_data( array $data, array $map, $label = 'acf
 
     // 連想配列（group など）なら sub fields を再帰チェック。
     if ( is_array( $value ) ) {
-      $errors = array_merge(
+    $errors = array_merge(
         $errors,
         wazeka_import_acf_validate_data( $value, $sub_field_map, $label . '.' . $field_name )
-      );
+    );
     }
   }
 
@@ -117,7 +117,7 @@ function wazeka_import_acf_validate_data( array $data, array $map, $label = 'acf
 /**
  * PHP 配列がリスト形式（0,1,2… の添字）かどうか。repeater 判定の目安に使います。
  *
- * @param mixed $value
+ * @param mixed $value 判定対象の値.
  * @return bool
  */
 function wazeka_import_acf_is_list_array( $value ) {
@@ -136,9 +136,9 @@ function wazeka_import_acf_is_list_array( $value ) {
 }
 
 /**
- * field map 上の定義が ACF taxonomy 型かどうか。
+ * Field map 上の定義が ACF taxonomy 型かどうか。
  *
- * @param mixed $field_definition
+ * @param mixed $field_definition フィールド定義.
  * @return bool
  */
 function wazeka_import_acf_is_taxonomy_definition( $field_definition ) {
@@ -151,9 +151,9 @@ function wazeka_import_acf_is_taxonomy_definition( $field_definition ) {
 /**
  * JSON の taxonomy 値（term 名・slug オブジェクト・ID）の形をチェックする。
  *
- * @param mixed  $value
- * @param string $taxonomy
- * @param string $label
+ * @param mixed  $value    taxonomy 値.
+ * @param string $taxonomy タクソノミー slug.
+ * @param string $label    エラーメッセージ用ラベル.
  * @return string|null エラー文。問題なければ null.
  */
 function wazeka_import_acf_validate_taxonomy_value( $value, $taxonomy, $label ) {
@@ -193,9 +193,9 @@ function wazeka_import_acf_validate_taxonomy_value( $value, $taxonomy, $label ) 
 /**
  * JSON の taxonomy 値を update_field 用の term ID（または ID 配列）に変換する。
  *
- * @param mixed  $value
- * @param string $taxonomy
- * @param string $context_label ログ・警告用.
+ * @param mixed  $value         taxonomy 値.
+ * @param string $taxonomy      タクソノミー slug.
+ * @param string $context_label ログ・警告用ラベル.
  * @return int|int[]|null
  */
 function wazeka_import_acf_prepare_taxonomy_value( $value, $taxonomy, $context_label ) {
@@ -238,12 +238,12 @@ function wazeka_import_acf_prepare_taxonomy_value( $value, $taxonomy, $context_l
 }
 
 /**
- * slug / name から term を探し、無ければ作成して term_id を返す。
+ * Slug / name から term を探し、無ければ作成して term_id を返す。
  *
- * @param string $taxonomy
- * @param string $slug
- * @param string $name
- * @param string $context_label
+ * @param string $taxonomy      タクソノミー slug.
+ * @param string $slug          term slug.
+ * @param string $name          term 名.
+ * @param string $context_label ログ・警告用ラベル.
  * @return int|null
  */
 function wazeka_import_find_or_create_term( $taxonomy, $slug, $name, $context_label ) {
@@ -288,12 +288,12 @@ function wazeka_import_find_or_create_term( $taxonomy, $slug, $name, $context_la
 }
 
 /**
- * field 定義に応じて JSON 値を update_field 向けに整える（taxonomy / image / 入れ子）.
+ * Field 定義に応じて JSON 値を update_field 向けに整える（taxonomy / image / 入れ子）.
  *
- * @param string|array<string, mixed> $field_definition
- * @param mixed                       $value
- * @param string                      $context_label
- * @param int                         $post_id 親 works 投稿 ID.
+ * @param string|array<string, mixed> $field_definition フィールド定義.
+ * @param mixed                       $value            JSON 値.
+ * @param string                      $context_label    ログ・警告用ラベル.
+ * @param int                         $post_id          親投稿 ID.
  * @return mixed|null 失敗時 null.
  */
 function wazeka_import_acf_prepare_field_value( $field_definition, $value, $context_label, $post_id = 0 ) {
@@ -317,12 +317,12 @@ function wazeka_import_acf_prepare_field_value( $field_definition, $value, $cont
 }
 
 /**
- * group / repeater の JSON を再帰的に整える。
+ * Group / repeater の JSON を再帰的に整える。
  *
- * @param array<string, mixed> $field_definition
- * @param mixed                $value
- * @param string               $context_label
- * @param int                  $post_id
+ * @param array<string, mixed> $field_definition フィールド定義.
+ * @param mixed                $value            JSON 値.
+ * @param string               $context_label    ログ・警告用ラベル.
+ * @param int                  $post_id          親投稿 ID.
  * @return mixed|null
  */
 function wazeka_import_acf_prepare_container_value( $field_definition, $value, $context_label, $post_id ) {
@@ -338,12 +338,12 @@ function wazeka_import_acf_prepare_container_value( $field_definition, $value, $
       if ( ! is_array( $repeater_row ) ) {
         continue;
       }
-      $prepared_rows[] = wazeka_import_acf_prepare_row(
-          $repeater_row,
-          $sub_field_map,
-          $context_label . '[' . $index . ']',
-          $post_id
-      );
+    $prepared_rows[] = wazeka_import_acf_prepare_row(
+        $repeater_row,
+        $sub_field_map,
+        $context_label . '[' . $index . ']',
+        $post_id
+    );
     }
     return $prepared_rows;
   }
@@ -352,12 +352,12 @@ function wazeka_import_acf_prepare_container_value( $field_definition, $value, $
 }
 
 /**
- * group / repeater 1 行分の連想配列を整える。
+ * Group / repeater 1 行分の連想配列を整える。
  *
- * @param array<string, mixed> $row
- * @param array<string, mixed> $sub_field_map
- * @param string               $context_label
- * @param int                  $post_id
+ * @param array<string, mixed> $row           1 行分の acf データ.
+ * @param array<string, mixed> $sub_field_map サブフィールド map.
+ * @param string               $context_label ログ・警告用ラベル.
+ * @param int                  $post_id       親投稿 ID.
  * @return array<string, mixed>
  */
 function wazeka_import_acf_prepare_row( array $row, array $sub_field_map, $context_label, $post_id ) {

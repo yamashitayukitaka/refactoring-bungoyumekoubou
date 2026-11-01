@@ -24,7 +24,7 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 require_once __DIR__ . '/import-runner.php';
 
 /**
- * config ディレクトリ内のインポート種別 slug 一覧を返します（property, works など）.
+ * Config ディレクトリ内のインポート種別 slug 一覧を返します（property, works など）.
  *
  * @return string[]
  */
@@ -52,9 +52,9 @@ function wazeka_import_discover_types() {
 }
 
 /**
- * slug に対応する config/*.php を require して設定配列を返します。
+ * Slug に対応する config/*.php を require して設定配列を返します。
  *
- * @param string $slug 例: property
+ * @param string $slug 種別 slug（例: property）.
  * @return array<string, mixed>|null
  */
 function wazeka_import_load_config( $slug ) {
