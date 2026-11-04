@@ -13,9 +13,7 @@ get_header();
 <main>
   <h1 class="c-title--section u-mb50">
     <?php
-    if ( is_404() ) {
-      echo 'ページが見つかりません';
-    } elseif ( is_search() ) {
+    if ( is_search() ) {
       echo '検索結果';
     } elseif ( is_archive() ) {
       echo esc_html( get_the_archive_title() );
@@ -59,7 +57,7 @@ get_header();
         </div>
       <?php endif; ?>
     <?php else : ?>
-      <p><?php echo is_404() ? 'お探しのページは見つかりませんでした。' : '表示できるコンテンツがありません。'; ?></p>
+      <p>表示できるコンテンツがありません。</p>
     <?php endif; ?>
   </div>
 </main>

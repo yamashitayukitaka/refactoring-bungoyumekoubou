@@ -11653,6 +11653,41 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+.p-404__inner {
+  text-align: center;
+}
+.p-404__title {
+  font-size: 3.2rem;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.6rem;
+}
+@media screen and (max-width: 599px) {
+  .p-404__title {
+    font-size: 2.4rem;
+  }
+}
+.p-404__subtitle {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 599px) {
+  .p-404__subtitle {
+    font-size: 1.6rem;
+  }
+}
+.p-404__lead {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #404040;
+}
+.p-404__lead p + p {
+  margin-top: 1rem;
+}
+.p-404__action {
+  margin-top: 4rem;
+}
+
 .u-font__bold {
   font-weight: bold;
   color: inherit;
