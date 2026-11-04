@@ -69,34 +69,39 @@ PHP のコーディング規約チェックは [PHP_CodeSniffer](https://github.
 ### コマンド
 
 ```bash
-composer install          # 初回（require-dev に phpcs）
-composer run lint:php     # 検査（composer.json の scripts）
+composer install          # 初回（PHPCS + WPCS）
+composer run lint:php     # 検査
+composer run fix:php      # PHPCBF による自動修正（可能な指摘のみ）
 # または
 vendor/bin/phpcs
+vendor/bin/phpcbf --tab-width=2
 ```
 
 PR では GitHub Actions（`.github/workflows/lint-php.yml`）が **変更された PHP ファイルのみ** PHPCS（WPCS）を実行する。
 
-`composer.json` の `require-dev` は `squizlabs/php_codesniffer` のみです。自動修正は含めていないため、指摘は手で直します。
+`require-dev` には `squizlabs/php_codesniffer` と `wp-coding-standards/wpcs` があります。ルールセットは `phpcs.xml.dist`（PSR-12 ベース + WordPress 向けルール）です。
 
 ## ディレクトリ構成（開発で触るもの）
 
 ```
 wazeka/
 ├── acf-json/          # ACF フィールドグループ（JSON 同期）
+├── data/              # WP-CLI インポート用 JSON（works / property）
 ├── dist/
 │   ├── css/style.css  # Sass の出力（本番 enqueue）
 │   └── js/            # Vite の出力 + レガシー JS（Slick 等）
-├── inc/               # PHP（setup, enqueue, CPT, ACF, query など）
+├── inc/               # PHP（setup, enqueue, CPT, ACF, query, breadcrumb など）
+├── scripts/import/    # WP-CLI eval-file 用インポート（config / validators）
 ├── src/
 │   ├── scss/          # FLOCSS（style.scss がエントリ）
 │   ├── js/
 │   │   ├── common.js  # 全ページ（modules を import）
 │   │   ├── modules/
 │   │   └── pages/     # ページ別エントリ → dist/js/*.js
-├── template-parts/
+├── template-parts/    # breadcrumb など
+├── 404.php            # 404 専用テンプレート
 ├── style.css          # WordPress テーマヘッダーのみ
-├── composer.json      # PHPCS（require-dev）
+├── composer.json      # PHPCS / PHPCBF scripts
 ├── phpcs.xml.dist     # PSR-12 などのルールセット
 ├── vite.config.mjs
 └── build-vite.mjs
@@ -136,6 +141,9 @@ Slick の CSS は CDN から条件付きで enqueue されます。
 | `post-types.php` | カスタム投稿タイプ・タクソノミー登録 |
 | `acf.php` | ACF オプションページ |
 | `query.php` / `pagination.php` / `helpers.php` / `admin.php` | クエリ・ページネーション・共通処理 |
+| `breadcrumb.php` | パンくず（`wazeka_the_breadcrumb()`。NavXT は使わない） |
+
+
 
 ## カスタム投稿タイプ・タクソノミー
 
@@ -162,6 +170,22 @@ Slick の CSS は CDN から条件付きで enqueue されます。
 
 フィールドグループは `acf-json/` にあります。テーマ有効化後、ACF 管理画面の「同期」で取り込みます。
 
+### ローカル向け JSON インポート（WP-CLI）
+
+施工事例・物件の初期データを `data/` の JSON から投入するスクリプトがあります。**WordPress インストールのルート**で WP-CLI を実行してください。
+
+| データ | JSON | エントリ |
+| --- | --- | --- |
+| 施工事例 | `data/works/works.json` | `scripts/import/import-works.php` |
+| 土地・物件 | `data/property/properties.json` | `scripts/import/import-properties.php` |
+
+```bash
+# 例（Local のサイトルートに cd したうえで）
+wp eval-file wp-content/themes/wazeka/scripts/import/import-works.php
+wp eval-file wp-content/themes/wazeka/scripts/import/import-properties.php
+```
+
+施工事例で画像付きフィールドを使う場合は、スクリプト先頭コメントのとおり、先にメディアを管理画面でアップロードしてから実行します。
 
 ### ACFPro起因のNoticeエラー　Deprecatedエラーについて
 
@@ -185,6 +209,3 @@ Slick の CSS は CDN から条件付きで enqueue されます。
 2. SCSS 変更時は `npm run lint:scss`、PHP マークアップは `npm run lint:html`、PHP コーディング規約は `composer run lint:php` を必要に応じて実行する。
 3. `dist/css/style.css` をコミットする運用の場合は、Sass ビルド後に差分を含める。
 
-## ライセンス
-
-`package.json` の `license` フィールドに従います（ISC）。テーマの `style.css` ヘッダーは GPL v2 以降です。
