@@ -27,6 +27,7 @@
 @use 'object/component/contact';
 @use 'object/component/thumbnail';
 @use 'object/component/pagination';
+@use 'object/component/breadcrumb';
 // project（parts → pages）
 @use 'object/project/parts';
 @use 'object/project/pages';

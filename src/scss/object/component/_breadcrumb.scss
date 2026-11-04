@@ -1,0 +1,49 @@
+@use '../../foundation/variables' as *;
+
+.c-breadcrumb {
+  padding: 1.2rem 4%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+
+  @include mq(sp) {
+    padding: 1rem 4%;
+    font-size: 1.1rem;
+  }
+}
+
+.c-breadcrumb__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.c-breadcrumb__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &:not(:last-child)::after {
+    content: '/';
+    margin-left: 0.4rem;
+    color: $gray7;
+    user-select: none;
+  }
+}
+
+.c-breadcrumb__link {
+  color: $black;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.c-breadcrumb__current {
+  color: $footerColor;
+}
