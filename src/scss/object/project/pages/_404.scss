@@ -1,0 +1,41 @@
+@use '../../../foundation/variables' as *;
+
+.p-404 {
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.6rem;
+
+    @include mq(sp) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    @include mq(sp) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__lead {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: $footerColor;
+
+    p + p {
+      margin-top: 1rem;
+    }
+  }
+
+  &__action {
+    margin-top: 4rem;
+  }
+}
