@@ -2,7 +2,6 @@
 /**
  * パンくずリスト用 PHP（inc/breadcrumb.php）.
  *
- *
  * 【呼び出し】
  * header.php → template-parts/breadcrumb.php → wazeka_the_breadcrumb()
  *
